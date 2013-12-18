@@ -1,0 +1,57 @@
+Key,Value,Source
+country,eu,
+base_year,2011,
+residences_final_demand_space_heating,8080091.20866822,chosen to fit energy balance
+residences_final_demand_hot_water,1269728.61850501,in line with Enerdata_Energy Efficiency Trends in Buildings in the EU.pdf
+residences_final_demand_cooling,230859.748819092,
+residences_final_demand_lighting,808009.120866822,
+residences_final_demand_cooking,346289.623228638,
+residences_final_demand_appliances,808009.120866822,
+residences_percentage_space_heating_combi_boiiler,0.4878,manual fitting
+residences_percentage_space_heating_solar_thermal,0.0062,
+residences_percentage_space_heating_heat_pump_ground,0.001,
+residences_percentage_space_heating_micro_chp,0,
+residences_percentage_space_heating_district,0.096,
+residences_percentage_space_heating_heat_pump_air,0,
+residences_percentage_space_heating_woodpellets,0.14,
+residences_percentage_space_heating_electric_resistance,0.08,
+residences_percentage_space_heating_gas_burner,0,
+residences_percentage_space_heating_oil_burner,0.145,
+residences_percentage_space_heating_coal_burner,0.04,
+residences_percentage_space_heating_heat_pump_add_on,0.004,
+residences_percentage_hot_water_combi_boiiler,0.4878,manual fitting
+residences_percentage_hot_water_solar_thermal,0.0062,
+residences_percentage_hot_water_heat_pump_ground,0.001,
+residences_percentage_hot_water_micro_chp,0,
+residences_percentage_hot_water_district,0.096,
+residences_percentage_hot_water_heat_pump_air,0,
+residences_percentage_hot_water_woodpellets,0.1,
+residences_percentage_hot_water_electric_resistance,0.15,
+residences_percentage_hot_water_gas_burner,0,
+residences_percentage_hot_water_oil_burner,0.145,
+residences_percentage_hot_water_coal_burner,0.01,
+residences_percentage_hot_water_fuel_cell,0.004,
+residences_percentage_cooling_heat_pump_ground,0,assumption
+residences_percentage_cooling_heat_pump_air,0,assumption
+residences_percentage_cooling_aircondition,1,assumption
+residences_percentage_lighting_incandescent,0.9,assumption
+residences_percentage_lighting_efficient_fluorescent,0.1,assumption
+residences_percentage_lighting_led,0,assumption
+residences_percentage_cooking_gas,0.15,taken from NL dataset
+residences_percentage_cooking_electric_resistance,0.55,taken from NL dataset
+residences_percentage_cooking_electric_halogen,0.15,taken from NL dataset
+residences_percentage_cooking_electric_induction,0.1,taken from NL dataset
+residences_percentage_cooking_biomass,0.05,taken from NL dataset
+residences_percentage_appliances_dishwasher,0.1,taken from NL dataset
+residences_percentage_appliances_fridge_freezer,0.28,taken from NL dataset
+residences_percentage_appliances_washing_machine,0.1,taken from NL dataset
+residences_percentage_appliances_dryer,0.1,taken from NL dataset
+residences_percentage_appliances_television,0.14,taken from NL dataset
+residences_percentage_appliances_computer_media,0.11,taken from NL dataset
+residences_percentage_appliances_vacuum_cleaner,0.1,taken from NL dataset
+residences_percentage_appliances_others,0.07,taken from NL dataset
+residences_space_heating_share_coming_from_solar_thermal,0.15,taken from NL dataset
+residences_hot_water_share_coming_from_solar_thermal,0.5,taken from NL dataset
+residences_space_heating_share_coming_from_el_add_on,0.6,taken from NL dataset
+residences_percentage_new_residences,0.86,taken from NL dataset
+residences_percentage_old_residences,0.14,taken from NL dataset

@@ -1,0 +1,10 @@
+Key,Value,Source
+country,eu,
+base_year,2011,
+primary_bio_oil,112794,dummy number
+primary_algae_diesel,0,assumption
+primary_wood,3654783.324,Eurostat; Energy; Yearly statistics 2006
+max_biogenic_wasate,1218261,dummy number
+max_non_biogenic_waste,1218261,dummy number
+percentage_wood_pellets,0.95,assumption
+percentage_torrified_biomass_pellets,0.05,assumption

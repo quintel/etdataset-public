@@ -1,0 +1,4 @@
+*.png diff=exif
+*.xls binary
+*.xlsx binary
+*.xlsm binary

@@ -1,0 +1,10 @@
+Key,Value,Source
+country,chiark,
+base_year,2011,
+primary_bio_oil,0,
+primary_algae_diesel,0,
+primary_wood,0,
+max_biogenic_wasate,20000,
+max_non_biogenic_waste,20000,
+percentage_wood_pellets,0.5,
+percentage_torrified_biomass_pellets,0.5,
