@@ -9,6 +9,14 @@ task :publish do
   destination = '../etdataset-public'
   exclude     = %w[.git *energy_balance*.* *autoproducer_table*.*]
 
+  #-------- REMOVE ENTIRE DIRETORY -------------------------------------------
+
+  cmd = "rm -rf #{ destination }/*"
+
+  puts "Executing #{ cmd }"
+
+  %x[ #{ cmd } ]
+
   #-------- COPY EVERYTHING PRUNED -------------------------------------------
 
   cmd = ['rsync -rv']
@@ -19,7 +27,7 @@ task :publish do
 
   cmd.push destination
 
-  exec cmd.join(" ")
+  %x[ #{ cmd.join(" ") } ]
 
   puts "Executing #{ cmd.join(" ") }"
 
@@ -29,7 +37,7 @@ task :publish do
 
   puts "Executing #{ cmd2 }"
 
-  exec cmd2
+  %x[ #{ cmd2 } ]
 
   puts "Done!"
 end
