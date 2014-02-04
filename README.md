@@ -1,8 +1,14 @@
-# ETDataset
+# ETDataset - Start here
 
-Each country shown in the Energy Transition Model (ETM) requires its own **Input Data** to correctly model the energy system of that country. This repository is dedicated to creating these *country-specific datasets* (**Input Data**), which are exported to [ETSource](https://github.com/quintel/etsource), further processed by [ETEngine](https://github.com/quintel/etengine) and displayed in the [front-end](http://www.et-model.com) by [ETModel](https://github.com/quintel/etmodel). The **Input Data** is created in [ETDataset](https://github.com/quintel/etdataset) (or [ETdataset-public](https://github.com/quintel/etdataset-public)) by various **Research Analyses**. Furthermore, this repository is used for logging all issues and discussions encountered in the process of creating and maintaining Input Data.
+Each country shown in the Energy Transition Model (ETM) requires its own **Input Data** to correctly model the energy system of that country. This repository is dedicated to creating these *country-specific datasets* (**Input Data**), which are exported to [ETSource](https://github.com/quintel/etsource), further processed by [ETEngine](https://github.com/quintel/etengine) and displayed in the [front-end](http://www.et-model.com) by [ETModel](https://github.com/quintel/etmodel). The **Input Data** is created in [ETDataset](https://github.com/quintel/etdataset) by various **Research Analyses**. Furthermore, this repository is used for logging all issues and discussions encountered in the process of creating and maintaining Input Data.
 
 ![ETDataset dataflow](documentation/dataflow_repositories.png)
+
+There are two versions of the ETDataset repository:
+
+1. [**ETDataset**](https://github.com/quintel/etdataset-public) is a **private** repository, that is used by Quintel to generate the Input Data for the ETM. The repository is private because the dataset generation processes requires an IEA energy balance. The IEA energy balances are proprietary and cannot be published.
+- [**ETdataset-public**](https://github.com/quintel/etdataset-public)) is a **public** copy of the [ETDataset](https://github.com/quintel/etdataset-public) repository, but without the proprietary energy balances. This repository is available for informative purposes. There is a dummy energy balance available for the *example* country. Running the dataset generation set for countries requires the purchase of an energy balance.
+
 
 ## Content
 
@@ -14,10 +20,12 @@ The ETDataset repository contains the following folders and files:
 - The [**Source Analyses**](/source_analyses) folder contains analyses for the assumptions in the various Research Analyses. Where the [Analyses](/analyses) folder contains analyses for the *uniform data* sources, the [Source Analyses](/source_analyses) directory contains the *non-uniform data* and manipulation of such data.
 - The [**Documentation**](/documentation) folder contains additional and more detailed information.
 
+The ETDataset repository is dedicated to *country-specific* (energy) data for the ETM. Technological specifications (such as efficiencies and costs) that are not country-specific are stored in the [ETSource](https://github.com/quintel/etsource/tree/master/nodes) repository.
+
 
 ## Dataflow
 
-This image outlines the dataflow that we use to generate Input Data from Research Data (the IEA energy balance) and assumptions based on Source Analyses. The generation of Input Data occurs in various Research Analyses. A more detailed dataflow describing the the various Research Analyses and their input and output can be found [here](documentation/detailed_dataflow.md).
+This image outlines the dataflow that we use to generate Input Data from Research Data (the IEA energy balance) and assumptions based on Source Analyses. The generation of Input Data occurs in various Research Analyses. Descriptions of the various Research Analysis and a detailed visualization of the dataflow can be found [here](analyses/README.md).
 
 ![ETDataset dataflow](documentation/dataflow.png)
 
@@ -56,7 +64,7 @@ Once you have finished your dataset, you may want to test the impact of your cha
 
 Testing your dataset for the ETM involves two steps:
 
-1. You should test if [Atlas](https://github.com/quintel/atlas) is able to initialize the graph structure with your dataset.
+1. You should test if [Atlas](https://github.com/quintel/atlas) perform its calculations with your dataset. [Atlas](https://github.com/quintel/atlas) is dedicated to inializing the [graph structure](https://github.com/quintel/documentation#the-energy-calculation) and energy flows for the ETM.
 - You should investigate the impact of your changes on the ETM results by running [ETEngine](https://github.com/quintel/etengine) and [ETModel](https://github.com/quintel/etmodel) on your local machine.
 
 See the [Testing locally](documentation/testing_locally.md) documentation for a detailed instruction. When you are satisfied with your dataset, you can start sharing your work.
@@ -69,16 +77,17 @@ The tools and data of ETDataset are available in this **GitHub** repository. **G
 Sharing your work involves the following steps:
 
 1. [**Creating a new branch**](documentation/working_with_git.md#1-create-a-new-branch-in-your-local-repository-and-make-sure-you-are-on-that-branch)
-2. [**Commit your changes**](documentation/working_with_git.md#2-make-your-changes-to-files-excel-files-or-csv-inputoutput-files)
-3. [**Push commits to remote repository**](documentation/working_with_git.md#3-push-your-changes-to-remote-repository-note-how-you-have-to-explicitly-name-a-remote-branch-to-push-to)
-4. [**Create a pull request**](documentation/working_with_git.md#4-go-to-github-and-create-a-pull-request-for-you-new-branch)
+- [**Commit your changes**](documentation/working_with_git.md#2-make-your-changes-to-files-excel-files-or-csv-inputoutput-files)
+- [**Push commits to remote repository**](documentation/working_with_git.md#3-push-your-changes-to-remote-repository-note-how-you-have-to-explicitly-name-a-remote-branch-to-push-to)
+- [**Create a pull request**](documentation/working_with_git.md#4-go-to-github-and-create-a-pull-request-for-you-new-branch)
 
 Furthermore, the [Understanding the GitHub Workflow](http://guides.github.com/overviews/flow/) page gives a 5-minute introduction to these steps. Do you want an introduction to Git in an interactive way, please try the [15-minute course](http://try.github.io/levels/1/challenges/1).
 
 
 ### Commits
 
-Typically there are two kinds of commits: [commits of new sets of input and output files](#committing-input-and-output-files) and [commits of changes to an Excel analysis](#committing-changes-to-excel-analysis-files). The first are generated for each analysis step that is completed and involve only text. They are easily dealt with by Git. The latter involve [binary files](http://en.wikipedia.org/wiki/Binary_file), which are less straightforward when using Git. For this reason they should be committed in two different commits. Note that you may have accidentally saved the Excel file, when all you wanted to do was generate a set of input and outputs. Git will interpret this as a file change. You need to checkout (i.e. discard) such changed Excel files, since they will not be accepted anyway, before staging and committing the changed input and output files.
+Typically there are two kinds of commits: [commits of new sets of input and output files](#committing-input-and-output-files) and [commits of changes to an Excel analysis](#committing-changes-to-excel-analysis-files). The first are generated for each analysis step that is completed and involve only text files. They are easily dealt with by Git. The latter involve [binary files](http://en.wikipedia.org/wiki/Binary_file), which are less straightforward when using Git.
+Changes to input and output files and changes to Excel files should be committed in different commits. When you accidentally saved the Excel file during the dataset generation process, you should checkout (i.e. discard) the changed Excel file (see [Commit your changes](documentation/working_with_git.md#2-make-your-changes-to-files-excel-files-or-csv-inputoutput-files).
 
 
 #### Committing input and output files
@@ -113,18 +122,11 @@ After you **commit** changes on your local machine, you **push** your `new_branc
 
 There are a couple of rules that you need to follow when collaborating with other people via Git. There also some extra rules that apply to working on this repository:
 
-**Rule 1: Two people should never work on the same Excel analysis file simultaneously.**
+1. **Every commit has to be well documented.**
+- **Always use pull requests instead of just pushing your changes.**
+- **Country-specific data is NEVER stored within an Excel analysis.** More specifically, Excel files may not contain energy balances, autoproducer tables, technical specifications and dashboard inputs.
+- **Commit data changes seperately from changes to Excel files.** Only under certain conditions it may be legitimate to make changes to the calculations, text or formatting of an analysis.
 
-**Rule 2: Always commit changes to Excel files separately from data changes, so you can revert to older datasets without having to revert to older Excel versions.**
-
-**Rule 3: Always use pull requests instead of just pushing your changes.**
-
-**Rule 4: Every commit has to be well documented.**
-
-Furthermore:
-
-- You may **never** save country specific data within an Excel analysis. The Excel analyses are just tools to calculate output from certain inputs. The Excel files are never used to store data. More specifically, Excel files may NOT contain: energy balances, autoproducer tables, technical specifications, dashboard inputs. All necessary files will be saved and written to the right directory using VBA code (a 'macro'). The reason you should not save the Excel is that this will prompt Git to notice the file changed, prompting you to commit and push the changes. Since these changes will not be accepted, you will have to discard them anyway.
-- Under certain conditions it may be legitimate to make changes to the calculations, text or formatting of an analysis. These changes have to be committed on their own branch, committing only one change at a time.
 
 
 

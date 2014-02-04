@@ -1,4 +1,4 @@
-# 6. Residence analysis
+# 6. Residences analysis
 
 1. Application split: Final energy demand: Originally, this application split was based on the NL dataset. The final demands were scaled up proportionally until they reached the total final demand. However, it was not possible to make the checks pass with those settings. Therefore, the application split was further manipulated, to optimise the checks. Further research and validation is needed.
 * Technology split: Space heating: Percentages are adjusted manually until the IEA energy demands are matched. Further research and validation is needed.

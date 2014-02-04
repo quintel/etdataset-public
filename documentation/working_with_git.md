@@ -79,6 +79,10 @@ Observe which changes have been made:
 
     git status
 
+To discard a changed file (e.g. in case of an accidentally changed Excel file):
+
+    git checkout -- file_name
+
 Stage files for commit:
 
     git add
