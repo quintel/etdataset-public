@@ -23,9 +23,9 @@ task :publish do
 
   puts "Executing #{ cmd.join(" ") }"
 
-  #-------- COPY COMPLETE CHIARK (DUMMY) DATASET -----------------------------
+  #-------- COPY COMPLETE EXAMPLE DATASET -----------------------------
 
-  cmd2 = "rsync -rv #{ source }/data/chiark #{ destination }/data"
+  cmd2 = "rsync -rv #{ source }/data/example #{ destination }/data"
 
   puts "Executing #{ cmd2 }"
 

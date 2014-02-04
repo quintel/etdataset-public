@@ -7,8 +7,8 @@
 # Edit by Quintel Intelligence www.quintel.com, Jesse Kerkhoven
 #
 # This script is used to perform a 'git dif' on Excel files (binary).
-# Check out the documentation on https://github.com/quintel/etdataset, 
-# specifically: https://github.com/quintel/etdataset/blob/master/QI%20technical%20readme.md#for-quintel-employees-how-to-git-diff-excel-files
+# Check out the documentation on https://github.com/quintel/etdataset,
+# specifically: https://github.com/quintel/etdataset/blob/master/documentation/technical_background.md#how-to-git-diff-excel-files
 #
 #   License
 #
@@ -113,7 +113,7 @@ def xlsx2text(infilepath):
   delimiter=os.linesep
   #   skip empty lines
   skip_empty_lines=False
-  
+
   try:
     ziphandle = zipfile.ZipFile(infilepath)
   except zipfile.BadZipfile:
@@ -124,7 +124,7 @@ def xlsx2text(infilepath):
     styles = parse(ziphandle, Styles, "xl/styles.xml")
     workbook = parse(ziphandle, Workbook, "xl/workbook.xml")
     props = parse(ziphandle, Props, "docProps/core.xml")
-        
+
     print "Last modified at " + props.date_modified + ", output with formula values"
     for s in workbook.sheets:
       sheetfile = ziphandle.open("xl/worksheets/sheet%i.xml" %s['id'], "r")
@@ -280,17 +280,17 @@ class Sheet:
         self.s_attr = None
         self.formula = ""
         self.data = None
-        
+
 
         self.dateformat = None
         self.skip_empty_lines = False
         self.use_formula = False
-        
+
         self.filehandle = filehandle
         self.workbook = workbook
         self.sharedStrings = sharedString.strings
         self.styles = styles
-        
+
         self.info = info
 
     def set_dateformat(self, dateformat):
@@ -298,7 +298,7 @@ class Sheet:
 
     def set_skip_empty_lines(self, skip):
         self.skip_empty_lines = skip
-        
+
     def set_use_formula(self, formula):
         self.use_formula = formula
 
@@ -355,10 +355,10 @@ class Sheet:
                         pass
         elif self.in_cell_formula:
           self.formula = self.formula + data
-        
+
         # at prefix
         prefix = self.colNum + self.rowNum + ' '
-        
+
         if self.use_formula:
           if self.formula:
             self.data = prefix + self.formula
@@ -428,4 +428,4 @@ if __name__ == "__main__":
     if len(sys.argv) == 2:
       xlsx2text(sys.argv[1])
     else:
-      sys.exit(2)                     
+      sys.exit(2)
