@@ -1,4 +1,4 @@
-# 4a. Metal analysis
+# 4a. Metal industry analysis
 
 1. The steel production is set to 177.431 MT in 2011. This value is taken from the [WorldSteel_crude steel production 2011](http://www.worldsteel.org/dms/internetDocumentList/steel-stats/2011/Crude-steel-production-2011/document/2011%20steel%20updated%20Feb2012.pdf)
 * The distribution over steel furnaces (technology split) is adjusted so that checks are optimised.
@@ -10,4 +10,4 @@ Beware: you need to fill in the production of aluminium, not of aluminium oxide.
 ## Improvements
 
 * Aluminium production
-* the share of aluminium that is recycled needs to be improved
+* The share of aluminium that is recycled needs to be improved

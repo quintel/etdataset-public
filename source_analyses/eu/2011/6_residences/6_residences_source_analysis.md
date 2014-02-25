@@ -1,6 +1,6 @@
-# 6. Residence analysis
+# 6. Residences analysis
 
-Most of the cells in the residence analysis dashboard are adjusted to match the IEA energy flows (optimising checks). There is no proper source analysis because of a lack of research data.
+Most of the cells in the residences analysis dashboard are adjusted to match the IEA energy flows (optimising checks). There is no proper source analysis because of a lack of research data.
 
 1. Application split:
 The breakdown is based on a report published by [Enerdata: Energy Efficiency Trends in Buildings in the EU.pdf](http://refman.et-model.com/publications/1841). They report that 2/3 of all final demand in residences is used for space heating (in 2009). 1/6 is consumed in the preparation of hot water.

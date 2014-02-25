@@ -2,7 +2,6 @@ Key,Value,Source
 country,nl,
 base_year,2011,
 primary_bio_oil,0,
-primary_algae_diesel,0,
 primary_wood,0,
 max_biogenic_wasate,20000,
 max_non_biogenic_waste,20000,

@@ -1,23 +1,25 @@
 # ETDataset - Start here
 
-Each country shown in the Energy Transition Model (ETM) requires its own **Input Data** to correctly model the energy system of that country. This repository is dedicated to creating these *country-specific datasets* (**Input Data**), which are exported to [ETSource](https://github.com/quintel/etsource), further processed by [ETEngine](https://github.com/quintel/etengine) and displayed in the [front-end](http://www.et-model.com) by [ETModel](https://github.com/quintel/etmodel). The **Input Data** is created in [ETDataset](https://github.com/quintel/etdataset) by various **Research Analyses**. Furthermore, this repository is used for logging all issues and discussions encountered in the process of creating and maintaining Input Data.
+Each country shown in the [Energy Transition Model (ETM)](http://www.et-model.com) requires a *country-specific dataset* (**Input Data**) to correctly model the energy system of that country. The ETDataset repository is dedicated to creating these *country-specific datasets*. Once a complete dataset is created it needs to be exported to [ETSource](https://github.com/quintel/etsource) from where the Input Data will be used in calculations by [ETEngine](https://github.com/quintel/etengine). The user can interact with the model through the front-end of the [ETM](http://www.et-model.com) that is maintained in the [ETModel](https://github.com/quintel/etmodel) repository. The Input Data is created by various **Research Analyses**. In addition to creating datasets, the ETDataset repository is used for logging all issues and discussions encountered in the process of creating and maintaining Input Data.
 
 ![ETDataset dataflow](documentation/dataflow_repositories.png)
 
-There are two versions of the ETDataset repository:
+One of the key ingredients in the creation of a dataset is the IEA energy balance. Since these energy balances are proprietary, they cannot be published in a public repository. Therefore, we created two versions of the ETDataset repository:
 
-1. [**ETDataset**](https://github.com/quintel/etdataset-public) is a **private** repository, that is used by Quintel to generate the Input Data for the ETM. The repository is private because the dataset generation processes requires an IEA energy balance. The IEA energy balances are proprietary and cannot be published.
-- [**ETdataset-public**](https://github.com/quintel/etdataset-public)) is a **public** copy of the [ETDataset](https://github.com/quintel/etdataset-public) repository, but without the proprietary energy balances. This repository is available for informative purposes. There is a dummy energy balance available for the *example* country. Running the dataset generation set for countries requires the purchase of an energy balance.
+1. [**ETDataset**](https://github.com/quintel/etdataset) is a **private** repository that is used by Quintel to generate the Input Data for all countries shown in the ETM. This repository is private because it contains the IEA energy balances.
+- [**ETdataset-public**](https://github.com/quintel/etdataset-public) is a **public** copy of the [ETDataset](https://github.com/quintel/etdataset) repository, but without the proprietary energy balances. This repository is available for informative purposes. The repository also contains the entire dataset (including a fictional energy balance) for the country *example* that can be used to review the dataset generation process. Running the dataset generation process for a real country requires the purchase of the IEA energy balance for that country.
+
+More information on the generation of Input Data and a more in-depth explanation of the relation between ETDataset and ETDataset-public can be found [here](/documentation/generate_output_files.md). If you want to make changes to the model or if you would like to add a new country, have a look at [this page](/documentation/generate_output_files.md). Contact [Quintel](http://quintel.com/contact) if you desire more information.
 
 
 ## Content
 
 The ETDataset repository contains the following folders and files:
 
-- The [**Analysis Manager**](analysis_manager.xlsm) is an Excel workbook that serves as the *control room* for generating Input Data. The Analysis Manager stores macros that facilitate the generation process of Input Data.
+- The [**Analysis Manager**](analysis_manager.xlsm) is an Excel workbook that serves as the *control room* for generating Input Data. The Analysis Manager contains macros that facilitate the generation process of Input Data.
 - The [**Analyses**](/analyses) folder contains the **Research Analyses**, Excel files that are *tools* used to process Research Data. They do **not** contain any data themselves. The various analyses can be opened via the [Analysis Manager](analysis_manager.xlsm).
 - The [**Data**](/data) folder contains country-specific data that is imported, manipulated and exported by the Research Analyses.
-- The [**Source Analyses**](/source_analyses) folder contains analyses for the assumptions in the various Research Analyses. Where the [Analyses](/analyses) folder contains analyses for the *uniform data* sources, the [Source Analyses](/source_analyses) directory contains the *non-uniform data* and manipulation of such data.
+- The [**Source Analyses**](/source_analyses) folder contains analyses for the assumptions in the various Research Analyses. Where the [Analyses](/analyses) folder contains analyses for the *uniform data* sources, i.e. sources of data that is formatted in the same way for all countries, the [Source Analyses](/source_analyses) directory contains the *non-uniform data* and manipulation of such data.
 - The [**Documentation**](/documentation) folder contains additional and more detailed information.
 
 The ETDataset repository is dedicated to *country-specific* (energy) data for the ETM. Technological specifications (such as efficiencies and costs) that are not country-specific are stored in the [ETSource](https://github.com/quintel/etsource/tree/master/nodes) repository.
@@ -37,7 +39,7 @@ If you are new to the project, please carefully read our introduction to the [no
 
 # Generate a dataset for the ETM
 
-So, the main purpose of this repository is to create country-specific datasets for the ETM. In this section we will outline the **Input Data** generation process using the **Analysis Manager** and **Research Analyses**.
+So, the main purpose of this repository is to create country-specific datasets that serve as input for the ETM. In this section we will outline the **Input Data** generation process using the **Analysis Manager** and **Research Analyses**.
 
 To keep things as simple as possible, we describe the process from two perspectives. First, you might want to investigate how Input Data is generated and perform minor adjustments to the dataset. Second, you might want to create a new dataset (i.e. Input Data for a new country or a different year for a country that already has a dataset). We highly recommend that you first get acquainted with manipulating a dataset that already exists. Once you understand how everything works, you can create your own dataset and start using the ETM to model a new country.
 
@@ -50,14 +52,14 @@ The process of generating **Input Data** is divided into three steps:
 
 ## 1. Generating output files
 
-The process of generating Input Data is covered by a range of Research Analyses, stored in the [Analyses](/analyses) folder. The [Analysis Manager](analysis_manager.xlsm) serves as control room for managing the process. It it important that you work on the analyses in the given order to end up with a meaningful dataset. Often input to later analyses depend on the output of previous analyses. Nevertheless, creating a complete dataset is an iterative process and you might want to jump back or ahead to have a look at other analyses. However, in the end you have to make sure you export the Input Data files from all analyses in the given order.
+The process of generating Input Data is covered by a range of Research Analyses, stored in the [Analyses](/analyses) folder. The [Analysis Manager](analysis_manager.xlsm) serves as control room for managing the process. It it important that you work on the analyses in the given order to end up with a meaningful dataset. Often input to later analyses depends on the output of previous analyses. Nevertheless, creating a complete dataset is an iterative process and you might want to jump back or ahead to have a look at other analyses. However, in the end you have to make sure you export the Input Data files from all analyses in the given order.
 
 - [**Before getting started**](documentation/generate_output_files.md#before-getting-started) describes the prerequisites for starting with the dataset generation process.
 - [**A. Investigate the Input Data generation process**](documentation/generate_output_files.md#a-investigate-the-input-data-generation-process) is a walk-through to get familiar with the Analysis Manager and the analyses.
 - [**B. Manipulate Input Data of an existing dataset**](documentation/generate_output_files.md#b-manipulate-input-data-of-an-existing-dataset) is a walk-through describing the steps required to make minor changes to an existing dataset.
 - [**C. Create Input Data for a new country or year**](documentation/generate_output_files.md#c-create-input-data-for-a-new-country-or-year) is a walk-through for generating a whole new dataset for a new country or a new starting year.
 
-Once you have finished your dataset, you may want to test the impact of your changes on the ETM (on your own machine) and eventually share your changes with others.
+Once you have finished your dataset, you may want to test the impact of your changes on the ETM (on your own computer) and eventually share your changes with others.
 
 
 ## 2. Testing the dataset
