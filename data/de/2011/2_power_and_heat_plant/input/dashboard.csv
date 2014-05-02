@@ -10,6 +10,7 @@ pp_share_lignite_us_ccs,0,
 pp_share_gas_turbine,0.0255,source analysis
 pp_share_gas_cc,0.87,matching fuel use
 pp_share_gas_cc_ccs,0,not relevant
+pp_share_gas_engine,0,
 pp_share_gas_us,0.1045,matching fuel use
 pp_share_nuclear_2,0.8,matching fuel use
 pp_share_nuclear_3,0.2,

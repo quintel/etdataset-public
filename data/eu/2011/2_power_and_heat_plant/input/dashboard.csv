@@ -10,6 +10,7 @@ pp_share_lignite_us_ccs,0,no CCS in 2010
 pp_share_gas_turbine,0.0745088555530997,follows from the production reported in Eurolectric report; http://refman.et-model.com/publications/1836
 pp_share_gas_cc,0.73,best fit
 pp_share_gas_cc_ccs,0,no CCS in 2010
+pp_share_gas_engine,0,
 pp_share_gas_us,0.1954911444469,best fit
 pp_share_nuclear_2,0.73,best fit
 pp_share_nuclear_3,0.27,best fit
