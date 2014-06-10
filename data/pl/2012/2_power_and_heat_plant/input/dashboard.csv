@@ -1,0 +1,49 @@
+Key,Value,Source
+country,pl,
+base_year,2012,
+pp_share_coal_us,0.35,Not relevant because electricity production from coal is zero
+pp_share_coal_us_ccs,0,
+pp_share_coal_cc,0,
+pp_share_coal_cc_ccs,0,
+pp_share_lignite_us,1,Not relevant because electricity production from lignite is zero
+pp_share_lignite_us_ccs,0,
+pp_share_gas_turbine,0.0255,Not relevant because electricity production from gas is zero
+pp_share_gas_cc,0.87,
+pp_share_gas_cc_ccs,0,
+pp_share_gas_engine,0,
+pp_share_gas_us,0.1045,
+pp_share_nuclear_2,0.8,Not relevant because electricity production from nuclear is zero
+pp_share_nuclear_3,0.2,
+pp_share_hydro_river,0.85,Based on DE dataset
+pp_share_hydro_mountain,0.15,Based on DE dataset
+pp_share_wind_coastal,0.35,Optimized to match installed capacity 
+pp_share_wind_offshore,0,No offshore yet
+pp_share_wind_inland,0.65,Optimized to match installed capacity
+pp_flh_coal_us_co,5500,Based on DE dataset
+pp_flh_coal_supercritical,4300,Based on DE dataset
+pp_flh_coal_us,5500,Based on DE dataset
+pp_flh_coal_us_ccs,6000,Based on DE dataset
+pp_flh_coal_cc,4600,Based on DE dataset
+pp_flh_coal_cc_ccs,4500,Based on DE dataset
+pp_flh_lignite_us,5760,Based on DE dataset
+pp_flh_lignite_us_ccs,5972,Based on DE dataset
+pp_flh_gas_turbine,500,Based on DE dataset
+pp_flh_gas_cc,4900,Based on DE dataset
+pp_flh_gas_cc_ccs,3500,Based on DE dataset
+pp_flh_gas_engine,1,
+pp_flh_gas_us,3750,Based on DE dataset
+pp_flh_nuclear_2,6314,Based on DE dataset
+pp_flh_nuclear_3,6314,Based on DE dataset
+pp_flh_hydro_river,3852,Based on DE dataset
+pp_flh_hydro_mountain,1718,Based on DE dataset
+pp_flh_solar_pv,955,Based on DE dataset
+pp_flh_residential_solar_pv,955,Based on DE dataset
+pp_flh_caps_solar_pv,955,Based on DE dataset
+pp_flh_solar_csp,955,Based on DE dataset
+pp_flh_wind_coastal,2400,Based on DE dataset
+pp_flh_wind_offshore,3800,ECN_Hekkenberg_201309_Toelichting inschatting korte-termijneffecten Energieakkoord op hernieuwbare energie.pdf (https://github.com/quintel/etdataset/issues/448)
+pp_flh_wind_inland,1700,Based on DE dataset
+pp_flh_oil_us,3504,Based on DE dataset
+pp_flh_diesel,3504,Based on DE dataset
+pp_flh_waste,3800,Based on DE dataset
+pp_flh_geothermal,8250,Based on DE dataset

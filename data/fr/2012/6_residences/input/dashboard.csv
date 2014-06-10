@@ -1,0 +1,59 @@
+Key,Value,Source
+country,fr,
+base_year,2012,
+residences_final_demand_space_heating,1150000,Estimate based on Odyssee 2011 data
+residences_final_demand_hot_water,185000,Estimate based on Odyssee 2011 data
+residences_final_demand_cooling,5000,Remaining
+residences_final_demand_lighting,40000,Estimate based on Odyssee 2011 data
+residences_final_demand_cooking,110000,Estimate based on Odyssee 2011 data
+residences_final_demand_appliances,270000,Estimate based on Odyssee 2011 data
+residences_percentage_space_heating_combi_boiiler,0.41,Rough estimated based on Odyssee 2011 data and subsequently optimized to reduce relative errors in fuel consumption
+residences_percentage_space_heating_solar_thermal,0.0023,
+residences_percentage_space_heating_heat_pump_ground,0,
+residences_percentage_space_heating_micro_chp,0,
+residences_percentage_space_heating_district,0.04,
+residences_percentage_space_heating_heat_pump_air,0,
+residences_percentage_space_heating_woodpellets,0.24,
+residences_percentage_space_heating_electric_resistance,0.105,
+residences_percentage_space_heating_gas_burner,0,
+residences_percentage_space_heating_oil_burner,0.2,
+residences_percentage_space_heating_coal_burner,0.0027,
+residences_percentage_space_heating_heat_pump_add_on,0,
+residences_percentage_hot_water_combi_boiiler,0.3413,Rough estimated based on Odyssee 2011 data and subsequently optimized to reduce relative errors in fuel consumption
+residences_percentage_hot_water_solar_thermal,0.0022,
+residences_percentage_hot_water_heat_pump_ground,0.004,
+residences_percentage_hot_water_micro_chp,0,
+residences_percentage_hot_water_district,0.05,
+residences_percentage_hot_water_heat_pump_air,0,
+residences_percentage_hot_water_woodpellets,0.0075,
+residences_percentage_hot_water_electric_resistance,0.445,
+residences_percentage_hot_water_gas_burner,0,
+residences_percentage_hot_water_oil_burner,0.15,
+residences_percentage_hot_water_coal_burner,0,
+residences_percentage_hot_water_fuel_cell,0,
+residences_percentage_cooling_heat_pump_ground,0,
+residences_percentage_cooling_heat_pump_air,0,
+residences_percentage_cooling_aircondition,1,
+residences_percentage_lighting_incandescent,0.8,
+residences_percentage_lighting_efficient_fluorescent,0.2,
+residences_percentage_lighting_led,0,
+residences_percentage_cooking_gas,0.4,Rough estimated based on Odyssee 2011 data
+residences_percentage_cooking_electric_resistance,0.4,
+residences_percentage_cooking_electric_halogen,0.1,
+residences_percentage_cooking_electric_induction,0.1,
+residences_percentage_cooking_biomass,0,
+residences_percentage_appliances_dishwasher,0.1,
+residences_percentage_appliances_fridge_freezer,0.28,
+residences_percentage_appliances_washing_machine,0.1,
+residences_percentage_appliances_dryer,0.1,
+residences_percentage_appliances_television,0.14,
+residences_percentage_appliances_computer_media,0.11,
+residences_percentage_appliances_vacuum_cleaner,0.1,
+residences_percentage_appliances_others,0.07,
+residences_space_heating_share_coming_from_solar_thermal,0.15,
+residences_hot_water_share_coming_from_solar_thermal,0.5,
+residences_space_heating_share_coming_from_el_add_on,0.6,
+residences_percentage_old_residences,0.777,
+residences_percentage_new_residences,0.223,
+insulation_level_old_houses_min,0.5,This number depends on the insulation analysis; see http://wiki.quintel.com/index.php/Insulation
+insulation_level_new_houses_min,1.8,This number depends on the insulation analysis; see http://wiki.quintel.com/index.php/Insulation

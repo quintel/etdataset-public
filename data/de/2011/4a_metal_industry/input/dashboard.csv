@@ -6,6 +6,7 @@ metal_steel_share_blast_furnace_current,0.87,matching checks
 metal_steel_share_blast_furnace_bat,0,technology does not exist in DE
 metal_steel_share_cyclone,0,technology does not exist in DE
 metal_steel_share_electric,0.13,matching checks
+metal_steel_burner_share_coal,0,
 metal_steel_burner_share_coal_gas,0.7,matching checks
 metal_steel_burner_share_network_gas,0.3,matching checks
 metal_aluminium_production,0.43,Wikipedia

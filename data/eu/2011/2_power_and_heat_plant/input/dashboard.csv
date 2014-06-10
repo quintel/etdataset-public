@@ -16,8 +16,6 @@ pp_share_nuclear_2,0.73,best fit
 pp_share_nuclear_3,0.27,best fit
 pp_share_hydro_river,0.48,Eurolectric report
 pp_share_hydro_mountain,0.52,Eurolectric report
-pp_share_solar_pv,0.892283065430534,based on FLH and installed capacity
-pp_share_solar_csp,0.107716934569466,based on FLH and installed capacity
 pp_share_wind_coastal,0.17116075368828,15% of all onshore is coastal
 pp_share_wind_offshore,0.0526263455726679,there are 2944 MW installed @ 3200 FLH
 pp_share_wind_inland,0.776212900739052,85% of all onshore in inland
@@ -32,6 +30,7 @@ pp_flh_lignite_us_ccs,5500,not relevant
 pp_flh_gas_turbine,682,follows from Eurolectric report; http://refman.et-model.com/publications/1836
 pp_flh_gas_cc,4800,adapted to meet installed capacity; Prognos: The future role of coal in europe
 pp_flh_gas_cc_ccs,4000,adapted to meet installed capacity; Prognos: The future role of coal in europe
+pp_flh_gas_engine,1,
 pp_flh_gas_us,1800,adapted to meet installed capacity; Prognos: The future role of coal in europe
 pp_flh_nuclear_2,6200,adapted to meet installed capacity; Prognos: The future role of coal in europe
 pp_flh_nuclear_3,8000,adapted to meet installed capacity; Prognos: The future role of coal in europe

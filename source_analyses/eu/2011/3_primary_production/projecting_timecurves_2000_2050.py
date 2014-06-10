@@ -120,7 +120,7 @@ output_array[:,0] = years_ex/1e6
 
 colors = ['bD', 'gD', 'rD', 'cD', 'mD', 'yD', 'kD']
 colors2 = ['b-', 'g-', 'r-', 'c-', 'm-', 'y-', 'k-']
-labels = ['coal', 'lignite', 'natural gas', 'crude oil', 'uranium oxide', 'bio-residues', 'total']
+labels = ['coal', 'lignite', 'natural gas', 'crude oil', 'uranium oxide', 'woody biomass', 'total']
 
 for i in range(0,6):
     
@@ -156,7 +156,7 @@ output_array = output_array.clip(0)
     
 # Write out the resulting array
 with open(curpath+ '/extrapolation_production_trends_from_python_script.csv', 'wb') as f:
-  f.write('year,coal,lignite,natural gas,crude oil,uranium oxide,bio-residues\n')
+  f.write('year,coal,lignite,natural gas,crude oil,uranium oxide,woody biomass\n')
   np.savetxt(f, output_array*1e6, fmt="%f", delimiter =',')    
 
 title("Primary energy production per carrier for EU-27")

@@ -1,0 +1,71 @@
+Key,Value,Source / comment
+area,uk,
+id,3,
+parent_id,3,
+enabled.etengine,true,
+enabled.etmodel,true,
+analysis_year,2012,
+has_agriculture,true,
+has_buildings,true,
+has_climate,false,
+has_coastline,true,
+has_cold_network,false,
+has_electricity_storage,false,
+has_employment,false,
+has_fce,false,
+has_industry,true,
+has_lignite,false,
+has_merit_order,false,
+has_metal,true,
+has_mountains,true,
+has_old_technologies,false,
+has_other,true,
+has_solar_csp,false,
+has_import_export,true,
+use_network_calculations,false,
+areable_land,60192,World Factbook (land area * areable land %) (https://www.cia.gov/library/publications/the-world-factbook/geos/uk.html)
+coast_line,12429,World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/uk.html)
+land_available_for_solar,115741,
+number_of_inhabitants,63495303,Eurostat 2012; Population on 1 January (tps00001) database
+offshore_suitable_for_wind,372000,
+onshore_suitable_for_wind,56761,
+buildings_insulation_constant_1,0.73,Taken from analysis for NL
+buildings_insulation_constant_2,0.13,Taken from analysis for NL
+buildings_insulation_cost_constant,39402.4,Taken from analysis for NL
+insulation_level_buildings_max,3,Taken from analysis for NL
+insulation_level_buildings_min,0.6,
+insulation_level_new_houses_max,3,
+insulation_level_old_houses_max,3,
+new_houses_insulation_constant_1,1.85,
+new_houses_insulation_constant_2,0.05,
+new_houses_insulation_cost_constant,7071,
+number_of_buildings,979631.36393516,Estimated based on floor area from ENTRANZE and floor_area:number_of_buildings ratio in NL.
+number_of_residences,27135200,ECUK Table 3.08
+old_houses_insulation_constant_1,0.66,
+old_houses_insulation_constant_2,0.16,
+old_houses_insulation_cost_constant,5962.7,
+residences_roof_surface_available_for_pv,1584,
+buildings_roof_surface_available_for_pv,792,
+technical_lifetime_insulation,30,
+co2_emission_1990,566.4,1990 CO2 Emissions (energy related) in EU energy trends to 2030 (http://ec.europa.eu/clima/policies/package/docs/trends_to_2030_update_2009_en.pdf)
+co2_percentage_free,0.85,
+co2_price,0.00441,
+economic_multiplier,0,This attribute is not yet relevant for UK 2012 as the employment module is switched off
+employment_fraction_production,0,This attribute is not yet relevant for UK 2012 as the employment module is switched off
+employment_local_fraction,0,This attribute is not yet relevant for UK 2012 as the employment module is switched off
+man_hours_per_man_year,1800,
+buildings_insulation_employment_constant,0,This attribute is not yet relevant for UK 2012 as the employment module is switched off
+new_houses_insulation_employment_constant,0,This attribute is not yet relevant for UK 2012 as the employment module is switched off
+old_houses_insulation_employment_constant,0,This attribute is not yet relevant for UK 2012 as the employment module is switched off
+annual_infrastructure_cost_electricity,0,This attribute is not yet relevant for UK 2012 as the network module is switched off
+annual_infrastructure_cost_gas,0,This attribute is not yet relevant for UK 2012 as the network module is switched off
+capacity_buffer_decentral_in_mj_s,0,This attribute is not yet relevant for UK 2012 as the network module is switched off
+capacity_buffer_in_mj_s,0,This attribute is not yet relevant for UK 2012 as the network module is switched off
+export_electricity_primary_demand_factor,1,This attribute is not yet relevant for UK 2012 as the network module is switched off
+import_electricity_primary_demand_factor,1.82,This attribute is not yet relevant for UK 2012 as the network module is switched off
+investment_hv_net_low,0,This attribute is not yet relevant for UK 2012 as the network module is switched off
+investment_hv_net_high,0,This attribute is not yet relevant for UK 2012 as the network module is switched off
+investment_hv_net_per_turbine,0,This attribute is not yet relevant for UK 2012 as the network module is switched off
+capacity_credit_wind_constant_p1,1115,
+capacity_credit_wind_constant_p2,41870,
+capacity_credit_wind_constant_q1,3358,

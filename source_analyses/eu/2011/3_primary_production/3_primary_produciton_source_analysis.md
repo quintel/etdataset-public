@@ -1,6 +1,6 @@
 # 3. Primary production
 
-## Time curves for Coal, Lignite, Natural gas, Crude oil, Uranium oxide and Bio-residues
+## Time curves for Coal, Lignite, Natural gas, Crude oil, Uranium oxide and Woody biomass
 
 Tine curves are forecasted (extrapolated from historic data) in the Python script [projecting_timecurves_2000_2050](projecting_timecurves_2000_2050) (use, for example, Enthought Canopy to run/edit the script).
 

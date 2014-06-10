@@ -66,6 +66,6 @@ import_electricity_primary_demand_factor,1.85,assumed the same value as for nl/2
 investment_hv_net_low,0.2,
 investment_hv_net_high,0.25,
 investment_hv_net_per_turbine,1.2,
-capacity_credit_wind_constant_p1,1115,number taken from thesis by E.J.D. Wilson; see https://www.dropbox.com/s/51zq43y5pdw0pfj/Thesis_E.J.D._Wilton_v2.3.pdf
-capacity_credit_wind_constant_p2,41870,number taken from thesis by E.J.D. Wilson; see https://www.dropbox.com/s/51zq43y5pdw0pfj/Thesis_E.J.D._Wilton_v2.3.pdf
-capacity_credit_wind_constant_q1,3358,number taken from thesis by E.J.D. Wilson; see https://www.dropbox.com/s/51zq43y5pdw0pfj/Thesis_E.J.D._Wilton_v2.3.pdf
+capacity_credit_wind_constant_p1,1115,number taken from thesis by E.J.D. wilton; see http://refman.et-model.com/publications/1847
+capacity_credit_wind_constant_p2,41870,number taken from thesis by E.J.D. wilton; see http://refman.et-model.com/publications/1847
+capacity_credit_wind_constant_q1,3358,number taken from thesis by E.J.D. wilton; see http://refman.et-model.com/publications/1847

@@ -1,0 +1,59 @@
+Key,Value,Source
+country,uk,
+base_year,2012,
+residences_final_demand_space_heating,1185122.63735796,based on ECUK data; see 6_residences_source_analysis for details
+residences_final_demand_hot_water,298115.70211396,based on ECUK data; see 6_residences_source_analysis for details
+residences_final_demand_cooling,0,based on Odyssee data; see 6_residences_source_analysis for details
+residences_final_demand_lighting,49444.6462293639,based on ECUK data; see 6_residences_source_analysis for details
+residences_final_demand_cooking,58012.4119343738,based on ECUK data; see 6_residences_source_analysis for details
+residences_final_demand_appliances,216034.406364345,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_space_heating_combi_boiiler,0.781304171,NL 2011 value
+residences_percentage_space_heating_solar_thermal,0.002815829,NL 2011 value
+residences_percentage_space_heating_heat_pump_ground,0.0008,NL 2011 value
+residences_percentage_space_heating_micro_chp,0,NL 2011 value
+residences_percentage_space_heating_district,0.04,NL 2011 value
+residences_percentage_space_heating_heat_pump_air,0,NL 2011 value
+residences_percentage_space_heating_woodpellets,0.042,NL 2011 value
+residences_percentage_space_heating_electric_resistance,0.0176,NL 2011 value
+residences_percentage_space_heating_gas_burner,0.1035,NL 2011 value
+residences_percentage_space_heating_oil_burner,0.011,NL 2011 value
+residences_percentage_space_heating_coal_burner,0.00058,NL 2011 value
+residences_percentage_space_heating_heat_pump_add_on,0.0004,NL 2011 value
+residences_percentage_hot_water_combi_boiiler,0.756,NL 2011 value
+residences_percentage_hot_water_solar_thermal,0.0031,NL 2011 value
+residences_percentage_hot_water_heat_pump_ground,0,NL 2011 value
+residences_percentage_hot_water_micro_chp,0,NL 2011 value
+residences_percentage_hot_water_district,0.0271,NL 2011 value
+residences_percentage_hot_water_heat_pump_air,0,NL 2011 value
+residences_percentage_hot_water_woodpellets,0,NL 2011 value
+residences_percentage_hot_water_electric_resistance,0.0807,NL 2011 value
+residences_percentage_hot_water_gas_burner,0.1331,NL 2011 value
+residences_percentage_hot_water_oil_burner,0,NL 2011 value
+residences_percentage_hot_water_coal_burner,0,NL 2011 value
+residences_percentage_hot_water_fuel_cell,0,NL 2011 value
+residences_percentage_cooling_heat_pump_ground,0,NL 2011 value
+residences_percentage_cooling_heat_pump_air,0,NL 2011 value
+residences_percentage_cooling_aircondition,1,NL 2011 value
+residences_percentage_lighting_incandescent,0.244861625760417,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_lighting_efficient_fluorescent,0.726374419027293,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_lighting_led,0.0287639552122893,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_cooking_gas,0.322858442288773,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_cooking_electric_resistance,0.195858019164513,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_cooking_electric_halogen,0.199151809053813,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_cooking_electric_induction,0.282131729492901,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_cooking_biomass,0,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_appliances_dishwasher,0.0496311964691259,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_appliances_fridge_freezer,0.201828924406006,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_appliances_washing_machine,0.086068140535642,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_appliances_dryer,0.0881599216902925,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_appliances_television,0.128772811143502,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_appliances_computer_media,0.204981729350459,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_appliances_vacuum_cleaner,0,based on ECUK data; see 6_residences_source_analysis for details
+residences_percentage_appliances_others,0.240557276404973,based on ECUK data; see 6_residences_source_analysis for details
+residences_space_heating_share_coming_from_solar_thermal,0.15,NL 2011 value
+residences_hot_water_share_coming_from_solar_thermal,0.5,NL 2011 value
+residences_space_heating_share_coming_from_el_add_on,0.6,NL 2011 value
+residences_percentage_old_residences,0.777,NL 2011 value
+residences_percentage_new_residences,0.223,NL 2011 value
+insulation_level_old_houses_min,0.5,This number depends on the insulation analysis; see https://github.com/quintel/documentation/blob/master/general/insulation.md
+insulation_level_new_houses_min,1.8,This number depends on the insulation analysis; see https://github.com/quintel/documentation/blob/master/general/insulation.md
