@@ -25,7 +25,7 @@ has_import_export,true,
 use_network_calculations,false,
 areable_land,1077303,World Factbook (area * areable land %) (https://www.cia.gov/library/publications/the-world-factbook/geos/ee.html)
 coast_line,65992.9,World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/ee.html)
-land_available_for_solar,2446812.299,Scaled up NL value. Proporional increase according to total land surface. 
+land_available_for_solar,1077303,
 number_of_inhabitants,500700753,Eurostat 2011; Population on 1 January (demo_gind) database
 offshore_suitable_for_wind,176767.7,http://www.eea.europa.eu/publications/europes-onshore-and-offshore-wind-energy-potential
 onshore_suitable_for_wind,1529412,http://www.eea.europa.eu/publications/europes-onshore-and-offshore-wind-energy-potential
@@ -47,9 +47,9 @@ old_houses_insulation_cost_constant,5962.7,NL dataset
 residences_roof_surface_available_for_pv,7641.40624591927,Scaled number. Based on the NL ratio for solar roof surface / number or residences. 
 buildings_roof_surface_available_for_pv,3819.32438513037,Scaled number. Based on the NL ratio of solar PV on houses/buildings
 technical_lifetime_insulation,30,NL dataset
-co2_emission_1990,4176.37135031,IPCC CRF report for EU 27. Sum of sectors 1A + 2.2.C + 6.6.C
+co2_emission_1990,4030.6,1990 CO2 Emissions (energy related) in EU energy trends to 2030 (http://ec.europa.eu/clima/policies/package/docs/trends_to_2030_update_2009_en.pdf)
 co2_percentage_free,0.85,NL dataset
-co2_price,0.00441,NL dataset
+co2_price,0.00593,NL dataset
 economic_multiplier,1,Not relevant without employment module
 employment_fraction_production,0.5,Not relevant without employment module
 employment_local_fraction,0.2,Not relevant without employment module

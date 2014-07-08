@@ -1,9 +1,9 @@
 Key,Value,Source
 country,pl,
 base_year,2012,
-primary_bio_oil,0,Based on DE dataset
-primary_wood,0,Based on DE dataset
-max_biogenic_wasate,50000,Estimate
-max_non_biogenic_waste,50000,Estimate
-percentage_wood_pellets,0.75,Based on DE dataset
-percentage_torrified_biomass_pellets,0.25,Based on DE dataset
+primary_bio_oil,0,
+primary_wood,44365,Estimate based on Eurostat data; see source analysis
+max_biogenic_wasate,107000,Estimate based on Eurostat data; see source analysis
+max_non_biogenic_waste,107000,Estimate based on Eurostat data; see source analysis
+percentage_wood_pellets,0.75,Assumption
+percentage_torrified_biomass_pellets,0.25,Assumption

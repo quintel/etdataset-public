@@ -5,10 +5,12 @@ The dashboard assumptions for the first attempt were obtained from the DE 2011 d
 
 The following changes were made:
 
-- Areable land, coast line, land available for solar, number of inhabitants, offshore suitable for wind, onshore suitable for wind, number of residences, residences roof surface available for pv, co2 emissions 1990 were obtained from various sources. They are all rough estimates based on outdated data.
+- Areable land, coast line, land available for solar, number of inhabitants, offshore suitable for wind, onshore suitable for wind, number of buildings, number of residences, residences roof surface available for pv, buildings roof surface available for pv, co2 emissions 1990 were obtained from various sources.
 
 
-Issues:
+## Debts
 
-- Extensive research is required.
+- More research and validation is required.
+- Onshore and offshore wind potential requires more research.
+- Capacity credit parameters need to be updated.
 

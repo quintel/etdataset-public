@@ -2,8 +2,8 @@ Key,Value,Source
 country,uk,
 base_year,2012,
 primary_bio_oil,0,
-primary_wood,0,
-max_biogenic_wasate,20000,
-max_non_biogenic_waste,20000,
-percentage_wood_pellets,0.5,
-percentage_torrified_biomass_pellets,0.5,
+primary_wood,11718,Estimate based on Eurostat data; see source analysis
+max_biogenic_wasate,140483,Estimate based on Eurostat data; see source analysis
+max_non_biogenic_waste,138451,Estimate based on Eurostat data; see source analysis
+percentage_wood_pellets,0.5,Assumption
+percentage_torrified_biomass_pellets,0.5,Assumption

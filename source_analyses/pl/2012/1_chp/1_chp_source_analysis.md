@@ -2,8 +2,19 @@
 
 The dashboard assumptions for the first attempt were obtained from the DE 2011 dataset.
 
+The energy balance and the Platts data for Poland do not match. Were the Platts database reports a substantial amount of main activity power plants (30,308 MW), the IEA energy balance only reports electricity by main activity CHPs. Therefore, only the installed capacity per commodity is matched fro Poland. 
 
-The following changes were made:
+See [pl_2012_installed_capacities.xlsm](../2_power_and_heat_plant/pl_2012_installed_capacities.xlsm).
+
+| Commodity | Power plant capacity | CHP capacity | Total capacity |
+| :-------- | -------------------: | -----------: | -------------: |
+| Coal      |               26,105 |        5,598 |         31,703 |
+| Gas       |                   15 |          765 |            780 |
+| Oil       |                  400 |         n.a. |            400 |
+| Waste     |                 n.a. |            9 |              9 |
+| Hydro     |                1,785 |         n.a. |          1,795 |
+| Wind      |                1,750 |         n.a. |          1,750 |
+
 
 - The fuel allocation method is set to IEA. Research is required on the method that is used in Poland.
 - According to GUS (2013) the fuel input in "public thermal plants for electricity generation" is 1,318,295.0 TJ; used to produce 527,326.6 TJ electricity. The fuel input in "public thermal plants for heat generation" is 206,084.7 TJ; used to produce 182,833.6 TJ heat.
@@ -11,7 +22,7 @@ The following changes were made:
 - The total input in both the public and autoproducer plants is 1,612,963 TJ. The produced heat is 207,430 TJ.
 
 
-The following assumptions are made for autoproduction CHPs:
+## Autoproduction CHPs
 
 - (Agriculture) There are only biogas CHPs in agriculture. All shares are set to 100% by default.
 - (Households) There are no CHPs in the households sector. All shares are set to 100% by default.
@@ -20,28 +31,18 @@ The following assumptions are made for autoproduction CHPs:
 - (Industry) Unsold heat production is reduced to 20% to reduce the error in modelled sold heat production.
 
 
-Potential sources:
+## Main activity CHPs
 
-- GUS (2013) Energy Statistics 2011-2012
-  * Electricity and heat generation in public thermal plants (p. 76-78)
-  * Electricity and heat generation in autoproducing thermal plants (p. 78-79)
-  * Heat output vs sector and input for autoproducing CHP plants (p. 232)
+The installed capacity based on the default full load hours (FLH) is already in line with the total installed capacities per commodity. The FLH are slightly optimized to match the installed coal capacity. The installed gas capacity exceeds the installed capacity reported by Platts (ETM: 2042 MW, Platts: 780 MW). This deviation cannot be corrected using the FLH.
 
 
-Issues:
+## Debts
 
-- CHPs are very important in Poland, but also very different (1) compared to other countries. It requires therefore a lot of attention. Currently, there are large % diffrences in the results by fuel. 
-- (Autoproducer CHPs) In general, the calculated fuel input for electricity and sold heat production is lower than the reported fuel input. This might be caused by the generally lower overall efficiencies (1).
-- (Energy Industry) Percentage of CHP electricity production of gas vs. coal need to be researched.
-- (Energy Industry) Shares of gas CHPs need to be researched.
-- (Industry) Shares of gas CHPs need to be researched.
+- (Autoproducer CHPs) In general, the calculated fuel input for electricity and sold heat production is lower than the reported fuel input. This might be caused by the generally lower overall efficiencies [(1)](#notes).
 - (Main activity CHPs) The calculated fuel input for electricity and sold heat production is lower than the reported fuel input. Furthermore, the calculated sold heat production is higher than the reported sold heat production. Especially for lignite the calculated sold heat production is to high.
-- (FLH) Full load hours need to be researched based on installed capacities.
-
-- [SOLVED] (Agriculture) In the agriculture sector the electricity production from biogas (571 TJ, 227%) exceeds the total electricity producting (251 TJ). As a consequence, the electricity production from woodpellets is negative (-320 TJ, -127%). The biogas that is cannot be accounted to agriculture CHPs might be transfered to another sector (still use as CHP) or need to be accounted as greengas (final demand).
-- [SOLVED] (Services) In the services sector the electricity production from biogas (3802 TJ TJ, 197%) exceeds the total electricity producting (1934 TJ). As a consequence, the electricity production from woodpellets is negative (-1868 TJ, -97%). Solution idem to agricultural sector.
+- (Main activity CHPs) The installed capacity of gas CHPs exceeds the installed capacity according to Platts (ETM: 2042 MW, Platts: 780 MW).
 
 
-Notes:
+## Notes
 
 (1) According to http://www.eea.europa.eu/data-and-maps/indicators/combined-heat-and-power-chp-1/combined-heat-and-power-chp-2 there is a large difference between de reported and calculated fuel input of CHPs in Poland. "However, fuel input to CHP plants presents a problem from the statistical reporting.  Whereas CHP electricity generation and CHP heat production provide the CHP output, which are in line with the philosophy of the CHP Directive (2004/8/EC). This requires that a CHP plant’s output is divided into that which is part of the CHP process and that which is not. For the fuel input to CHP this appears not to be the case for all Member States.  The CHP Directive sets a minimum threshold of 75% overall efficiency for the CHP process (lower heating value LHV).  However, for a number of Member States the overall efficiency is very low, for example Slovakia 15.8%, Greece 16.8%, Poland 23.4%, Slovenia 23.1% and Italy 30.8%.")

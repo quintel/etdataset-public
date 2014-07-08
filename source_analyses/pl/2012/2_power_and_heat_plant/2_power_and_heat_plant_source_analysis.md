@@ -2,31 +2,64 @@
 
 The dashboard assumption for the first attempt were obtained from the DE 2011 dataset.
 
-The following changes are made:
-- Percentage wind turbines offshore is set to 0% because there is no offshore wind yet. According http://www.thewindpower.net/country_maps_en_27_poland.php all wind farms are still 'planned'.
-- Shares of coastal and inland turbines are optimized to match installed capacity. According http://www.thewindpower.net/country_en_27_poland.php the installed capacity was 2,497 by the end of 2012.
+The energy balance and the Platts data for Poland to not match. Were the Platts database reports a substantial amount of main activity power plants (30,308 MW), the IEA energy balance only reports electricity by main activity CHPs. Therefore, only the total installed capacities per commodity are matched for Poland.
+
+See [pl_2012_installed_capacities.xlsm](../2_power_and_heat_plant/pl_2012_installed_capacities.xlsm).
+
+| Commodity | Power plant capacity | CHP capacity | Total capacity |
+| :-------- | -------------------: | -----------: | -------------: |
+| Coal      |               26,105 |        5,598 |         31,703 |
+| Gas       |                   15 |          765 |            780 |
+| Oil       |                  400 |         n.a. |            400 |
+| Waste     |                 n.a. |            9 |              9 |
+| Hydro     |                1,785 |         n.a. |          1,795 |
+| Wind      |                1,750 |         n.a. |          1,750 |
 
 
-Potential sources:
+## Coal and lignite
 
-- PAIZ (-) Energy Sector in Poland
-  * Installed capacity: 37.4 GW
-  * Electricity generation in Poland by source (Figure 2): 88% coal, 3% gas, 3% biomass, 2% hydro, 2% wind and geothermal, 2% oil.
-  * Electricity from renewable sources (Table 4); generated energy by the end of September 2012: 124 MW biogas plants, 559 MW biomass plants, 1,251 MW PV plants, 2341 MW wind plants, 958 MW hydro plants
-  * Thermal energy 462.5 PJ, from which 343 PJ sold. Mainly produced from hard coal (79%). Installed capacity of licenced heat producers was 59.2 GW, from which 58.1 GW generating capacity.
-- GUS (2013) Energy Statistics 2011-2012
-  * Heat generation in heat-only boilers in public thermal plants, public heat plants and non-public heat plants (p. 81-83)
-  * Transformation in run-of-river hydro plants (p. 72), pumped-storage hydro plants (p. 72), wind plants (p. 84), biomass and wastes plants (p. 85), solar PV plants (p. 85)
-  * Heat output vs sector and input for autoproducing heat plants (p. 228)
+The IEA energy balance does not report any electricity from main activity coal power plants.
 
 
-Issues:
+## Gas
 
-- Assumptions for power plants are generally not relevant because the electricity production from most powerplants is zero.
-- Main activity heat plants are important in Poland and requires therefore more attention.
-- (Hydro) Production shares of hydro plants need to be researched
-- (Wind) Production shares of wind turbines need to be researched.
+The IEA energy balance does not report any electricity from main activity gas power plants.
+
+
+## Nuclear
+
+There is no nuclear power.
+
+
+## Hydro
+
+The share between hydro river and hydro mountain are estimated based on the installed capacities researched by Ecofys. The full load hours (FLH) are subsequently calculated using the installed capacities and the electricity production.
+
+| Technology | Installed capacity (MW) | Share | FLH (h) |
+| :--------- | ----------------------: | ----: | ------: |
+| River      |                      67 |  4.6% |   1,384 |
+| Mountain   |                     878 | 95.4% |   2,214 |
+
+See [hydro_source_analysis.xlsx](../../../eu/2012/2_power_and_heat_plant/hydro_source_analysis.xlsx).
+
+
+## Solar
+
+The IEA energy balance does not report any solar power. The FLH for solar technologies is calculated in the [solar_source_analysis.xlsx](../../../eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx).
+
+
+## Wind
+
+The share between onshore and offshore wind is calculated in [wind_source_analysis.xlsx](../../../eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx). he percentage wind turbines offshore is set to 0% because there is no offshore wind yet. According http://www.thewindpower.net/country_maps_en_27_poland.php all wind farms are still 'planned'. It is assumed that all onshore wind is inland.
+
+The FLH of inland wind turbines are optimized to match the installed capacity according to EWEA.
+
+
+## Oil products
+
+The IEA energy balance does not report any electricity from main activity oil power plants.
+
+
+## Debts
+
 - (Main activity heat plants) In general, the calculated fuel inputs for main activity heat plants are highter than the reported fuel inputs.
-- (FLH) Full load hours need to be researched based on installed capacities.
-
-- [SOLVED] There is no main activity electricity production reported on the energy balance, exept for hydro and wind. It seems that everything is covered by main activity CHP plants. Zero values result in #DIV/0 errors for the electricity production by coal plants in the analysis.

@@ -1,26 +1,26 @@
 Key,Value,Source
 country,es,
 base_year,2012,
-pp_share_coal_us,0.1,Optimized to match coal use
+pp_share_coal_us,0.05,Optimized to match coal use
 pp_share_coal_us_ccs,0,
-pp_share_coal_cc,0,
+pp_share_coal_cc,0.03,based on Platts data; see source_analyses/es/2012/2_power_and_heat_plant/es_2012_installed_capacity.xlsx
 pp_share_coal_cc_ccs,0,
 pp_share_lignite_us,1,
 pp_share_lignite_us_ccs,0,
-pp_share_gas_turbine,0,
-pp_share_gas_cc,0.7,Optimized to match gas use
+pp_share_gas_turbine,0.002,based on Platts data; see source_analyses/es/2012/2_power_and_heat_plant/es_2012_installed_capacity.xlsx
+pp_share_gas_cc,0.728,Optimized to match gas use
 pp_share_gas_cc_ccs,0,
 pp_share_gas_engine,0,
-pp_share_gas_us,0.3,Optimized to match gas use
+pp_share_gas_us,0.27,Optimized to match gas use
 pp_share_nuclear_2,0.7,Optimized to match nuclear fuel use
 pp_share_nuclear_3,0.3,
-pp_share_hydro_river,1,
-pp_share_hydro_mountain,0,
-pp_share_wind_coastal,0.025,
-pp_share_wind_offshore,0.05,
-pp_share_wind_inland,0.925,
+pp_share_hydro_river,0.067,Estimate based on Ecofys analysis
+pp_share_hydro_mountain,0.933,Estimate based on Ecofys analysis
+pp_share_wind_coastal,0,see source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
+pp_share_wind_offshore,0,see source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
+pp_share_wind_inland,1,see source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
 pp_flh_coal_us_co,5500,
-pp_flh_coal_supercritical,4300,
+pp_flh_coal_supercritical,4750,Optimized to meet coal installed capacity reported in Platts
 pp_flh_coal_us,5500,
 pp_flh_coal_us_ccs,6000,
 pp_flh_coal_cc,4600,
@@ -28,22 +28,22 @@ pp_flh_coal_cc_ccs,4500,
 pp_flh_lignite_us,5760,
 pp_flh_lignite_us_ccs,5972,
 pp_flh_gas_turbine,500,
-pp_flh_gas_cc,4900,
+pp_flh_gas_cc,1870,Optimized to meet gas installed capacity reported in Platts
 pp_flh_gas_cc_ccs,3500,
 pp_flh_gas_engine,1,
-pp_flh_gas_us,3750,
-pp_flh_nuclear_2,6314,
-pp_flh_nuclear_3,6314,
-pp_flh_hydro_river,3852,
-pp_flh_hydro_mountain,1718,
-pp_flh_solar_pv,955,
-pp_flh_residential_solar_pv,955,
-pp_flh_caps_solar_pv,955,
-pp_flh_solar_csp,955,
-pp_flh_wind_coastal,2400,
-pp_flh_wind_offshore,3800,ECN_Hekkenberg_201309_Toelichting inschatting korte-termijneffecten Energieakkoord op hernieuwbare energie.pdf (https://github.com/quintel/etdataset/issues/448)
-pp_flh_wind_inland,1700,
-pp_flh_oil_us,3504,
-pp_flh_diesel,3504,
-pp_flh_waste,3800,
+pp_flh_gas_us,1870,Optimized to meet gas installed capacity reported in Platts
+pp_flh_nuclear_2,7945,Optimized to meet nuclear installed capacity reported in Platts
+pp_flh_nuclear_3,7945,Optimized to meet nuclear installed capacity reported in Platts
+pp_flh_hydro_river,831,Optimized based on Ecofys analysis
+pp_flh_hydro_mountain,1329,Optimized based on Ecofys analysis
+pp_flh_solar_pv,1780,Optimized to meet the Solar fotovoltaica installed capacity reported in Energia en Espana (table 8.2)
+pp_flh_residential_solar_pv,1780,Optimized to meet the Solar fotovoltaica installed capacity reported in Energia en Espana (table 8.2)
+pp_flh_caps_solar_pv,1780,Optimized to meet the Solar fotovoltaica installed capacity reported in Energia en Espana (table 8.2)
+pp_flh_solar_csp,1888,Optimized to meet the Solar termoele_ctrica installed capacity reported in Energia en Espana (table 8.2)
+pp_flh_wind_coastal,2500,based on http://www.energy.eu/publications/a07.pdf; map 3.2
+pp_flh_wind_offshore,3800,based on http://www.energy.eu/publications/a07.pdf; map 3.2
+pp_flh_wind_inland,2200,Optimized to meet nuclear installed capacity reported by EWEA
+pp_flh_oil_us,3200,Optimized to meet oil installed capacity reported in Platts
+pp_flh_diesel,3200,Optimized to meet oil installed capacity reported in Platts
+pp_flh_waste,4250,Optimized to meet waste installed capacity reported in Platts
 pp_flh_geothermal,8250,

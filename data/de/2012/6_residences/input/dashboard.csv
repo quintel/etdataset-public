@@ -1,0 +1,59 @@
+Key,Value,Source
+country,de,
+base_year,2012,
+residences_final_demand_space_heating,1608000,Estimated based on Odyssee 2011 data
+residences_final_demand_hot_water,375000,Estimated based on Odyssee 2011 data
+residences_final_demand_cooling,20000,Rough estimate
+residences_final_demand_lighting,46000,Estimated based on Odyssee 2011 data
+residences_final_demand_cooking,84000,Estimated based on Odyssee 2011 data
+residences_final_demand_appliances,270000,Estimated based on Odyssee 2011 data
+residences_percentage_space_heating_combi_boiiler,0.136585365853659,Based on Ecofys data; see source analysis; subsequently optimized to match checks
+residences_percentage_space_heating_solar_thermal,0.0131707317073171,
+residences_percentage_space_heating_heat_pump_ground,0,
+residences_percentage_space_heating_micro_chp,0,
+residences_percentage_space_heating_district,0.0917073170731707,
+residences_percentage_space_heating_heat_pump_air,0,
+residences_percentage_space_heating_woodpellets,0.146341463414634,
+residences_percentage_space_heating_electric_resistance,0.0146341463414634,
+residences_percentage_space_heating_gas_burner,0.302439024390244,
+residences_percentage_space_heating_oil_burner,0.278048780487805,
+residences_percentage_space_heating_coal_burner,0.0170731707317073,
+residences_percentage_space_heating_heat_pump_add_on,0,
+residences_percentage_hot_water_combi_boiiler,0.12622278321237,Based on Ecofys data; see source analysis; subsequently optimized to match checks
+residences_percentage_hot_water_solar_thermal,0.0133585778899758,
+residences_percentage_hot_water_heat_pump_ground,0,
+residences_percentage_hot_water_micro_chp,0,
+residences_percentage_hot_water_district,0.0462816871778689,
+residences_percentage_hot_water_heat_pump_air,0.00262964131692437,
+residences_percentage_hot_water_woodpellets,0.0368149784369412,
+residences_percentage_hot_water_electric_resistance,0.241927001157042,
+residences_percentage_hot_water_gas_burner,0.320816240664773,
+residences_percentage_hot_water_oil_burner,0.20931944882718,
+residences_percentage_hot_water_coal_burner,0.00262964131692437,
+residences_percentage_hot_water_fuel_cell,0,
+residences_percentage_cooling_heat_pump_ground,0,No data available; assumed 100% airconditioning
+residences_percentage_cooling_heat_pump_air,0,No data available; assumed 100% airconditioning
+residences_percentage_cooling_aircondition,1,No data available; assumed 100% airconditioning
+residences_percentage_lighting_incandescent,0.8,
+residences_percentage_lighting_efficient_fluorescent,0.2,
+residences_percentage_lighting_led,0,
+residences_percentage_cooking_gas,0.106,
+residences_percentage_cooking_electric_resistance,0.349,
+residences_percentage_cooking_electric_halogen,0.175,
+residences_percentage_cooking_electric_induction,0.349,
+residences_percentage_cooking_biomass,0.021,
+residences_percentage_appliances_dishwasher,0.1,
+residences_percentage_appliances_fridge_freezer,0.28,
+residences_percentage_appliances_washing_machine,0.1,
+residences_percentage_appliances_dryer,0.1,
+residences_percentage_appliances_television,0.14,
+residences_percentage_appliances_computer_media,0.11,
+residences_percentage_appliances_vacuum_cleaner,0.1,
+residences_percentage_appliances_others,0.07,
+residences_space_heating_share_coming_from_solar_thermal,0.15,
+residences_hot_water_share_coming_from_solar_thermal,0.5,
+residences_space_heating_share_coming_from_el_add_on,0.6,
+residences_percentage_old_residences,0.86,Base on old DE research
+residences_percentage_new_residences,0.14,Base on old DE research
+insulation_level_old_houses_min,0.5,This number depends on the insulation analysis; see https://github.com/quintel/documentation/blob/master/general/insulation.md
+insulation_level_new_houses_min,1.8,This number depends on the insulation analysis; see https://github.com/quintel/documentation/blob/master/general/insulation.md

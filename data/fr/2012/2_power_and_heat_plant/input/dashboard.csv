@@ -2,48 +2,48 @@ Key,Value,Source
 country,fr,
 base_year,2012,
 pp_share_coal_us,0.05,Optimized to match coal use
-pp_share_coal_us_ccs,0,
-pp_share_coal_cc,0.05,Optimized to match coal use
-pp_share_coal_cc_ccs,0,
-pp_share_lignite_us,1,
-pp_share_lignite_us_ccs,0,
-pp_share_gas_turbine,0.15,Optimized to match gas use
-pp_share_gas_cc,0.4,Optimized to match gas use
-pp_share_gas_cc_ccs,0,
-pp_share_gas_engine,0.05,Optimized to match gas use
-pp_share_gas_us,0.4,Optimized to match gas use
-pp_share_nuclear_2,0.4,Optimized to match nuclear fuel input
-pp_share_nuclear_3,0.6,Optimized to match nuclear fuel input
-pp_share_hydro_river,1,
-pp_share_hydro_mountain,0,
-pp_share_wind_coastal,0.134,
-pp_share_wind_offshore,0.162,
-pp_share_wind_inland,0.704,
-pp_flh_coal_us_co,7700,
-pp_flh_coal_supercritical,6800,
-pp_flh_coal_us,7700,
-pp_flh_coal_us_ccs,6000,
-pp_flh_coal_cc,4600,
-pp_flh_coal_cc_ccs,4500,
-pp_flh_lignite_us,6329,
-pp_flh_lignite_us_ccs,5972,
-pp_flh_gas_turbine,500,
-pp_flh_gas_cc,4200,
-pp_flh_gas_cc_ccs,3500,
-pp_flh_gas_engine,1,
-pp_flh_gas_us,700,
-pp_flh_nuclear_2,5256,
-pp_flh_nuclear_3,7843,
-pp_flh_hydro_river,2500,
-pp_flh_hydro_mountain,3942,
-pp_flh_solar_pv,872,
-pp_flh_residential_solar_pv,872,
-pp_flh_caps_solar_pv,872,
-pp_flh_solar_csp,500,
-pp_flh_wind_coastal,3000,
+pp_share_coal_us_ccs,0,No CCS yet
+pp_share_coal_cc,0.062,Estimate based on Platts
+pp_share_coal_cc_ccs,0,Optimized to match coal use
+pp_share_lignite_us,1,Not relevant
+pp_share_lignite_us_ccs,0,Not relevant
+pp_share_gas_turbine,0.2,Optimized to match natural gas use
+pp_share_gas_cc,0.45,Optimized to match natural gas use
+pp_share_gas_cc_ccs,0,No CCS yet
+pp_share_gas_engine,0,No gas engine
+pp_share_gas_us,0.35,Optimized to match natural gas use
+pp_share_nuclear_2,1,
+pp_share_nuclear_3,0,There are no 3rd generation plants in operation yet.
+pp_share_hydro_river,0.212,Estimate based on Ecofys analysis
+pp_share_hydro_mountain,0.788,Estimate based on Ecofys analysis
+pp_share_wind_coastal,0,See source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
+pp_share_wind_offshore,0,See source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
+pp_share_wind_inland,1,See source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
+pp_flh_coal_us_co,3000,Optimized to reflect installed capacity according to Platts
+pp_flh_coal_supercritical,3000,Optimized to reflect installed capacity according to Platts
+pp_flh_coal_us,3000,Optimized to reflect installed capacity according to Platts
+pp_flh_coal_us_ccs,3000,Optimized to reflect installed capacity according to Platts
+pp_flh_coal_cc,3000,Optimized to reflect installed capacity according to Platts
+pp_flh_coal_cc_ccs,3000,Optimized to reflect installed capacity according to Platts
+pp_flh_lignite_us,6329,Not relevant
+pp_flh_lignite_us_ccs,5972,Not relevant
+pp_flh_gas_turbine,1200,Optimized to reflect installed capacity according to Platts
+pp_flh_gas_cc,2500,Optimized to reflect installed capacity according to Platts
+pp_flh_gas_cc_ccs,2300,Not relevant
+pp_flh_gas_engine,700,Not relevant
+pp_flh_gas_us,2000,Optimized to reflect installed capacity according to Platts
+pp_flh_nuclear_2,6740,Optimized to reflect installed capacity according to RTE (2012) Bilan electrique 2012; p. 23
+pp_flh_nuclear_3,7843,There are no 3rd generation plants in operation yet.
+pp_flh_hydro_river,1756,Optimized based on Ecofys analysis
+pp_flh_hydro_mountain,2809,Optimized based on Ecofys analysis
+pp_flh_solar_pv,1072,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_residential_solar_pv,1072,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_caps_solar_pv,1072,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_solar_csp,1072,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_wind_coastal,2425,Optimized to reflect installed capacity according to RTE (2012) Bilan electrique 2012; p. 14 (load factor 24.0%)
 pp_flh_wind_offshore,3800,ECN_Hekkenberg_201309_Toelichting inschatting korte-termijneffecten Energieakkoord op hernieuwbare energie.pdf (https://github.com/quintel/etdataset/issues/448)
-pp_flh_wind_inland,2500,
-pp_flh_oil_us,3504,
-pp_flh_diesel,3504,
+pp_flh_wind_inland,1925,Optimized to reflect installed capacity according to RTE (2012) Bilan electrique 2012; p. 14 (load factor 24.0%)
+pp_flh_oil_us,380,Reduced to 380 h to match installed capacity according to Platts
+pp_flh_diesel,380,Reduced to 380 h to match installed capacity according to Platts
 pp_flh_waste,3800,
-pp_flh_geothermal,8250,
+pp_flh_geothermal,8250,Not relevant

@@ -20,33 +20,33 @@ chp_ei_unsold_gas_engine,0,Optimized
 chp_ei_unsold_gas_cc,0,Optimized
 chp_ei_unsold_coal,0,Optimized
 chp_ei_elec_prod_gas,0,No gas CHPs in energy industry
-chp_ei_elec_prod_gas_turbine,0.26,No gas CHPs in energy industry
-chp_ei_elec_prod_gas_engine,0.01,No gas CHPs in energy industry
-chp_ei_elec_prod_gas_cc,0.73,No gas CHPs in energy industry
+chp_ei_elec_prod_gas_turbine,0.019,Estimate based on Platts data
+chp_ei_elec_prod_gas_engine,0,No gas engine CHPs according to Platts
+chp_ei_elec_prod_gas_cc,0.981,Estimate based on Platts data
 chp_i_unsold_gas_turbine,0.05,Optimized
 chp_i_unsold_gas_engine,0.05,Optimized
 chp_i_unsold_gas_cc,0.05,Optimized
 chp_i_unsold_coal,0.25,Optimized
-chp_i_elec_prod_gas_turbine,0.32,Based on DE dataset
-chp_i_elec_prod_gas_engine,0.01,Based on DE dataset
-chp_i_elec_prod_gas_cc,0.67,Based on DE dataset
-chp_waste_removal_caps,0,
-chp_waste_removal_industry,1,
-chp_flh_agriculture_gas,3600,Based on DE dataset
-chp_flh_agriculture_biogas,8000,Based on DE dataset
-chp_flh_agriculture_wood_pellets,6000,Based on DE dataset
-chp_flh_residential_gas,4000,Based on DE dataset
-chp_flh_residential_biogas,8000,Based on DE dataset
-chp_flh_residential_wood_pellets,6000,Based on DE dataset
-chp_flh_caps_gas,4000,Based on DE dataset
-chp_flh_caps_biogas,8000,Based on DE dataset
-chp_flh_caps_wood_pellets,6000,Based on DE dataset
-chp_flh_iei_gas_turbine,6000,Based on DE dataset
-chp_flh_iei_gas_engine,6000,Based on DE dataset
-chp_flh_iei_gas_cc,6000,Based on DE dataset
-chp_flh_iei_coal,5000,Based on DE dataset
-chp_flh_ma_gas,4500,Based on DE dataset
-chp_flh_ma_coal,4000,Based on DE dataset
-chp_flh_ma_lignite,7000,Based on DE dataset
-chp_flh_ma_cofiring,4500,Based on DE dataset
-chp_flh_waste,6000,Based on DE dataset
+chp_i_elec_prod_gas_turbine,0.019,Estimate based on Platts data
+chp_i_elec_prod_gas_engine,0,No gas engine CHPs according to Platts
+chp_i_elec_prod_gas_cc,0.981,Estimate based on Platts data
+chp_waste_removal_caps,1,
+chp_waste_removal_industry,0,
+chp_flh_agriculture_gas,3600,
+chp_flh_agriculture_biogas,8000,
+chp_flh_agriculture_wood_pellets,6000,
+chp_flh_residential_gas,4000,
+chp_flh_residential_biogas,8000,
+chp_flh_residential_wood_pellets,6000,
+chp_flh_caps_gas,4000,
+chp_flh_caps_biogas,8000,
+chp_flh_caps_wood_pellets,6000,
+chp_flh_iei_gas_turbine,6000,
+chp_flh_iei_gas_engine,6000,
+chp_flh_iei_gas_cc,6000,
+chp_flh_iei_coal,5000,
+chp_flh_ma_gas,4500,
+chp_flh_ma_coal,4000,Optimized to match total installed coal capacity according to Platts
+chp_flh_ma_lignite,6000,Optimized to match total installed coal capacity according to Platts
+chp_flh_ma_cofiring,4000,Optimized to match total installed coal capacity according to Platts
+chp_flh_waste,6000,

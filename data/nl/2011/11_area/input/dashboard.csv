@@ -49,7 +49,7 @@ buildings_roof_surface_available_for_pv,133.33,See source analysis: '12_area_sou
 technical_lifetime_insulation,30,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
 co2_emission_1990,152.521357,201312_EEA_NL GHG emissions IPCC format 1990 & 2011.xlsx
 co2_percentage_free,0.85,
-co2_price,0.00441,http://www.energeia.nl/koers.php
+co2_price,0.00593,http://www.energeia.nl/koers.php
 economic_multiplier,1,
 employment_fraction_production,0.5,
 employment_local_fraction,0.2,

@@ -1,0 +1,9 @@
+Key,Value,Source
+country,nl,
+base_year,2012,
+primary_bio_oil,0,
+primary_wood,2551,Estimate based on Eurostat data; see soure analysis
+max_biogenic_wasate,37611,Estimate based on Eurostat data; see soure analysis
+max_non_biogenic_waste,29551,Estimate based on Eurostat data; see soure analysis
+percentage_wood_pellets,0.5,Assumption
+percentage_torrified_biomass_pellets,0.5,Assumption

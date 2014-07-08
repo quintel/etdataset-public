@@ -1,0 +1,71 @@
+Key,Value,Source / comment
+area,nl,
+id,1,
+parent_id,1,
+enabled.etengine,true,
+enabled.etmodel,true,
+analysis_year,2012,
+has_agriculture,true,
+has_buildings,true,
+has_climate,true,
+has_coastline,true,
+has_cold_network,false,
+has_electricity_storage,true,
+has_employment,true,
+has_fce,true,
+has_industry,true,
+has_lignite,false,
+has_merit_order,true,
+has_metal,true,
+has_mountains,false,
+has_old_technologies,true,
+has_other,true,
+has_solar_csp,false,
+has_import_export,true,
+use_network_calculations,true,
+areable_land,18417,CBS tabel "Landbouw; gewassen; dieren en grondgebruik naar regio". Zie 20140610_CBS_Landbouw.xlsx
+coast_line,451,The World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/nl.html)
+land_available_for_solar,18417,Assumed to be equal to arable land.
+number_of_inhabitants,16730348,Eurostat 2012; Population on 1 January (demo_grind) database
+offshore_suitable_for_wind,16000,Optimistic estimate Quintel
+onshore_suitable_for_wind,11379,Optimistic estimate Quintel
+buildings_insulation_constant_1,0.73,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+buildings_insulation_constant_2,0.13,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+buildings_insulation_cost_constant,39402.4,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+insulation_level_buildings_max,3,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+insulation_level_buildings_min,0.6,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+insulation_level_new_houses_max,3,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+insulation_level_old_houses_max,3,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+new_houses_insulation_constant_1,1.85,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+new_houses_insulation_constant_2,0.05,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+new_houses_insulation_cost_constant,7071,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+number_of_buildings,392358,20130827_services_source_analysis_NL 2011.xlsx and http://refman.et-model.com/publications/1821
+number_of_residences,7386743,CBS: http://statline.cbs.nl/StatWeb/publication/?DM=SLNL&PA=81955NED&D1=a&D2=1&D3=0&D4=16&HDR=G3;G1&STB=G2;T&VW=T
+old_houses_insulation_constant_1,0.66,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+old_houses_insulation_constant_2,0.16,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+old_houses_insulation_cost_constant,5962.7,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+residences_roof_surface_available_for_pv,266.667,See source analysis: '12_area_source_analysis.md'
+buildings_roof_surface_available_for_pv,133.33,See source analysis: '12_area_source_analysis.md'
+technical_lifetime_insulation,30,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+co2_emission_1990,152.1,1990 CO2 Emissions (energy related) in EU energy trends to 2030 (http://ec.europa.eu/clima/policies/package/docs/trends_to_2030_update_2009_en.pdf)
+co2_percentage_free,0.85,NL 2011 value
+co2_price,0.00593,http://www.energeia.nl/koers.php
+economic_multiplier,1,NL 2011 value
+employment_fraction_production,0.5,NL 2011 value
+employment_local_fraction,0.2,NL 2011 value
+man_hours_per_man_year,1800,NL 2011 value
+buildings_insulation_employment_constant,0.0093,NL 2011 value
+new_houses_insulation_employment_constant,0.014,NL 2011 value
+old_houses_insulation_employment_constant,0.014,NL 2011 value
+annual_infrastructure_cost_electricity,1810,NL 2011 value
+annual_infrastructure_cost_gas,1452,NL 2011 value
+capacity_buffer_decentral_in_mj_s,20000,NL 2011 value
+capacity_buffer_in_mj_s,1600,NL 2011 value
+export_electricity_primary_demand_factor,1,NL 2011 value
+import_electricity_primary_demand_factor,1.82,NL 2011 value
+investment_hv_net_low,0.2,NL 2011 value
+investment_hv_net_high,0.25,NL 2011 value
+investment_hv_net_per_turbine,1.2,NL 2011 value
+capacity_credit_wind_constant_p1,1115,number taken from thesis by E.J.D. wilton; see http://refman.et-model.com/publications/1847
+capacity_credit_wind_constant_p2,41870,number taken from thesis by E.J.D. wilton; see http://refman.et-model.com/publications/1847
+capacity_credit_wind_constant_q1,3358,number taken from thesis by E.J.D. wilton; see http://refman.et-model.com/publications/1847

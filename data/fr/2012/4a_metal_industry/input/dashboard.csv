@@ -9,7 +9,7 @@ metal_steel_share_electric,0.391,World Steel Association
 metal_steel_burner_share_coal,0,
 metal_steel_burner_share_coal_gas,0.725,Optimized to reduce unmodelled final demand of coal gas
 metal_steel_burner_share_network_gas,0.275,Optimized to reduce unmodelled final demand of coal gas
-metal_aluminium_production,0.375,http://en.wikipedia.org/wiki/List_of_countries_by_aluminium_production
+metal_aluminium_production,0.349,Wikipedia
 metal_aluminium_share_electrolysis_current,0.8,Based on NL dataset
 metal_aluminium_share_electrolysis_bat,0,
 metal_aluminium_share_melting_oven,0.2,Based on NL dataset

@@ -1,8 +1,24 @@
 # 8. Transport analysis
 
-There are only four inputs to make into the transport analysis dashboard:
 
-1. Trucks do not drive on gasoline
-* Diesel consumption by cars vs trucks: This share is taken from the NL dataset (56% of diesel used in cars and trucks is consumed in cars, 44% in trucks). Research is required for the EU.
-* Trucks do not drive on electricity.
-* Trucks do not drive on compressed gas.
+## Gasoline
+
+- The share of gasoline mix delivered to cars is set to 94%. This value is based on Odyssee 2011 data.
+
+
+## Diesel
+
+- The share of diesel mix deliverd to cars is set to 41%. This value is based on Odysee 2011 data.
+
+
+## Electricity
+
+- The share of electricity delivered to cars is set to 100% becasue trucks hardly drive on electricity.
+
+
+## Compressed network gas
+
+- The share of compressed network gas delivered to cars is set to 100% becasue trucks hardly drive on compressed network gas.
+
+
+See [transport_source_analysix.xlsx](../../eu/2012/8_transport/transport_source_analysis.xlsx).

@@ -2,13 +2,12 @@
   Comment: a confidential version of this source analysis is stored with the IEA data tables of the EU. That confidential version contains actual numbers, which cannot be published, but make the documentation more transparent.
 -->
 
-
 # 0. Preparation of IEA data
 
 IEA data tables are obtained via [http://data.iea.org/ieastore/default.asp](http://data.iea.org/ieastore/default.asp). All IEA data used for the EU27 dataset addresses the year 2011.
 
 
-## EU-27 Energy balance
+## Energy balance
 
 On the IEA website, click on `Access Services` and log in. Go to:
 
@@ -51,11 +50,11 @@ This factor is required when manipulating solar PV production in the autoproduce
 
 Since there was no research data available on how much solar PV is installed in each sector (or how much solar energy is produced per sector), the following is assumed:
 
-| Sector     |  ratio of solar PV electricity production |
-|:-----------|:-----------------------------------------:|
-| Residences |  40%                                      |
-| Services   |  30%                                      |
-| Main activity | 30%                                    |
+| Sector        | Electricity production |
+| :------------ | :--------------------- |
+| Residences    | 40%                    |
+| Services      | 30%                    |
+| Main activity | 30%                    |
 
 Based on this assumption, the following changes are made to the IEA energy balance
 
@@ -65,7 +64,7 @@ Based on this assumption, the following changes are made to the IEA energy balan
 The relevant 'total' cells to the right are adjusted accordingly. The manipulation of the autoproducer table is described below.
 
 
-## EU-27 autoproducer table
+## Autoproducer table
 
 Unfortunately, IEA does not provide a single autoproducer table that addresses all 27 EU countries. Therefore, we had to construct an EU27 autoproducer table based on other IEA data tables.
 To track the countries that are excluded and included, please also refer to the Excel file [list_of_EU_countries.xlsx](list_of_EU_countries.xlsx).
@@ -110,10 +109,10 @@ Let us call the new "solar PV" in "Electricity output (GWh)-autoproducer electri
 "Total" and "subtotal" cells in the autoproducer table are adjusted accordingly.
 
 
-## Shortcomings
+## Debts
 
-There is a lack of research data, telling us how much solar PV capacity is placed in households, services and main activity. The shift of solar PV can be improved if better sources become available.
+- There is a lack of research data, telling us how much solar PV capacity is placed in households, services and main activity. The shift of solar PV can be improved if better sources become available.
 
-It is not known if the autoproducer table is accurate. From our experience with the German dataset, we got the impression that IEA does not report autoproducer production with high accuracy (it may well be that countries do not report autoproduction). It seems that some autoproducer energy flows are reported as main activity in IEA statistics (prime example: solar PV).
+- It is not known if the autoproducer table is accurate. From our experience with the German dataset, we got the impression that IEA does not report autoproducer production with high accuracy (it may well be that countries do not report autoproduction). It seems that some autoproducer energy flows are reported as main activity in IEA statistics (prime example: solar PV).
 
 

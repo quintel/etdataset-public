@@ -15,17 +15,17 @@ has_employment,false,
 has_fce,false,
 has_industry,true,
 has_lignite,true,
-has_merit_order,false,
+has_merit_order,true,
 has_metal,true,
 has_mountains,true,
 has_old_technologies,true,
 has_other,true,
-has_solar_csp,true,
+has_solar_csp,false,
 has_import_export,true,
 use_network_calculations,false,
 areable_land,107980,The World Factbook (land area * areable land %) (https://www.cia.gov/library/publications/the-world-factbook/geos/pl.html)
 coast_line,440,The World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/pl.html)
-land_available_for_solar,118300,Old PL dataset
+land_available_for_solar,107980,Assumed to be equal to areable land
 number_of_inhabitants,38533000,Central Statistical Office of Poland (http://stat.gov.pl/)
 offshore_suitable_for_wind,8220,Old PL dataset
 onshore_suitable_for_wind,27240.47,Old PL dataset
@@ -44,12 +44,12 @@ number_of_residences,13560500,GUS (2014) Energy Consumption in Households in 201
 old_houses_insulation_constant_1,0.66,
 old_houses_insulation_constant_2,0.16,
 old_houses_insulation_cost_constant,5962.7,
-residences_roof_surface_available_for_pv,1410,Old PL dataset
-buildings_roof_surface_available_for_pv,1000,
+residences_roof_surface_available_for_pv,500,Rough estimate. Proportional to NL 2011 residences roof surface / # residences.
+buildings_roof_surface_available_for_pv,175,Rough estimate. Proportional to NL 2011 buildings roof surface / # buildings.
 technical_lifetime_insulation,30,
 co2_emission_1990,332.3,1990 CO2 Emissions (energy related) in EU energy trends to 2030 (http://ec.europa.eu/clima/policies/package/docs/trends_to_2030_update_2009_en.pdf)
 co2_percentage_free,0.85,
-co2_price,0.00441,
+co2_price,0.00593,
 economic_multiplier,1,
 employment_fraction_production,0.5,
 employment_local_fraction,0.2,

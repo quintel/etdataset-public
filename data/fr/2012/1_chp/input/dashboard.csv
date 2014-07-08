@@ -6,38 +6,38 @@ chp_allocation_iea,1,
 chp_allocation_decc,0,
 chp_total_heat_produciton,197435,Estimate based on source analysis
 chp_total_fuel_input,370260,Estimate based on source analysis
-chp_agriculture_unsold_gas,1,
-chp_agriculture_unsold_wood_pellets,1,
+chp_agriculture_unsold_gas,1,No sold heat in agriculture
+chp_agriculture_unsold_wood_pellets,1,No sold heat in agriculture
 chp_agriculture_elec_prod_gas,1,
 chp_residential_unsold_gas,1,No CHPs in households
 chp_residential_unsold_wood_pellets,1,No CHPs in households
 chp_residential_elec_prod_gas,1,No CHPs in households
-chp_caps_unsold_gas,0,
-chp_caps_unsold_wood_pellets,0,
+chp_caps_unsold_gas,0,Optimized
+chp_caps_unsold_wood_pellets,0,Optimized
 chp_caps_elec_prod_gas,0.55,Optimized
 chp_ei_unsold_gas_turbine,0.55,Optimized
 chp_ei_unsold_gas_engine,0.55,Optimized
 chp_ei_unsold_gas_cc,0.55,Optimized
 chp_ei_unsold_coal,0,Optimized
-chp_ei_elec_prod_gas,1,Based on NL dataset
-chp_ei_elec_prod_gas_turbine,0.26,Based on NL dataset
-chp_ei_elec_prod_gas_engine,0.01,Based on NL dataset
-chp_ei_elec_prod_gas_cc,0.73,Based on NL dataset
+chp_ei_elec_prod_gas,1,
+chp_ei_elec_prod_gas_turbine,0.647,Estimate based on Platts
+chp_ei_elec_prod_gas_engine,0,No gas engine CHPs according to Platts
+chp_ei_elec_prod_gas_cc,0.353,Estimate based on Platts
 chp_i_unsold_gas_turbine,1,Optimized
 chp_i_unsold_gas_engine,1,Optimized
 chp_i_unsold_gas_cc,1,Optimized
 chp_i_unsold_coal,1,Optimized
-chp_i_elec_prod_gas_turbine,0.26,Based on NL dataset
-chp_i_elec_prod_gas_engine,0.01,Based on NL dataset
-chp_i_elec_prod_gas_cc,0.73,Based on NL dataset
+chp_i_elec_prod_gas_turbine,0.647,Estimate based on Platts
+chp_i_elec_prod_gas_engine,0,No gas engine CHPs according to Platts
+chp_i_elec_prod_gas_cc,0.353,Estimate based on Platts
 chp_waste_removal_caps,1,
 chp_waste_removal_industry,0,
 chp_flh_agriculture_gas,3600,
 chp_flh_agriculture_biogas,8000,
 chp_flh_agriculture_wood_pellets,6000,
-chp_flh_residential_gas,4000,
-chp_flh_residential_biogas,8000,
-chp_flh_residential_wood_pellets,6000,
+chp_flh_residential_gas,4000,Not relevant
+chp_flh_residential_biogas,8000,Not relevant
+chp_flh_residential_wood_pellets,6000,Not relevant
 chp_flh_caps_gas,4000,
 chp_flh_caps_biogas,8000,
 chp_flh_caps_wood_pellets,6000,

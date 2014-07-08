@@ -7,7 +7,7 @@ task :publish do
 
   source      = '.'
   destination = '../etdataset-public'
-  exclude     = %w[.git *energy_balance*.* *autoproducer_table*.*]
+  exclude     = %w[.git *energy_balance*.* *autoproducer_table*.* platts.csv odyssee.csv]
 
   #-------- REMOVE ENTIRE DIRETORY -------------------------------------------
 

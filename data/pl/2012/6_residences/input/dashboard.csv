@@ -1,35 +1,35 @@
 Key,Value,Source
 country,pl,
 base_year,2012,
-residences_final_demand_space_heating,564442,Based on GUS (2013) Energy efficiency in Poland 2001-2011
-residences_final_demand_hot_water,121421,Based on GUS (2013) Energy efficiency in Poland 2001-2011
-residences_final_demand_cooling,0,Based on GUS (2013) Energy efficiency in Poland 2001-2011
-residences_final_demand_lighting,12306,Based on GUS (2013) Energy efficiency in Poland 2001-2011
-residences_final_demand_cooking,68094,Based on GUS (2013) Energy efficiency in Poland 2001-2011
-residences_final_demand_appliances,54147,Based on GUS (2013) Energy efficiency in Poland 2001-2011
-residences_percentage_space_heating_combi_boiiler,0.1995,First attempt to fit data
-residences_percentage_space_heating_solar_thermal,0.0005,
+residences_final_demand_space_heating,564442,Based on GUS (2013) Energy efficiency in Poland 2001-2011; see source analysis
+residences_final_demand_hot_water,121421,Based on GUS (2013) Energy efficiency in Poland 2001-2011; see source analysis
+residences_final_demand_cooling,0,Based on GUS (2013) Energy efficiency in Poland 2001-2011; see source analysis
+residences_final_demand_lighting,12306,Based on GUS (2013) Energy efficiency in Poland 2001-2011; see source analysis
+residences_final_demand_cooking,68094,Based on GUS (2013) Energy efficiency in Poland 2001-2011; see source analysis
+residences_final_demand_appliances,54147,Based on GUS (2013) Energy efficiency in Poland 2001-2011; see source analysis
+residences_percentage_space_heating_combi_boiiler,0.0197762690330709,Based on GUS (2014) Energy consumption in households in 2012 and Ecofys data; see source analysis
+residences_percentage_space_heating_solar_thermal,0.000632840609058268,
 residences_percentage_space_heating_heat_pump_ground,0,
 residences_percentage_space_heating_micro_chp,0,
-residences_percentage_space_heating_district,0.5,
+residences_percentage_space_heating_district,0.316966403094435,
 residences_percentage_space_heating_heat_pump_air,0,
-residences_percentage_space_heating_woodpellets,0.05,
-residences_percentage_space_heating_electric_resistance,0,
-residences_percentage_space_heating_gas_burner,0,
-residences_percentage_space_heating_oil_burner,0.05,
-residences_percentage_space_heating_coal_burner,0.2,
+residences_percentage_space_heating_woodpellets,0.15588231008297,
+residences_percentage_space_heating_electric_resistance,0.0340992553306497,
+residences_percentage_space_heating_gas_burner,0.0791050761322834,
+residences_percentage_space_heating_oil_burner,0.0346682003384538,
+residences_percentage_space_heating_coal_burner,0.358869645379079,
 residences_percentage_space_heating_heat_pump_add_on,0,
-residences_percentage_hot_water_combi_boiiler,0.1995,First attempt to fit data
-residences_percentage_hot_water_solar_thermal,0.0005,
+residences_percentage_hot_water_combi_boiiler,0,Based on GUS (2014) Energy consumption in households in 2012; see source analysis
+residences_percentage_hot_water_solar_thermal,0.000625924794510177,
 residences_percentage_hot_water_heat_pump_ground,0,
 residences_percentage_hot_water_micro_chp,0,
-residences_percentage_hot_water_district,0.5,
+residences_percentage_hot_water_district,0.231951496474869,
 residences_percentage_hot_water_heat_pump_air,0,
-residences_percentage_hot_water_woodpellets,0.05,
-residences_percentage_hot_water_electric_resistance,0,
-residences_percentage_hot_water_gas_burner,0,
-residences_percentage_hot_water_oil_burner,0.05,
-residences_percentage_hot_water_coal_burner,0.2,
+residences_percentage_hot_water_woodpellets,0.115403842847003,
+residences_percentage_hot_water_electric_resistance,0.104912584406367,
+residences_percentage_hot_water_gas_burner,0.208641598170059,
+residences_percentage_hot_water_oil_burner,0.052716249198834,
+residences_percentage_hot_water_coal_burner,0.285748304108357,
 residences_percentage_hot_water_fuel_cell,0,
 residences_percentage_cooling_heat_pump_ground,0,No heat pumps reported in  GUS (2014) Energy consumption in households in 2012
 residences_percentage_cooling_heat_pump_air,0,
@@ -37,11 +37,11 @@ residences_percentage_cooling_aircondition,1,
 residences_percentage_lighting_incandescent,0.8,Based on DE dataset
 residences_percentage_lighting_efficient_fluorescent,0.2,
 residences_percentage_lighting_led,0,
-residences_percentage_cooking_gas,0.5,Based on DE dataset
-residences_percentage_cooking_electric_resistance,0.1,
-residences_percentage_cooking_electric_halogen,0.05,
-residences_percentage_cooking_electric_induction,0.05,
-residences_percentage_cooking_biomass,0.3,
+residences_percentage_cooking_gas,0.779,Based on GUS (2014) Energy consumption in households in 2012; see source analysis
+residences_percentage_cooking_electric_resistance,0.1,Based on GUS (2014) Energy consumption in households in 2012; see source analysis
+residences_percentage_cooking_electric_halogen,0.0225,Assumed
+residences_percentage_cooking_electric_induction,0.0225,Assumed
+residences_percentage_cooking_biomass,0.076,Based on GUS (2014) Energy consumption in households in 2012; see source analysis
 residences_percentage_appliances_dishwasher,0.1,Based on DE dataset
 residences_percentage_appliances_fridge_freezer,0.28,
 residences_percentage_appliances_washing_machine,0.1,

@@ -20,16 +20,16 @@ chp_ei_unsold_gas_engine,1,No sold heat in energy industry
 chp_ei_unsold_gas_cc,1,No sold heat in energy industry
 chp_ei_unsold_coal,1,No sold heat in energy industry
 chp_ei_elec_prod_gas,1,Based on DE dataset
-chp_ei_elec_prod_gas_turbine,0.26,Based on DE dataset
-chp_ei_elec_prod_gas_engine,0.01,Based on DE dataset
-chp_ei_elec_prod_gas_cc,0.73,Based on DE dataset
+chp_ei_elec_prod_gas_turbine,0.492,based on Platts data; see source_analyses/es/2012/2_power_and_heat_plant/es_2012_installed_capacity.xlsx
+chp_ei_elec_prod_gas_engine,0.051,based on Platts data; see source_analyses/es/2012/2_power_and_heat_plant/es_2012_installed_capacity.xlsx
+chp_ei_elec_prod_gas_cc,0.457,based on Platts data; see source_analyses/es/2012/2_power_and_heat_plant/es_2012_installed_capacity.xlsx
 chp_i_unsold_gas_turbine,1,No sold heat in industry
 chp_i_unsold_gas_engine,1,No sold heat in industry
 chp_i_unsold_gas_cc,1,No sold heat in industry
 chp_i_unsold_coal,0.7,There is no sold heat in industry; but share is set to 70% to avoid negative coal demands in other industry.
-chp_i_elec_prod_gas_turbine,0.32,Based on DE dataset
-chp_i_elec_prod_gas_engine,0.01,Based on DE dataset
-chp_i_elec_prod_gas_cc,0.67,Based on DE dataset
+chp_i_elec_prod_gas_turbine,0.492,based on Platts data; see source_analyses/es/2012/2_power_and_heat_plant/es_2012_installed_capacity.xlsx
+chp_i_elec_prod_gas_engine,0.051,based on Platts data; see source_analyses/es/2012/2_power_and_heat_plant/es_2012_installed_capacity.xlsx
+chp_i_elec_prod_gas_cc,0.457,based on Platts data; see source_analyses/es/2012/2_power_and_heat_plant/es_2012_installed_capacity.xlsx
 chp_waste_removal_caps,1,
 chp_waste_removal_industry,0,
 chp_flh_agriculture_gas,3600,

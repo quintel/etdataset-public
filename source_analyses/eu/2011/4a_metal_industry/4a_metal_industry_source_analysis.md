@@ -1,13 +1,12 @@
 # 4a. Metal industry analysis
 
-1. The steel production is set to 177.431 MT in 2011. This value is taken from the [WorldSteel_crude steel production 2011](http://www.worldsteel.org/dms/internetDocumentList/steel-stats/2011/Crude-steel-production-2011/document/2011%20steel%20updated%20Feb2012.pdf)
-* The distribution over steel furnaces (technology split) is adjusted so that checks are optimised.
-* The aluminium production is set to 4 MT. This figure needs to be researched properly. There are sources that claim that the aluminium production was about 6 MT. However, critical dashboard checks fail (natural gas consumption exceeds IEA figure), which is why the production is kept at 4 MT at the moment.
-Beware: you need to fill in the production of aluminium, not of aluminium oxide.
-* The distribution over aluminium furnaces (technology split) is taken from the NL dataset. This needs to be revised, too. Especially, the share of recycled aluminium should be higher in the EU model.
+## Steel
+
+- The steel production is set to 168.591 MT. This value is taken from the [World Steel Assosiation (WSA)](http://www.worldsteel.org/dms/internetDocumentList/statistics-archive/yearbook-archive/Steel-Statistical-Yearbook-2013/document/Steel-Statistical-Yearbook-2012.pdf)(Table 6).
+- The share of blast furnaces and electric furnaces is set to resp. 58.4% and 41.6%. This value is taken from the WSA (Table 6).
 
 
-## Improvements
+## Aluminium
 
-* Aluminium production
-* The share of aluminium that is recycled needs to be improved
+- The aluminium production is set to 9.24 MT. This value is taken from [European Aluminium Association](http://www.alueurope.eu/aluminium-sector-in-europe-2010/): "From a total aluminium metal supply of 13.2 million tonnes in 2011, 35% is produced by European primary smelters, 30% is net-imported and 34% is recycled by European refiners and remelters." ([European Aluminium Association](http://www.alueurope.eu/aluminium-sector-in-europe-2010/))
+- The share of electrolysis and melting oven is set to resp. 50.75 and 49.3%.
