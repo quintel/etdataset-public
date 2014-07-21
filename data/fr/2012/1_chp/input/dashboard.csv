@@ -35,9 +35,9 @@ chp_waste_removal_industry,0,
 chp_flh_agriculture_gas,3600,
 chp_flh_agriculture_biogas,8000,
 chp_flh_agriculture_wood_pellets,6000,
-chp_flh_residential_gas,4000,Not relevant
-chp_flh_residential_biogas,8000,Not relevant
-chp_flh_residential_wood_pellets,6000,Not relevant
+chp_flh_residential_gas,4000,
+chp_flh_residential_biogas,8000,
+chp_flh_residential_wood_pellets,6000,
 chp_flh_caps_gas,4000,
 chp_flh_caps_biogas,8000,
 chp_flh_caps_wood_pellets,6000,

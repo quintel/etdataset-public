@@ -1,9 +1,10 @@
 # 4a. Metal industry analysis
 
+
 ## Steel
 
-- The steel production is set to 168.591 MT. This value is taken from the [World Steel Assosiation (WSA)](http://www.worldsteel.org/dms/internetDocumentList/statistics-archive/yearbook-archive/Steel-Statistical-Yearbook-2013/document/Steel-Statistical-Yearbook-2012.pdf)(Table 6).
-- The share of blast furnaces and electric furnaces is set to resp. 58.4% and 41.6%. This value is taken from the WSA (Table 6).
+- The steel production is set to 168.591 MT. This value is taken from the [World Steel Assosiation (WSA)](http://refman.et-model.com/publications/1878) (Table 6).
+- The share of blast furnaces and electric furnaces is set to resp. 58.4% and 41.6%. This value is taken from the [WSA](http://refman.et-model.com/publications/1878) (Table 6).
 
 
 ## Aluminium

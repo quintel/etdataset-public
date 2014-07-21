@@ -13,14 +13,14 @@ The following changes were made:
 The share between hydro river and hydro mountain are estimated based on the installed capacities researched by Ecofys. The full load hours (FLH) are subsequently calculated using the installed capacities and the electricity production.
 
 | Technology | Installed capacity (MW) | Share | FLH (h) |
-| :--- | ---: | ---: | ---: |
-| River | 1,664 | 6.7% | 831 |
-| Mountain | 14,421 | 93.3% | 1,329 |
+| :--------- | ----------------------: | ----: | ------: |
+| River      |                   1,664 |  6.7% |     831 |
+| Mountain   |                  14,421 | 93.3% |   1,329 |
 
 See [hydro_source_analysis.xlsx](../../../eu/2012/2_power_and_heat_plant/hydro_source_analysis.xlsx).
 
 
-## Issues
+## Debts
 
 - Dashboard assumptions should be researched based on an overview of installed capacities to validate the technology share and full load hours.
-- (Solar) It seems that conversion of solar thermal to electricity is not correctly covered by the PP&HP analysis. See https://github.com/quintel/etdataset/issues/495.
+- (Solar) It seems that conversion of solar thermal to electricity is not correctly covered by the PP&HP analysis. See [ETdataset#495](https://github.com/quintel/etdataset/issues/495).

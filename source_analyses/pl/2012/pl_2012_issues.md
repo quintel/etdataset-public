@@ -31,6 +31,6 @@
 
 - (Area) More research and validation is required. See [11_area_data_source_analysis](11_area_data/11_area_data_source_analysis.md#debts).
 
-- (Area) Onshore and offshore wind potential requires more research. See [11_area_data_source_analysis](11_area_data/11_area_data_source_analysis.md#debts).
+- (Area) Offshore wind potential requires more research. See [11_area_data_source_analysis](11_area_data/11_area_data_source_analysis.md#debts).
 
 - (Area) Capacity credit parameters need to be updated. See [11_area_data_source_analysis](11_area_data/11_area_data_source_analysis.md#debts).

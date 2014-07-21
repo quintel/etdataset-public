@@ -8,17 +8,11 @@ The application split and technology shares are calculated in the [7_services_so
 
 ## Technology shares
 
-The technology shares are calculated in the [7_services_source_analysis.xlsx](7_services_source_analysis.xlsx).
-
-On the 'Electricity' sheet it is decided how much of the final demand for electricity is used by which application. This split for final electricity demand is based on a breakdown by [Fleiter et al. (2010) Electricity demand in the European services sector: A detailed bottom-up estimate by sector and by end-use](), figure 8: 'Share of energy service in total electricity demand by country'.
-
-The 'Fuel aggregation' sheet is used to decide how much of which carrier is consumed for each application. A couple of assumptions are made:
+The application split and technology shares are calculated in the [7_services_source_analysis.xlsx](7_services_source_analysis.xlsx). On the 'Electricity' sheet it is decided how much of the final demand for electricity is used by which application. This split for final electricity demand is based on a breakdown by [Fraunhofer_201004_Electricity demand in the European service sector: A detailed bottom-up estimate by sector and by end-use](http://refman.et-model.com/publications/1875), figure 8: 'Share of energy service in total electricity demand by country'. The 'Fuel aggregation' sheet is used to decide how much of which carrier is consumed for each application. A couple of assumptions are made:
 
 - All coal, wood pellets (biomass) and solar thermal energy is consumed in space heating.
 - 90% of all oil and gas demand are used in space heating, the remaining 10% in the other applications.
 - Electricity is distributed over applications according to the breakdown derived on the 'Electricity' sheet.
-
-Now, the total final demands per application are known. Third, the technology split for space heating is derived:
 
 
 ## Space heating
@@ -36,7 +30,7 @@ It is assumed that all space cooling is accomplished by conventional air-conditi
 The technology split for lighting is based on ECUK data
 
 
-## Issues
+## Debts
 
 - Demand for other carriers is appr. 1,8 PJ. This energy use is not accounted for in the ETM.
 

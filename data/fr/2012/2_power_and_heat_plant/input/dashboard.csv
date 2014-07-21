@@ -32,7 +32,7 @@ pp_flh_gas_cc,2500,Optimized to reflect installed capacity according to Platts
 pp_flh_gas_cc_ccs,2300,Not relevant
 pp_flh_gas_engine,700,Not relevant
 pp_flh_gas_us,2000,Optimized to reflect installed capacity according to Platts
-pp_flh_nuclear_2,6740,Optimized to reflect installed capacity according to RTE (2012) Bilan electrique 2012; p. 23
+pp_flh_nuclear_2,6740,Optimized to reflect installed capacity according to RTE_2013_Bilan electrique 2012; p. 23
 pp_flh_nuclear_3,7843,There are no 3rd generation plants in operation yet.
 pp_flh_hydro_river,1756,Optimized based on Ecofys analysis
 pp_flh_hydro_mountain,2809,Optimized based on Ecofys analysis
@@ -40,9 +40,9 @@ pp_flh_solar_pv,1072,See source_analyses/eu/2012/2_power_and_heat_plant/solar_so
 pp_flh_residential_solar_pv,1072,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
 pp_flh_caps_solar_pv,1072,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
 pp_flh_solar_csp,1072,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
-pp_flh_wind_coastal,2425,Optimized to reflect installed capacity according to RTE (2012) Bilan electrique 2012; p. 14 (load factor 24.0%)
+pp_flh_wind_coastal,2425,Optimized to reflect installed capacity according to RTE_2013_Bilan electrique 2012; p. 14 (load factor 24.0%)
 pp_flh_wind_offshore,3800,ECN_Hekkenberg_201309_Toelichting inschatting korte-termijneffecten Energieakkoord op hernieuwbare energie.pdf (https://github.com/quintel/etdataset/issues/448)
-pp_flh_wind_inland,1925,Optimized to reflect installed capacity according to RTE (2012) Bilan electrique 2012; p. 14 (load factor 24.0%)
+pp_flh_wind_inland,1925,Optimized to reflect installed capacity according to RTE_2013_Bilan electrique 2012; p. 14 (load factor 24.0%)
 pp_flh_oil_us,380,Reduced to 380 h to match installed capacity according to Platts
 pp_flh_diesel,380,Reduced to 380 h to match installed capacity according to Platts
 pp_flh_waste,3800,

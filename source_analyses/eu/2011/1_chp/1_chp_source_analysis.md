@@ -1,13 +1,11 @@
 # 1. CHP analysis
 
-
 The following decisions were made on the dashboard:
 
 - It is not known which CHP fuel allocation method is used for the IEA EU-27 energy balance. It is decided to choose the "IEA" fuel allocation method.
-
-- According to http://www.eea.europa.eu/data-and-maps/figures/chp-share-of-total-heat the CHP share of total heat generation in EU is 15.2% in 2009.
-- According to http://www.eea.europa.eu/data-and-maps/figures/recalculation-of-chp-fuel-input the fuel input to CHP is appr. 2,284,170 GWh in 2009, corresponding to 8,223,012 TJ.
-- According to http://www.eea.europa.eu/data-and-maps/figures/chp-share-of-total-heat the CHP heat is 2,926,488 TJ
+- According to [EEA](http://www.eea.europa.eu/data-and-maps/figures/chp-share-of-total-heat) the CHP share of total heat generation in EU is 15.2% in 2009.
+- According to [EEA](http://www.eea.europa.eu/data-and-maps/figures/recalculation-of-chp-fuel-input) the fuel input to CHP is appr. 2,284,170 GWh in 2009, corresponding to 8,223,012 TJ.
+- According to [EEA](http://www.eea.europa.eu/data-and-maps/figures/chp-share-of-total-heat) the CHP heat is 2,926,488 TJ
 
 
 The following assumptions are made for autoproduction CHPs:
@@ -24,7 +22,7 @@ The following assumptions are made for autoproduction CHPs:
 See [eu_2011_installed_capacities.xlsm](../2_power_and_heat_plant/eu_2011_installed_capacities.xlsm).
 
 
-## Depts
+## Debts
 
 - Generally, the fuel input for electricity and sold heat production is too low. This indicates that the the CHPs in the EU might have lower efficiencies than those defined in the ETM.
 - The fuel allocation method should be researched.

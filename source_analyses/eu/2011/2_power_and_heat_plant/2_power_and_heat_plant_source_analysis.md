@@ -41,14 +41,14 @@ Since there are no 3rd generation nuclear plants yet, the production by 2nd gene
 
 ### Hydro plants
 
-The ETM does not consider pumped storage as a power producer. Only Run-of-river and Run-of-mountain hydro power is considered. According to the tables 3.1.1.4 and 3.2.1.4 in [Eurolectric: "Power Statistics & Trends 2011 full report"](http://refman.et-model.com/publications/1836) (p. 82, 140), hydro river and mountain plants are characterised as follows: 
+The ETM does not consider pumped storage as a power producer. Only Run-of-river and Run-of-mountain hydro power is considered. According to the tables 3.1.1.4 and 3.2.1.4 in [Eurolectric_2011_Power Statistics & Trends 2011 full report](http://refman.et-model.com/publications/1836) (p. 82, 140), hydro river and mountain plants are characterised as follows: 
 
 |                 | Total hydro | Conventional | Of which Run-of-river | Of which Run-of-mountain |
 | :-------------- | ----------: | -----------: | --------------------: | -----------------------: |
 | Production, TWh |         355 |          238 |                   115 |                      124 |
 | Capacity, MW    |     142,861 |      100,525 |                28,720 |                   70,235 |
 
-See also [capacity_validation.xlsx](/OLD/capacity_validation.xlsx), sheet "Hydro plants".
+See also [capacity_validation.xlsx](/Old/capacity_validation.xlsx), sheet "Hydro plants".
 
 "Total hydro" refers to all hydro electricity, including pumped mountain storage. "Run-of-mountain" is calculated from the other numbers. Note that these numbers are not very accurate as the number of digits may suggest. The research data addresses the year 2009 (or older) and research data is not available for all counties.
 

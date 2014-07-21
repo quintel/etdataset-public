@@ -1,15 +1,15 @@
 Key,Value,Source
 country,fr,
 base_year,2012,
-services_final_demand_space_heating,509091.286805627,Based on Fleiter et al. (2010) and source analysis
-services_final_demand_space_cooling,48153.6050922509,Based on Fleiter et al. (2010) and source analysis
-services_final_demand_lighting,142608.753542435,Based on Fleiter et al. (2010) and source analysis
-services_space_heating_share_gas_fired_heaters,0.567258738967775,Based on Fleiter et al. (2010) and source analysis
+services_final_demand_space_heating,509091.286805627,Based on Fraunhofer_201004_Electricity demand in the European service sector and source analysis
+services_final_demand_space_cooling,48153.6050922509,Based on Fraunhofer_201004_Electricity demand in the European service sector and source analysis
+services_final_demand_lighting,142608.753542435,Based on Fraunhofer_201004_Electricity demand in the European service sector and source analysis
+services_space_heating_share_gas_fired_heaters,0.567258738967775,Based on Fraunhofer_201004_Electricity demand in the European service sector and source analysis
 services_space_heating_share_electric_heat_pump_with_storage,0,Assumption
 services_space_heating_share_gas_fired_heat_pumps,0,Assumption
-services_space_heating_share_electric_heaters,0.253583565056901,Based on Fleiter et al. (2010) and source analysis
-services_space_heating_share_coal_fired_heater,0.0010077283085311,Based on Fleiter et al. (2010) and source analysis
-services_space_heating_share_oil_fired_heater,0.178149967666793,Based on Fleiter et al. (2010) and source analysis
+services_space_heating_share_electric_heaters,0.253583565056901,Based on Fraunhofer_201004_Electricity demand in the European service sector and source analysis
+services_space_heating_share_coal_fired_heater,0.0010077283085311,Based on Fraunhofer_201004_Electricity demand in the European service sector and source analysis
+services_space_heating_share_oil_fired_heater,0.178149967666793,Based on Fraunhofer_201004_Electricity demand in the European service sector and source analysis
 services_space_cooling_share_gas_fired_heat_pump,0,Assumption
 services_space_cooling_share_electric_heat_pump,0,Assumption
 services_space_cooling_share_airco,1,Assumption

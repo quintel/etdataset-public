@@ -49,8 +49,16 @@ Most keys are copied directly from the NL dataset. Only the keys that address 'n
 
 - number_buildings: estimated based on floor area from ENTRANZE and floor_area:number_of_buildings ratio in NL.
 - number_households: based on the Eurostat lfst_hhnhtych database
-- roof_surface_available_pv: scaled figure, based on the NL ratio for solar roof surface / number or residences.
-- roof_surface_available_pv_buildings: scaled figure, based on the NL ratio of solar PV on houses/buildings
+
+
+#### Roof surface available for PV
+
+The total roof surface available for PV is 5,522 km2 according to Ecofys analysis. It is assumed that 2/3 is on residences and 1/3 on buildings.
+
+| Location                                 | Area (km2) |
+| :--------------------------------------- | ---------: |
+| residences_roof_surface_available_for_PV |     3,681  |
+| buildings_roof_surface_available_for_PV  |     1,841  |
 
 
 ### CO<sub>2</sub>

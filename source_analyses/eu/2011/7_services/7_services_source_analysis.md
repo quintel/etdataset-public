@@ -3,11 +3,8 @@
 
 ## Application splits
 
-The application split and technology shares are calculated in the [7_services_source_analysis.xlsx](7_services_source_analysis.xlsx). 
+The application split and technology shares are calculated in the [7_services_source_analysis.xlsx](7_services_source_analysis.xlsx). On the 'Electricity' sheet it is decided how much of the final demand for electricity is used by which application. This split for final electricity demand is based on a breakdown by [JRC_2012_Energy Efficiency Status Report 2012](http://refman.et-model.com/publications/1844)(page 109, figure 83: 'Tertiary electricity consumption breakdown in the EU-27'. The 'Fuel aggregation' sheet is used to decide how much of which carrier is consumed for each application. A couple of assumptions are made:
 
-On the 'Electricity' sheet it is decided how much of the final demand for electricity is used by which application. This split for final electricity demand is based on a breakdown by [JRC (2012 Energy Efficiency Status Report 2012](http://refman.et-model.com/publications/1844), page 109, figure 83: 'Tertiary electricity consumption breakdown in the EU-27'.
-
-The 'Fuel aggregation' sheet is used to decide how much of which carrier is consumed for each application. A couple of assumptions are made:
 - All coal, wood pellets (biomass) and solar thermal energy is consumed in space heating.
 - 90% of all oil and gas demand are used in space heating, the remaining 10% in the other applications.
 - Electricity is distributed over applications according to the breakdown derived on the 'Electricity' sheet.
@@ -21,6 +18,7 @@ Now, the total final demands per application are known. Third, the technology sp
 ## Space heating
 
 With the information from above, it is easy to derive the technology split for space heating. The final demands in space heating are converted to useful demands by applying the conversion efficiency. In a final step, the useful demand percentages are derived. It is assumed that the converters "Electric heat pumps with thermal storage" and "Gas-fired heat pumps" do not exist in the EU.
+
 
 ## Space cooling
 
@@ -41,4 +39,4 @@ The following technology split is assumed, without further research:
 ## Debts
 
 - The technology split for lighting requires more research.
-- Demand for other carriers is appr. 42 PJ. This energy use is not accounted for in the ETM. See [7_services_source_analysis](7_services/7_services_source_analysis.md#debts).
+- Demand for other carriers is appr. 42 PJ. This energy use is not accounted for in the ETM.

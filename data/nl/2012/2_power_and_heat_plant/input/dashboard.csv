@@ -1,24 +1,24 @@
 Key,Value,Source
 country,nl,
 base_year,2012,
-pp_share_coal_us,0.488589626933576,Quintel_201309_CHP source analysis CHP - capacities and production in NL - 2011 v1
-pp_share_coal_us_ccs,0,Quintel_201309_CHP source analysis CHP - capacities and production in NL - 2011 v1
-pp_share_coal_cc,0.0587834394904459,Quintel_201309_CHP source analysis CHP - capacities and production in NL - 2011 v1
-pp_share_coal_cc_ccs,0,Quintel_201309_CHP source analysis CHP - capacities and production in NL - 2011 v1
-pp_share_lignite_us,1,NL 2011 value
-pp_share_lignite_us_ccs,0,NL 2011 value
-pp_share_gas_turbine,0.01,NL 2011 value
-pp_share_gas_cc,0.91,NL 2011 value
-pp_share_gas_cc_ccs,0,NL 2011 value
-pp_share_gas_engine,0,NL 2011 value
-pp_share_gas_us,0.08,NL 2011 value
-pp_share_nuclear_2,0,NL 2011 value
-pp_share_nuclear_3,1,NL 2011 value
+pp_share_coal_us,0.42,Optimized to match fuel use
+pp_share_coal_us_ccs,0,No CCS yet
+pp_share_coal_cc,0.0587834394904459,NL 2011 value
+pp_share_coal_cc_ccs,0,No CCS yet
+pp_share_lignite_us,1,Not relevant
+pp_share_lignite_us_ccs,0,Not relevant
+pp_share_gas_turbine,0,No gas turbines according to CBS
+pp_share_gas_cc,0.775,Optimized to match fuel use
+pp_share_gas_cc_ccs,0,No CCS yet
+pp_share_gas_engine,0,Almost no gas engines according to CBS
+pp_share_gas_us,0.225,Optimized to match fuel use
+pp_share_nuclear_2,1,
+pp_share_nuclear_3,0,No 3rd generation yet
 pp_share_hydro_river,1,Estimate based on Ecofys analysis
 pp_share_hydro_mountain,0,Estimate based on Ecofys analysis
-pp_share_wind_coastal,0.143,see source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
-pp_share_wind_offshore,0.106,see source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
-pp_share_wind_inland,0.751,see source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
+pp_share_wind_coastal,0.143,See source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
+pp_share_wind_offshore,0.106,See source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
+pp_share_wind_inland,0.751,See source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
 pp_flh_coal_us_co,7700,NL 2011 value
 pp_flh_coal_supercritical,6800,NL 2011 value
 pp_flh_coal_us,7700,NL 2011 value
@@ -36,10 +36,10 @@ pp_flh_nuclear_2,5256,NL 2011 value
 pp_flh_nuclear_3,7843,NL 2011 value
 pp_flh_hydro_river,2808,Optimized based on Ecofys analysis
 pp_flh_hydro_mountain,4492,Optimized based on Ecofys analysis
-pp_flh_solar_pv,867,see source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
-pp_flh_residential_solar_pv,867,see source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
-pp_flh_caps_solar_pv,867,see source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
-pp_flh_solar_csp,867,see source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_solar_pv,867,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_residential_solar_pv,867,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_caps_solar_pv,867,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_solar_csp,867,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
 pp_flh_wind_coastal,3000,Europe's onshore and offshore wind energy potential; http://refman.et-model.com/publications/1312
 pp_flh_wind_offshore,3500,Europe's onshore and offshore wind energy potential; http://refman.et-model.com/publications/1312
 pp_flh_wind_inland,2200,Europe's onshore and offshore wind energy potential; http://refman.et-model.com/publications/1312

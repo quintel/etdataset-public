@@ -2,6 +2,10 @@
 
 The dashboard assumptions for the first attempt were obtained from the NL 2011 dataset.
 
+The timecurves are based on data from the [NLOG](http://refman.et-model.com/publications/1880) for natural gas and crude oil and from the Primes reference scenario in [EC_2013_Trends to 2050 reference scenario 2013](http://refman.et-model.com/publications/1874) for woody biomass. It is assumed that the time curve for uranium is zero. Values for 2010, 2011 and 2012 are obtained from the IEA energy balance. See the [3_primary_production_source_analysis.xlsm](3_primary_production_source_analysis.xlsm) for more details. 
+
+There are doubts about the reliability of the Primes data. For the NL 2012 dataset there are substantial differences between Primes data and local sources. See [ETdataset#548](https://github.com/quintel/etdataset/issues/548) for an elaboration in this issue.
+
 
 ## Wood
 

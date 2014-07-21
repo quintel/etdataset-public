@@ -3,47 +3,47 @@ country,de,
 base_year,2012,
 pp_share_coal_us,0.4,Optimized to match fuel use
 pp_share_coal_us_ccs,0,No CCS in place
-pp_share_coal_cc,0.003,Based on Platts data; see source analysis
+pp_share_coal_cc,0,No IGCC in place
 pp_share_coal_cc_ccs,0,No CCS in place
 pp_share_lignite_us,1,No CCS in place
 pp_share_lignite_us_ccs,0,
-pp_share_gas_turbine,0.044,Based on Platts data; see source analysis
-pp_share_gas_cc,0.83,Optimzed to match fuel use
+pp_share_gas_turbine,0.04,Optimzed to match fuel use
+pp_share_gas_cc,0.8,Optimzed to match fuel use
 pp_share_gas_cc_ccs,0,No CCS in place
-pp_share_gas_engine,0.001,Based on Platts data; see source analysis
-pp_share_gas_us,0.125,Optimzed to match fuel use
+pp_share_gas_engine,0.05,Optimzed to match fuel use
+pp_share_gas_us,0.11,Optimzed to match fuel use
 pp_share_nuclear_2,1,
 pp_share_nuclear_3,0,No 3rd generation nuclear plants yet
 pp_share_hydro_river,0.653,Estimate based on Ecofys analysis
 pp_share_hydro_mountain,0.347,Estimate based on Ecofys analysis
-pp_share_wind_coastal,0,
-pp_share_wind_offshore,0.013,
-pp_share_wind_inland,0.987,
-pp_flh_coal_us_co,5500,Matching BMWI report:http://refman.et-model.com/publications/1833
-pp_flh_coal_supercritical,4300,Matching BMWI report:http://refman.et-model.com/publications/1833
-pp_flh_coal_us,5500,Matching BMWI report:http://refman.et-model.com/publications/1833
+pp_share_wind_coastal,0.104,Wind on and offshore I.xlsx
+pp_share_wind_offshore,0.013,Wind on and offshore I.xlsx
+pp_share_wind_inland,0.883,Wind on and offshore I.xlsx
+pp_flh_coal_us_co,5400,Optimized to match BNA list of German power plants: see source analysis
+pp_flh_coal_supercritical,3850,Optimized to match BNA list of German power plants: see source analysis
+pp_flh_coal_us,5400,Optimized to match BNA list of German power plants: see source analysis
 pp_flh_coal_us_ccs,6000,Not relevant
 pp_flh_coal_cc,4600,Not relevant
 pp_flh_coal_cc_ccs,4500,Not relevant
-pp_flh_lignite_us,5760,Matching BMWI report:http://refman.et-model.com/publications/1833
-pp_flh_lignite_us_ccs,5972,Not relevant
-pp_flh_gas_turbine,2000,
-pp_flh_gas_cc,4200,Optimized to match installed capacity reported in Platts
-pp_flh_gas_cc_ccs,3500,Not relevant
-pp_flh_gas_engine,700,
-pp_flh_gas_us,2000,Optimized to match installed capacity reported in Platts
-pp_flh_nuclear_2,7900,Optimized to match nuclear installed capacity reported in Platts
-pp_flh_nuclear_3,7900,Not relevant
-pp_flh_hydro_river,3509,Optimized based on Ecofys analysis
-pp_flh_hydro_mountain,5614,Optimized based on Ecofys analysis
+pp_flh_lignite_us,7000,Optimized to match BNA list of German power plants: see source analysis
+pp_flh_lignite_us_ccs,7000,Not relevant
+pp_flh_gas_turbine,500,Optimized to match BNA list of German power plants: see source analysis
+pp_flh_gas_cc,4500,Optimized to match BNA list of German power plants: see source analysis
+pp_flh_gas_cc_ccs,4000,Not relevant
+pp_flh_gas_engine,4500,Optimized to match BNA list of German power plants: see source analysis
+pp_flh_gas_us,700,Optimized to match BNA list of German power plants: see source analysis
+pp_flh_nuclear_2,8250,Optimized to match BNA list of German power plants: see source analysis
+pp_flh_nuclear_3,8250,Not relevant
+pp_flh_hydro_river,3900,Optimized based on Ecofys production estimate and BNA power plant list
+pp_flh_hydro_mountain,5615,Optimized based on Ecofys analysis. Notreproduced BNA power plant list. This contains pumped storage too; which has low FLH
 pp_flh_solar_pv,894,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
 pp_flh_residential_solar_pv,894,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
 pp_flh_caps_solar_pv,894,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
 pp_flh_solar_csp,894,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
-pp_flh_wind_coastal,2400,Matching BMWI report:http://refman.et-model.com/publications/1833
-pp_flh_wind_offshore,3300,Matching BMWI report:http://refman.et-model.com/publications/1833
-pp_flh_wind_inland,1700,Matching BMWI report:http://refman.et-model.com/publications/1833
-pp_flh_oil_us,1400,Optimized to match oil installed capacity reported in Platts
-pp_flh_diesel,1400,Optimized to match oil installed capacity reported in Platts
-pp_flh_waste,3800,
-pp_flh_geothermal,8250,
+pp_flh_wind_coastal,2400,Wind on and offshore I.xlsx
+pp_flh_wind_offshore,3500,Wind on and offshore I.xlsx
+pp_flh_wind_inland,1658,Wind on and offshore I.xlsx
+pp_flh_oil_us,4000,Optimized to match BNA list of German power plants: see source analysis
+pp_flh_diesel,7900,Optimized to match BNA list of German power plants: see source analysis
+pp_flh_waste,7900,Optimized to match BNA list of German power plants: see source analysis
+pp_flh_geothermal,3200,Optimized to match BNA list of German power plants: see source analysis

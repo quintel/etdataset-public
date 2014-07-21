@@ -1,11 +1,11 @@
 Key,Value,Source
 country,uk,
 base_year,2012,
-chp_allocation_protermo,0,DUKES 2013 - Paragraph 7.42 (see 'Fuel Allocation' for more details)
+chp_allocation_protermo,0,DUKES 2013 - Paragraph 7.42 (see http://refman.et-model.com/publications/1882)
 chp_allocation_iea,0,
 chp_allocation_decc,1,
-chp_total_heat_produciton,176882.4,DUKES 2013 - Table 7A (number converted from GWh to TJ)
-chp_total_fuel_input,371451.6,DUKES 2013 - Table 7A (number converted from GWh to TJ)
+chp_total_heat_produciton,176882.4,DUKES 2013 - Table 7A (see http://refman.et-model.com/publications/1884)
+chp_total_fuel_input,371451.6,DUKES 2013 - Table 7A (see http://refman.et-model.com/publications/1882)
 chp_agriculture_unsold_gas,0.5,Not relevant as there is no autoproduction from CHP plants for agriculture in UK 2012
 chp_agriculture_unsold_wood_pellets,0.5,Not relevant as there is no autoproduction from CHP plants for agriculture in UK 2012
 chp_agriculture_elec_prod_gas,0.5,Not relevant as there is no autoproduction from CHP plants for agriculture in UK 2012

@@ -15,8 +15,6 @@
 
 - (PP&HP, Wind) Methodology for wind should be described in source analysis. See [2_power_and_heat_plant_source_analysis](2_power_and_heat_plant/2_power_and_heat_plant_source_analysis.md#debts).
 
-- (Primary production) Timecurves should be validated based on Primes data. See [3_primary_production_source_analysis](3_primary_production/3_primary_production_source_analysis.md#debts).
-
 - (Chemical) Negative final demand for woodpellets. Most likely cause by allocation in CHP analysis. See also [ETdataset#175](https://github.com/quintel/etdataset/issues/175). See [4b_chemical_industry_source_analysis](4a_chemical_industry/4a_chemical_industry_source_analysis.md#debts).
 
 - (Residences) The technology splits for space cooling, lighting, cooking and appliances requires research. See [6_residences_source_analysis](6_residences/6_residences_source_analysis.md#debts).

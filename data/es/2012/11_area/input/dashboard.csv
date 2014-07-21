@@ -27,8 +27,8 @@ areable_land,123498,The World Factbook (land area * areable land %) (https://www
 coast_line,4964,The World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/sp.html)
 land_available_for_solar,123498,Assumed to be equal to areable land
 number_of_inhabitants,46818219,Eurostat 2012; Population on 1 January (demo_gind) database
-offshore_suitable_for_wind,50000,
-onshore_suitable_for_wind,230852,Ecofys data
+offshore_suitable_for_wind,51082,Based on Ecofys analysis
+onshore_suitable_for_wind,230852,Based on Ecofys analysis
 buildings_insulation_constant_1,0.73,
 buildings_insulation_constant_2,0.13,
 buildings_insulation_cost_constant,39402.4,
@@ -44,8 +44,8 @@ number_of_residences,17433700,Eurostat 2012; Number of private households (lfst_
 old_houses_insulation_constant_1,0.66,
 old_houses_insulation_constant_2,0.16,
 old_houses_insulation_cost_constant,5962.7,
-residences_roof_surface_available_for_pv,625,Rough estimate. Proportional to NL 2011 residences roof surface / # residences.
-buildings_roof_surface_available_for_pv,150,Rough estimate. Proportional to NL 2011 buildings roof surface / # buildings.
+residences_roof_surface_available_for_pv,279,Total based on Ecofys analysis; share of residences is assumed as 2/3.
+buildings_roof_surface_available_for_pv,139,Total based on Ecofys analysis; share of services is assumed as 1/3.
 technical_lifetime_insulation,30,
 co2_emission_1990,202.4,1990 CO2 Emissions (energy related) in EU energy trends to 2030 (http://ec.europa.eu/clima/policies/package/docs/trends_to_2030_update_2009_en.pdf)
 co2_percentage_free,0.85,
@@ -69,3 +69,5 @@ investment_hv_net_per_turbine,1.2,Assumed the same value as for NL 2011
 capacity_credit_wind_constant_p1,1115,
 capacity_credit_wind_constant_p2,41870,
 capacity_credit_wind_constant_q1,3358,
+capacity_credit_wind_minimum,0.05,minimum value for capacity credit
+capacity_credit_wind_maximum,0.33,maximum value of fit function taken thesis by E.J.D. wilton; see http://refman.et-model.com/publications/1847

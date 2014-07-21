@@ -1,13 +1,10 @@
-# 1. CHP 
-
-The dashboard assumptions for the first attempt were obtained from the NL 2011 dataset.
-
+# 1. CHP
 
 The following changes were made:
 
-- According to http://www.eea.europa.eu/data-and-maps/figures/chp-share-of-total-heat the CHP share of total heat generation in France is 8.1% in 2009.
-- According to http://www.eea.europa.eu/data-and-maps/figures/recalculation-of-chp-fuel-input the fuel input to CHP is appr. 102,850 GWh in 2009, corresponding to 370,260 TJ.
-- According to http://www.eea.europa.eu/data-and-maps/figures/chp-share-of-total-heat the CHP heat is 197,435 TJ
+- According to [EEA](http://www.eea.europa.eu/data-and-maps/figures/chp-share-of-total-heat) the CHP share of total heat generation in France is 8.1% in 2009.
+- According to [EEA](http://www.eea.europa.eu/data-and-maps/figures/recalculation-of-chp-fuel-input) the fuel input to CHP is appr. 102,850 GWh in 2009, corresponding to 370,260 TJ.
+- According to [EEA](http://www.eea.europa.eu/data-and-maps/figures/chp-share-of-total-heat) the CHP heat is 197,435 TJ
 
 
 The following assumptions are made for autoproduction CHPs:

@@ -1,10 +1,11 @@
 # 6. Residences analysis
 
+
 ## Application split
 
-The application split for residences is obtained from [Energy Efficiency Trends for households in the EU](http://www.odyssee-mure.eu/publications/efficiency-by-sector/household/) by Enerdata. See also [6_residences_source_analysis.xlsx](6_residences_source_analysis.xlsx).
+The application split for residences is obtained from [Enerdata_2014_Energy Efficiency Trends for households in the EU](http://refman.et-model.com/publications/1868). See also [6_residences_source_analysis.xlsx](6_residences_source_analysis.xlsx).
 
-The [JRC (2012) Energy Efficiency Status Report 2012](http://iet.jrc.ec.europa.eu/energyefficiency/sites/energyefficiency/files/energy-efficiency-status-report-2012.pdf) report is used to refine various assumptions for the technonology splits that the Enerdata report does not provide. The JRC report provides also some information about the electricity use for space cooling, lighting and electrical appliances in 2009. There is some discrepancy, but Odyssee values are used since these are for 2011.
+The [JRC_2012_Energy Efficiency Status Report 2012](http://refman.et-model.com/publications/1844) report is used to refine various assumptions for the technonology splits that the Enerdata report does not provide. The JRC report provides also some information about the electricity use for space cooling, lighting and electrical appliances in 2009. There is some discrepancy, but Odyssee values are used since these are for 2011.
 
 | Application           | Odyssee (TJ) | JRC (TJ)     |
 | :-------------------- | -----------: | -----------: |
@@ -63,7 +64,7 @@ There is no data available for space cooling. It is assummed that all space cool
 
 ## Cooking
 
-The [JRC (2012) Energy Efficiency Status Report 2012](http://iet.jrc.ec.europa.eu/energyefficiency/sites/energyefficiency/files/energy-efficiency-status-report-2012.pdf) report provides information about the electricty consumption in residences. According to this study 6.6%  (equivalent to appr. 190,907 TJ) of the electricity consumption is allocated to cooking devices. The share of electricity devices is reduced to match the electricity consumption.
+The [JRC_2012_Energy Efficiency Status Report 2012](http://refman.et-model.com/publications/1844) report provides information about the electricty consumption in residences. According to this study 6.6%  (equivalent to appr. 190,907 TJ) of the electricity consumption is allocated to cooking devices. The share of electricity devices is reduced to match the electricity consumption.
 
 | Technology                | Share |
 | :------------------------ | ----: |
@@ -76,7 +77,7 @@ The [JRC (2012) Energy Efficiency Status Report 2012](http://iet.jrc.ec.europa.e
 
 ## Appliances
 
-The electricity consumption for large appliances (including refrigerators, freezers, washing machines, dishwashers, TVs and dryers) are obtained from [Energy Efficiency Trends for households in the EU](http://www.odyssee-mure.eu/publications/efficiency-by-sector/household/) by Energdata. The [JRC (2012) Energy Efficiency Status Report 2012](http://iet.jrc.ec.europa.eu/energyefficiency/sites/energyefficiency/files/energy-efficiency-status-report-2012.pdf) report also provides data on the electricity consumption in households. This data is used for the remaining appliances. See also [6_residences_source_analysis.xlsx](6_residences_source_analysis.xlsx). 
+The electricity consumption for large appliances (including refrigerators, freezers, washing machines, dishwashers, TVs and dryers) are obtained from [Enerdata_2014_Energy Efficiency Trends for households in the EU](http://refman.et-model.com/publications/1868). The [JRC_2012_Energy Efficiency Status Report 2012](http://refman.et-model.com/publications/1844) report also provides data on the electricity consumption in households. This data is used for the remaining appliances. See also [6_residences_source_analysis.xlsx](6_residences_source_analysis.xlsx). 
 
 | Technology         | Share  | Source    |
 | :------------------| -----: | --------: |

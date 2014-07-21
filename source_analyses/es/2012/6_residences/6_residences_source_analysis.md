@@ -68,7 +68,7 @@ The technology shares for cooking are based on based on SECH-SPAHOUSEC data. See
 The technology shares for appliances are based on based on SECH-SPAHOUSEC data. See [6_residences_source_analysis.xlsx](6_residences_source_analysis.xlsx). 
 
 
-## Issues
+## Debts
 
 - There is a large discrepancy between the Ecofys data and the optimized values w.r.t. space heating and hot water: share of electric technologies is lower, share of oil technologies is higher.
 - Split between old en new houses need to be researched.

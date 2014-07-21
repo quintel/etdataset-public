@@ -1,7 +1,7 @@
 # 6. Residences analysis
 
-## Application split
 
+## Application split
 
 The final demand for space heating, hot water, lighting, cooking and appliances are based on based on ECUK data. See [6_residences_source_analysis.xlsx](6_residences_source_analysis.xlsx). The sum of the final demands calculated from the ECUK data exceed the total final energy demand for residences on the energy balance. The values are therefore scaled to match the total final energy demand.
 
@@ -78,6 +78,6 @@ The technology shares for cooking are based on based on ECUK data. See [6_reside
 The technology shares for appliances are based on based on ECUK data. See [6_residences_source_analysis.xlsx](6_residences_source_analysis.xlsx). 
 
 
-## Issues
+## Debts
 
 - Split between old en new houses need to be researched.

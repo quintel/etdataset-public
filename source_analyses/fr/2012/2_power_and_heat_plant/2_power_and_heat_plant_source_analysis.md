@@ -1,13 +1,11 @@
 # 2. Power and heat plant analysis
 
-The dashboard assumption for the first attempt were obtained from the NL 2011 dataset. 
-
 The Power and heat plant analysis is filled based on the Platts data. See [fr_2012_installed_capacities.xlsm](../2_power_and_heat_plant/fr_2012_installed_capacities.xlsm).
 
 
 ## Coal and lignite
 
-Platts reports electricity production by coal plants using combined cycle  (600 MW) and steam turbines (6241 MW). Is is assumed that the electricity production is proportional to the installed capacity. The share of Combined cycle is therefore set to 12.3%. The shares of Ultra supercritical and Supercritical are optimized to match the coal use. 
+Platts reports electricity production by coal plants using combined cycle  (600 MW) and steam turbines (6241 MW). Is is assumed that the electricity production is proportional to the installed capacity. The share of Combined cycle is therefore set to 6.2%. The shares of Ultra supercritical and Supercritical are optimized to match the coal use. 
 
 | Technology                    | Share | Comment                 |
 | :---------------------------- | ----: | :---------------------- |
@@ -21,7 +19,7 @@ The full load hours (FLH) for all coal power plants are set to 3000 h to reflect
 
 ## Gas
 
-An initial split of the electricity production is based on the default FLH and the installed capacities reported by Platts for the Turbine, Engine and Ultra supercritical. The FLH of the Combined cycle are calculated based on the remaining electricity production and the capacity reported by Platts. The calculated FLH were in line with the average FLH reported by RTE (2013) Bilan electrique 2012, p. 22 (appr. 2300 h).
+An initial split of the electricity production is based on the default FLH and the installed capacities reported by Platts for the Turbine, Engine and Ultra supercritical. The FLH of the Combined cycle are calculated based on the remaining electricity production and the capacity reported by Platts. The calculated FLH were in line with the average FLH reported by [RTE_2013_Bilan electrique 2012](http://refman.et-model.com/publications/1881), p. 22 (appr. 2300 h).
 With the default FLH and the intial share, the calculated fuel input was too low. The shares of the Ultra supercritical and Turbines (lower efficiency) is therefore increased and the Combined cycle (high efficiency) is decreased. 
 
 Increase of the production with Ultra supercritical and Turbines resulted in an increase in installed capacity. The FLH of the Ultra supercritical and Turbines are therefore increased to 1400 h to ensure a installed capacity that matches the Platts data.
@@ -36,7 +34,7 @@ Increase of the production with Ultra supercritical and Turbines resulted in an 
 
 ## Nuclear
 
-Since there are no 3rd generation nuclear plants yet, the production by 2nd generation nuclear plants is set to 100%. The FLH are set to 6,740 h to reflect the installed capacities according to RTE (2012) Bilan electrique, p. 23 (63,130 MW). The FLH are compareble with those calculated from the Platts data (6,316 h).
+Since there are no 3rd generation nuclear plants yet, the production by 2nd generation nuclear plants is set to 100%. The FLH are set to 6,740 h to reflect the installed capacities according to [RTE_2013_Bilan electrique 2012](hhttp://refman.et-model.com/publications/1881), p. 23 (63,130 MW). The FLH are compareble with those calculated from the Platts data (6,316 h).
 
 
 ## Hydro
@@ -58,7 +56,7 @@ See [solar_source_analysis.xlsx](../../../eu/2012/2_power_and_heat_plant/solar_s
 
 ## Wind
 
-The share between onshore and offshore wind is calculated in [wind_source_analysis.xlsx](../../../eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx). It is assumed that all onshore wind is inland. The FLH of coastal and inland wind turbines are set to resp. 2425 h and 1925 h to reflect installed capacity according to RTE (2012) Bilan electrique 2012, p. 14 (load factor 24.0%).
+The share between onshore and offshore wind is calculated in [wind_source_analysis.xlsx](../../../eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx). It is assumed that all onshore wind is inland. The FLH of coastal and inland wind turbines are set to resp. 2425 h and 1925 h to reflect installed capacity according to [RTE_2013_Bilan electrique 2012](http://refman.et-model.com/publications/1881), p. 14 (load factor 24.0%).
 
 
 ## Oil products

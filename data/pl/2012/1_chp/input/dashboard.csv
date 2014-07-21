@@ -4,8 +4,8 @@ base_year,2012,
 chp_allocation_protermo,0,
 chp_allocation_iea,1,
 chp_allocation_decc,0,
-chp_total_heat_produciton,207430,GUS (2013) Energy Statistics 2011-2012
-chp_total_fuel_input,1612963,GUS (2013) Energy Statistics 2011-2012
+chp_total_heat_produciton,207430,GUS_201310_Energy statistics 2011; 2012
+chp_total_fuel_input,1612963,GUS_201310_Energy statistics 2011; 2012
 chp_agriculture_unsold_gas,1,Only biogas CHP in sector
 chp_agriculture_unsold_wood_pellets,1,Only biogas CHP in sector
 chp_agriculture_elec_prod_gas,1,Only biogas CHP in sector

@@ -6,8 +6,8 @@ The dashboard assumptions for the first attempt were obtained from the DE 2011 d
 The following changes were made:
 
 - The fuel allocation method is set to IEA. Research is required on the method that is used in Poland.
-- According to http://www.eea.europa.eu/data-and-maps/figures/recalculation-of-chp-fuel-input the fuel input to CHP is appr. 110,000 GWh (reported) or appr. 95,000 GWh (calculated) in 2009, corresponding to resp. 393,000 TJ and 336,000 TJ.
-- According to http://www.eea.europa.eu/data-and-maps/figures/chp-share-of-total-heat the CHP heat is 172,689 TJ.
+- According to [EEA](http://www.eea.europa.eu/data-and-maps/figures/recalculation-of-chp-fuel-input) the fuel input to CHP is appr. 110,000 GWh (reported) or appr. 95,000 GWh (calculated) in 2009, corresponding to resp. 393,000 TJ and 336,000 TJ.
+- According to [EEA](http://www.eea.europa.eu/data-and-maps/figures/chp-share-of-total-heat) the CHP heat is 172,689 TJ.
 
 
 The following assumptions are made for autoproduction CHPs:
@@ -19,7 +19,7 @@ The following assumptions are made for autoproduction CHPs:
 - (Energy Industry) There is no sold heat production. Percentage of heat that is not sold is therefore set to 100%. Shares of gas CHPs are kept on their default value.
 
 
-Issues:
+## Debts
 
 - (Autoproducer CHPs) In general the calculated fuel input for electricity and sold heat production is lower than the reported fuel input. This might be caused by the generally lower overall efficiencies.
 - (Main activity CHPs) There are no main activity CHPs in Spain. Why?

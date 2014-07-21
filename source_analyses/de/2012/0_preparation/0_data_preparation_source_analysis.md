@@ -13,7 +13,7 @@ On the IEA website, click on `Access Services` and log in. Go to:
 
     Reports / Energy Balances of Non-OECD Countries (2014 preliminary edition)  / Extended Energy Balances
 
-We obtained an energy balance in TJ for the 'country': “Germany”.
+We obtained an energy balance in TJ for the country “Germany”.
 
 The 2014 preliminary edition of the Extended Energy Balances contains 3 extra columns in comparison to the 2013 edition of the Extended Energy Balances:
 
@@ -46,7 +46,7 @@ gross/net conversion factor =
 
 This factor is required when manipulating solar PV production in the autoproducer table.
 
-The cumulative market segmentation reported by [EPIA](http://www.epia.org/fileadmin/user_upload/Publications/GMO_2013_-_Final_PDF.pdf) is used to determine the solar PV production breakdown in the sectors:
+The cumulative market segmentation reported by [EPIA](hhttp://refman.et-model.com/publications/1876) is used to determine the solar PV production breakdown in the sectors:
 
 | Sector         | Percentage |
 | :------------- | ---------: |
@@ -77,7 +77,7 @@ On the IEA website, click on `Access Services` and log in. Go to:
 
     Reports / Electricity Information (2014 preliminary edition) / OECD, Net Electricity and Heat Production by Autoproducers
 
-We obtained an autoproducer table in TJ for the 'country' “Germany”.
+We obtained an autoproducer table in TJ for the country “Germany”.
 
 
 ### Shift of solar PV
@@ -93,4 +93,4 @@ Let us call the new "solar PV" in "Electricity output (GWh)-autoproducer electri
 
 ## Debts
 
-- The three additional columns should be addressed in our analysis.
+- The three additional columns in the Extended Energy Balance that were removed should actually be addressed in our analysis and not be removed.

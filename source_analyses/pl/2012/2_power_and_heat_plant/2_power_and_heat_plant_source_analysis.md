@@ -1,7 +1,5 @@
 # 2. Power and heat plant analysis
 
-The dashboard assumption for the first attempt were obtained from the DE 2011 dataset.
-
 The energy balance and the Platts data for Poland to not match. Were the Platts database reports a substantial amount of main activity power plants (30,308 MW), the IEA energy balance only reports electricity by main activity CHPs. Therefore, only the total installed capacities per commodity are matched for Poland.
 
 See [pl_2012_installed_capacities.xlsm](../2_power_and_heat_plant/pl_2012_installed_capacities.xlsm).
@@ -50,7 +48,7 @@ The IEA energy balance does not report any solar power. The FLH for solar techno
 
 ## Wind
 
-The share between onshore and offshore wind is calculated in [wind_source_analysis.xlsx](../../../eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx). he percentage wind turbines offshore is set to 0% because there is no offshore wind yet. According http://www.thewindpower.net/country_maps_en_27_poland.php all wind farms are still 'planned'. It is assumed that all onshore wind is inland.
+The share between onshore and offshore wind is calculated in [wind_source_analysis.xlsx](../../../eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx). he percentage wind turbines offshore is set to 0% because there is no offshore wind yet. According [The Wind Power](http://www.thewindpower.net/country_maps_en_27_poland.php) all wind farms are still planned. It is assumed that all onshore wind is inland.
 
 The FLH of inland wind turbines are optimized to match the installed capacity according to EWEA.
 

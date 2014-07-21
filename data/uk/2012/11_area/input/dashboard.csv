@@ -27,8 +27,8 @@ areable_land,60192,World Factbook (land area * areable land %) (https://www.cia.
 coast_line,12429,World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/uk.html)
 land_available_for_solar,60192,Assumed to be equal to areable land
 number_of_inhabitants,63495303,Eurostat 2012; Population on 1 January (tps00001) database
-offshore_suitable_for_wind,372000,
-onshore_suitable_for_wind,56761,
+offshore_suitable_for_wind,530020,Based on Ecofys analysis
+onshore_suitable_for_wind,160578,Based on Ecofys analysis
 buildings_insulation_constant_1,0.73,Taken from analysis for NL
 buildings_insulation_constant_2,0.13,Taken from analysis for NL
 buildings_insulation_cost_constant,39402.4,Taken from analysis for NL
@@ -40,12 +40,12 @@ new_houses_insulation_constant_1,1.85,
 new_houses_insulation_constant_2,0.05,
 new_houses_insulation_cost_constant,7071,
 number_of_buildings,979631.36393516,Estimated based on floor area from ENTRANZE and floor_area:number_of_buildings ratio in NL.
-number_of_residences,27135200,ECUK Table 3.08
+number_of_residences,27135200,ECUK Table 3.08 (see http://refman.et-model.com/publications/1884)
 old_houses_insulation_constant_1,0.66,
 old_houses_insulation_constant_2,0.16,
 old_houses_insulation_cost_constant,5962.7,
-residences_roof_surface_available_for_pv,975,Rough estimate. Proportional to NL 2011 residences roof surface / # residences.
-buildings_roof_surface_available_for_pv,325,Rough estimate. Proportional to NL 2011 buildings roof surface / # buildings.
+residences_roof_surface_available_for_pv,677,Total based on Ecofys analysis; share of residences is assumed as 2/3.
+buildings_roof_surface_available_for_pv,339,Total based on Ecofys analysis; share of services is assumed as 1/3.
 technical_lifetime_insulation,30,
 co2_emission_1990,566.4,1990 CO2 Emissions (energy related) in EU energy trends to 2030 (http://ec.europa.eu/clima/policies/package/docs/trends_to_2030_update_2009_en.pdf)
 co2_percentage_free,0.85,
@@ -69,3 +69,5 @@ investment_hv_net_per_turbine,0,This attribute is not yet relevant for UK 2012 a
 capacity_credit_wind_constant_p1,1115,
 capacity_credit_wind_constant_p2,41870,
 capacity_credit_wind_constant_q1,3358,
+capacity_credit_wind_minimum,0.05,minimum value for capacity credit
+capacity_credit_wind_maximum,0.33,maximum value taken from fit in thesis by E.J.D. wilton; see http://refman.et-model.com/publications/1847

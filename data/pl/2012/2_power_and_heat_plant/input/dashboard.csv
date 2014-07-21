@@ -16,9 +16,9 @@ pp_share_nuclear_2,0.8,Not relevant because electricity production from nuclear 
 pp_share_nuclear_3,0.2,
 pp_share_hydro_river,0.046,Estimate based on Ecofys analysis
 pp_share_hydro_mountain,0.954,Estimate based on Ecofys analysis
-pp_share_wind_coastal,0,see source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
-pp_share_wind_offshore,0,see source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
-pp_share_wind_inland,1,see source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
+pp_share_wind_coastal,0,See source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
+pp_share_wind_offshore,0,See source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
+pp_share_wind_inland,1,See source_analyses/eu/2012/2_power_and_heat_plant/wind_source_analysis.xlsx
 pp_flh_coal_us_co,5500,Not relevant
 pp_flh_coal_supercritical,4300,
 pp_flh_coal_us,5500,
@@ -36,10 +36,10 @@ pp_flh_nuclear_2,6314,Not relevant
 pp_flh_nuclear_3,6314,
 pp_flh_hydro_river,1384,Optimized based on Ecofys analysis
 pp_flh_hydro_mountain,2214,Optimized based on Ecofys analysis
-pp_flh_solar_pv,900,see source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
-pp_flh_residential_solar_pv,900,see source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
-pp_flh_caps_solar_pv,900,see source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
-pp_flh_solar_csp,900,see source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_solar_pv,900,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_residential_solar_pv,900,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_caps_solar_pv,900,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_solar_csp,900,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
 pp_flh_wind_coastal,2200,Optimized to match installed capacity reported by GUS (2012) Energy from renewable sources; p. 66
 pp_flh_wind_offshore,3800,ECN_Hekkenberg_201309_Toelichting inschatting korte-termijneffecten Energieakkoord op hernieuwbare energie.pdf (https://github.com/quintel/etdataset/issues/448)
 pp_flh_wind_inland,2300,Optimized to match installed capacity reported by EWEA

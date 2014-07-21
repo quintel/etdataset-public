@@ -1,12 +1,12 @@
 Key,Value,Source
 country,eu,
 base_year,2011,
-residences_final_demand_space_heating,7480500.33561365,Energy Efficiency Trends for households in the EU; see source analysis
-residences_final_demand_hot_water,1611184.68767063,Energy Efficiency Trends for households in the EU; see source analysis
-residences_final_demand_cooling,34525.3861643707,Energy Efficiency Trends for households in the EU; see source analysis
-residences_final_demand_lighting,345253.861643707,Energy Efficiency Trends for households in the EU; see source analysis
-residences_final_demand_cooking,690507.723287414,Energy Efficiency Trends for households in the EU; see source analysis
-residences_final_demand_appliances,1381015.44657483,Energy Efficiency Trends for households in the EU; see source analysis
+residences_final_demand_space_heating,7480500.33561365,Enerdata_2014_Energy Efficiency Trends for households in the EU; see source analysis
+residences_final_demand_hot_water,1611184.68767063,Enerdata_2014_Energy Efficiency Trends for households in the EU; see source analysis
+residences_final_demand_cooling,34525.3861643707,Enerdata_2014_Energy Efficiency Trends for households in the EU; see source analysis
+residences_final_demand_lighting,345253.861643707,Enerdata_2014_Energy Efficiency Trends for households in the EU; see source analysis
+residences_final_demand_cooking,690507.723287414,Enerdata_2014_Energy Efficiency Trends for households in the EU; see source analysis
+residences_final_demand_appliances,1381015.44657483,Enerdata_2014_Energy Efficiency Trends for households in the EU; see source analysis
 residences_percentage_space_heating_combi_boiiler,0.067,Weighted average based on Ecofys data for DE; FR; UK and ES and subsequently optimized to match checks; see source analysis
 residences_percentage_space_heating_solar_thermal,0.0071,
 residences_percentage_space_heating_heat_pump_ground,0.0002,
@@ -38,17 +38,17 @@ residences_percentage_lighting_incandescent,0.8,
 residences_percentage_lighting_efficient_fluorescent,0.2,
 residences_percentage_lighting_led,0,
 residences_percentage_cooking_gas,0.5,Increased share
-residences_percentage_cooking_electric_resistance,0.25,Reduced share of electric cooking technologies to match electricity consumption for cooking; JRC (2012); see source analysis
-residences_percentage_cooking_electric_halogen,0.1,Reduced share of electric cooking technologies to match electricity consumption for cooking; JRC (2012); see source analysis
-residences_percentage_cooking_electric_induction,0.05,Reduced share of electric cooking technologies to match electricity consumption for cooking; JRC (2012); see source analysis
+residences_percentage_cooking_electric_resistance,0.25,Reduced share of electric cooking technologies to match electricity consumption for cooking; JRC_2012_Energy Efficiency Status Report 2012; see source analysis
+residences_percentage_cooking_electric_halogen,0.1,Reduced share of electric cooking technologies to match electricity consumption for cooking; JRC_2012_Energy Efficiency Status Report 2012; see source analysis
+residences_percentage_cooking_electric_induction,0.05,Reduced share of electric cooking technologies to match electricity consumption for cooking; JRC_2012_Energy Efficiency Status Report 2012; see source analysis
 residences_percentage_cooking_biomass,0.1,Increased share
-residences_percentage_appliances_dishwasher,0.0626,Energy Efficiency Trends for households in the EU; see source analysis
-residences_percentage_appliances_fridge_freezer,0.2583,Energy Efficiency Trends for households in the EU; see source analysis
-residences_percentage_appliances_washing_machine,0.1096,Energy Efficiency Trends for households in the EU; see source analysis
-residences_percentage_appliances_dryer,0.0448,Energy Efficiency Trends for households in the EU; see source analysis
-residences_percentage_appliances_television,0.1217,Energy Efficiency Trends for households in the EU; see source analysis
-residences_percentage_appliances_computer_media,0.175,JRC (2012); see source analysis
-residences_percentage_appliances_vacuum_cleaner,0.059,JRC (2012); see source analysis
+residences_percentage_appliances_dishwasher,0.0626,Enerdata_2014_Energy Efficiency Trends for households in the EU; see source analysis
+residences_percentage_appliances_fridge_freezer,0.2583,Enerdata_2014_Energy Efficiency Trends for households in the EU; see source analysis
+residences_percentage_appliances_washing_machine,0.1096,Enerdata_2014_Energy Efficiency Trends for households in the EU; see source analysis
+residences_percentage_appliances_dryer,0.0448,Enerdata_2014_Energy Efficiency Trends for households in the EU; see source analysis
+residences_percentage_appliances_television,0.1217,Enerdata_2014_Energy Efficiency Trends for households in the EU; see source analysis
+residences_percentage_appliances_computer_media,0.175,JRC_2012_Energy Efficiency Status Report 2012; see source analysis
+residences_percentage_appliances_vacuum_cleaner,0.059,JRC_2012_Energy Efficiency Status Report 2012; see source analysis
 residences_percentage_appliances_others,0.169,Remaining
 residences_space_heating_share_coming_from_solar_thermal,0.15,Based on NL dataset
 residences_hot_water_share_coming_from_solar_thermal,0.5,Based on NL dataset
