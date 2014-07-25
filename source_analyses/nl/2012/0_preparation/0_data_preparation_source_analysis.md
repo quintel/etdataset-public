@@ -31,4 +31,4 @@ We obtained an autoproducer table in TJ for the country "Netherlands".
 
 ## Debts
 
--The three additional columns should be addressed in our analysis.
+-The three additional columns in the IEA Extended Energy Balance should be addressed in our analysis, instead of being removed as is currently the case.

@@ -67,7 +67,7 @@ Also, I analyzed the % coastal wind parks in Niedersachsen and Schleswig-holstei
 This relies mostly on these sources:
 
 - [ Kraftwerksliste der Bundesnetzagentur - Stand 12.12.2012](http://www.docstoc.com/docs/147959531/Kraftwerksliste-der-Bundesnetzagentur---Stand-12122012)
-- Capacities_DE_Kraftwerksliste_BNetzA_12_2012_AW_simplified carriers_corrected techs_final.xls
+- Capacities_DE_Kraftwerksliste_BNetzA_12_2012_AW_simplified carriers_corrected techs_final.xlsx
 - ÜNB - Szenariorahmen für den Netzentwicklungsplan Strom 2013 - Entwurf 
 - http://de.wikipedia.org/wiki/Liste_der_Offshore-Windparks
 - http://www.thewindpower.net
