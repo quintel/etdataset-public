@@ -71,6 +71,7 @@ This relies mostly on these sources:
 - ÜNB - Szenariorahmen für den Netzentwicklungsplan Strom 2013 - Entwurf 
 - http://de.wikipedia.org/wiki/Liste_der_Offshore-Windparks
 - http://www.thewindpower.net
+- Deutsche Institut für Wirtschaftsforschung, [Electricity Sector Data for Policy-Relevant Modeling](https://www.google.nl/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CCAQFjAA&url=http%3A%2F%2Fwww.diw.de%2Fdocuments%2Fpublikationen%2F73%2Fdiw_01.c.440963.de%2Fdiw_datadoc_2014-072.pdf&ei=fjzSU7OsGcmGOPeYgMgO&usg=AFQjCNGG2MpMl64AngyrCAS8kAvJ7HBGdg&bvm=bv.71667212,d.ZWU)
 
 For more information on the differences between these kinds of turbines, see the "?" buttons for these technologies in the [ETM](http://pro.et-model.com/scenario/supply/electricity_renewable/wind-turbines) itself.
 

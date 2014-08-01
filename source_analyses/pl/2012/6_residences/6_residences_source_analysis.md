@@ -12,17 +12,17 @@ The technology split for space heating is calculated based on [Energy consumptio
 
 | Application                   | Calc. share | Ecofys | Final share |
 | :---------------------------- | ----------: | -----: | ----------: | 
-| Condensing combi boiler       |        0.0% |   4.1% |        2.0% |
-| Solar thermal panels          |        0.0% |      - |        0.1% |
-| Gas-fired heat pump (ground)  |        0.0% |      - |        0.0% |
-| Gas-fired micro CHP           |        0.0% |      - |        0.0% |
-| District heating              |       33.0% |  34.1% |       31.7% |
-| Electricity-driven heat pump  |        0.0% |   0.0% |        0.0% |
-| Woodpellets (biomass) heaters |       17.3% |  10.6% |       15.6% |
-| Electric heaters (resistance) |        2.2% |   0.0% |        3.4% |
-| Gas-fired heaters             |       10.6% |  19.3% |        7.9% |
-| Oil-fired heaters             |        0.6% |   9.4% |        3.5% |
-| Coal-fired heaters            |       36.2% |  22.4% |       35.8% |
+| Condensing combi boiler       |        0.0% |   2  % |       0.00% |
+| Solar thermal panels          |        0.0% |      - |       0.02% |
+| Gas-fired heat pump (ground)  |        0.0% |      - |       0.00% |
+| Gas-fired micro CHP           |        0.0% |      - |       0.00% |
+| District heating              |       33.0% |  42  % |      32.21% |
+| Electricity-driven heat pump  |        0.0% |   0  % |       0.00% |
+| Woodpellets (biomass) heaters |       17.3% |  13  % |      15.11% |
+| Electric heaters (resistance) |        2.2% |   0  % |       3.90% |
+| Gas-fired heaters             |       10.6% |  12  % |       9.75% |
+| Oil-fired heaters             |        0.6% |   7  % |       3.70% |
+| Coal-fired heaters            |       36.2% |  24  % |      35.31% |
 | Electric heat pump add-on     |        0.0% |      - |        0.0% |
 
 
@@ -30,20 +30,20 @@ The technology split for space heating is calculated based on [Energy consumptio
 
 The technology split for hot water is calculated based on [Energy consumption in households in 2012](http://refman.et-model.com/publications/1870) (GUS 2014, p. 96, table 5). See also [6_residences_source_analysis.xlsx](6_residences_source_analysis.xlsx). The percentages are adjusted manually to match the IEA energy demand. 
 
-| Application                   | Calc. share | Final share |
-| :---------------------------- | ----------: | ----------: | 
-| Condensing combi boiler       |        0.0% |        0.0% |
-| Solar thermal panels          |        0.2% |        0.1% |
-| Gas-fired heat pump (ground)  |        0.0% |        0.0% |
-| Gas-fired micro CHP           |        0.0% |        0.0% |
-| District heating              |       23.0% |       23.2% |
-| Electricity-driven heat pump  |        0.0% |        0.0% |
-| Woodpellets (biomass) heaters |       11.6% |       11.5% |
-| Electric heaters (resistance) |        9.7% |       10.5% |
-| Gas-fired heaters             |       26.7% |       20.9% |
-| Oil-fired heaters             |        1.7% |        5.2% |
-| Coal-fired heaters            |       27.1% |       28.6% |
-| Electric heat pump add-on     |        0.0% |        0.0% |
+| Application                   | Calc. share | Ecofys | Final share |
+| :---------------------------- | ----------: | -----: | ----------: | 
+| Condensing combi boiler       |        0.0% |   2  % |       0.00% |
+| Solar thermal panels          |        0.2% |   0  % |       0.29% |
+| Gas-fired heat pump (ground)  |        0.0% |   0  % |       0.00% |
+| Gas-fired micro CHP           |        0.0% |   0  % |       0.00% |
+| District heating              |       23.0% |  42  % |      23.85% |
+| Electricity-driven heat pump  |        0.0% |   0  % |       0.00% |
+| Woodpellets (biomass) heaters |       11.6% |  13  % |      16.05% |
+| Electric heaters (resistance) |        9.7% |   0  % |      10.01% |
+| Gas-fired heaters             |       26.7% |  12  % |      17.60% |
+| Oil-fired heaters             |        1.7% |   7  % |       4.14% |
+| Coal-fired heaters            |       27.1% |  24  % |      28.06% |
+| Electric heat pump add-on     |        0.0% |      - |       0.00% |
 
 
 ## Space cooling
