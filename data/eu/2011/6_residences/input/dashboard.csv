@@ -34,9 +34,9 @@ residences_percentage_hot_water_fuel_cell,0,
 residences_percentage_cooling_heat_pump_ground,0,No data available; assumed 100% airconditioning
 residences_percentage_cooling_heat_pump_air,0,No data available; assumed 100% airconditioning
 residences_percentage_cooling_aircondition,1,No data available; assumed 100% airconditioning
-residences_percentage_lighting_incandescent,0.8,
-residences_percentage_lighting_efficient_fluorescent,0.2,
-residences_percentage_lighting_led,0,
+residences_percentage_lighting_incandescent,0.6675,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+residences_percentage_lighting_efficient_fluorescent,0.315,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+residences_percentage_lighting_led,0.0175,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
 residences_percentage_cooking_gas,0.5,Increased share
 residences_percentage_cooking_electric_resistance,0.25,Reduced share of electric cooking technologies to match electricity consumption for cooking; JRC_2012_Energy Efficiency Status Report 2012; see source analysis
 residences_percentage_cooking_electric_halogen,0.1,Reduced share of electric cooking technologies to match electricity consumption for cooking; JRC_2012_Energy Efficiency Status Report 2012; see source analysis

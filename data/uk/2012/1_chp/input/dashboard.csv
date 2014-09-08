@@ -1,11 +1,11 @@
 Key,Value,Source
 country,uk,
 base_year,2012,
-chp_allocation_protermo,0,DUKES 2013 - Paragraph 7.42 (see http://refman.et-model.com/publications/1882)
+chp_allocation_protermo,0,DUKES 2014 - Paragraph 7.38 (see http://refman.et-model.com/publications/1887)
 chp_allocation_iea,0,
 chp_allocation_decc,1,
-chp_total_heat_produciton,176882.4,DUKES 2013 - Table 7A (see http://refman.et-model.com/publications/1884)
-chp_total_fuel_input,371451.6,DUKES 2013 - Table 7A (see http://refman.et-model.com/publications/1882)
+chp_total_heat_produciton,173678.4,DUKES 2014 - Table 7A (see http://refman.et-model.com/publications/1887)
+chp_total_fuel_input,357915.6,DUKES 2014 - Table 7A (see http://refman.et-model.com/publications/1887)
 chp_agriculture_unsold_gas,0.5,Not relevant as there is no autoproduction from CHP plants for agriculture in UK 2012
 chp_agriculture_unsold_wood_pellets,0.5,Not relevant as there is no autoproduction from CHP plants for agriculture in UK 2012
 chp_agriculture_elec_prod_gas,0.5,Not relevant as there is no autoproduction from CHP plants for agriculture in UK 2012
@@ -20,33 +20,33 @@ chp_ei_unsold_gas_engine,1,Optimized
 chp_ei_unsold_gas_cc,1,Optimized
 chp_ei_unsold_coal,0.5,Not relevant as there is no coal CHP; see next dashboard item
 chp_ei_elec_prod_gas,1,Optimized
-chp_ei_elec_prod_gas_turbine,0.263,Estimate based on Platts; see source analysis
-chp_ei_elec_prod_gas_engine,0.018,Estimate based on Platts; see source analysis
-chp_ei_elec_prod_gas_cc,0.719,Estimate based on Platts; see source analysis
+chp_ei_elec_prod_gas_turbine,0.134228722304894,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_ei_elec_prod_gas_engine,0.143404287496492,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_ei_elec_prod_gas_cc,0.722366990198615,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
 chp_i_unsold_gas_turbine,1,Optimized
 chp_i_unsold_gas_engine,1,Optimized
 chp_i_unsold_gas_cc,1,Optimized
 chp_i_unsold_coal,1,Optimized
-chp_i_elec_prod_gas_turbine,0.263,Estimate based on Platts; see source analysis
-chp_i_elec_prod_gas_engine,0.018,Estimate based on Platts; see source analysis
-chp_i_elec_prod_gas_cc,0.719,Estimate based on Platts; see source analysis
+chp_i_elec_prod_gas_turbine,0.134228722304894,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_i_elec_prod_gas_engine,0.143404287496492,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_i_elec_prod_gas_cc,0.722366990198615,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
 chp_waste_removal_caps,1,
 chp_waste_removal_industry,0,
-chp_flh_agriculture_gas,3600,Not relevant
-chp_flh_agriculture_biogas,8000,Not relevant
-chp_flh_agriculture_wood_pellets,6000,Not relevant
-chp_flh_residential_gas,4000,Not relevant
-chp_flh_residential_biogas,8000,Not relevant
-chp_flh_residential_wood_pellets,6000,Not relevant
-chp_flh_caps_gas,4000,Not relevant
-chp_flh_caps_biogas,8000,Not relevant
-chp_flh_caps_wood_pellets,6000,Not relevant
-chp_flh_iei_gas_turbine,6000,
-chp_flh_iei_gas_engine,6000,
-chp_flh_iei_gas_cc,6000,
-chp_flh_iei_coal,7000,
-chp_flh_ma_gas,4500,
-chp_flh_ma_coal,4500,
-chp_flh_ma_lignite,7000,Not relevant
-chp_flh_ma_cofiring,4500,Not relevant
-chp_flh_waste,6000,
+chp_flh_agriculture_gas,3876,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_agriculture_biogas,3876,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_agriculture_wood_pellets,4374,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_residential_gas,3876,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_residential_biogas,3876,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_residential_wood_pellets,4374,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_caps_gas,3876,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_caps_biogas,3876,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_caps_wood_pellets,4374,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_iei_gas_turbine,5419,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_iei_gas_engine,3667,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_iei_gas_cc,3762,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_iei_coal,2102,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_ma_gas,3762,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_ma_coal,2102,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_ma_lignite,2102,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_ma_cofiring,2102,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_waste,4374,Based on DUKES 2014 - see 1_chp_source_analysis.xslx

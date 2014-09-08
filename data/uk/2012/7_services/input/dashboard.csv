@@ -15,9 +15,9 @@ services_space_cooling_share_electric_heat_pump,0,Assumption
 services_space_cooling_share_airco,1,Assumption
 services_lighting_incandescent_lamp,0,
 services_lighting_fluorescent_lamp,0,
-services_lighting_fluorescent_tube,0.99602615367956,Based on ECUK data; see source analysis
-services_lighting_efficient_fluorescent_tube,0.00194296924617984,Based on ECUK data; see source analysis
-services_lighting_LED_tube,0.00203087707426006,Based on ECUK data; see source analysis
+services_lighting_fluorescent_tube,0.9328,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+services_lighting_efficient_fluorescent_tube,0.052,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+services_lighting_LED_tube,0.0152,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
 services_biomass_used_in space_heating,1,
 services_biomass_used_in appliances,0,
 services_savings_lighting_motion_detection,0.039,

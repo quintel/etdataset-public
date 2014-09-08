@@ -34,9 +34,9 @@ residences_percentage_hot_water_fuel_cell,0,
 residences_percentage_cooling_heat_pump_ground,0,No data available; assumed 100% airconditioning
 residences_percentage_cooling_heat_pump_air,0,No data available; assumed 100% airconditioning
 residences_percentage_cooling_aircondition,1,No data available; assumed 100% airconditioning
-residences_percentage_lighting_incandescent,0.8,Based on NL dataset
-residences_percentage_lighting_efficient_fluorescent,0.2,
-residences_percentage_lighting_led,0,
+residences_percentage_lighting_incandescent,0.789,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+residences_percentage_lighting_efficient_fluorescent,0.196,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+residences_percentage_lighting_led,0.015,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
 residences_percentage_cooking_gas,0.4,Rough estimated based on Odyssee 2011 data
 residences_percentage_cooking_electric_resistance,0.4,
 residences_percentage_cooking_electric_halogen,0.1,

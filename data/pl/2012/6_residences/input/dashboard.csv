@@ -34,9 +34,9 @@ residences_percentage_hot_water_fuel_cell,0,
 residences_percentage_cooling_heat_pump_ground,0,No heat pumps reported in GUS_201403_Energy consumption in households in 2012
 residences_percentage_cooling_heat_pump_air,0,
 residences_percentage_cooling_aircondition,1,
-residences_percentage_lighting_incandescent,0.8,Based on DE dataset
-residences_percentage_lighting_efficient_fluorescent,0.2,
-residences_percentage_lighting_led,0,
+residences_percentage_lighting_incandescent,0.792,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+residences_percentage_lighting_efficient_fluorescent,0.203,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+residences_percentage_lighting_led,0.005,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
 residences_percentage_cooking_gas,0.779,Based on GUS_201403_Energy consumption in households in 2012; see source analysis
 residences_percentage_cooking_electric_resistance,0.1,Based on GUS_201403_Energy consumption in households in 2012; see source analysis
 residences_percentage_cooking_electric_halogen,0.0225,Assumed
