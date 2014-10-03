@@ -52,10 +52,3 @@ See [hydro_source_analysis.xlsx](../../../eu/2012/2_power_and_heat_plant/hydro_s
 ## Oil products
 
 The FLH of oil plants (Oil supercritical and Diesel engine) are set to the average FLH based on total electricity production from the energy balance and the total installed capacity from Platts: 235 h.
-
-
-## Debts
-
-- (Hydro) Production shares and FLH of hydro river and hydro mountains need to be researched.
-- (Solar) FLH of solar need to be researched.
-- (Wind) FLH of wind turbines need to be researched.

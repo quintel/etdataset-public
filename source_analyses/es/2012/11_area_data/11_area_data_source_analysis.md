@@ -16,8 +16,3 @@ The total roof surface available for PV is 418 km2 according to Ecofys analysis.
 | :--------------------------------------- | ---------: |
 | residences_roof_surface_available_for_PV |       279  |
 | buildings_roof_surface_available_for_PV  |       139  |
-
-
-## Debts
-
-- Extensive research is required.

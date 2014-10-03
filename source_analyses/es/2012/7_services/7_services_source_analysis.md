@@ -37,6 +37,5 @@ The following technology split is assumed, without further research:
 
 ## Debts
 
-- The technology split for lighting requires more research.
 - Demand for other carriers is appr. 21 PJ. This energy use is not accounted for in the ETM.
 

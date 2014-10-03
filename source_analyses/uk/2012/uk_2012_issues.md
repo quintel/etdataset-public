@@ -1,25 +1,16 @@
 # Main issues with the UK 2012 dataset
 
-- (CHP) An overview of installed capacities is required to validate the technology share and full load hours.
+## General
 
-- (PP&HP) Dashboard assumptions should be researched based on an overview of installed capacities to validate the technology share and full load hours.
 
-- (Primary Production) Dashboard assumptions should be researched.
+## Specific
 
-- (Primary Production) Timecurves should be researched.
+- (Preparation) The three additional columns in the IEA energy balance should be addressed in our analysis. See [0_data_preparation_source_analysis](0_preparation/0_data_preparation_source_analysis.md#debts).
 
-- (Residences) Technology split in space heating, hot water and cooling should be researched
+- (Primary Production) Max production of waste carriers is lower than the actual production of waste carriers. The max production need to be adapted and a check is required to avoid this issue in the future. See [3_primary_production_source_analysis](3_primary_production/3_primary_production_source_analysis.md#debts).
 
-- (Residences) Data on cooling is missing. According to JB this is probably reported in the applicances section in the ECUK data.
+- (Metal) There is a lot of unmodelled coal transformation in the metal sector. See [4a_metal_industry_source_analysis](4a_metal_industry/4a_metal_industry_source_analysis.md#debts).
 
-- (Residences) Data on vacuum cleaners is missing.
+- (Residences) Split between old en new houses need to be researched. See [6_residences_source_analysis](6_residences/6_residences_source_analysis.md#debts).
 
-- (Residences) Old/new residences split should be researched.
-
-- (Services) Technology split for space heating and cooling should be researched.
-
-- (Services) Technology split for lighting should be checked. (Is this useful demand or final demand. JB assumed final demand.)
-
-- (Agriculture) Not done yet.
-
-- (Area) Reasonable quality. Various parameters can be updated.
+- (Services) Demand for other carriers is appr. 1,8 PJ. This energy use is not accounted for in the ETM. See [7_services_source_analysis](7_services/7_services_source_analysis.md#debts).
