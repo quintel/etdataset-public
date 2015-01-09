@@ -66,8 +66,3 @@ import_electricity_primary_demand_factor,1.82,
 investment_hv_net_low,0.2,
 investment_hv_net_high,0.25,
 investment_hv_net_per_turbine,1.2,
-capacity_credit_wind_constant_p1,1115,
-capacity_credit_wind_constant_p2,41870,
-capacity_credit_wind_constant_q1,3358,
-capacity_credit_wind_minimum,0.05,minimum value for capacity credit
-capacity_credit_wind_maximum,0.33,maximum value of fit function taken thesis by E.J.D. wilton; see http://refman.et-model.com/publications/1847
