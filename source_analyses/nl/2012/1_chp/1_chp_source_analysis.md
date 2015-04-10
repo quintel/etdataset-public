@@ -16,7 +16,7 @@ This analysis essentially takes all the information CBS provides on electricity 
 
 These two methods do not treat electricity the same way from a power plant that delivers heat to a city heating grid in winter, but runs as a normal power plant in summer. CBS registers all its fuel use, electricity and heat production, etc as coming from a CHP. IEA only registers the fuel consumed and the electricity and heat production in those winter months on the `Main activity producer CHP plants` line in the Energy Balance. The rest is in `Main activity producer electricity plants` line.
 
-The 1_chp_source_analysis.xlsx output is nonetheless useful for comparison between CBS and IEA. In the end, however, total installed capacities of power plants and CHPs per technology type is the best one can expect to reproduce after the `chp_analysis` and `pp_hp_analysis` are done. For more information see: [2_power_and_heat_plant](2_chp_pp_source_analysis.xlsx) which is an extension of the 1_chp_source_analysis.xlsx.
+The 1_chp_source_analysis.xlsx output is nonetheless useful for comparison between CBS and IEA. **In the end, however, total installed capacities of power plants and CHPs per technology type is the best one can expect to reproduce after the `chp_analysis` and `pp_hp_analysis` are done.** For more information see: [2_power_and_heat_plant](2_chp_pp_source_analysis.xlsx) which is an extension of the 1_chp_source_analysis.xlsx.
 
 The following assumptions are made for autoproduction CHPs:
 
