@@ -1,10 +1,10 @@
 # ETDataset – nodes source analyses
 
-The [ETDataset](https://github.com/quintel/etdataset) is a repository that includes all the input data of the [ETModel](https://github.com/quintel/etmodel). Once the [ETDataset](https://github.com/quintel/etdataset) is completed, it needs to be exported to [ETSource](https://github.com/quintel/etsource)  from where the **Input Data** will be used in calculations by [ETEngine](https://github.com/quintel/etengine). The user can interact with the model through the front-end of the [ETM](http://www.et-model.com) that is maintained in the [ETModel](https://github.com/quintel/etmodel) repository.
+The [ETDataset](https://github.com/quintel/etdataset-public) is a repository that includes all the input data of the [ETModel](https://github.com/quintel/etmodel). Once the [ETDataset](https://github.com/quintel/etdataset-public) is completed, it needs to be exported to [ETSource](https://github.com/quintel/etsource)  from where the **Input Data** will be used in calculations by [ETEngine](https://github.com/quintel/etengine). The user can interact with the model through the front-end of the [ETM](http://www.et-model.com) that is maintained in the [ETModel](https://github.com/quintel/etmodel) repository.
 
 ![ETDataset dataflow](../documentation/ETDataset_dataflow.png)
 
-A **nodes_source_analyses** repository is created and stored to [ETDataset](https://github.com/quintel/etdataset) repository. The nodes_source_analyses includes Excel files of all the nodes that are used in the [ETModel](https://github.com/quintel/etmodel). The nodes_source_analyses is dedicated to the analyses of the technical and costs parameters of the nodes. Once nodes_source_analyses is competed, it needs to be exported to [ETDataset](https://github.com/quintel/etdataset), from where will be exported to [ETSource](https://github.com/quintel/etsource) using a VBA functionallity. The following image can describe the dataflow used to transfer the data from the nodes_source_analysis to [ETDataset](https://github.com/quintel/etdataset) and then to [ETSource](https://github.com/quintel/etsource).
+A **nodes_source_analyses** repository is created and stored in the [ETDataset](https://github.com/quintel/etdataset-public) repository. The nodes_source_analyses repo includes Excel files of all the nodes that are used in the [ETModel](https://github.com/quintel/etmodel). The nodes_source_analyses is dedicated to the analyses of the technical and costs parameters of the nodes. Once a nodes_source_analysis is completed, it needs to be exported to [ETDataset](https://github.com/quintel/etdataset-public), from where will be exported to [ETSource](https://github.com/quintel/etsource) using a VBA functionallity. The following image  describes the dataflow used to transfer the data from the nodes_source_analysis to [ETDataset](https://github.com/quintel/etdataset-public) and then to [ETSource](https://github.com/quintel/etsource).
 
 ![node_source_analysis dataflow](../documentation/node_source_analyses.png)
 
@@ -76,20 +76,20 @@ Excel files are used for the documentation of the nodes, in order to keep the no
 
 
 ## Export data to ETDataset
-Once the Excel file is completed, it need to be exported to [ETDataset](https://github.com/quintel/etdataset). The data of the [ETDataset](https://github.com/quintel/etdataset) is available in the GitHub repository, you can read more about GitHub  [here](https://guides.github.com/introduction/getting-your-project-on-github/index.html). 
+Once the Excel file is completed, it need to be exported to [ETDataset](https://github.com/quintel/etdataset-public). The data of the [ETDataset](https://github.com/quintel/etdataset-public) is available in the GitHub repository, you can read more about GitHub  [here](https://guides.github.com/introduction/getting-your-project-on-github/index.html). 
 
-Exporting data to  [ETDataset](https://github.com/quintel/etdataset) includes the following steps:
+Exporting data to  [ETDataset](https://github.com/quintel/etdataset-public) includes the following steps:
 
  - Create a new branch
  - Commit your changes
  - Push commits to remote repository
  - Create a pull request
 
- More details can be found [here](https://github.com/quintel/etdataset/blob/master/README.md).
+ More details can be found [here](https://github.com/quintel/etdataset-public/blob/master/README.md).
 
  
 ## Export data to ETSource
-Once the data from the node_source_analyses is exported to [ETDataset](https://github.com/quintel/etdataset) and merged, then needs to be exported to [ETSource](https://github.com/quintel/etsource). This can be done with the VBA functionality, which is stored to the **node_manager**. The node_manager was cteared for exporting the data form [ETDataset](https://github.com/quintel/etdataset) to [ETSource](https://github.com/quintel/etsource). It is a .xlsm file and is also stored to [ETDataset](https://github.com/quintel/etdataset). The node_manager:
+Once the data from the node_source_analyses is exported to [ETDataset](https://github.com/quintel/etdataset-public) and merged, then needs to be exported to [ETSource](https://github.com/quintel/etsource). This can be done with the VBA functionality, which is stored to the **node_manager**. The node_manager was cteared for exporting the data form [ETDataset](https://github.com/quintel/etdataset-public) to [ETSource](https://github.com/quintel/etsource). It is a .xlsm file and is also stored to [ETDataset](https://github.com/quintel/etdataset-public). The node_manager:
 
  -  Contains all the VBA functionality
  
@@ -115,7 +115,7 @@ It is simple to create a new documentation for a node. The following steps need 
  -  Keep screenshots and notes of the sources used in the **Notes** sheet
  -  Use the [ETM Library](http://refman.et-model.com/) to store all the new sources
  -  Make the values linked in all sheets (**Dashboard** , **Research data** and **Notes** )
- -  Export the new data to [ETDataset](https://github.com/quintel/etdataset) and create a pull request
+ -  Export the new data to [ETDataset](https://github.com/quintel/etdataset-public) and create a pull request
  -  Once the pull request is merged, export data to [ETSource](https://github.com/quintel/etsource). 
  
  
