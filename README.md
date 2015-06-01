@@ -1,5 +1,22 @@
 # ETDataset - Start here
 
+## Introduction
+The [ETDataset](https://github.com/quintel/etdataset-public) is a repository that includes all the input data of the [ETModel](https://github.com/quintel/etmodel). This data can apply to:
+
+1. A country's energy system 
+- Energy technologies (like electric cars)
+- Energy carriers (like fuels)
+
+Needless to say the data of **type 1** are **country specific**, i.e. they vary per country, as far as data and sources are concerned. Almost all **data of types 2 and 3** are **global** as far as the Energytransition model is concerned. That means each country mostly uses the same parameters for energy technologies and carriers.
+
+Documentation of a country's energy system data can be found in the [source_analyses](./source_analyses) directory. The generation of these datasets is a bit tricky and explained [below](#country-datasets).
+
+Documentation and analysis of data on energy technologies is found in the [nodes_source_analyses](./nodes_source_analyses) directory. 
+
+Documentation and analysis of data on energy carriers, like fuels for example, is found in the [carriers_source_analyses](./carriers_source_analyses) directory. 
+
+
+
 ## Country datasets
 Each country shown in the [Energy Transition Model (ETM)](http://www.et-model.com) requires a *country-specific dataset* (**Input Data**) to correctly model the energy system of that country. The ETDataset repository is dedicated to creating these *country-specific datasets*. Once a complete dataset has been created it needs to be exported to [ETSource](https://github.com/quintel/etsource) from where the Input Data will be used in calculations by [ETEngine](https://github.com/quintel/etengine). The user can interact with the model through the front-end of the [ETM](http://www.et-model.com) that is maintained in the [ETModel](https://github.com/quintel/etmodel) repository. The Input Data is created by various **Research Analyses**. In addition to creating datasets, the ETDataset repository is used for logging all issues and discussions encountered in the process of creating and maintaining Input Data.
 

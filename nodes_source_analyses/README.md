@@ -1,21 +1,28 @@
 # ETDataset – nodes source analyses
 
-The [ETDataset](https://github.com/quintel/etdataset-public) is a repository that includes all the input data of the [ETModel](https://github.com/quintel/etmodel). Once the [ETDataset](https://github.com/quintel/etdataset-public) is completed, it needs to be exported to [ETSource](https://github.com/quintel/etsource)  from where the **Input Data** will be used in calculations by [ETEngine](https://github.com/quintel/etengine). The user can interact with the model through the front-end of the [ETM](http://www.et-model.com) that is maintained in the [ETModel](https://github.com/quintel/etmodel) repository.
+The [ETDataset](https://github.com/quintel/etdataset-public) is a repository that includes all the input data of the [ETModel](https://github.com/quintel/etmodel). This data can apply to:
+
+1. A country's energy system 
+- Energy technologies (like electric cars)
+- Energy carriers (like fuels)
+
+Needless to say the data of **type 1** are **country specific**, i.e. they vary per country, as far as data and sources are concerned. Almost all **data of types 2 and 3** are **global** as far as the Energytransition model is concerned. The 'nodes' documented in the node source analyses contained in this particular directory are mostly energy conversion technologies, so this directory is for documenting type 2 data. 
+
+For those contributing to the ETM, once a coherent dataset is completed on [ETDataset](https://github.com/quintel/etdataset-public), it needs to be exported to [ETSource](https://github.com/quintel/etsource) from where the **Input Data** will be used in calculations by [ETEngine](https://github.com/quintel/etengine). The user can interact with the model through the front-end of the [ETM](http://www.et-model.com) that is maintained in the [ETModel](https://github.com/quintel/etmodel) repository.
 
 ![ETDataset dataflow](../documentation/ETDataset_dataflow.png)
 
-A **nodes_source_analyses** repository is created and stored in the [ETDataset](https://github.com/quintel/etdataset-public) repository. The nodes_source_analyses repo includes Excel files of all the nodes that are used in the [ETModel](https://github.com/quintel/etmodel). The nodes_source_analyses is dedicated to the analyses of the technical and costs parameters of the nodes. Once a nodes_source_analysis is completed, it needs to be exported to [ETDataset](https://github.com/quintel/etdataset-public), from where will be exported to [ETSource](https://github.com/quintel/etsource) using a VBA functionallity. The following image  describes the dataflow used to transfer the data from the nodes_source_analysis to [ETDataset](https://github.com/quintel/etdataset-public) and then to [ETSource](https://github.com/quintel/etsource).
+This **nodes_source_analyses** repository contains Excel files of all the nodes that are used in the [ETModel](https://github.com/quintel/etmodel). Each nodes_source_analysis has the purpose to analyze and document the technical and costs parameters of the nodes. Once a nodes_source_analysis is completed, it needs to be exported to [ETDataset](https://github.com/quintel/etdataset), from where it will be exported to [ETSource](https://github.com/quintel/etsource) using VBA functionality. The following image describes the dataflow used to transfer the data from the nodes_source_analysis to [ETDataset](https://github.com/quintel/etdataset-public) and then to [ETSource](https://github.com/quintel/etsource).
 
 ![node_source_analysis dataflow](../documentation/node_source_analyses.png)
 
 The main reasons for creating the nodes_source_analyses are:
 
-- 	Update the technical and cost parameters of nodes that are used in the [ETModel](https://github.com/quintel/etmodel).
-- Document the technical and cost parameters of nodes and make them transparent to the public. 
-- Document the technical and cost parameters of nodes in a more comprehensive way for the public.
-- Document the technical and cost parameters of nodes in a simple way, that easily can be updated in the future.
-- Document the analyses of the technical and cost parameters of nodes and present the sources that are used for the calculations. 
-
+- 	to update the technical and cost parameters of nodes that are used in the [ETModel](https://github.com/quintel/etmodel).
+- to document the technical and cost parameters of nodes and make them transparent to the public. 
+- to document the technical and cost parameters of nodes in a more comprehensive way for the public.
+- to document the technical and cost parameters of nodes in a simple way, that easily can be updated in the future.
+- to document the analyses of the technical and cost parameters of nodes and present the sources that are used for the calculations. 
 
 The analyses of the technical and cost parameters are based on data from various institutions’ reports.
 
@@ -23,7 +30,6 @@ The analyses of the technical and cost parameters are based on data from various
 
 
 The nodes_source_analyses repository contains folders of all sectors:
-
 
 - Households
 - Buildings
