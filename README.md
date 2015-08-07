@@ -7,7 +7,7 @@ The [ETDataset](https://github.com/quintel/etdataset-public) is a repository tha
 - Energy technologies (like electric cars)
 - Energy carriers (like fuels)
 
-Needless to say the data of **type 1** are **country specific**, i.e. they vary per country, as far as data and sources are concerned. Almost all **data of types 2 and 3** are **global** as far as the Energytransition model is concerned. That means each country mostly uses the same parameters for energy technologies and carriers.
+Needless to say the data of **type 1** are **country specific**, i.e. they vary per country, as far as data and sources are concerned. Almost all **data of types 2 and 3** are **global** as far as the Energy Transition Model is concerned. That means each country mostly uses the same parameters for energy technologies and carriers.
 
 Documentation of a country's energy system data can be found in the [source_analyses](./source_analyses) directory. The generation of these datasets is a bit tricky and explained [below](#country-datasets).
 
@@ -18,37 +18,40 @@ Documentation and analysis of data on energy carriers, like fuels for example, i
 
 
 ## Country datasets
-Each country shown in the [Energy Transition Model (ETM)](http://www.et-model.com) requires a *country-specific dataset* (**Input Data**) to correctly model the energy system of that country. The ETDataset repository is dedicated to creating these *country-specific datasets*. Once a complete dataset has been created it needs to be exported to [ETSource](https://github.com/quintel/etsource) from where the Input Data will be used in calculations by [ETEngine](https://github.com/quintel/etengine). The user can interact with the model through the front-end of the [ETM](http://www.et-model.com) that is maintained in the [ETModel](https://github.com/quintel/etmodel) repository. The Input Data is created by various **Research Analyses**. In addition to creating datasets, the ETDataset repository is used for logging all issues and discussions encountered in the process of creating and maintaining Input Data.
+Each country shown in the [Energy Transition Model (ETM)](http://www.et-model.com) requires a *country-specific dataset* (**Input Data**) to correctly model the energy system of that country. The ETDataset repository is dedicated to creating these *country-specific datasets*. Once a complete dataset has been created it needs to be exported to [ETSource](https://github.com/quintel/etsource) from where the Input Data will be used in calculations by [ETEngine](https://github.com/quintel/etengine). The user can interact with the model through the front-end of the [ETM](http://www.et-model.com) that is maintained in the [ETModel](https://github.com/quintel/etmodel) repository. The Input Data is created by various **Research Analyses**. In addition to creating and documenting datasets, the ETDataset repository is used for logging all issues and discussions encountered in the process of creating and maintaining Input Data.
 
 ![ETDataset dataflow](documentation/dataflow_repositories.png)
 
 One of the key ingredients in the creation of a dataset is the IEA energy balance. Since these energy balances are proprietary, they cannot be published in a public repository. Therefore, we created two versions of the ETDataset repository:
 
-1. [**ETDataset**](https://github.com/quintel/etdataset) is a **private** repository that is used by Quintel to generate the Input Data for all countries shown in the ETM. This repository is private, because it contains the IEA energy balances.
+1. [**ETDataset**](https://github.com/quintel/etdataset) is a **private** repository that is used by Quintel to generate the Input Data for all countries shown in the ETM. This repository is private, because it contains the IEA energy balances and non-Quintel employees can only get access after signing an NDA.
 - [**ETdataset-public**](https://github.com/quintel/etdataset-public) is a **public** copy of the [ETDataset](https://github.com/quintel/etdataset) repository, but without the proprietary energy balances. This repository is available for informative purposes. The repository also contains the entire dataset (including a fictional energy balance) for the country *example* that can be used to review the dataset generation process. Running the dataset generation process for a real country requires the purchase of the IEA energy balance for that country.
 
-More information on the generation of Input Data for a countr and a more in-depth explanation of the relation between ETDataset and ETDataset-public can be found [here](/documentation/generate_output_files.md). If you want to make changes to the model or if you would like to add a new country, have a look at [this page](/documentation/generate_output_files.md). Contact [Quintel](http://quintel.com/contact) if you desire more information.
+More information on the generation of Input Data for a country and a more in-depth explanation of the relation between ETDataset and ETDataset-public can be found [here](/documentation/generate_output_files.md). If you want to make changes to the model or if you would like to add a new country, have a look at [this page](/documentation/generate_output_files.md). Contact [Quintel](http://quintel.com/contact) if you desire more information.
 
 ## Global dataset
 ETDataset's second function is to share the research on all technologies and carriers used by the Energy Transition Model. As explained in the [Documentation repository](https://github.com/quintel/documentation#the-energy-calculation), the ETM can be represented as a network of connected energy conversion technologies. The properties of these technologies are called **attributes** and the converters themselves are called **nodes**. These node attributes and the research on which they are based have been documented here.
 
-Since these attributes are the same in all countries, we call this the '**Global dataset**'.
+Energy is carried between nodes by so-called **energy carriers** or carriers for short. Carriers also have attributes which are documented here.
+
+Since almost all these attributes are the same for all countries, we call this the '**Global dataset**'.
 
 ## Content
 
 The ETDataset repository contains the following folders and files:
 
-- The [**Analysis Manager**](analysis_manager.xlsm) is an Excel workbook that serves as the *control room* for generating Input Data. The Analysis Manager contains macros that facilitate the generation process of Input Data.
+- The [**Analysis Manager**](analysis_manager.xlsm) is an Excel workbook that serves as the *control room* for generating country-specific datasets. The Analysis Manager contains macros that facilitate the generation process of Input Data.
 - The [**Analyses**](/analyses) folder contains the **Research Analyses**, Excel files that are *tools* used to process Research Data. They do **not** contain any data themselves. The various analyses can be opened via the [Analysis Manager](analysis_manager.xlsm). See [Dataflow](#dataflow) for an explanation.
 - The [**Data**](/data) folder contains country-specific data that are imported, manipulated and exported by the Research Analyses.
-- The [**Nodes Source Analyses**](/nodes_source_analyses) folder contains the analyses for each node. IF you want to know what publications and attributes we used for all the technologies, this is where you need to be. 
-- The [**Source Analyses**](/source_analyses) folder contains analyses for the assumptions used in the various Research Analyses. Whereas the [Analyses](/analyses) folder contains analyses for the *uniform data* sources, i.e. sources of data that are formatted in the same way for all countries, like Energy Balances for example, the [Source Analyses](/source_analyses) directory contains the *non-uniform data* and manipulation of such data. For example, data on how many diesel and gasoline carsare found in a country.
+- The [**Source Analyses**](/source_analyses) folder contains analyses for the assumptions used in the various Research Analyses. Whereas the [Analyses](/analyses) folder contains analyses for the *uniform data* sources, i.e. sources of data that are formatted in the same way for all countries, like Energy Balances for example, the [Source Analyses](/source_analyses) directory contains the *non-uniform data* and manipulation of such data. For example, data on how many diesel and gasoline cars are found in a country.
+- The [**Nodes Source Analyses**](/nodes_source_analyses) folder contains the analyses for each node. If you want to know what publications and attributes we used for all the technologies, this is where you need to be. 
+- The [**Carriers Source Analyses**](/carriers_source_analyses) folder contains the analyses for each carrier. If you want to know what publications and attributes we used for the energy carriers, this is where you need to be. 
 - The [**Documentation**](/documentation) folder contains additional and more detailed information for this repository.
 
 
 ## <a name="dataflow"></a> Dataflow
 
-This image outlines the dataflow that we use to generate country specific Input Data from Research Data (the IEA energy balance) and assumptions based on Source Analyses. The generation of Input Data occurs in various Research Analyses. Descriptions of the various Research Analysis and a detailed visualization of the dataflow can be found [here](analyses/README.md).
+This image outlines the dataflow that we use to generate country-specific Input Data from Research Data (the IEA energy balance) and assumptions based on Source Analyses. The generation of Input Data occurs in various Research Analyses. Descriptions of the various Research Analysis and a detailed visualization of the dataflow can be found [here](analyses/README.md).
 
 ![ETDataset dataflow](documentation/dataflow.png)
 
