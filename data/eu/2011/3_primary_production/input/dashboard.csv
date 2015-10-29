@@ -7,3 +7,5 @@ max_biogenic_wasate,1079131,Estimate based on Eurostat data; see soure analysis
 max_non_biogenic_waste,1732468,Estimate based on Eurostat data; see soure analysis
 percentage_wood_pellets,0.95,Assumption
 percentage_torrified_biomass_pellets,0.05,Assumption
+regasified_lng,1132922.37,GIE (see source_analyses/EU/2013
+regasified_bio_lng,0,Assumption (see source_analyses/EU/2013
