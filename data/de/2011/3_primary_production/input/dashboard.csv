@@ -7,3 +7,5 @@ max_biogenic_wasate,110716.793,domestic production; increased by 10%
 max_non_biogenic_waste,178375.813,domestic production; increased by 10%
 percentage_wood_pellets,0.75,estimate; no source
 percentage_torrified_biomass_pellets,0.25,estimate; no source
+regasified_lng,0,No terminal
+regasified_bio_lng,0,No terminal

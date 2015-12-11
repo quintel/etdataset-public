@@ -13,12 +13,12 @@ residences_percentage_space_heating_heat_pump_ground,0.0008,NL 2011 value
 residences_percentage_space_heating_micro_chp,0,NL 2011 value
 residences_percentage_space_heating_district,0.04,NL 2011 value
 residences_percentage_space_heating_heat_pump_air,0,NL 2011 value
-residences_percentage_space_heating_woodpellets,0.042,NL 2011 value
+residences_percentage_space_heating_woodpellets,0.0424,NL 2011 value
 residences_percentage_space_heating_electric_resistance,0.0176,NL 2011 value
 residences_percentage_space_heating_gas_burner,0.1035,NL 2011 value
 residences_percentage_space_heating_oil_burner,0.011,NL 2011 value
 residences_percentage_space_heating_coal_burner,0.00058,NL 2011 value
-residences_percentage_space_heating_heat_pump_add_on,0.0004,NL 2011 value
+residences_percentage_space_heating_hybrid_heatpump,0,Replaces heatpump add on value
 residences_percentage_hot_water_combi_boiiler,0.756,NL 2011 value
 residences_percentage_hot_water_solar_thermal,0.0031,NL 2011 value
 residences_percentage_hot_water_heat_pump_ground,0,NL 2011 value
@@ -31,6 +31,7 @@ residences_percentage_hot_water_gas_burner,0.1331,NL 2011 value
 residences_percentage_hot_water_oil_burner,0,NL 2011 value
 residences_percentage_hot_water_coal_burner,0,NL 2011 value
 residences_percentage_hot_water_fuel_cell,0,NL 2011 value
+residences_percentage_hot_water_hybrid_heatpump,0,To be researched
 residences_percentage_cooling_heat_pump_ground,0,No data available; assumed 100% airconditioning
 residences_percentage_cooling_heat_pump_air,0,No data available; assumed 100% airconditioning
 residences_percentage_cooling_aircondition,1,No data available; assumed 100% airconditioning
@@ -52,7 +53,6 @@ residences_percentage_appliances_vacuum_cleaner,0.1,NL 2011 value
 residences_percentage_appliances_others,0.07,NL 2011 value
 residences_space_heating_share_coming_from_solar_thermal,0.15,NL 2011 value
 residences_hot_water_share_coming_from_solar_thermal,0.5,NL 2011 value
-residences_space_heating_share_coming_from_el_add_on,0.6,NL 2011 value
 residences_percentage_old_residences,0.777,NL 2011 value
 residences_percentage_new_residences,0.223,NL 2011 value
 insulation_level_old_houses_min,0.5,This number depends on the insulation analysis; see https://github.com/quintel/documentation/blob/master/general/insulation.md

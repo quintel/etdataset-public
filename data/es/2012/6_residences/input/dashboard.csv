@@ -12,13 +12,13 @@ residences_percentage_space_heating_solar_thermal,0.0208590120413388,
 residences_percentage_space_heating_heat_pump_ground,0,
 residences_percentage_space_heating_micro_chp,0,
 residences_percentage_space_heating_district,0,
-residences_percentage_space_heating_heat_pump_air,0.00587844884801365,
+residences_percentage_space_heating_heat_pump_air,0.00663695837678975,
 residences_percentage_space_heating_woodpellets,0.289181757845833,
 residences_percentage_space_heating_electric_resistance,0.146961221200341,
 residences_percentage_space_heating_gas_burner,0.237034227742486,
 residences_percentage_space_heating_oil_burner,0.289181757845833,
 residences_percentage_space_heating_coal_burner,0.00995543756518442,
-residences_percentage_space_heating_heat_pump_add_on,0.000758509528775956,
+residences_percentage_space_heating_hybrid_heatpump,0,Set to 0
 residences_percentage_hot_water_combi_boiiler,0,Based on Ecofys data; see source analysis; subsequently optimized to match checks
 residences_percentage_hot_water_solar_thermal,0.0203208556149733,
 residences_percentage_hot_water_heat_pump_ground,0,
@@ -31,6 +31,7 @@ residences_percentage_hot_water_gas_burner,0.262032085561497,
 residences_percentage_hot_water_oil_burner,0.213903743315508,
 residences_percentage_hot_water_coal_burner,0.0106951871657754,
 residences_percentage_hot_water_fuel_cell,0,
+residences_percentage_hot_water_hybrid_heatpump,0,Set to 0
 residences_percentage_cooling_heat_pump_ground,0,No data available; assumed 100% airconditioning
 residences_percentage_cooling_heat_pump_air,0,No data available; assumed 100% airconditioning
 residences_percentage_cooling_aircondition,1,No data available; assumed 100% airconditioning
@@ -52,7 +53,6 @@ residences_percentage_appliances_vacuum_cleaner,0.059,Based on JRC study; see so
 residences_percentage_appliances_others,0.166,Based on SECH-SPAHOUSEC study; see source analysis
 residences_space_heating_share_coming_from_solar_thermal,0.15,
 residences_hot_water_share_coming_from_solar_thermal,0.5,
-residences_space_heating_share_coming_from_el_add_on,0.6,
 residences_percentage_old_residences,0.86,
 residences_percentage_new_residences,0.14,
 insulation_level_old_houses_min,0.5,

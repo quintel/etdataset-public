@@ -12,13 +12,13 @@ residences_percentage_space_heating_solar_thermal,0.00254771376212399,
 residences_percentage_space_heating_heat_pump_ground,0.000804541188039154,
 residences_percentage_space_heating_micro_chp,0,
 residences_percentage_space_heating_district,0.0491664059357261,
-residences_percentage_space_heating_heat_pump_air,0.00572118178161176,
+residences_percentage_space_heating_heat_pump_air,0.0133196263353139,
 residences_percentage_space_heating_woodpellets,0.245832029678631,
 residences_percentage_space_heating_electric_resistance,0.107272158405221,
 residences_percentage_space_heating_gas_burner,0.345952710856836,
 residences_percentage_space_heating_oil_burner,0.22348366334421,
 residences_percentage_space_heating_coal_burner,0.00250301702945515,
-residences_percentage_space_heating_heat_pump_add_on,0.00759844455370313,
+residences_percentage_space_heating_hybrid_heatpump,0,Set to 0
 residences_percentage_hot_water_combi_boiiler,0.00944287063267233,Based on Ecofys data; see source analysis; subsequently optimized to match checks
 residences_percentage_hot_water_solar_thermal,0.00236071765816808,
 residences_percentage_hot_water_heat_pump_ground,0.000944287063267233,
@@ -31,6 +31,7 @@ residences_percentage_hot_water_gas_burner,0.189801699716714,
 residences_percentage_hot_water_oil_burner,0.141643059490085,
 residences_percentage_hot_water_coal_burner,0.00236071765816808,
 residences_percentage_hot_water_fuel_cell,0,
+residences_percentage_hot_water_hybrid_heatpump,0,Set to 0
 residences_percentage_cooling_heat_pump_ground,0,No data available; assumed 100% airconditioning
 residences_percentage_cooling_heat_pump_air,0,No data available; assumed 100% airconditioning
 residences_percentage_cooling_aircondition,1,No data available; assumed 100% airconditioning
@@ -52,7 +53,6 @@ residences_percentage_appliances_vacuum_cleaner,0.1,
 residences_percentage_appliances_others,0.07,
 residences_space_heating_share_coming_from_solar_thermal,0.15,Based on NL dataset
 residences_hot_water_share_coming_from_solar_thermal,0.5,Based on NL dataset
-residences_space_heating_share_coming_from_el_add_on,0.6,Based on NL dataset
 residences_percentage_old_residences,0.777,Based on NL dataset
 residences_percentage_new_residences,0.223,Based on NL dataset
 insulation_level_old_houses_min,0.5,This number depends on the insulation analysis; see http://wiki.quintel.com/index.php/Insulation

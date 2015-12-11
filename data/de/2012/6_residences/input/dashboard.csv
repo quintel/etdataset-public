@@ -12,13 +12,13 @@ residences_percentage_space_heating_solar_thermal,0.013,
 residences_percentage_space_heating_heat_pump_ground,0,
 residences_percentage_space_heating_micro_chp,0,
 residences_percentage_space_heating_district,0.092,
-residences_percentage_space_heating_heat_pump_air,0.0029,
+residences_percentage_space_heating_heat_pump_air,0.0073,
 residences_percentage_space_heating_woodpellets,0.145,
 residences_percentage_space_heating_electric_resistance,0.0005,
 residences_percentage_space_heating_gas_burner,0.3047,
 residences_percentage_space_heating_oil_burner,0.283,
 residences_percentage_space_heating_coal_burner,0.0145,
-residences_percentage_space_heating_heat_pump_add_on,0.0044,
+residences_percentage_space_heating_hybrid_heatpump,0,Set to 0
 residences_percentage_hot_water_combi_boiiler,0.12,Based on Ecofys data; see source analysis; subsequently optimized to match checks
 residences_percentage_hot_water_solar_thermal,0.015,
 residences_percentage_hot_water_heat_pump_ground,0,
@@ -31,6 +31,7 @@ residences_percentage_hot_water_gas_burner,0.3048,
 residences_percentage_hot_water_oil_burner,0.199,
 residences_percentage_hot_water_coal_burner,0.015,
 residences_percentage_hot_water_fuel_cell,0,
+residences_percentage_hot_water_hybrid_heatpump,0,Set to 0
 residences_percentage_cooling_heat_pump_ground,0,No data available; assumed 100% airconditioning
 residences_percentage_cooling_heat_pump_air,0,No data available; assumed 100% airconditioning
 residences_percentage_cooling_aircondition,1,No data available; assumed 100% airconditioning
@@ -52,7 +53,6 @@ residences_percentage_appliances_vacuum_cleaner,0.1,
 residences_percentage_appliances_others,0.07,
 residences_space_heating_share_coming_from_solar_thermal,0.15,
 residences_hot_water_share_coming_from_solar_thermal,0.5,
-residences_space_heating_share_coming_from_el_add_on,0.6,
 residences_percentage_old_residences,0.86,Base on old DE research
 residences_percentage_new_residences,0.14,Base on old DE research
 insulation_level_old_houses_min,0.5,This number depends on the insulation analysis; see https://github.com/quintel/documentation/blob/master/general/insulation.md
