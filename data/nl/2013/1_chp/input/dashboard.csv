@@ -1,0 +1,52 @@
+Key,Value,Source
+country,nl,
+base_year,2013,
+chp_allocation_protermo,0,CBS expert
+chp_allocation_iea,1,
+chp_allocation_decc,0,
+chp_total_heat_produciton,219682,CBS (2013) Elektriciteit; productie en productiemiddelen; also see 1_chp_source_analysis.xlsx
+chp_total_fuel_input,568891,CBS (2013) Elektriciteit; productie en productiemiddelen; also see 1_chp_source_analysis.xlsx
+chp_agriculture_unsold_gas,1,Almost no sold heat production in agriculture; 20 TJ according to IEA autoproducer table
+chp_agriculture_unsold_wood_pellets,1,Almost no sold heat production in agriculture; 20 TJ according to IEA autoproducer table
+chp_agriculture_elec_prod_gas,1,There are only 'Gasmotor' CHPs in agriculture according to CBS
+chp_residential_unsold_gas,1,No CHPs in households according to IEA autoproducer table and CBS
+chp_residential_unsold_wood_pellets,1,No CHPs in households according to IEA autoproducer table and CBS
+chp_residential_elec_prod_gas,1,No CHPs in households according to IEA autoproducer table and CBS
+chp_caps_unsold_gas,0,Not relevant; only biogas CHP produciton left after waste incineration is subtracted
+chp_caps_unsold_wood_pellets,0,Not relevant; only biogas CHP produciton left after waste incineration is subtracted
+chp_caps_elec_prod_gas,1,Not relevant; only biogas CHP produciton left after waste incineration is subtracted
+chp_ei_unsold_gas_turbine,0,Optimized to match sold heat production
+chp_ei_unsold_gas_engine,0,Optimized to match sold heat production
+chp_ei_unsold_gas_cc,0,Optimized to match sold heat production
+chp_ei_unsold_coal,0,Not relevant
+chp_ei_elec_prod_gas,1,No coal use in energy industry according to CBS
+chp_ei_elec_prod_gas_turbine,0.591355599214145,1_chp_source_analysis.xlsx
+chp_ei_elec_prod_gas_engine,0.0162409954158481,1_chp_source_analysis.xlsx
+chp_ei_elec_prod_gas_cc,0.392403405370007,1_chp_source_analysis.xlsx
+chp_i_unsold_gas_turbine,0.645,Optimized to match sold heat production
+chp_i_unsold_gas_engine,1,Optimized to match sold heat production
+chp_i_unsold_gas_cc,0.645,Optimized to match sold heat production
+chp_i_unsold_coal,1,Not relevant
+chp_i_elec_prod_gas_turbine,0.266988727858293,1_chp_source_analysis.xlsx
+chp_i_elec_prod_gas_engine,0.0104298278211322,1_chp_source_analysis.xlsx
+chp_i_elec_prod_gas_cc,0.722581444320575,1_chp_source_analysis.xlsx
+chp_waste_removal_caps,0.93,
+chp_waste_removal_industry,0.07,
+chp_flh_agriculture_gas,3600,Re-estimate FLH; to match CBS installed capacities
+chp_flh_agriculture_biogas,8000,EnergyMatters electricity  FLH
+chp_flh_agriculture_wood_pellets,6000,EnergyMatters heat FLH
+chp_flh_residential_gas,4500,EnergyMatters electricity  FLH
+chp_flh_residential_biogas,8000,EnergyMatters electricity  FLH
+chp_flh_residential_wood_pellets,6000,EnergyMatters heat FLH
+chp_flh_caps_gas,4500,EnergyMatters electricity  FLH
+chp_flh_caps_biogas,8000,EnergyMatters electricity  FLH
+chp_flh_caps_wood_pellets,6000,EnergyMatters heat FLH
+chp_flh_iei_gas_turbine,3700,Re-estimate FLH; to match CBS installed capacities
+chp_flh_iei_gas_engine,1300,Re-estimate FLH; to match CBS installed capacities
+chp_flh_iei_gas_cc,2120,Re-estimate FLH; to match CBS installed capacities
+chp_flh_iei_coal,4500,EnergyMatters heat FLH
+chp_flh_ma_gas,4900,Re-estimate FLH; to match CBS installed capacities
+chp_flh_ma_coal,5900,Re-estimate FLH; to match CBS installed capacities
+chp_flh_ma_lignite,4500,EnergyMatters heat FLH. Coal CHP
+chp_flh_ma_cofiring,5800,Re-estimate FLH; to match CBS installed capacities
+chp_flh_waste,5100,Re-estimate FLH; to match CBS installed capacities; See: both 1_chp_source_analysis.xlsx and 2_chp_pp_source_analysis.xlsx

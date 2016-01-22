@@ -1,0 +1,49 @@
+Key,Value,Source
+country,nl,
+base_year,2013,
+pp_share_coal_us,0.38,Optimized to match fuel use
+pp_share_coal_us_ccs,0,No CCS yet
+pp_share_coal_cc,0.0185809823841572,2_chp_pp_source_analysis.xlsx
+pp_share_coal_cc_ccs,0,No CCS yet
+pp_share_lignite_us,1,Not relevant for NL
+pp_share_lignite_us_ccs,0,Not relevant for NL
+pp_share_gas_turbine,0,2_chp_pp_source_analysis.xlsx
+pp_share_gas_cc,0.79,Optimized to match fuel use
+pp_share_gas_cc_ccs,0,No CCS yet
+pp_share_gas_engine,0,2_chp_pp_source_analysis.xlsx
+pp_share_gas_us,0.21,Optimized to match fuel use
+pp_share_nuclear_2,1,
+pp_share_nuclear_3,0,No 3rd generation yet
+pp_share_hydro_river,1,Estimate based on Ecofys analysis
+pp_share_hydro_mountain,0,Estimate based on Ecofys analysis
+pp_share_wind_coastal,0.308460813932824,2_chp_pp_source_analysis.xlsx
+pp_share_wind_offshore,0.137017949173627,2_chp_pp_source_analysis.xlsx
+pp_share_wind_inland,0.554521236893549,2_chp_pp_source_analysis.xlsx
+pp_flh_coal_us_co,7900,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
+pp_flh_coal_supercritical,7850,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
+pp_flh_coal_us,7900,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
+pp_flh_coal_us_ccs,7500,Does not exist in NL
+pp_flh_coal_cc,1575,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
+pp_flh_coal_cc_ccs,4000,Does not exist in NL
+pp_flh_lignite_us,6329,Does not exist in NL
+pp_flh_lignite_us_ccs,5972,Does not exist in NL
+pp_flh_gas_turbine,200,Estimate
+pp_flh_gas_cc,2000,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
+pp_flh_gas_cc_ccs,1500,Does not exist in NL
+pp_flh_gas_engine,1,WŠrtsila
+pp_flh_gas_us,1090,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
+pp_flh_nuclear_2,5700,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
+pp_flh_nuclear_3,7800,does not exist in NL
+pp_flh_hydro_river,3080,Optimized based on Ecofys analysis
+pp_flh_hydro_mountain,4492,Optimized based on Ecofys analysis
+pp_flh_solar_pv,867,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_residential_solar_pv,867,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_caps_solar_pv,867,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_solar_csp,867,See source_analyses/eu/2012/2_power_and_heat_plant/solar_source_analysis.xlsx
+pp_flh_wind_coastal,2300,Leading:  2_chp_pp_source_analysis.xlsx; checked with Europe's onshore and offshore wind energy potential; http://refman.et-model.com/publications/1312
+pp_flh_wind_offshore,3500,Europe's onshore and offshore wind energy potential; http://refman.et-model.com/publications/1312; checked with 2_chp_pp_source_analysis.xlsx
+pp_flh_wind_inland,1800,Leading:  2_chp_pp_source_analysis.xlsx; checked with Europe's onshore and offshore wind energy potential; http://refman.et-model.com/publications/1312
+pp_flh_oil_us,4000,Estimate; not relevant. No such plant exists.
+pp_flh_diesel,4000,Estimate; not relevant. No such plant exists.
+pp_flh_waste,4100,Estimate; not relevant; since IEA sees no power production from waste incinaratign power plants
+pp_flh_geothermal,8000,Estimate; not relevant. No such plant exists.

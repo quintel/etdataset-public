@@ -1,0 +1,24 @@
+Key,Value,Source
+country,nl,
+base_year,2013,
+services_final_demand_space_heating,196430,NL 2011 value
+services_final_demand_space_cooling,6608,NL 2011 value
+services_final_demand_lighting,57475,NL 2011 value
+services_space_heating_share_gas_fired_heaters,0.978,NL 2011 value
+services_space_heating_share_electric_heat_pump_with_storage,0.022,NL 2011 value
+services_space_heating_share_gas_fired_heat_pumps,0,NL 2011 value
+services_space_heating_share_electric_heaters,0,NL 2011 value
+services_space_heating_share_coal_fired_heater,0,NL 2011 value
+services_space_heating_share_oil_fired_heater,0,NL 2011 value
+services_space_cooling_share_gas_fired_heat_pump,0,We assumed that no gas-fired heat pumps are present yet
+services_space_cooling_share_electric_heat_pump,0.044,NL 2011 value
+services_space_cooling_share_airco,0.956,We assumed that the remainder of cooling demand is supplied by airconditioning
+services_lighting_incandescent_lamp,0,
+services_lighting_fluorescent_lamp,0,
+services_lighting_fluorescent_tube,0.9191,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+services_lighting_efficient_fluorescent_tube,0.0653,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+services_lighting_LED_tube,0.0156,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+services_biomass_used_in space_heating,1,
+services_biomass_used_in appliances,0,
+services_savings_lighting_motion_detection,0.039,
+services_savings_lighting_daylight_control,0.053,

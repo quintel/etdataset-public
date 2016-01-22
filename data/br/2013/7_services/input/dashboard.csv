@@ -10,9 +10,9 @@ services_space_heating_share_gas_fired_heat_pumps,0.015,Based on EPE 2013
 services_space_heating_share_electric_heaters,0,Based on EPE 2013
 services_space_heating_share_coal_fired_heater,0,Based on EPE 2013
 services_space_heating_share_oil_fired_heater,0.03,Based on EPE 2013
-services_space_cooling_share_gas_fired_heat_pump,0.01,Based on EPE 2013
+services_space_cooling_share_gas_fired_heat_pump,0.007,Based on EPE 2013; adjusted from 1.0% to fit the energy balance for network gas
 services_space_cooling_share_electric_heat_pump,0.9,Based on EPE 2013
-services_space_cooling_share_airco,0.09,Based on EPE 2013
+services_space_cooling_share_airco,0.093,Based on EPE 2013; adjusted form 9.0% to fit the energy balance for network gas
 services_lighting_incandescent_lamp,0.433,Bases on Alilux 2013 
 services_lighting_fluorescent_lamp,0.347,Bases on Alilux 2013 
 services_lighting_fluorescent_tube,0.156,Bases on Alilux 2013 

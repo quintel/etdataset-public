@@ -9,3 +9,6 @@ percentage_wood_pellets,0.75,
 percentage_torrified_biomass_pellets,0.25,
 regasified_lng,200000,
 regasified_bio_lng,0,
+percentage_steam_methane_reforming,0.6,Assumption
+percentage_steam_methane_reforming_ccs,0,Assumption
+percentage_local_electrolysis,0.4,Assumption

@@ -1,0 +1,16 @@
+Key,Value,Source
+country,nl,
+base_year,2013,
+metal_steel_production,6.7,World Steel Association
+metal_steel_share_blast_furnace_current,0.98,World Steel Association
+metal_steel_share_blast_furnace_bat,0,
+metal_steel_share_cyclone,0,
+metal_steel_share_electric,0.02,World Steel Association
+metal_steel_burner_share_coal,0,Optimized
+metal_steel_burner_share_coal_gas,0.7,Optimized
+metal_steel_burner_share_network_gas,0.3,Optimized
+metal_aluminium_production,0.17,Production capacity of Aldel according to Wikipedia
+metal_aluminium_share_electrolysis_current,0.8,NL 2011 value
+metal_aluminium_share_electrolysis_bat,0,NL 2011 value
+metal_aluminium_share_melting_oven,0.2,NL 2011 value
+metal_aluminium_share_carbothermal_reduction,0,NL 2011 value

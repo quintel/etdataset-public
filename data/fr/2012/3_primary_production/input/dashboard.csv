@@ -9,3 +9,6 @@ percentage_wood_pellets,0.5,Assumption
 percentage_torrified_biomass_pellets,0.5,Assumption
 regasified_lng,227937.31,GIIGNL; GLE (see  input source analysis)
 regasified_bio_lng,0,Assumption
+percentage_steam_methane_reforming,0.6,Assumption
+percentage_steam_methane_reforming_ccs,0,Assumption
+percentage_local_electrolysis,0.4,Assumption
