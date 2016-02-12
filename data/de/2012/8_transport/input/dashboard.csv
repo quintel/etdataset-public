@@ -1,9 +1,9 @@
 Key,Value,Source
 country,de,
 base_year,2012,
-transport_percentage_of_gasoline_mix_delivered_to_cars,0.99,Based on Odyssee 2011 data
-transport_percentage_of_diesel_mix_delivered_to_cars,0.46,Based on Odyssee 2011 data
-transport_percentage_of_electricity_mix_delivered_to_cars,1,Trucks do not drive on electricity
+transport_percentage_of_gasoline_mix_delivered_to_cars,0.991827578,EUROSTAT (see source_analyses/EU/2013)
+transport_percentage_of_diesel_mix_delivered_to_cars,0.509741982,EUROSTAT (see source_analyses/EU/2013)
+transport_percentage_of_electricity_mix_delivered_to_cars,0.637507386,EUROSTAT (see source_analyses/EU/2013)
 transport_road_lng,0,NGVA (see source_analyses/EU/2013)
 transport_percentage_of_compressed_network_gas_mix_delivered_to_cars,0.7666,NGVA (see source_analyses/EU/2013)
 transport_road_bio_lng,0,NGVA (see source_analyses/EU/2013)

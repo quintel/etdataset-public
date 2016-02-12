@@ -66,3 +66,4 @@ import_electricity_primary_demand_factor,1.85,assumed the same value as for nl/2
 investment_hv_net_low,0.2,
 investment_hv_net_high,0.25,
 investment_hv_net_per_turbine,1.2,
+number_of_cars,9000000,

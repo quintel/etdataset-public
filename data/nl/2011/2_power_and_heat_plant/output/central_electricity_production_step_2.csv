@@ -27,7 +27,7 @@ energy_power_nuclear_gen3_uranium_oxide,4.14100000000000E+04,7.84300000000000E+0
 energy_power_hydro_river,2.09387755102041E+02,2.50000000000000E+03
 energy_power_hydro_mountain,0.00000000000000E+00,3.94200000000000E+03
 energy_power_geothermal,0.00000000000000E+00,8.25000000000000E+03
-energy_power_solar_pv_solar_radiation,1.80000000000000E+02,8.72000000000000E+02
+energy_power_solar_pv_solar_radiation,1.92000000000000E+02,8.72000000000000E+02
 energy_power_solar_csp_solar_radiation,0.00000000000000E+00,5.00000000000000E+02
 energy_power_wind_turbine_coastal,2.53632989690722E+03,3.00000000000000E+03
 energy_power_wind_turbine_offshore,3.06630927835052E+03,3.50000000000000E+03

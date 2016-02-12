@@ -10,7 +10,7 @@ has_buildings,true,
 has_climate,false,
 has_coastline,true,
 has_cold_network,false,
-has_electricity_storage,false,
+has_electricity_storage,true,
 has_employment,false,
 has_fce,false,
 has_industry,true,
@@ -66,3 +66,4 @@ import_electricity_primary_demand_factor,1.82,assumed the same value as for nl/2
 investment_hv_net_low,0.2,assumed the same value as for nl/2011
 investment_hv_net_high,0.25,assumed the same value as for nl/2011
 investment_hv_net_per_turbine,1.2,assumed the same value as for nl/2011
+number_of_cars,81089666,DENATRAN (see source_analyses/eu/2013/8_transport)

@@ -1,9 +1,9 @@
 Key,Value,Source
 country,uk,
 base_year,2012,
-transport_percentage_of_gasoline_mix_delivered_to_cars,0.98,Based on Odyssee 2011 data
-transport_percentage_of_diesel_mix_delivered_to_cars,0.35,Based on Odyssee 2011 data
-transport_percentage_of_electricity_mix_delivered_to_cars,1,Based on DE dataset
+transport_percentage_of_gasoline_mix_delivered_to_cars,0.97670571,EUROSTAT (see source_analyses/EU/2013)
+transport_percentage_of_diesel_mix_delivered_to_cars,0.50017955,EUROSTAT (see source_analyses/EU/2013)
+transport_percentage_of_electricity_mix_delivered_to_cars,0.294527597,EUROSTAT (see source_analyses/EU/2013)
 transport_road_lng,0.9748,NVGA (see source_analyses/EU/2013)
 transport_percentage_of_compressed_network_gas_mix_delivered_to_cars,0.192,NVGA (see source_analyses/EU/2013)
 transport_road_bio_lng,0,The value is 0 TJ
