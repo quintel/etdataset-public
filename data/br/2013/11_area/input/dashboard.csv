@@ -23,6 +23,8 @@ has_other,true,
 has_solar_csp,true,
 has_import_export,true,
 use_network_calculations,false,
+has_aggregated_chemical_industry,true,
+has_aggregated_other_industry,true,
 areable_land,2756050,(http://data.worldbank.org/indicator/AG.LND.AGRI.K2)
 coast_line,7491,(http://www.countrywatch.com/Intelligence/CountryReviews?CountryId=24)
 land_available_for_solar,2756050,Assumed to be equal to arable land

@@ -23,6 +23,8 @@ has_other,true,
 has_solar_csp,false,
 has_import_export,true,
 use_network_calculations,false,
+has_aggregated_chemical_industry,true,
+has_aggregated_other_industry,true,
 areable_land,60192,World Factbook (land area * areable land %) (https://www.cia.gov/library/publications/the-world-factbook/geos/uk.html)
 coast_line,12429,World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/uk.html)
 land_available_for_solar,60192,Assumed to be equal to areable land

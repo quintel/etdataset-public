@@ -23,6 +23,8 @@ has_other,true,
 has_solar_csp,false,
 has_import_export,true,
 use_network_calculations,true,
+has_aggregated_chemical_industry,true,
+has_aggregated_other_industry,true,
 areable_land,18417,CBS tabel "Landbouw; gewassen; dieren en grondgebruik naar regio". Zie 20140610_CBS_Landbouw.xlsx
 coast_line,451,The World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/nl.html)
 land_available_for_solar,18417,Assumed to be equal to arable land.

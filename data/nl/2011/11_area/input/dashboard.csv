@@ -23,6 +23,8 @@ has_other,true,
 has_solar_csp,false,
 has_import_export,true,
 use_network_calculations,true,
+has_aggregated_chemical_industry,true,
+has_aggregated_other_industry,true,
 areable_land,19175.4889,CBS_20120402_Landbouwareaal analyse (2009 data).xls
 coast_line,451,https://www.cia.gov/library/publications/the-world-factbook/geos/nl.html
 land_available_for_solar,19175.4889,Assumed to be equal to arable land.
@@ -66,3 +68,4 @@ import_electricity_primary_demand_factor,1.82,
 investment_hv_net_low,0.2,
 investment_hv_net_high,0.25,
 investment_hv_net_per_turbine,1.2,
+number_of_cars,,
