@@ -4,7 +4,7 @@
 The [ETDataset](https://github.com/quintel/etdataset-public) is a repository that includes all the input data of the [ETModel](https://github.com/quintel/etmodel). This data can apply to:
 
 1. A country's energy system 
-- Energy technologies (like electric cars)
+- Energy technologies (like electric vehicles)
 - Energy carriers (like fuels)
 
 Needless to say the data of **type 1** are **country specific**, i.e. they vary per country, as far as data and sources are concerned. Almost all **data of types 2 and 3** are **global** as far as the Energy Transition Model is concerned. That means each country mostly uses the same parameters for energy technologies and carriers.
