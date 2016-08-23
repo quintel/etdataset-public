@@ -4,6 +4,8 @@ base_year,2012,
 services_final_demand_space_heating,158131.713665686,Based on Fleiter et al. (2010) and source analysis
 services_final_demand_space_cooling,98159.4075816993,Based on Fleiter et al. (2010) and source analysis
 services_final_demand_lighting,60405.7892810457,Based on Fleiter et al. (2010) and source analysis
+ict_split,no,
+industry_final_demand_ict_electricity,0,
 services_space_heating_share_gas_fired_heaters,0.3864,Based on Fleiter et al. (2010) and source analysis
 services_space_heating_share_electric_heat_pump_with_storage,0,Assumption
 services_space_heating_share_gas_fired_heat_pumps,0,Assumption

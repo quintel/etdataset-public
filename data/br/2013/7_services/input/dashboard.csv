@@ -4,6 +4,8 @@ base_year,2013,
 services_final_demand_space_heating,118283.736,Based on EPE 2013 (desconsidering eletric equipments)
 services_final_demand_space_cooling,52655.341,Based on EPE 2013 (desconsidering eletric equipments)
 services_final_demand_lighting,0,Based on EPE 2013 (desconsidering eletric equipments)
+ict_split,no,
+industry_final_demand_ict_electricity,0,
 services_space_heating_share_gas_fired_heaters,0,Based on EPE 2013
 services_space_heating_share_electric_heat_pump_with_storage,0.955,Based on EPE 2013
 services_space_heating_share_gas_fired_heat_pumps,0.015,Based on EPE 2013

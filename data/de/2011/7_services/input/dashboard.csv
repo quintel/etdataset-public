@@ -4,6 +4,8 @@ base_year,2011,
 services_final_demand_space_heating,723815.6912,proportional to the NL application split
 services_final_demand_space_cooling,24349.50918,proportional to the NL application split
 services_final_demand_lighting,211786.931,proportional to the NL application split
+ict_split,no,
+industry_final_demand_ict_electricity,0,
 services_space_heating_share_gas_fired_heaters,0.591,matching demands reported by IEA
 services_space_heating_share_electric_heat_pump_with_storage,0,matching demands reported by IEA
 services_space_heating_share_gas_fired_heat_pumps,0,matching demands reported by IEA
