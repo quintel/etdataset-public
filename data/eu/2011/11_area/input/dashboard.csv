@@ -65,6 +65,7 @@ capacity_buffer_decentral_in_mj_s,20000,NL dataset
 capacity_buffer_in_mj_s,1600,NL dataset
 export_electricity_primary_demand_factor,1,NL dataset
 import_electricity_primary_demand_factor,1.82,NL dataset
+interconnector_capacity,5850,Dutch value as placeholder
 investment_hv_net_low,0.2,
 investment_hv_net_high,0.25,
 investment_hv_net_per_turbine,1.2,

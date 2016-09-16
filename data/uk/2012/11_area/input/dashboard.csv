@@ -65,6 +65,7 @@ capacity_buffer_decentral_in_mj_s,0,This attribute is not yet relevant for UK 20
 capacity_buffer_in_mj_s,0,This attribute is not yet relevant for UK 2012 as the network module is switched off
 export_electricity_primary_demand_factor,1,This attribute is not yet relevant for UK 2012 as the network module is switched off
 import_electricity_primary_demand_factor,1.82,This attribute is not yet relevant for UK 2012 as the network module is switched off
+interconnector_capacity,5850,Dutch value as placeholder
 investment_hv_net_low,0,This attribute is not yet relevant for UK 2012 as the network module is switched off
 investment_hv_net_high,0,This attribute is not yet relevant for UK 2012 as the network module is switched off
 investment_hv_net_per_turbine,0,This attribute is not yet relevant for UK 2012 as the network module is switched off

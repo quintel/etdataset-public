@@ -65,6 +65,7 @@ capacity_buffer_decentral_in_mj_s,0,
 capacity_buffer_in_mj_s,0,
 export_electricity_primary_demand_factor,1,
 import_electricity_primary_demand_factor,1.85,assumed the same value as for nl/2011
+interconnector_capacity,5850,Dutch value as placeholder
 investment_hv_net_low,0.2,
 investment_hv_net_high,0.25,
 investment_hv_net_per_turbine,1.2,
