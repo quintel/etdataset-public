@@ -1,20 +1,20 @@
 Key,Value,Source
 country,be,
 base_year,2013,
-services_final_demand_space_heating,196430,NL 2011 value
-services_final_demand_space_cooling,6608,NL 2011 value
-services_final_demand_lighting,57475,NL 2011 value
+services_final_demand_space_heating,93713.6426322366,Based on Opeera Belgium
+services_final_demand_space_cooling,3833.73992586422,Based on Opeera Belgium
+services_final_demand_lighting,30925.5020686381,Based on Opeera Belgium
 ict_split,yes,
-industry_final_demand_ict_electricity,9720,CBS
-services_space_heating_share_gas_fired_heaters,0.978,NL 2011 value
-services_space_heating_share_electric_heat_pump_with_storage,0.022,NL 2011 value
-services_space_heating_share_gas_fired_heat_pumps,0,NL 2011 value
-services_space_heating_share_electric_heaters,0,NL 2011 value
-services_space_heating_share_coal_fired_heater,0,NL 2011 value
-services_space_heating_share_oil_fired_heater,0,NL 2011 value
-services_space_cooling_share_gas_fired_heat_pump,0,We assumed that no gas-fired heat pumps are present yet
-services_space_cooling_share_electric_heat_pump,0.044,NL 2011 value
-services_space_cooling_share_airco,0.956,We assumed that the remainder of cooling demand is supplied by airconditioning
+industry_final_demand_ict_electricity,972,10% of NL value (CBS) according to http://www.datacentrumgids.nl/overzicht/belgie
+services_space_heating_share_gas_fired_heaters,0.62,Optimized
+services_space_heating_share_electric_heat_pump_with_storage,0,Optimized
+services_space_heating_share_gas_fired_heat_pumps,0,Optimized
+services_space_heating_share_electric_heaters,0,Optimized
+services_space_heating_share_coal_fired_heater,0,Optimized
+services_space_heating_share_oil_fired_heater,0.38,Optimized
+services_space_cooling_share_gas_fired_heat_pump,0,Based on Opeera Belgium
+services_space_cooling_share_electric_heat_pump,0,Based on Opeera Belgium
+services_space_cooling_share_airco,1,Based on Opeera Belgium
 services_lighting_incandescent_lamp,0,
 services_lighting_fluorescent_lamp,0,
 services_lighting_fluorescent_tube,0.9191,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
