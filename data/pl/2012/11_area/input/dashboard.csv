@@ -70,3 +70,6 @@ investment_hv_net_low,0.2,
 investment_hv_net_high,0.25,
 investment_hv_net_per_turbine,1.2,
 number_of_cars,18744000,EUROSTAT (see source_analyses/eu/2013/8_transport
+electric_vehicle_profile_1_share,1,Assumed that at present all EV charge according to the Movares Overal laden profile
+electric_vehicle_profile_2_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
+electric_vehicle_profile_3_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
