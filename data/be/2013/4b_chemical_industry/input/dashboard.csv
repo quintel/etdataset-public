@@ -1,6 +1,10 @@
 Key,Value,Source
 country,be,
 base_year,2013,
+chemical_other_electricity,1,
+chemicals_other_heater_electricity,0,
+chemicals_other_heatpump_water_water,0,
+chemicals_other_steam_recompression_electricity,0,
 detailed_analysis,yes,
 fertilizers_energetic_final_demand_coal,0,NL/2013 value scaled by production capacity
 fertilizers_energetic_final_demand_network_gas,9948.47258005153,Production capacity downloaded from
