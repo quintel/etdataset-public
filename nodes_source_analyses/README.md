@@ -12,11 +12,11 @@ For those contributing to the ETM, once a coherent dataset is completed on [ETDa
 
 ![ETDataset dataflow](../documentation/ETDataset_dataflow.png)
 
-This **nodes_source_analyses** repository contains Excel files of all the nodes that are used in the [ETModel](https://github.com/quintel/etmodel). Each nodes_source_analysis has the purpose to analyze and document the technical and costs parameters of the nodes. Once a nodes_source_analysis is completed, it needs to be exported to [ETDataset](https://github.com/quintel/etdataset), from where it will be exported to [ETSource](https://github.com/quintel/etsource) using VBA functionality. The following image describes the dataflow used to transfer the data from the nodes_source_analysis to [ETDataset](https://github.com/quintel/etdataset-public) and then to [ETSource](https://github.com/quintel/etsource).
+This **nodes\_source\_analyses** repository contains Excel files of all the nodes that are used in the [ETModel](https://github.com/quintel/etmodel). Each nodes\_source\_analysis has the purpose to analyze and document the technical and costs parameters of the nodes. Once a nodes\_source\_analysis is completed, it needs to be exported to [ETDataset](https://github.com/quintel/etdataset), from where it will be exported to [ETSource](https://github.com/quintel/etsource) using a rake task. The following image describes the dataflow used to transfer the data from the nodes\_source\_analysis to [ETDataset](https://github.com/quintel/etdataset-public) and then to [ETSource](https://github.com/quintel/etsource).
 
 ![node_source_analysis dataflow](../documentation/node_source_analyses.png)
 
-The main reasons for creating the nodes_source_analyses are:
+The main reasons for creating the nodes\_source\_analyses are:
 
 - 	to update the technical and cost parameters of nodes that are used in the [ETModel](https://github.com/quintel/etmodel).
 - to document the technical and cost parameters of nodes and make them transparent to the public. 
@@ -28,8 +28,7 @@ The analyses of the technical and cost parameters are based on data from various
 
 ##Content
 
-
-The nodes_source_analyses repository contains folders of all sectors:
+The nodes\_source\_analyses repository contains folders of all sectors:
 
 - Households
 - Buildings
@@ -38,9 +37,7 @@ The nodes_source_analyses repository contains folders of all sectors:
 - Industry
 - Agriculture.
 
-
 Each folder includes Excel files of the relevant nodes. The Excel files contains the following sheets:
-
 
 - The **Cover Sheet**, which introduces to the reader the analysed node and explains the following sheets.
 - The **Dashboard**, this sheet includes all the attributes of the analyzed node. The columns of this sheet refer to:
@@ -69,7 +66,7 @@ Each folder includes Excel files of the relevant nodes. The Excel files contains
 The main purpose of this repository is to document the nodes used in the  [ETModel](https://github.com/quintel/etmodel), putting focus on the analyses of the **technical and cost parameters**. This section outlines the process and methods used for the documentation of the nodes.
 
 
-Excel files are used for the documentation of the nodes, in order to keep the node_source_analyses as simple as possible for the public, The following steps and methods were used in order to create an Excel file of each node.
+Excel files are used for the documentation of the nodes, in order to keep the node\_source\_analyses as simple as possible for the public, The following steps and methods were used in order to create an Excel file of each node.
 1.  Copied all attributes of the node from [ETSource](https://github.com/quintel/etsource) to the **Dashboard** sheet.
 2.	Researched for new sources in order to update the values of the technical and cost parameters of the node. For the calculation of the new values the following methods were used:
      - The latest and most reliable sources were used and an average value of the sources was taken.
@@ -95,17 +92,13 @@ Exporting data to  [ETDataset](https://github.com/quintel/etdataset-public) incl
 
  
 ## Export data to ETSource
-Once the data from the node_source_analyses is exported to [ETDataset](https://github.com/quintel/etdataset-public) and merged, then needs to be exported to [ETSource](https://github.com/quintel/etsource). This can be done with the VBA functionality, which is stored to the **node_manager**. The node_manager was cteared for exporting the data form [ETDataset](https://github.com/quintel/etdataset-public) to [ETSource](https://github.com/quintel/etsource). It is a .xlsm file and is also stored to [ETDataset](https://github.com/quintel/etdataset-public). The node_manager:
-
- -  Contains all the VBA functionality
- 
- -  Contains general remarks on source documentation of node attributes
- -  Allows easy opening of source documents through browse menu.
+Once the data from the node\_source\_analyses is exported to [ETDataset](https://github.com/quintel/etdataset-public) and merged, then needs to be exported to [ETSource](https://github.com/quintel/etsource). This can be done with the a rake task which exports data from ETdataset to ETSource. The rake task was created for exporting the data from [ETDataset](https://github.com/quintel/etdataset-public) to [ETSource](https://github.com/quintel/etsource).]
  
 Exporting data to  [ETSource](https://github.com/quintel/etsource) includes the following steps:
 
- - Create a new branch
- - Open the Excel file through the node_manager
+ - Create a new branch on ETSource
+ - Run: **rake import:node NODE="nodename"**
+e.g.: rake import:node NODE=households\_space\_heater_hybrid\_heatpump\_air\_water\_electricity
  - Commit your changes
  - Push commits to remote repository
  - Create a pull request
@@ -125,6 +118,8 @@ It is simple to create a new documentation for a node. The following steps need 
  -  Once the pull request is merged, export data to [ETSource](https://github.com/quintel/etsource). 
  
  
+ 
+ This sheet summarizes all node attributes formatted in the way they are used by the Energy Transition Model. Use the Excel formulas to find the original data and sources for these numbers. You can also use this document to update the attribute value. Once you have finished updating, save this document and run rake import:node NODE="nodename" to update the node attributes on ETSource. 
 
 
 

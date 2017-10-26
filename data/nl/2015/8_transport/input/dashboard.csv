@@ -1,0 +1,11 @@
+Key,Value,Source
+country,nl,
+base_year,2015,
+transport_percentage_of_gasoline_mix_delivered_to_cars,0.989894652457231,transport_source_analysis
+transport_percentage_of_diesel_mix_delivered_to_cars,0.220329072954402,transport_source_analysis
+transport_percentage_of_electricity_mix_delivered_to_cars,0.955354891792315,transport_source_analysis
+transport_road_lng,0.187981732970202,transport_source_analysis
+transport_percentage_of_compressed_network_gas_mix_delivered_to_cars,0.284906429950879,transport_source_analysis
+transport_road_bio_lng,0,Value is 0 TJ
+transport_shipping_lng_ship_type,0,Value is 0 TJ
+transport_shipping_bio_lng_ship_type,0,Value is 0 TJ
