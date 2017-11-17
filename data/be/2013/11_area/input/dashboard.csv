@@ -49,7 +49,9 @@ old_houses_insulation_cost_constant,5962.7,See: https://github.com/quintel/docum
 residences_roof_surface_available_for_pv,98.922032948608,NL/2013 value scaled by number of residences; i.e. by 5071574/7449298
 buildings_roof_surface_available_for_pv,102.013057717697,NL/2013 value scaled by number of buildings; i.e. by 550559/392358
 technical_lifetime_insulation,30,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
-co2_emission_1990,111.609,1990 CO2 Emissions (energy related) according to IPCC CRF avaiable on European Environmental Agency download site
+co2_emission_1990,111.79119373,1990 CO2 Emissions (energy related) according to IPCC version20. CRF avaiable on EEA download site. Summarized in: 201711_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v20.xlsx (source_analyses>eu>2011>11_area_data)
+co2_emission_1990_aviation_bunkers,2.48704315,1990 CO2 Emissions (energy related) according to IPCC version20. CRF avaiable on EEA download site. Summarized in: 201711_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v20.xlsx (source_analyses>eu>2011>11_area_data)
+co2_emission_1990_marine_bunkers,13.31250452,1990 CO2 Emissions (energy related) according to IPCC version20. CRF avaiable on EEA download site. Summarized in: 201711_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v20.xlsx (source_analyses>eu>2011>11_area_data)
 co2_percentage_free,0.85,NL 2011 value
 co2_price,0.005,http://www.energeia.nl: Feb/12/2016 Cal 17 forward price
 economic_multiplier,1,NL 2011 value

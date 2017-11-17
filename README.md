@@ -3,17 +3,17 @@
 ## Introduction
 The [ETDataset](https://github.com/quintel/etdataset-public) is a repository that includes all the input data of the [ETModel](https://github.com/quintel/etmodel). This data can apply to:
 
-1. A country's energy system 
-- Energy technologies (like electric vehicles)
-- Energy carriers (like fuels)
+1. A country's energy system
+2. Energy technologies (like electric vehicles)
+3. Energy carriers (like fuels)
 
 Needless to say the data of **type 1** are **country specific**, i.e. they vary per country, as far as data and sources are concerned. Almost all **data of types 2 and 3** are **global** as far as the Energy Transition Model is concerned. That means each country mostly uses the same parameters for energy technologies and carriers.
 
 Documentation of a country's energy system data can be found in the [source_analyses](./source_analyses) directory. The generation of these datasets is a bit tricky and explained [below](#country-datasets).
 
-Documentation and analysis of data on energy technologies is found in the [nodes_source_analyses](./nodes_source_analyses) directory. 
+Documentation and analysis of data on energy technologies is found in the [nodes_source_analyses](./nodes_source_analyses) directory.
 
-Documentation and analysis of data on energy carriers, like fuels for example, is found in the [carriers_source_analyses](./carriers_source_analyses) directory. 
+Documentation and analysis of data on energy carriers, like fuels for example, is found in the [carriers_source_analyses](./carriers_source_analyses) directory.
 
 
 
@@ -25,7 +25,7 @@ Each country shown in the [Energy Transition Model (ETM)](http://www.et-model.co
 One of the key ingredients in the creation of a dataset is the IEA energy balance. Since these energy balances are proprietary, they cannot be published in a public repository. Therefore, we created two versions of the ETDataset repository:
 
 1. [**ETDataset**](https://github.com/quintel/etdataset) is a **private** repository that is used by Quintel to generate the Input Data for all countries shown in the ETM. This repository is private, because it contains the IEA energy balances and non-Quintel employees can only get access after signing an NDA.
-- [**ETdataset-public**](https://github.com/quintel/etdataset-public) is a **public** copy of the [ETDataset](https://github.com/quintel/etdataset) repository, but without the proprietary energy balances. This repository is available for informative purposes. The repository also contains the entire dataset (including a fictional energy balance) for the country *example* that can be used to review the dataset generation process. Running the dataset generation process for a real country requires the purchase of the IEA energy balance for that country.
+2. [**ETdataset-public**](https://github.com/quintel/etdataset-public) is a **public** copy of the [ETDataset](https://github.com/quintel/etdataset) repository, but without the proprietary energy balances. This repository is available for informative purposes. The repository also contains the entire dataset (including a fictional energy balance) for the country *example* that can be used to review the dataset generation process. Running the dataset generation process for a real country requires the purchase of the IEA energy balance for that country.
 
 More information on the generation of Input Data for a country and a more in-depth explanation of the relation between ETDataset and ETDataset-public can be found [here](/documentation/generate_output_files.md). If you want to make changes to the model or if you would like to add a new country, have a look at [this page](/documentation/generate_output_files.md). Contact [Quintel](http://quintel.com/contact) if you desire more information.
 
@@ -44,8 +44,8 @@ The ETDataset repository contains the following folders and files:
 - The [**Analyses**](/analyses) folder contains the **Research Analyses**, Excel files that are *tools* used to process Research Data. They do **not** contain any data themselves. The various analyses can be opened via the [Analysis Manager](analysis_manager.xlsm). See [Dataflow](#dataflow) for an explanation.
 - The [**Data**](/data) folder contains country-specific data that are imported, manipulated and exported by the Research Analyses.
 - The [**Source Analyses**](/source_analyses) folder contains analyses for the assumptions used in the various Research Analyses. Whereas the [Analyses](/analyses) folder contains analyses for the *uniform data* sources, i.e. sources of data that are formatted in the same way for all countries, like Energy Balances for example, the [Source Analyses](/source_analyses) directory contains the *non-uniform data* and manipulation of such data. For example, data on how many diesel and gasoline cars are found in a country.
-- The [**Nodes Source Analyses**](/nodes_source_analyses) folder contains the analyses for each node. If you want to know what publications and attributes we used for all the technologies, this is where you need to be. 
-- The [**Carriers Source Analyses**](/carriers_source_analyses) folder contains the analyses for each carrier. If you want to know what publications and attributes we used for the energy carriers, this is where you need to be. 
+- The [**Nodes Source Analyses**](/nodes_source_analyses) folder contains the analyses for each node. If you want to know what publications and attributes we used for all the technologies, this is where you need to be.
+- The [**Carriers Source Analyses**](/carriers_source_analyses) folder contains the analyses for each carrier. If you want to know what publications and attributes we used for the energy carriers, this is where you need to be.
 - The [**Documentation**](/documentation) folder contains additional and more detailed information for this repository.
 
 
@@ -90,8 +90,8 @@ Once you have finished your dataset, you may want to test the impact of your cha
 
 Testing your dataset for the ETM involves two steps:
 
-1. You should test if [Atlas](https://github.com/quintel/atlas) perform its calculations with your dataset. [Atlas](https://github.com/quintel/atlas) is dedicated to inializing the [graph structure](https://github.com/quintel/documentation#the-energy-calculation) and energy flows for the ETM.
-- You should investigate the impact of your changes on the ETM results by running [ETEngine](https://github.com/quintel/etengine) and [ETModel](https://github.com/quintel/etmodel) on your local machine.
+1. You should test if [Atlas](https://github.com/quintel/atlas) perform its calculations with your dataset. [Atlas](https://github.com/quintel/atlas) is dedicated to initialising the [graph structure](https://github.com/quintel/documentation#the-energy-calculation) and energy flows for the ETM.
+2. You should investigate the impact of your changes on the ETM results by running [ETEngine](https://github.com/quintel/etengine) and [ETModel](https://github.com/quintel/etmodel) on your local machine.
 
 See the [Testing locally](documentation/testing_locally.md) documentation for a detailed instruction. When you are satisfied with your dataset, you can start sharing your work.
 
@@ -103,9 +103,9 @@ The tools and data of ETDataset are available in this **GitHub** repository. **G
 Sharing your work involves the following steps:
 
 1. [**Creating a new branch**](documentation/working_with_git.md#1-create-a-new-branch-in-your-local-repository-and-make-sure-you-are-on-that-branch)
-- [**Commit your changes**](documentation/working_with_git.md#2-make-your-changes-to-files-excel-files-or-csv-inputoutput-files)
-- [**Push commits to remote repository**](documentation/working_with_git.md#3-push-your-changes-to-remote-repository-note-how-you-have-to-explicitly-name-a-remote-branch-to-push-to)
-- [**Create a pull request**](documentation/working_with_git.md#4-go-to-github-and-create-a-pull-request-for-you-new-branch)
+2. [**Commit your changes**](documentation/working_with_git.md#2-make-your-changes-to-files-excel-files-or-csv-inputoutput-files)
+3. [**Push commits to remote repository**](documentation/working_with_git.md#3-push-your-changes-to-remote-repository-note-how-you-have-to-explicitly-name-a-remote-branch-to-push-to)
+4. [**Create a pull request**](documentation/working_with_git.md#4-go-to-github-and-create-a-pull-request-for-you-new-branch)
 
 Furthermore, the [Understanding the GitHub Workflow](http://guides.github.com/overviews/flow/) page gives a 5-minute introduction to these steps. Do you want an introduction to Git in an interactive way, please try the [15-minute course](http://try.github.io/levels/1/challenges/1).
 
@@ -149,12 +149,6 @@ After you **commit** changes on your local machine, you **push** your `new_branc
 There are a couple of rules that you need to follow when collaborating with other people via Git. There also some extra rules that apply to working on this repository:
 
 1. **Every commit has to be well documented.**
-- **Always use pull requests instead of just pushing your changes.**
-- **Country-specific data is NEVER stored within an Excel analysis.** More specifically, Excel files may not contain energy balances, autoproducer tables, technical specifications and dashboard inputs.
-- **Commit data changes seperately from changes to Excel files.** Only under certain conditions it may be legitimate to make changes to the calculations, text or formatting of an analysis.
-
-
-
-
-
-
+2. **Always use pull requests instead of just pushing your changes.**
+3. **Country-specific data is NEVER stored within an Excel analysis.** More specifically, Excel files may not contain energy balances, autoproducer tables, technical specifications and dashboard inputs.
+4. **Commit data changes seperately from changes to Excel files.** Only under certain conditions it may be legitimate to make changes to the calculations, text or formatting of an analysis.
