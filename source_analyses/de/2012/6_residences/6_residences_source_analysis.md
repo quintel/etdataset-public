@@ -51,4 +51,4 @@ The technology split for hot water are based on Ecofys data. The percentages are
 ## Debts
 
 - Technology splits for space cooling, lighting, cooking and appliances need to be researched.
-- Split between old en new houses need to be researched.f
+- Split between old en new houses need to be researched.
