@@ -1,0 +1,49 @@
+Key,Value,Source
+country,de,
+base_year,2011,
+pp_share_coal_us,0.35,matching fuel use
+pp_share_coal_us_ccs,0,
+pp_share_coal_cc,0,
+pp_share_coal_cc_ccs,0,
+pp_share_lignite_us,1,no CCS in place 
+pp_share_lignite_us_ccs,0,
+pp_share_gas_turbine,0.0255,source analysis
+pp_share_gas_cc,0.87,matching fuel use
+pp_share_gas_cc_ccs,0,not relevant
+pp_share_gas_engine,0,
+pp_share_gas_us,0.1045,matching fuel use
+pp_share_nuclear_2,0.8,matching fuel use
+pp_share_nuclear_3,0.2,
+pp_share_hydro_river,0.85,Extracted from EUROLECTRIC report
+pp_share_hydro_mountain,0.15,Extracted from EUROLECTRIC report
+pp_share_wind_coastal,0.025,
+pp_share_wind_offshore,0.05,
+pp_share_wind_inland,0.925,
+pp_flh_coal_us_co,5500,matching BMWI report:http://refman.et-model.com/publications/1833
+pp_flh_coal_supercritical,4300,matching BMWI report:http://refman.et-model.com/publications/1833
+pp_flh_coal_us,5500,matching BMWI report:http://refman.et-model.com/publications/1833
+pp_flh_coal_us_ccs,6000,not relevant
+pp_flh_coal_cc,4600,not relevant
+pp_flh_coal_cc_ccs,4500,not relevant
+pp_flh_lignite_us,5760,matching BMWI report:http://refman.et-model.com/publications/1833
+pp_flh_lignite_us_ccs,5972,not relevant
+pp_flh_gas_turbine,500,NL value - assumption
+pp_flh_gas_cc,4900,matching BMWI report:http://refman.et-model.com/publications/1833
+pp_flh_gas_cc_ccs,3500,not relevant
+pp_flh_gas_engine,1,
+pp_flh_gas_us,3750,matching BMWI report:http://refman.et-model.com/publications/1833
+pp_flh_nuclear_2,6314,matching BMWI report:http://refman.et-model.com/publications/1833
+pp_flh_nuclear_3,6314,matching BMWI report:http://refman.et-model.com/publications/1833
+pp_flh_hydro_river,3852,matching  EUROLECTRIC report
+pp_flh_hydro_mountain,1718,matching  EUROLECTRIC report
+pp_flh_solar_pv,955,http://re.jrc.ec.europa.eu/pvgis/cmaps/eur.htm#DE
+pp_flh_residential_solar_pv,955,http://re.jrc.ec.europa.eu/pvgis/cmaps/eur.htm#DE
+pp_flh_caps_solar_pv,955,http://re.jrc.ec.europa.eu/pvgis/cmaps/eur.htm#DE
+pp_flh_solar_csp,955,not relevant
+pp_flh_wind_coastal,2400,matching BMWI report:http://refman.et-model.com/publications/1833
+pp_flh_wind_offshore,3300,matching BMWI report:http://refman.et-model.com/publications/1833
+pp_flh_wind_inland,1700,matching BMWI report:http://refman.et-model.com/publications/1833
+pp_flh_oil_us,3504,taken from NL dataset
+pp_flh_diesel,3504,taken from NL dataset
+pp_flh_waste,3800,taken from NL dataset
+pp_flh_geothermal,8250,taken from NL dataset

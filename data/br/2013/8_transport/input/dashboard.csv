@@ -1,0 +1,36 @@
+Key,Value,Source
+country,br,
+base_year,2013,
+Percentage_of_gasoline_mix_delivered_to_cars,0.956893423783711,Here the same value al NL2015 is used.
+Percentage_of_gasoline_mix_delivered_to_trucks,0.00966420556315112,Here the same value al NL2015 is used.
+Percentage_of_gasoline_mix_delivered_to_busses,0.00010424867056087,Here the same value al NL2015 is used.
+Percentage_of_gasoline_mix_delivered_to_motorbikes,0.0333381219825773,Here the same value al NL2015 is used.
+Percentage_of_diesel_mix_delivered_to_cars,0.210976980050888,Here the same value al NL2015 is used.
+Percentage_of_diesel_mix_delivered_to_trucks,0.746572156461614,Here the same value al NL2015 is used.
+Percentage_of_diesel_mix_delivered_to_busses,0.042450863487498,Here the same value al NL2015 is used.
+Percentage_of_electricity_delivered_to_cars,0.9546195874397,based on NL2015 and added bycicle share
+Percentage_of_electricity_delivered_to_trucks,0.0193231516054442,Here the same value al NL2015 is used.
+Percentage_of_electricity_delivered_to_busses,0.0242759543602303,Here the same value al NL2015 is used.
+Percentage_of_electricity_delivered_to_motorcycles,0.00178130659462489,Here the same value al NL2015 is used.
+Percentage_of_electricity_delivered_to_bicycles,0,set to 0
+Percentage_of_natural_gas_that_is_liquefied_natural_gas_,0.187981732970202,Here the same value al NL2015 is used.
+Percentage_of_natural_gas_that_is_compressed_natural_gas_,0.812018267029798,Here the same value al NL2015 is used.
+Percentage_of_lng_that_is_delivered_to_trucks,1,Here the same value al NL2015 is used.
+Percentage_of_lng_that_is_delivered_to_busses,0,Here the same value al NL2015 is used.
+Percentage_of_compressed_network_gas_delivered_to_cars,0.214206400711135,Here the same value al NL2015 is used.
+Percentage_of_compressed_network_gas_delivered_to_trucks,0.247191922156101,Here the same value al NL2015 is used.
+Percentage_of_compressed_network_gas_delivered_to_busses,0.538601677132764,Here the same value al NL2015 is used.
+Percentage_of_bio_lng_,0,Here the same value al NL2015 is used.
+Percentage_of_bio_cng,1,Here the same value al NL2015 is used.
+Passenger_kilometers_bicycles,0,set to 0
+Percentage_of_lng_for_shipping_to_(pure)_lng_ship,0,Value is 0 TJ
+Percentage_of_lng_for_shipping_to_hybrid_diesel_ship,1,Value is 0 TJ
+Percentage_of_bio_lng_for_shipping_to_(pure)_lng_ship,0,Value is 0 TJ
+Percentage_of_bio_lng_for_shipping_to_hybrid_diesel_ship,1,Value is 0 TJ
+Percentage_of_electricity_delivered_to_trams/metro,0.104901171247854,Here the same value al NL2015 is used.
+Percentage_of_electricity_delivered_to_passenger_trains,0.757994913800446,Here the same value al NL2015 is used.
+Percentage_of_electricity_delivered_to_freight_trains,0.137103914951699,Here the same value al NL2015 is used.
+Percentage_of_diesel_delivered_to_passenger_trains,0.520688192872693,Here the same value al NL2015 is used.
+Percentage_of_diesel_delivered_to_freight_trains,0.479311807127307,Here the same value al NL2015 is used.
+Percentage_of_coal_delivered_to_passenger_trains,1,Here the same value al NL2015 is used.
+Percentage_of_coal_delivered_to_freight_trains,0,Here the same value al NL2015 is used.

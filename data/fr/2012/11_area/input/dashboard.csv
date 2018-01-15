@@ -1,0 +1,77 @@
+Key,Value,Source / comment
+area,fr,
+id,7,
+parent_id,7,
+enabled.etengine,true,
+enabled.etmodel,true,
+analysis_year,2012,
+has_agriculture,true,
+has_buildings,true,
+has_climate,false,
+has_coastline,true,
+has_cold_network,false,
+has_electricity_storage,true,
+has_employment,false,
+has_fce,false,
+has_industry,true,
+has_lignite,false,
+has_merit_order,true,
+has_metal,true,
+has_mountains,true,
+has_old_technologies,true,
+has_other,true,
+has_solar_csp,true,
+has_import_export,true,
+use_network_calculations,false,
+has_aggregated_chemical_industry,true,
+has_aggregated_other_industry,true,
+areable_land,183965,The World Factbook (total land area * areable land %) (https://www.cia.gov/library/publications/the-world-factbook/geos/fr.html)
+coast_line,3427,The World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/fr.html)
+land_available_for_solar,183965,Assumed to be equal to areable land
+number_of_inhabitants,63378545,Eurostat 2012; Population on 1 January (demo_gind) database
+offshore_suitable_for_wind,275236,Based on Ecofys analysis
+onshore_suitable_for_wind,273491,Based on Ecofys analysis
+buildings_insulation_constant_1,0.73,
+buildings_insulation_constant_2,0.13,
+buildings_insulation_cost_constant,39402.4,
+insulation_level_buildings_max,3,
+insulation_level_buildings_min,0.6,
+insulation_level_new_houses_max,3,
+insulation_level_old_houses_max,3,
+new_houses_insulation_constant_1,1.85,
+new_houses_insulation_constant_2,0.05,
+new_houses_insulation_cost_constant,7071,
+number_of_buildings,1207570.28270227,Estimated based on floor area from ENTRANZE and floor_area:number_of_buildings ratio in NL.
+number_of_residences,27750400,Eurostat 2012; Number of private households (lfst_hhnhtych) database
+old_houses_insulation_constant_1,0.66,
+old_houses_insulation_constant_2,0.16,
+old_houses_insulation_cost_constant,5962.7,
+residences_roof_surface_available_for_pv,569,Total based on Ecofys analysis; share of residences is assumed as 2/3.
+buildings_roof_surface_available_for_pv,285,Total based on Ecofys analysis; share of services is assumed as 1/3.
+technical_lifetime_insulation,30,
+co2_emission_1990,367.04286774,1990 CO2 Emissions (energy related) according to IPCC version20. CRF avaiable on EEA download site. Summarized in: 201711_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v20.xlsx (source_analyses>eu>2011>11_area_data)
+co2_emission_1990_aviation_bunkers,8.60880829,1990 CO2 Emissions (energy related) according to IPCC version20. CRF avaiable on EEA download site. Summarized in: 201711_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v20.xlsx (source_analyses>eu>2011>11_area_data)
+co2_emission_1990_marine_bunkers,8.1420443,1990 CO2 Emissions (energy related) according to IPCC version20. CRF avaiable on EEA download site. Summarized in: 201711_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v20.xlsx (source_analyses>eu>2011>11_area_data)
+co2_percentage_free,0.85,
+co2_price,0.005,NL dataset. www.energeia.nl Aug/6/2015 Cal 16 forward price
+economic_multiplier,1,
+employment_fraction_production,0.5,
+employment_local_fraction,0.2,
+man_hours_per_man_year,1800,
+buildings_insulation_employment_constant,0.0093,
+new_houses_insulation_employment_constant,0.014,
+old_houses_insulation_employment_constant,0.014,
+annual_infrastructure_cost_electricity,1810,
+annual_infrastructure_cost_gas,1452,
+capacity_buffer_decentral_in_mj_s,20000,
+capacity_buffer_in_mj_s,1600,
+export_electricity_primary_demand_factor,1,
+import_electricity_primary_demand_factor,1.82,
+interconnector_capacity,5850,Dutch value as placeholder
+investment_hv_net_low,0.2,
+investment_hv_net_high,0.25,
+investment_hv_net_per_turbine,1.2,
+number_of_cars,32555000,EUROSTAT (see source_analyses/EU/2013/8_transport)
+electric_vehicle_profile_1_share,1,Assumed that at present all EV charge according to the Movares Overal laden profile
+electric_vehicle_profile_2_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
+electric_vehicle_profile_3_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
