@@ -1,0 +1,77 @@
+Key,Value,Source / comment
+area,eu,
+id,4,
+parent_id,1,
+enabled.etengine,true,
+enabled.etmodel,true,
+analysis_year,2011,
+has_agriculture,true,
+has_buildings,true,
+has_climate,false,
+has_coastline,true,
+has_cold_network,false,
+has_electricity_storage,true,
+has_employment,false,
+has_fce,false,
+has_industry,true,
+has_lignite,true,
+has_merit_order,true,
+has_metal,true,
+has_mountains,true,
+has_old_technologies,true,
+has_other,true,
+has_solar_csp,true,
+has_import_export,true,
+use_network_calculations,false,
+has_aggregated_chemical_industry,true,
+has_aggregated_other_industry,true,
+areable_land,1077303,World Factbook (area * areable land %) (https://www.cia.gov/library/publications/the-world-factbook/geos/ee.html)
+coast_line,65992.9,World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/ee.html)
+land_available_for_solar,1077303,
+number_of_inhabitants,500700753,Eurostat 2011; Population on 1 January (demo_gind) database
+offshore_suitable_for_wind,1594263,Based on Ecofys analysis
+onshore_suitable_for_wind,2049878,Based on Ecofys analysis
+buildings_insulation_constant_1,0.73,Relevant for the calculations of insulation saving effects
+buildings_insulation_constant_2,0.13,Relevant for the calculations of insulation saving effects
+buildings_insulation_cost_constant,39402.4,NL dataset
+insulation_level_buildings_max,3,NL dataset
+insulation_level_buildings_min,0.6,NL dataset
+insulation_level_new_houses_max,3,NL dataset
+insulation_level_old_houses_max,3,NL dataset
+new_houses_insulation_constant_1,1.85,
+new_houses_insulation_constant_2,0.05,NL dataset
+new_houses_insulation_cost_constant,7071,NL dataset
+number_of_buildings,7500000,Rough estimate based on ENTRANZE data.
+number_of_residences,210574900,
+old_houses_insulation_constant_1,0.66,
+old_houses_insulation_constant_2,0.16,Relevant for the calculations of insulation saving effects
+old_houses_insulation_cost_constant,5962.7,NL dataset
+residences_roof_surface_available_for_pv,3681,Total based on Ecofys analysis; share of residences is assumed as 2/3.
+buildings_roof_surface_available_for_pv,1841,Total based on Ecofys analysis; share of services is assumed as 1/3.
+technical_lifetime_insulation,30,NL dataset
+co2_emission_1990,4030.6,1990 CO2 Emissions (energy related) in EU energy trends to 2030 (http://ec.europa.eu/clima/policies/package/docs/trends_to_2030_update_2009_en.pdf)
+co2_emission_1990_aviation_bunkers,69.2127685,201312_EEA_EU27 GHG emissions IPCC format 1990 & 2011.xlsx
+co2_emission_1990_marine_bunkers,108.9977607,201312_EEA_EU27 GHG emissions IPCC format 1990 & 2011.xlsx
+co2_percentage_free,0.85,NL dataset
+co2_price,0.005,NL dataset
+economic_multiplier,1,Not relevant without employment module
+employment_fraction_production,0.5,Not relevant without employment module
+employment_local_fraction,0.2,Not relevant without employment module
+man_hours_per_man_year,1800,Not relevant without employment module
+buildings_insulation_employment_constant,0.0093,Not relevant without employment module
+new_houses_insulation_employment_constant,0.014,Not relevant without employment module
+old_houses_insulation_employment_constant,0.014,Not relevant without employment module
+annual_infrastructure_cost_electricity,1810,NL dataset
+annual_infrastructure_cost_gas,1452,NL dataset
+capacity_buffer_decentral_in_mj_s,20000,NL dataset
+capacity_buffer_in_mj_s,1600,NL dataset
+export_electricity_primary_demand_factor,1,NL dataset
+import_electricity_primary_demand_factor,1.82,NL dataset
+interconnector_capacity,5850,Dutch value as placeholder
+investment_hv_net_low,0.2,
+investment_hv_net_high,0.25,
+investment_hv_net_per_turbine,1.2,
+number_of_cars,243752170,EUROSTAT (see source_analyses/eu/2013/8_transport)
+electric_vehicle_profile_1_share,1,Assumed that at present all EV charge according to the Movares Overal laden profile
+electric_vehicle_profile_2_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
+electric_vehicle_profile_3_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile

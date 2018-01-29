@@ -1,0 +1,14 @@
+Key,Value,Source
+country,de,
+base_year,2011,
+primary_bio_oil,0,taken from NL dataset
+primary_wood,0,taken from NL dataset
+max_biogenic_wasate,110716.793,domestic production; increased by 10%
+max_non_biogenic_waste,178375.813,domestic production; increased by 10%
+percentage_wood_pellets,0.75,estimate; no source
+percentage_torrified_biomass_pellets,0.25,estimate; no source
+regasified_lng,0,No terminal
+regasified_bio_lng,0,No terminal
+percentage_steam_methane_reforming,0.6,Assumption
+percentage_steam_methane_reforming_ccs,0,Assumption
+percentage_local_electrolysis,0.4,Assumption

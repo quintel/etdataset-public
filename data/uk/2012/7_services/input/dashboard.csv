@@ -1,0 +1,26 @@
+Key,Value,Source
+country,uk,
+base_year,2012,
+services_final_demand_space_heating,323641.483362764,Based on ECUK data; see source analysis
+services_final_demand_space_cooling,28420.1914785593,Based on ECUK data; see source analysis
+services_final_demand_lighting,126636.310646922,Based on ECUK data; see source analysis
+ict_split,no,
+industry_final_demand_ict_electricity,0,
+services_space_heating_share_gas_fired_heaters,0.738986266761637,Based on Fleiter et al. (2010) and source analysis
+services_space_heating_share_electric_heat_pump_with_storage,0,Assumption
+services_space_heating_share_gas_fired_heat_pumps,0,Assumption
+services_space_heating_share_electric_heaters,0.199802592343729,Based on Fleiter et al. (2010) and source analysis
+services_space_heating_share_coal_fired_heater,0.000951230450270691,Based on Fleiter et al. (2010) and source analysis
+services_space_heating_share_oil_fired_heater,0.0602599104443629,Based on Fleiter et al. (2010) and source analysis
+services_space_cooling_share_gas_fired_heat_pump,0,Assumption
+services_space_cooling_share_electric_heat_pump,0,Assumption
+services_space_cooling_share_airco,1,Assumption
+services_lighting_incandescent_lamp,0,
+services_lighting_fluorescent_lamp,0,
+services_lighting_fluorescent_tube,0.9328,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+services_lighting_efficient_fluorescent_tube,0.052,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+services_lighting_LED_tube,0.0152,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+services_biomass_used_in space_heating,1,
+services_biomass_used_in appliances,0,
+services_savings_lighting_motion_detection,0.039,
+services_savings_lighting_daylight_control,0.053,

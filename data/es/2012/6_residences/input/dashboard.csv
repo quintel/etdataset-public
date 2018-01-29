@@ -1,0 +1,59 @@
+Key,Value,Source
+country,es,
+base_year,2012,
+residences_final_demand_space_heating,304784.7963,Based on SECH-SPAHOUSEC study; see source analysis
+residences_final_demand_hot_water,122562.39681,Based on SECH-SPAHOUSEC study; see source analysis
+residences_final_demand_cooling,5187.82632,Based on SECH-SPAHOUSEC study; see source analysis
+residences_final_demand_lighting,26587.60989,Based on SECH-SPAHOUSEC study; see source analysis
+residences_final_demand_cooking,47987.39346,Based on SECH-SPAHOUSEC study; see source analysis
+residences_final_demand_appliances,141368.26722,Based on SECH-SPAHOUSEC study; see source analysis
+residences_percentage_space_heating_combi_boiiler,0.000189627382193989,Based on Ecofys data; see source analysis; subsequently optimized to match checks
+residences_percentage_space_heating_solar_thermal,0.0208590120413388,
+residences_percentage_space_heating_heat_pump_ground,0,
+residences_percentage_space_heating_micro_chp,0,
+residences_percentage_space_heating_district,0,
+residences_percentage_space_heating_heat_pump_air,0.00663695837678975,
+residences_percentage_space_heating_woodpellets,0.289181757845833,
+residences_percentage_space_heating_electric_resistance,0.146961221200341,
+residences_percentage_space_heating_gas_burner,0.237034227742486,
+residences_percentage_space_heating_oil_burner,0.289181757845833,
+residences_percentage_space_heating_coal_burner,0.00995543756518442,
+residences_percentage_space_heating_hybrid_heatpump,0,Set to 0
+residences_percentage_hot_water_combi_boiiler,0,Based on Ecofys data; see source analysis; subsequently optimized to match checks
+residences_percentage_hot_water_solar_thermal,0.0203208556149733,
+residences_percentage_hot_water_heat_pump_ground,0,
+residences_percentage_hot_water_micro_chp,0,
+residences_percentage_hot_water_district,0,
+residences_percentage_hot_water_heat_pump_air,0.00106951871657754,
+residences_percentage_hot_water_woodpellets,0.0802139037433155,
+residences_percentage_hot_water_electric_resistance,0.411764705882353,
+residences_percentage_hot_water_gas_burner,0.262032085561497,
+residences_percentage_hot_water_oil_burner,0.213903743315508,
+residences_percentage_hot_water_coal_burner,0.0106951871657754,
+residences_percentage_hot_water_fuel_cell,0,
+residences_percentage_hot_water_hybrid_heatpump,0,Set to 0
+residences_percentage_cooling_heat_pump_ground,0,No data available; assumed 100% airconditioning
+residences_percentage_cooling_heat_pump_air,0,No data available; assumed 100% airconditioning
+residences_percentage_cooling_aircondition,1,No data available; assumed 100% airconditioning
+residences_percentage_lighting_incandescent,0.486,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+residences_percentage_lighting_efficient_fluorescent,0.509,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+residences_percentage_lighting_led,0.005,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
+residences_percentage_cooking_gas,0.505,Based on SECH-SPAHOUSEC study; see source analysis
+residences_percentage_cooking_electric_resistance,0.4272,Based on SECH-SPAHOUSEC study; see source analysis
+residences_percentage_cooking_electric_halogen,0,Based on SECH-SPAHOUSEC study; see source analysis
+residences_percentage_cooking_electric_induction,0.0511,Based on SECH-SPAHOUSEC study; see source analysis
+residences_percentage_cooking_biomass,0.0167,Based on SECH-SPAHOUSEC study; see source analysis
+residences_percentage_appliances_dishwasher,0.061,Based on SECH-SPAHOUSEC study; see source analysis
+residences_percentage_appliances_fridge_freezer,0.367,Based on SECH-SPAHOUSEC study; see source analysis
+residences_percentage_appliances_washing_machine,0.118,Based on SECH-SPAHOUSEC study; see source analysis
+residences_percentage_appliances_dryer,0.033,Based on SECH-SPAHOUSEC study; see source analysis
+residences_percentage_appliances_television,0.122,Based on SECH-SPAHOUSEC study; see source analysis
+residences_percentage_appliances_computer_media,0.074,Based on SECH-SPAHOUSEC study; see source analysis
+residences_percentage_appliances_vacuum_cleaner,0.059,Based on JRC study; see source analysis
+residences_percentage_appliances_others,0.166,Based on SECH-SPAHOUSEC study; see source analysis
+residences_space_heating_share_coming_from_solar_thermal,0.15,
+residences_hot_water_share_coming_from_solar_thermal,0.5,
+residences_percentage_old_residences,0.86,
+residences_percentage_new_residences,0.14,
+insulation_level_old_houses_min,0.5,
+insulation_level_new_houses_min,1.8,

@@ -1,0 +1,16 @@
+Key,Value,Source
+country,fr,
+base_year,2012,
+metal_steel_production,15.609,World Steel Association
+metal_steel_share_blast_furnace_current,0.609,World Steel Association
+metal_steel_share_blast_furnace_bat,0,
+metal_steel_share_cyclone,0,
+metal_steel_share_electric,0.391,World Steel Association
+metal_steel_burner_share_coal,0,
+metal_steel_burner_share_coal_gas,0.725,Optimized to reduce unmodelled final demand of coal gas
+metal_steel_burner_share_network_gas,0.275,Optimized to reduce unmodelled final demand of coal gas
+metal_aluminium_production,0.349,Wikipedia
+metal_aluminium_share_electrolysis_current,0.8,Based on NL dataset
+metal_aluminium_share_electrolysis_bat,0,
+metal_aluminium_share_melting_oven,0.2,Based on NL dataset
+metal_aluminium_share_carbothermal_reduction,0,

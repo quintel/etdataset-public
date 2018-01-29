@@ -1,0 +1,77 @@
+Key,Value,Source / comment
+area,br,
+id,8,
+parent_id,8,
+enabled.etengine,true,
+enabled.etmodel,true,
+analysis_year,2013,
+has_agriculture,true,
+has_buildings,true,
+has_climate,false,
+has_coastline,true,
+has_cold_network,false,
+has_electricity_storage,true,
+has_employment,false,
+has_fce,false,
+has_industry,true,
+has_lignite,true,
+has_merit_order,true,
+has_metal,true,
+has_mountains,true,
+has_old_technologies,true,
+has_other,true,
+has_solar_csp,true,
+has_import_export,true,
+use_network_calculations,false,
+has_aggregated_chemical_industry,true,
+has_aggregated_other_industry,true,
+areable_land,2756050,(http://data.worldbank.org/indicator/AG.LND.AGRI.K2)
+coast_line,7491,(http://www.countrywatch.com/Intelligence/CountryReviews?CountryId=24)
+land_available_for_solar,2756050,Assumed to be equal to arable land
+number_of_inhabitants,204895532,IBGE 2015
+offshore_suitable_for_wind,1498200,Based on Ortiz Potencial 2010
+onshore_suitable_for_wind,124850,Aprox 12 times smaller than offshore
+buildings_insulation_constant_1,0.73,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+buildings_insulation_constant_2,0.13,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+buildings_insulation_cost_constant,39402.4,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+insulation_level_buildings_max,3,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+insulation_level_buildings_min,0.6,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+insulation_level_new_houses_max,3,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+insulation_level_old_houses_max,3,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+new_houses_insulation_constant_1,1.85,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+new_houses_insulation_constant_2,0.05,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+new_houses_insulation_cost_constant,7071,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+number_of_buildings,6100000,Based on IBGE 2011
+number_of_residences,49851000,Based on IBGE 2011
+old_houses_insulation_constant_1,0.66,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+old_houses_insulation_constant_2,0.16,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+old_houses_insulation_cost_constant,5962.7,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+residences_roof_surface_available_for_pv,2697,Based on TerraGIS analysis; share of residences is assumed as 2/3
+buildings_roof_surface_available_for_pv,1348,Based on TerraGIS analysis; share of residences is assumed as 1/3
+technical_lifetime_insulation,30,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+co2_emission_1990,237.332,(http://www.eia.gov/cfapps/ipdbproject/iedindex3.cfm?tid=90&pid=44&aid=8&cid=BR;&syid=1990&eyid=2012&unit=MMTCD)
+co2_emission_1990_aviation_bunkers,1.437914592,see br>2013>11_area: 201711_IEA_CO2_br_bunkers.xlsx
+co2_emission_1990_marine_bunkers,1.834697628,see br>2013>11_area: 201711_IEA_CO2_br_bunkers.xlsx
+co2_percentage_free,0.85,assumed the same value as for nl/2011
+co2_price,0.00739,assumed the same value as for nl/2011
+economic_multiplier,1,assumed the same value as for nl/2011; this value is not used as has_employment is FALSE
+employment_fraction_production,0.5,assumed the same value as for nl/2011; this value is not used as has_employment is FALSE
+employment_local_fraction,0.2,assumed the same value as for nl/2011; this value is not used as has_employment is FALSE
+man_hours_per_man_year,1800,assumed the same value as for nl/2011
+buildings_insulation_employment_constant,0.0093,assumed the same value as for nl/2011; this value is not used as has_employment is FALSE
+new_houses_insulation_employment_constant,0.014,assumed the same value as for nl/2011; this value is not used as has_employment is FALSE
+old_houses_insulation_employment_constant,0.014,assumed the same value as for nl/2011; this value is not used as has_employment is FALSE
+annual_infrastructure_cost_electricity,0,set the value to 0; this value is not used as use_network_calculations is FALSE
+annual_infrastructure_cost_gas,0,set the value to 0; this value is not used as use_network_calculations is FALSE
+capacity_buffer_decentral_in_mj_s,20000,assumed the same value as for nl/2011
+capacity_buffer_in_mj_s,1600,assumed the same value as for nl/2011
+export_electricity_primary_demand_factor,1,assumed the same value as for nl/2011
+import_electricity_primary_demand_factor,1.82,assumed the same value as for nl/2011
+interconnector_capacity,5850,Dutch value as placeholder
+investment_hv_net_low,0.2,assumed the same value as for nl/2011
+investment_hv_net_high,0.25,assumed the same value as for nl/2011
+investment_hv_net_per_turbine,1.2,assumed the same value as for nl/2011
+number_of_cars,81089666,DENATRAN (see source_analyses/eu/2013/8_transport)
+electric_vehicle_profile_1_share,1,Assumed that at present all EV charge according to the Movares Overal laden profile
+electric_vehicle_profile_2_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
+electric_vehicle_profile_3_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
