@@ -27,12 +27,12 @@ energy_power_nuclear_gen3_uranium_oxide,2.74811559999999E+05,7.84300000000000E+0
 energy_power_hydro_river,4.41385714285714E+04,2.50000000000000E+03
 energy_power_hydro_mountain,0.00000000000000E+00,3.94200000000000E+03
 energy_power_geothermal,2.01600000000000E+02,8.25000000000000E+03
-energy_power_solar_pv_solar_radiation,1.40100000000000E+05,8.72000000000000E+02
+energy_power_solar_pv_solar_radiation,1.23617647058824E+05,8.72000000000000E+02
 energy_power_solar_csp_solar_radiation,0.00000000000000E+00,5.00000000000000E+02
 energy_power_wind_turbine_coastal,1.19297022680412E+04,3.00000000000000E+03
 energy_power_wind_turbine_offshore,1.44224758762887E+04,3.50000000000000E+03
 energy_power_wind_turbine_inland,6.26754507216495E+04,2.50000000000000E+03
-buildings_solar_pv_solar_radiation,4.50000000000000E+02,8.72000000000000E+02
+buildings_solar_pv_solar_radiation,4.23529411764706E+02,8.72000000000000E+02
 households_solar_pv_solar_radiation,0.00000000000000E+00,8.72000000000000E+02
 agriculture_chp_engine_network_gas,0.00000000000000E+00,3.60000000000000E+03
 agriculture_chp_engine_biogas,0.00000000000000E+00,8.00000000000000E+03
@@ -52,3 +52,12 @@ energy_chp_ultra_supercritical_cofiring_coal,1.10724324324324E+04,4.500000000000
 energy_chp_ultra_supercritical_coal,5.68395000000000E+04,4.50000000000000E+03
 energy_chp_ultra_supercritical_lignite,1.94091428571429E+04,7.00000000000000E+03
 energy_chp_supercritical_waste_mix,2.78800000000000E+04,6.00000000000000E+03
+energy_power_turbine_hydrogen,0.00000000000000E+00,5.00000000000000E+02
+energy_hydrogen_wind_turbine_offshore,0.00000000000000E+00,3.50000000000000E+03
+energy_hydrogen_electrolysis_wind_electricity,0.00000000000000E+00,3.50000000000000E+03
+energy_hydrogen_solar_pv_solar_radiation,0.00000000000000E+00,8.67000000000000E+02
+energy_hydrogen_electrolysis_solar_electricity,0.00000000000000E+00,1.86700000000000E+03
+energy_hydrogen_steam_methane_reformer,0.00000000000000E+00,7.50000000000000E+03
+energy_hydrogen_steam_methane_reformer_ccs,0.00000000000000E+00,7.50000000000000E+03
+energy_hydrogen_biomass_gasification,0.00000000000000E+00,7.88400000000000E+03
+energy_hydrogen_biomass_gasification_ccs,0.00000000000000E+00,7.88400000000000E+03

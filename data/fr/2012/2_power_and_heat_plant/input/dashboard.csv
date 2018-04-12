@@ -47,3 +47,23 @@ pp_flh_oil_us,380,Reduced to 380 h to match installed capacity according to Plat
 pp_flh_diesel,380,Reduced to 380 h to match installed capacity according to Platts
 pp_flh_waste,3800,
 pp_flh_geothermal,8250,Not relevant
+pp_flh_hydrogen_turbine,500,no hydrogen electricity production
+pp_demand_hydrogen_turbine,0,no hydrogen electricity production
+pp_demand_hydrogen_smr,0,no hydrogen production
+pp_demand_hydrogen_smr_ccs,0,no hydrogen production
+pp_flh_hydrogen_smr,7500,
+pp_flh_hydrogen_smr_ccs,7500,
+pp_demand_hydrogen_biomass_gasification,0,no hydrogen production
+pp_demand_hydrogen_biomass_gasification_ccs,0,no hydrogen production
+pp_flh_hydrogen_biomass_gasification,7884,
+pp_flh_hydrogen_biomass_gasification_ccs,7884,
+pp_demand_hydrogen_offshore_wind,0,no hydrogen electricity production
+pp_demand_hydrogen_offshore_wind_p2g,0,no hydrogen electricity production
+pp_flh_hydrogen_offshore_wind,3800,same as offshore wind
+pp_flh_hydrogen_offshore_wind_p2g,3800,ASSUMPTION: equal to offshore wind
+pp_demand_hydrogen_solar_pv,0,no hydrogen production
+pp_demand_hydrogen_solar_pv_p2g,0,no hydrogen production
+pp_flh_hydrogen_solar_pv,1072,same as central solar
+pp_flh_hydrogen_solar_pv_p2g,1997.72511896,see source_analysis: nl/2015/energy/power_and_heat_plant_analysis/hydrogen_solar_pv_p2g
+pp_share_solar_pv_p2g,0.91728054489,see source_analysis: nl/2015/energy/power_and_heat_plant_analysis/hydrogen_solar_pv_p2g
+pp_share_solar_pv_curtailed,0.08271945511,see source_analysis: nl/2015/energy/power_and_heat_plant_analysis/hydrogen_solar_pv_p2g

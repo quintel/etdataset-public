@@ -47,3 +47,23 @@ pp_flh_oil_us,4000,Estimate; not relevant. No such plant exists.
 pp_flh_diesel,4000,Estimate; not relevant. No such plant exists.
 pp_flh_waste,4100,Estimate; not relevant; since IEA sees no power production from waste incinaratign power plants
 pp_flh_geothermal,8000,Estimate; not relevant. No such plant exists.
+pp_flh_hydrogen_turbine,500,no hydrogen electricity production
+pp_demand_hydrogen_turbine,0,no hydrogen electricity production
+pp_demand_hydrogen_smr,0,no hydrogen production
+pp_demand_hydrogen_smr_ccs,0,no hydrogen production
+pp_flh_hydrogen_smr,7500,
+pp_flh_hydrogen_smr_ccs,7500,
+pp_demand_hydrogen_biomass_gasification,0,no hydrogen production
+pp_demand_hydrogen_biomass_gasification_ccs,0,no hydrogen production
+pp_flh_hydrogen_biomass_gasification,7884,
+pp_flh_hydrogen_biomass_gasification_ccs,7884,
+pp_demand_hydrogen_offshore_wind,0,no hydrogen production
+pp_demand_hydrogen_offshore_wind_p2g,0,no hydrogen production
+pp_flh_hydrogen_offshore_wind,3500,same as offshore wind
+pp_flh_hydrogen_offshore_wind_p2g,3500,ASSUMPTION: equal to offshore wind
+pp_demand_hydrogen_solar_pv,0,no hydrogen production
+pp_demand_hydrogen_solar_pv_p2g,0,no hydrogen production
+pp_flh_hydrogen_solar_pv,867,same as central solar
+pp_flh_hydrogen_solar_pv_p2g,1867.45540579,see source_analysis: nl/2015/energy/power_and_heat_plant_analysis/hydrogen_solar_pv_p2g
+pp_share_solar_pv_p2g,0.919231913379,see source_analysis: nl/2015/energy/power_and_heat_plant_analysis/hydrogen_solar_pv_p2g
+pp_share_solar_pv_curtailed,0.080768086621,see source_analysis: nl/2015/energy/power_and_heat_plant_analysis/hydrogen_solar_pv_p2g
