@@ -1,5 +1,6 @@
 Key,Value,Source / comment
 area,nl,
+group,country,
 id,1,
 parent_id,1,
 enabled.etengine,true,
@@ -12,6 +13,8 @@ has_coastline,true,
 has_cold_network,false,
 has_electricity_storage,true,
 has_employment,true,
+has_detailed_chemical_industry,true,
+has_detailed_other_industry,true,
 has_fce,true,
 has_industry,true,
 has_lignite,false,
@@ -27,22 +30,34 @@ has_aggregated_chemical_industry,false,
 has_aggregated_other_industry,false,
 areable_land,18457,CBS tabel "Landbouw; gewassen; dieren en grondgebruik naar regio". Zie 11_area_CBS_Landbouw.xlsx
 coast_line,451,The World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/nl.html)
+ccs_cost_in_industry,90,Kalavasta 2018
+flh_solar_pv_solar_radiation_max,1361.35634547,
 land_available_for_solar,18457,Assumed to be equal to arable land.
 number_of_inhabitants,16900726,Bevolking; kerncijfers (CBS; http://statline.cbs.nl/Statweb/publication/?DM=SLNL&PA=37296ned&D1=a&D2=63&HDR=G1&STB=T&VW=T). Zie: 11_area_CBS_Bevolking kerncijfers
 offshore_suitable_for_wind,49589,Same as 2013
 onshore_suitable_for_wind,27539,Same as 2013
+other_emission_agriculture,20.0573864,From emissieregistratie
+other_emission_built_environment,0.6636982648,From emissieregistratie
+other_emission_industry_energy,8.13411290374,From emissieregistratie
+other_emission_transport,1.46563862,From emissieregistratie
+solar_pv_profile_1_share,1,
+solar_pv_profile_2_share,0,
 buildings_insulation_constant_1,0.73,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
 buildings_insulation_constant_2,0.13,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
 buildings_insulation_cost_constant,39402.4,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
 insulation_level_buildings_max,3,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
 insulation_level_buildings_min,0.6,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
 insulation_level_new_houses_max,3,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+insulation_level_new_houses_min,1.8,
 insulation_level_old_houses_max,3,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
+insulation_level_old_houses_min,0.5,
 new_houses_insulation_constant_1,1.85,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
 new_houses_insulation_constant_2,0.05,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
 new_houses_insulation_cost_constant,7071,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
 number_of_buildings,392358,20130827_services_source_analysis_NL 2011.xlsx and http://refman.et-model.com/publications/1821
 number_of_residences,7587964,Voorraad woningen en niet-woningen; mutaties; gebruiksfunctie; regio (CBS; http://statline.cbs.nl/Statweb/publication/?DM=SLNL&PA=81955NED&D1=a&D2=1&D3=0&D4=16;33&HDR=T&STB=G1;G2;G3&VW=T)
+number_of_new_residences,1899665,
+number_of_old_residences,5688299,
 old_houses_insulation_constant_1,0.66,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
 old_houses_insulation_constant_2,0.16,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
 old_houses_insulation_cost_constant,5962.7,See: https://github.com/quintel/documentation/blob/master/general/insulation.md
@@ -61,16 +76,30 @@ man_hours_per_man_year,1800,NL 2011 value
 buildings_insulation_employment_constant,0.0093,NL 2011 value
 new_houses_insulation_employment_constant,0.014,NL 2011 value
 old_houses_insulation_employment_constant,0.014,NL 2011 value
-annual_infrastructure_cost_electricity,1810,NL 2011 value
+lv_net_capacity_per_step,0.2,Quintel assumption. See github/documentation/network
+lv_net_costs_per_capacity_step,183200,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+lv_net_spare_capacity,0.25,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+lv_net_total_costs_present,838847167.7,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+lv_mv_trafo_capacity_per_step,0.2,Quintel assumption. See github/documentation/network
+lv_mv_trafo_costs_per_capacity_step,40000,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+lv_mv_trafo_spare_capacity,0.25,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+lv_mv_trafo_total_costs_present,298839303.5,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+mv_net_capacity_per_step,2,Quintel assumption. See github/documentation/network
+mv_net_costs_per_capacity_step,1380000,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+mv_net_spare_capacity,0.25,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+mv_net_total_costs_present,720884284.7,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+mv_hv_trafo_capacity_per_step,2,Quintel assumption. See github/documentation/network
+mv_hv_trafo_costs_per_capacity_step,500000,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+mv_hv_trafo_spare_capacity,0.25,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+mv_hv_trafo_total_costs_present,251654150.3,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+hv_net_capacity_per_step,20,Quintel assumption. See github/documentation/network
+hv_net_costs_per_capacity_step,7280000,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+hv_net_spare_capacity,0.25,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+hv_net_total_costs_present,423617819.7,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+interconnection_net_costs_present,139550090.5,From NvdT 2017; CE Delft; see source analysis/nl/2015/12. network
+interconnector_capacity,5850,Dutch value as placeholder
+offshore_net_costs_present,26607183.6,From Nvdt 2017; CE Delft; see source analysis/nl/2015/12. network
 annual_infrastructure_cost_gas,1452,NL 2011 value
-capacity_buffer_decentral_in_mj_s,20000,NL 2011 value
-capacity_buffer_in_mj_s,1600,NL 2011 value
-export_electricity_primary_demand_factor,1,NL 2011 value
-import_electricity_primary_demand_factor,1.82,NL 2011 value
-interconnector_capacity,5850,
-investment_hv_net_low,0.2,NL 2011 value
-investment_hv_net_high,0.25,NL 2011 value
-investment_hv_net_per_turbine,1.2,NL 2011 value
 number_of_cars,7979083,8_transport_source_analysis
 electric_vehicle_profile_1_share,1,Assumed that at present all EV charge according to the Movares Overal laden profile
 electric_vehicle_profile_2_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
