@@ -1,0 +1,16 @@
+Key,Value,Source
+country,de,
+base_year,2015,
+metal_steel_production,42.661,World Steel Association
+metal_steel_share_blast_furnace_current,0.677,World Steel Association
+metal_steel_share_blast_furnace_bat,0,
+metal_steel_share_cyclone,0,
+metal_steel_share_electric,0.323,World Steel Association
+metal_steel_burner_share_coal,0,
+metal_steel_burner_share_coal_gas,0.9,Optimized
+metal_steel_burner_share_network_gas,0.1,Optimized
+metal_aluminium_production,0.4,Wikipedia
+metal_aluminium_share_electrolysis_current,0.8,Based on NL datast
+metal_aluminium_share_electrolysis_bat,0,
+metal_aluminium_share_melting_oven,0.2,Based on NL datast
+metal_aluminium_share_carbothermal_reduction,0,

@@ -1,0 +1,4 @@
+Key,Value,Source
+country,de,
+base_year,2015,
+agriculture_production_heatpump,0.004,Taken from NL dataset. Not relevant for DE. 
