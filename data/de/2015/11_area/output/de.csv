@@ -1,12 +1,9 @@
 - area = de
 - group = country
 - id = 2
-0.00000000000000E+00
 - parent_id = 2
 - enabled.etengine = true
 - enabled.etmodel = true
-
-
 - analysis_year = 2015
 - has_agriculture = false
 - has_buildings = true
@@ -15,8 +12,8 @@
 - has_cold_network = false
 - has_electricity_storage = true
 - has_employment = false
-- has_detailed_chemical_industry = yes
-- has_detailed_other_industry = yes
+- has_detailed_chemical_industry = true
+- has_detailed_other_industry = true
 - has_fce = false
 - has_industry = true
 - has_lignite = true
@@ -28,16 +25,14 @@
 - has_solar_csp = true
 - has_import_export = true
 - use_network_calculations = false
-- has_aggregated_chemical_industry = true
-- has_aggregated_other_industry = true
-
-
+- has_aggregated_chemical_industry = false
+- has_aggregated_other_industry = false
 - areable_land = 115933
 - coast_line = 2389
 - ccs_cost_in_industry = 1000
 - flh_solar_pv_solar_radiation_max = 1000
 - land_available_for_solar = 115933
-- number_of_inhabitants = 80327900
+- number_of_inhabitants = 81197537
 - offshore_suitable_for_wind = 21706
 - onshore_suitable_for_wind = 101062
 - other_emission_agriculture = 0
@@ -46,8 +41,6 @@
 - other_emission_transport = 0
 - solar_pv_profile_1_share = 1
 - solar_pv_profile_2_share = 0
-
-
 - buildings_insulation_constant_1 = 0.73
 - buildings_insulation_constant_2 = 0.13
 - buildings_insulation_cost_constant = 39402.4
@@ -61,24 +54,20 @@
 - new_houses_insulation_constant_2 = 0.05
 - new_houses_insulation_cost_constant = 7071
 - number_of_buildings = 1937139.53136595
-- number_of_residences = 40115100
-- number_of_new_residences = 5616114
-- number_of_old_residences = 34498986
+- number_of_residences = 40257800
+- number_of_new_residences = 5636092
+- number_of_old_residences = 34621708
 - old_houses_insulation_constant_1 = 0.66
 - old_houses_insulation_constant_2 = 0.16
 - old_houses_insulation_cost_constant = 5962.7
 - residences_roof_surface_available_for_pv = 561
 - buildings_roof_surface_available_for_pv = 281
 - technical_lifetime_insulation = 30
-
-
 - co2_emission_1990 = 1010.78477452
 - co2_emission_1990_aviation_bunkers = 11.95963055
 - co2_emission_1990_marine_bunkers = 6.4053476
 - co2_percentage_free = 0.85
 - co2_price = 0.005
-
-
 - economic_multiplier = 1
 - employment_fraction_production = 0.5
 - employment_local_fraction = 0.2
@@ -86,8 +75,6 @@
 - buildings_insulation_employment_constant = 0.0093
 - new_houses_insulation_employment_constant = 0.014
 - old_houses_insulation_employment_constant = 0.014
-
-
 - lv_net_capacity_per_step = 0
 - lv_net_costs_per_capacity_step = 0
 - lv_net_spare_capacity = 0
@@ -109,12 +96,10 @@
 - hv_net_spare_capacity = 0
 - hv_net_total_costs_present = 0
 - interconnection_net_costs_present = 0
-- interconnector_capacity = 5850
+- interconnector_capacity = 78160
 - offshore_net_costs_present = 0
 - annual_infrastructure_cost_gas = 0
-
-
-- number_of_cars = 43431000
+- number_of_cars = 45071000
 - electric_vehicle_profile_1_share = 1
 - electric_vehicle_profile_2_share = 0
 - electric_vehicle_profile_3_share = 0

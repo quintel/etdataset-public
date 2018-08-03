@@ -4,8 +4,8 @@ base_year,2015,
 services_final_demand_space_heating,871982.589188679,Based on Fraunhofer_201004_Electricity demand in the European service sector and source analysis
 services_final_demand_space_cooling,16360.3661886792,Based on Fraunhofer_201004_Electricity demand in the European service sector and source analysis
 services_final_demand_lighting,163603.661886792,Based on Fraunhofer_201004_Electricity demand in the European service sector and source analysis
-ict_split,no,
-industry_final_demand_ict_electricity,0,
+ict_split,yes,
+industry_final_demand_ict_electricity,43200,https://www.borderstep.de/wp-content/uploads/2015/01/Borderstep_Energy_Consumption_2015_Data_Centers_16_12_2015.pdf
 services_space_heating_share_gas_fired_heaters,0.52805,Based on Fraunhofer_201004_Electricity demand in the European service sector and source analysis
 services_space_heating_share_electric_heat_pump_with_storage,0,Assumption
 services_space_heating_share_gas_fired_heat_pumps,0,Assumption

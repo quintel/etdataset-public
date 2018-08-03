@@ -45,7 +45,7 @@ gross/net conversion factor =
 
 This factor is required when manipulating solar PV production in the autoproducer table.
 
-The cumulative market segmentation reported by [SolarPower Europe](https://resources.solarbusinesshub.com/solar-industry-reports/item/global-market-outlook-for-solar-power-2016-2020) is used to determine the solar PV production breakdown in the sectors:
+The cumulative market segmentation reported by [SolarPower Europe](https://resources.solarbusinesshub.com/solar-industry-reports/item/global-market-outlook-for-solar-power-2016-2020) (publication date July 2016) was used to determine the solar PV production breakdown in the sectors:
 
 ![]()
 
@@ -64,7 +64,7 @@ It is assumed that utility scale PV is Main activity production. Furthermore, in
 | Services       |      67.3% |
 | Main activity  |      21.7% |
 
-Based on this assumption, the following changes are made to the IEA energy balance
+Based on this assumption, the following changes were made to the IEA energy balance
 
 1. "Electricity output (GWh)-main activity producer electricity plants" / "Solar photovoltaics" is reduced to 21.7% of its original value
 * The amount that was removed from 'main activity' is added to autoproducer row: "Electricity output (GWh)-autoproducer electricity plants" / "Solar photovoltaics" is set to 78.3% of what was formerly 'main activity'.
