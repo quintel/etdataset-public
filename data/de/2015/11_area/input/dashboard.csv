@@ -31,7 +31,7 @@ has_aggregated_other_industry,false,
 areable_land,115933,The World Factbook (land area * areable land %) (https://www.cia.gov/library/publications/the-world-factbook/geos/gm.html)
 coast_line,2389,The World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/gm.html)
 ccs_cost_in_industry,1000,
-flh_solar_pv_solar_radiation_max,1000,
+flh_solar_pv_solar_radiation_max,1390.3589362,Base on script in modelling experiments
 land_available_for_solar,115933,Assumed to be equal to areable land
 number_of_inhabitants,81197537,Eurostat 2015; Population on 1 January (demo_gind) database
 offshore_suitable_for_wind,21706,Based on Ecofys analysis
