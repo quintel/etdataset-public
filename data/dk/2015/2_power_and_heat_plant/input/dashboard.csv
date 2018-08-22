@@ -36,7 +36,7 @@ pp_flh_nuclear_2,8000,does not exist in DK
 pp_flh_nuclear_3,7800,does not exist in DK
 pp_flh_hydro_river,2515,Optimized based on Ecofys analysis
 pp_flh_hydro_mountain,4024,does not exist in NL
-pp_flh_solar_pv,1100,To reproduce installed capacity; see 2_pp_hp/dk_2015_wind_and_solar_statistics
+pp_flh_solar_pv,1141,To reproduce installed capacity; see 2_pp_hp/dk_2015_wind_and_solar_statistics
 pp_flh_residential_solar_pv,807,To reproduce installed capacity; see 2_pp_hp/dk_2015_wind_and_solar_statistics
 pp_flh_caps_solar_pv,807,To reproduce installed capacity; see 2_pp_hp/dk_2015_wind_and_solar_statistics
 pp_flh_solar_csp,867,No concentrated solar power.
@@ -44,7 +44,7 @@ pp_flh_wind_coastal,3067,2_chp_pp_wind_statistics.xlsx
 pp_flh_wind_offshore,4133,2_chp_pp_wind_statistics.xlsx
 pp_flh_wind_inland,2361,2_chp_pp_wind_statistics.xlsx
 pp_flh_oil_us,4000,Estimate; not relevant. No such plant exists.
-pp_flh_diesel,4000,Estimate; not relevant. No such plant exists.
+pp_flh_diesel,22,Back-up diesel generator; see dk_2015_fossil_pp_capacity validation
 pp_flh_waste,4100,Estimate; not relevant; since IEA sees no power production from waste incinaratign power plants
 pp_flh_geothermal,8000,Estimate; not relevant. No such plant exists.
 pp_flh_hydrogen_turbine,500,no hydrogen electricity production

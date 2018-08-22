@@ -1,5 +1,10 @@
+
+
+
+
 # 1. CHP\_source\_analysis - README FIRST
-dd: 24/07/2018
+dd: 17/08/2018
+
 
 ## Purpose of this source analysis
 This source analysis helps you determine the right dashboard values for the `chp_analysis`, the first step in the data generation proces for any country dataset. The `chp_analysis` attempts to specify the energy use and production of CHPs in a country's energy system. All power and heat production that remains in the EB after subtraction of the CHP power and heat by definition is relegated to dedicated power plants and heat plants respectively.
@@ -32,24 +37,21 @@ Although the `1_chp_source_analysis.xlsx` output differs from that of the `chp_a
 
 ## Changes
  
-
- 
 ## Assumptions
 The following assumptions are made for autoproduction CHPs:
+- All the local CHPs have 375 full load hours to reproduce their electritity supply and their estimated capacity of 2.5GW 
 
-- **Agriculture:** 
-- **Households:** 
-- **Services:** 
-- **Energy Industry:** 
-- **Industry:** 
+## Debts
+
+- Denmark has a very unique energy system with a lot of central CHPs. These CHPs follow a certein heat demand, but can also function as dispatchable unit. In the ETM the central CHPS are dispatachble, which makes it hard to reproduce the this unique situation at this moment. 
+- The CHP's technical specs which are fixed in our analysis have a higher efficiency resulting in lower heat supply. This results in 60 PJ of heat production by and heat plants
+- Not much information is present about the local CHP's. At this moment the dashboard inputs are set to reproduce the results by fuels as best as possible. This has resulted in maybe unrealistic distributions of CHP type. For example the dataset has no wood pellet CHPs in the Agricultural sector, but does have quite some gas. 
+- The energy balance of has Autoproducer oil outside the industry (fuel oil in agriculture 119.99 TJ). The CHP analysis does not (yet) support the autoproducer fuel oil utside the industrial sector. This is not yet accounted for. 
+- The biogas CHP electricity production in households and services cannot be sold. This makes it impossible to reach the sold heat stated in the Energy Balance.  
+
 
 ## Sources
 ### Energinet: 
 - By far the most important source for this analysis is the information provided by [Energinet Analysis Assumption 2017](2017_Energinet_Analysis_Assumptions_2017.xlsx) 
 
 
-## Debts
-
-- The CHP's technical specs which are fixed in the analysis have a higher efficiency resulting in lower heat supply. This result is a the larger share of heat production in the power and heat analysis. 
-- Not much information is present about the local CHP's. 
-- Autoproducer oil

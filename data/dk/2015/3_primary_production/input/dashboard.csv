@@ -3,8 +3,8 @@ country,dk,
 base_year,2015,
 primary_bio_oil,636,Danish Energy Agency; 2015; 2015_DEA_Energy_statistics
 primary_wood,65943,From: Danish Energy Agency; 2015; see 3_primary_production_source_analysis.xlsm;
-max_biogenic_wasate,19550,Danish Energy Agency; 2015; 2015_DEA_Energy_statistics
-max_non_biogenic_waste,15995,Danish Energy Agency; 2015; 2015_DEA_Energy_statistics
+max_biogenic_wasate,19550,Danish Energy Agency; 2015; 2015_DEA_Energy_statistics; page 5
+max_non_biogenic_waste,15995,Danish Energy Agency; 2015; 2015_DEA_Energy_statistics; page 4
 percentage_wood_pellets,0.5,Assumption
 percentage_torrified_biomass_pellets,0.5,Assumption
 regasified_lng,0,WIP
