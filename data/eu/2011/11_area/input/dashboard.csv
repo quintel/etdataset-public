@@ -41,24 +41,57 @@ other_emission_transport,0,
 solar_pv_profile_1_share,1,
 solar_pv_profile_2_share,0,
 hydrogen_electrolysis_solar_pv_capacity_ratio,0.357,Different per country: calculated in modeling_experiments/electrolysers
-buildings_insulation_constant_1,0.73,Relevant for the calculations of insulation saving effects
-buildings_insulation_constant_2,0.13,Relevant for the calculations of insulation saving effects
-buildings_insulation_cost_constant,39402.4,NL dataset
-insulation_level_buildings_max,3,NL dataset
-insulation_level_buildings_min,0.6,NL dataset
-insulation_level_new_houses_max,3,NL dataset
-insulation_level_old_houses_max,3,NL dataset
-new_houses_insulation_constant_1,1.85,
-new_houses_insulation_constant_2,0.05,NL dataset
-new_houses_insulation_cost_constant,7071,NL dataset
 number_of_buildings,7500000,Rough estimate based on ENTRANZE data.
 number_of_residences,210574900,
-old_houses_insulation_constant_1,0.66,
-old_houses_insulation_constant_2,0.16,Relevant for the calculations of insulation saving effects
-old_houses_insulation_cost_constant,5962.7,NL dataset
+number_of_apartments,89620677.44,
+number_of_corner_houses,0,
+number_of_detached_houses,34850145.95,
+number_of_semi_detached_houses,51274988.15,
+number_of_terraced_houses,34829088.46,
+typical_useful_demand_space_heating_apartment,0.0272375534483,
+typical_useful_demand_space_heating_corner_house,0.0442685071978,
+typical_useful_demand_space_heating_detached_house,0.0698179085393,
+typical_useful_demand_space_heating_semi_detached_house,0.0541724674138,
+typical_useful_demand_space_heating_terraced_house,0.0384352143103,
+typical_roof_surface_apartment_available_for_pv,1.90666667E-05,
+typical_roof_surface_corner_house_available_for_pv,3.33E-05,
+typical_roof_surface_detached_house_available_for_pv,6.17E-05,
+typical_roof_surface_semi_detached_house_available_for_pv,4.58E-05,
+typical_roof_surface_terraced_house,3.25E-05,
+heat_demand_reduction_medium_insulation_apartments,32,
+heat_demand_reduction_medium_insulation_corner_house,23,
+heat_demand_reduction_medium_insulation_detached_house,23,
+heat_demand_reduction_medium_insulation_semi_detached_house,26,
+heat_demand_reduction_medium_insulation_terraced_house,31,
+heat_demand_reduction_high_insulation_apartments,67,
+heat_demand_reduction_high_insulation_corner_house,69,
+heat_demand_reduction_high_insulation_detached_house,67,
+heat_demand_reduction_high_insulation_semi_detached_house,69,
+heat_demand_reduction_high_insulation_terraced_house,69,
+insulation_apartments_start_value,13,
+insulation_corner_houses_start_value,9,
+insulation_detached_houses_start_value,11,
+insulation_semi_detached_houses_start_value,13,
+insulation_terraced_houses_start_value,13,
+insulation_apartments_low_share,0.59375,
+insulation_apartments_medium_share,0.40625,
+insulation_apartments_high_share,0,
+insulation_corner_houses_low_share,0.608695652173913,
+insulation_corner_houses_medium_share,0.391304347826087,
+insulation_corner_houses_high_share,0,
+insulation_detached_houses_low_share,0.521739130434783,
+insulation_detached_houses_medium_share,0.478260869565217,
+insulation_detached_houses_high_share,0,
+insulation_semi_detached_houses_low_share,0.5,
+insulation_semi_detached_houses_medium_share,0.5,
+insulation_semi_detached_houses_high_share,0,
+insulation_terraced_houses_low_share,0.580645161290323,
+insulation_terraced_houses_medium_share,0.419354838709677,
+insulation_terraced_houses_high_share,0,
 residences_roof_surface_available_for_pv,3681,Total based on Ecofys analysis; share of residences is assumed as 2/3.
 buildings_roof_surface_available_for_pv,1841,Total based on Ecofys analysis; share of services is assumed as 1/3.
-technical_lifetime_insulation,30,NL dataset
+insulation_buildings_start_value,28.8,NL/2015 value; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
+heat_demand_reduction_high_insulation_buildings,74,NL/2015 value; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
 co2_emission_1990,4030.6,1990 CO2 Emissions (energy related) in EU energy trends to 2030 (http://ec.europa.eu/clima/policies/package/docs/trends_to_2030_update_2009_en.pdf)
 co2_emission_1990_aviation_bunkers,69.2127685,201312_EEA_EU27 GHG emissions IPCC format 1990 & 2011.xlsx
 co2_emission_1990_marine_bunkers,108.9977607,201312_EEA_EU27 GHG emissions IPCC format 1990 & 2011.xlsx
@@ -70,7 +103,6 @@ employment_local_fraction,0.2,Not relevant without employment module
 man_hours_per_man_year,1800,Not relevant without employment module
 buildings_insulation_employment_constant,0.0093,Not relevant without employment module
 new_houses_insulation_employment_constant,0.014,Not relevant without employment module
-old_houses_insulation_employment_constant,0.014,Not relevant without employment module
 lv_net_capacity_per_step,0.2,
 lv_net_costs_per_capacity_step,183200,
 lv_net_spare_capacity,0.25,

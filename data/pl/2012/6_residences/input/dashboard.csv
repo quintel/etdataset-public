@@ -8,29 +8,24 @@ residences_final_demand_lighting,12306,Based on GUS_201307_Energy efficiency in 
 residences_final_demand_cooking,68094,Based on GUS_201307_Energy efficiency in Poland 2001-2011; see source analysis
 residences_final_demand_appliances,54147,Based on GUS_201307_Energy efficiency in Poland 2001-2011; see source analysis
 residences_percentage_space_heating_combi_boiiler,0,Based on GUS_201403_Energy consumption in households in 2012 and Ecofys data; see source analysis
-residences_percentage_space_heating_solar_thermal,0.000194945569476063,
 residences_percentage_space_heating_heat_pump_ground,0,
-residences_percentage_space_heating_micro_chp,0,
-residences_percentage_space_heating_district,0.322072603964683,
+residences_percentage_space_heating_district,0.322135402834237,
 residences_percentage_space_heating_heat_pump_air,0,
-residences_percentage_space_heating_woodpellets,0.151082816343949,
-residences_percentage_space_heating_electric_resistance,0.0389891138952125,
-residences_percentage_space_heating_gas_burner,0.0974727847380314,
-residences_percentage_space_heating_oil_burner,0.0370396582004519,
-residences_percentage_space_heating_coal_burner,0.353148077288197,
+residences_percentage_space_heating_woodpellets,0.151112275012456,
+residences_percentage_space_heating_electric_resistance,0.0389967161322466,
+residences_percentage_space_heating_gas_burner,0.0974917903306166,
+residences_percentage_space_heating_oil_burner,0.0370468803256343,
+residences_percentage_space_heating_coal_burner,0.35321693536481,
 residences_percentage_space_heating_hybrid_heatpump,0,Set to 0
-residences_percentage_hot_water_combi_boiiler,0,Based on GUS_201403_Energy consumption in households in 2012 and Ecofys data; see source analysis
-residences_percentage_hot_water_solar_thermal,0.00289901740107204,
+residences_percentage_hot_water_combi_boiiler,0,Set equal to space heating
 residences_percentage_hot_water_heat_pump_ground,0,
-residences_percentage_hot_water_micro_chp,0,
-residences_percentage_hot_water_district,0.238514088776874,
+residences_percentage_hot_water_district,0.322135402834237,
 residences_percentage_hot_water_heat_pump_air,0,
-residences_percentage_hot_water_woodpellets,0.160481320416488,
-residences_percentage_hot_water_electric_resistance,0.100070036783463,
-residences_percentage_hot_water_gas_burner,0.176011770779374,
-residences_percentage_hot_water_oil_burner,0.0414145343010291,
-residences_percentage_hot_water_coal_burner,0.2806092315417,
-residences_percentage_hot_water_fuel_cell,0,
+residences_percentage_hot_water_woodpellets,0.151112275012456,
+residences_percentage_hot_water_electric_resistance,0.0389967161322466,
+residences_percentage_hot_water_gas_burner,0.0974917903306166,
+residences_percentage_hot_water_oil_burner,0.0370468803256343,
+residences_percentage_hot_water_coal_burner,0.35321693536481,
 residences_percentage_hot_water_hybrid_heatpump,0,Set to 0
 residences_percentage_cooling_heat_pump_ground,0,No heat pumps reported in GUS_201403_Energy consumption in households in 2012
 residences_percentage_cooling_heat_pump_air,0,
@@ -51,9 +46,14 @@ residences_percentage_appliances_television,0.14,
 residences_percentage_appliances_computer_media,0.11,
 residences_percentage_appliances_vacuum_cleaner,0.1,
 residences_percentage_appliances_others,0.07,
-residences_space_heating_share_coming_from_solar_thermal,0.15,Based on DE dataset
 residences_hot_water_share_coming_from_solar_thermal,0.5,
-residences_percentage_old_residences,0.863,Based on GUS_201403_Energy consumption in households in 2012; see source analysis
-residences_percentage_new_residences,0.137,Based on GUS_201403_Energy consumption in households in 2012; see source analysis
-insulation_level_old_houses_min,0.5,Based on DE dataset
-insulation_level_new_houses_min,1.8,Based on DE dataset
+residences_percentage_apartments,0.4414,Eurostat; see source_analyses/eu/2015/6_residences
+residences_percentage_corner_houses,0,Eurostat; see source_analyses/eu/2015/6_residences
+residences_percentage_detached_houses,0.2533,Eurostat; see source_analyses/eu/2015/6_residences
+residences_percentage_semi_detached_houses,0.0521,Eurostat; see source_analyses/eu/2015/6_residences
+residences_percentage_terraced_houses,0.2532,Eurostat; see source_analyses/eu/2015/6_residences
+average_heat_demand_apartments,0.02212,Use NL2015 average. See source_analyses/nl/2015/6_residences
+average_heat_demand_corner_houses,0.03765,Use NL2015 average. See source_analyses/nl/2015/6_residences
+average_heat_demand_detached_houses,0.05819,Use NL2015 average. See source_analyses/nl/2015/6_residences
+average_heat_demand_semi_detached_houses,0.04397,Use NL2015 average. See source_analyses/nl/2015/6_residences
+average_heat_demand_terraced_houses,0.03133,Use NL2015 average. See source_analyses/nl/2015/6_residences

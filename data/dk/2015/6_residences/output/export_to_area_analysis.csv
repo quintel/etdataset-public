@@ -1,5 +1,6 @@
 key,value
-residences_percentage_old_residences,8.62413119060025E-01
-residences_percentage_new_residences,1.37586880939975E-01
-insulation_level_old_houses_min,5.00000000000000E-01
-insulation_level_new_houses_min,1.80000000000000E+00
+residences_percentage_apartments,3.06500000000000E-01
+residences_percentage_corner_houses,0.00000000000000E+00
+residences_percentage_detached_houses,2.82400000000000E-01
+residences_percentage_semi_detached_houses,1.28600000000000E-01
+residences_percentage_terraced_houses,2.82500000000000E-01

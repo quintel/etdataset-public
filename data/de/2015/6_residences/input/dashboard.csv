@@ -7,30 +7,25 @@ residences_final_demand_cooling,440.680579857442,HRE4; See 6_residences_source_a
 residences_final_demand_lighting,39600,DESTATIS; See 6_residences_source_analysis_de.xlsx
 residences_final_demand_cooking,88267.4183944929,HRE4; See 6_residences_source_analysis_de.xlsx
 residences_final_demand_appliances,201600,DESTATIS; See 6_residences_source_analysis_de.xlsx
-residences_percentage_space_heating_combi_boiiler,0.297465678715622,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_space_heating_solar_thermal,0.000520116489106177,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_space_heating_combi_boiiler,0.297620476032702,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
 residences_percentage_space_heating_heat_pump_ground,0,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_space_heating_micro_chp,0,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_space_heating_district,0.0885,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_space_heating_heat_pump_air,0.0233390272559323,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_space_heating_woodpellets,0.121303110571647,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_space_heating_electric_resistance,0.0765382363408464,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_space_heating_gas_burner,0.143,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_space_heating_oil_burner,0.235,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_space_heating_coal_burner,0.014333830626846,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_space_heating_district,0.0885460542628674,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_space_heating_heat_pump_air,0.0233511725858342,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_space_heating_woodpellets,0.12136623515177,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_space_heating_electric_resistance,0.0765780658556018,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_space_heating_gas_burner,0.143074415362599,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_space_heating_oil_burner,0.235122290980495,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_space_heating_coal_burner,0.0143412897681295,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
 residences_percentage_space_heating_hybrid_heatpump,0,Adjusted to pass checks. Based on HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_hot_water_combi_boiiler,0.280528005237977,HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_hot_water_solar_thermal,0.0777301952473178,HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_hot_water_combi_boiiler,0.297620476032702,HRE4; See 6_residences_source_analysis_de.xlsx
 residences_percentage_hot_water_heat_pump_ground,0,HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_hot_water_micro_chp,0,HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_hot_water_district,0.144625098103238,HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_hot_water_heat_pump_air,0.020301030972753,HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_hot_water_woodpellets,0.0304788736084089,HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_hot_water_electric_resistance,0.0595420199571771,HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_hot_water_gas_burner,0.139225010006996,HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_hot_water_oil_burner,0.247569766866133,HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_hot_water_coal_burner,0,HRE4; See 6_residences_source_analysis_de.xlsx
-residences_percentage_hot_water_fuel_cell,0,HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_hot_water_district,0.0885460542628674,HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_hot_water_heat_pump_air,0.0233511725858342,HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_hot_water_woodpellets,0.12136623515177,HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_hot_water_electric_resistance,0.0765780658556018,HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_hot_water_gas_burner,0.143074415362599,HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_hot_water_oil_burner,0.235122290980495,HRE4; See 6_residences_source_analysis_de.xlsx
+residences_percentage_hot_water_coal_burner,0.0143412897681295,HRE4; See 6_residences_source_analysis_de.xlsx
 residences_percentage_hot_water_hybrid_heatpump,0,HRE4; See 6_residences_source_analysis_de.xlsx
 residences_percentage_cooling_heat_pump_ground,0,HRE4; See 6_residences_source_analysis_de.xlsx
 residences_percentage_cooling_heat_pump_air,0,HRE4; See 6_residences_source_analysis_de.xlsx
@@ -51,9 +46,14 @@ residences_percentage_appliances_television,0.14,
 residences_percentage_appliances_computer_media,0.11,
 residences_percentage_appliances_vacuum_cleaner,0.1,
 residences_percentage_appliances_others,0.07,
-residences_space_heating_share_coming_from_solar_thermal,0.15,
 residences_hot_water_share_coming_from_solar_thermal,0.5,
-residences_percentage_old_residences,0.86,Base on old DE research
-residences_percentage_new_residences,0.14,Base on old DE research
-insulation_level_old_houses_min,0.5,This number depends on the insulation analysis; see https://github.com/quintel/documentation/blob/master/general/insulation.md
-insulation_level_new_houses_min,1.8,This number depends on the insulation analysis; see https://github.com/quintel/documentation/blob/master/general/insulation.md
+residences_percentage_apartments,0.5811,Eurostat; see source_analyses/eu/2015/6_residences
+residences_percentage_corner_houses,0,
+residences_percentage_detached_houses,0.1293,
+residences_percentage_semi_detached_houses,0.1602,
+residences_percentage_terraced_houses,0.1294,
+average_heat_demand_apartments,0.02212,Use NL2015 average. See source_analyses/nl/2015/6_residences
+average_heat_demand_corner_houses,0.03765,
+average_heat_demand_detached_houses,0.05819,
+average_heat_demand_semi_detached_houses,0.04397,
+average_heat_demand_terraced_houses,0.03133,

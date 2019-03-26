@@ -1,14 +1,13 @@
 Key,Value,Source
 country,nl,
 base_year,2015,
-primary_bio_oil,0,no bio-oil (oil produced from oil seed through mechanical processing only) is produced in the Netherlands
+primary_bio_kerosene,0,SkyNRG nieuwsbericht (2018)
+primary_waste_fats,1360,NEA (2017) - Rapportage Energie voor Vervoer in Nederland
 primary_wood,6068.19804233463,Estimate based on Eurostat data; see soure analysis
 max_biogenic_wasate,38588.621358397,Estimate based on Eurostat data; see soure analysis
 max_non_biogenic_waste,31571.8984819975,Estimate based on Eurostat data; see soure analysis
-percentage_wood_pellets,0.5,Assumption
-percentage_torrified_biomass_pellets,0.5,Assumption
+max_waste_fats,1360,NEA (2017) - Rapportage Energie voor Vervoer in Nederland
+percentage_wood_pellets,1,Assumption
+percentage_torrified_biomass_pellets,0,Assumption
 regasified_lng,19515.38787,GIE (see source_analyses/EU/2013)
 regasified_bio_lng,0,Assumption (see source_analyses/EU/2013)
-percentage_steam_methane_reforming,0.6,Assumption
-percentage_steam_methane_reforming_ccs,0,Assumption
-percentage_local_electrolysis,0.4,Assumption
