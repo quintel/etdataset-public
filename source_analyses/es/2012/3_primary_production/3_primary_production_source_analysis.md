@@ -1,6 +1,6 @@
 # 3. Primary production analysis
 
-The timecurves are based on data from the Primes reference scenario in [EC_2013_Trends to 2050 reference scenario 2013](http://refman.et-model.com/publications/1874). Values for 2012 are directly obtained from the energy balance. See the [3_primary_production_source_analysis.xlsm](3_primary_production_source_analysis.xlsm) for more details.
+The timecurves are based on data from the Primes reference scenario in [EC_2016_Trends to 2050 reference scenario 2016](https://refman.energytransitionmodel.com/publications/2096). Values for 2012 are directly obtained from the energy balance. See the [3_primary_production_source_analysis.xlsm](3_primary_production_source_analysis.xlsm) for more details.
 
 
 ## Wood

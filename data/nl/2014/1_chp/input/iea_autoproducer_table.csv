@@ -1,0 +1,10 @@
+FLOW,Total net production,Total energy industry,  Coal mines,  Oil and gas extraction,  Patent fuel plants,  Coke ovens,  BKB plants,  Gas works,  Blast furnaces,  Oil refineries,  Coal liquefaction plants,  Liquefaction (LNG) / regasification plants,  Gasification plants for biogases,  Gas-to-liquids (GTL) plants,  Charcoal production plants,  Not elsewhere specified - energy,Total industry,  Iron and steel,  Chemical and petrochemical,  Non-ferrous metals,  Non-metallic minerals,  Transport equipment,  Machinery,  Mining and quarrying,  Food and tobacco,"  Paper, pulp, and printing",  Wood and wood products,  Construction,  Textile and leather,  Not elsewhere specified - industry,Total transport,  Rail,  Pipeline transport,  Not elsewhere specified - transport,Other,  Commercial and public service,  Residential,  Agriculture,  Fishing,  Not elsewhere specified - other
+PLANT,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Autoproducer electricity plants,2619,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,390,56,333,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2229,792,549,888,0,0
+Autoproducer CHP plants,18128,1975,0,31,0,0,0,0,0,1944,0,0,0,0,0,0,3757,166,1753,0,23,0,0,0,1155,646,2,10,2,0,0,0,0,0,12396,3627,0,8769,0,0
+Autoproducer heat plants,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x
+Total autoproducer plants,20747,1975,0,31,0,0,0,0,0,1944,0,0,0,0,0,0,4147,222,2086,0,23,0,0,0,1155,646,3,10,2,0,0,0,0,0,14625,4419,549,9657,0,0
+Autoproducer electricity plants,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x
+Autoproducer CHP plants,41145,10120,0,0,0,0,0,0,0,10120,0,0,0,0,0,0,10860,0,9000,0,0,0,0,100,730,1030,0,0,0,0,0,0,0,0,20165,20165,0,0,0,0
+Autoproducer heat plants,12901,3490,0,0,0,0,0,0,0,3490,0,0,0,0,0,0,9231,0,6971,40,0,0,0,0,580,1530,0,0,110,0,0,0,0,0,180,180,0,0,0,0
+Total autoproducer plants,54046,13610,0,0,0,0,0,0,0,13610,0,0,0,0,0,0,20091,0,15971,40,0,0,0,100,1310,2560,0,0,110,0,0,0,0,0,20345,20345,0,0,0,0

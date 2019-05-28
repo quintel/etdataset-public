@@ -1,0 +1,2 @@
+### Total demand - script
+The data needs to be processed in order to match the ETM format. The input data (EDSN profiles, see ⁨etdataset⁩ ▸ ⁨curves⁩ ▸ ⁨demand⁩ ▸ ⁨total_demand ▸ ⁨source⁩) provides energetic demand per hour. For ETM the profile needs to be normalized (sum of the profile should be 1/3600). This transformation is done in `total_demand.py`.
