@@ -25,15 +25,15 @@ has_other,true,
 has_solar_csp,false,
 has_import_export,true,
 use_network_calculations,false,
+has_coal_oil_for_heating_built_environment,true,
 has_aggregated_chemical_industry,true,
 areable_land,60192,World Factbook (land area * areable land %) (https://www.cia.gov/library/publications/the-world-factbook/geos/uk.html)
 coast_line,12429,World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/uk.html)
 ccs_cost_in_industry,66,
 flh_solar_pv_solar_radiation_max,1572.15528947,
-land_available_for_solar,60192,Assumed to be equal to areable land
+total_land_area,239245.567,Wikipedia: https://en.wikipedia.org/wiki/United_Kingdom
 number_of_inhabitants,63495303,Eurostat 2012; Population on 1 January (tps00001) database
 offshore_suitable_for_wind,530020,Based on Ecofys analysis
-onshore_suitable_for_wind,160578,Based on Ecofys analysis
 other_emission_agriculture,44.61535,
 other_emission_built_environment,0,
 other_emission_industry_energy,51.68629,
@@ -57,7 +57,7 @@ typical_roof_surface_apartment_available_for_pv,1.90666666666667E-05,Assumed NL2
 typical_roof_surface_corner_house_available_for_pv,3.33E-05,Assumed NL2015 averages; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
 typical_roof_surface_detached_house_available_for_pv,6.17E-05,Assumed NL2015 averages; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
 typical_roof_surface_semi_detached_house_available_for_pv,4.58E-05,Assumed NL2015 averages; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
-typical_roof_surface_terraced_house,3.25E-05,Assumed NL2015 averages; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
+typical_roof_surface_terraced_house_available_for_pv,3.25E-05,
 heat_demand_reduction_medium_insulation_apartments,32,Assumed NL2015 averages; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
 heat_demand_reduction_medium_insulation_corner_house,23,Assumed NL2015 averages; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
 heat_demand_reduction_medium_insulation_detached_house,23,Assumed NL2015 averages; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
@@ -102,7 +102,7 @@ employment_fraction_production,0,This attribute is not yet relevant for UK 2012 
 employment_local_fraction,0,This attribute is not yet relevant for UK 2012 as the employment module is switched off
 man_hours_per_man_year,1800,
 buildings_insulation_employment_constant,0,This attribute is not yet relevant for UK 2012 as the employment module is switched off
-new_houses_insulation_employment_constant,0,This attribute is not yet relevant for UK 2012 as the employment module is switched off
+households_insulation_employment_constant,0.014,
 lv_net_capacity_per_step,0.2,
 lv_net_costs_per_capacity_step,183200,
 lv_net_spare_capacity,0.25,
