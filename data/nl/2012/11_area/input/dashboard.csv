@@ -25,15 +25,15 @@ has_other,true,
 has_solar_csp,false,
 has_import_export,true,
 use_network_calculations,true,
+has_coal_oil_for_heating_built_environment,false,
 has_aggregated_chemical_industry,true,
 areable_land,18417,CBS tabel "Landbouw; gewassen; dieren en grondgebruik naar regio". Zie 20140610_CBS_Landbouw.xlsx
 coast_line,451,The World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/nl.html)
 ccs_cost_in_industry,66,
 flh_solar_pv_solar_radiation_max,1572.15528947,
-land_available_for_solar,18417,Assumed to be equal to arable land.
+total_land_area,33679.96,Kerncijfers bevolking (CBS)
 number_of_inhabitants,16730348,Eurostat 2012; Population on 1 January (demo_grind) database
 offshore_suitable_for_wind,49589,Based on Ecofys analysis
-onshore_suitable_for_wind,27539,Based on Ecofys analysis
 other_emission_agriculture,44.61535,
 other_emission_built_environment,0,
 other_emission_industry_energy,51.68629,
@@ -57,7 +57,7 @@ typical_roof_surface_apartment_available_for_pv,1.90666667E-05,
 typical_roof_surface_corner_house_available_for_pv,3.33E-05,
 typical_roof_surface_detached_house_available_for_pv,6.17E-05,
 typical_roof_surface_semi_detached_house_available_for_pv,4.58E-05,
-typical_roof_surface_terraced_house,3.25E-05,
+typical_roof_surface_terraced_house_available_for_pv,3.25E-05,
 heat_demand_reduction_medium_insulation_apartments,32,
 heat_demand_reduction_medium_insulation_corner_house,23,
 heat_demand_reduction_medium_insulation_detached_house,23,
@@ -102,7 +102,7 @@ employment_fraction_production,0.5,NL 2011 value
 employment_local_fraction,0.2,NL 2011 value
 man_hours_per_man_year,1800,NL 2011 value
 buildings_insulation_employment_constant,0.0093,NL 2011 value
-new_houses_insulation_employment_constant,0.014,NL 2011 value
+households_insulation_employment_constant,0.014,
 lv_net_capacity_per_step,0.2,
 lv_net_costs_per_capacity_step,183200,
 lv_net_spare_capacity,0.3,

@@ -31,10 +31,9 @@ areable_land,18457,CBS tabel "Landbouw; gewassen; dieren en grondgebruik naar re
 coast_line,451,The World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/nl.html)
 ccs_cost_in_industry,90,Kalavasta 2018
 flh_solar_pv_solar_radiation_max,1361.35634547,
-land_available_for_solar,18457,Assumed to be equal to arable land.
+total_land_area,33679.96,Bevolking; kerncijfers (CBS)
 number_of_inhabitants,16900726,Bevolking; kerncijfers (CBS; http://statline.cbs.nl/Statweb/publication/?DM=SLNL&PA=37296ned&D1=a&D2=63&HDR=G1&STB=T&VW=T). Zie: 11_area_CBS_Bevolking kerncijfers
 offshore_suitable_for_wind,49589,Same as 2013
-onshore_suitable_for_wind,27539,Same as 2013
 other_emission_agriculture,20.0573864,From emissieregistratie
 other_emission_built_environment,0.6636982648,From emissieregistratie
 other_emission_industry_energy,8.13411290374,From emissieregistratie

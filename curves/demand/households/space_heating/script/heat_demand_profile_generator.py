@@ -76,4 +76,8 @@ for house_type in house_types:
         
         np.savetxt(output_file_path + "insulation" + "_" + house_types_names[i] + "_" + insulation_type + ".csv", hourly_data, fmt='%.13f', delimiter=',')
 
+np.savetxt(output_file_path + "air_temperature.csv", temperature, fmt='%.13f', delimiter=',')
+
+
+
 print "Succesfully written output files to" + output_file_path + " !"

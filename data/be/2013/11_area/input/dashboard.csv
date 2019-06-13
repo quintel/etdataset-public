@@ -25,15 +25,15 @@ has_other,true,
 has_solar_csp,false,
 has_import_export,true,
 use_network_calculations,true,
+has_coal_oil_for_heating_built_environment,true,
 has_aggregated_chemical_industry,false,
 areable_land,8303.616,**https://www.cia.gov/library/publications/the-world-factbook/geos/be.html; 27.2% of total land
 coast_line,66.5,**The World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/nl.html)
 ccs_cost_in_industry,66,
 flh_solar_pv_solar_radiation_max,1397.47075833,
-land_available_for_solar,8304,**Assumed to be equal to arable land.
+total_land_area,28635.264,Wikipedia: https://nl.wikipedia.org/wiki/Belgi%C3%AB
 number_of_inhabitants,11099554,**Totale residerende bevolking voor Belgi� en gewesten (https://bestat.economie.fgov.be/bestat/crosstable.xhtml?view=1b9e219b-0387-4a70-880a-dc5eccaa244c)
 offshore_suitable_for_wind,7311.9,** based on Dutch value; scaled using Dutch and Belgium coastline
-onshore_suitable_for_wind,12377,** based on Dutch value; scaled using Dutch and Belgium arable land
 other_emission_agriculture,10.00278,
 other_emission_built_environment,0,
 other_emission_industry_energy,21.14006,
@@ -57,7 +57,7 @@ typical_roof_surface_apartment_available_for_pv,1.90666667E-05,
 typical_roof_surface_corner_house_available_for_pv,3.33E-05,
 typical_roof_surface_detached_house_available_for_pv,6.17E-05,
 typical_roof_surface_semi_detached_house_available_for_pv,4.58E-05,
-typical_roof_surface_terraced_house,3.25E-05,
+typical_roof_surface_terraced_house_available_for_pv,3.25E-05,
 heat_demand_reduction_medium_insulation_apartments,32,
 heat_demand_reduction_medium_insulation_corner_house,23,
 heat_demand_reduction_medium_insulation_detached_house,23,
@@ -102,7 +102,7 @@ employment_fraction_production,0.5,NL 2011 value
 employment_local_fraction,0.2,NL 2011 value
 man_hours_per_man_year,1800,NL 2011 value
 buildings_insulation_employment_constant,0.0093,NL 2011 value
-new_houses_insulation_employment_constant,0.014,NL 2011 value
+households_insulation_employment_constant,0.014,
 lv_net_capacity_per_step,0.2,
 lv_net_costs_per_capacity_step,183200,
 lv_net_spare_capacity,0.3,

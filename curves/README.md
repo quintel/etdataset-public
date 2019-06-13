@@ -8,11 +8,11 @@ Our [documentation](https://github.com/quintel/documentation/blob/master/general
 Feedback on the curves we use is very welcome!
 If you have a comment or a better source please let us know, you can:
 
-* Open an issue in [ETSource](https://github.com/quintel/etsource/issues/new) and assign a team memeber of Quintel, eg:
-	* Chaelkruip 
-	* Dorinevandervlies
-	* Marliekeverweij
-	* Roosdekok
+* Open an issue in [ETSource](https://github.com/quintel/etsource/issues/new) and assign a team memeber of Quintel, e.g.:
+	* ChaelKruip 
+	* DorinevanderVlies
+	* marliekeverweij
+	* redekok
 * E-mail us: [info@quintel.com](info@quintel.com)
 
 ## Structure of ETDataset - curves
@@ -42,4 +42,14 @@ The output file is used in the ETM.<br>
 
 ## Exporting ETDataset to ETSource
 
-<span style="color:red">**To be written.**</span>
+In order to export the curves from ETDataset to ETSource, a script must be run in ETSource. This allows you to update existing or add new curves to ETSource whenever these are updated on ETDataset. 
+
+For each country dataset, the curves are exported as follows:
+
+1. If available, use the curve for the specific country _and_ the corresponding analysis year.
+2. If the curve is available for the specific country _but not_ for the corresponding analysis year, the curve from the nearest year is used.
+3. If there is no curve available for the specific country, the (default) `nl/2015` curve is used. 
+
+For each local dataset (provinces, regions, municipalities, neighbourhoods, etc.), the curves are symlinked to the corresponding country and analysis year specified in its AREA-file. Most local datasets are 2016-based, while the `nl` dataset is 2015-based. Hence, a `nl2016` dataset only containing the corresponding curves has been created on ETSource for the purpose of symlinking.
+
+For more technical details, check our [ETSource wiki](https://github.com/quintel/etsource/wiki/Import-and-symlink-curves-from-ETDataset).

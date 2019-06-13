@@ -25,15 +25,14 @@
 - has_import_export = true
 - use_network_calculations = true
 - has_coal_oil_for_heating_built_environment = false
-- has_aggregated_chemical_industry = false
+- has_aggregated_chemical_industry =
 - areable_land = 18457
 - coast_line = 451
 - ccs_cost_in_industry = 90
 - flh_solar_pv_solar_radiation_max = 1361.35634547
-- land_available_for_solar = 18457
+- total_land_area = 33679.96
 - number_of_inhabitants = 16900726
 - offshore_suitable_for_wind = 49589
-- onshore_suitable_for_wind = 27539
 - other_emission_agriculture = 20.0573864
 - other_emission_built_environment = 0.6636982648
 - other_emission_industry_energy = 8.13411290374

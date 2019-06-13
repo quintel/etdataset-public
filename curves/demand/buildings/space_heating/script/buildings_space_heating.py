@@ -25,5 +25,7 @@ hourly_data = hourly_data / sum(hourly_data) / 3600.0
 
 # Write data to file
 np.savetxt(output_file_path + "buildings_heating" + ".csv", hourly_data, fmt='%.13f', delimiter=',')
+np.savetxt(output_file_path + "buildings_chp" + ".csv", hourly_data, fmt='%.13f', delimiter=',')
 
-print("Succesfully written output files buildings_heating.csv " + str(country) + " " + str(year) + "!")
+
+print("Succesfully written output files buildings_heating.csv and buildings_chp.csv " + str(country) + " " + str(year) + "!")

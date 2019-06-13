@@ -21,7 +21,14 @@ def read_csv(country, year):
     ]
 
     # Reading the CSV into a data-frame
-    return pd.read_csv(target_path + target_file, usecols=column_names).fillna(0)
+    df = pd.read_csv(target_path + target_file, usecols=column_names).fillna(0)
+
+    # Check for leap year
+    number_of_hours = df.shape[0]
+    if number_of_hours > 8760:
+        df = df.drop(np.r_[8760:number_of_hours])
+
+    return df
 
 
 def normalize(profile):
