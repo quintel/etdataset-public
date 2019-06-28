@@ -8,4 +8,6 @@ According to the website, the underlying data for wind profiles are the measured
 
 If the Open Power System Data platform has no data available for a country, the "nl" data is used.
 
+Furthermore, if the data quality is not sufficient (i.e., less than 98% available data points for a specific year and country), the data is not used to create a curve. This is the case for the offshore wind curves for Belgium (2017) and the Netherlands (2015). Hence, for the Netherlands (2015) a different source (Ecofys) has been used to generate this curve.
+
 NB: The data source only has data available for Great Britain. Hence, we use this data for the United Kingdom. In order to run the script without problems, the headers in the source csv file should be changed from "GB\_..." to "UK\_...".

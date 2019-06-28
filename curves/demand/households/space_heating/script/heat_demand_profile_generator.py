@@ -74,9 +74,9 @@ for house_type in house_types:
 
         hourly_data = heating_demand / sum(heating_demand) / 3600
         
-        np.savetxt(output_file_path + "insulation" + "_" + house_types_names[i] + "_" + insulation_type + ".csv", hourly_data, fmt='%.13f', delimiter=',')
+        np.savetxt(output_file_path + "insulation" + "_" + house_types_names[i] + "_" + insulation_type + ".csv", hourly_data, fmt='%.10e', delimiter=',')
 
-np.savetxt(output_file_path + "air_temperature.csv", temperature, fmt='%.13f', delimiter=',')
+np.savetxt(output_file_path + "air_temperature.csv", temperature, fmt='%.10e', delimiter=',')
 
 
 

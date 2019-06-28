@@ -149,5 +149,5 @@ plt.suptitle("Cooling households " + country + " " + year, fontsize=16)
 plt.show()
 
 # # Write data to file
-# np.savetxt(output_file_path + "households_cooling" + ".csv", hourly_data, fmt='%.13f', delimiter=',')
+# np.savetxt(output_file_path + "households_cooling" + ".csv", hourly_data, fmt='%.10e', delimiter=',')
 # print("Succesfully written output files " + str(country) + " " + str(year) + "!")

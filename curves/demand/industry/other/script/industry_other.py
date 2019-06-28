@@ -24,6 +24,6 @@ hourly_data = data_industry
 hourly_data = hourly_data / sum(hourly_data) / 3600.0
 
 # Write data to file
-np.savetxt(output_file_path + "industry_other" + ".csv", hourly_data, fmt='%.13f', delimiter=',')
+np.savetxt(output_file_path + "industry_other" + ".csv", hourly_data, fmt='%.10e', delimiter=',')
 
 print("Succesfully written output files industry_other.csv " + str(country) + " " + str(year) + "!")

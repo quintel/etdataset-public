@@ -74,7 +74,7 @@ occ_D = 2
 def gauss_function(x, a, x0, sigma):
     return a*np.exp(-(x-x0)**2/(2*sigma**2))
 
-quarters = np.arange(0,quarters_per_year.,1.)
+quarters = np.arange(0,quarters_per_year,1.)
 
 # The probability per year follows a cosine function with an amplitude of 10%.
 # This probability function is the same for a types of events
@@ -168,7 +168,7 @@ hourly_data = pattern.reshape(-1, quarters_per_hour).sum(axis=1)
 hourly_data = hourly_data / sum(hourly_data) / 3600
 
 # write data to file
-np.savetxt(output_file_path + "households_hot_water" + ".csv", hourly_data, fmt='%.13f', delimiter=',')
+np.savetxt(output_file_path + "households_hot_water" + ".csv", hourly_data, fmt='%.10e', delimiter=',')
 
 # # Plot if required
 # plt.plot(hourly_data[0:24*7], 'k-')

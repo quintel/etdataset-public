@@ -30,24 +30,15 @@ else:
 
 ENTSOE = genfromtxt(input_file_path + country_filename + "_demand_curve.csv")
 
-
-
-
 # Define empty matrices
 hourly_data = []
 
-# Calculate hourly demand
-for i in range(0,8760):
-
-    mean = np.sum(ENTSOE[i * 4:i * 4 + 4])
-    hourly_data.append(mean)
-
-hourly_data = np.array(hourly_data)
+hourly_data = ENTSOE
 
 # normalize curve and divide by 3600
 hourly_data = hourly_data / sum(hourly_data) / 3600.0
 
 # Write data to file
-np.savetxt(output_file_path + "total_demand" + ".csv", hourly_data, fmt='%.13f', delimiter=',')
+np.savetxt(output_file_path + "total_demand" + ".csv", hourly_data, fmt='%.10e', delimiter=',')
 
 print("Succesfully written total_demand output files " + str(country) + " " + str(year) + "!")

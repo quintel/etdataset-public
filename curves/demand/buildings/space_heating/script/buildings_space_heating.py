@@ -24,8 +24,8 @@ hourly_data = data_G2A
 hourly_data = hourly_data / sum(hourly_data) / 3600.0
 
 # Write data to file
-np.savetxt(output_file_path + "buildings_heating" + ".csv", hourly_data, fmt='%.13f', delimiter=',')
-np.savetxt(output_file_path + "buildings_chp" + ".csv", hourly_data, fmt='%.13f', delimiter=',')
+np.savetxt(output_file_path + "buildings_heating" + ".csv", hourly_data, fmt='%.10e', delimiter=',')
+np.savetxt(output_file_path + "buildings_chp" + ".csv", hourly_data, fmt='%.10e', delimiter=',')
 
 
 print("Succesfully written output files buildings_heating.csv and buildings_chp.csv " + str(country) + " " + str(year) + "!")

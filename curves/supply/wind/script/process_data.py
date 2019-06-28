@@ -35,14 +35,14 @@ def main(args):
     os.chdir('./script')
 
     if '{}_wind_profile'.format(str.upper(country)) in columns:
-        print('Wind profile (= capacity factor) data available!')
+        print('\nWind profile (= capacity factor) data available!')
         os.system('python process_wind_profile_data.py {} {}'.format(country, year))
     elif '{}_wind_onshore_generation_actual'.format(str.upper(country)) in columns:
         if '{}_wind_offshore_generation_actual'.format(str.upper(country)) in columns:
-            print('Both onshore and offshore wind data available!')
+            print('\nBoth onshore and offshore wind data available!')
             os.system('python process_wind_onshore_offshore_generation_actual_data.py {} {}'.format(country, year))
         else:
-            print('Only onshore wind data available!')
+            print('\nOnly onshore wind data available!')
             os.system('python process_wind_onshore_generation_actual_data.py {} {}'.format(country, year))
 
 

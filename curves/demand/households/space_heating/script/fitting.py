@@ -140,4 +140,4 @@ plt.ylabel('Heat demand (kW)')
 
 plt.show()
 
-#plt.savetxt(os.getcwd() + "/hourly_temperuture_1987.csv", temperature_1987, fmt='%.13f', delimiter=',')
+#plt.savetxt(os.getcwd() + "/hourly_temperuture_1987.csv", temperature_1987, fmt='%.10e', delimiter=',')
