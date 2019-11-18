@@ -1,3 +1,11 @@
+## Wind production curves
+
+We have two methods for generation wind production curves:
+
+* **Default** - uses measured wind production
+* **Weather years** - based on wind measurements which are converted to production
+
+### Default curves
 The wind load curves are based on data provided by the [Open Power System Data platform](https://data.open-power-system-data.org). The specific data used in this analysis has been downloaded from [https://data.open-power-system-data.org/time_series/](https://data.open-power-system-data.org/time_series/), choosing the 60 minutes resolution and filtering for only the data specific for:
 
 * the type of profile (preferably `wind_profile`; if not available, `wind_onshore_generation_actual` and `wind_offshore_generation_actual`)
@@ -13,3 +21,8 @@ Furthermore, if the data quality is not sufficient (i.e., less than 98% availabl
 NB1: The data source only has data available for Great Britain. Hence, we use this data for the United Kingdom. In order to run the script without problems, the headers in the source csv file should be changed from "GB\_..." to "UK\_...".
 
 NB2: In 2016 there was a significant increase in installed offshore wind capacity in The Netherlands (factor 3). The measured production data is corrected for this increase. See `wind - data - nl - 2016 - source`.
+
+### Weather years
+The wind load curves which are based on data provided by the [Open Power System Data platform](https://data.open-power-system-data.org) are not available for the weather years (1987, 1997, 2004). That is why we use measured wind data and convert that to production.
+
+General information can be found in the read me in `script` - `weather_years`.
