@@ -10,7 +10,7 @@ if(len(sys.argv) != 3):
     print "Use: python " + str(sys.argv[0]) + " <country> <year> "
     sys.exit(1)
 
-	
+
 # Import input files
 else:
     country = sys.argv[1]
@@ -34,6 +34,9 @@ ENTSOE = genfromtxt(input_file_path + country_filename + "_demand_curve.csv")
 hourly_data = []
 
 hourly_data = ENTSOE
+
+# get the first 8760 data points (in case we're dealing with a leap year)
+hourly_data = hourly_data[0:8760]
 
 # normalize curve and divide by 3600
 hourly_data = hourly_data / sum(hourly_data) / 3600.0
