@@ -49,6 +49,7 @@ pp_flh_waste,4100,Estimate; not relevant; since IEA sees no power production fro
 pp_flh_geothermal,8000,Estimate; not relevant. No such plant exists.
 pp_flh_hydrogen_turbine,500,no hydrogen electricity production
 pp_demand_hydrogen_turbine,0,no hydrogen electricity production
+hp_flh_solar_thermal,604.0,see solar thermal production curve analysis for dk/2015: curves/supply/solar_thermal
 pp_share_coal_heater,0,Positive deficit; so changing shifts to residential has no effect
 pp_share_oil_heater,0,Positive deficit; so changing shifts to residential has no effect
 pp_share_gas_chp_cc,0.893951593533949,Minimizing deficits 1-(E124/E126)

@@ -49,6 +49,7 @@ pp_flh_waste,3800,
 pp_flh_geothermal,8250,
 pp_flh_hydrogen_turbine,500,
 pp_demand_hydrogen_turbine,0,
+hp_flh_solar_thermal,683.7,see solar thermal production curve analysis for nl/2015: curves/supply/solar_thermal
 pp_share_coal_heater,0.708564876511562,Minimzed deficits =1-(E114/E116)
 pp_share_oil_heater,1,
 pp_share_gas_chp_cc,1,

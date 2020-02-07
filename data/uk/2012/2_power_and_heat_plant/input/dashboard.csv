@@ -49,6 +49,7 @@ pp_flh_waste,3800,
 pp_flh_geothermal,8250,
 pp_flh_hydrogen_turbine,500,no hydrogen electricity production
 pp_demand_hydrogen_turbine,0,no hydrogen electricity production
+hp_flh_solar_thermal,608.9,see solar thermal production curve analysis for uk/2012: curves/supply/solar_thermal
 pp_share_coal_heater,0,All deficits solved in CHP burners
 pp_share_oil_heater,0,All deficits solved in CHP burners
 pp_share_gas_chp_cc,0.859087434830099,Minimizing deficits (1-(E124/E126))

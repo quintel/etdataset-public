@@ -49,6 +49,7 @@ pp_flh_waste,5860,Optimized to match BNA list of German power plants: see de_201
 pp_flh_geothermal,3400,Optimized to match BNA list of German power plants: see de_2015_capacity validation_gross.xlsx
 pp_flh_hydrogen_turbine,500,no hydrogen electricity production
 pp_demand_hydrogen_turbine,0,no hydrogen electricity production
+hp_flh_solar_thermal,749.4,see solar thermal production curve analysis for de/2015: curves/supply/solar_thermal
 pp_share_coal_heater,0,Positive dificit; so changing splits has no effect
 pp_share_oil_heater,0,Positive dificit; so changing splits has no effect
 pp_share_gas_chp_cc,0.694462749706195,Minimizing deficits 1-(E124/E126)

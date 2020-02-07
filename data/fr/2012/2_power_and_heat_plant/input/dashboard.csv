@@ -49,6 +49,7 @@ pp_flh_waste,3800,
 pp_flh_geothermal,8250,Not relevant
 pp_flh_hydrogen_turbine,500,no hydrogen electricity production
 pp_demand_hydrogen_turbine,0,no hydrogen electricity production
+hp_flh_solar_thermal,847.6,see solar thermal production curve analysis for fr/2012: curves/supply/solar_thermal
 pp_share_coal_heater,1,Set to 100% to minimize deficit
 pp_share_oil_heater,1,Set to 100% to minimize deficit
 pp_share_gas_chp_cc,1,Set to 100% to minimize deficit

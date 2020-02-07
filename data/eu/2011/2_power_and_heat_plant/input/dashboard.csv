@@ -48,6 +48,7 @@ pp_flh_diesel,650,Match installed capacity according to Platts
 pp_flh_waste,3800,
 pp_flh_geothermal,8250,
 pp_flh_hydrogen_turbine,500,no hydrogen electricity production
+hp_flh_solar_thermal,683.7,see solar thermal production curve analysis for nl/2015: curves/supply/solar_thermal
 pp_demand_hydrogen_turbine,0,no hydrogen electricity production
 pp_share_coal_heater,0,Positive deficit; so changing shifts has negative effect on deficits
 pp_share_oil_heater,0,Positive deficit; so changing shifts has negative effect on deficits

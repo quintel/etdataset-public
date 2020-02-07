@@ -49,6 +49,7 @@ pp_flh_waste,4250,Optimized to meet waste installed capacity reported in Platts
 pp_flh_geothermal,8250,
 pp_flh_hydrogen_turbine,500,no hydrogen electricity production
 pp_demand_hydrogen_turbine,0,no hydrogen electricity production
+hp_flh_solar_thermal,1230.2,see solar thermal production curve analysis for es/2012: curves/supply/solar_thermal
 pp_share_coal_heater,0,No allocation coal burner
 pp_share_oil_heater,0,No allocation oil burner
 pp_share_gas_chp_cc,1,Set to 100% to minimize remaining deficit
