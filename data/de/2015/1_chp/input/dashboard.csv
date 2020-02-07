@@ -32,19 +32,14 @@ chp_i_elec_prod_gas_engine,0.012,de_20115_capacity validation_gross.xlsx
 chp_i_elec_prod_gas_cc,0.374,de_20115_capacity validation_gross.xlsx
 chp_waste_removal_caps,0,
 chp_waste_removal_industry,1,
-chp_flh_agriculture_gas,3600,Standard EnergyMatters numbers: https://refman.energytransitionmodel.com/publications/1937
-chp_flh_agriculture_biogas,8000,Standard EnergyMatters numbers: https://refman.energytransitionmodel.com/publications/1937
-chp_flh_agriculture_wood_pellets,6000,Standard EnergyMatters numbers: https://refman.energytransitionmodel.com/publications/1937
-chp_flh_residential_gas,4000,Standard EnergyMatters numbers: https://refman.energytransitionmodel.com/publications/1937
-chp_flh_residential_biogas,8000,Standard EnergyMatters numbers: https://refman.energytransitionmodel.com/publications/1937
-chp_flh_residential_wood_pellets,6000,Standard EnergyMatters numbers: https://refman.energytransitionmodel.com/publications/1937
-chp_flh_caps_gas,4000,Standard EnergyMatters numbers: https://refman.energytransitionmodel.com/publications/1937
-chp_flh_caps_biogas,8000,Standard EnergyMatters numbers: https://refman.energytransitionmodel.com/publications/1937
-chp_flh_caps_wood_pellets,6000,Standard EnergyMatters numbers: https://refman.energytransitionmodel.com/publications/1937
+chp_flh_heat_network_gas,3867,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of Households: 4000; buildings: 4000; agriculture: 3600 .
+chp_flh_heat_network_biogas,8000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 8000.
+chp_flh_heat_network_wood_pellets,6000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 6000.
 chp_flh_iei_gas_turbine,6300,Optimized to reproduce installed capacities found in BNA list and 'de_2015_capacity validation_gross.xlsx'
 chp_flh_iei_gas_engine,6000,Optimized to reproduce installed capacities found in BNA list and 'de_2015_capacity validation_gross.xlsx'
 chp_flh_iei_gas_cc,6750,Optimized to reproduce installed capacities found in BNA list and 'de_2015_capacity validation_gross.xlsx'
 chp_flh_iei_coal,8060,Optimized to reproduce installed capacities found in BNA list and 'de_2015_capacity validation_gross.xlsx'
+chp_flh_iei_wood_pellets,6000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 6000.
 chp_flh_ma_gas,6750,Tweaked to get non-zero CCGT main activity PP capacity in 'de_2015_capacity validation_gross.xlsx'
 chp_flh_ma_coal,8000,Estimate
 chp_flh_ma_lignite,7000,Estimate

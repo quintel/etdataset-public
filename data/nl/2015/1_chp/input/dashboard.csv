@@ -20,9 +20,9 @@ chp_ei_unsold_gas_engine,0,Optimized to match sold heat production
 chp_ei_unsold_gas_cc,0,Optimized to match sold heat production
 chp_ei_unsold_coal,0,Not relevant
 chp_ei_elec_prod_gas,1,1_chp_source_analysis.xlsx: \No coal use in energy industry according to CBS data 2015
-chp_ei_elec_prod_gas_turbine,0.555571089053544,1_chp_source_analysis.xlsx
-chp_ei_elec_prod_gas_engine,0.0183139941283378,1_chp_source_analysis.xlsx
-chp_ei_elec_prod_gas_cc,0.426114916818118,1_chp_source_analysis.xlsx
+chp_ei_elec_prod_gas_turbine,0.555571089,1_chp_source_analysis.xlsx
+chp_ei_elec_prod_gas_engine,0.018313994,1_chp_source_analysis.xlsx
+chp_ei_elec_prod_gas_cc,0.426114917,1_chp_source_analysis.xlsx
 chp_i_unsold_gas_turbine,1,Optimized to match sold heat production
 chp_i_unsold_gas_engine,1,Optimized to match sold heat production
 chp_i_unsold_gas_cc,0.983,Optimized to match sold heat production
@@ -32,19 +32,14 @@ chp_i_elec_prod_gas_engine,0.01276,1_chp_source_analysis.xlsx
 chp_i_elec_prod_gas_cc,0.73074,1_chp_source_analysis.xlsx
 chp_waste_removal_caps,0.59,
 chp_waste_removal_industry,0.41,
-chp_flh_agriculture_gas,3200,Re-estimate FLH; to match CBS installed capacities
-chp_flh_agriculture_biogas,8000,EnergyMatters electricity  FLH
-chp_flh_agriculture_wood_pellets,6000,EnergyMatters heat FLH
-chp_flh_residential_gas,4500,EnergyMatters electricity  FLH
-chp_flh_residential_biogas,8000,EnergyMatters electricity  FLH
-chp_flh_residential_wood_pellets,6000,EnergyMatters heat FLH
-chp_flh_caps_gas,4500,EnergyMatters electricity  FLH
-chp_flh_caps_biogas,8000,EnergyMatters electricity  FLH
-chp_flh_caps_wood_pellets,6000,EnergyMatters heat FLH
+chp_flh_heat_network_gas,3361,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of sectors based on EnergyMatters. Households: 3200; Buildings: 4500; Agriculture 4500.
+chp_flh_heat_network_biogas,8000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of sectors based on EnergyMatters. All sectors 8000
+chp_flh_heat_network_wood_pellets,6000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of sectors based on EnergyMatters. All sectors 6000
 chp_flh_iei_gas_turbine,3200,Re-estimate FLH; to match CBS installed capacities
 chp_flh_iei_gas_engine,1300,Re-estimate FLH; to match CBS installed capacities
 chp_flh_iei_gas_cc,1600,Re-estimate FLH; to match CBS installed capacities
 chp_flh_iei_coal,4500,EnergyMatters heat FLH
+chp_flh_iei_wood_pellets,6000,EnergyMatters heat FLH
 chp_flh_ma_gas,3700,Re-estimate FLH; to match CBS installed capacities
 chp_flh_ma_coal,8000,Re-estimate FLH; to match CBS installed capacities
 chp_flh_ma_lignite,4500,EnergyMatters heat FLH. Coal CHP

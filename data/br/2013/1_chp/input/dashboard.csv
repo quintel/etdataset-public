@@ -32,19 +32,14 @@ chp_i_elec_prod_gas_engine,0,
 chp_i_elec_prod_gas_cc,0,
 chp_waste_removal_caps,1,
 chp_waste_removal_industry,0,
-chp_flh_agriculture_gas,3600,Assumed the same as NL 2011
-chp_flh_agriculture_biogas,8000,Assumed the same as NL 2011
-chp_flh_agriculture_wood_pellets,6000,Assumed the same as NL 2011
-chp_flh_residential_gas,4000,Assumed the same as NL 2011
-chp_flh_residential_biogas,8000,Assumed the same as NL 2011
-chp_flh_residential_wood_pellets,6000,Assumed the same as NL 2011
-chp_flh_caps_gas,4000,Assumed the same as NL 2011
-chp_flh_caps_biogas,8000,Assumed the same as NL 2011
-chp_flh_caps_wood_pellets,6000,Assumed the same as NL 2011
+chp_flh_heat_network_gas,4200,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of Households: 4500; buildings: 4000; agriculture: 3600 .
+chp_flh_heat_network_biogas,8000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 8000.
+chp_flh_heat_network_wood_pellets,6000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 6000.
 chp_flh_iei_gas_turbine,6000,Assumed the same as NL 2011
 chp_flh_iei_gas_engine,6000,Assumed the same as NL 2011
 chp_flh_iei_gas_cc,6000,Assumed the same as NL 2011
 chp_flh_iei_coal,7000,Assumed the same as NL 2011
+chp_flh_iei_wood_pellets,6000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 6000.
 chp_flh_ma_gas,4500,Assumed the same as NL 2011
 chp_flh_ma_coal,4500,Assumed the same as NL 2011
 chp_flh_ma_lignite,7000,Assumed the same as NL 2011

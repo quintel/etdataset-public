@@ -49,6 +49,9 @@ pp_flh_waste,3800,
 pp_flh_geothermal,8250,
 pp_flh_hydrogen_turbine,500,no hydrogen electricity production
 pp_demand_hydrogen_turbine,0,no hydrogen electricity production
+pp_share_coal_heater,0,Positive deficit; so changing shifts has negative effect on deficits
+pp_share_oil_heater,0,Positive deficit; so changing shifts has negative effect on deficits
+pp_share_gas_chp_cc,0.734104592255303,Minimizing deficits 1-(E124/E126)
 pp_demand_hydrogen_smr,0,no hydrogen production
 pp_demand_hydrogen_smr_ccs,0,no hydrogen production
 pp_flh_hydrogen_smr,7500,

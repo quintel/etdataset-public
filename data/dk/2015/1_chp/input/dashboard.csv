@@ -32,19 +32,14 @@ chp_i_elec_prod_gas_engine,0.1,To reproduce results by fuel
 chp_i_elec_prod_gas_cc,0.8,To reproduce results by fuel
 chp_waste_removal_caps,1,
 chp_waste_removal_industry,0,
-chp_flh_agriculture_gas,375,Re-estimate FLH; to match CBS installed capacities
-chp_flh_agriculture_biogas,375,EnergyMatters electricity  FLH
-chp_flh_agriculture_wood_pellets,375,EnergyMatters heat FLH
-chp_flh_residential_gas,375,EnergyMatters electricity  FLH
-chp_flh_residential_biogas,375,EnergyMatters electricity  FLH
-chp_flh_residential_wood_pellets,375,EnergyMatters heat FLH
-chp_flh_caps_gas,375,EnergyMatters electricity  FLH
-chp_flh_caps_biogas,375,EnergyMatters electricity  FLH
-chp_flh_caps_wood_pellets,375,EnergyMatters heat FLH
+chp_flh_heat_network_gas,375,Re-estimate FLH; to match Energinet installed capacities
+chp_flh_heat_network_biogas,375,Re-estimate FLH; to match Energinet installed capacities
+chp_flh_heat_network_wood_pellets,375,Re-estimate FLH; to match Energinet installed capacities
 chp_flh_iei_gas_turbine,375,Re-estimate FLH; to match Energinet installed capacities
 chp_flh_iei_gas_engine,375,Re-estimate FLH; to match Energinet installed capacities
 chp_flh_iei_gas_cc,375,Re-estimate FLH; to match Energinet installed capacities
 chp_flh_iei_coal,375,Re-estimate FLH; to match Energinet installed capacities
+chp_flh_iei_wood_pellets,375,Re-estimate FLH; to match Energinet installed capacities
 chp_flh_ma_gas,2700,Re-estimate FLH; to match Energinet installed capacities
 chp_flh_ma_coal,6000,Re-estimate FLH; to match Energinet installed capacities
 chp_flh_ma_lignite,4500,no lignite

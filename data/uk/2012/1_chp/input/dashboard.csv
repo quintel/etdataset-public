@@ -32,19 +32,14 @@ chp_i_elec_prod_gas_engine,0.143404287496492,Based on DUKES 2014 - see 1_chp_sou
 chp_i_elec_prod_gas_cc,0.722366990198615,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
 chp_waste_removal_caps,1,
 chp_waste_removal_industry,0,
-chp_flh_agriculture_gas,3876,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
-chp_flh_agriculture_biogas,3876,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
-chp_flh_agriculture_wood_pellets,4374,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
-chp_flh_residential_gas,3876,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
-chp_flh_residential_biogas,3876,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
-chp_flh_residential_wood_pellets,4374,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
-chp_flh_caps_gas,3876,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
-chp_flh_caps_biogas,3876,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
-chp_flh_caps_wood_pellets,4374,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_heat_network_gas,3876,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 3876.
+chp_flh_heat_network_biogas,3876,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 3876.
+chp_flh_heat_network_wood_pellets,4374,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 4374.
 chp_flh_iei_gas_turbine,5419,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
 chp_flh_iei_gas_engine,3667,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
 chp_flh_iei_gas_cc,3762,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
 chp_flh_iei_coal,2102,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
+chp_flh_iei_wood_pellets,4374,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 4374.
 chp_flh_ma_gas,3762,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
 chp_flh_ma_coal,2102,Based on DUKES 2014 - see 1_chp_source_analysis.xslx
 chp_flh_ma_lignite,2102,Based on DUKES 2014 - see 1_chp_source_analysis.xslx

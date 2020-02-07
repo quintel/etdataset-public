@@ -32,19 +32,14 @@ chp_i_elec_prod_gas_engine,0.0104298278211322,1_chp_source_analysis.xlsx
 chp_i_elec_prod_gas_cc,0.722581444320575,1_chp_source_analysis.xlsx
 chp_waste_removal_caps,0.93,
 chp_waste_removal_industry,0.07,
-chp_flh_agriculture_gas,3600,Re-estimate FLH; to match CBS installed capacities
-chp_flh_agriculture_biogas,8000,EnergyMatters electricity  FLH
-chp_flh_agriculture_wood_pellets,6000,EnergyMatters heat FLH
-chp_flh_residential_gas,4500,EnergyMatters electricity  FLH
-chp_flh_residential_biogas,8000,EnergyMatters electricity  FLH
-chp_flh_residential_wood_pellets,6000,EnergyMatters heat FLH
-chp_flh_caps_gas,4500,EnergyMatters electricity  FLH
-chp_flh_caps_biogas,8000,EnergyMatters electricity  FLH
-chp_flh_caps_wood_pellets,6000,EnergyMatters heat FLH
+chp_flh_heat_network_gas,3608,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of Households: 4500; buildings: 4500; agriculture: 3600 .
+chp_flh_heat_network_biogas,8000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 8000.
+chp_flh_heat_network_wood_pellets,6000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 6000.
 chp_flh_iei_gas_turbine,3700,Re-estimate FLH; to match CBS installed capacities
 chp_flh_iei_gas_engine,1300,Re-estimate FLH; to match CBS installed capacities
 chp_flh_iei_gas_cc,2120,Re-estimate FLH; to match CBS installed capacities
 chp_flh_iei_coal,4500,EnergyMatters heat FLH
+chp_flh_iei_wood_pellets,6000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 6000.
 chp_flh_ma_gas,4900,Re-estimate FLH; to match CBS installed capacities
 chp_flh_ma_coal,5900,Re-estimate FLH; to match CBS installed capacities
 chp_flh_ma_lignite,4500,EnergyMatters heat FLH. Coal CHP

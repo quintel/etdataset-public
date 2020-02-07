@@ -32,19 +32,14 @@ chp_i_elec_prod_gas_engine,0.027,Estimate based on Platts
 chp_i_elec_prod_gas_cc,0.661,Estimate based on Platts
 chp_waste_removal_caps,1,
 chp_waste_removal_industry,0,
-chp_flh_agriculture_gas,3600,
-chp_flh_agriculture_biogas,8000,
-chp_flh_agriculture_wood_pellets,6000,
-chp_flh_residential_gas,4000,
-chp_flh_residential_biogas,8000,
-chp_flh_residential_wood_pellets,6000,
-chp_flh_caps_gas,4000,
-chp_flh_caps_biogas,8000,
-chp_flh_caps_wood_pellets,6000,
+chp_flh_heat_network_gas,3698.28744311973,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of Households: 4000; buildings: 4000; agriculture: 3600 .
+chp_flh_heat_network_biogas,8000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 8000.
+chp_flh_heat_network_wood_pellets,6000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 6000.
 chp_flh_iei_gas_turbine,6000,
 chp_flh_iei_gas_engine,6000,
 chp_flh_iei_gas_cc,6000,
 chp_flh_iei_coal,7000,
+chp_flh_iei_wood_pellets,6000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 6000.
 chp_flh_ma_gas,4500,
 chp_flh_ma_coal,4500,
 chp_flh_ma_lignite,7000,
