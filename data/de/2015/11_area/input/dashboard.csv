@@ -127,6 +127,28 @@ interconnection_net_costs_present,0,
 interconnector_capacity,78160,50Hertz (10800MW) Amprion (43160MW) TenneT (14720MW) TransnetBW (9480MW) Deutsches Institut f�r Wirtschaftsforschung Electricity; Heat; and Gas Sector Data for Modeling the German System (Table 8)
 offshore_net_costs_present,0,
 annual_infrastructure_cost_gas,0,Set the value to 0; this value is not used as use_network_calculations is FALSE
+heat_share_of_apartments_with_block_heating,0.15,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_length_of_distribution_pipelines_in_meter_per_residence_object_first_bracket,3.2,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_length_of_distribution_pipelines_in_meter_per_residence_object_second_bracket,4.6,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_length_of_distribution_pipelines_in_meter_per_residence_object_third_bracket,5.8,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_length_of_distribution_pipelines_in_meter_per_residence_object_fourth_bracket,7,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_length_of_distribution_pipelines_in_meter_per_residence_object_fifth_bracket,10,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_length_of_connection_pipelines_in_meter_per_residence_first_bracket,1.7,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_length_of_connection_pipelines_in_meter_per_residence_second_bracket,3.5,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_length_of_connection_pipelines_in_meter_per_residence_third_bracket,5,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_length_of_connection_pipelines_in_meter_per_residence_fourth_bracket,6.3,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_length_of_connection_pipelines_in_meter_per_residence_fifth_bracket,8.9,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_households_indoor_pipelines_investment_costs_with_block_heating_eur,2022,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_households_indoor_pipelines_investment_costs_without_block_heating_eur,5984,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_buildings_indoor_investment_costs_eur_per_kw,151,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_buildings_heat_meter_investment_costs_eur_per_kw,1.35,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_buildings_heat_meter_investment_costs_eur_per_connection,913,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_exchanger_station_investment_costs_eur_per_kw,80,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_sub_station_investment_costs_eur_per_kw,135,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_distribution_pipelines_investment_costs_eur_per_meter,1200,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_primary_pipelines_investment_costs_per_kw,200,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_yearly_indoor_infrastructure_maintenance_costs_factor,0.025,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
+heat_yearly_outdoor_infrastructure_maintenance_costs_factor,0.03,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
 number_of_cars,45071000,EUROSTAT (see source_analyses/EU/2013/8_transport)
 electric_vehicle_profile_1_share,1,Assumed that at present all EV charge according to the Movares Overal laden profile
 electric_vehicle_profile_2_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
