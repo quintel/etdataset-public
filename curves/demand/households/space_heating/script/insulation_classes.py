@@ -10,7 +10,7 @@ class House:
         # Behaviour factor
         self.behaviour = initial_values['behaviour'][self.house_type][self.insulation_level]
 
-        # Area 
+        # Area
         self.surface_area = initial_values['surface_area'][self.house_type]
         self.window_area = initial_values['window_area'][self.house_type]
 
@@ -28,16 +28,16 @@ class House:
 
         thermostat_temperature = self.thermostat_temperature[hour_of_the_day]
         if debugging:
-            print "thermostat_temperature", thermostat_temperature, "C"
+            print("thermostat_temperature", thermostat_temperature, "C")
 
         # How much energy is needed from heating to bridge the temperature gap?
         if self.inside_temperature < thermostat_temperature:
 
-            needed_heating_demand = (thermostat_temperature - self.inside_temperature) * self.heat_capacity 
+            needed_heating_demand = (thermostat_temperature - self.inside_temperature) * self.heat_capacity
             if debugging:
-                print "needed_heating_demand", needed_heating_demand, "kWh"
+                print("needed_heating_demand", needed_heating_demand, "kWh")
 
-        else: 
+        else:
 
             needed_heating_demand = 0.0
 
@@ -49,34 +49,33 @@ class House:
         # How big is the difference between the temperature inside and outside?
         temperature_difference = self.inside_temperature - outside_temperature
         if debugging:
-            print "temperature_difference", temperature_difference, "C"
+            print("temperature_difference", temperature_difference, "C")
 
         # How much heat is leaking away in this hour?
         energy_leaking = self.energy_exchange_per_delta_T * temperature_difference
-        if debugging:       
-            print "Leaking", energy_leaking, "kWh"
+        if debugging:
+            print("Leaking", energy_leaking, "kWh")
 
         # How much energy is added by irradiation?
         energy_added_by_irradiation = solar_irradiation * self.window_area
         if debugging:
-            print "energy_added_by_irradiation", energy_added_by_irradiation, "kWh"
+            print("energy_added_by_irradiation", energy_added_by_irradiation, "kWh")
 
         # What is the inside temperature after the leaking?
         self.inside_temperature = self.inside_temperature - (energy_leaking - energy_added_by_irradiation) / self.heat_capacity
         if debugging:
-            print "inside_temperature", self.inside_temperature, "C"
+            print("inside_temperature", self.inside_temperature, "C")
 
         return needed_heating_demand
 
-        
-    def info(self):
-        print "========"
-        print "R_value: " + str(self.r_value)
-        #print "U = 1/R_value = " + str(self.U)
-        #print "Leaking kW/K " + str(self.energy_exchange_per_delta_T)
-        print "Thermostat ", self.thermostat_temperature
-        print "Heat capacity ", self.heat_capacity
-        print "surface area", self.surface_area
-        print "behaviour factor", self.behaviour
 
-        
+    def info(self):
+        print("========")
+        print("R_value: " + str(self.r_value))
+        #print("U = 1/R_value = " + str(self.U))
+        #print("Leaking kW/K " + str(self.energy_exchange_per_delta_T))
+        print("Thermostat ", self.thermostat_temperature)
+        print("Heat capacity ", self.heat_capacity)
+        print("surface area", self.surface_area)
+        print("behaviour factor", self.behaviour)
+

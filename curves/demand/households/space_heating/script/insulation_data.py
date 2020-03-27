@@ -1,5 +1,6 @@
 import numpy as np
 import os
+from pathlib import Path
 
 # Thermostate settings from ECN
 thermostat_low = [15.8, 15.8, 15.8, 15.8, 15.8, 15.8, 18.5, 18.5, 18.5, 18.5, 18.5, 18.5, 18.5, 18.5, 18.5, 18.5, 18.5, 19.5, 19.5, 19.5, 19.5, 19.5, 19.5, 15.8]
@@ -12,7 +13,7 @@ house_types = ["Tussenwoning", "Hoekwoning", "Twee-onder-een-kapwoning", "Appart
 insulation_levels = ["low", "medium", "high"]
 
 # All heat demand profiles from ECN
-heat_demand_profiles = np.transpose(np.genfromtxt(os.getcwd() + "/input_data/heat_demands.csv", delimiter=","))
+heat_demand_profiles = np.transpose(np.genfromtxt(Path(__file__).parent / "input_data" / "heat_demands.csv", delimiter=","))
 
 heat_demand_profiles_dictionary = {
 "Tussenwoning": {"low": heat_demand_profiles[0], "medium": heat_demand_profiles[1], "high": heat_demand_profiles[2]},
@@ -44,25 +45,25 @@ heat_capacity_house = specific_heat_capacity_concrete * J_to_kWh * kg_of_concret
 
 heat_capacity_values = {
     "Tussenwoning": heat_capacity_house,
-    "Hoekwoning": heat_capacity_house, 
-    "Twee-onder-een-kapwoning": heat_capacity_house, 
-    "Appartement": heat_capacity_house, 
+    "Hoekwoning": heat_capacity_house,
+    "Twee-onder-een-kapwoning": heat_capacity_house,
+    "Appartement": heat_capacity_house,
     "Vrijstaande woning": heat_capacity_house
 }
 
 surface_area_values = {
     "Tussenwoning": 183,
-    "Hoekwoning": 239, 
-    "Twee-onder-een-kapwoning": 279, 
-    "Appartement": 187, 
+    "Hoekwoning": 239,
+    "Twee-onder-een-kapwoning": 279,
+    "Appartement": 187,
     "Vrijstaande woning": 405
 }
 
 
-fitting_results = { # R-laag, R-midden, R-hoog, window area, behaviour-laag, behaviour-midden, behaviour-hoog 
+fitting_results = { # R-laag, R-midden, R-hoog, window area, behaviour-laag, behaviour-midden, behaviour-hoog
 "Tussenwoning": [ 0.72608224,  0.95303516,  2.20833951,  6.08289109,  0.44224575, 2.61042431,  0.59483274],
-"Hoekwoning": [ 0.86234292,  1.05413341,  2.73029519,  5.53694918,  1.63456613, 4.84495401,  0.96159576], 
-"Twee-onder-een-kapwoning": [ 0.92629934,  1.20779267,  2.90413756,  5.80327128,  1.57962902, 4.43499574,  0.45485638], 
+"Hoekwoning": [ 0.86234292,  1.05413341,  2.73029519,  5.53694918,  1.63456613, 4.84495401,  0.96159576],
+"Twee-onder-een-kapwoning": [ 0.92629934,  1.20779267,  2.90413756,  5.80327128,  1.57962902, 4.43499574,  0.45485638],
 "Appartement": [ 0.96937942,  1.39716924,  2.95000949,  5.53039382, -0.11691841, 0.80467653,  2.78210071],
 "Vrijstaande woning":  [1.02227109,  1.2962618,  3.10765405,  6.12774164,  3.34031291, 7.76537119,  2.74614981]
 }
@@ -70,8 +71,8 @@ fitting_results = { # R-laag, R-midden, R-hoog, window area, behaviour-laag, beh
 # ECN R-values [m^2 K / W]
 # ecn_r_values = {
 # "Tussenwoning": {"low": 0.306, "medium": 1.522, "high": 4.236},
-# "Hoekwoning": {"low": 0.327, "medium": 1.454, "high": 4.369}, 
-# "Twee-onder-een-kapwoning": {"low": 0.324, "medium": 1.483, "high": 4.346}, 
+# "Hoekwoning": {"low": 0.327, "medium": 1.454, "high": 4.369},
+# "Twee-onder-een-kapwoning": {"low": 0.324, "medium": 1.483, "high": 4.346},
 # "Appartement": {"low": 0.301, "medium": 1.694, "high": 4.400},
 # "Vrijstaande woning": {"low": 0.329, "medium": 1.545, "high": 4.455}
 # }
@@ -87,9 +88,9 @@ r_values = {
 
 window_area_values = {
     "Tussenwoning": fitting_results["Tussenwoning"][3],
-    "Hoekwoning": window_area, 
-    "Twee-onder-een-kapwoning": window_area, 
-    "Appartement": window_area, 
+    "Hoekwoning": window_area,
+    "Twee-onder-een-kapwoning": window_area,
+    "Appartement": window_area,
     "Vrijstaande woning": window_area
 }
 
@@ -103,7 +104,7 @@ behaviour = {
 
 
 house_data = {
-    'r_values': r_values, 
+    'r_values': r_values,
     'heat_capacity': heat_capacity_values,
     'surface_area': surface_area_values,
     'window_area': window_area_values,

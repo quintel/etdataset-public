@@ -4,10 +4,10 @@ import os
 import sys
 import pylab as plt
 from matplotlib.colors import LogNorm
-import insulation_classes 
-reload(insulation_classes)
+from pathlib import Path
+import insulation_classes
 import insulation_data
-reload(insulation_classes)
+import smoothing
 
 # General constants
 hours_per_year = 8760
@@ -26,15 +26,17 @@ i=-1
 
 # Communicate with the user
 if(len(sys.argv) != 3):
-    print "Use: python " + str(sys.argv[0]) + " <country> <year> "
+    print("Use: python " + str(sys.argv[0]) + " <country> <year> ")
     sys.exit(1)
 
 else:
     country = sys.argv[1]
     year = sys.argv[2]
-    temperature_file_path = "../data/" + country +"/" + year + "/input" + "/air_temperature.csv"
-    irradiation_file_path = "../data/" + country +"/" + year + "/input" + "/irradiation.csv"
-    output_file_path = "../data/" + country +"/" + year + "/output/"
+    space_heating_folder = Path(__file__).resolve().parents[1]
+    data_folder = space_heating_folder / "data" / country / year
+    temperature_file_path = data_folder / "input" / "air_temperature.csv"
+    irradiation_file_path = data_folder / "input" / "irradiation.csv"
+    output_file_path = data_folder / "output"
 
 #temperature_1987 = np.genfromtxt(os.getcwd() + "/input_data/hourly_temperature_1987_v3.csv", delimiter=",") # degrees C
 temperature = np.genfromtxt(temperature_file_path, delimiter=",") # degrees C
@@ -59,7 +61,7 @@ for house_type in house_types:
         for hour in range(0, hours_per_year):
 
             # What is the wanted temperature inside?
-            hour_of_the_day = hour % hours_per_day # between 0 and 23    
+            hour_of_the_day = hour % hours_per_day # between 0 and 23
 
             #Calling the heat demand function of the house object
             needed_heating_demand = house.Calculate_heat_demand(
@@ -70,14 +72,15 @@ for house_type in house_types:
             # Adding demand to the vector
             heating_demand.append(needed_heating_demand)
 
-        
+        # Smooth demand curve to turn individual household curves into
+        # average/aggregate curves of a whole neighbourhood
+        smoothed_demand = smoothing.calculate_smoothed_demand(heating_demand)
 
-        hourly_data = heating_demand / sum(heating_demand) / 3600
-        
-        np.savetxt(output_file_path + "insulation" + "_" + house_types_names[i] + "_" + insulation_type + ".csv", hourly_data, fmt='%.10e', delimiter=',')
+        hourly_data = smoothed_demand / sum(smoothed_demand) / 3600
 
-np.savetxt(output_file_path + "air_temperature.csv", temperature, fmt='%.10e', delimiter=',')
+        np.savetxt(output_file_path / f"insulation_{house_types_names[i]}_{insulation_type}.csv", hourly_data, fmt='%.10e', delimiter=',')
+
+np.savetxt(output_file_path / "air_temperature.csv", temperature, fmt='%.10e', delimiter=',')
 
 
-
-print "Succesfully written output files to" + output_file_path + " !"
+print(f"Succesfully written output files to {output_file_path}!")

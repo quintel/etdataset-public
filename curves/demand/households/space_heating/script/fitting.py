@@ -3,7 +3,7 @@ import numpy as np
 import os
 import pylab as plt
 from scipy.optimize import minimize
-import insulation_classes 
+import insulation_classes
 reload(insulation_classes)
 import insulation_data
 reload(insulation_classes)
@@ -50,7 +50,7 @@ def heating_demand(params, house_type, insulation_level):
     for hour in range(0, hours_per_year):
 
         # What is the wanted temperature inside?
-        hour_of_the_day = hour % hours_per_day # between 0 and 23    
+        hour_of_the_day = hour % hours_per_day # between 0 and 23
 
         #Calling the heat demand function of the house object
         needed_heating_demand = my_house.Calculate_heat_demand(
@@ -83,16 +83,16 @@ insulation_data.r_values[house_type]["high"],
  1.0,
  -1.0]
 
-print "Fitting..."
+print("Fitting...")
 
 res = minimize(object_function, initial_guess, method = 'Nelder-Mead')
 
-print "result: ", res
+print("result: ", res)
 
-print "Relative errors: "
-print "Low: ", np.sum(np.abs(heating_demand(res.x,house_type,'low') - insulation_data.heat_demand_profiles_dictionary[house_type]['low'])) / np.sum(insulation_data.heat_demand_profiles_dictionary[house_type]['low'])
-print "Medium: ", np.sum(np.abs(heating_demand(res.x,house_type,'medium') - insulation_data.heat_demand_profiles_dictionary[house_type]['medium'])) / np.sum(insulation_data.heat_demand_profiles_dictionary[house_type]['medium'])
-print "High: ", np.sum(np.abs(heating_demand(res.x,house_type,'high') - insulation_data.heat_demand_profiles_dictionary[house_type]['high'])) / np.sum(insulation_data.heat_demand_profiles_dictionary['Tussenwoning']['high'])
+print("Relative errors: ")
+print("Low: ", np.sum(np.abs(heating_demand(res.x,house_type,'low') - insulation_data.heat_demand_profiles_dictionary[house_type]['low'])) / np.sum(insulation_data.heat_demand_profiles_dictionary[house_type]['low']))
+print("Medium: ", np.sum(np.abs(heating_demand(res.x,house_type,'medium') - insulation_data.heat_demand_profiles_dictionary[house_type]['medium'])) / np.sum(insulation_data.heat_demand_profiles_dictionary[house_type]['medium']))
+print("High: ", np.sum(np.abs(heating_demand(res.x,house_type,'high') - insulation_data.heat_demand_profiles_dictionary[house_type]['high'])) / np.sum(insulation_data.heat_demand_profiles_dictionary['Tussenwoning']['high']))
 
 # plotting
 plt.close('all')
