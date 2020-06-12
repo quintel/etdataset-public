@@ -50,3 +50,5 @@ etsource_export
 *.sublime-workspace
 ~$*.xls*
 .*~
+__pycache__
+*.pyc

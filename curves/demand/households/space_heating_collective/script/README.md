@@ -1,2 +1,0 @@
-### Households collective demand space heating - script
-The data needs to be processed in order to match the ETM format. The input data (EDSN profiles, see ⁨etdataset⁩ ▸ ⁨curves⁩ ▸ ⁨demand⁩ ▸ ⁨buildings⁩ ▸ ⁨space_heating ▸ ⁨data⁩ ▸ ⁨nl⁩ ▸ ⁨source⁩) provides energetic demand per hour. For ETM the profile needs to be normalized (sum of the profile should be 1/3600). This transformation is done in `households_collective_space_heating.py`

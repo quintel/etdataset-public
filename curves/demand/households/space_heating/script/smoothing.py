@@ -9,30 +9,38 @@ and return the average profile
 The following steps are taken:
 1. The original heat demand curves are interpolated with a step size of 10.
 This simulates a curve with 6 minute time intervals rather than a 1 hour.
-2. 300 random numbers are drawn based on a normal distribution with mean 0
-and a 3-hour standard deviation. These numbers are rounded to 1 decimal point
+2. X random numbers are drawn based on a normal distribution with mean 0
+and an Y-hour standard deviation. These numbers are rounded to 1 decimal point
 and multiplied by 10. Each number represents the number of 6 minute intervals
 deviation from the mean.
-3. The original heat demand curve is loaded 300 times and shifted X intervals
+3. The original heat demand curve is loaded 300 times and shifted Z intervals
 backwards or forwards in time depending on the value of the random numbers.
 This results in 300 demand curves that follow the exact same pattern
 over time, but with a different starting point. Depending on the value of the
 random number a curve starts earlier or later than the original curve
-4. The 300 curves are summed and converted back to a 1 hour interval.
+4. The X curves are summed and converted back to a 1 hour interval.
 This results in a curve that represents the aggregated/average heat demand of
-300 houses rather than an individual household.
+X houses rather than an individual household.
 """
 
 NUMBER_OF_HOUSES = 300
-HOURS_SHIFTED = 3.0  # standard deviation
+
+
+# Standard deviation per insulation type.
+# See README for source
+HOURS_SHIFTED = {
+    'low': 2,
+    'medium': 2.5,
+    'high': 3
+}
+
 INTERPOLATION_STEPS = 10  # use intervals of 6 minutes when shifting curves
 np.random.seed(1337)  # random seed
 
 
 def generate_deviations(size, scale):
     '''
-    Generate X random numbers (X = NUMBER_OF_HOUSES)
-    with a standard deviation of HOURS_SHIFTED
+    Generate X random numbers with a standard deviation of Y hours
     Round to 1 decimal place and multiply by 10 to get
     integer value. The number designates the number of
     6 minute time slots the demand profile will be shifted
@@ -40,9 +48,8 @@ def generate_deviations(size, scale):
     E.g. '15' means that the demand profile will be shifted
     forward 1.5 hours, '-10' means it will be shifted backwards 1 hour
     '''
-    # generate 300 random numbers with normal distribution
-    random_numbers = np.random.normal(loc=0.0, scale=HOURS_SHIFTED,
-                                      size=NUMBER_OF_HOUSES)
+    # generate X random numbers with normal distribution
+    random_numbers = np.random.normal(loc=0.0, scale=scale, size=size)
     # round by 1 decimal point
     rounded_numbers = np.round(random_numbers, 1)
     # multiply by 10 to get integer numbers for the deviations
@@ -95,12 +102,13 @@ def trim_interpolated(arr, steps):
     return [sum(arr[i:(i+steps)])/steps for i in range(0, len(arr), steps)]
 
 
-def calculate_smoothed_demand(heat_demand):
+def calculate_smoothed_demand(heat_demand, insulation_type):
     # start out with list of zeroes
     cumulative_demand = [0]*len(heat_demand)*INTERPOLATION_STEPS
 
     # generate random numbers
-    deviations = generate_deviations(NUMBER_OF_HOUSES, HOURS_SHIFTED)
+    deviations = generate_deviations(NUMBER_OF_HOUSES,
+                                     HOURS_SHIFTED[insulation_type])
 
     # interpolate the demand curve to increase the number of data points
     # (i.e. reduce the time interval 1 hour to e.g. 6 minutes)

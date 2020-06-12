@@ -1,9 +1,6 @@
 # -*- coding: utf-8 -*-
 import numpy as np
-import os
 import sys
-import pylab as plt
-from matplotlib.colors import LogNorm
 from pathlib import Path
 import insulation_classes
 import insulation_data
@@ -19,10 +16,11 @@ cm2_to_m2 = 1e-4
 J_to_kWh = 2.77778e-7
 
 house_types = insulation_data.house_types
-house_types_names = ["terraced_houses", "corner_houses", "semi_detached_houses", "apartments", "detached_houses"]
+house_types_names = ["terraced_houses", "corner_houses",
+                     "semi_detached_houses", "apartments", "detached_houses"]
 insulation_types = ["low", "medium", "high"]
 data_dump = []
-i=-1
+i = -1
 
 # Communicate with the user
 if(len(sys.argv) != 3):
@@ -74,7 +72,7 @@ for house_type in house_types:
 
         # Smooth demand curve to turn individual household curves into
         # average/aggregate curves of a whole neighbourhood
-        smoothed_demand = smoothing.calculate_smoothed_demand(heating_demand)
+        smoothed_demand = smoothing.calculate_smoothed_demand(heating_demand, insulation_type)
 
         hourly_data = smoothed_demand / sum(smoothed_demand) / 3600
 
