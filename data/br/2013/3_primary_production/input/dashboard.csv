@@ -1,14 +1,14 @@
 Key,Value,Source
 country,br,
 base_year,2013,
-primary_bio_oil,88000,(http://www.bioenergytrade.org/downloads/t40-large-industrial-biomass-users.pdf)
-primary_wood,1271966,(http://ws1.iee.usp.br/biblioteca/producao/2014/Artigos%20de%20Periodicos/Escobar%20-%20potencial%20dos%20pellets%20de%20madeira.pdf)
-max_biogenic_wasate,0,Not relevant
+demand_wet_biomass,0,No data available: assumed zero
+demand_dry_biomass,1271966,(http://ws1.iee.usp.br/biblioteca/producao/2014/Artigos%20de%20Periodicos/Escobar%20-%20potencial%20dos%20pellets%20de%20madeira.pdf)
+demand_oily_biomass,0,No data available: assumed zero
+max_biogenic_waste,0,Not relevant
 max_non_biogenic_waste,0,Not relevant
-percentage_wood_pellets,1,
-percentage_torrified_biomass_pellets,0,Not relevant
-regasified_lng,171329.3,GIIGNL (see source_analyses/EU/2013)
-regasified_bio_lng,0,Assumption (see source_analyses/EU/2013)
-percentage_steam_methane_reforming,0.6,Assumption
-percentage_steam_methane_reforming_ccs,0,Assumption
-percentage_local_electrolysis,0.4,Assumption
+max_wet_biomass,0,No data available: assumed zero
+max_dry_biomass,0,No data available: assumed zero
+max_oily_biomass,0,No data available: assumed zero
+regasified_lng,0,GIIGNL (see source_analyses/EU/2013)
+share_wet_biomass_gasification,0,No data available: assumed zero
+share_dry_biomass_gasification,0,No data available: assumed zero

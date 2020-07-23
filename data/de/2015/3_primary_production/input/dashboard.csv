@@ -1,11 +1,14 @@
 Key,Value,Source
 country,de,
 base_year,2015,
-primary_bio_oil,4922.38,IEA energy balance: Other liquid biofuels
-primary_wood,92315.450456965,Estimate based on Eurostat data; see wood_source_analysis.xlsx
-max_biogenic_wasate,178379.329489559,Estimate based on Eurostat data; see waste_source_analysis.xlsx
+demand_wet_biomass,0,No data available: assumed zero
+demand_dry_biomass,92315.45,Estimate based on Eurostat data; see wood_source_analysis.xlsx
+demand_oily_biomass,0,No data available: assumed zero
+max_biogenic_waste,178379.329489559,Estimate based on Eurostat data; see waste_source_analysis.xlsx
 max_non_biogenic_waste,253309.78121644,Estimate based on Eurostat data; see waste_source_analysis.xlsx
-percentage_wood_pellets,0.75,Assumption
-percentage_torrified_biomass_pellets,0.25,Assumption
+max_wet_biomass,0,No data available: assumed zero
+max_dry_biomass,0,No data available: assumed zero
+max_oily_biomass,0,No data available: assumed zero
 regasified_lng,0,GIIGNL (see source_analyses/EU/2013)
-regasified_bio_lng,0,Assumption (see source_analyses/EU/2013)
+share_wet_biomass_gasification,0,No data available: assumed zero
+share_dry_biomass_gasification,0,No data available: assumed zero

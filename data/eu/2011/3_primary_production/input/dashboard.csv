@@ -1,13 +1,14 @@
 Key,Value,Source
 country,eu,
 base_year,2011,
-primary_bio_kerosene,0,Assumption
-primary_waste_fats,0,Assumption
-primary_wood,821802,Estimate based on Eurostat data; see soure analysis
-max_biogenic_wasate,1079131,Estimate based on Eurostat data; see soure analysis
-max_non_biogenic_waste,1732468,Estimate based on Eurostat data; see soure analysis
-max_waste_fats,0,Assumption
-percentage_wood_pellets,0.95,Assumption
-percentage_torrified_biomass_pellets,0.05,Assumption
+demand_wet_biomass,0,No data available: assumed zero
+demand_dry_biomass,821802,Estimate based on Eurostat data; see source analysis
+demand_oily_biomass,0,No data available: assumed zero
+max_biogenic_waste,1079131,Estimate based on Eurostat data; see source analysis
+max_non_biogenic_waste,1732468,Estimate based on Eurostat data; see source analysis
+max_wet_biomass,0,No data available: assumed zero
+max_dry_biomass,0,No data available: assumed zero
+max_oily_biomass,0,No data available: assumed zero
 regasified_lng,1132922.37,GIE (see source_analyses/EU/2013
-regasified_bio_lng,0,Assumption (see source_analyses/EU/2013
+share_wet_biomass_gasification,0,No data available: assumed zero
+share_dry_biomass_gasification,0,No data available: assumed zero
