@@ -72,4 +72,6 @@ investment_hv_net_per_turbine,1.2,
 number_of_cars,7858712,http://statline.cbs.nl/Statweb/publication/?DM=SLNL&PA=71405NED&D1=0&D2=0&D3=12-13&HDR=G1;G2&STB=T&VW=T
 electric_vehicle_profile_1_share,1,Assumed that at present all EV charge according to the Movares Overal laden profile
 electric_vehicle_profile_2_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
-electric_vehicle_profile_3_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
+electric_vehicle_profile_3_share,0,
+electric_vehicle_profile_4_share,0,
+electric_vehicle_profile_5_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile

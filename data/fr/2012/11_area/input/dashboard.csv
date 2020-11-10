@@ -8,7 +8,7 @@ enabled.etmodel,true,
 analysis_year,2012,
 has_agriculture,true,
 has_buildings,true,
-has_climate,false,
+has_weather_curves,false,
 has_coastline,true,
 has_cold_network,false,
 has_electricity_storage,true,
@@ -29,7 +29,7 @@ has_coal_oil_for_heating_built_environment,true,
 has_aggregated_chemical_industry,true,
 areable_land,183965,The World Factbook (total land area * areable land %) (https://www.cia.gov/library/publications/the-world-factbook/geos/fr.html)
 coast_line,3427,The World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/fr.html)
-ccs_cost_in_industry,66,
+offshore_ccs_potential_mt_per_year,41.95,See etdataset/source_analyses/eu/2015/11_area/11_ccs_offshore_storage_potential_per_year.xls
 flh_solar_pv_solar_radiation_max,1465.07883188,
 total_land_area,550066.1,Wikipedia: https://nl.wikipedia.org/wiki/Frankrijk
 number_of_inhabitants,63378545,Eurostat 2012; Population on 1 January (demo_gind) database
@@ -92,7 +92,7 @@ residences_roof_surface_available_for_pv,569,Total based on Ecofys analysis; sha
 buildings_roof_surface_available_for_pv,285,Total based on Ecofys analysis; share of services is assumed as 1/3.
 insulation_buildings_start_value,28.8,NL/2015 value; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
 heat_demand_reduction_high_insulation_buildings,74,NL/2015 value; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
-co2_emission_1990,367.04286774,1990 CO2 Emissions (energy related) according to IPCC version20. CRF avaiable on EEA download site. Summarized in: 201711_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v20.xlsx (source_analyses>eu>2011>11_area_data)
+co2_emission_1990,369.1817701,1990 CO2 Emissions (energy related) according to IPCC version21. CRF avaiable on EEA download site. Summarized in: etdataset/source_analyses/eu/2015/11_area/201807_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v21.xlsx
 co2_emission_1990_aviation_bunkers,8.60880829,1990 CO2 Emissions (energy related) according to IPCC version20. CRF avaiable on EEA download site. Summarized in: 201711_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v20.xlsx (source_analyses>eu>2011>11_area_data)
 co2_emission_1990_marine_bunkers,8.1420443,1990 CO2 Emissions (energy related) according to IPCC version20. CRF avaiable on EEA download site. Summarized in: 201711_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v20.xlsx (source_analyses>eu>2011>11_area_data)
 co2_percentage_free,0.85,
@@ -152,4 +152,6 @@ heat_yearly_outdoor_infrastructure_maintenance_costs_factor,0.03,Vesta MAIS (PBL
 number_of_cars,32555000,EUROSTAT (see source_analyses/EU/2013/8_transport)
 electric_vehicle_profile_1_share,1,Assumed that at present all EV charge according to the Movares Overal laden profile
 electric_vehicle_profile_2_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
-electric_vehicle_profile_3_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
+electric_vehicle_profile_3_share,0,
+electric_vehicle_profile_4_share,0,
+electric_vehicle_profile_5_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
