@@ -27,6 +27,7 @@ has_import_export,true,
 use_network_calculations,false,
 has_coal_oil_for_heating_built_environment,true,
 has_aggregated_chemical_industry,true,
+has_other_emissions_section,true,
 areable_land,1077303,World Factbook (area * areable land %) (https://www.cia.gov/library/publications/the-world-factbook/geos/ee.html)
 coast_line,65992.9,World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/ee.html)
 offshore_ccs_potential_mt_per_year,3350,See etdataset/source_analyses/eu/2015/11_area/11_ccs_offshore_storage_potential_per_year.xls
@@ -34,10 +35,25 @@ flh_solar_pv_solar_radiation_max,1044.08877688,See Quintel analysis (https://git
 total_land_area,4347637,Wikipedia (assumption: 3% of area is water): https://nl.wikipedia.org/wiki/Europese_Unie
 number_of_inhabitants,500700753,Eurostat 2011; Population on 1 January (demo_gind) database
 offshore_suitable_for_wind,1594263,Based on Ecofys analysis
-other_emission_agriculture,436.74831,
-other_emission_built_environment,0,
-other_emission_industry_energy,513.25019,
-other_emission_transport,0,
+non_energetic_emissions_co2_chemical_industry,29.08292369,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_co2_other_industry,198.52970839,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_co2_agriculture_manure,4.11064867,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_co2_agriculture_soil_cultivation,5.57289771,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_co2_waste_management,3.48686964,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+indirect_emissions_co2,2.0873975,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+energetic_emissions_other_ghg_industry,6.04380913,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+energetic_emissions_other_ghg_energy,80.99988559,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+energetic_emissions_other_ghg_transport,10.18314001,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+energetic_emissions_other_ghg_buildings,1.70874525,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+energetic_emissions_other_ghg_households,18.1248803,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+energetic_emissions_other_ghg_agriculture,5.55335751,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_chemical_industry,16.69122499,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_other_industry,117.77512476,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_agriculture_fermentation,189.75450225,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_agriculture_manure,64.19958868,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_agriculture_soil_cultivation,160.35577919,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_agriculture_other,2.13449459,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_waste_management,159.35839633,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
 solar_pv_profile_1_share,1,
 solar_pv_profile_2_share,0,
 hydrogen_electrolysis_solar_pv_capacity_ratio,0.357,Different per country: calculated in modeling_experiments/electrolysers

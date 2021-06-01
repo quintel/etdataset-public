@@ -1,6 +1,7 @@
 Key,Value,Source
 country,example,
 base_year,2011,
+open_access_energy_balance,True,
 pp_share_coal_us,0.238394267017499,
 pp_share_coal_us_ccs,0,
 pp_share_coal_cc,0.0587834394904459,

@@ -27,6 +27,7 @@ has_import_export,true,
 use_network_calculations,false,
 has_coal_oil_for_heating_built_environment,true,
 has_aggregated_chemical_industry,true,
+has_other_emissions_section,true,
 areable_land,107980,
 coast_line,440,
 offshore_ccs_potential_mt_per_year,41.95,See etdataset/source_analyses/eu/2015/11_area/11_ccs_offshore_storage_potential_per_year.xls
@@ -34,10 +35,25 @@ flh_solar_pv_solar_radiation_max,1343.02476511,
 total_land_area,303778.912,Wikipedia: https://nl.wikipedia.org/wiki/Polen
 number_of_inhabitants,38533000,
 offshore_suitable_for_wind,22231,
-other_emission_agriculture,29.64989,
-other_emission_built_environment,0,
-other_emission_industry_energy,40.08313,
-other_emission_transport,0,
+non_energetic_emissions_co2_chemical_industry,1.01279259,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_co2_other_industry,12.85148617,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_co2_agriculture_manure,0.40482173,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_co2_agriculture_soil_cultivation,0.33667297,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_co2_waste_management,0.53673247,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+indirect_emissions_co2,0,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+energetic_emissions_other_ghg_industry,0.23191867,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+energetic_emissions_other_ghg_energy,19.28364779,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+energetic_emissions_other_ghg_transport,0.65649385,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+energetic_emissions_other_ghg_buildings,0.10488343,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+energetic_emissions_other_ghg_households,3.43382566,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+energetic_emissions_other_ghg_agriculture,1.1783424,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_chemical_industry,1.16539913,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_other_industry,7.2481867,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_agriculture_fermentation,12.073226,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_agriculture_manure,3.40040105,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_agriculture_soil_cultivation,14.72955294,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_agriculture_other,0.03271572,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
+non_energetic_emissions_other_ghg_waste_management,14.63975692,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
 solar_pv_profile_1_share,1,
 solar_pv_profile_2_share,0,
 hydrogen_electrolysis_solar_pv_capacity_ratio,0.469,Different per country: calculated in modeling_experiments/electrolysers
