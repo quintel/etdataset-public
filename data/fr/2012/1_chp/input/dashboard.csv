@@ -45,3 +45,29 @@ chp_flh_ma_coal,4500,
 chp_flh_ma_lignite,7000,
 chp_flh_ma_cofiring,4500,
 chp_flh_waste,6000,
+chp_elec_eff_heat_nework_gas,0.43,See node source analysis of energy_chp_local_engine_network_gas
+chp_heat_eff_heat_nework_gas,0.47,See node source analysis of energy_chp_local_engine_network_gas
+chp_elec_eff_heat_nework_biogas,0.43,See node source analysis of energy_chp_local_engine_biogas
+chp_heat_eff_heat_nework_biogas,0.47,See node source analysis of energy_chp_local_engine_biogas
+chp_elec_eff_heat_nework_wood_pellets,0.289,See node source analysis of energy_chp_local_wood_pellets 
+chp_heat_eff_heat_nework_wood_pellets,0.821,See node source analysis of energy_chp_local_wood_pellets 
+chp_elec_eff_iei_gas_turbine,0.38,See node source analysis of industry_chp_turbine_gas_power_fuelmix
+chp_heat_eff_iei_gas_turbine,0.42,See node source analysis of industry_chp_turbine_gas_power_fuelmix
+chp_elec_eff_iei_gas_engine,0.42,See node source analysis of industry_chp_engine_gas_power_fuelmix
+chp_heat_eff_iei_gas_engine,0.48,See node source analysis of industry_chp_engine_gas_power_fuelmix
+chp_elec_eff_iei_gas_cc,0.46,See node source analysis of industry_chp_combined_cycle_gas_power_fuelmix
+chp_heat_eff_iei_gas_cc,0.42,See node source analysis of industry_chp_combined_cycle_gas_power_fuelmix
+chp_elec_eff_iei_coal,0.4,See node source analysis of industry_chp_ultra_supercritical_coal
+chp_heat_eff_iei_coal,0.15,See node source analysis of industry_chp_ultra_supercritical_coal
+chp_elec_eff_iei_wood_pellets,0.279,See node source analysis of industry_chp_wood_pellets
+chp_heat_eff_iei_wood_pellets,0.835,See node source analysis of industry_chp_wood_pellets
+chp_elec_eff_ma_gas,0.46,See node source analysis of energy_chp_combined_cycle_network_gas
+chp_heat_eff_ma_gas,0.42,See node source analysis of energy_chp_combined_cycle_network_gas
+chp_elec_eff_ma_coal,0.4,See node source analysis of energy_chp_ultra_supercritical_coal
+chp_heat_eff_ma_coal,0.15,See node source analysis of energy_chp_ultra_supercritical_coal
+chp_elec_eff_ma_lignite,0.35,See node source analysis of energy_chp_ultra_supercritical_lignite
+chp_heat_eff_ma_lignite,0.15,See node source analysis of energy_chp_ultra_supercritical_lignite
+chp_elec_eff_ma_cofiring,0.37,See node source analysis of energy_chp_ultra_supercritical_cofiring_coal
+chp_heat_eff_ma_cofiring,0.15,See node source analysis of energy_chp_ultra_supercritical_cofiring_coal
+chp_elec_eff_waste,0.27,See node source analysis of energy_chp_supercritical_waste_mix
+chp_heat_eff_waste,0.15,See node source analysis of energy_chp_supercritical_waste_mix

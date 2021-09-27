@@ -13,3 +13,5 @@ In this folder other scripts are available and this is what they do:
 - `interpolate_solar_profiles.py` - This script interpolates between the Spain solar profile and the country-specific solar profile based on full load hours.
 
 - `plot_solar_profiles.py` - This script plots the solar profiles.
+
+- `normalise_capacity_profile` - Normalises Capacity profiles to 1/3600, these profiles can be downloaded from https://www.renewables.ninja/, MERRA-2 data (source NASA)

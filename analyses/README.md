@@ -7,7 +7,7 @@ The [Analysis Manager](../analysis_manager.xlsx) is the starting point for gener
 
 ### Energy balance
 
-Each of the Analyses requires an **energy balance**, which is either the *original IEA energy balance* (in the CHP analysis) or a *corrected energy balance* (in all following analyses). The energy balance is imported using the `import` button on the **Dashboard** sheet of the Analyes.
+Each of the Analyses requires an **energy balance**, which is either the *original Eurostat energy balance* (in the CHP analysis) or a *corrected energy balance* (in all following analyses). The energy balance is imported using the `import` button on the **Dashboard** sheet of the Analyes.
 The energy balance provides the elementary energy data for a given country. Since the energy balance does not provide enough detail for the ETM, additional assumptions are required for generating more detailed energy figures.
 For example, the energy balance only provides information on *final demand* of energy carriers, e.g. the total electricity consumption in households. However, this electricity consumption can be used for various applications, such as space heating (using heat pumps), cooking (using an electric stoves) and lighting. Because these applications are specified in the ETM, additional assumptions about the energy consumption by these applications are required.
 

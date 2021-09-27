@@ -1,0 +1,26 @@
+Key,Value,Source
+country,nl,
+base_year,2019,
+chemical_other_electricity,1,
+chemicals_other_heater_electricity,0,
+chemicals_other_heatpump_water_water,0,
+chemicals_other_steam_recompression_electricity,0,
+detailed_analysis,yes,
+fertilizers_energetic_final_demand_coal,0,Sheet "Source - fertilisers energy"; CBS Statline; Energy balance; supply and consumption; sector;final energy consumption of 2015 Manufacture of fertilisers: https://opendata.cbs.nl/#/CBS/en/dataset/83989ENG/table
+fertilizers_energetic_final_demand_network_gas,22600,Sheet "Source - fertilisers energy"; CBS Statline; Energy balance; supply and consumption; sector;final energy consumption of 2015 Manufacture of fertilisers: https://opendata.cbs.nl/#/CBS/en/dataset/83989ENG/table
+fertilizers_energetic_final_demand_crude_oil,0,Sheet "Source - fertilisers energy"; CBS Statline; Energy balance; supply and consumption; sector;final energy consumption of 2015 Manufacture of fertilisers: https://opendata.cbs.nl/#/CBS/en/dataset/83989ENG/table
+fertilizers_energetic_final_demand_wood_pellets,0,Sheet "Source - fertilisers energy"; CBS Statline; Energy balance; supply and consumption; sector;final energy consumption of 2015 Manufacture of fertilisers: https://opendata.cbs.nl/#/CBS/en/dataset/83989ENG/table
+fertilizers_energetic_final_demand_heat,5500,Sheet "Source - fertilisers energy"; CBS Statline; Energy balance; supply and consumption; sector;final energy consumption of 2015 Manufacture of fertilisers: https://opendata.cbs.nl/#/CBS/en/dataset/83989ENG/table
+fertilizers_energetic_final_demand_electricity,3000,Sheet "Source - fertilisers energy"; CBS Statline; Energy balance; supply and consumption; sector;final energy consumption of 2015 Manufacture of fertilisers: https://opendata.cbs.nl/#/CBS/en/dataset/83989ENG/table
+fertilizers_non_energetic_final_demand_coal,0,Sheet "Source - fertilisers energy"; CBS Statline; Energy balance; supply and consumption; sector; non-energy use of 2015 Manufacture of fertilisers: https://opendata.cbs.nl/#/CBS/en/dataset/83989ENG/table
+fertilizers_non_energetic_final_demand_network_gas,63900,Sheet "Source - fertilisers energy"; CBS Statline; Energy balance; supply and consumption; sector; non-energy use of 2015 Manufacture of fertilisers: https://opendata.cbs.nl/#/CBS/en/dataset/83989ENG/table
+fertilizers_non_energetic_final_demand_crude_oil,0,Sheet "Source - fertilisers energy"; CBS Statline; Energy balance; supply and consumption; sector; non-energy use of 2015 Manufacture of fertilisers: https://opendata.cbs.nl/#/CBS/en/dataset/83989ENG/table
+industry_chemicals_fertilizers_capture_potential_combustion_co2,0.85,See source_analyses/nl/2015/4b_chemical_industry/4b_chemical_industry_carbon_capture.xlsx
+industry_chemicals_fertilizers_combustion_emitted_co2,0.15,See source_analyses/nl/2015/4b_chemical_industry/4b_chemical_industry_carbon_capture.xlsx
+industry_chemicals_fertilizers_captured_combustion_co2,0,See source_analyses/nl/2015/4b_chemical_industry/4b_chemical_industry_carbon_capture.xlsx
+industry_chemicals_fertilizers_potential_emitted_combustion_co2,1,See source_analyses/nl/2015/4b_chemical_industry/4b_chemical_industry_carbon_capture.xlsx
+industry_chemicals_fertilizers_capture_potential_processes_co2,1,See source_analyses/nl/2015/4b_chemical_industry/4b_chemical_industry_carbon_capture.xlsx
+industry_chemicals_fertilizers_processes_emitted_co2,0,See source_analyses/nl/2015/4b_chemical_industry/4b_chemical_industry_carbon_capture.xlsx
+industry_chemicals_fertilizers_captured_processes_co2,0.65,See source_analyses/nl/2015/4b_chemical_industry/4b_chemical_industry_carbon_capture.xlsx
+industry_chemicals_fertilizers_potential_emitted_processes_co2,0.35,See source_analyses/nl/2015/4b_chemical_industry/4b_chemical_industry_carbon_capture.xlsx
+fertilizers_other_utilisation,2342.574,All captured fertilizer CO2 is used for 'other' utilisation. Mainly urea production

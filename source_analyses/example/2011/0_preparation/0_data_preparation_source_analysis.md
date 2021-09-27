@@ -1,9 +1,8 @@
-# 0. Preparation of IEA data
+# 0. Preparation of IEA/Eurostat data
 
-*The Example country is created to show the whole dataset generation process, including the steps that consider proprietary IEA energy balances. The Example country is therefore based on a *dummy* energy balance that is created from the IEA energy balances of two European countries.*
+*The Example country is created to show the whole dataset generation process, including the steps that involve obtaining and preparing energy balances - either the proprietary IEA energy balance, or the open source Eurostat enery balance. The Example country is based on a dummy energy balance that is created from the IEA energy balances of two European countries.*
 
-Refer to the source analyses of NL, DE and EU for a complete overview of the required steps for obtaining and preparating an IEA energy balance:
+Refer to the source analyses of NL 2015 for a complete overview of the required steps for obtaining and preparing an IEA energy balance and to NL 2019 for an Eurostat energy balance:
 
-- [NL](../../../nl/2011/0_preparation/0_data_preparation_source_analysis.md)
-- [DE](../../../de/2011/0_preparation/0_data_preparation_source_analysis.md)
-- [EU](../../../eu/2011/0_preparation/0_data_preparation_source_analysis.md)
+- [NL 2015](../../../nl/2015/0_preparation/0_preparation_source_analysis.md)
+- [NL 2019](../../../nl/2019/0_preparation/0_preparation_source_analysis.md)

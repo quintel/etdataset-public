@@ -1,14 +1,14 @@
 import os
 import sys
 
-import csv
-import matplotlib.pyplot as plt
+# import csv
+# import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import pickle
+# import pickle
 from pathlib import Path
 
-from knmy import knmy
+# from knmy import knmy
 
 # Ignore warnings
 pd.options.mode.chained_assignment = None  # default='warn'
@@ -148,11 +148,12 @@ def plot_curves(data, columns):
     print('Done!')
 
 
-def export_data_to_csv(data, name, country, year, header=True):
+def export_data_to_csv(data, name, country, year, header=True, verbose=False):
     """
     Export data to output CSV file
     """
-    print('\nExporting the data to {}..'.format(name))
+    if verbose:
+        print('\nExporting the data to {}..'.format(name))
 
     filename = Path(__file__).resolve().parents[2] / 'data' / country / year / '{}.csv'.format(name)
 
@@ -161,7 +162,8 @@ def export_data_to_csv(data, name, country, year, header=True):
 
     data.to_csv(filename, index=None, header=header)
 
-    print('Done!')
+    if verbose:
+        print('Done!')
 
 
 def determine_flh(data):
@@ -212,21 +214,27 @@ def main(args):
     flh_value = determine_flh(data)
 
     # Export data to input data CSV
-    export_data_to_csv(data, 'input/Q_{}_STN{}'.format(round(start/1E6),station[0]), country, year)
+    export_data_to_csv(
+        data,
+        'input/Q_{}_STN{}'.format(round(start/1E6),station[0]),
+        country,
+        year,
+        verbose=True
+        )
 
     # Process input data to output data (= curve)
     curve = normalize(data['Q'])
 
     # Export data to output data CSV (curve to be exported to ETSource)
     # By taking the rows [1:8761], the header ('Q') is removed from the data.
-    export_data_to_csv(curve, 'output/solar_pv', country, year, header=False)
+    export_data_to_csv(curve, 'output/solar_pv', country, year, header=False, verbose=True)
 
     # Create a dataframe to export the flh
     flh_key = 'flh_of_energy_power_solar_pv_solar_radiation'
     flh = pd.DataFrame({flh_key: [flh_value]}, columns=[flh_key])
 
     # Also, export the flh value
-    export_data_to_csv(flh, 'output/{}'.format(flh_key), country, year)
+    export_data_to_csv(flh, 'output/{}'.format(flh_key), country, year, verbose=True)
 
     # Plot curves (Q: globale straling (in J/cm2) per uurvak)
     plot_curves(data, ['Q'])

@@ -1,6 +1,6 @@
 # 7. Services analysis
 
-*The Example country is created to show the whole dataset generation process, including the steps that consider proprietary IEA energy balances. The Example country is therefore based on a *dummy* energy balance that is created from the IEA energy balances of two European countries.*
+*The Example country is created to show the whole dataset generation process, including the steps that involve obtaining and preparing energy balances - either the proprietary IEA energy balance, or the open source Eurostat enery balance. The Example country is based on a dummy energy balance that is created from the IEA energy balances of two European countries.*
 
 The assumptions in the Services analysis are filled 'nicely' and are not based on sources.
 
