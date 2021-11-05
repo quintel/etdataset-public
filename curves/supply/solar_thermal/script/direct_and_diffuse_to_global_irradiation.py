@@ -8,7 +8,7 @@ import math
 import numpy as np
 import pandas as pd
 import pvlib
-import pylab as plt
+from matplotlib import pylab as plt
 
 import numpy
 

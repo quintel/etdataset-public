@@ -11,8 +11,7 @@ def quarters_to_hours(array):
 
    hourly_data = []
 
-   for i in range(len(array) / 4):
-
+   for i in range(int(len(array)/4)):
         mean = np.sum(array[i * 4:i * 4 + 4]) / 4
         hourly_data.append(mean)
 
@@ -30,7 +29,7 @@ def main(args):
 
     for current_file in files:
 
-        print current_file
+        print(current_file)
 
         weekdata = []
         weekenddata = []
@@ -57,8 +56,8 @@ def main(args):
         #weekdata = weekdata / np.sum(weekdata)
         #weekenddata = weekenddata / np.sum(weekenddata)
 
-        print weekdata
-        print weekenddata
+        print(weekdata)
+        print(weekenddata)
 
         plt.savetxt(os.getcwd() + '/data/{}/{}/input/hourly_week_'.format(country, year) + current_file.split('/')[-1], weekdata, fmt='%.15f')
         plt.savetxt(os.getcwd() + '/data/{}/{}/input/hourly_weekend_'.format(country, year) + current_file.split('/')[-1], weekenddata, fmt='%.15f')

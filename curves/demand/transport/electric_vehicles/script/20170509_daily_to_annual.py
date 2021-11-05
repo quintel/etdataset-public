@@ -36,13 +36,13 @@ def main(args):
 
             annual_profile.extend(week)
 
-            print "week"
+            print("week")
 
           else:
 
             annual_profile.extend(weekend)
 
-            print "weekend"
+            print("weekend")
 
         annual_profile = annual_profile / sum(annual_profile) * scaling_factor
 

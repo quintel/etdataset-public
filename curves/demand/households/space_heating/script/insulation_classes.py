@@ -24,7 +24,7 @@ class House:
         self.U = 1.0 / self.r_value
         self.energy_exchange_per_delta_T = self.U * self.surface_area / 1000.0 # factor 1000 to convert from Watt/K to kW/K
 
-    def Calculate_heat_demand(self, outside_temperature, solar_irradiation, hour_of_the_day, debugging = False):
+    def calculate_heat_demand(self, outside_temperature, solar_irradiation, hour_of_the_day, debugging = False):
 
         thermostat_temperature = self.thermostat_temperature[hour_of_the_day]
         if debugging:
@@ -78,4 +78,3 @@ class House:
         print("Heat capacity ", self.heat_capacity)
         print("surface area", self.surface_area)
         print("behaviour factor", self.behaviour)
-

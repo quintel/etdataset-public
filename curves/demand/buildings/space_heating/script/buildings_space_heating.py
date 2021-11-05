@@ -2,12 +2,13 @@ import sys
 import pandas as pd
 from pathlib import Path
 from helpers import (find_text_file,
+                     find_csv_file,
                      find_header,
                      check_length,
                      calculate_profile_fraction)
 
 if len(sys.argv) != 3:
-    print(f"Use: python3 {sys.argv[0]} <country> <year>")
+    print(f"Use: python {sys.argv[0]} <country> <year>")
     sys.exit(1)
 
 else:
@@ -19,15 +20,14 @@ PARENT_FOLDER = Path(__file__).resolve().parents[1]
 BUILDINGS_FOLDER = f'{PARENT_FOLDER}/data/{country}/{year}'
 AGRICULTURE_FOLDER = (Path(__file__).resolve().parents[3] / 'agriculture' /
                       'heat' / 'data' / f'{country}/{year}')
-WEATHER_DATA_FILE = find_text_file(f'{BUILDINGS_FOLDER}/input')
+WEATHER_DATA_FILE = find_csv_file(f'{BUILDINGS_FOLDER}/input')
 PARAMETER_FILE = f'{PARENT_FOLDER}/script/input_data/g2a_parameters.csv'
 
 # Extract header and comments from data file
-headers, skip_lines = find_header(WEATHER_DATA_FILE)
+# headers, skip_lines = find_header(WEATHER_DATA_FILE)
 
 # Read data
-weather_data = pd.read_csv(WEATHER_DATA_FILE,
-                           skiprows=skip_lines, names=headers)
+weather_data = pd.read_csv(WEATHER_DATA_FILE)
 
 # Add year column
 weather_data['YYYYMMDD'] = weather_data['YYYYMMDD'].astype(str)

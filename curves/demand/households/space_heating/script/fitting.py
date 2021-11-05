@@ -53,7 +53,7 @@ def heating_demand(params, house_type, insulation_level):
         hour_of_the_day = hour % hours_per_day # between 0 and 23
 
         #Calling the heat demand function of the house object
-        needed_heating_demand = my_house.Calculate_heat_demand(
+        needed_heating_demand = my_house.calculate_heat_demand(
                                                                         temperature_1987[hour],
                                                                         irradiation_1987[hour],
                                                                         hour_of_the_day)

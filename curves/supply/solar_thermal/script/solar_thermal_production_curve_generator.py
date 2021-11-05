@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
-import numpy as np
-from pylab import *
-from numpy import genfromtxt
 import os
 import sys
-import pylab as plt
+import numpy as np
+from matplotlib import pylab as plt
 from matplotlib.colors import LogNorm
 
 
@@ -15,18 +13,18 @@ cm2_to_m2 = 1e-4
 standard_irradiance = 1000
 
 # Technology constants
-n0 = 0.838                      # 
-a1 = 2.46                       #[W/m2k] 
-a2 = 0.0197                     #[W/m2k2] 
-aperture_area = 12.56           #[m2] 
-glass_thickness = 0.0023        #[m] 
+n0 = 0.838                      #
+a1 = 2.46                       #[W/m2k]
+a2 = 0.0197                     #[W/m2k2]
+aperture_area = 12.56           #[m2]
+glass_thickness = 0.0023        #[m]
 fluid_volume = 0.0114          #[m3]
 efficiency_literature = 0.6     #
 
 glass_density = 2500            # [kg/m3]
-glass_specific_heat = 840       # [J/(kg.K)] 
+glass_specific_heat = 840       # [J/(kg.K)]
 fluid_density = 1000            # [kg/m3]
-fluid_specific_heat = 4200      # [J/(kg.K)] 
+fluid_specific_heat = 4200      # [J/(kg.K)]
 glass_volume =  glass_thickness * aperture_area
 
 glass_thermal_capacity = glass_volume * glass_density * glass_specific_heat
@@ -38,7 +36,7 @@ Tdiff_set = 48                      #oC (Choosen so that FLH NL2015 = 684)
 
 # Communicate with the user
 if(len(sys.argv) != 3):
-    print ("Use: python " + str(sys.argv[0]) + " <country> <year> ")
+    print("Use: python " + str(sys.argv[0]) + " <country> <year> ")
     sys.exit(1)
 
 else:
@@ -68,7 +66,7 @@ for i in range(0,hours_per_year):
         Tdiff = 0
     else:
         if Tdiff + delta_Tdiff > Tdiff_set:
-            Tdiff = Tdiff_set 
+            Tdiff = Tdiff_set
         else:
             Tdiff = Tdiff + delta_Tdiff
 
@@ -83,7 +81,7 @@ for i in range(0,hours_per_year):
 
     heat_from_sun = irradiation[i] * efficiency * aperture_area * seconds_per_hour
 
-    if Tdiff < Tdiff_set:       
+    if Tdiff < Tdiff_set:
         production = 0
         delta_Tdiff = heat_from_sun / panel_thermal_capacity
     else:

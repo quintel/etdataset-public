@@ -1,10 +1,10 @@
+import sys
 import numpy as np
-from pylab import *
-from numpy import genfromtxt
+from pathlib import Path
 
 # Communicate with the user
 if(len(sys.argv) != 3):
-    print "Use: python " + str(sys.argv[0]) + " <country> <year> "
+    print("Use: python " + str(sys.argv[0]) + " <country> <year> ")
     sys.exit(1)
 
 # Import input files
@@ -14,7 +14,7 @@ else:
     input_file_path =  "../data/" + country +"/" + year + "/input/"
     output_file_path = "../data/" + country +"/" + year + "/output/"
 
-data_E3A = genfromtxt(input_file_path + "EDSN_E3A.csv")
+data_E3A = np.genfromtxt(input_file_path + "EDSN_E3A.csv")
 
 # Define empty matrices
 hourly_data = []
@@ -27,10 +27,12 @@ for i in range(0,8760):
 
 hourly_data = np.array(hourly_data)
 
-# normalize curve and divide by 3600
+# Normalize curve and divide by 3600
 hourly_data = hourly_data / sum(hourly_data) / 3600.0
 
 # Write data to file
-np.savetxt(output_file_path + "buildings_cooling" + ".csv", hourly_data, fmt='%.10e', delimiter=',')
+output_path = Path(output_file_path)
+output_path.mkdir(parents=True, exist_ok=True)
+np.savetxt(output_path / "buildings_cooling.csv", hourly_data, fmt='%.10e', delimiter=',')
 
 print("Succesfully written output files " + str(country) + " " + str(year) + "!")

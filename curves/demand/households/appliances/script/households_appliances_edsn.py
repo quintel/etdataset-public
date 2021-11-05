@@ -1,10 +1,9 @@
+import sys
 import numpy as np
-from pylab import *
-from numpy import genfromtxt
 
 # Communicate with the user
 if(len(sys.argv) != 3):
-    print "Use: python " + str(sys.argv[0]) + " <country> <year> "
+    print("Use: python " + str(sys.argv[0]) + " <country> <year> ")
     sys.exit(1)
 
 # Import input files
@@ -14,7 +13,7 @@ else:
     input_file_path =  "../data/" + country +"/" + year + "/input/"
     output_file_path = "../data/" + country +"/" + year + "/output/"
 
-data_e1A = genfromtxt(input_file_path + "EDSN_E1A.csv")
+data_e1A = np.genfromtxt(input_file_path + "EDSN_E1A.csv")
 
 # Define empty matrices
 hourly_data = []

@@ -3,6 +3,17 @@ import sys
 import re
 
 
+def find_csv_file(input_folder):
+    file_list = [f for f in os.listdir(input_folder) if f.endswith('.csv')]
+    if len(file_list) == 0:
+        print(f'Error: No .txt files found in {input_folder}')
+        sys.exit()
+    elif len(file_list) > 1:
+        print(f'Error: Multiple .csv files found in {input_folder}')
+    else:
+        return f'{input_folder}/{file_list[0]}'
+
+
 def find_text_file(input_folder):
     file_list = [f for f in os.listdir(input_folder) if f.endswith('.txt')]
     if len(file_list) == 0:
@@ -20,6 +31,7 @@ def find_header(file_path):
     with open(file_path, 'r') as f:
         skip_lines = 0
         for line in f:
+            print(line)
             if line.startswith(header_line_start):
                 headers = re.sub('[# \n]', '', line)
             if line.startswith('#'):
@@ -29,7 +41,7 @@ def find_header(file_path):
     try:
         return headers.split(','), skip_lines
     except NameError:
-        print(f'Error: cannot find headers!'
+        print(f'Error: cannot find headers! '
               f'No line starts with {header_line_start}')
         sys.exit()
 
