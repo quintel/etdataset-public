@@ -1,0 +1,98 @@
+# Define where the converters should look up their parameters in the data folder
+# You can choose between the file types 'compact' and 'extended'. The 'compact'
+# files have the 'field' as column and country as row. They do not contain source
+# comments nor units.
+#
+# Example of 'compact' csv file:
+# Country Coking coals  Electricity demand_fertilizers_network_gas_energetic  ...
+# AT      0.0           3600        47000                                     ...
+# ...
+#
+# Example of 'extended' csv file:
+# Country Key           Value  Unit  Source ...
+# AT      metal_demand  400    TJ    http   ...
+# ...
+#
+# Any columns other than Country, Key and Value in an 'extended' file will be
+# ignored. You better make sure it's all in TJ ;-)
+#
+# Both compact and extended type files share the feature of accepting lists of
+# keys for 'field', and for the 'field' special keyword 'ALL' which loads up
+# all keys that are present in the file into the argument instantly.
+
+industry_chemical:
+  - arg_name: demand_fertilizers_coal_energetic
+    file: source_analyses_output/fertilizer_demand_analysis
+    file_type: compact
+    field: demand_fertilizers_coal_energetic
+  - arg_name: demand_fertilizers_network_gas_energetic
+    file: source_analyses_output/fertilizer_demand_analysis
+    file_type: compact
+    field: demand_fertilizers_network_gas_energetic
+  - arg_name: demand_fertilizers_crude_oil_energetic
+    file: source_analyses_output/fertilizer_demand_analysis
+    file_type: compact
+    field: demand_fertilizers_crude_oil_energetic
+  - arg_name: demand_fertilizers_wood_pellets_energetic
+    file: source_analyses_output/fertilizer_demand_analysis
+    file_type: compact
+    field: demand_fertilizers_wood_pellets_energetic
+  - arg_name: demand_fertilizers_heat_energetic
+    file: source_analyses_output/fertilizer_demand_analysis
+    file_type: compact
+    field: demand_fertilizers_heat_energetic
+  - arg_name: demand_fertilizers_electricity_energetic
+    file: source_analyses_output/fertilizer_demand_analysis
+    file_type: compact
+    field: demand_fertilizers_electricity_energetic
+  - arg_name: demand_fertilizers_coal_non_energetic
+    file: source_analyses_output/fertilizer_demand_analysis
+    file_type: compact
+    field: demand_fertilizers_coal_non_energetic
+  - arg_name: demand_fertilizers_network_gas_non_energetic
+    file: source_analyses_output/fertilizer_demand_analysis
+    file_type: compact
+    field: demand_fertilizers_network_gas_non_energetic
+  - arg_name: demand_fertilizers_crude_oil_non_energetic
+    file: source_analyses_output/fertilizer_demand_analysis
+    file_type: compact
+    field: demand_fertilizers_crude_oil_non_energetic
+  # - arg_name: demand_chemical_wood_pellets_non_energetic
+  #   file: dummy_analysis
+  #   file_type: compact
+  #   field: chemical_wood_pellets_non_energetic
+  - arg_name: shares_chemical_network_gas_non_energetic
+    file: source_analyses_output/chemical_non_energetic_shares_network_gas_analysis
+    file_type: compact
+    field: ALL
+  - arg_name: shares_chemical_crude_oil_non_energetic
+    file: source_analyses_output/chemical_non_energetic_shares_crude_oil_analysis
+    file_type: compact
+    field: ALL
+  - arg_name: shares_chemical_coal_non_energetic
+    file: source_analyses_output/chemical_non_energetic_shares_coal_analysis
+    file_type: compact
+    field: ALL
+
+
+industry_ict:
+  - arg_name: demand_ict_electricity_energetic
+    file: source_analyses_input/input_industry_ict
+    file_type: extended
+    field: demand_ict_electricity_energetic
+
+
+industry_metal:
+  - arg_name: demand_aluminium_electricity_energetic
+    file: source_analyses_output/non_ferrous_metal_demands_analysis
+    file_type: compact
+    field: demand_aluminium_electricity_energetic
+  - arg_name: demand_aluminium_network_gas_energetic
+    file: source_analyses_output/non_ferrous_metal_demands_analysis
+    file_type: compact
+    field: demand_aluminium_network_gas_energetic
+
+
+# Powerplants have a slightly different structure. The key 'field' is not neccesary here
+power_plants:
+  file: 20211209_input_pp

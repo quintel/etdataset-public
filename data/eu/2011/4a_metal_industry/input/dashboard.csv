@@ -2,14 +2,15 @@ Key,Value,Source
 country,eu,
 base_year,2011,
 metal_steel_production,168.591,World Steel Association
-metal_steel_share_blast_furnace_current,0.584,World Steel Association
-metal_steel_share_blast_furnace_bat,0,
-metal_steel_share_cyclone,0,
-metal_steel_share_electric,0.416,World Steel Association
-metal_steel_burner_share_coal,0.15,Optimized
-metal_steel_burner_share_coal_gas,0.675,Optimized
-metal_steel_burner_share_network_gas,0.175,Optimized
-metal_aluminium_production,9.24,European Aluminium Association
+metal_steel_share_blast_furnace_bof,0.584,
+metal_steel_share_cyclone_furnace_eaf,0,
+metal_steel_share_scrap_hbi_eaf,0.416,
+metal_steel_share_dri_network_gas_eaf,0,
+metal_steel_share_dri_hydrogen_eaf,0,
+metal_steel_scrap_hbi_eaf_share_coal,0,
+metal_steel_scrap_hbi_eaf_share_electricity,0.523316537966979,
+metal_steel_scrap_hbi_eaf_share_network_gas,0.498,
+metal_aluminium_production,7.55,European Aluminium Association
 metal_aluminium_share_electrolysis_current,0.507,European Aluminium Association
 metal_aluminium_share_electrolysis_bat,0,
 metal_aluminium_share_melting_oven,0.493,European Aluminium Association

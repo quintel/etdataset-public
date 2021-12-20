@@ -40,6 +40,7 @@ chp_flh_iei_gas_engine,6000,
 chp_flh_iei_gas_cc,6000,
 chp_flh_iei_coal,7000,
 chp_flh_iei_wood_pellets,6000,Weighted average of FLHs of CHP in households; buildings; agriculture. Based on central_producers table. FLH of all sectors 6000.
+chp_flh_iei_coal_gas,6355,Quintel assumption based on NL2015
 chp_flh_ma_gas,4500,
 chp_flh_ma_coal,4500,
 chp_flh_ma_lignite,7000,
@@ -55,8 +56,6 @@ chp_elec_eff_iei_gas_turbine,0.38,See node source analysis of industry_chp_turbi
 chp_heat_eff_iei_gas_turbine,0.42,See node source analysis of industry_chp_turbine_gas_power_fuelmix
 chp_elec_eff_iei_gas_engine,0.42,See node source analysis of industry_chp_engine_gas_power_fuelmix
 chp_heat_eff_iei_gas_engine,0.48,See node source analysis of industry_chp_engine_gas_power_fuelmix
-chp_elec_eff_iei_gas_cc,0.46,See node source analysis of industry_chp_combined_cycle_gas_power_fuelmix
-chp_heat_eff_iei_gas_cc,0.42,See node source analysis of industry_chp_combined_cycle_gas_power_fuelmix
 chp_elec_eff_iei_coal,0.4,See node source analysis of industry_chp_ultra_supercritical_coal
 chp_heat_eff_iei_coal,0.15,See node source analysis of industry_chp_ultra_supercritical_coal
 chp_elec_eff_iei_wood_pellets,0.279,See node source analysis of industry_chp_wood_pellets

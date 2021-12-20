@@ -17,7 +17,7 @@ def main(args):
     year = args[1]
 
     # Using Spain as the max for all countries
-    file_path = "/Users/{}/Projects/etsource/datasets/es/load_profiles/solar_pv.csv".format(getpass.getuser())
+    file_path = "/Users/{}/Projects/etsource/datasets/es/curves/weather/default/solar_pv.csv".format(getpass.getuser())
     # file_path = './data/es/{}/input/solar_pv.csv'.format(country, year)
     datafile = open(file_path, 'r')
 
@@ -26,7 +26,7 @@ def main(args):
     max_solar_curve = max_solar_curve / max_solar_curve.max()
     max_full_load_hours = np.sum(max_solar_curve)
 
-    file_path = './data/{}/{}/input/solar_pv.csv'.format(country, year)
+    file_path = './data/{}/{}/output/solar_pv.csv'.format(country, year)
     datafile = open(file_path, 'r')
 
     # Converting the curves to a numpy array
@@ -47,7 +47,9 @@ def main(args):
     #print "Ratio FLHs: "+country+" ", performance_ratio
 
     slider_max = performance_ratio * max_full_load_hours
-
+    
+    print "Full load hours from curve "+country+" ",full_load_hours
+    print "Full load hours from dataset "+country+" ",flh_from_dataset
     print "Perfmance ratio "+country+" ",performance_ratio
     print "Slider max "+country+" ",slider_max
 

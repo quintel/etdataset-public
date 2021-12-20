@@ -1,0 +1,292 @@
+# All products and flows that should appear in the Energy Balance. See below for
+# other types of energy balance type files, like the network gas commodity balance.
+# You can add other types of energy balances here as well
+#
+# To ensure that the translations stay up, please use the & anchors and * refs.
+# Anchor a translation in the main EB with a & anchor, and in the smaller commodity
+# balances like network gas, you can reference them with a *
+
+energy_balance:
+  unit: TJ
+  eurostat_code: NRG_BAL_C
+  products:
+    TOTAL: Total
+    #C0000X0350-0370: &ref_C0000X0350-0370 Solid fossil fuels
+    C0110: &ref_C0110 Anthracite
+    C0121: &ref_C0121 Coking coal
+    C0129: &ref_C0129 Other bituminous coal
+    C0210: &ref_C0210 Sub-bituminous coal
+    C0220: &ref_C0220 Lignite
+    C0320: &ref_C0320 Patent fuel
+    C0311: &ref_C0311 Coke oven coke
+    C0312: &ref_C0312 Gas coke
+    C0340: &ref_C0340 Coal tar
+    C0330: &ref_C0330 Brown coal briquettes
+    # C0350-0370: &ref_C0350-0370 Manufactured gases
+    C0360: &ref_C0360 Gas works gas
+    C0350: &ref_C0350 Coke oven gas
+    C0371: &ref_C0371 Blast furnace gas
+    C0379: &ref_C0379 Other recovered gases
+    P1000: Peat and peat products
+    #P1100: &ref_P1100 Peat
+    #P1200: &ref_P1200 Peat products
+    S2000: &ref_S2000 Oil shale and oil sands
+    #O4000XBIO: &ref_O4000XBIO Oil and petroleum products
+    O4100_TOT: &ref_O4100_TOT Crude oil
+    O4200: &ref_O4200 Natural gas liquids
+    O4300: Refinery feedstocks
+    O4400X4410: &ref_O4400X4410 Additives and oxygenates (excluding biofuel portion)
+    O4500: &ref_O4500 Other hydrocarbons
+    O4610: &ref_O4610 Refinery gas
+    O4620: &ref_O4620 Ethane
+    O4630: &ref_O4630 Liquefied petroleum gases
+    O4652XR5210B: &ref_O4652XR5210B Motor gasoline (excluding biofuel portion)
+    O4651: Aviation gasoline
+    O4653: &ref_O4653 Gasoline-type jet fuel
+    O4661XR5230B: &ref_O4661XR5230B Kerosene-type jet fuel (excluding biofuel portion)
+    O4669: &ref_O4669 Other kerosene
+    O4640: &ref_O4640 Naphtha
+    O4671XR5220B: &ref_O4671XR5220B Gas oil and diesel oil (excluding biofuel portion)
+    O4680: &ref_O4680 Fuel oil
+    O4691: &ref_O4691 White spirit and special boiling point industrial spirits
+    O4692: &ref_O4692 Lubricants
+    O4695: &ref_O4695 Bitumen
+    O4694: &ref_O4694 Petroleum coke
+    O4693: &ref_O4693 Paraffin waxes
+    O4699: &ref_O4699 Other oil products
+    G3000: &ref_G3000 Natural gas
+    #RA000: Renewables and biofuels
+    RA100: Hydro
+    RA500: Tide, wave, ocean
+    RA300: Wind
+    RA420: Solar photovoltaic
+    RA410: Solar thermal
+    RA200: Geothermal
+    R5110-5150_W6000RI: Primary solid biofuels
+    R5160: Charcoal
+    R5300: Biogases
+    W6210: Renewable municipal waste
+    R5210P: Pure biogasoline
+    R5210B: &ref_R5210B Blended biogasoline
+    R5220P: Pure biodiesels
+    R5220B: &ref_R5220B Blended biodiesels
+    R5230P: Pure bio jet kerosene
+    R5230B: &ref_R5230B Blended bio jet kerosene
+    R5290: Other liquid biofuels
+    RA600: Ambient heat (heat pumps)
+    #W6100_6220: Non-renewable waste
+    W6100: Industrial waste (non-renewable)
+    W6220: Non-renewable municipal waste
+    N900H: Nuclear heat
+    H8000: Heat
+    E7000: Electricity
+    #FE: Fossil energy
+    #BIOE: Bioenergy
+  flows:
+    PPRD: Primary production
+    RCV_RCY: Recovered and recycled products
+    IMP: Imports
+    EXP: Exports
+    STK_CHG: Change in stock
+    GAE: Gross available energy
+    INTMARB: International maritime bunkers
+    GIC: Gross inland consumption
+    INTAVI: International aviation
+    NRGSUP: Total energy supply
+    GIC2020-2030: Gross inland consumption (Europe 2020-2030)
+    PEC2020-2030: Primary energy consumption (Europe 2020-2030)
+    FEC2020-2030: Final energy consumption (Europe 2020-2030)
+    TI_E: Transformation input - energy use
+    TI_EHG_E: Transformation input - electricity and heat generation - energy use
+    TI_EHG_MAPE_E: Transformation input - electricity and heat generation - main activity producer electricity only - energy use
+    TI_EHG_MAPCHP_E: Transformation input - electricity and heat generation - main activity producer combined heat and power - energy use
+    TI_EHG_MAPH_E: Transformation input - electricity and heat generation - main activity producer heat only - energy use
+    TI_EHG_APE_E: Transformation input - electricity and heat generation - autoproducer electricity only - energy use
+    TI_EHG_APCHP_E: Transformation input - electricity and heat generation - autoproducer combined heat and power - energy use
+    TI_EHG_APH_E: Transformation input - electricity and heat generation - autoproducer heat only - energy use
+    TI_EHG_EDHP: Transformation input - electricity and heat generation - electrically driven heat pumps
+    TI_EHG_EB: Transformation input - electricity and heat generation - electric boilers
+    TI_EHG_EPS: Transformation input - electricity and heat generation - electricity for pumped storage
+    TI_EHG_DHEP: Transformation input - electricity and heat generation - derived heat for electricity production
+    TI_CO_E: Transformation input - coke ovens - energy use
+    TI_BF_E: Transformation input - blast furnaces - energy use
+    TI_GW_E: Transformation input - gas works - energy use
+    TI_RPI_E: Transformation input - refineries and petrochemical industry - energy use
+    TI_RPI_RI_E: Transformation input - refineries and petrochemical industry - refinery intake - energy use
+    TI_RPI_BPI_E: Transformation input - refineries and petrochemical industry - backflows from petrochemical industry - energy use
+    TI_RPI_PT_E: Transformation input - refineries and petrochemical industry - products transferred - energy use
+    TI_RPI_IT_E: Transformation input - refineries and petrochemical industry - interproduct transfers - energy use
+    TI_RPI_DU_E: Transformation input - refineries and petrochemical industry - direct use - energy use
+    TI_RPI_PII_E: Transformation input - refineries and petrochemical industry - petrochemical industry intake - energy use
+    TI_PF_E: Transformation input - patent fuel plants - energy use
+    TI_BKBPB_E: Transformation input - brown coal briquettes and peat briquettes plants - energy use
+    TI_CL_E: Transformation input - coal liquefaction plants - energy use
+    TI_BNG_E: Transformation input - for blended natural gas - energy use
+    TI_LBB_E: Transformation input - liquid biofuels blended - energy use
+    TI_CPP_E: Transformation input - charcoal production plants - energy use
+    TI_GTL_E: Transformation input - gas-to-liquids plants - energy use
+    TI_NSP_E: Transformation input - not elsewhere specified - energy use
+    TO: Transformation output
+    TO_EHG: Transformation output - electricity and heat generation
+    TO_EHG_MAPE: Transformation output - electricity and heat generation - main activity producer electricity only
+    TO_EHG_MAPCHP: Transformation output - electricity and heat generation - main activity producer combined heat and power
+    TO_EHG_MAPH: Transformation output - electricity and heat generation - main activity producer heat only
+    TO_EHG_APE: Transformation output - electricity and heat generation - autoproducer electricity only
+    TO_EHG_APCHP: Transformation output - electricity and heat generation - autoproducer combined heat and power
+    TO_EHG_APH: Transformation output - electricity and heat generation - autoproducer heat only
+    TO_EHG_EDHP: Transformation output - electricity and heat generation - electrically driven heat pumps
+    TO_EHG_EB: Transformation output - electricity and heat generation - electric boilers
+    TO_EHG_PH: Transformation output - electricity and heat generation - pumped hydro
+    TO_EHG_OTH: Transformation output - electricity and heat generation - other sources
+    TO_CO: Transformation output - coke ovens
+    TO_BF: Transformation output - blast furnaces
+    TO_GW: Transformation output - gas works
+    TO_RPI: Transformation output - refineries and petrochemical industry
+    TO_RPI_RO: Transformation output - refineries and petrochemical industry - refinery output
+    TO_RPI_BKFLOW: Transformation output - refineries and petrochemical industry - backflows
+    TO_RPI_PT: Transformation output - refineries and petrochemical industry - products transferred
+    TO_RPI_IT: Transformation output - refineries and petrochemical industry - interproduct transfers
+    TO_RPI_PPR: Transformation output - refineries and petrochemical industry - primary product receipts
+    TO_RPI_PIR: Transformation output - refineries and petrochemical industry - petrochemical industry returns
+    TO_PF: Transformation output - patent fuel plants
+    TO_BKBPB: Transformation output - brown coal briquettes and peat briquettes plants
+    TO_CL: Transformation output - coal liquefaction plants
+    TO_BNG: Transformation output - blended in natural gas
+    TO_LBB: Transformation output - liquid biofuels blended
+    TO_CPP: Transformation output - charcoal production plants
+    TO_GTL: Transformation output - gas-to-liquids plants
+    TO_NSP: Transformation output - not elsewhere specified
+    NRG_E: Energy sector - energy use
+    NRG_EHG_E: Energy sector - electricity and heat generation - energy use
+    NRG_CM_E: Energy sector - coal mines - energy use
+    NRG_OIL_NG_E: Energy sector - oil and natural gas extraction plants - energy use
+    NRG_PF_E: Energy sector - patent fuel plants - energy use
+    NRG_CO_E: Energy sector - coke ovens - energy use
+    NRG_BKBPB_E: Energy sector - brown coal briquettes and peat briquettes plants - energy use
+    NRG_GW_E: Energy sector - gas works - energy use
+    NRG_BF_E: Energy sector - blast furnaces - energy use
+    NRG_PR_E: Energy sector - petroleum refineries (oil refineries) - energy use
+    NRG_NI_E: Energy sector - nuclear industry - energy use
+    NRG_CL_E: Energy sector - coal liquefaction plants - energy use
+    NRG_LNG_E: Energy sector - liquefaction and regasification plants (LNG) - energy use
+    NRG_BIOG_E: Energy sector - gasification plants for biogas - energy use
+    NRG_GTL_E: Energy sector - gas-to-liquids plants - energy use
+    NRG_CPP_E: Energy sector - charcoal production plants - energy use
+    NRG_NSP_E: Energy sector - not elsewhere specified - energy use
+    DL: Distribution losses
+    AFC: Available for final consumption
+    FC_NE: &ref_FC_NE Final consumption - non-energy use
+    TI_NRG_FC_IND_NE: Transformation input, energy sector and final consumption in industry sector - non-energy use
+    TI_NE: Transformation input - non-energy use
+    NRG_NE: Energy sector - non-energy use
+    FC_IND_NE: Final consumption - industry sector - non-energy use
+    FC_TRA_NE: Final consumption - transport sector - non-energy use
+    FC_OTH_NE: Final consumption - other sectors - non-energy use
+    FC_E: Final consumption - energy use
+    FC_IND_E: Final consumption - industry sector - energy use
+    FC_IND_IS_E: Final consumption - industry sector - iron and steel - energy use
+    FC_IND_CPC_E: Final consumption - industry sector - chemical and petrochemical - energy use
+    FC_IND_NFM_E: Final consumption - industry sector - non-ferrous metals - energy use
+    FC_IND_NMM_E: Final consumption - industry sector - non-metallic minerals - energy use
+    FC_IND_TE_E: Final consumption - industry sector - transport equipment - energy use
+    FC_IND_MAC_E: Final consumption - industry sector - machinery - energy use
+    FC_IND_MQ_E: Final consumption - industry sector - mining and quarrying - energy use
+    FC_IND_FBT_E: Final consumption - industry sector - food, beverages and tobacco - energy use
+    FC_IND_PPP_E: Final consumption - industry sector - paper, pulp and printing - energy use
+    FC_IND_WP_E: Final consumption - industry sector - wood and wood products - energy use
+    FC_IND_CON_E: Final consumption - industry sector - construction - energy use
+    FC_IND_TL_E: Final consumption - industry sector - textile and leather - energy use
+    FC_IND_NSP_E: Final consumption - industry sector - not elsewhere specified - energy use
+    FC_TRA_E: Final consumption - transport sector - energy use
+    FC_TRA_RAIL_E: Final consumption - transport sector - rail - energy use
+    FC_TRA_ROAD_E: Final consumption - transport sector - road - energy use
+    FC_TRA_DAVI_E: Final consumption - transport sector - domestic aviation - energy use
+    FC_TRA_DNAVI_E: Final consumption - transport sector - domestic navigation - energy use
+    FC_TRA_PIPE_E: Final consumption - transport sector - pipeline transport - energy use
+    FC_TRA_NSP_E: Final consumption - transport sector - not elsewhere specified - energy use
+    FC_OTH_E: Final consumption - other sectors - energy use
+    FC_OTH_CP_E: Final consumption - other sectors - commercial and public services - energy use
+    FC_OTH_HH_E: Final consumption - other sectors - households - energy use
+    FC_OTH_AF_E: Final consumption - other sectors - agriculture and forestry - energy use
+    FC_OTH_FISH_E: Final consumption - other sectors - fishing - energy use
+    FC_OTH_NSP_E: Final consumption - other sectors - not elsewhere specified - energy use
+    STATDIFF: Statistical differences
+    GEP: Gross electricity production
+    GEP_MAPE: Gross electricity production - main activity producer electricity only
+    GEP_MAPCHP: Gross electricity production - main activity producer combined heat and power
+    GEP_APE: Gross electricity production - autoproducer electricity only
+    GEP_APCHP: Gross electricity production - autoproducer combined heat and power
+    GHP: Gross heat production
+    GHP_MAPCHP: Gross heat production - main activity producer combined heat and power
+    GHP_MAPH: Gross heat production - main activity producer heat only
+    GHP_APCHP: Gross heat production - autoproducer combined heat and power
+    GHP_APH: Gross heat production - autoproducer heat only
+
+# For the Oil and petroleum products EB download
+crude_oil:
+  unit: THS_T
+  eurostat_code: NRG_CB_OIL
+  flows:
+    FC_IND_CPC_NE: 'Final consumption – industry sector – chemical and petrochemical – non-energy use'
+    FC_NE: *ref_FC_NE
+  products:
+    #O4000XBIO: *ref_O4000XBIO
+    O4100_TOT: *ref_O4100_TOT
+    O4200: *ref_O4200
+    O4610: *ref_O4610
+    O4620: *ref_O4620
+    O4630: *ref_O4630
+    O4640: *ref_O4640
+    O4652XR5210B: *ref_O4652XR5210B
+    O4653: *ref_O4653
+    O4661XR5230B: *ref_O4661XR5230B
+    O4669: *ref_O4669
+    O4671XR5220B: *ref_O4671XR5220B
+    O4680: *ref_O4680
+    O4691: *ref_O4691
+    O4692: *ref_O4692
+    O4693: *ref_O4693
+    O4694: *ref_O4694
+    O4695: *ref_O4695
+    O4699: *ref_O4699
+    R5210B: *ref_R5210B
+    R5220B: *ref_R5220B
+    R5230B: *ref_R5230B
+    O4400X4410: *ref_O4400X4410
+    O4500: *ref_O4500
+
+coal:
+  unit: THS_T
+  eurostat_code: NRG_CB_SFF
+  flows:
+    FC_IND_CPC_NE: 'Final consumption – industry sector – chemical and petrochemical – non-energy use'
+    FC_NE: *ref_FC_NE
+  products:
+    # C0000X0350-0370: *ref_C0000X0350-0370
+    C0110: *ref_C0110
+    C0121: *ref_C0121
+    C0129: *ref_C0129
+    C0210: *ref_C0210
+    C0220: *ref_C0220
+    C0311: *ref_C0311
+    C0312: *ref_C0312
+    C0320: *ref_C0320
+    C0330: *ref_C0330
+    C0340: *ref_C0340
+    #P1100: *ref_P1100 # Peat not present in EU-27 non-energetic use
+    #P1200: *ref_P1200 # Peat products not present in EU-27 non-energetic use
+    S2000: *ref_S2000
+
+network_gas:
+  unit: TJ_GCV
+  eurostat_code: NRG_CB_GAS
+  flows:
+    FC_IND_CPC_NE: 'Final consumption – industry sector – chemical and petrochemical – non-energy use'
+    FC_NE: *ref_FC_NE
+  products:
+    #C0350-0370: *ref_C0350-0370
+    C0350: *ref_C0350
+    C0360: *ref_C0360
+    C0371: *ref_C0371
+    C0379: *ref_C0379
+    G3000: *ref_G3000

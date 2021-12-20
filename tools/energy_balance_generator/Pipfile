@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+numpy = "==1.21.4"
+pandas = "==1.3.4"
+openpyxl = "*"
+requests = "*"
+pyyaml = "*"
+
+[dev-packages]
+pytest = "*"
+pylint = "*"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+tests = "python -m pytest"
+conversions = "python scripts/convert_nrg_bal_EUROSTAT_to_ETM.py"
+source_analyses = 'python scripts/run_all_source_analyses.py'
+export = 'python scripts/export.py'

@@ -1,0 +1,28 @@
+﻿Country,Key,Value,Unit,Year,Source
+AT,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+BE,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+BG,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+CY,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+CZ,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+DE,industry_aluminium_production,0.54,Mton,2019,Mineral Yearbook - Aluminum - 2020 tables-only release - Table 13: https://www.usgs.gov/centers/nmic/aluminum-statistics-and-information
+DK,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+EE,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+ES,industry_aluminium_production,0.22,Mton,2019,Mineral Yearbook - Aluminum - 2020 tables-only release - Table 13: https://www.usgs.gov/centers/nmic/aluminum-statistics-and-information
+FI,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+FR,industry_aluminium_production,0.43,Mton,2019,Mineral Yearbook - Aluminum - 2020 tables-only release - Table 13: https://www.usgs.gov/centers/nmic/aluminum-statistics-and-information
+UK,industry_aluminium_production,0.039,Mton,2019,Mineral Yearbook - Aluminum - 2020 tables-only release - Table 13: https://www.usgs.gov/centers/nmic/aluminum-statistics-and-information
+EL,industry_aluminium_production,0.182,Mton,2019,Mineral Yearbook - Aluminum - 2020 tables-only release - Table 13: https://www.usgs.gov/centers/nmic/aluminum-statistics-and-information
+HR,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+HU,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+IE,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+IT,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+LT,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+LU,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+LV,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+NL,industry_aluminium_production,0.1,Mton,2019,Mineral Yearbook - Aluminum - 2020 tables-only release - Table 13: https://www.usgs.gov/centers/nmic/aluminum-statistics-and-information
+PL,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+PT,industry_aluminium_production,0,Mton,2019,"Not in Mineral Yearbook, assumed to be 0"
+RO,industry_aluminium_production,0.28,Mton,2019,Mineral Yearbook - Aluminum - 2020 tables-only release - Table 13: https://www.usgs.gov/centers/nmic/aluminum-statistics-and-information
+SE,industry_aluminium_production,0.12,Mton,2019,Mineral Yearbook - Aluminum - 2020 tables-only release - Table 13: https://www.usgs.gov/centers/nmic/aluminum-statistics-and-information
+SI,industry_aluminium_production,0.068,Mton,2019,Mineral Yearbook - Aluminum - 2020 tables-only release - Table 13: https://www.usgs.gov/centers/nmic/aluminum-statistics-and-information
+SK,industry_aluminium_production,0.175,Mton,2019,Mineral Yearbook - Aluminum - 2020 tables-only release - Table 13: https://www.usgs.gov/centers/nmic/aluminum-statistics-and-information

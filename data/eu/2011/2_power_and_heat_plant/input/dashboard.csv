@@ -1,6 +1,7 @@
 Key,Value,Source
 country,eu,
 base_year,2011,
+open_access_energy_balance,False,
 pp_share_coal_us,0.2,Optimized to match coal use
 pp_share_coal_us_ccs,0,No CCS yet
 pp_share_coal_cc,0.016,Estimate based on Platts
@@ -25,6 +26,7 @@ pp_flh_coal_us,6750,Slightly reduced to match installed capacity
 pp_flh_coal_us_ccs,6000,
 pp_flh_coal_cc,4000,Slightly reduced to match installed capacity
 pp_flh_coal_cc_ccs,4500,
+pp_flh_coal_gas_cc,2188,Quintel assumption based on NL2015
 pp_flh_lignite_us,8000,Increased to match installed capacity according to Platts
 pp_flh_lignite_us_ccs,8000,
 pp_flh_gas_turbine,1850,Increased to match installed capacity according to Platts
@@ -48,7 +50,6 @@ pp_flh_diesel,650,Match installed capacity according to Platts
 pp_flh_waste,3800,
 pp_flh_geothermal,8250,
 pp_flh_hydrogen_turbine,500,no hydrogen electricity production
-hp_flh_solar_thermal,683.7,see solar thermal production curve analysis for nl/2015: curves/supply/solar_thermal
 pp_demand_hydrogen_turbine,0,no hydrogen electricity production
 pp_eff_coal_us_co,0.42,See node source analysis of energy_power_ultra_supercritical_cofiring_coal
 pp_eff_coal_supercritical,0.36,See node source analysis of energy_power_supercritical_coal
@@ -68,6 +69,7 @@ pp_eff_nuclear_3,0.36,See node source analysis of energy_power_nuclear_gen3_uran
 pp_eff_oil_us,0.45,See node source analysis of energy_power_ultra_supercritical_crude_oil
 pp_eff_diesel,0.38,See node source analysis of energy_power_engine_diesel
 pp_eff_waste,0.25,See node source analysis of energy_power_supercritical_waste_mix
+hp_flh_solar_thermal,683.7,see solar thermal production curve analysis for nl/2015: curves/supply/solar_thermal
 hp_eff_coal,0.72,See node source analysis of energy_heat_burner_coal
 hp_eff_lignite_industry,0.72,See node source analysis of industry_heat_burner_lignite
 hp_eff_gas,1.03,See node source analysis of energy_heat_burner_network_gas
@@ -81,6 +83,7 @@ hp_eff_oil_industry,0.72,See node source analysis of industry_heat_burner_crude_
 pp_share_coal_heater,0,Positive deficit; so changing shifts has negative effect on deficits
 pp_share_oil_heater,0,Positive deficit; so changing shifts has negative effect on deficits
 pp_share_gas_chp_cc,0.734104592255303,Minimizing deficits 1-(E124/E126)
+pp_share_gas_heater,1,
 pp_demand_hydrogen_smr,0,no hydrogen production
 pp_demand_hydrogen_smr_ccs,0,no hydrogen production
 pp_flh_hydrogen_smr,7500,
@@ -99,3 +102,15 @@ pp_flh_hydrogen_solar_pv,1001,same as central solar
 pp_flh_hydrogen_solar_pv_p2g,2679.6765426,see source_analysis: nl/2015/energy/power_and_heat_plant_analysis/hydrogen_solar_pv_p2g
 pp_share_solar_pv_p2g,0.954835785504,see source_analysis: nl/2015/energy/power_and_heat_plant_analysis/hydrogen_solar_pv_p2g
 pp_share_solar_pv_curtailed,0.0451642144960001,see source_analysis: nl/2015/energy/power_and_heat_plant_analysis/hydrogen_solar_pv_p2g
+mm_demand_diesel_industry_construction,0,
+mm_demand_biofuels_industry_construction,0,
+mm_demand_diesel_industry_other,0,
+mm_demand_biofuels_industry_other,0,
+mm_demand_diesel_households,0,
+mm_demand_biofuels_households,0,
+mm_demand_diesel_buildings,0,
+mm_demand_biofuels_buildings,0,
+mm_demand_diesel_agriculture,0,
+mm_demand_biofuels_agriculture,0,
+mm_demand_diesel_other,0,
+mm_demand_biofuels_other,0,

@@ -30,5 +30,6 @@ NB2: In 2016 there was a significant increase in installed offshore wind capacit
 
 For NL2019 we use the inland wind curves from this source for the climate years 1987, 1997, 2004 and 2019.
 
+We use Renewables.ninja for all European curves
 ### Quintel method
 For some historic years we use measured wind data and convert that to production. General information can be found in the read me in `script` - `weather_years`.

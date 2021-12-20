@@ -1,0 +1,45 @@
+# Define where the source analysis Analysers should look up their parameters in
+# the data folder. You can choose between the file types 'compact' and
+# 'extended'. The 'compact' files have the 'field' as column and country as row.
+# They do not contain source comments nor units. The 'extended' files do contain
+# this extra information, for human documentation purposes.
+#
+# Example of 'compact' csv file:
+# Country Coking coals  Electricity demand_fertilizers_network_gas_energetic  ...
+# AT      0.0           3600        47000                                     ...
+# ...
+#
+# Example of 'extended' csv file:
+# Country Key           Value  Unit  Source ...
+# AT      metal_demand  400    TJ    http   ...
+# ...
+#
+# Any columns other than Country, Key and Value in an 'extended' file will be
+# ignored. You better make sure it's all in TJ ;-)
+#
+# Both compact and extended type files share the feature of accepting lists of
+# keys for 'field', and for the 'field' special keyword 'ALL' which loads up
+# all keys that are present in the file into the argument instantly.
+
+
+fertilizer_demand:
+  - arg_name: hydrogen_non_energetic_demand
+    file: source_analyses_input/input_industry_chemical_fertilizers
+    file_type: extended
+    field: industry_chemicals_fertilizers_steam_methane_reformer_hydrogen
+
+non_ferrous_metals_demand:
+  - arg_name: total_aluminium_production
+    file: source_analyses_input/input_industry_metal_aluminium
+    file_type: extended
+    field: industry_aluminium_production
+
+steel_demand:
+  - arg_name: total_steel_production
+    file: source_analyses_input/input_industry_metal_steel
+    file_type: extended
+    field: industry_steel_production
+  - arg_name: percentage_of_BF
+    file: source_analyses_input/input_industry_metal_steel
+    file_type: extended
+    field: share_steel_blast_furnace_bof

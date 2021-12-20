@@ -1,6 +1,7 @@
 Key,Value,Source
 country,dk,
 base_year,2015,
+open_access_energy_balance,False,
 pp_share_coal_us,0.535,Not relevant for DK
 pp_share_coal_us_ccs,0,Not relevant for DK
 pp_share_coal_cc,0,Not relevant for DK
@@ -25,6 +26,7 @@ pp_flh_coal_us,7100,does not exist in DK
 pp_flh_coal_us_ccs,7500,does not exist in DK
 pp_flh_coal_cc,7500,does not exist in DK
 pp_flh_coal_cc_ccs,4000,does not exist in DK
+pp_flh_coal_gas_cc,2188,Quintel assumption based on NL2015
 pp_flh_lignite_us,6329,does not exist in DK
 pp_flh_lignite_us_ccs,5972,does not exist in DK
 pp_flh_gas_turbine,750,Estimate
@@ -67,6 +69,7 @@ pp_eff_nuclear_3,0.36,See node source analysis of energy_power_nuclear_gen3_uran
 pp_eff_oil_us,0.45,See node source analysis of energy_power_ultra_supercritical_crude_oil
 pp_eff_diesel,0.38,See node source analysis of energy_power_engine_diesel
 pp_eff_waste,0.25,See node source analysis of energy_power_supercritical_waste_mix
+hp_flh_solar_thermal,604,see solar thermal production curve analysis for dk/2015: curves/supply/solar_thermal
 hp_eff_coal,0.72,See node source analysis of energy_heat_burner_coal
 hp_eff_lignite_industry,0.72,See node source analysis of industry_heat_burner_lignite
 hp_eff_gas,1.03,See node source analysis of energy_heat_burner_network_gas
@@ -77,10 +80,10 @@ hp_eff_heat_pump_electric,1,See node source analysis of energy_heat_heatpump_wat
 hp_eff_hydrogen,1.09593,See node source analysis of energy_heat_burner_hydrogen
 hp_eff_coal_industry,0.72,See node source analysis of industry_heat_burner_coal
 hp_eff_oil_industry,0.72,See node source analysis of industry_heat_burner_crude_oil
-hp_flh_solar_thermal,604.0,see solar thermal production curve analysis for dk/2015: curves/supply/solar_thermal
 pp_share_coal_heater,0,Positive deficit; so changing shifts to residential has no effect
 pp_share_oil_heater,0,Positive deficit; so changing shifts to residential has no effect
 pp_share_gas_chp_cc,0.893951593533949,Minimizing deficits 1-(E124/E126)
+pp_share_gas_heater,0.98485,
 pp_demand_hydrogen_smr,0,no hydrogen production
 pp_demand_hydrogen_smr_ccs,0,no hydrogen production
 pp_flh_hydrogen_smr,7500,
@@ -99,3 +102,15 @@ pp_flh_hydrogen_solar_pv,867,same as central solar
 pp_flh_hydrogen_solar_pv_p2g,1867.45540579,see source_analysis: nl/2015/energy/power_and_heat_plant_analysis/hydrogen_solar_pv_p2g
 pp_share_solar_pv_p2g,0.919231913379,see source_analysis: nl/2015/energy/power_and_heat_plant_analysis/hydrogen_solar_pv_p2g
 pp_share_solar_pv_curtailed,0.080768086621,see source_analysis: nl/2015/energy/power_and_heat_plant_analysis/hydrogen_solar_pv_p2g
+mm_demand_diesel_industry_construction,0,
+mm_demand_biofuels_industry_construction,0,
+mm_demand_diesel_industry_other,0,
+mm_demand_biofuels_industry_other,0,
+mm_demand_diesel_households,0,
+mm_demand_biofuels_households,0,
+mm_demand_diesel_buildings,0,
+mm_demand_biofuels_buildings,0,
+mm_demand_diesel_agriculture,0,
+mm_demand_biofuels_agriculture,0,
+mm_demand_diesel_other,0,
+mm_demand_biofuels_other,0,

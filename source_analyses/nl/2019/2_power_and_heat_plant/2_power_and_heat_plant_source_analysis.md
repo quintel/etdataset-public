@@ -10,7 +10,7 @@ The `Power Plants and CHPs compare` sheet in the `2_chp_pp_source_analysis.xlsx`
 
 ## Coal and Lignite
 
-**The big problem:** CBS does not provide enough information to determine the installed coal-fired power plant capacity, since coal-dired power production occurs in `steam turbines` but this category also includes biomass and gas-fired plants (both natural and coal-gas). It is not easy to determine the exact gas-fired and biomass-fired capacity or production, since no source provides a good split between CHP and PP production for these categories excluding coal-fired production. </br>
+**The big problem:** CBS does not provide enough information to determine the installed coal-fired power plant capacity, since coal-fired power production occurs in `steam turbines` and this category also includes biomass and gas-fired plants (both natural and coal-gas). It is not easy to determine the exact gas-fired and biomass-fired capacity or production, since no source provides a good split between CHP and PP production for these categories excluding coal-fired production. </br>
 I used Wikipedia to determine the installed capacity of coal-fired power plants in the NL. See [Wikipedia - Kolencentrales in NL](https://nl.wikipedia.org/wiki/Kolencentrales_in_Nederland) for more information on where this data came from. 
 
 CBS provides information on power and heat generation (capacity) from *steam turbines*. This includes biomass, waste, coal, coal gas and some natural gas-fired power plants. 

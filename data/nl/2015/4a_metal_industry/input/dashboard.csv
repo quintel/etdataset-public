@@ -2,13 +2,14 @@ Key,Value,Source
 country,nl,
 base_year,2015,
 metal_steel_production,6.995,World Steel Association
-metal_steel_share_blast_furnace_current,0.985,World Steel Association
-metal_steel_share_blast_furnace_bat,0,World Steel Assosiation WSA
-metal_steel_share_cyclone,0,World Steel Assosiation WSA
-metal_steel_share_electric,0.015,World Steel Association
-metal_steel_burner_share_coal,0,Optimized
-metal_steel_burner_share_coal_gas,0.699,Optimized
-metal_steel_burner_share_network_gas,0.301,Optimized
+metal_steel_share_blast_furnace_bof,0.98470335954253,World Steel Association
+metal_steel_share_cyclone_furnace_eaf,0,Quintel assumption
+metal_steel_share_scrap_hbi_eaf,0.0152966404574696,World Steel Association
+metal_steel_share_dri_network_gas_eaf,0,Quintel assumption
+metal_steel_share_dri_hydrogen_eaf,0,Quintel assumption
+metal_steel_scrap_hbi_eaf_share_coal,0,-
+metal_steel_scrap_hbi_eaf_share_electricity,0.022931575743744,-
+metal_steel_scrap_hbi_eaf_share_network_gas,0.01218238735,-
 metal_aluminium_production,0.075,USGS 2015 minerals yearbook - aluminum
 metal_aluminium_share_electrolysis_current,0.8,NL 2011 value
 metal_aluminium_share_electrolysis_bat,0,NL 2011 value

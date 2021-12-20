@@ -1,3 +1,4 @@
+## Open Power System Data
 The Open Power System source data provides (filtered) data for a specific profile, country and year, which should be stored in the country specific source folder under the following name: `time_series_60min_singleindex_filtered.csv`. Then, run the script `process_data.py [country] [year]`. Depending on which data is available, one of the other data processing scripts (either `process_wind_profile_data.py`, `process_wind_onshore_offshore_generation_actual_data.py`, or `process_wind_onshore_generation_actual_data.py`) is run. This results in the following input csv files:
 
 * `wind_coastal.csv`
@@ -9,3 +10,7 @@ If onshore and offshore production are both available, we use the onshore produc
 * `wind_coastal_baseline.csv`
 * `wind_inland_baseline.csv`
 * `wind_offshore_baseline.csv`
+
+## Renewables ninja
+
+The script `process_wind_renewables_ninja.py` can be used to import and process curves from www.renewables.ninja.

@@ -1,15 +1,16 @@
 Key,Value,Source
 country,dk,
 base_year,2015,
-metal_steel_production,1E-06,No crude steel production; World Steel Association;  but '0' is not possible in this analysis
-metal_steel_share_blast_furnace_current,0.985,No crude steel production; World Steel Association
-metal_steel_share_blast_furnace_bat,0,No crude steel production; World Steel Association
-metal_steel_share_cyclone,0,No crude steel production; World Steel Association
-metal_steel_share_electric,0.015,No crude steel production; World Steel Association
-metal_steel_burner_share_coal,0,No crude steel production; World Steel Association
-metal_steel_burner_share_coal_gas,0.699,No crude steel production; World Steel Association
-metal_steel_burner_share_network_gas,0.301,No crude steel production; World Steel Association
-metal_aluminium_production,1E-06,No aluminium production; but '0' is not possible in this analysis
+metal_steel_production,0.52,No crude steel production; However; EB does show some demand (probably for downstream processing). Added some production to get sensible efficiencies
+metal_steel_share_blast_furnace_bof,1,
+metal_steel_share_cyclone_furnace_eaf,0,
+metal_steel_share_scrap_hbi_eaf,0,
+metal_steel_share_dri_network_gas_eaf,0,
+metal_steel_share_dri_hydrogen_eaf,0,
+metal_steel_scrap_hbi_eaf_share_coal,0,
+metal_steel_scrap_hbi_eaf_share_electricity,0,
+metal_steel_scrap_hbi_eaf_share_network_gas,0,
+metal_aluminium_production,0,No aluminium production;
 metal_aluminium_share_electrolysis_current,0.8,No aluminium production
 metal_aluminium_share_electrolysis_bat,0,No aluminium production
 metal_aluminium_share_melting_oven,0.2,No aluminium production

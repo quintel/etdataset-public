@@ -26,6 +26,7 @@ pp_flh_coal_us,5440,Optimized to installed capacity: 2_chp_pp_source_analysis.xl
 pp_flh_coal_us_ccs,7500,Does not exist in NL
 pp_flh_coal_cc,7500,Does not exist in NL
 pp_flh_coal_cc_ccs,4000,Does not exist in NL
+pp_flh_coal_gas_cc,1789,Re-estimate FLH; to match MIDDEN installed capacities
 pp_flh_lignite_us,7500,Does not exist in NL
 pp_flh_lignite_us_ccs,7500,Does not exist in NL
 pp_flh_gas_turbine,750,No installed capacity: 2_chp_pp_source_analysis.xlsx
@@ -58,7 +59,7 @@ pp_eff_coal_cc,0.453,See node source analysis of energy_power_combined_cycle_coa
 pp_eff_coal_cc_ccs,0.373,See node source analysis of energy_power_combined_cycle_ccs_coal
 pp_eff_lignite_us,0.4,See node source analysis of energy_power_ultra_supercritical_lignite
 pp_eff_lignite_us_ccs,0.305,See node source analysis of energy_power_ultra_supercritical_oxyfuel_ccs_lignite
-pp_eff_gas_turbine,0.34,See node source analysis of energy_power_turbine_network_gas 
+pp_eff_gas_turbine,0.34,See node source analysis of energy_power_turbine_network_gas
 pp_eff_gas_cc,0.6,See node source analysis of energy_power_combined_cycle_network_gas
 pp_eff_gas_cc_ccs,0.49,See node source analysis of energy_power_combined_cycle_ccs_network_gas
 pp_eff_gas_engine,0.48,See node source analysis of energy_power_engine_network_gas
@@ -82,7 +83,7 @@ hp_eff_oil_industry,0.924,Tweaked for better results on 'Results by Fuel'
 pp_share_coal_heater,0,No shift required
 pp_share_oil_heater,0,No shift required
 pp_share_gas_chp_cc,0,Minimized deficits; but some remaining
-pp_share_gas_heater,0.5624,
+pp_share_gas_heater,0,
 pp_demand_hydrogen_smr,0,no hydrogen production
 pp_demand_hydrogen_smr_ccs,0,no hydrogen production
 pp_flh_hydrogen_smr,7500,

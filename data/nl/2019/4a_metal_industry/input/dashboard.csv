@@ -1,16 +1,17 @@
 Key,Value,Source
 country,nl,
 base_year,2019,
-metal_steel_production,6.657,World Steel Association; Steel Statistical Yearbook 2020 concise version - Table 1: Total Production of Crude Steel: https://www.worldsteel.org/steel-by-topic/statistics/steel-statistical-yearbook.html 
-metal_steel_share_blast_furnace_current,1,World Steel Association; Steel Statistical Yearbook 2020 concise version - Table 6 (continued): Crude Steel Production by Process: https://www.worldsteel.org/steel-by-topic/statistics/steel-statistical-yearbook.html
-metal_steel_share_blast_furnace_bat,0,
-metal_steel_share_cyclone,0,
-metal_steel_share_electric,0,
-metal_steel_burner_share_coal,0,Optimized
-metal_steel_burner_share_coal_gas,0.72726,Optimized
-metal_steel_burner_share_network_gas,0.27274,Optimized
-metal_aluminium_production,0.15,Sheet "Source - aluminium"; USGS Minerals Yearbook (2021); 2019 Annual Tables: https://www.usgs.gov/centers/nmic/aluminum-statistics-and-information
-metal_aluminium_share_electrolysis_current,0.642857142857143,Shares based on production capacity Aldel Delfzijl; PBL & ECN (2019) - MIDDEN "Decarbonisation options for the Dutch aluminium industry": https://www.pbl.nl/sites/default/files/downloads/pbl-2019-decarbonisation-options-for-the-Dutch-aluminium-industry_3479.pdf
+metal_steel_production,6.657,Steel statistical year book
+metal_steel_share_blast_furnace_bof,1,Steel statistical year book
+metal_steel_share_cyclone_furnace_eaf,0,Quintel assumption
+metal_steel_share_scrap_hbi_eaf,0,Steel statistical year book
+metal_steel_share_dri_network_gas_eaf,0,Quintel assumption
+metal_steel_share_dri_hydrogen_eaf,0,Quintel assumption
+metal_steel_scrap_hbi_eaf_share_coal,0,Steel statistical year book
+metal_steel_scrap_hbi_eaf_share_electricity,0,Steel statistical year book
+metal_steel_scrap_hbi_eaf_share_network_gas,0,Steel statistical year book
+metal_aluminium_production,0.15,
+metal_aluminium_share_electrolysis_current,0.642857142857143,
 metal_aluminium_share_electrolysis_bat,0,
-metal_aluminium_share_melting_oven,0.357142857142857,Shares based on production capacity E-Max Kerkrade and Zalco Vlissingen; PBL & ECN (2019) - MIDDEN "Decarbonisation options for the Dutch aluminium industry": https://www.pbl.nl/sites/default/files/downloads/pbl-2019-decarbonisation-options-for-the-Dutch-aluminium-industry_3479.pdf
+metal_aluminium_share_melting_oven,0.357142857142857,
 metal_aluminium_share_carbothermal_reduction,0,

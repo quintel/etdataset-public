@@ -1,5 +1,5 @@
 # 1. CHP\_source\_analysis - README FIRST
-dd: 06/05/2021
+dd: 14/12/2021 (update after steel improvements)
 
 ## Purpose of this source analysis
 This source analysis helps you determine the right dashboard values for the `chp_analysis`, the first step in the data generation proces for any country dataset. The `chp_analysis` attempts to specify the energy use and production of CHPs in a country's energy system. All power and heat production that remains in the EB after subtraction of the CHP power and heat by definition is relegated to dedicated power plants and heat plants respectively.
@@ -36,7 +36,7 @@ Although the `1_chp_source_analysis.xlsx` output differs from that of the `chp_a
    1. First set the `Percentage of el. prod. with waste carriers that is removed from Industry sector` as high as possible without making the IEA result for `Sold heat production` in industry negative. Also try and reproduce the local heat network installed electrical capacity from CBS. The FLH for local and industrial CHPs need to be optimized for installed capacity as well, so this is takes a bit of playing around, but most of the FLH fiddling is done in step 4 below.
    2. Then set the input in `E41` so low that `wood_pellets` demand in industry is as close to zero as possible. If it is too large this will result in coal (and co-firing) CHP installed capacity
    3. Then try and optimize `Results by fuel` sold heat producion and fuel use all around by fiddling with the other dashboard values (see `Assumptions` section in this documentation)
-   4. Compare resulting installed capacities according to CBS and according to the `Results by machine` sheet in the `chp_analysis`. Try and optimize `Results by machine` for all sectors (mostly local heat network CHPs, Industry and Main activity) by adjusting the FLH on the dashboard. They should fit the CBS results found in the `chp_source_analysis`. Any mismatch between CBS's machine statistics and IEA's energy statistics should become apparent. **N.B.** For Main activity CHPs the FLH were optimized to reproduce these installed capacities as well as possible, but in teh PPHP analysis some CCGT CHP capacity will be shifted from `energy` to `industry` in order to reduce the heat deficit in the industrial heat network.
+   4. Compare resulting installed capacities according to CBS and according to the `Results by machine` sheet in the `chp_analysis`. Try and optimize `Results by machine` for all sectors (mostly local heat network CHPs, Industry and Main activity) by adjusting the FLH on the dashboard. They should fit the CBS results found in the `chp_source_analysis`. Any mismatch between CBS's machine statistics and IEA's energy statistics should become apparent. **N.B.** For Main activity CHPs the FLH were optimized to reproduce these installed capacities as well as possible, but in the PPHP analysis some CCGT CHP capacity will be shifted from `energy` to `industry` in order to reduce the heat deficit in the industrial heat network.
    5. At the very end, you can tweak efficiencies of CHPs to get better results on `Results by fuel`.  
 5. As mentioned before: output *inevitably* differs from CBS
 
@@ -44,8 +44,8 @@ Although the `1_chp_source_analysis.xlsx` output differs from that of the `chp_a
 The following changes were made w.r.t. the 2015 dataset:
 
 - According to CBS the fuel input in CHPs and the heat production by CHPs are respectivly 502,617 TJ and 174,191 TJ. See [1_chp_source_analysis](1_chp_source_analysis.xlsx).
-- The `Percentage of el. prod. with waste carriers` that is removed from Services sector value was changed to 38% to optimize `Results by fuel`.
-- The percentage of unsold heat in the industry sectors were changed slightly to better reproduce sold heat statistics    
+- The `Percentage of el. prod. with waste carriers` that is removed from Services sector value was changed to 39.45% to optimize `Results by fuel`.
+- The percentage of unsold heat in the industry sectors were changed back to 100% to better reproduce sold heat statistics. This is not available for the coal gas CHP, but since this is a dedicated CHP connected to the Steel sector it will not much affect the heat balance for industry. It does result in an ugly `FALSE` for the Industry sector sold heat production. The absolute error is tiny, though.     
 - CHP FLH were re-estimated to reproduce the installed capacities reported by CBS's machine statistics. </br>
 **N.B.** As an exception, this was not done for Main activity coal and co-firing plants, as these were chosen to represent the 600 MWe of the Amer 9 power plant (see sources). This does not result in large errors for the `power_and_heat_plant_analysis`results. 
 - Finally, for some CHPs the efficiencies were tweaked to improve the `Results by fuel`. See below.
@@ -60,15 +60,15 @@ The following assumptions are made for autoproduction CHPs:
 - **Services:** The IEA energy balance states that biogas is used in this sector. The ETM only allows use of biogas (i.e. raw biogas) in dedicated biogas CHPs (whose heat is not sold, but utilized locally). Combining this with the fact that less CPH electricity production remains in the Services sector, this means that a fair bit of the electricity production in this sector must be from biogas CHPs. Since the ETM does not allow biogas CHPs to produce sold heat, there is a mismatch between the modeled sold heat production and the reported sold heat production by IEA.
 - **Energy Industry:** The unsold heat percentage is set to 0% to reduce the error in modelled sold heat production. After adjusting the efficiencies, the sold heat production is slightly too high compared what is reported by Eurostat, but the absolute difference is less than 1 PJ. This is the result of the fact our dataset generation procedure takes electricity production to be leading. Consequently heat production by CHPs is  merely a result. 
 - **Energy Industry:** The share of gas turbine CHPs (58.9%), gas engine CHPs (0%) and gas combined cycle CHPs (41.1%) are calculated in the [1\_chp\_source\_analysis](1_chp_source_analysis.xlsx).
-- **Industry:** The unsold heat percentage is set to 100% for GT and gas engines and 99.79% for CCGT to reduce the error in modelled sold heat production. The sold heat production is still slightly too low compared what is reported by IEA. See the remark above with Energy Industry.
+- **Industry:** The unsold heat percentage is set to 100% for GT and gas engines and 100% for CCGT. This cannot be used to reduce the error in modelled sold heat production, since that is due to coal gas. The sold heat production is still slightly too low compared what is reported by IEA. See the remark above with Energy Industry.
 - **Industry:** The share of gas turbine CHPs (21.9%), gas engine CHPs (0.9%) and gas combined cycle CHPs (77.1%) are calculated in the [1\_chp\_source\_analysis.xlsx](1_chp_source_analysis.xlsx).
 - **Full load hours:**
   - Local Heat Network CHPs optimized to match the [1\_chp\_source\_analysis.xlsx](1_chp_source_analysis.xlsx). The installed capacity of wood pellets CHPs is too high. This is the result of moving wood pellets out of industry (see step 2 above). As a result the number of gas CHPs are ~50 MWe lower than CBS states.
-   - Industry & Energy industry CHPs optimized to match the [1\_chp\_source\_analysis.xlsx](1_chp_source_analysis.xlsx).
+   - Industry & Energy industry CHPs optimized to match the [1\_chp\_source\_analysis.xlsx](1_chp_source_analysis.xlsx). Since the source analysis does not contain the coal gas CHP yet, this was assumed to be included in the total `Gas CC CHP` installed capacity for this sector according to CBS.
    - Main acivity FLH for `coal` and `co-firing` cannot meet the installed capacity in the [1\_chp\_source\_analysis.xlsx](1_chp_source_analysis.xlsx) without having super low FLH. The number in the source analysis is suspect, so I chose to instead set FLH to represent the MWe of the Amer 9 power plant. This is listed as the only coal-fired (and biomass co-firing) CHP in NL. </br>
 Also, it is likely that quite a few MWe are in fact gas-fired steam turbine CHPs , which are not available in the ETM. </br>
 
-This means the deficit of 5,385 - 4,147 = 1238.7 MWe in gas-fired steam turbine CHP capacity **will have to becompensated in `2_chp_pp_analysis.xlsx`. Results by machine** to represent the entire NL power and CHP production park. **This deficit is passed onto the PPHP source analysis.**
+This means the deficit of 5,385 - 4,147 = 1239 MWe in gas-fired steam turbine CHP capacity **will have to becompensated in `2_chp_pp_analysis.xlsx`. Results by machine** to represent the entire NL power and CHP production park. **This deficit is passed onto the PPHP source analysis.**
 
 ### Efficiency adjustments of CHPs
 The following CHP-efficiencies were adjusted for better results on the `Results by fuel` sheet. This is done at the very end, since otherwise there are too many variables to play with.
@@ -77,12 +77,13 @@ The following CHP-efficiencies were adjusted for better results on the `Results 
 
 | CHP | E-eff default | H-eff default | E-eff NL2019 | H-eff NL2019 |
 | :-- | :----------- | -----------: |  ----------: | -----------: |
-| Heat network local - Gas CHP | 43%  | 47% | 40% | 50% | 
-| Heat network local - Biogas CHP | 43%  | 47% | 41% | 40% | 
+| Heat network local - Gas CHP | 43%  | 47% | 42% | 50% | 
+| Heat network local - Biogas CHP | 43%  | 47% | 42% | 39% | 
 | Heat network local - Wood pellets CHP | 29%  | 82% | 18.3% | 47% | 
-| Industry & EI - Gas turbine CHP | 38% | 42% | 24.75% | 35% | 
+| Industry & EI - Gas turbine CHP | 38% | 42% | 27% | 35% | 
 | Industry & EI - Gas combined cycle CHP | 46% | 42% | 43.3% | 30.5% | 
 
+Industry Gas CC CHP efficiencies need to be identical to Main activity Gas CC CHPs (see below).
 This takes care of the fuel use and sold heat production in all autoproducers, but per sector there are still some deviations. This is mainly in the Industry and Energy industry, due to the fact that E and H-production from `coal_gas` was moved to the industry sector (See `Fuel mixes` and `Industry` sheets and more gas therefore needs to be used there to compensate for the unused `coal_gas`. 
 
 These tweaks do impact the installed heat capacities of the CHPs relative to the installed electric capacities, of course. Since the latter are fixed based on production and FLH, the installed heat capacities change. 
@@ -94,7 +95,7 @@ Note that the Biogas CHP for local heat networks cannot be tweaked very well, si
 | CHP | E-eff default | H-eff default | E-eff NL2019 | H-eff NL2019 |
 | :-- | :----------- | -----------: |  ----------: | -----------: |
 | Gas combined cycle CHP | 46%  | 42% | 43.3% | 30.5% | 
-| Coal CHP | 40%  | 15% | 43% | 14% | 
+| Coal CHP | 40%  | 15% | 44% | 13% | 
 | Co-firing CHP | 37% | 15% | 40% | 15% | 
 | Waste CHP | 27% | 15% | 20.45% | 19.95% | 
 
@@ -109,7 +110,7 @@ This takes care of the worst deficits in fuel use and sold heat production, *exc
 
 ## Debts
 
-- Fuel use of wood pellets in Main activity CHPs is too low as is heat production from wood pellets. This is likely caused by the assumption that wood pellets are always co-fired in CHPs with coal. We probably need 
+- Fuel use of wood pellets in Main activity CHPs is too low as is heat production from wood pellets. This is likely caused by the assumption that wood pellets are always co-fired in CHPs with coal. We probably need to allow for these to be used for direct use of wood pellets in CHPs and heaters.
 - In general, the calculated fuel input for electricity and sold heat production is slightly lower than the reported fuel input. This was mostly remedied by changing the efficiencies.
 - The removal of electricity and heat production by CHPs that incinerate waste from the Services or Industry sector is an oversimplification. Unfortunately the Autoproducer table does not shed any light onto where waste is incinerated in Autoproducing CHP plants. It cannot all be done in the Services sector, as this does not produce enough power to account for this. Perhaps biogenic waste is also fired in the agriculture and industry sectors (food and tobacco). It might be a good idea to:
   - subtract some biogenic waste powered electricity production by CHPs from the Agriculture and Industry sectors first: biogenic waste should be 54 or 55% of all waste incineration

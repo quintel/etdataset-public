@@ -4,10 +4,10 @@ base_year,2015,
 industry_electric_heater,yes,
 industry_food_electric_heater,0,
 industry_paper_electric_heater,0,
-residual_heat_flue_gasses_chemicals_other,0.11,source_analyses/nl/2015/5_industry/5_industry_residual_heat.xlsx
-residual_heat_processes_chemicals_other,0.16,source_analyses/nl/2015/5_industry/5_industry_residual_heat.xlsx
-residual_heat_flue_gasses_chemicals_refineries,0.18,source_analyses/nl/2015/5_industry/5_industry_residual_heat.xlsx
-residual_heat_processes_chemicals_refineries,0.29,source_analyses/nl/2015/5_industry/5_industry_residual_heat.xlsx
-residual_heat_flue_gasses_chemicals_fertilizers,0.03,source_analyses/nl/2015/5_industry/5_industry_residual_heat.xlsx
-residual_heat_processes_chemicals_fertilizers,0.04,source_analyses/nl/2015/5_industry/5_industry_residual_heat.xlsx
-residual_heat_ict,0.77,source_analyses/nl/2015/5_industry/5_industry_residual_heat.xlsx
+residual_heat_flue_gasses_chemicals_other,0,11
+residual_heat_processes_chemicals_other,0,16
+residual_heat_flue_gasses_chemicals_refineries,0,18
+residual_heat_processes_chemicals_refineries,0,29
+residual_heat_flue_gasses_chemicals_fertilizers,0,3
+residual_heat_processes_chemicals_fertilizers,0,4
+residual_heat_ict,0,77

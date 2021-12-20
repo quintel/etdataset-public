@@ -12,9 +12,11 @@ services_space_heating_share_gas_fired_heat_pumps,0,7_services_source_analysis
 services_space_heating_share_electric_heaters,0,7_services_source_analysis
 services_space_heating_share_coal_fired_heater,0,7_services_source_analysis
 services_space_heating_share_oil_fired_heater,0,7_services_source_analysis
+services_space_heating_share_air_heatpump,0,
 services_space_cooling_share_gas_fired_heat_pump,0,We assumed that no gas-fired heat pumps are present yet
 services_space_cooling_share_electric_heat_pump,0.0635291942433638,Same as heating
 services_space_cooling_share_airco,0.936470805756636,We assumed that the remainder of cooling demand is supplied by airconditioning
+services_space_cooling_share_air_heatpump,0,
 services_lighting_incandescent_lamp,0,
 services_lighting_fluorescent_lamp,0,
 services_lighting_fluorescent_tube,0.9191,Based on expert data; see /source_analyses/eu/2012/6_residences/lighting_source_analysis.xlsx
