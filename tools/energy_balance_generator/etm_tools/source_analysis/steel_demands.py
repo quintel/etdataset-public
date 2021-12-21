@@ -90,15 +90,15 @@ class SteelDemandAnalyser(Analyser):
 
 
         data = {
-            'steel production': total_steel_production,
-            'share of BF in steel production': share_of_BF,
-            'share of electricity in final steel demand by BF': BF_electricity_share_in_final_electricity_demand_steel,
-            'share of network gas in final steel demand by BF': BF_network_gas_share_in_final_network_gas_demand_steel,
-            'share of coal in final steel demand by BF': BF_coal_share_in_final_coal_demand_steel,
-            'share of crude oil in final steel demand by BF': BF_crude_oil_share_in_final_crude_oil_demand_steel,
-            'share of cokes in final steel demand by BF': BF_cokes_share_in_final_cokes_demand_steel,
-            'share of steam hot water in final steel demand by BF': BF_steam_hot_water_share_in_final_steam_hot_water_demand_steel,
-            'share of wood pellets in final steel demand by BF': BF_wood_pellets_share_in_final_wood_pellets_demand_steel
+            'input_industry_metal_steel_production': total_steel_production,
+            'input_industry_steel_blastfurnace_bof_share': share_of_BF,
+            'industry_final_demand_for_metal_steel_electricity_industry_steel_blastfurnace_bof_parent_share': BF_electricity_share_in_final_electricity_demand_steel,
+            'industry_final_demand_for_metal_steel_network_gas_industry_steel_blastfurnace_bof_parent_share': BF_network_gas_share_in_final_network_gas_demand_steel,
+            'industry_final_demand_for_metal_steel_coal_industry_steel_blastfurnace_bof_parent_share': BF_coal_share_in_final_coal_demand_steel,
+            'industry_final_demand_for_metal_steel_crude_oil_industry_steel_blastfurnace_bof_parent_share': BF_crude_oil_share_in_final_crude_oil_demand_steel,
+            'industry_final_demand_for_metal_steel_cokes_industry_steel_blastfurnace_bof_parent_share': BF_cokes_share_in_final_cokes_demand_steel,
+            'industry_final_demand_for_metal_steel_steam_hot_water_industry_steel_blastfurnace_bof_parent_share': BF_steam_hot_water_share_in_final_steam_hot_water_demand_steel,
+            'industry_final_demand_for_metal_steel_wood_pellets_industry_steel_blastfurnace_bof_parent_share': BF_wood_pellets_share_in_final_wood_pellets_demand_steel
         }
 
         self.write_to_analysis(data, 'steel_demands')
