@@ -15,8 +15,7 @@ class IndustryMetalConverter(Converter):
     TO_CO = 'Transformation output - coke ovens'
     TO_BF = 'Transformation output - blast furnaces'
 
-    def conversion(self,
-        demand_aluminium_electricity_energetic,
+    def conversion(self, demand_aluminium_electricity_energetic,
         demand_aluminium_network_gas_energetic):
         '''
         Splits industry non-ferrous metals demand into 'aluminium' and 'other', based
@@ -49,28 +48,27 @@ class IndustryMetalConverter(Converter):
         # The remaning energy is classified as metal other
         self.energy_balance.rename(self.IND_NON_FER_MET, self.IND_MET_OTH)
 
+        # Runs the transformation output failsafe
+        self.run_failsafe_for_transformation()
 
-        # TRANSFORMATION
+
+    def run_failsafe_for_transformation(self):
         '''
-
         Checks if there is no transformation output of coal gas in the cokesoven.
         If this is the case and there is coal gas transformation output in the blast furnace,
         then 1 TJ of energy will be moved - otherwise the energy graph will not run.
-
         '''
+        total_output_blastfurnace_coal_gas = self.energy_balance.sum(self.TO_BF,
+            self.COAL_GAS_PRODUCTS)
+        total_output_cokesoven_coal_gas = self.energy_balance.sum(self.TO_CO,
+            self.COAL_GAS_PRODUCTS)
 
-        total_output_blastfurnace_coal_gas = self.energy_balance.calculate_sum(self.TO_BF,self.COAL_GAS_PRODUCTS)
-        total_output_cokesoven_coal_gas = self.energy_balance.calculate_sum(self.TO_CO,self.COAL_GAS_PRODUCTS)
-        
-        if total_output_blastfurnace_coal_gas != 0.0:
-            if total_output_cokesoven_coal_gas == 0.0:
+        if total_output_blastfurnace_coal_gas != 0.0 and total_output_cokesoven_coal_gas == 0.0:
+            amounts_to_shift_per_product = self.energy_balance.product_amounts_proportionate(
+                self.TO_BF, self.COAL_GAS_PRODUCTS, amount_to_shift=1
+            )
 
-                all_amounts_to_shift = self.energy_balance.all_product_amounts_proportionate(
-                    self.TO_BF,
-                    {1: self.COAL_GAS_PRODUCTS}
-                )
+            self.energy_balance.shift_energy(self.TO_BF, self.TO_CO,
+                amounts_to_shift_per_product, safe_guard='nonnegative'
+            )
 
-                self.energy_balance.shift_energy(self.TO_BF, self.TO_CO,
-                    all_amounts_to_shift, safe_guard='nonnegative'
-                )
-                

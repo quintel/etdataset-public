@@ -41,22 +41,23 @@ class HeatersAndCHPsConverter(Converter):
         ]
 
     # Heat networks consumption
-    INDUSTRY_CONSUMPTION = ['Final consumption - industry sector - energy use', 
-                            'Energy sector - coal mines - energy use', 
-                            'Energy sector - oil and natural gas extraction plants - energy use',
-                            'Energy sector - patent fuel plants - energy use',
-                            'Energy sector - brown coal briquettes and peat briquettes plants - energy use',
-                            'Energy sector - gas works - energy use',
-                            'Energy sector - petroleum refineries (oil refineries) - energy use',
-                            'Energy sector - nuclear industry - energy use',
-                            'Energy sector - coal liquefaction plants - energy use',
-                            'Energy sector - liquefaction and regasification plants (LNG) - energy use',
-                            'Energy sector - gasification plants for biogas - energy use',
-                            'Energy sector - gas-to-liquids plants - energy use',
-                            'Energy sector - charcoal production plants - energy use',
-                            'Energy sector - not elsewhere specified - energy use'
-                            ]
-    RESIDENTIAL_CONSUMPTION = ['Final consumption - other sectors - energy use', 'Distribution losses']
+    INDUSTRY_CONSUMPTION = ['Final consumption - industry sector - energy use',
+        'Energy sector - coal mines - energy use',
+        'Energy sector - oil and natural gas extraction plants - energy use',
+        'Energy sector - patent fuel plants - energy use',
+        'Energy sector - brown coal briquettes and peat briquettes plants - energy use',
+        'Energy sector - gas works - energy use',
+        'Energy sector - petroleum refineries (oil refineries) - energy use',
+        'Energy sector - nuclear industry - energy use',
+        'Energy sector - coal liquefaction plants - energy use',
+        'Energy sector - liquefaction and regasification plants (LNG) - energy use',
+        'Energy sector - gasification plants for biogas - energy use',
+        'Energy sector - gas-to-liquids plants - energy use',
+        'Energy sector - charcoal production plants - energy use',
+        'Energy sector - not elsewhere specified - energy use'
+    ]
+    RESIDENTIAL_CONSUMPTION = ['Final consumption - other sectors - energy use',
+        'Distribution losses']
 
 
     def conversion(self, chps_and_heaters):

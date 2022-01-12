@@ -39,7 +39,8 @@ class EnergyBalance:
             self.calculate_total(flow)
 
 
-    def calculate_sum(self, flow, products):
+    def sum(self, flow, products):
+        '''Sum of the products in the flow'''
         return self.eb[products].loc[flow].sum()
 
 
@@ -129,10 +130,12 @@ class EnergyBalance:
         self.recalculate_totals(from_flows + to_flows)
 
 
-    def product_amounts_proportionate(self, flow, products, amount_to_shift=None, share_to_shift=None, safe_guard='nonnegative'):
+    def product_amounts_proportionate(self, flow, products, amount_to_shift=None,
+        share_to_shift=None, safe_guard='nonnegative'):
         '''
         Calculate a product_amounts Dictionay based on the products in an existing flow,
-        and the amount_to_shift amount or the share_to_shift, these new product amounts should sum to.
+        and the amount_to_shift amount or the share_to_shift, these new product amounts should sum
+        to.
 
         Params:
             amount_to_shift (float): Amount to shift from flow (TJ), to be spread over the products.
@@ -148,7 +151,8 @@ class EnergyBalance:
             share_to_shift = amount_to_shift / total if total else 0.0
 
         if safe_guard == 'nonnegative' and share_to_shift > 1.0:
-            EnergyBalance.warn_change(amount_to_shift, flow, products, self.eb[products].loc[flow].sum())
+            EnergyBalance.warn_change(amount_to_shift, flow, products,
+                self.eb[products].loc[flow].sum())
             share_to_shift = 1.0
 
         return {product: self.eb[product][flow] * share_to_shift for product in products}

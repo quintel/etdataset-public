@@ -1,7 +1,8 @@
 import pandas as pd
 import yaml
 
-POWERPLANT_COLUMNS = ['input', 'output', 'input_share', 'output_share', 'code', 'net_max_generating_capacity_MW']
+POWERPLANT_COLUMNS = ['input', 'output', 'input_share', 'output_share', 'code',
+    'net_max_generating_capacity_MW']
 
 
 def load_powerplants(path):

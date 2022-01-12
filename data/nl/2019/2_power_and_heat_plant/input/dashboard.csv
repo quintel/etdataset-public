@@ -2,17 +2,17 @@ Key,Value,Source
 country,nl,
 base_year,2019,
 open_access_energy_balance,True,
-pp_share_coal_us,0.67,Optimized to match fuel use
+pp_share_coal_us,0.7237,Optimized to match fuel use. Again after coal_gas plant was created for the steel project
 pp_share_coal_us_ccs,0,No CCS yet
 pp_share_coal_cc,0,2_chp_pp_source_analysis.xlsx
 pp_share_coal_cc_ccs,0,No CCS yet
 pp_share_lignite_us,1,Not relevant for NL
 pp_share_lignite_us_ccs,0,Not relevant for NL
 pp_share_gas_turbine,0,2_chp_pp_source_analysis.xlsx
-pp_share_gas_cc,0.889,Optimized to match fuel use
+pp_share_gas_cc,0.8892,Optimized to match fuel use
 pp_share_gas_cc_ccs,0,No CCS yet
 pp_share_gas_engine,0.000588781525045084,2_chp_pp_source_analysis.xlsx
-pp_share_gas_us,0.110411218474955,Optimized to match fuel use
+pp_share_gas_us,0.110211218474955,Optimized to match fuel use
 pp_share_nuclear_2,1,Assumed effciency seems incorrect
 pp_share_nuclear_3,0,No 3rd generation yet
 pp_share_hydro_river,1,No hydro_mountain in NL
@@ -20,9 +20,9 @@ pp_share_hydro_mountain,0,No hydro_mountain in NL
 pp_share_wind_coastal,0.254152071376759,2_chp_pp_source_analysis.xlsx
 pp_share_wind_offshore,0.310479666319082,2_chp_pp_source_analysis.xlsx
 pp_share_wind_inland,0.435368262304159,2_chp_pp_source_analysis.xlsx
-pp_flh_coal_us_co,5400,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
-pp_flh_coal_supercritical,5000,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
-pp_flh_coal_us,5440,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
+pp_flh_coal_us_co,5100,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
+pp_flh_coal_supercritical,4000,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
+pp_flh_coal_us,5100,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
 pp_flh_coal_us_ccs,7500,Does not exist in NL
 pp_flh_coal_cc,7500,Does not exist in NL
 pp_flh_coal_cc_ccs,4000,Does not exist in NL
@@ -30,10 +30,10 @@ pp_flh_coal_gas_cc,1789,Re-estimate FLH; to match MIDDEN installed capacities
 pp_flh_lignite_us,7500,Does not exist in NL
 pp_flh_lignite_us_ccs,7500,Does not exist in NL
 pp_flh_gas_turbine,750,No installed capacity: 2_chp_pp_source_analysis.xlsx
-pp_flh_gas_cc,3925,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
+pp_flh_gas_cc,4370,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
 pp_flh_gas_cc_ccs,1500,Does not exist in NL
 pp_flh_gas_engine,1126,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
-pp_flh_gas_us,1590,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
+pp_flh_gas_us,1587,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
 pp_flh_nuclear_2,7630,Optimized to installed capacity: 2_chp_pp_source_analysis.xlsx
 pp_flh_nuclear_3,8000,does not exist in NL
 pp_flh_hydro_river,2005,optimized to reproduce installed capacity
@@ -72,18 +72,18 @@ pp_eff_waste,0.25,See node source analysis of energy_power_supercritical_waste_m
 hp_flh_solar_thermal,683.7,see solar thermal production curve analysis for nl/2015: curves/supply/solar_thermal
 hp_eff_coal,0.72,See node source analysis of energy_heat_burner_coal
 hp_eff_lignite_industry,0.72,See node source analysis of industry_heat_burner_lignite
-hp_eff_gas,0.915,Tweaked for better results on 'Results by Fuel'
-hp_eff_oil,0.924,Tweaked for better results on 'Results by Fuel'
+hp_eff_gas,0.914,Tweaked for better results on 'Results by Fuel'
+hp_eff_oil,0.966,Tweaked for better results on 'Results by Fuel'
 hp_eff_waste,0.72,The default efficiency of the waste incinerator is too high in my opinion
 hp_eff_wood_pellets,0.8,The default efficiency of the wood pellets-fired heater is too high in my opinion
 hp_eff_heat_pump_electric,1,See node source analysis of energy_heat_heatpump_water_water_electricity
 hp_eff_hydrogen,1.09593,See node source analysis of energy_heat_burner_hydrogen
 hp_eff_coal_industry,0.72,See node source analysis of industry_heat_burner_coal
-hp_eff_oil_industry,0.924,Tweaked for better results on 'Results by Fuel'
+hp_eff_oil_industry,0.966,Tweaked for better results on 'Results by Fuel'
 pp_share_coal_heater,0,No shift required
 pp_share_oil_heater,0,No shift required
-pp_share_gas_chp_cc,0,Minimized deficits; but some remaining
-pp_share_gas_heater,0,
+pp_share_gas_chp_cc,0.22418,optimized to minimaldeficits
+pp_share_gas_heater,0,Shifted all to industry.
 pp_demand_hydrogen_smr,0,no hydrogen production
 pp_demand_hydrogen_smr_ccs,0,no hydrogen production
 pp_flh_hydrogen_smr,7500,

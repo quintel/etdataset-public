@@ -25,9 +25,9 @@ Ultimately, the technology shares on the dashboard of the `2_power_and_heat_plan
 
 Power production from gas-fired steam turbines is also determined by adding some rows to the `CBS - data 2019 (edited)` sheet.   
 
-Ultimately, the technology shares for electricity production by gas plants are optimized to match fuel use. The full load hours are optimized to obtain installed capacities as listed in `2_chp_pp_source_analysis.xlsx`. Note that there is a deficit of 1238.7 MWe from the CHP analysis to compensate for.
+Ultimately, the technology shares for electricity production by gas plants are optimized to match fuel use. The full load hours are optimized to obtain installed capacities as listed in `2_chp_pp_source_analysis.xlsx`. 
+Note that there is a deficit of `1238.7 MWe` from the CHP analysis to compensate for at least partly with gas-fired capacity (see `2_chp_pp_source_analysis.xlsx`sheet `CHP - CBS Results by machine`cell `N77`). Note also that the `Coal gas combined cycle` capacity of `835 MWe` which was determined from MIDDEN has been subtracted from the CCGT installed capacity according to CBS. Before this plant was included in the ETM in the recent Steel project, no such plant existed and extra gas capacity was assumed to fire the coal gasses from steel production.
 
-**The question is whether we should compensate for the fact that the CHP analysis uses too little natural gas (mostly for main activity plants) by using more in power plants.**
 
 ## Nuclear
 The total primary fuel demand for nuclear power is much too high. **This means the assumed efficiency of 32% for the 2nd Gen plant is too low.** To fix this, I set the efficiency to 36.93% to exactly match the Eurostat Energy Balance for fuel use on the `Results by fuel` sheet. I set the 3rd gen plant to the same initial efficiency, as this is assumed to have an efficiency at least as good. 
@@ -74,37 +74,35 @@ The efficiencies of heat plants were tweaked for better `Results by fuel`. Also,
 
 | Heat plant |H-eff default | H-eff NL2019 |
 | :--  | ----------: | -----------: |
-| Gas heater  | 103% | 91.5% | 
-| Oil heater | 72% | 92.4% | 
-| Oil heater (industry) | 72% | 92.4% | 
+| Gas heater  | 103% | 91.4% | 
+| Oil heater | 72% | 96.6% | 
+| Oil heater (industry) | 72% | 96.6% | 
 | Waste heater | 105% | 72% | 
 | Wood pellets heater| 90% | 80% | 
 
 It is unclear to me what some of the heater efficiencies are by default. 
 
 ## Allocation heat production local district heating/industry
-There is a large heat deficit for industry. In order to minimize this, I assumed allocation of CCGT CHP to be the following:
+There is a large heat deficit for industry. After correcting a mistake in the PPHP analysis formulae for main activity CCGT installed heat capacity and heat production on the `Dashboard` and `all_technical_specs` sheets, I made the following assumptions to minimize the deficit. 
 
 | Allocation | Share |
 | :----------| ----: |
-| Residential heat network CCGT CHP | 0% |
-| Industry CHP CCGT fuel mix | 100% |
+| Residential heat network CCGT CHP | 22.418% |
+| Industry CHP CCGT fuel mix | 77.582% |
 
-**N.B. This results in a shift in installed capacities and new FLHs:** All Gas CCGT CHPs are now found in industry. I do not know if this makes sense and if this results in side effects, because the industrial CHPs use a different fuel mix.  
+**N.B. This results in a shift in installed capacities and new FLHs:** Most Gas CCGT CHPs are now found in industry. I do not know if this makes sense and if this results in side effects, because the industrial CHPs use a different fuel mix.  
 
 | CHP | FLH CHP analysis | FLH new | Installed heat cap CHP analysis (MW) | Installed heat cap new (MW) |
 | :-- | :--------------- | ------------------: |  ------------------: | ------------------: |
-| Main activity Gas CC CHP | 4975  | 4975 | 2499 | 0 | 
-| Industry and Energy inustry Gas CC CHP | 1925 | 3909 | 1343 | 3842 | 
+| Main activity Gas CC CHP | 4975  | 4975 | 2499 | 657 | 
+| Industry and Energy inustry Gas CC CHP | 1750 | 3684 | 1229 | 3071 
 
-It also does **not** resolve the entire heat deficit. For now we have decided to fix this by also allowing a heat shift from gas-fired heaters for the local district heat network to industry. 
-
-This results in a negligible remaining heat deficit, and the following changes on top of the ones listed above:
+The 100% shift of Main activity gas heater to industry backup heater results in no significant remaining heat deficit, and the following changes on top of the ones listed above:
 
 | Heat plant | FLH PPHP analysis (fixed) | Allocation gas burner (%) | Installed heat cap CHP analysis (MW) | Installed heat cap new (MW) |
 | :-- | :--------------- |  ------------------: |  ------------------: | ------------------: |
-| Main activity Gas heater | 2190 | 56.24 | 1379 | 776 | 
-| Industry backup gas heater  | N.A. |  43.76| N.A. | N.A. | 
+| Main activity Gas heater | 2190 | 0 % | 1472 | 0 | 
+| Industry backup gas heater  | N.A. |  100% | N.A. | N.A. | 
 
 **N.B.**
 Please note that since there is no dedicated gas-fired heater for the industrial heat network, the *backup heater* will need to take up the heat shifted from the residential sector. Since this has a heat surplus [see CHP analysis source analysis MD file](../1_chp/1_chp_source_analysis.md), this ultimately results in a better representation of the actual energy balance. The ETM will still show a deficit on the indutrial heat network though. 
@@ -117,7 +115,7 @@ The information here is needed for initialization of hydrogen production technol
 1. It remains not easy to determine the actually installed capacity of gas-fired and coal-fired steam turbine power plants (supercritical and ultra-supercritical) from the main CBS source. We have approached CBS to split steam turbine power (and heat!) production by carrier or at least by gas-fired vs coal-fired, but this seems to run into some confidentiality issues.
 2. The heat plants have a low number of FLH, which is globally fixed
 3. According to the 2019 Energy Balance, the 32.0% nuclear power plant efficiency is too low for Gen 2, resulting in a 15.4% increase in primary nuclear fuel supply comapred to the Eurostat EB. This was fixed by changing the efficiency. **Should this be done globally?**
-4. The heat deficit in the industrial heat network is not resolved entirely by shifting Gas CC CHP from Main activity to industry. This will likely need to be solved with better assumptions about Refinery gas. Also, the fact that all CCGT CHPs are now in industry seems wrong. We need to check if this results in changed fuel consumption due to fuel mix.
+4. The heat deficit in the industrial heat network is mostly resolved  by shifting Gas CC CHP from Main activity to industry. However, the fact that most CCGT CHPs are now in industry seems wrong. This will likely need to be solved with better assumptions about Refinery gas. We need to check if this results in changed fuel consumption due to fuel mix.
 5. After all, the CHP and PPHP analyses result in `433.610 PJ`of E production. This corresponds to the sum of the `Electricity output (GWh)` line at the bottom of the energy balance, whereas the `Transformation output` line says it is `435.822 PJ`. The difference is a category of E production which Eurostat cannot allocate to a means of production (see: [this issue](https://github.com/quintel/etdataset/issues/890)). For this reason, we have also decided not to allocate it to anything. As a result, the net import-export balance for E will be 2.21 PJ lower than what the EB says. We have included an `Energy Balance check` on the dashboard of the PPHP analysis, to alert the user to this discrepancy.
 6. We need to create an industrial gas-fired heater for the industrial heat network besides the back-up heater to shift any heat production from local district heat network gas-fired heat plants to. 
  
