@@ -5,7 +5,7 @@ from etm_tools.source_analysis import analyse_country
 
 EU28 = [
   'AT','BE','BG','CY','CZ','DE','DK','EE','ES','FI','FR','UK','EL','HR','HU',
-  'IE','IT','LT','LU','LV','NL','PL','PT','RO','SE','SI','SK']
+  'IE','IT','LT','LU','LV','MT','NL','PL','PT','RO','SE','SI','SK']
 
 HELP = '''\033[94m
 Please use this script with the following arguments:

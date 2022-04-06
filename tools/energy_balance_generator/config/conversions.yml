@@ -95,4 +95,4 @@ industry_metal:
 
 # Powerplants have a slightly different structure. The key 'field' is not neccesary here
 power_plants:
-  file: 20211209_input_pp
+  file: 20220228_input_pp

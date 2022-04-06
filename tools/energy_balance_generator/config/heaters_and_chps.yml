@@ -59,6 +59,10 @@ heaters_and_chps:
     network: industrial
     input: Coal gas
     type: chp
+  - name: Lignite CHP
+    network: residential
+    input: Lignite, peat
+    type: chp
   # - name: Collective heat pump
   #   network: residential
   #   type:
