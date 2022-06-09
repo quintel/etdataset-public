@@ -2,7 +2,7 @@
 # in which network. If the network is 'flexible', the producer will be 'split up'
 # and added to both networks, with the split-share based on where it is needed
 # most.
-heaters_and_chps:
+heaters:
   - name: Solar thermal
     network: residential
     input: Solar thermal
@@ -13,28 +13,12 @@ heaters_and_chps:
     type: heater
   - name: Biomass heater
     network: residential
-    input: Primary solid biofuels
+    input: Wood pellets
     type: heater
   - name: Waste heater
     network: residential
     input: Waste
     type: heater
-  - name: Waste CHP
-    network: residential
-    input: Waste
-    type: chp
-  - name: Gas CHP
-    network: flexible
-    input: Network gas
-    type: chp
-  - name: Coal CHP
-    network: flexible
-    input: Coal
-    type: chp
-  - name: Biomass CHP
-    network: flexible
-    input: Primary solid biofuels
-    type: chp
   - name: Geothermal
     network: flexible
     input: Geothermal
@@ -55,14 +39,6 @@ heaters_and_chps:
     network: industrial
     input: Coal gas
     type: heater
-  - name: Coal gas CHP
-    network: industrial
-    input: Coal gas
-    type: chp
-  - name: Lignite CHP
-    network: residential
-    input: Lignite, peat
-    type: chp
   # - name: Collective heat pump
   #   network: residential
   #   type:

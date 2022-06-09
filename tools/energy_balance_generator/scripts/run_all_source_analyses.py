@@ -3,9 +3,9 @@ sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
 from etm_tools.source_analysis import analyse_country
 
-EU28 = [
-  'AT','BE','BG','CY','CZ','DE','DK','EE','ES','FI','FR','UK','EL','HR','HU',
-  'IE','IT','LT','LU','LV','MT','NL','PL','PT','RO','SE','SI','SK']
+EU27_COUNTRIES_AND_TOTAL = [
+  'AT','BE','BG','CY','CZ','DE','DK','EE','ES','FI','FR','EL','HR','HU',
+  'IE','IT','LT','LU','LV','MT','NL','PL','PT','RO','SE','SI','SK','EU27_2020']
 
 HELP = '''\033[94m
 Please use this script with the following arguments:
@@ -23,8 +23,8 @@ if __name__ == '__main__':
     year = sys.argv[1]
     countries = sys.argv[2].split(',')
 
-    if countries[0] == 'EU28':
-        countries = EU28
+    if countries[0] == 'EU27_COUNTRIES_AND_TOTAL':
+        countries = EU27_COUNTRIES_AND_TOTAL
 
     for country in countries:
         print(f'Starting country {country}')

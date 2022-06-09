@@ -27,6 +27,7 @@ SE,industry_steel_production,4.721,Mton,2019,Steel Statistical Yearbook 2020 con
 SI,industry_steel_production,0.623,Mton,2019,Steel Statistical Yearbook 2020 concise version - Tabel 1: https://www.worldsteel.org/steel-by-topic/statistics/steel-statistical-yearbook.html
 SK,industry_steel_production,3.6,Mton,2019,Steel Statistical Yearbook 2020 concise version - Tabel 1: https://www.worldsteel.org/steel-by-topic/statistics/steel-statistical-yearbook.html
 MT,industry_steel_production,0,Mton,2019,Not in Table 1 of Statistical Yearbook
+EU27_2020,industry_steel_production,149.86,Mton,2019,Sum of EU27 countries
 AT,share_steel_blast_furnace_bof,90.4,%,2019,Steel Statistical Yearbook 2020 concise version - Tabel 6 (continued): https://www.worldsteel.org/steel-by-topic/statistics/steel-statistical-yearbook.html
 BE,share_steel_blast_furnace_bof,67.5,%,2019,Steel Statistical Yearbook 2020 concise version - Tabel 6 (continued): https://www.worldsteel.org/steel-by-topic/statistics/steel-statistical-yearbook.html
 BG,share_steel_blast_furnace_bof,0,%,2019,Steel Statistical Yearbook 2020 concise version - Tabel 6 (continued): https://www.worldsteel.org/steel-by-topic/statistics/steel-statistical-yearbook.html
@@ -55,3 +56,4 @@ SE,share_steel_blast_furnace_bof,66.2,%,2019,Steel Statistical Yearbook 2020 con
 SI,share_steel_blast_furnace_bof,0,%,2019,Steel Statistical Yearbook 2020 concise version - Tabel 6 (continued): https://www.worldsteel.org/steel-by-topic/statistics/steel-statistical-yearbook.html
 SK,share_steel_blast_furnace_bof,93.1,%,2019,Steel Statistical Yearbook 2020 concise version - Tabel 6 (continued): https://www.worldsteel.org/steel-by-topic/statistics/steel-statistical-yearbook.html
 MT,share_steel_blast_furnace_bof,0,%,2019,Not in Table 6 (continued) of Statistical Yearbook
+EU27_2020,share_steel_blast_furnace_bof,57.6,%,2019,Weighted sum of EU27 countries

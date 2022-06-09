@@ -1,3 +1,4 @@
+from os import dup
 import pandas as pd
 from etm_tools.utils import EurostatAPI
 from .input_files import Translation
@@ -107,7 +108,8 @@ class EnergyBalance:
         self.append((self.eb.loc[flow] * share).rename(new_flow))
 
 
-    def shift_energy(self, from_flows, to_flows, product_amounts, safe_guard='nonnegative'):
+    def shift_energy(self, from_flows, to_flows, product_amounts, safe_guard='nonnegative',
+        dup=True, totals=True):
         '''
         Shift amounts (TJ) of energy from flows to other flows.
 
@@ -117,6 +119,8 @@ class EnergyBalance:
             product_amounts (Dict[str,float]): Dictionary containing the amount of
                                                energy to be shifted per product in TJ
             safeguard ('nonnegative' | None):  What safeguard should be applied to the shifting
+            dup (True|False):                  Should flows be duplicated before shifting
+            totals (True|False):               If True, the totals column will be recalculated
         '''
         if isinstance(from_flows, str): from_flows = [from_flows]
         if isinstance(to_flows, str): to_flows = [to_flows]
@@ -124,10 +128,56 @@ class EnergyBalance:
         if safe_guard == 'nonnegative':
             self._adjust_for_nonegative(from_flows, product_amounts)
 
-        self._shift(from_flows, product_amounts, direction='take')
-        self._shift(to_flows, product_amounts, direction='give')
+        self._shift(from_flows, product_amounts, direction='take', duplicate=dup)
+        self._shift(to_flows, product_amounts, direction='give', duplicate=dup)
 
-        self.recalculate_totals(from_flows + to_flows)
+        if totals: self.recalculate_totals(from_flows + to_flows)
+
+
+    def swap_energy(self, from_flow, to_flow, from_products, to_products, backup_flow=''):
+        '''
+        Swap the energy in from_products in the form_flow with energy with energy
+        from the to_products in the to_flow. E.g. Move all the Oil in the from_flow to
+        the to_flow, in exchange for the to_flow's Naturual Gas.
+        If there is not enough of the to_products to swap, the swap is limited to the
+        available amount. When a backup flow is specified, the remaining product will
+        be (tried to be) swapped with that flow.
+
+        Params:
+            from_flow(str):             The flow the 'from_products' energy is taken from.
+            to_flow(str):               The flow that will recieve toe 'from_porducts' energy
+                                        in exchange for energy in the 'to_products'
+            from_products(List[str]):   The products that should be emptied in the from_flow
+            to_products(List[str]):     The products that compensate for that emptied energy
+        '''
+        move_energy = self.share_to_tj(from_flow, products=from_products, merge_products=True)
+        max_shift = self.sum(to_flow, to_products)
+        backup_needed = False
+
+        if max_shift < move_energy:
+            if not backup_flow:
+                self.warn_swap_overload(max_shift, from_flow, to_flow, from_products, to_products)
+            backup_needed = True
+            move_energy = max_shift
+
+        # Shift 'from_products' away
+        self.shift_energy(from_flow, to_flow,
+            self.product_amounts_proportionate(
+                from_flow, from_products, amount_to_shift=move_energy
+            ),
+            dup=False, totals=False
+        )
+
+        # Shift 'to_products' back
+        self.shift_energy(to_flow, from_flow,
+            self.product_amounts_proportionate(
+                to_flow, to_products, amount_to_shift=move_energy
+            ),
+            dup=False, totals=False
+        )
+
+        if backup_flow and backup_needed:
+            self.swap_energy(from_flow, backup_flow, from_products, to_products)
 
 
     def product_amounts_proportionate(self, flow, products, amount_to_shift=None,
@@ -147,12 +197,12 @@ class EnergyBalance:
             Dict[str, float]: product amounts that can be used to shift
         '''
         if amount_to_shift is not None and not share_to_shift:
-            total = self.eb[products].loc[flow].sum()
+            total = self.sum(flow, products)
             share_to_shift = amount_to_shift / total if total else 0.0
 
         if safe_guard == 'nonnegative' and share_to_shift > 1.0:
             EnergyBalance.warn_change(amount_to_shift, flow, products,
-                self.eb[products].loc[flow].sum())
+                self.sum(flow, products))
             share_to_shift = 1.0
 
         return {product: self.eb[product][flow] * share_to_shift for product in products}
@@ -264,6 +314,8 @@ class EnergyBalance:
         '''
         Download an EB file for the given country and year from Eurostat, and
         convert it to an EnergyBalance
+
+        TODO: allow for diiferent cols!!
         '''
         trnsl = Translation.load(eb_type=eb_type)
 
@@ -287,8 +339,8 @@ class EnergyBalance:
             index=trnsl.flow_translation(),
             inplace=True)
         frame = frame.reindex(
-            columns=trnsl.unique('Product names'),
-            index=trnsl.unique('Flows names'),
+            columns=trnsl.unique('Product', 'names'),
+            index=trnsl.unique('Flows', 'names'),
             fill_value=0.0)
 
         return cls(frame, year, area)
@@ -323,6 +375,10 @@ class EnergyBalance:
         print(f'\033[93mCould not move full amount of {amount_wanted} TJ from {flow} {product},',
               f'limiting the shift to {amount_possible} TJ\033[0m')
 
+    @staticmethod
+    def warn_swap_overload(max_shift, from_flow, to_flow, from_products, to_products):
+         print(f'\033[93mCan only swap {max_shift} TJ from {from_flow} to {to_flow} when',
+               f'exchanging {from_products} for {to_products}, limiting the swap\033[0m')
 
     @staticmethod
     def extract_translations(original_df, tr_from, tr_to):

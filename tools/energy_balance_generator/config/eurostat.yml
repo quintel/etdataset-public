@@ -290,3 +290,22 @@ network_gas:
     C0371: *ref_C0371
     C0379: *ref_C0379
     G3000: *ref_G3000
+
+chps:
+  unit: MW
+  eurostat_code: NRG_CHP_CPFE
+  flows: # rename to flows
+    MGEC:  Maximum gross electricity capacity
+    MGEC_CHPM: Maximum gross electricity capacity in CHP mode
+    MNTC: Maximum net thermal capacity
+  products: # gen_tech
+    TOTAL: Total
+    STM_BTURB: Steam - backpressure turbine
+    STM_CTURB: Steam - condensing turbine (eff ≥ 80%)
+    INCOMB: Internal Combustion CHP
+    GTURB: Gas Turbine CHP
+    CCYCLE: Combined Cycle CHP
+    OTH: Other CHP
+  extra_attributes:
+    efficiencies: ALL+HIGH+LOW
+    plants: CHPU+CHPU_HE+CHPU_LE+CHPU_NOP

@@ -26,23 +26,19 @@ class EurostatAPI():
             StringIO object containing the requested csv download from Eurostat
         '''
         eb_setting = Translation.load(eb_type=csv_type)
-        flows = EurostatAPI.join(eb_setting.unique("Flows codes"))
-        products = EurostatAPI.join(eb_setting.unique("Product codes"))
-
 
         return self._handle_response(self._request(
             eb_setting.eurostat_code(),
-            f'{flows}.{products}',
-            eb_setting.unit(),
+            self._create_options(eb_setting, csv_type),
             country_codes,
             {'startPeriod': year, 'endPeriod': year}
         ))
 
 
-    def _request(self, key, options, unit, country_codes, params):
+    def _request(self, key, options, country_codes, params):
         country_codes = EurostatAPI.join(country_codes)
         params['format'] = 'SDMX-CSV'
-        return requests.get(f'{BASE_URL}{key}/A.{options}.{unit}.EU27_2020+{country_codes}', params=params)
+        return requests.get(f'{BASE_URL}{key}/A.{options}.{country_codes}', params=params)
 
 
     def _handle_response(self, response):
@@ -52,6 +48,19 @@ class EurostatAPI():
 
         # TODO: this can be nicer
         raise SystemExit(f'Could not connect to Eurostat ({response.content})')
+
+
+    def _create_options(self, eb_setting, csv_type):
+        '''Returns the options string'''
+        flows = EurostatAPI.join(eb_setting.unique("Flows", "codes"))
+        products = EurostatAPI.join(eb_setting.unique("Product", "codes"))
+
+        if csv_type == 'chps':
+            return '.'.join([eb_setting.unit(), flows,
+                EurostatAPI.join(eb_setting.unique("plants", "codes")), products,
+                EurostatAPI.join(eb_setting.unique("efficiencies", "codes"))])
+
+        return '.'.join([flows, products, eb_setting.unit()])
 
 
     @staticmethod

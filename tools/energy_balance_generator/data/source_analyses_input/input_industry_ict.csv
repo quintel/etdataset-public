@@ -27,3 +27,4 @@ SE,demand_ict_electricity_energetic,11275,TJ,2019,Estatimated using nl2019 NACE 
 SI,demand_ict_electricity_energetic,1260,TJ,2019,Estatimated using nl2019 NACE J electricity consumption and Eurostat - Annual enterprise statistics by size class for special aggregates of activities (NACE Rev. 2) - table SBS_SC_SCA_R2
 SK,demand_ict_electricity_energetic,3272,TJ,2019,Estatimated using nl2019 NACE J electricity consumption and Eurostat - Annual enterprise statistics by size class for special aggregates of activities (NACE Rev. 2) - table SBS_SC_SCA_R2
 MT,demand_ict_electricity_energetic,70,TJ,2019,Estatimated using nl2019 NACE J electricity consumption and Eurostat - Annual enterprise statistics by size class for special aggregates of activities (NACE Rev. 2) - table SBS_SC_SCA_R2
+EU27_2020,demand_ict_electricity_energetic,274883,TJ,2019,Sum of EU27 countries

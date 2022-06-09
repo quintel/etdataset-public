@@ -1,6 +1,8 @@
 import pandas as pd
 import yaml
 
+from .plant import Producer
+
 POWERPLANT_COLUMNS = ['input', 'output', 'input_share', 'output_share', 'code',
     'net_max_generating_capacity_MW']
 
@@ -38,11 +40,20 @@ def validate_shares(df):
                 raise InvalidInputFileException(f"Powerplants: Input shares of {country} {group} don't sum to 1")
 
 
-def load_heaters_and_chps():
+def load_heaters():
     '''Loads up the heaters and CHPs config file'''
-    with open('config/heaters_and_chps.yml', 'r') as f:
+    with open('config/heaters.yml', 'r') as f:
         doc = yaml.load(f, Loader=yaml.FullLoader)
-    return doc['heaters_and_chps']
+    return [Producer.from_dict(producer) for producer in doc['heaters']]
+
+
+def load_chp_efficiencies(path):
+    '''
+    Returns a pd.Dataframe from a chp_efficiencies input file.
+    Validates the file before returning.
+    '''
+
+    return pd.read_csv(path, index_col=['Gen Tech', 'Network'])
 
 
 class InvalidInputFileException(BaseException):
@@ -62,48 +73,64 @@ class Translation():
 
     def product_translation(self, direction='to_name'):
         if direction == 'to_name':
-            return self.mapping[self.eb_type]['products']
+            return self._lookup('products')
         elif direction == 'to_code':
-            return dict((v,k) for k,v in self.mapping[self.eb_type]['products'].items())
+            return dict((v,k) for k,v in self._lookup('products').items())
 
         return {}
 
 
     def flow_translation(self, direction='to_name'):
         if direction == 'to_name':
-            return self.mapping[self.eb_type]['flows']
+            return self._lookup('flows')
         elif direction == 'to_code':
-            return dict((v,k) for k,v in self.mapping[self.eb_type]['flows'].items())
+            return dict((v,k) for k,v in self._lookup('flows').items())
 
         return {}
 
 
-    def unique(self, field='Product names'):
+    def unique(self, field='Product', kind='names'):
         '''
         Unique values of a column
 
         Params:
-            field (str): Should be one of: Product names, Product codes, Flows names,
-                         Flows codes
+            field (str): Should be one of: Product, Flows or an extra attribute
+            kind (str): Should be one of 'codes', or 'names' (default)
         '''
-        if field == 'Product names':
-            return self.mapping[self.eb_type]['products'].values()
-        elif field == 'Product codes':
-            return self.mapping[self.eb_type]['products'].keys()
-        elif field == 'Flows names':
-            return self.mapping[self.eb_type]['flows'].values()
-        elif field == 'Flows codes':
-            return self.mapping[self.eb_type]['flows'].keys()
+        if field == 'Product':
+            return self._lookup_kind('products', kind)
+        elif field == 'Flows':
+            return self._lookup_kind('flows', kind)
+        elif field in self._lookup('extra_attributes'):
+            if kind == 'names':
+                field
+            return self._lookup('extra_attributes')[field]
 
         return []
 
 
     def unit(self):
-        return self.mapping[self.eb_type]['unit']
+        return self._lookup('unit')
 
 
     def eurostat_code(self):
-        return self.mapping[self.eb_type]['eurostat_code']
+        return self._lookup('eurostat_code')
+
+
+    def unique_extra_attributes(self, kind='names'):
+        for field in self._lookup('extra_attributes'):
+            yield self.unique(field, kind)
+
+
+    def _lookup(self, key):
+        return self.mapping[self.eb_type].get(key, {})
+
+
+    def _lookup_kind(self, key, kind):
+        if kind == 'names':
+            return self._lookup(key).values()
+
+        return self._lookup(key).keys()
 
 
     @classmethod

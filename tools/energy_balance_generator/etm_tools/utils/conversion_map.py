@@ -11,7 +11,7 @@ class ConversionMap():
 
     def inputs(self, converter, country):
         params = self.map[converter]
-        if converter == 'power_plants':
+        if converter == 'power_plants' or converter == 'chps':
             return {'path': f'data/{params["file"]}.csv'}
         return {param['arg_name']: self.lookup_value(param, country) for param in params}
 

@@ -98,3 +98,113 @@ def test_product_shares_to_tj(energy_balance):
 
     assert product_amounts['Anthracite'] == 5000
     assert product_amounts['Coking coal'] == 5000
+
+
+def test_swap_energy(energy_balance):
+    from_flow = 'Final consumption - industry sector - chemical and petrochemical - energy use'
+    to_flow = 'Gross electricity production - autoproducer electricity only'
+
+    energy_balance.swap_energy(
+        from_flow,
+        to_flow,
+        ['Anthracite'], ['Coking coal']
+    )
+
+    assert energy_balance.eb['Coking coal'][from_flow] == 11100
+    assert energy_balance.eb['Anthracite'][from_flow] == 0
+
+    assert energy_balance.eb['Coking coal'][to_flow] == 3800
+    assert energy_balance.eb['Anthracite'][to_flow] == 11200
+
+
+def test_swap_energy_from_two_products(energy_balance):
+    from_flow = 'Final consumption - industry sector - chemical and petrochemical - energy use'
+    to_flow = 'Gross electricity production - autoproducer electricity only'
+
+    energy_balance.eb['Product X'] = 1000
+
+    # When swapping from two products to one
+    energy_balance.swap_energy(
+        from_flow,
+        to_flow,
+        ['Anthracite', 'Product X'], ['Coking coal']
+    )
+
+    assert energy_balance.eb['Coking coal'][from_flow] == 12100
+    assert energy_balance.eb['Anthracite'][from_flow] == 0
+    assert energy_balance.eb['Product X'][from_flow] == 0
+
+    assert energy_balance.eb['Coking coal'][to_flow] == 2800
+    assert energy_balance.eb['Anthracite'][to_flow] == 11200
+    assert energy_balance.eb['Product X'][to_flow] == 2000
+
+
+def test_swap_energy_with_deficit(energy_balance):
+    from_flow = 'Gross electricity production - autoproducer electricity only'
+    to_flow = 'Final consumption - industry sector - chemical and petrochemical - energy use'
+
+    # Trying to swap 10000 Anth for Coal when there is only 9900 Coal available
+    energy_balance.swap_energy(
+        from_flow,
+        to_flow,
+        ['Anthracite'],['Coking coal']
+    )
+
+    # Should only swap the 9900, 100 Anthracite remains
+    assert energy_balance.eb['Coking coal'][from_flow] == 14900
+    assert energy_balance.eb['Anthracite'][from_flow] == 100
+
+    assert energy_balance.eb['Coking coal'][to_flow] == 0
+    assert energy_balance.eb['Anthracite'][to_flow] == 11100
+
+
+def test_swap_energy_with_deficit_and_backup_flow(energy_balance):
+    from_flow = 'Gross electricity production - autoproducer electricity only'
+    to_flow = 'Final consumption - industry sector - chemical and petrochemical - energy use'
+    backup_flow = 'Some other flow'
+
+    energy_balance.add_row_with_energy(backup_flow, {'Coking coal': 900}, total=False)
+
+    # Trying to swap 10000 Anth for Coal when there is only 9900 Coal available
+    energy_balance.swap_energy(
+        from_flow,
+        to_flow,
+        ['Anthracite'],['Coking coal'],
+        backup_flow=backup_flow
+    )
+
+    assert energy_balance.eb['Coking coal'][from_flow] == 15000
+    assert energy_balance.eb['Anthracite'][from_flow] == 0
+
+    assert energy_balance.eb['Coking coal'][to_flow] == 0
+    assert energy_balance.eb['Anthracite'][to_flow] == 11100
+
+    # And the remaining 100 should be swapped with the backup flow
+    assert energy_balance.eb['Coking coal'][backup_flow] == 800
+    assert energy_balance.eb['Anthracite'][backup_flow] == 100
+
+def test_swap_energy_with_deficit_and_backup_flow_that_has_defict(energy_balance):
+    from_flow = 'Gross electricity production - autoproducer electricity only'
+    to_flow = 'Final consumption - industry sector - chemical and petrochemical - energy use'
+    backup_flow = 'Some other flow'
+
+    energy_balance.add_row_with_energy(backup_flow, {'Coking coal': 50}, total=False)
+
+    # Trying to swap 10000 Anth for Coal when there is only 9900 Coal available in to_flow,
+    # and only 50 in backup
+    energy_balance.swap_energy(
+        from_flow,
+        to_flow,
+        ['Anthracite'],['Coking coal'],
+        backup_flow=backup_flow
+    )
+
+    assert energy_balance.eb['Coking coal'][from_flow] == 14950
+    assert energy_balance.eb['Anthracite'][from_flow] == 50
+
+    assert energy_balance.eb['Coking coal'][to_flow] == 0
+    assert energy_balance.eb['Anthracite'][to_flow] == 11100
+
+    # And the remaining 100 should be swapped with the backup flow
+    assert energy_balance.eb['Coking coal'][backup_flow] == 0
+    assert energy_balance.eb['Anthracite'][backup_flow] == 50

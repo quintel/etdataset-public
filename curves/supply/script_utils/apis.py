@@ -63,53 +63,81 @@ class WeatherXAPI():
 
 class EtlocalAPI():
     BASE_URL = 'https://data.energytransitionmodel.com/'
+    
     SOLAR_PV_KEYS = [
         'input_households_solar_pv_demand',
         'input_buildings_solar_pv_demand',
         'input_energy_power_solar_pv_solar_radiation_production'
     ]
+    SOLAR_PV_FLH_KEY ='input_solar_panels_roofs_and_parks_full_load_hours'
+
+    SOLAR_THERMAL_KEYS = [
+        'input_energy_heat_solar_thermal_production'
+    ]
+    SOLAR_THERMAL_FLH_KEY ='energy_heat_solar_thermal_full_load_hours'
+    
     WIND_KEYS = [
        'input_energy_power_wind_turbine_inland_production',
        'input_energy_power_wind_turbine_coastal_production'
     ]
+    
+    WIND_OFFSHORE_KEYS = [
+       'input_energy_power_wind_turbine_offshore_production'
+    ]
+    WIND_OFFSHORE_FLH_KEY ='energy_power_wind_turbine_offshore_full_load_hours'
+    
+    WIND_ONSHORE_KEYS = [
+       'input_energy_power_wind_turbine_inland_production'
+    ]
+    WIND_ONSHORE_FLH_KEY ='energy_power_wind_turbine_inland_full_load_hours'
+    
+    WIND_COASTAL_KEYS = [
+       'input_energy_power_wind_turbine_coastal_production'
+    ]
+    WIND_COASTAL_FLH_KEY ='energy_power_wind_turbine_coastal_full_load_hours'
 
-    def __init__(self
-    ):
+    def __init__(self):
         '''Crappy class to get some data from the DatasetManager'''
 
-    def get_solar_pv(self, area):
-        '''Dit is echt heel omslachtig, excuus, maar er ligt een plan om de API aan te passen! '''
-        area_id = self.get_area_id(area.split('_')[0])
+    def get_value(self, area, key, extra_key=None):
+        '''
+        Get the value for the key or keys for the given area
 
-        response = requests.get(f'{self.BASE_URL}/api/v1/exports/{area_id}')
-
-        if response.ok:
-            data = response.json()[0]
-            return sum((data[key] for key in self.SOLAR_PV_KEYS))
-
-        raise APIError(f'Etlocal returned an error: {response.status_code}, {response.json()}')
-
-    def get_wind_production(self, area):
-        area_id = self.get_area_id(area.split('_')[0])
-
-        response = requests.get(f'{self.BASE_URL}/api/v1/exports/{area_id}')
+        Params:
+            area(str):          The ETLocal area key
+            key(str|list[str]): The ETLocal key or keys to get the value from. If a list
+                                is given, the values are summed
+        '''
+        response = requests.get(f'{self.BASE_URL}/api/v1/exports/{area}')
 
         if response.ok:
             data = response.json()[0]
-            return sum((data[key] for key in self.WIND_KEYS))
+            if isinstance(key, list):
+                main_value = sum((data[single_key] for single_key in key))
+            else:
+                main_value = data[key]
+
+            return main_value, data.get(extra_key, None) if extra_key else main_value
 
         raise APIError(f'Etlocal returned an error: {response.status_code}, {response.json()}')
 
-    def get_area_id(self, area_geo_code):
-        '''Get the dataset id of the area'''
-        response = requests.get(f'{self.BASE_URL}/datasets/{area_geo_code}.json')
-        if response.ok:
-            if response.json():
-                return response.json()['id']
+    def get_solar_pv(self, area, get_flh=False):
+        return self.get_value(area, self.SOLAR_PV_KEYS, extra_key=self.SOLAR_PV_FLH_KEY if get_flh else None)
 
-            raise APIError(f'Could not get information from Etlocal about {area_geo_code}')
+    def get_solar_thermal(self, area, get_flh=False):
+        return self.get_value(area, self.SOLAR_THERMAL_KEYS, extra_key=self.SOLAR_THERMAL_FLH_KEY if get_flh else None)
 
-        raise APIError(f'Etlocal returned an error: {response.status_code}, {response.json()}')
+    def get_wind_coastal(self, area, get_flh=False):
+        return self.get_value(area, self.WIND_COASTAL_KEYS, extra_key=self.WIND_COASTAL_FLH_KEY if get_flh else None)
+
+    def get_wind_offshore(self, area, get_flh=False):
+        return self.get_value(area, self.WIND_OFFSHORE_KEYS, extra_key=self.WIND_OFFSHORE_FLH_KEY if get_flh else None)
+
+    def get_wind_onshore(self, area, get_flh=False):
+        return self.get_value(area, self.WIND_ONSHORE_KEYS, extra_key=self.WIND_ONSHORE_FLH_KEY if get_flh else None)
+
+    def get_wind_production(self, area, get_flh=False):
+        return self.get_value(area, self.WIND_KEYS)
 
 class APIError(BaseException):
     ''' Api error'''

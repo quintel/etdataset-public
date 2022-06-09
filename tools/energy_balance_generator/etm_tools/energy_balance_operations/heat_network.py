@@ -16,12 +16,12 @@ class HeatNetworks():
             producer (dict[str,str]): A producer as listed in the heaters_and_chp config
             heat (float):             Amount of heat produced in TJ
         '''
-        if producer['network'] == 'residential':
+        if producer.network == 'residential':
             self.residential_network.add(heat)
-        elif producer['network'] == 'industrial':
+        elif producer.network == 'industrial':
             self.industrial_network.add(heat)
         else:
-            self.unassigned_producers.append(producer['name'])
+            self.unassigned_producers.append(producer)
             self.unassigned_heat += heat
 
 

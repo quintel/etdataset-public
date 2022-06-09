@@ -19,9 +19,9 @@ def test_translation():
     assert flow_tr[list(flow_tr.keys())[1]]  == 'Final demand - energy only'
 
     # Get all keys
-    assert 'coal' in tr.unique('Product names')
-    assert 'natural gas with kerosene' in tr.unique('Product names')
-    assert len(tr.unique('Product names')) == 2
+    assert 'coal' in tr.unique('Product', 'names')
+    assert 'natural gas with kerosene' in tr.unique('Product', 'names')
+    assert len(tr.unique('Product', 'names')) == 2
 
 
 def test_translation_from_config():

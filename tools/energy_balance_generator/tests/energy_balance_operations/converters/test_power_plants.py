@@ -95,8 +95,8 @@ def test_full_load_hours(energy_balance, plants):
     ready_energy_balance_for_coal_conversions(energy_balance)
     conv = FullLoadHoursCalculator.TJ_TO_MWH
 
-    # Give each plant a capacity of 300
-    plants['net_max_generating_capacity_MW', 'X'] = 300
+    # Give each plant a capacity of 3000
+    plants['net_max_generating_capacity_MW', 'X'] = 3000
 
     # Grab the plant share we are currently testing for
     test_share = plants['input_share', 'X']['Nice coal plant']
@@ -107,6 +107,6 @@ def test_full_load_hours(energy_balance, plants):
 
     ppc.conversion('X', plants, flh_calc=flh_calc)
 
-    assert flh_calc.full_load_hours['Nice coal plant'] == (test_share * 100 * conv)
+    assert flh_calc.full_load_hours['Nice coal plant'] == (test_share * 10 * conv)
     assert 'Other coal plant' in flh_calc.full_load_hours
 
