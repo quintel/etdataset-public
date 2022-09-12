@@ -9,7 +9,7 @@ Once you have finished your dataset, it is important to test if the ETM is able 
 
 ## Getting started with testing
 
-1. Import all relevant files in the `data/country/year/output` folders of ETDataset in ETSource. This can be done by running `bundle exec rake import`, or `rake import DATASET=nl` in ETSource. Replace `nl` with the country you want to import.
+1. Import all relevant files in the `data/country/year/output` folders of ETDataset in ETSource. This can be done by running `bundle exec rake import`, or `bundle exec rake import DATASET=nl` in ETSource. Replace `nl` with the country you want to import.
 
 
 ## Testing with Atlas
