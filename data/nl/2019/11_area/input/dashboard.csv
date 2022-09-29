@@ -31,7 +31,7 @@ has_aggregated_chemical_industry,false,
 has_other_emissions_section,true,
 areable_land,18457,Bevolking; kerncijfers (CBS; https://opendata.cbs.nl/statline/#/CBS/nl/dataset/70072ned/table?dl=52965
 coast_line,451,The World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/nl.html)
-offshore_ccs_potential_mt_per_year,41.95,See etdataset/source_analyses/eu/2015/11_area/11_ccs_offshore_storage_potential_per_year.xls
+offshore_ccs_potential_mt_per_year,65,See etdataset/source_analyses/nl/2019/11_area/11_area_source_analysis_2019.xlsx
 flh_solar_pv_solar_radiation_max,1361.35634547,
 total_land_area,33671,Bevolking; kerncijfers (CBS; https://opendata.cbs.nl/statline/#/CBS/nl/dataset/70072ned/table?dl=52965
 number_of_inhabitants,17282163,Bevolking; kerncijfers (CBS; https://opendata.cbs.nl/statline/#/CBS/nl/dataset/70072ned/table?dl=52965
