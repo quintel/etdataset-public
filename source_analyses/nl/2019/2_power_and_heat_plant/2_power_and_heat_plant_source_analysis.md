@@ -94,8 +94,8 @@ There is a large heat deficit for industry. After correcting a mistake in the PP
 
 | CHP | FLH CHP analysis | FLH new | Installed heat cap CHP analysis (MW) | Installed heat cap new (MW) |
 | :-- | :--------------- | ------------------: |  ------------------: | ------------------: |
-| Main activity Gas CC CHP | 4975  | 4975 | 2499 | 657 | 
-| Industry and Energy inustry Gas CC CHP | 1750 | 3684 | 1229 | 3071 
+| Main activity Gas CC CHP | 4975  | 4975 | 2499 | 0 | 
+| Industry and Energy industry Gas CC CHP | 1750 | 3912 | 1229 | 3728 
 
 The 100% shift of Main activity gas heater to industry backup heater results in no significant remaining heat deficit, and the following changes on top of the ones listed above:
 

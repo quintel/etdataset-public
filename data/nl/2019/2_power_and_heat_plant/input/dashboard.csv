@@ -82,7 +82,7 @@ hp_eff_coal_industry,0.72,See node source analysis of industry_heat_burner_coal
 hp_eff_oil_industry,0.966,Tweaked for better results on 'Results by Fuel'
 pp_share_coal_heater,0,No shift required
 pp_share_oil_heater,0,No shift required
-pp_share_gas_chp_cc,0.22418,optimized to minimaldeficits
+pp_share_gas_chp_cc,0,Shifted all to industry
 pp_share_gas_heater,0,Shifted all to industry.
 pp_demand_hydrogen_smr,0,no hydrogen production
 pp_demand_hydrogen_smr_ccs,0,no hydrogen production
