@@ -19,6 +19,6 @@ python_version = "3.9"
 
 [scripts]
 tests = "python -m pytest"
-conversions = "python scripts/convert_nrg_bal_EUROSTAT_to_ETM.py"
+conversions = "python scripts/convert_energy_balance.py"
 source_analyses = 'python scripts/run_all_source_analyses.py'
 export = 'python scripts/export.py'

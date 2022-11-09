@@ -1,10 +1,7 @@
-# All products and flows that should appear in the Energy Balance. See below for
-# other types of energy balance type files, like the network gas commodity balance.
-# You can add other types of energy balances here as well
+# All products and flows that should appear in the energy balance
 
-energy_balance:
+world:
   unit: TJ
-  eurostat_code: NRG_BAL_C
   products:
     - Total
     #C0000X0350-0370
@@ -109,11 +106,11 @@ energy_balance:
     - Transformation input - gas works - energy use
     - Transformation input - refineries and petrochemical industry - energy use
     - Transformation input - refineries and petrochemical industry - refinery intake - energy use
-    - Transformation input - refineries and petrochemical industry - backflows from petrochemical industry - energy use
     - Transformation input - refineries and petrochemical industry - products transferred - energy use
     - Transformation input - refineries and petrochemical industry - interproduct transfers - energy use
     - Transformation input - refineries and petrochemical industry - direct use - energy use
     - Transformation input - refineries and petrochemical industry - petrochemical industry intake - energy use
+    - Transformation input - refineries and petrochemical industry - petrochemical plants - energy use
     - Transformation input - patent fuel plants - energy use
     - Transformation input - brown coal briquettes and peat briquettes plants - energy use
     - Transformation input - coal liquefaction plants - energy use
@@ -137,13 +134,11 @@ energy_balance:
     - Transformation output - coke ovens
     - Transformation output - blast furnaces
     - Transformation output - gas works
+    - Transformation output - refineries and petrochemical industry - petrochemical plants
     - Transformation output - refineries and petrochemical industry
     - Transformation output - refineries and petrochemical industry - refinery output
-    - Transformation output - refineries and petrochemical industry - backflows
     - Transformation output - refineries and petrochemical industry - products transferred
     - Transformation output - refineries and petrochemical industry - interproduct transfers
-    - Transformation output - refineries and petrochemical industry - primary product receipts
-    - Transformation output - refineries and petrochemical industry - petrochemical industry returns
     - Transformation output - patent fuel plants
     - Transformation output - brown coal briquettes and peat briquettes plants
     - Transformation output - coal liquefaction plants
@@ -206,6 +201,14 @@ energy_balance:
     - Final consumption - other sectors - agriculture and forestry - energy use
     - Final consumption - other sectors - fishing - energy use
     - Final consumption - other sectors - not elsewhere specified - energy use
+    - Final consumption - industry sector - metal aluminium - energy use
+    - Final consumption - industry sector - chemical fertilizers - energy use
+    - Final consumption - industry sector - metal other - energy use
+    - Final consumption - industry sector - chemical other - energy use
+    - Final consumption - industry sector - other - non-energy use
+    - Final consumption - industry sector - information and communication - energy use
+    - Final consumption - industry sector - chemical fertilizers - non-energy use
+    - Final consumption - industry sector - chemical other - non-energy use
     - Statistical differences
     - Gross electricity production
     - Gross electricity production - main activity producer electricity only
@@ -218,91 +221,3 @@ energy_balance:
     - Gross heat production - autoproducer combined heat and power
     - Gross heat production - autoproducer heat only
 
-# For the Oil and petroleum products EB download
-crude_oil:
-  unit: THS_T
-  eurostat_code: NRG_CB_OIL
-  flows:
-    - Final consumption - industry sector - chemical and petrochemical - non-energy use
-    - Final consumption - non-energy use
-  products:
-    #O4000XBIO
-    - Crude oil
-    - Natural gas liquids
-    - Refinery gas
-    - Ethane
-    - Liquefied petroleum gases
-    - Naphtha
-    - Motor gasoline (excluding biofuel portion)
-    - Gasoline-type jet fuel
-    - Kerosene-type jet fuel (excluding biofuel portion)
-    - Other kerosene
-    - Gas oil and diesel oil (excluding biofuel portion)
-    - Fuel oil
-    - White spirit and special boiling point industrial spirits
-    - Lubricants
-    - Paraffin waxes
-    - Petroleum coke
-    - Bitumen
-    - Other oil products
-    - Blended biogasoline
-    - Blended biodiesels
-    - Blended bio jet kerosene
-    - Additives and oxygenates (excluding biofuel portion)
-    - Other hydrocarbons
-
-coal:
-  unit: THS_T
-  eurostat_code: NRG_CB_SFF
-  flows:
-    - Final consumption - industry sector - chemical and petrochemical - non-energy use
-    - Final consumption - non-energy use
-  products:
-    # C0000X0350-0370
-    - Anthracite
-    - Coking coal
-    - Other bituminous coal
-    - Sub-bituminous coal
-    - Lignite
-    - Patent fuel
-    - Coke oven coke
-    - Gas coke
-    - Coal tar
-    - Brown coal briquettes
-    #P1100
-    #P1200
-    - Oil shale and oil sands
-
-network_gas:
-  unit: TJ_GCV
-  eurostat_code: NRG_CB_GAS
-  flows:
-    - Final consumption - industry sector - chemical and petrochemical - non-energy use
-    - Final consumption - non-energy use
-  products:
-    #C0350-0370
-    - Coke oven gas
-    - Gas works gas
-    - Blast furnace gas
-    - Other recovered gases
-    - Natural gas
-
-# Let's see what to do with this cutie
-chps:
-  unit: MW
-  eurostat_code: NRG_CHP_CPFE
-  flows:
-    - Maximum gross electricity capacity
-    - Maximum gross electricity capacity in CHP mode
-    - Maximum net thermal capacity
-  products: # gen_tech
-    - Total
-    - Steam - backpressure turbine
-    - Steam - condensing turbine (eff ≥ 80%)
-    - Internal Combustion CHP
-    - Gas Turbine CHP
-    - Combined Cycle CHP
-    - Other CHP
-  extra_attributes:
-    efficiencies: ALL+HIGH+LOW
-    plants: CHPU+CHPU_HE+CHPU_LE+CHPU_NOP

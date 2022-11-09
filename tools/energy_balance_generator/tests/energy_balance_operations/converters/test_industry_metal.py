@@ -16,8 +16,6 @@ def ready_energy_balance_for_metal_conversions(eb):
         {'Natural gas': 5000, 'Biogases': 10000})
 
 
-
-
 def test_conversion(energy_balance):
     ready_energy_balance_for_metal_conversions(energy_balance)
 
@@ -26,7 +24,7 @@ def test_conversion(energy_balance):
         'demand_aluminium_network_gas_energetic': 7500,
     }
 
-    IndustryMetalConverter.convert(energy_balance, **inputs)
+    IndustryMetalConverter.convert(energy_balance, 'flexible', **inputs)
 
     # New row was created
     assert IndustryMetalConverter.IND_MET_ALU in energy_balance.eb.index

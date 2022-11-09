@@ -1,7 +1,7 @@
 from os import sys, path
 sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
 
-from etm_tools.energy_balance_operations import convert_country
+from etm_tools.energy_balance_operations import Runner
 
 EU27_COUNTRIES_AND_TOTAL = [
   'AT','BE','BG','CY','CZ','DE','DK','EE','ES','FI','FR','EL','HR','HU',
@@ -16,6 +16,23 @@ For countries you can also use the special keyword 'EU28' to run conversions for
 all EU28 countries at once.\033[0m
 '''
 
+# Call the eurostat converters in this order:
+EUROSTAT_CONVERSIONS = [
+    'industry_ict',
+    'industry_metal',
+    'industry_chemical',
+    'power_plants',
+    'chps'
+]
+
+# Call the world converters in this order:
+WORLD_CONVERSIONS = [
+    'split_transformation',
+    'turn_positive',
+    'append_world_chps',
+    'industry_ict'
+]
+
 if __name__ == '__main__':
     if not len(sys.argv) == 3:
         raise SystemExit(HELP)
@@ -28,5 +45,12 @@ if __name__ == '__main__':
 
     for country in countries:
         print(f'Starting country {country}')
-        convert_country(country, download_from_eurostat=True, year=year)
+
+        if country in EU27:
+            runner = Runner.load_from_eurostat(country, year)
+            runner.process(*EUROSTAT_CONVERSIONS)
+        else:
+            runner = Runner.load_from_world_csv(country, year)
+            runner.process(*WORLD_CONVERSIONS)
+
         print(f'{country} done!')

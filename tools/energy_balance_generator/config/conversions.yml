@@ -95,7 +95,10 @@ industry_metal:
 
 # Powerplants have a slightly different structure. The key 'field' is not neccesary here
 power_plants:
-  file: 20220609_input_pp
+  file: conversions_input/input_pp
 
 chps:
-  file: input_chps_2
+  file: conversions_input/input_chps
+
+append_world_chps:
+  file: conversions_input/input_chps_sg

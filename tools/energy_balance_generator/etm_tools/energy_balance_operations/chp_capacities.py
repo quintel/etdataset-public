@@ -1,6 +1,6 @@
 import pandas as pd
 from etm_tools.utils import EurostatAPI
-from etm_tools.energy_balance_operations.input_files import Translation
+from etm_tools.energy_balance_operations.input_files import EBConfig
 
 class CHPCapacities:
     '''
@@ -52,7 +52,7 @@ class CHPCapacities:
 
     @classmethod
     def from_eurostat(cls, country, year, eb_type='energy_balance', use_cols={}):
-        trnsl = Translation.load(eb_type=eb_type)
+        trnsl = EBConfig.load(eb_type=eb_type)
 
         frame = CHPCapacities.read_frame(country, eb_type, year, use_cols)
 

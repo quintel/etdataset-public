@@ -24,7 +24,7 @@ def test_all_keyword():
     assert len(val.keys()) > 1
 
 def test_source_analysis():
-    sa = SourceAnalysis('source_analyses_input/input_industry_metal_aluminium')
+    sa = SourceAnalysis('source_analyses_input/input_industry_metal_aluminium', 2019)
 
     val = sa.get('industry_aluminium_production', 'ES', value='Value')
     assert val == 0.22

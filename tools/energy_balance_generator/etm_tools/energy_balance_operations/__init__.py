@@ -1,68 +1,98 @@
 from pathlib import Path
+import inspect
 
 from etm_tools.utils.conversion_map import ConversionMap
 from .energy_balance import EnergyBalance
-from .converters import (IndustryChemicalConverter, IndustryICTConverter, PowerPlantConverter,
-    IndustryMetalConverter, HeatersAndCHPsConverter)
-from .input_files import load_powerplants, load_heaters
+from .converters import *
+from .input_files import load_powerplants, load_heaters, load_world_chps
 from .chp_capacities import CHPCapacities
 from .chp_producers import CHPProducers
 from .full_load_hours import FullLoadHoursCalculator
 
-OUTPUT_PATH = Path(__file__).parents[2] / 'data' / 'energy_balances'
+OUTPUT_PATH = Path(__file__).parents[2] / 'data' / 'conversions_output'
 
-def convert_country(country_name, path_to_energy_balance=None, download_from_eurostat=False,
-    year=2019):
-    '''
-    Applies all conversions to the specified country. Outputs an energy balance file.
+class Runner():
+    def __init__(self, energy_balance, country, year, mark='eurostat'):
+        self.energy_balance = energy_balance
+        self.year = year
+        self.country = country
+        self.mark = mark
+        self.cm = ConversionMap(year)
+        self.flh_calculator = FullLoadHoursCalculator()
 
-    Params:
-        path_to_energy_balance (str|Path):   optional, the path to the energy balance csv file
-        download_from_eurostat (True|False): If set to True, downloads the energy balance from
-                                             eurostat, instead of reading it directy from a csv
-        year (int):                          optional, what year to download the EB from eurostat
-                                             from
+    def process(self, *methods):
+        '''Call all methods - and then write'''
+        for method in methods:
+            self._call(method)
 
-    Ouput is a new energy balance csv
-    '''
-    if download_from_eurostat:
-        nrg_bal = EnergyBalance.from_eurostat(country_name, year)
-    elif path_to_energy_balance:
-        nrg_bal = EnergyBalance.from_csv(path_to_energy_balance)
-    else:
-        SystemExit('You need to specify either a path to an energy balance, or allow downloading.')
+        self._write()
 
-    cm = ConversionMap()
+    def industry_ict(self):
+        self._run_converter(IndustryICTConverter, **self._inputs())
 
-    ## ORDINARY CONVERTERS ##
-    IndustryICTConverter.convert(nrg_bal, **cm.inputs('industry_ict', country_name))
-    IndustryMetalConverter.convert(nrg_bal, **cm.inputs('industry_metal', country_name))
-    IndustryChemicalConverter.convert(nrg_bal, **cm.inputs('industry_chemical', country_name))
+    def industry_metal(self):
+        self._run_converter(IndustryMetalConverter, **self._inputs())
 
+    def industry_chemical(self):
+        self._run_converter(IndustryChemicalConverter, **self._inputs())
 
-    ## POWERPLANTS ##
-    flh_calculator = FullLoadHoursCalculator()
-    powerplant_path = cm.inputs('power_plants', country_name)['path']
-    PowerPlantConverter.convert(nrg_bal, country_name, plants=load_powerplants(powerplant_path),
-        flh_calc=flh_calculator)
+    def power_plants(self):
+        self._run_converter(
+            PowerPlantConverter,
+            self.country,
+            plants=load_powerplants(self._inputs()['path']),
+            flh_calc=self.flh_calculator
+        )
 
+    def chps(self):
+        '''NOTE: Runs the full CHP module including downloads, Eurostat only'''
+        self._run_converter(
+            HeatersAndCHPsConverter,
+            CHPCapacities.from_eurostat(self.country, self.year, eb_type='chps',
+                use_cols={'lev_efcy': 'Efficiencies', 'plants': 'Plants'}
+            ),
+            CHPProducers.from_csv(self._inputs()['path']),
+            load_heaters(),
+            self.flh_calculator
+        )
 
-    ## CHPS ##
-    HeatersAndCHPsConverter.convert(
-        nrg_bal,
-        CHPCapacities.from_eurostat(country_name, year, eb_type='chps',
-            use_cols={'lev_efcy': 'Efficiencies', 'plants': 'Plants'}
-        ),
-        CHPProducers.from_csv(cm.inputs('chps', country_name)['path']),
-        load_heaters(),
-        flh_calculator
-    )
+    def split_transformation(self):
+        self._run_converter(SplitNegativeConverter, 'Transformation output', 'output', 'input')
 
-    ## FINISH ##
-    year_folder = OUTPUT_PATH / str(year)
-    year_folder.mkdir(exist_ok=True, parents=True)
+    def turn_positive(self):
+        self._run_converter(TurnAllPositive)
 
-    # print(flh_calculator.full_load_hours)
-    flh_calculator.to_csv(year_folder / 'full_load_hours.csv', country_name)
-    nrg_bal.to_csv(year_folder / f'{country_name}.csv')
+    def append_world_chps(self):
+        self._run_converter(AppendCHPs, load_world_chps(self._inputs()['path']))
 
+    def _call(self, method_name):
+        try:
+            getattr(self, method_name)()
+        except AttributeError:
+            raise SystemExit(f'\033[93mConverter {method_name} is unknown.\033[0m')
+
+    def _inputs(self):
+        '''Returns the inputs for the method that called this method'''
+        return self.cm.inputs(inspect.stack()[1][3], self.country)
+
+    def _run_converter(self, converter, *args, **kwargs):
+        converter.convert(self.energy_balance, self.mark, *args, **kwargs)
+
+    def _write(self):
+        year_folder = OUTPUT_PATH / str(self.year)
+        year_folder.mkdir(exist_ok=True, parents=True)
+
+        self.flh_calculator.to_csv(year_folder / 'full_load_hours.csv', self.country)
+        self.energy_balance.to_csv(year_folder / f'{self.country}.csv')
+
+    @classmethod
+    def load_from_eurostat(cls, country, year=2019):
+        return cls(EnergyBalance.from_eurostat(country, year), country, year)
+
+    @classmethod
+    def load_from_csv(cls, country, year=2019, mark='eurostat', path=None):
+        return cls(EnergyBalance.from_csv(path), country, year, mark=mark)
+
+    @classmethod
+    def load_from_world_csv(cls, country, year=2019):
+       return cls(EnergyBalance.from_world_balance_file(country, year), country, year, mark='world')

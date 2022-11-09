@@ -1,7 +1,7 @@
 import requests
 import io
 
-from etm_tools.energy_balance_operations.input_files import Translation
+from etm_tools.energy_balance_operations.input_files import EBConfig
 
 BASE_URL = 'https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/'
 
@@ -25,7 +25,7 @@ class EurostatAPI():
         Returns:
             StringIO object containing the requested csv download from Eurostat
         '''
-        eb_setting = Translation.load(eb_type=csv_type)
+        eb_setting = EBConfig.load(eb_type=csv_type)
 
         return self._handle_response(self._request(
             eb_setting.eurostat_code(),
@@ -52,13 +52,13 @@ class EurostatAPI():
 
     def _create_options(self, eb_setting, csv_type):
         '''Returns the options string'''
-        flows = EurostatAPI.join(eb_setting.unique("Flows", "codes"))
-        products = EurostatAPI.join(eb_setting.unique("Product", "codes"))
+        flows = EurostatAPI.join(eb_setting.all_codes("flows"))
+        products = EurostatAPI.join(eb_setting.all_codes("products"))
 
         if csv_type == 'chps':
             return '.'.join([eb_setting.unit(), flows,
-                EurostatAPI.join(eb_setting.unique("plants", "codes")), products,
-                EurostatAPI.join(eb_setting.unique("efficiencies", "codes"))])
+                EurostatAPI.join(eb_setting.all("plants")), products,
+                EurostatAPI.join(eb_setting.all("efficiencies"))])
 
         return '.'.join([flows, products, eb_setting.unit()])
 

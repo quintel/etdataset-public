@@ -11,6 +11,7 @@ class HeatersAndCHPsConverter(HeatConverter):
     '''
     Note about not taking 'Other' CHPs into account.
     '''
+    MARK = 'eurostat'
 
     # Heat networks consumption
     INDUSTRY_CONSUMPTION = ['Final consumption - industry sector - energy use',

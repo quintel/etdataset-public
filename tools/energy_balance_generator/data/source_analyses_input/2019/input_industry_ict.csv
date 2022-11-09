@@ -28,3 +28,4 @@ SI,demand_ict_electricity_energetic,1260,TJ,2019,Estatimated using nl2019 NACE J
 SK,demand_ict_electricity_energetic,3272,TJ,2019,Estatimated using nl2019 NACE J electricity consumption and Eurostat - Annual enterprise statistics by size class for special aggregates of activities (NACE Rev. 2) - table SBS_SC_SCA_R2
 MT,demand_ict_electricity_energetic,70,TJ,2019,Estatimated using nl2019 NACE J electricity consumption and Eurostat - Annual enterprise statistics by size class for special aggregates of activities (NACE Rev. 2) - table SBS_SC_SCA_R2
 EU27_2020,demand_ict_electricity_energetic,274883,TJ,2019,Sum of EU27 countries
+SG,demand_ict_electricity_energetic,8971.2,TJ,2019,"Based on the SES provided by the Singapore government, T3.2, ""Information and Communication"", 2019 (https://www.ema.gov.sg/Publications_Annual_Reports.aspx)."

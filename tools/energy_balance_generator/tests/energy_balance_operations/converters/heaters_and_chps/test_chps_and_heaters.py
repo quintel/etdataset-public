@@ -66,6 +66,7 @@ def ready_energy_balance_for_coal_conversions(eb):
 
 def test_conversion(energy_balance, chp_capacities, chp_producers):
     ready_energy_balance_for_coal_conversions(energy_balance)
+    mark = 'eurostat'
 
     producers = [
         Producer.from_dict({
@@ -83,7 +84,7 @@ def test_conversion(energy_balance, chp_capacities, chp_producers):
     ]
 
 
-    HeatersAndCHPsConverter.convert(energy_balance, chp_capacities, chp_producers,
+    HeatersAndCHPsConverter.convert(energy_balance, mark, chp_capacities, chp_producers,
         producers, FullLoadHoursCalculator())
 
     # Residential heat final consumption = 18000, industry = 30000.

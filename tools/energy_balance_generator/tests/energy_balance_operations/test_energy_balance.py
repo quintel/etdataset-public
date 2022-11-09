@@ -1,3 +1,5 @@
+from etm_tools.energy_balance_operations.energy_balance import EnergyBalance
+
 # See the conftest.py for the dummy energy_balance:
 #                                                                              Electricity  Coking coal  Anthracite  Total
 # Final consumption - industry sector - chemical and petrochemical - energy use     0       9900         1200        10100
@@ -208,3 +210,22 @@ def test_swap_energy_with_deficit_and_backup_flow_that_has_defict(energy_balance
     # And the remaining 100 should be swapped with the backup flow
     assert energy_balance.eb['Coking coal'][backup_flow] == 0
     assert energy_balance.eb['Anthracite'][backup_flow] == 50
+
+
+def test_negative_products(energy_balance):
+    negative_flow = 'Some flow with negative values'
+    energy_balance.add_row_with_energy(negative_flow, {'Coking coal': -50, 'Anthracite': 20}, total=False)
+
+    neg = energy_balance.all_negative_products(negative_flow)
+    assert 'Coking coal' in neg
+    assert not 'Anthracite' in neg
+    assert neg['Coking coal'] == 50
+
+
+def test_load_from_world_balance():
+    path = 'tests/fixtures/SG.csv'
+
+    eb = EnergyBalance.from_world_balance_file(2019, 'SG', path)
+
+    assert 'Transformation input - electricity and heat generation - energy use' in eb.eb.index
+    assert  eb.all_negative_products('Transformation output - electricity and heat generation - main activity producer electricity only')

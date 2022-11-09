@@ -1,6 +1,7 @@
 import pandas as pd
 import yaml
 
+from .translations import flow_translations, product_translations
 from .plant import Producer
 
 POWERPLANT_COLUMNS = ['input', 'output', 'input_share', 'output_share', 'code',
@@ -55,13 +56,18 @@ def load_chp_efficiencies(path):
 
     return pd.read_csv(path, index_col=['Gen Tech', 'Network'])
 
+def load_world_chps(path):
+    '''
+    Returns a pd.Dataframe from a world_chp input file.
+    '''
+    return pd.read_csv(path, index_col=0)
 
 class InvalidInputFileException(BaseException):
     pass
 
 
-class Translation():
-    '''Translations from and to Eurostat EB codes and (human readable) names'''
+class EBConfig():
+    '''Interface with the EB config files from the config folder'''
 
     def __init__(self, mapping, eb_type='energy_balance'):
         self.mapping = mapping
@@ -70,68 +76,63 @@ class Translation():
         if not eb_type in mapping:
             raise SystemExit(f'Energy balance type {eb_type} was not found in Eurostat config')
 
+    def product_translation(self) -> dict:
+        '''Translate from codes to human readable names. Returns a dict'''
+        try:
+            return self._translate_products()
+        except KeyError as err:
+            self.raise_lost_translation_from_err(err)
 
-    def product_translation(self, direction='to_name'):
-        if direction == 'to_name':
-            return self._lookup('products')
-        elif direction == 'to_code':
-            return dict((v,k) for k,v in self._lookup('products').items())
+    def _translate_products(self):
+        if self.eb_type == 'world':
+            return product_translations.translate_to('world_code')
 
-        return {}
+        return product_translations.translate_to(
+            'eurostat_code', filters=self.all('products'))
 
+    def flow_translation(self) -> dict:
+        '''Translate from codes to human readable names. Returns a dict'''
+        try:
+            return self._translate_flows()
+        except KeyError as err:
+            self.raise_lost_translation_from_err(err)
 
-    def flow_translation(self, direction='to_name'):
-        if direction == 'to_name':
-            return self._lookup('flows')
-        elif direction == 'to_code':
-            return dict((v,k) for k,v in self._lookup('flows').items())
+    def _translate_flows(self):
+        if self.eb_type == 'world':
+            return flow_translations.translate_to('world_code')
 
-        return {}
+        return flow_translations.translate_to('eurostat_code', filters=self.all('flows'))
 
-
-    def unique(self, field='Product', kind='names'):
+    def all(self, field='products'):
         '''
-        Unique values of a column
+        All values of a column
 
         Params:
-            field (str): Should be one of: Product, Flows or an extra attribute
-            kind (str): Should be one of 'codes', or 'names' (default)
+            field (str): Should be one of: products, flows or an extra attribute
         '''
-        if field == 'Product':
-            return self._lookup_kind('products', kind)
-        elif field == 'Flows':
-            return self._lookup_kind('flows', kind)
-        elif field in self._lookup('extra_attributes'):
-            if kind == 'names':
-                field
+        if field in self._lookup('extra_attributes'):
             return self._lookup('extra_attributes')[field]
 
-        return []
+        return self._lookup(field)
 
+    def all_codes(self, field='products'):
+        if field == 'flows':
+            return self.flow_translation().keys()
+
+        return self.product_translation().keys()
 
     def unit(self):
         return self._lookup('unit')
 
-
     def eurostat_code(self):
         return self._lookup('eurostat_code')
 
-
-    def unique_extra_attributes(self, kind='names'):
+    def unique_extra_attributes(self):
         for field in self._lookup('extra_attributes'):
-            yield self.unique(field, kind)
-
+            yield self._lookup('extra_attributes')[field]
 
     def _lookup(self, key):
         return self.mapping[self.eb_type].get(key, {})
-
-
-    def _lookup_kind(self, key, kind):
-        if kind == 'names':
-            return self._lookup(key).values()
-
-        return self._lookup(key).keys()
-
 
     @classmethod
     def load(cls, path='config/eurostat.yml', eb_type='energy_balance'):
@@ -139,3 +140,13 @@ class Translation():
             doc = yaml.load(f, Loader=yaml.FullLoader)
 
         return cls(doc, eb_type=eb_type)
+
+    @staticmethod
+    def raise_lost_translation_from_err(err):
+        if str(err).startswith("\"["):
+            missing_key = str(err)[1:-14]
+        else:
+            missing_key = str(err)[16:-60]
+        raise InvalidInputFileException(
+            f'The following codes are missing a translation: {missing_key}'
+        ) from err

@@ -7,10 +7,10 @@ from etm_tools.utils.conversion_map import ConversionMap
 
 
 def analyse_country(country, year=2019):
-    IndustryChemicalAnalyser.generate_analyses(country, year)
+    IndustryChemicalAnalyser.generate_analyses(country, year, year)
 
-    cm = ConversionMap(source='source_analyses')
+    cm = ConversionMap(year=year, source='source_analyses')
 
-    FertilizerDemandAnalyser.generate_analyses(country, **cm.inputs('fertilizer_demand', country))
-    NonFerrousMetalsDemandAnalyser.generate_analyses(country, **cm.inputs('non_ferrous_metals_demand', country))
-    SteelDemandAnalyser.generate_analyses(country, **cm.inputs('steel_demand', country))
+    FertilizerDemandAnalyser.generate_analyses(country, year, **cm.inputs('fertilizer_demand', country))
+    NonFerrousMetalsDemandAnalyser.generate_analyses(country, year, **cm.inputs('non_ferrous_metals_demand', country))
+    SteelDemandAnalyser.generate_analyses(country, year, **cm.inputs('steel_demand', country))

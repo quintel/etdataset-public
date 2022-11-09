@@ -1,0 +1,145 @@
+Flow,eurostat_code,world_code,Filter,Comment
+Primary production,PPRD,Production,,
+Recovered and recycled products,RCV_RCY,,,????
+Imports,IMP,Imports,,
+Exports,EXP,Exports,,
+Change in stock,STK_CHG,Stock changes,,
+Gross available energy,GAE,,,????
+International maritime bunkers,INTMARB,International marine bunkers,,
+Gross inland consumption,GIC,,,????
+International aviation,INTAVI,International aviation bunkers,,
+Total energy supply,NRGSUP,Total energy supply,,
+Gross inland consumption (Europe 2020-2030),GIC2020-2030,,,????
+Primary energy consumption (Europe 2020-2030),PEC2020-2030,,,????
+Final energy consumption (Europe 2020-2030),FEC2020-2030,,,????
+Transformation input - energy use,TI_E,,Negative values,
+Transformation input - electricity and heat generation - energy use,TI_EHG_E,,production,Summation
+Transformation input - electricity and heat generation - main activity producer electricity only - energy use,TI_EHG_MAPE_E,,Negative values,
+Transformation input - electricity and heat generation - main activity producer combined heat and power - energy use,TI_EHG_MAPCHP_E,,Negative values,
+Transformation input - electricity and heat generation - main activity producer heat only - energy use,TI_EHG_MAPH_E,,Negative values,
+Transformation input - electricity and heat generation - autoproducer electricity only - energy use,TI_EHG_APE_E,,Negative values,
+Transformation input - electricity and heat generation - autoproducer combined heat and power - energy use,TI_EHG_APCHP_E,,Negative values,
+Transformation input - electricity and heat generation - autoproducer heat only - energy use,TI_EHG_APH_E,,Negative values,
+Transformation input - electricity and heat generation - electrically driven heat pumps,TI_EHG_EDHP,,Negative values,
+Transformation input - electricity and heat generation - electric boilers,TI_EHG_EB,Total energy supply - Transformation processes - Electric boilers,Negative values,
+Transformation input - electricity and heat generation - electricity for pumped storage,TI_EHG_EPS,,????,
+Transformation input - electricity and heat generation - derived heat for electricity production,TI_EHG_DHEP,,Negative values,
+Transformation input - coke ovens - energy use,TI_CO_E,,Negative values,
+Transformation input - blast furnaces - energy use,TI_BF_E,,Negative values,
+Transformation input - gas works - energy use,TI_GW_E,,Negative values,
+Transformation input - refineries and petrochemical industry - energy use,TI_RPI_E,,Summation,????
+Transformation input - refineries and petrochemical industry - refinery intake - energy use,TI_RPI_RI_E,,Negative values,
+Transformation input - refineries and petrochemical industry - backflows from petrochemical industry - energy use,TI_RPI_BPI_E,,Negative values,
+Transformation input - refineries and petrochemical industry - products transferred - energy use,TI_RPI_PT_E,,,????
+Transformation input - refineries and petrochemical industry - interproduct transfers - energy use,TI_RPI_IT_E,,,????
+Transformation input - refineries and petrochemical industry - direct use - energy use,TI_RPI_DU_E,,,????
+Transformation input - refineries and petrochemical industry - petrochemical industry intake - energy use,TI_RPI_PII_E,,,????
+Transformation input - refineries and petrochemical industry - petrochemical plants - energy use,,,,
+Transformation input - patent fuel plants - energy use,TI_PF_E,,Negative values,
+Transformation input - brown coal briquettes and peat briquettes plants - energy use,TI_BKBPB_E,,Negative values,
+Transformation input - coal liquefaction plants - energy use,TI_CL_E,,Negative values,
+Transformation input - for blended natural gas - energy use,TI_BNG_E,,Negative values,
+Transformation input - liquid biofuels blended - energy use,TI_LBB_E,,,????
+Transformation input - charcoal production plants - energy use,TI_CPP_,,,
+Transformation input - gas-to-liquids plants - energy use,TI_GTL_,,,
+Transformation input - not elsewhere specified - energy use,TI_NSP_,,,
+Transformation output,TO,Total energy supply - Transformation processes,Positive values,
+Transformation output - electricity and heat generation,TO_EHG,Total energy supply - Transformation processes - Main activity producer electricity plants;Total energy supply - Transformation processes - Main activity producer CHP plants;Total energy supply - Transformation processes - Main activity producer heat plants;Total energy supply - Transformation processes - Autoproducer electricity plants;Total energy supply - Transformation processes - Autoproducer CHP plants;Total energy supply - Transformation processes - Autoproducer heat plants;Total energy supply - Transformation processes - Heat pumps;Total energy supply - Transformation processes - Electric boilers;Total energy supply - Energy industry own use - Pumped storage plants;Total energy supply - Transformation processes - Chemical heat for electricity production,Summation,
+Transformation output - electricity and heat generation - main activity producer electricity only,TO_EHG_MAPE,Total energy supply - Transformation processes - Main activity producer electricity plants,Positive values,
+Transformation output - electricity and heat generation - main activity producer combined heat and power,TO_EHG_MAPCHP,Total energy supply - Transformation processes - Main activity producer CHP plants,Positive values,
+Transformation output - electricity and heat generation - main activity producer heat only,TO_EHG_MAPH,Total energy supply - Transformation processes - Main activity producer heat plants,Positive values,
+Transformation output - electricity and heat generation - autoproducer electricity only,TO_EHG_APE,Total energy supply - Transformation processes - Autoproducer electricity plants,Positive values,
+Transformation output - electricity and heat generation - autoproducer combined heat and power,TO_EHG_APCHP,Total energy supply - Transformation processes - Autoproducer CHP plants,Positive values,
+Transformation output - electricity and heat generation - autoproducer heat only,TO_EHG_APH,Total energy supply - Transformation processes - Autoproducer heat plants,Positive values,
+Transformation output - electricity and heat generation - electrically driven heat pumps,TO_EHG_EDHP,Total energy supply - Transformation processes - Heat pumps,Positive values,
+Transformation output - electricity and heat generation - electric boilers,TO_EHG_EB,Total energy supply - Transformation processes - Electric boilers,Positive values,
+Transformation output - electricity and heat generation - pumped hydro,TO_EHG_PH,Total energy supply - Energy industry own use - Pumped storage plants,Positive values,
+Transformation output - electricity and heat generation - other sources,TO_EHG_OTH,Total energy supply - Transformation processes - Chemical heat for electricity production,Positive values,
+Transformation output - coke ovens,TO_CO,Total energy supply - Transformation processes - Coke ovens,Positive values,
+Transformation output - blast furnaces,TO_BF,Total energy supply - Transformation processes - Blast furnaces,Positive values,
+Transformation output - gas works,TO_GW,Total energy supply - Transformation processes - Gas works,Positive values,
+Transformation output - refineries and petrochemical industry,TO_RPI,,,
+Transformation output - refineries and petrochemical industry - refinery output,TO_RPI_RO,Total energy supply - Transformation processes - Oil refineries,Positive values,
+Transformation output - refineries and petrochemical industry - backflows,TO_RPI_BKFLOW,,Positive values,
+Transformation output - refineries and petrochemical industry - petrochemical plants,,Total energy supply - Transformation processes - Petrochemical plants,,
+Transformation output - refineries and petrochemical industry - products transferred,TO_RPI_PT,,,????
+Transformation output - refineries and petrochemical industry - interproduct transfers,TO_RPI_IT,,,????
+Transformation output - refineries and petrochemical industry - primary product receipts,TO_RPI_PPR,,,????
+Transformation output - refineries and petrochemical industry - petrochemical industry returns,TO_RPI_PIR,,,????
+Transformation output - patent fuel plants,TO_PF,Total energy supply - Transformation processes - Patent fuel plants,Positive values,
+Transformation output - brown coal briquettes and peat briquettes plants,TO_BKBPB,Total energy supply - Transformation processes - BKB/peat briquette plants,Positive values,
+Transformation output - coal liquefaction plants,TO_CL,Total energy supply - Transformation processes - Coal liquefaction plants,Positive values,
+Transformation output - blended in natural gas,TO_BNG,Total energy supply - Transformation processes - For blended natural gas,Positive values,
+Transformation output - liquid biofuels blended,TO_LBB,,,????
+Transformation output - charcoal production plants,TO_CPP,Total energy supply - Transformation processes - Charcoal production plants,Positive values,
+Transformation output - gas-to-liquids plants,TO_GTL,Total energy supply - Transformation processes - Gas-to-liquids (GTL) plants,Positive values,
+Transformation output - not elsewhere specified,TO_NSP,Total energy supply - Transformation processes - Non-specified (transformation),Positive values,
+Energy sector - energy use,NRG_E,,Summation,????
+Energy sector - electricity and heat generation - energy use,NRG_EHG_E,,,????
+Energy sector - coal mines - energy use,NRG_CM_E,Total energy supply - Energy industry own use - Coal mines,,
+Energy sector - oil and natural gas extraction plants - energy use,NRG_OIL_NG_E,Total energy supply - Energy industry own use - Oil and gas extraction,,
+Energy sector - patent fuel plants - energy use,NRG_PF_E,Total energy supply - Energy industry own use - Patent fuel plants,,
+Energy sector - coke ovens - energy use,NRG_CO_E,Total energy supply - Energy industry own use - Coke ovens,,
+Energy sector - brown coal briquettes and peat briquettes plants - energy use,NRG_BKBPB_E,Total energy supply - Energy industry own use - BKB/peat briquette plants,,
+Energy sector - gas works - energy use,NRG_GW_E,Total energy supply - Energy industry own use - Gas works,,
+Energy sector - blast furnaces - energy use,NRG_BF_E,Total energy supply - Energy industry own use - Blast furnaces,,
+Energy sector - petroleum refineries (oil refineries) - energy use,NRG_PR_E,Total energy supply - Energy industry own use - Oil refineries,,
+Energy sector - nuclear industry - energy use,NRG_NI_E,Total energy supply - Energy industry own use - Nuclear industry,,
+Energy sector - coal liquefaction plants - energy use,NRG_CL_E,Total energy supply - Energy industry own use - Coal liquefaction plants,,
+Energy sector - liquefaction and regasification plants (LNG) - energy use,NRG_LNG_E,Total energy supply - Energy industry own use - Liquefaction (LNG) / regasification plants,,
+Energy sector - gasification plants for biogas - energy use,NRG_BIOG_E,Total energy supply - Energy industry own use - Gasification plants for biogases,,
+Energy sector - gas-to-liquids plants - energy use,NRG_GTL_E,Total energy supply - Energy industry own use - Gas-to-liquids (GTL) plants,,
+Energy sector - charcoal production plants - energy use,NRG_CPP_E,Total energy supply - Energy industry own use - Charcoal production plants,,
+Energy sector - not elsewhere specified - energy use,NRG_NSP_E,Total energy supply - Energy industry own use - Non-specified (energy),,
+Distribution losses,DL,Total energy supply - Losses,,
+Available for final consumption,AFC,,,????
+Final consumption - non-energy use,FC_NE,Total energy supply - Total final consumption - Non-energy use,,
+"Transformation input, energy sector and final consumption in industry sector - non-energy use",TI_NRG_FC_IND_NE,Total energy supply - Total final consumption - Non-energy use industry/transformation/energy,,
+Transformation input - non-energy use,TI_NE,,,????
+Energy sector - non-energy use,NRG_NE,Total energy supply - Total final consumption - Non-energy use,,????
+Final consumption - industry sector - non-energy use,FC_IND_NE,Total energy supply - Total final consumption - Memo: Non-energy use in industry,,
+Final consumption - transport sector - non-energy use,FC_TRA_NE,Total energy supply - Total final consumption - Non-energy use in transport,,
+Final consumption - other sectors - non-energy use,FC_OTH_NE,Total energy supply - Total final consumption - Non-energy use in other,,
+Final consumption - energy use,FC_E,,Summation,????
+Final consumption - industry sector - energy use,FC_IND_E,Total energy supply - Total final consumption - Industry,,
+Final consumption - industry sector - iron and steel - energy use,FC_IND_IS_E,Total energy supply - Total final consumption - Iron and steel,,
+Final consumption - industry sector - chemical and petrochemical - energy use,FC_IND_CPC_E,Total energy supply - Total final consumption - Chemical and petrochemical,,
+Final consumption - industry sector - non-ferrous metals - energy use,FC_IND_NFM_E,Total energy supply - Total final consumption - Non-ferrous metals,,
+Final consumption - industry sector - non-metallic minerals - energy use,FC_IND_NMM_E,Total energy supply - Total final consumption - Non-metallic minerals,,
+Final consumption - industry sector - transport equipment - energy use,FC_IND_TE_E,Total energy supply - Total final consumption - Transport equipment,,
+Final consumption - industry sector - machinery - energy use,FC_IND_MAC_E,Total energy supply - Total final consumption - Machinery,,
+Final consumption - industry sector - mining and quarrying - energy use,FC_IND_MQ_E,Total energy supply - Total final consumption - Mining and quarrying,,
+"Final consumption - industry sector - food, beverages and tobacco - energy use",FC_IND_FBT_E,Total energy supply - Total final consumption - Food and tobacco,,
+"Final consumption - industry sector - paper, pulp and printing - energy use",FC_IND_PPP_E,,,????
+Final consumption - industry sector - wood and wood products - energy use,FC_IND_WP_E,Total energy supply - Total final consumption - Wood and wood products,,
+Final consumption - industry sector - construction - energy use,FC_IND_CON_E,Total energy supply - Total final consumption - Construction,,
+Final consumption - industry sector - textile and leather - energy use,FC_IND_TL_E,Total energy supply - Total final consumption - Textile and leather,,
+Final consumption - industry sector - not elsewhere specified - energy use,FC_IND_NSP_E,Total energy supply - Total final consumption - Industry not elsewhere specified,,
+Final consumption - transport sector - energy use,FC_TRA_E,Total energy supply - Total final consumption - Transport,,
+Final consumption - transport sector - rail - energy use,FC_TRA_RAIL_E,Total energy supply - Total final consumption - Rail,,
+Final consumption - transport sector - road - energy use,FC_TRA_ROAD_E,Total energy supply - Total final consumption - Road,,
+Final consumption - transport sector - domestic aviation - energy use,FC_TRA_DAVI_E,Total energy supply - Total final consumption - Domestic aviation,,
+Final consumption - transport sector - domestic navigation - energy use,FC_TRA_DNAVI_E,Total energy supply - Total final consumption - Domestic navigation,,
+Final consumption - transport sector - pipeline transport - energy use,FC_TRA_PIPE_E,Total energy supply - Total final consumption - Pipeline transport,,
+Final consumption - transport sector - not elsewhere specified - energy use,FC_TRA_NSP_E,Total energy supply - Total final consumption - Transport not elsewhere specified,,
+Final consumption - other sectors - energy use,FC_OTH_E,Total energy supply - Total final consumption - Commercial and public services;Total energy supply - Total final consumption - Residential;Total energy supply - Total final consumption - Agriculture/forestry;Total energy supply - Total final consumption - Fishing;Total energy supply - Total final consumption - Final consumption not elsewhere specified,Summation,
+Final consumption - other sectors - commercial and public services - energy use,FC_OTH_CP_E,Total energy supply - Total final consumption - Commercial and public services,,
+Final consumption - other sectors - households - energy use,FC_OTH_HH_E,Total energy supply - Total final consumption - Residential,,
+Final consumption - other sectors - agriculture and forestry - energy use,FC_OTH_AF_E,Total energy supply - Total final consumption - Agriculture/forestry,,
+Final consumption - other sectors - fishing - energy use,FC_OTH_FISH_E,Total energy supply - Total final consumption - Fishing,,
+Final consumption - other sectors - not elsewhere specified - energy use,FC_OTH_NSP_E,Total energy supply - Total final consumption - Final consumption not elsewhere specified,,
+Statistical differences,STATDIFF,Total energy supply - Statistical differences,,
+Gross electricity production,GEP,Electricity output (GWh),,
+Gross electricity production - main activity producer electricity only,GEP_MAPE,Electricity output (GWh) - Electricity output (GWh)-main activity producer electricity plants,,
+Gross electricity production - main activity producer combined heat and power,GEP_MAPCHP,Electricity output (GWh) - Electricity output (GWh)-main activity producer CHP plants,,
+Gross electricity production - autoproducer electricity only,GEP_APE,Electricity output (GWh) - Electricity output (GWh)-autoproducer electricity plants,,
+Gross electricity production - autoproducer combined heat and power,GEP_APCHP,Electricity output (GWh) - Electricity output (GWh)-autoproducer CHP plants,,
+Gross heat production,GHP,Heat output,,
+Gross heat production - main activity producer combined heat and power,GHP_MAPCHP,Heat output - Heat output-main activity producer CHP plants,,
+Gross heat production - main activity producer heat only,GHP_MAPH,Heat output - Heat output-main activity producer heat plants,,
+Gross heat production - autoproducer combined heat and power,GHP_APCHP,Heat output - Heat output-autoproducer CHP plants,,
+Gross heat production - autoproducer heat only,GHP_APH,Heat output - Heat output-autoproducer heat plants,,
+Final consumption - industry sector - chemical and petrochemical - non-energy use,FC_IND_CPC_NE,,Summation,????
+Maximum gross electricity capacity,MGEC,,,????
+Maximum gross electricity capacity in CHP mode,MGEC_CHPM,,,????
+Maximum net thermal capacity,MNTC,,,????

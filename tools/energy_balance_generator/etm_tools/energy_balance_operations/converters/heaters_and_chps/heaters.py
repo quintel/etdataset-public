@@ -14,3 +14,10 @@ class HeatersConverter(HeatConverter):
             heat_output = self.process_producer(producer, is_chp=False)
             heat_networks.add_producer(producer, heat_output)
 
+    @classmethod
+    def convert(cls, eb, *args, **kwargs):
+        '''
+        NOTE: We aren't using MARK in this subconverter.
+        When we start doing so, remove this method.
+        '''
+        return cls(eb).conversion(*args, **kwargs)
