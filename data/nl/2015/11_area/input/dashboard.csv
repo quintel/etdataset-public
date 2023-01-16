@@ -167,6 +167,9 @@ heat_primary_pipelines_investment_costs_per_kw,200,Vesta MAIS (PBL). See https:/
 heat_yearly_indoor_infrastructure_maintenance_costs_factor,0.025,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
 heat_yearly_outdoor_infrastructure_maintenance_costs_factor,0.03,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
 number_of_cars,7979083,8_transport_source_analysis
+number_of_busses,9600,CBS; 'Bus'; https://opendata.cbs.nl/statline/#/CBS/nl/dataset/82472NED/table?ts=1672738295121
+number_of_trucks,67526,CBS; 'Vrachtauto (excl. trekker voor oplegger); A-U Alle economische activiteiten'; https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83528NED/table?ts=1672738432552
+number_of_vans,815000,CBS; 'Bestelauto; https://opendata.cbs.nl/statline/#/CBS/nl/dataset/82472NED/table?ts=1672738295121
 electric_vehicle_profile_1_share,1,Assumed that at present all EV charge according to the Movares Overal laden profile
 electric_vehicle_profile_2_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
 electric_vehicle_profile_3_share,0,

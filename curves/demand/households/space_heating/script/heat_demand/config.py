@@ -8,6 +8,14 @@ class InsulationConfig():
     J_TO_KWH = 2.77778e-7
     CM2_TO_M2 = 1e-4
 
+    # Previously used R-values [m^2 K / W]
+    # R_VALUES = {
+    #     "terraced_houses": {"low": 0.72608224, "medium": 0.95303516, "high": 2.20833951},
+    #     "corner_houses": {"low": 0.86234292, "medium": 1.05413341, "high": 2.73029519},
+    #     "semi_detached_houses": {"low": 0.92629934, "medium": 1.20779267, "high": 4.346},
+    #     "apartments": {"low": 0.96937942, "medium": 2.95000949, "high": 2.95000949},
+    #     "detached_houses": {"low": 1.02227109, "medium": 1.2962618, "high": 3.10765405}
+    # }
     # ECN R-values [m^2 K / W]
     R_VALUES = {
         "terraced_houses": {"low": 0.306, "medium": 1.522, "high": 4.236},

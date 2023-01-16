@@ -35,7 +35,6 @@ HOURS_SHIFTED = {
 }
 
 INTERPOLATION_STEPS = 10  # use intervals of 6 minutes when shifting curves
-np.random.seed(1337)  # random seed
 
 
 def generate_deviations(size, scale):
@@ -48,6 +47,8 @@ def generate_deviations(size, scale):
     E.g. '15' means that the demand profile will be shifted
     forward 1.5 hours, '-10' means it will be shifted backwards 1 hour
     '''
+    # set a random seed (and initialise the generator)
+    np.random.seed(1337)
     # generate X random numbers with normal distribution
     random_numbers = np.random.normal(loc=0.0, scale=scale, size=size)
     # round by 1 decimal point

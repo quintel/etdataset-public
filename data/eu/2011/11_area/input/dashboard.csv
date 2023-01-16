@@ -167,6 +167,9 @@ heat_primary_pipelines_investment_costs_per_kw,200,Vesta MAIS (PBL). See https:/
 heat_yearly_indoor_infrastructure_maintenance_costs_factor,0.025,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
 heat_yearly_outdoor_infrastructure_maintenance_costs_factor,0.03,Vesta MAIS (PBL). See https://github.com/quintel/documentation/blob/master/general/heat_infrastructure_costs.md
 number_of_cars,243752170,EUROSTAT (see source_analyses/eu/2013/8_transport)
+number_of_busses,859754,Eurostat (see source_analyses/eu/2011/11_area_data/11_area_number_of_busses)
+number_of_trucks,3600972,Eurostat (see source_analyses/eu/2011/11_area_data/11_area_number_of_trucks_vans)
+number_of_vans,21576682,Eurostat (see source_analyses/eu/2011/11_area_data/11_area_number_of_trucks_vans)
 electric_vehicle_profile_1_share,1,Assumed that at present all EV charge according to the Movares Overal laden profile
 electric_vehicle_profile_2_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
 electric_vehicle_profile_3_share,0,

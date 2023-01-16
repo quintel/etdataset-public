@@ -1,6 +1,6 @@
 ### Heat demand curves
 
-The heat demand curves are based on ECN data. For raw data see file "warmtevraagprofielen.xlsx". These curves relate to the year 1987.
+The heat demand curves are based on ECN data. For raw data see file "warmtevraagprofielen.xlsx". These curves relate the year 1987.
 
 We use the relationship between irradiance and temperature data and the heat demand curves to generate heat demand curves for other years.
 

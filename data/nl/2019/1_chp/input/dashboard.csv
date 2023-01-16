@@ -32,9 +32,12 @@ chp_i_elec_prod_gas_engine,0.009300799,1_chp_source_analysis.xlsx
 chp_i_elec_prod_gas_cc,0.771364482,1_chp_source_analysis.xlsx
 chp_waste_removal_caps,0.3945,
 chp_waste_removal_industry,0.6055,
-chp_flh_heat_network_gas,4500,optimized to match total installed capacities for local heat networkd CHPS in 1_chp_source_analysis.xlss
+chp_flh_heat_network_gas,8500,High number to reproduce as best installed capacities in 1_chp_source_analysis.xlsx
 chp_flh_heat_network_biogas,8500,High number to reproduce as best installed capacities in 1_chp_source_analysis.xlsx
 chp_flh_heat_network_wood_pellets,8500,High number to reproduce as best installed capacities in 1_chp_source_analysis.xlsx
+chp_flh_agr_gas,3920,Optimized to match installed capacities for agriculture CHPS in 1_chp_source_analysis.xlss
+chp_flh_agr_biogas,7500,Optimized to match installed capacities for agriculture CHPS in 1_chp_source_analysis.xlss
+chp_flh_agr_wood_pellets,3650,Optimized to match installed capacities for agriculture CHPS in 1_chp_source_analysis.xlss
 chp_flh_iei_gas_turbine,2560,Re-estimate FLH; to match CBS installed capacities
 chp_flh_iei_gas_engine,620,Re-estimate FLH; to match CBS installed capacities
 chp_flh_iei_gas_cc,1750,Re-estimate FLH; to match CBS installed capacities
@@ -46,12 +49,18 @@ chp_flh_ma_coal,6200,Optimized to reproduce the Amer 9 power pant capacity toget
 chp_flh_ma_lignite,4500,EnergyMatters heat FLH. Coal CHP
 chp_flh_ma_cofiring,6200,Optimized to reproduce the Amer 9 power pant capacity together with co-firing
 chp_flh_waste,4390,Re-estimate FLH; to match CBS installed capacities; See: both 1_chp_source_analysis.xlsx and 2_chp_pp_source_analysis.xlsx
-chp_elec_eff_heat_nework_gas,0.42,Tweaked efficiency to improve Results by fuel
+chp_elec_eff_heat_nework_gas,0.392,Tweaked efficiency to improve Results by fuel
 chp_heat_eff_heat_nework_gas,0.5,Tweaked efficiency to improve Results by fuel
 chp_elec_eff_heat_nework_biogas,0.42,Tweaked efficiency to improve Results by fuel
 chp_heat_eff_heat_nework_biogas,0.39,Tweaked efficiency to improve Results by fuel
 chp_elec_eff_heat_nework_wood_pellets,0.183,Tweaked efficiency to improve Results by fuel
 chp_heat_eff_heat_nework_wood_pellets,0.47,Tweaked efficiency to improve Results by fuel
+chp_elec_eff_agr_gas_engine,0.42,Tweaked efficiency to improve Results by fuel
+chp_heat_eff_agr_gas_engine,0.535,Tweaked efficiency to improve Results by fuel
+chp_elec_eff_agr_biogas,0.42,Tweaked efficiency to improve Results by fuel
+chp_heat_eff_agr_biogas,0.39,Tweaked efficiency to improve Results by fuel
+chp_elec_eff_agr_wood_pellets,0.065,Tweaked efficiency to improve Results by fuel
+chp_heat_eff_agr_wood_pellets,0.44,Tweaked efficiency to improve Results by fuel
 chp_elec_eff_iei_gas_turbine,0.27,Tweaked efficiency to improve Results by fuel
 chp_heat_eff_iei_gas_turbine,0.35,Tweaked efficiency to improve Results by fuel
 chp_elec_eff_iei_gas_engine,0.43,See node source analysis of industry_chp_engine_gas_power_fuelmix

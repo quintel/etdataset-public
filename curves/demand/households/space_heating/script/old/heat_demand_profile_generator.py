@@ -30,7 +30,7 @@ if(len(sys.argv) < 3):
 
 countries = sys.argv[2:]
 year = sys.argv[1]
-space_heating_folder = Path(__file__).resolve().parents[1]
+space_heating_folder = Path(__file__).resolve().parents[2]
 
 print(countries)
 for country in countries:
@@ -65,14 +65,14 @@ for country in countries:
                 # What is the wanted temperature inside?
                 hour_of_the_day = hour % hours_per_day # between 0 and 23
 
-            #Calling the heat demand function of the house object
-            needed_heating_demand = house.calculate_heat_demand(
-                                                                        temperature[hour],
-                                                                        irradiation[hour],
-                                                                        hour_of_the_day)
+                #Calling the heat demand function of the house object
+                needed_heating_demand = house.calculate_heat_demand(
+                                                                            temperature[hour],
+                                                                            irradiation[hour],
+                                                                            hour_of_the_day)
 
-            # Adding demand to the vector
-            heating_demand.append(needed_heating_demand)
+                # Adding demand to the vector
+                heating_demand.append(needed_heating_demand)
 
             # Smooth demand curve to turn individual household curves into
             # average/aggregate curves of a whole neighbourhood
