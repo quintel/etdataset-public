@@ -2,7 +2,7 @@
 
 This folder contains all sources, data processing files and final files for demand and supply curves used in the ETM.
 
-Our [documentation](https://github.com/quintel/documentation/blob/master/general/curves.md) contains an overview of all used curves and the processing method.
+Our [documentation](https://docs.energytransitionmodel.com/main/curves/) contains an overview of all used curves and the processing method.
 
 ## Discussion
 Feedback on the curves we use is very welcome!

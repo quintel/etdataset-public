@@ -1,0 +1,6 @@
+### Electricity demand for other industry
+For other industry the electricity demand profile originates from the electricity demand curve for category "industry". This data is provided by [Gastransportservices](https://www.gasunietransportservices.nl/downloads-en-formulieren).
+
+For other industry the electricity demand profile originates from the NEDU (Nederlandse EnergieDataUitwisseling) documents. From [this website](https://www.mffbas.nl/documenten/) a csv file can be downloaded in which curves are given for different categories (for an explanation on the different categories see "profielen Elektriciteit 2019 versie 1.00 readme.docx" in the source folder). We are using the E3D category for other industry, which is: >3x80 Ampère, < 100 kW, BT >= 5000 uur.
+
+The data needs to be processed in order to match the ETM format. The NEDU profile data is given per 15 min interval. Since hourly profiles are needed we average the 15 min interval values to hourly values, which are then normalized (sum of the profile should be 1/3600). This transformation is done in `industry_other_electricity.py`

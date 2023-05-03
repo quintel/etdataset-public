@@ -1,2 +1,0 @@
-### Industy other - script
-For other industry the demand profile originates from the gas demand for categorie "industry". This data is provided by [Gastransportservices](https://www.gasunietransportservices.nl/downloads-en-formulieren).
