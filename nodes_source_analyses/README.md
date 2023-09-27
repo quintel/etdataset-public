@@ -26,7 +26,7 @@ The main reasons for creating the nodes\_source\_analyses are:
 
 The analyses of the technical and cost parameters are based on data from various institutions’ reports.
 
-##Content
+## Content
 
 The nodes\_source\_analyses repository contains folders of all sectors:
 
@@ -119,7 +119,8 @@ It is simple to create a new documentation for a node. The following steps need 
  
  
  
- This sheet summarizes all node attributes formatted in the way they are used by the Energy Transition Model. Use the Excel formulas to find the original data and sources for these numbers. You can also use this document to update the attribute value. Once you have finished updating, save this document and run rake import:node NODE="nodename" to update the node attributes on ETSource. 
+ This sheet summarizes all node attributes formatted in the way they are used by the Energy Transition Model. Use the Excel formulas to find the original data and sources for these numbers. You can also use this document to update the attribute value. Once you have finished updating, save this document and run rake import:node NODE="nodename" to update the node attributes on ETSource. 
+
 
 
 
