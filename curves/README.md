@@ -9,10 +9,9 @@ Feedback on the curves we use is very welcome!
 If you have a comment or a better source please let us know, you can:
 
 * Open an issue in [ETSource](https://github.com/quintel/etsource/issues/new) and assign a team memeber of Quintel, e.g.:
-	* ChaelKruip 
 	* DorinevanderVlies
-	* marliekeverweij
 	* redekok
+ 	* mabijkerk
 * E-mail us: [info@quintel.com](info@quintel.com)
 
 ## Structure of ETDataset - curves
