@@ -5,10 +5,11 @@ group,country,
 id,2,
 parent_id,2,
 enabled.etengine,true,
-enabled.etmodel,true,
+enabled.etmodel,false,
 analysis_year,2015,
 has_agriculture,false,
 has_buildings,true,
+has_semi_detached_houses,false,
 has_weather_curves,false,
 has_coastline,true,
 has_cold_network,false,
@@ -65,68 +66,81 @@ aquathermal_potential_for_surface_water,0,
 aquathermal_potential_for_waste_water,0,
 aquathermal_potential_for_drink_water,0,
 hydrogen_electrolysis_solar_pv_capacity_ratio,0.46,Different per country: calculated in modeling_experiments/electrolysers
-number_of_buildings,1937139.53136595,Estimated based on floor area from ENTRANZE and floor_area:number_of_buildings ratio in NL.
-number_of_residences,40257800,Eurostat 2015; Number of private households (lfst_hhnhtych) database
-number_of_apartments,23393807.58,
-number_of_corner_houses,0,
-number_of_detached_houses,5205333.54,
-number_of_semi_detached_houses,6449299.56,
-number_of_terraced_houses,5209359.32,
-typical_useful_demand_space_heating_apartment,0.0272375534483,Assumed NL2015 averages; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
-typical_useful_demand_space_heating_corner_house,0.0442685071978,
-typical_useful_demand_space_heating_detached_house,0.0698179085393,
-typical_useful_demand_space_heating_semi_detached_house,0.0541724674138,
-typical_useful_demand_space_heating_terraced_house,0.0384352143103,
-typical_roof_surface_apartment_available_for_pv,1.90666667E-05,
-typical_roof_surface_corner_house_available_for_pv,3.33E-05,
-typical_roof_surface_detached_house_available_for_pv,6.17E-05,
-typical_roof_surface_semi_detached_house_available_for_pv,4.58E-05,
-typical_roof_surface_terraced_house_available_for_pv,3.25E-05,
-heat_demand_reduction_medium_insulation_apartments,32,
-heat_demand_reduction_medium_insulation_corner_house,23,
-heat_demand_reduction_medium_insulation_detached_house,23,
-heat_demand_reduction_medium_insulation_semi_detached_house,26,
-heat_demand_reduction_medium_insulation_terraced_house,31,
-heat_demand_reduction_high_insulation_apartments,67,
-heat_demand_reduction_high_insulation_corner_house,69,
-heat_demand_reduction_high_insulation_detached_house,67,
-heat_demand_reduction_high_insulation_semi_detached_house,69,
-heat_demand_reduction_high_insulation_terraced_house,69,
-insulation_apartments_start_value,13,
-insulation_corner_houses_start_value,9,
-insulation_detached_houses_start_value,11,
-insulation_semi_detached_houses_start_value,13,
-insulation_terraced_houses_start_value,13,
-insulation_apartments_low_share,0.59375,
-insulation_apartments_medium_share,0.40625,
-insulation_apartments_high_share,0,
-insulation_corner_houses_low_share,0.608695652173913,
-insulation_corner_houses_medium_share,0.391304347826087,
-insulation_corner_houses_high_share,0,
-insulation_detached_houses_low_share,0.521739130434783,
-insulation_detached_houses_medium_share,0.478260869565217,
-insulation_detached_houses_high_share,0,
-insulation_semi_detached_houses_low_share,0.5,
-insulation_semi_detached_houses_medium_share,0.5,
-insulation_semi_detached_houses_high_share,0,
-insulation_terraced_houses_low_share,0.580645161290323,
-insulation_terraced_houses_medium_share,0.419354838709677,
-insulation_terraced_houses_high_share,0,
+present_number_of_buildings_present,1937140,Estimated based on floor area from ENTRANZE and floor_area:number_of_buildings ratio in NL.
+present_number_of_residences_present,40257800,Imported from 6_residences analysis
+present_number_of_apartments_before_1945,136331,Imported from 6_residences analysis
+present_number_of_apartments_1945_1964,1227148,Imported from 6_residences analysis
+present_number_of_apartments_1965_1984,3257052,Imported from 6_residences analysis
+present_number_of_apartments_1985_2004,1159861,Imported from 6_residences analysis
+present_number_of_apartments_2005_present,323797,Imported from 6_residences analysis
+present_number_of_detached_houses_before_1945,5005375,Imported from 6_residences analysis
+present_number_of_detached_houses_1945_1964,3254149,Imported from 6_residences analysis
+present_number_of_detached_houses_1965_1984,8143950,Imported from 6_residences analysis
+present_number_of_detached_houses_1985_2004,5003116,Imported from 6_residences analysis
+present_number_of_detached_houses_2005_present,2029008,Imported from 6_residences analysis
+present_number_of_semi_detached_houses_before_1945,0,Imported from 6_residences analysis
+present_number_of_semi_detached_houses_1945_1964,0,Imported from 6_residences analysis
+present_number_of_semi_detached_houses_1965_1984,0,Imported from 6_residences analysis
+present_number_of_semi_detached_houses_1985_2004,0,Imported from 6_residences analysis
+present_number_of_semi_detached_houses_2005_present,0,Imported from 6_residences analysis
+present_number_of_terraced_houses_before_1945,1150560,Imported from 6_residences analysis
+present_number_of_terraced_houses_1945_1964,3056956,Imported from 6_residences analysis
+present_number_of_terraced_houses_1965_1984,4049027,Imported from 6_residences analysis
+present_number_of_terraced_houses_1985_2004,1730028,Imported from 6_residences analysis
+present_number_of_terraced_houses_2005_present,731442,Imported from 6_residences analysis
+present_share_of_apartments_before_1945_in_useful_demand_for_space_heating,0.0283796312193112,Imported from 6_residences analysis
+present_share_of_apartments_1945_1964_in_useful_demand_for_space_heating,0.0542183154208014,Imported from 6_residences analysis
+present_share_of_apartments_1965_1984_in_useful_demand_for_space_heating,0.0826048140644851,Imported from 6_residences analysis
+present_share_of_apartments_1985_2004_in_useful_demand_for_space_heating,0.0574460048758713,Imported from 6_residences analysis
+present_share_of_apartments_2005_present_in_useful_demand_for_space_heating,0.0276825876455036,Imported from 6_residences analysis
+present_share_of_detached_houses_before_1945_in_useful_demand_for_space_heating,0.0957868351474779,Imported from 6_residences analysis
+present_share_of_detached_houses_1945_1964_in_useful_demand_for_space_heating,0.0424956220169626,Imported from 6_residences analysis
+present_share_of_detached_houses_1965_1984_in_useful_demand_for_space_heating,0.149545033135323,Imported from 6_residences analysis
+present_share_of_detached_houses_1985_2004_in_useful_demand_for_space_heating,0.0887202554681867,Imported from 6_residences analysis
+present_share_of_detached_houses_2005_present_in_useful_demand_for_space_heating,0.0435600727946984,Imported from 6_residences analysis
+present_share_of_semi_detached_houses_before_1945_in_useful_demand_for_space_heating,0,Imported from 6_residences analysis
+present_share_of_semi_detached_houses_1945_1964_in_useful_demand_for_space_heating,0,Imported from 6_residences analysis
+present_share_of_semi_detached_houses_1965_1984_in_useful_demand_for_space_heating,0,Imported from 6_residences analysis
+present_share_of_semi_detached_houses_1985_2004_in_useful_demand_for_space_heating,0,Imported from 6_residences analysis
+present_share_of_semi_detached_houses_2005_present_in_useful_demand_for_space_heating,0,Imported from 6_residences analysis
+present_share_of_terraced_houses_before_1945_in_useful_demand_for_space_heating,0.038261854891323,Imported from 6_residences analysis
+present_share_of_terraced_houses_1945_1964_in_useful_demand_for_space_heating,0.0745802286852316,Imported from 6_residences analysis
+present_share_of_terraced_houses_1965_1984_in_useful_demand_for_space_heating,0.113381176389795,Imported from 6_residences analysis
+present_share_of_terraced_houses_1985_2004_in_useful_demand_for_space_heating,0.0699172475363115,Imported from 6_residences analysis
+present_share_of_terraced_houses_2005_present_in_useful_demand_for_space_heating,0.0334203207087182,Imported from 6_residences analysis
+typical_useful_demand_for_space_heating_apartments_before_1945,309.2785,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_apartments_1945_1964,225.7048,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_apartments_1965_1984,193.542,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_apartments_1985_2004,154.5946,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_apartments_2005_present,115.9263,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_apartments_future,65,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_detached_houses_before_1945,296.1239,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_detached_houses_1945_1964,243.2537,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_detached_houses_1965_1984,202.5222,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_detached_houses_1985_2004,160.3984,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_detached_houses_2005_present,116.3707,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_detached_houses_future,55,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_semi_detached_houses_before_1945,268.9665,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_semi_detached_houses_1945_1964,217.0396,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_semi_detached_houses_1965_1984,187.3579,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_semi_detached_houses_1985_2004,154.0974,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_semi_detached_houses_2005_present,114.2388,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_semi_detached_houses_future,55,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_terraced_houses_before_1945,305.0056,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_terraced_houses_1945_1964,280.6464,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_terraced_houses_1965_1984,217.9607,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_terraced_houses_1985_2004,150.8078,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_terraced_houses_2005_present,116.2858,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_terraced_houses_future,55,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_buildings_present,243.571,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
+typical_useful_demand_for_space_heating_buildings_future,190,Assumed value from nl2019: see /data/nl/2019/11_area/input/dashboard.csv
 residences_roof_surface_available_for_pv,561,Total based on Ecofys analysis; share of residences is assumed as 2/3.
 buildings_roof_surface_available_for_pv,281,Total based on Ecofys analysis; share of services is assumed as 1/3.
-insulation_buildings_start_value,28.8,NL/2015 value; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
-heat_demand_reduction_high_insulation_buildings,74,NL/2015 value; see source_analyses/nl/2015/11_area/11_area_insulation_typical_pv_and_heat
 co2_emission_1990,1016.809775,1990 CO2 Emissions (energy related) according to IPCC version21. CRF avaiable on EEA download site. Summarized in: etdataset/source_analyses/eu/2015/11_area/201807_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v21.xlsx
 co2_emission_1990_aviation_bunkers,11.95963055,1990 CO2 Emissions (energy related) according to IPCC version20. CRF avaiable on EEA download site. Summarized in: 201711_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v20.xlsx (source_analyses>eu>2011>11_area_data)
 co2_emission_1990_marine_bunkers,6.4053476,1990 CO2 Emissions (energy related) according to IPCC version20. CRF avaiable on EEA download site. Summarized in: 201711_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v20.xlsx (source_analyses>eu>2011>11_area_data)
 co2_percentage_free,0.85,
 co2_price,0.005,www.energeia.nl 6/Aug/2015 Cal16 forward price
-economic_multiplier,1,Assumed the same value as for NL 2011; this value is not used as has_employment is FALSE
-employment_fraction_production,0.5,Assumed the same value as for NL 2011; this value is not used as has_employment is FALSE
-employment_local_fraction,0.2,Assumed the same value as for NL 2011; this value is not used as has_employment is FALSE
-man_hours_per_man_year,1800,
-buildings_insulation_employment_constant,0.0093,Assumed the same value as for NL 2011; this value is not used as has_employment is FALSE
-households_insulation_employment_constant,0.014,
 lv_net_capacity_per_step,0,
 lv_net_costs_per_capacity_step,0,
 lv_net_spare_capacity,0,
