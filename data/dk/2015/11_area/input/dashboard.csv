@@ -141,6 +141,7 @@ co2_emission_1990_aviation_bunkers,1.73073572,DK emmissions from: 201807_EEA_all
 co2_emission_1990_marine_bunkers,3.01229527,DK emmissions from: 201807_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v23
 co2_percentage_free,0.85,NL 2011 value
 co2_price,0.0078,http://www.energeia.nl: Feb/12/2016 Cal 17 forward price
+captured_biogenic_co2_price,0.0078,Quintel assumption: Similar to co2 price in 2015
 lv_net_capacity_per_step,0.2,WIP
 lv_net_costs_per_capacity_step,183200,WIP
 lv_net_spare_capacity,0.25,WIP

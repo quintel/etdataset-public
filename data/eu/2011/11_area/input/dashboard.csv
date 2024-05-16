@@ -141,6 +141,7 @@ co2_emission_1990_aviation_bunkers,69.2127685,201312_EEA_EU27 GHG emissions IPCC
 co2_emission_1990_marine_bunkers,108.9977607,201312_EEA_EU27 GHG emissions IPCC format 1990 & 2011.xlsx
 co2_percentage_free,0.4,NL2019 value: https://energeia.nl/energeia-artikel/40089751/europese-commissie-was-te-scheutig-met-gratis-emissierechten-co-zegt-rekenkamer
 co2_price,0.02483,NL2019 value: see source analyses/nl/2019/11_area/11_area_source_analysis_2019.xlsx
+captured_biogenic_co2_price,0.02483,Quintel assumption: Same as co2 price.
 lv_net_capacity_per_step,0.2,
 lv_net_costs_per_capacity_step,183200,
 lv_net_spare_capacity,0.25,

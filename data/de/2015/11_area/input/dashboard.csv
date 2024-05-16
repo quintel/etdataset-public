@@ -141,6 +141,7 @@ co2_emission_1990_aviation_bunkers,11.95963055,1990 CO2 Emissions (energy relate
 co2_emission_1990_marine_bunkers,6.4053476,1990 CO2 Emissions (energy related) according to IPCC version20. CRF avaiable on EEA download site. Summarized in: 201711_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v20.xlsx (source_analyses>eu>2011>11_area_data)
 co2_percentage_free,0.85,
 co2_price,0.005,www.energeia.nl 6/Aug/2015 Cal16 forward price
+captured_biogenic_co2_price,0.005,Quintel assumption: Same as the co2 price
 lv_net_capacity_per_step,0,
 lv_net_costs_per_capacity_step,0,
 lv_net_spare_capacity,0,
