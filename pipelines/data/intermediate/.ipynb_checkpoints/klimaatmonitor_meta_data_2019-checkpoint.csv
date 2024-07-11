@@ -1,0 +1,9 @@
+Code,Onderwerp,Eenheid,Bron,Voetnoot,Beschrijving,Gegevenstype,Laatste database wijziging
+inwoners,Aantal inwoners,Aantal,CBS - Centraal Bureau voor de Statistiek,,,Numeriek,20-1-2023 12:56:43
+woningen,Aantal woningen per 1 januari,Aantal,,,,Numeriek,20-1-2023 12:54:55
+zonpvtj_won,Zonnestroom opgewekt door zonnepanelen op woningen,TJ,CBS - Statistiek zonnestroom en schatting RVO,,,Numeriek,16-5-2023 05:57:48
+houtwontj,Houtkachels woningen hern. warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,24-12-2022 17:56:42
+houtskool,Houtskool hern. warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,12-11-2022 20:24:59
+warmwontier2,Verbruik stadswarmte woningen (schatting),GJ,Extrapolatie gemiddeld gasverbruik naar verbruik stadswarmte,,,Numeriek,17-10-2022 19:15:13
+gaswoningen,Totaal aardgasverbruik woningen,miljoen m3,Berekening  totaalverbruik woningen o.b.v. gemiddeld verbruik en aantal woningen,,,Numeriek,20-1-2023 12:54:55
+el_woningen_tj_incl_zonachtermeter,Totaal elektriciteitsverbruik woningen (incl. zonnestroom achter de meter),TJ,Berekening  totaalverbruik woningen o.b.v. gemiddeld verbruik en aantal woningen,,,Numeriek,16-5-2023 05:57:48
