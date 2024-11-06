@@ -10,8 +10,8 @@ COUNTRY_MAP = { 'AT': "AT_austria", 'BE': "BE_belgium", 'BG': "BG_bulgaria", 'CY
     'GR': "EL_greece", 'HR': "HR_croatia", 'HU': "HU_hungary", 'IE': "IE_ireland", 'IT': "IT_italy",
     'LT': "LT_lithuania", 'LU': "LU_luxembourg", 'LV': "LV_latvia", 'NL': "NL_netherlands",
     'PL': "PL_poland", 'PT': "PT_portugal", 'RO': "RO_romania", 'SE': "SE_sweden",
-    'SI': "SI_slovenia", 'SK': "SK_slovakia"
-}
+    'SI': "SI_slovenia", 'SK': "SK_slovakia", 'NO': 'NO_norway', 'CH': 'CH_switzerland',
+    'RS': 'RS_serbia'}
 
 
 class RenewablesNinja():
@@ -166,6 +166,12 @@ class RenewablesNinja():
         '''Return pd.Dataframe of returned csv (from request) if the request was successful'''
         if response.ok:
             if self.countries:
+
+                # Intermediate export of wind curve since this function doesn't work properly anymore
+                df = pd.read_csv(io.StringIO(response.content.decode("utf-8")), skiprows=2,
+                    index_col=0, header=0, parse_dates=True)
+                df.to_csv(f'wind_curve_output.csv')
+
                 return pd.read_csv(io.StringIO(response.content.decode("utf-8")), skiprows=2,
                     index_col=0, header=0, parse_dates=True)[str(self.year)]
 

@@ -1,7 +1,7 @@
 import pandas as pd
 
 class Lookup():
-    '''Extravagant lookups adn calculations'''
+    '''Extravagant lookups and calculations'''
 
     def sum(self, flow, products):
         '''Sum of the products in the flow'''

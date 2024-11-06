@@ -22,39 +22,39 @@
 
 industry_chemical:
   - arg_name: demand_fertilizers_coal_energetic
-    file: source_analyses_output/fertilizer_demand_analysis
+    file: industry/intermediate_fertilizer_demand_analysis
     file_type: compact
     field: demand_fertilizers_coal_energetic
   - arg_name: demand_fertilizers_network_gas_energetic
-    file: source_analyses_output/fertilizer_demand_analysis
+    file: industry/intermediate_fertilizer_demand_analysis
     file_type: compact
     field: demand_fertilizers_network_gas_energetic
   - arg_name: demand_fertilizers_crude_oil_energetic
-    file: source_analyses_output/fertilizer_demand_analysis
+    file: industry/intermediate_fertilizer_demand_analysis
     file_type: compact
     field: demand_fertilizers_crude_oil_energetic
   - arg_name: demand_fertilizers_wood_pellets_energetic
-    file: source_analyses_output/fertilizer_demand_analysis
+    file: industry/intermediate_fertilizer_demand_analysis
     file_type: compact
     field: demand_fertilizers_wood_pellets_energetic
   - arg_name: demand_fertilizers_heat_energetic
-    file: source_analyses_output/fertilizer_demand_analysis
+    file: industry/intermediate_fertilizer_demand_analysis
     file_type: compact
     field: demand_fertilizers_heat_energetic
   - arg_name: demand_fertilizers_electricity_energetic
-    file: source_analyses_output/fertilizer_demand_analysis
+    file: industry/intermediate_fertilizer_demand_analysis
     file_type: compact
     field: demand_fertilizers_electricity_energetic
   - arg_name: demand_fertilizers_coal_non_energetic
-    file: source_analyses_output/fertilizer_demand_analysis
+    file: industry/intermediate_fertilizer_demand_analysis
     file_type: compact
     field: demand_fertilizers_coal_non_energetic
   - arg_name: demand_fertilizers_network_gas_non_energetic
-    file: source_analyses_output/fertilizer_demand_analysis
+    file: industry/intermediate_fertilizer_demand_analysis
     file_type: compact
     field: demand_fertilizers_network_gas_non_energetic
   - arg_name: demand_fertilizers_crude_oil_non_energetic
-    file: source_analyses_output/fertilizer_demand_analysis
+    file: industry/intermediate_fertilizer_demand_analysis
     file_type: compact
     field: demand_fertilizers_crude_oil_non_energetic
   # - arg_name: demand_chemical_wood_pellets_non_energetic
@@ -62,33 +62,33 @@ industry_chemical:
   #   file_type: compact
   #   field: chemical_wood_pellets_non_energetic
   - arg_name: shares_chemical_network_gas_non_energetic
-    file: source_analyses_output/chemical_non_energetic_shares_network_gas_analysis
+    file: industry/intermediate_commodity_balance_gas_raw
     file_type: compact
     field: ALL
   - arg_name: shares_chemical_crude_oil_non_energetic
-    file: source_analyses_output/chemical_non_energetic_shares_crude_oil_analysis
+    file: industry/intermediate_commodity_balance_oil_raw
     file_type: compact
     field: ALL
   - arg_name: shares_chemical_coal_non_energetic
-    file: source_analyses_output/chemical_non_energetic_shares_coal_analysis
+    file: industry/intermediate_commodity_balance_coal_raw
     file_type: compact
     field: ALL
 
 
 industry_ict:
   - arg_name: demand_ict_electricity_energetic
-    file: source_analyses_input/input_industry_ict
+    file: industry/input_industry
     file_type: extended
     field: demand_ict_electricity_energetic
 
 
 industry_metal:
   - arg_name: demand_aluminium_electricity_energetic
-    file: source_analyses_output/non_ferrous_metal_demands_analysis
+    file: industry/intermediate_non_ferrous_metal_demands_analysis
     file_type: compact
     field: demand_aluminium_electricity_energetic
   - arg_name: demand_aluminium_network_gas_energetic
-    file: source_analyses_output/non_ferrous_metal_demands_analysis
+    file: industry/intermediate_non_ferrous_metal_demands_analysis
     file_type: compact
     field: demand_aluminium_network_gas_energetic
 

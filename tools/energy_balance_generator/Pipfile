@@ -22,3 +22,5 @@ tests = "python -m pytest"
 conversions = "python scripts/convert_energy_balance.py"
 source_analyses = 'python scripts/run_all_source_analyses.py'
 export = 'python scripts/export.py'
+import_world = 'python scripts/import_world.py'
+create_producers_energy_balance = 'python scripts/create_producers_energy_balance.py'

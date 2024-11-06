@@ -1,0 +1,127 @@
+key,value,comment
+households_final_demand_coal_households_final_demand_for_hot_water_coal_parent_share,0.077536629,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_coal_households_final_demand_for_space_heating_coal_parent_share,0.922463371,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_crude_oil_households_final_demand_for_hot_water_crude_oil_parent_share,0.157414186,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_crude_oil_households_final_demand_for_space_heating_crude_oil_parent_share,0.842585814,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_electricity_households_final_demand_for_appliances_electricity_parent_share,0.545892756,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_electricity_households_final_demand_for_cooking_electricity_parent_share,0.125115007,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_electricity_households_final_demand_for_cooling_electricity_parent_share,0.019077885,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_electricity_households_final_demand_for_hot_water_electricity_parent_share,0.12156327,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_electricity_households_final_demand_for_lighting_electricity_parent_share,0.032726795,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_electricity_households_final_demand_for_space_heating_electricity_parent_share,0.155624287,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_for_appliances_electricity_households_appliances_clothes_dryer_electricity_parent_share,0.073202424,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_appliances_electricity_households_appliances_computer_media_electricity_parent_share,0.088592046,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_appliances_electricity_households_appliances_dishwasher_electricity_parent_share,0.065878991,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_appliances_electricity_households_appliances_fridge_freezer_electricity_parent_share,0.264444862,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_appliances_electricity_households_appliances_other_electricity_parent_share,0.046084349,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_appliances_electricity_households_appliances_television_electricity_parent_share,0.29735643,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_appliances_electricity_households_appliances_vacuum_cleaner_electricity_parent_share,0.07,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_appliances_electricity_households_appliances_washing_machine_electricity_parent_share,0.094440897,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_cooking_electricity_households_cooker_halogen_electricity_parent_share,0.71,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_cooking_electricity_households_cooker_induction_electricity_parent_share,0.19,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_cooking_electricity_households_cooker_resistive_electricity_parent_share,0.1,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_cooling_electricity_households_cooling_airconditioning_electricity_parent_share,0.98,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_cooling_electricity_households_cooling_heatpump_air_water_electricity_parent_share,0,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_cooling_electricity_households_cooling_heatpump_ground_water_electricity_parent_share,0.02,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_lighting_electricity_households_lighting_efficient_fluorescent_electricity_parent_share,0.16,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_lighting_electricity_households_lighting_incandescent_electricity_parent_share,0.83,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_lighting_electricity_households_lighting_led_electricity_parent_share,0.01,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_space_heating_electricity_households_space_heater_electricity_parent_share,0.749995695,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_space_heating_electricity_households_space_heater_heatpump_air_water_electricity_parent_share,0.233094943,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_space_heating_electricity_households_space_heater_heatpump_ground_water_electricity_parent_share,0.016909362,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_space_heating_electricity_households_space_heater_hybrid_heatpump_air_water_electricity_parent_share,0,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_space_heating_network_gas_households_space_heater_combined_network_gas_parent_share,0.96,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_space_heating_network_gas_households_space_heater_hybrid_heatpump_air_water_electricity_parent_share,0,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_for_space_heating_network_gas_households_space_heater_network_gas_parent_share,0.04,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+households_final_demand_network_gas_households_final_demand_for_cooking_network_gas_parent_share,0.058675769,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_network_gas_households_final_demand_for_cooling_network_gas_parent_share,0,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_network_gas_households_final_demand_for_hot_water_network_gas_parent_share,0.189629302,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_network_gas_households_final_demand_for_space_heating_network_gas_parent_share,0.751694929,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_wood_pellets_households_final_demand_for_cooking_wood_pellets_parent_share,0.012549397,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_wood_pellets_households_final_demand_for_hot_water_wood_pellets_parent_share,0.060235528,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_wood_pellets_households_final_demand_for_space_heating_wood_pellets_parent_share,0.927215076,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+input_households_final_demand_steam_hot_water_households_final_demand_for_hot_water_steam_hot_water_parent_share,0.225876298,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+input_households_final_demand_steam_hot_water_households_final_demand_for_space_heating_steam_hot_water_parent_share,0.774123702,Calculated from final energy consumption in households per application per carrier of EU27 dataset: https://doi.org/10.2908/NRG_D_HHQ
+households_final_demand_coal_demand,,
+households_final_demand_electricity_demand,,
+households_final_demand_network_gas_demand,,
+households_final_demand_wood_pellets_demand,,
+input_households_final_demand_crude_oil_demand,,
+input_households_final_demand_steam_hot_water_demand,,
+input_percentage_of_bio_kerosene_households_final_demand_crude_oil,,
+input_percentage_of_bio_oil_households_final_demand_crude_oil,,
+input_percentage_of_biodiesel_households_final_demand_crude_oil,,
+input_percentage_of_crude_oil_households_final_demand_crude_oil,,
+input_percentage_of_diesel_households_final_demand_crude_oil,,
+input_percentage_of_ht_steam_hot_water_households_final_demand_steam_hot_water,1,All heat to HT
+input_percentage_of_kerosene_households_final_demand_crude_oil,,
+input_percentage_of_lpg_households_final_demand_crude_oil,,
+input_percentage_of_lt_steam_hot_water_households_final_demand_steam_hot_water,0,All heat to HT
+input_percentage_of_mt_steam_hot_water_households_final_demand_steam_hot_water,0,All heat to HT
+input_households_solar_pv_demand,,
+number_of_inhabitants,6963764,"Eurostat table Population on 1 January https://doi.org/10.2908/TPS00001; see etdataset-public/source_analyses/NO_norway/2019/households/Eurostat number of inhabitants.xlsx."
+present_number_of_apartments_1945_1964,66362.63436,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_apartments_1965_1984,219549.4755,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_apartments_1985_2004,139146.5028,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_apartments_2005_present,75446.46819,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_apartments_before_1945,92184.13,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_detached_houses_1945_1964,215100.1138,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_detached_houses_1965_1984,624676.4821,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_detached_houses_1985_2004,458909.7437,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_detached_houses_2005_present,276105.9108,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_detached_houses_before_1945,437413.0536,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_semi_detached_houses_1945_1964,0,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_semi_detached_houses_1965_1984,0,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_semi_detached_houses_1985_2004,0,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_semi_detached_houses_2005_present,0,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_semi_detached_houses_before_1945,0,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_terraced_houses_1945_1964,92614.97754,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_terraced_houses_1965_1984,321464.3722,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_terraced_houses_1985_2004,303361.6266,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_terraced_houses_2005_present,222326.1465,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_number_of_terraced_houses_before_1945,159259.1209,"Derived from Hotmaps project housing types per construction period for EU27, scaled with number of households in 2019 from Eurostat https://doi.org/10.2908/LFST_HHNHTYCH"
+present_share_of_apartments_1945_1964_in_useful_demand_for_space_heating,0.02,Based on EU dataset
+present_share_of_apartments_1965_1984_in_useful_demand_for_space_heating,0.09,Based on EU dataset
+present_share_of_apartments_1985_2004_in_useful_demand_for_space_heating,0.06,Based on EU dataset
+present_share_of_apartments_2005_present_in_useful_demand_for_space_heating,0.03,Based on EU dataset
+present_share_of_apartments_before_1945_in_useful_demand_for_space_heating,0.05,Based on EU dataset
+present_share_of_detached_houses_1945_1964_in_useful_demand_for_space_heating,0.04,Based on EU dataset
+present_share_of_detached_houses_1965_1984_in_useful_demand_for_space_heating,0.15,Based on EU dataset
+present_share_of_detached_houses_1985_2004_in_useful_demand_for_space_heating,0.1,Based on EU dataset
+present_share_of_detached_houses_2005_present_in_useful_demand_for_space_heating,0.05,Based on EU dataset
+present_share_of_detached_houses_before_1945_in_useful_demand_for_space_heating,0.09,Based on EU dataset
+present_share_of_semi_detached_houses_1945_1964_in_useful_demand_for_space_heating,0,Based on EU dataset
+present_share_of_semi_detached_houses_1965_1984_in_useful_demand_for_space_heating,0,Based on EU dataset
+present_share_of_semi_detached_houses_1985_2004_in_useful_demand_for_space_heating,0,Based on EU dataset
+present_share_of_semi_detached_houses_2005_present_in_useful_demand_for_space_heating,0,Based on EU dataset
+present_share_of_semi_detached_houses_before_1945_in_useful_demand_for_space_heating,0,Based on EU dataset
+present_share_of_terraced_houses_1945_1964_in_useful_demand_for_space_heating,0.03,Based on EU dataset
+present_share_of_terraced_houses_1965_1984_in_useful_demand_for_space_heating,0.11,Based on EU dataset
+present_share_of_terraced_houses_1985_2004_in_useful_demand_for_space_heating,0.07,Based on EU dataset
+present_share_of_terraced_houses_2005_present_in_useful_demand_for_space_heating,0.04,Based on EU dataset
+present_share_of_terraced_houses_before_1945_in_useful_demand_for_space_heating,0.07,Based on EU dataset
+residences_roof_surface_available_for_pv,29.39345455,"Based on Eu data, corrected for inhabitants"
+typical_useful_demand_for_space_heating_apartments_1945_1964,108.79,Based on EU dataset
+typical_useful_demand_for_space_heating_apartments_1965_1984,95.14,Based on EU dataset
+typical_useful_demand_for_space_heating_apartments_1985_2004,66.6,Based on EU dataset
+typical_useful_demand_for_space_heating_apartments_2005_present,46.28,Based on EU dataset
+typical_useful_demand_for_space_heating_apartments_before_1945,118.75,Based on EU dataset
+typical_useful_demand_for_space_heating_apartments_future,46.28,Based on EU dataset
+typical_useful_demand_for_space_heating_detached_houses_1945_1964,189.77,Based on EU dataset
+typical_useful_demand_for_space_heating_detached_houses_1965_1984,163.86,Based on EU dataset
+typical_useful_demand_for_space_heating_detached_houses_1985_2004,107.85,Based on EU dataset
+typical_useful_demand_for_space_heating_detached_houses_2005_present,72.67,Based on EU dataset
+typical_useful_demand_for_space_heating_detached_houses_before_1945,209.7,Based on EU dataset
+typical_useful_demand_for_space_heating_detached_houses_future,72.67,Based on EU dataset
+typical_useful_demand_for_space_heating_semi_detached_houses_1945_1964,0,Based on EU dataset
+typical_useful_demand_for_space_heating_semi_detached_houses_1965_1984,0,Based on EU dataset
+typical_useful_demand_for_space_heating_semi_detached_houses_1985_2004,0,Based on EU dataset
+typical_useful_demand_for_space_heating_semi_detached_houses_2005_present,0,Based on EU dataset
+typical_useful_demand_for_space_heating_semi_detached_houses_before_1945,0,Based on EU dataset
+typical_useful_demand_for_space_heating_semi_detached_houses_future,0,Based on EU dataset
+typical_useful_demand_for_space_heating_terraced_houses_1945_1964,140.23,Based on EU dataset
+typical_useful_demand_for_space_heating_terraced_houses_1965_1984,124.25,Based on EU dataset
+typical_useful_demand_for_space_heating_terraced_houses_1985_2004,83.82,Based on EU dataset
+typical_useful_demand_for_space_heating_terraced_houses_2005_present,60.23,Based on EU dataset
+typical_useful_demand_for_space_heating_terraced_houses_before_1945,154.27,Based on EU dataset
+typical_useful_demand_for_space_heating_terraced_houses_future,60.23,Based on EU dataset

@@ -1,0 +1,73 @@
+world_code,world_label,europe_code,europe_label,mapping
+TOTAL,Total,TOTAL,Total,direct
+ANTCOAL,Anthracite,C0110,Anthracite,direct
+COKCOAL,Coking coal,C0121,Coking coal,direct
+BITCOAL,Other bituminous coal,C0129,Other bituminous coal,direct
+SUBCOAL,Sub-bituminous coal,C0210,Sub-bituminous coal,direct
+LIGNITE,Lignite,C0220,Lignite,direct
+PATFUEL,Patent fuel,C0320,Patent fuel,direct
+OVENCOKE,Coke oven coke,C0311,Coke oven coke,direct
+GASCOKE,Gas coke,C0312,Gas coke,direct
+COALTAR,Coal tar,C0340,Coal tar,direct
+BKB,BKB,C0330,Brown coal briquettes,direct
+GASWKSGS,Gas works gas,C0360,Gas works gas,direct
+COKEOVGS,Coke oven gas,C0350,Coke oven gas,direct
+BLFURGS,Blast furnace gas,C0371,Blast furnace gas,direct
+OGASES,Other recovered gases,C0379,Other recovered gases,direct
+PEAT,Peat,P1000,Peat and peat products,aggregate
+PEATPROD,Peat products,P1000,Peat and peat products,aggregate
+OILSHALE,Oil shale and oil sands,S2000,Oil shale and oil sands,direct
+CRUDEOIL,Crude oil,O4100_TOT,Crude oil,direct
+NGL,Natural gas liquids,O4200,Natural gas liquids,direct
+REFFEEDS,Refinery feedstocks,O4300,Refinery feedstocks,direct
+ADDITIVE,Additives/blending components,O4400X4410,Additives and oxygenates (excluding biofuel portion),direct
+NONCRUDE,Other hydrocarbons,O4500,Other hydrocarbons,direct
+REFINGAS,Refinery gas,O4610,Refinery gas,direct
+ETHANE,Ethane,O4620,Ethane,direct
+LPG,Liquefied petroleum gases (LPG),O4630,Liquefied petroleum gases,direct
+NONBIOGASO,Motor gasoline excl. biofuels,O4652XR5210B,Motor gasoline (excluding biofuel portion),direct
+AVGAS,Aviation gasoline,O4651,Aviation gasoline,direct
+JETGAS,Gasoline type jet fuels,O4653,Gasoline-type jet fuel,direct
+NONBIOJETK,Kerosene type jet fuel excl. biofuels,O4661XR5230B,Kerosene-type jet fuel (excluding biofuel portion),direct
+OTHKERO,Other kerosene,O4669,Other kerosene,direct
+NAPHTHA,Naphtha,O4640,Naphtha,direct
+NONBIODIES,Gas/diesel oil excl. biofuels,O4671XR5220B,Gas oil and diesel oil (excluding biofuel portion),direct
+RESFUEL,Fuel oil,O4680,Fuel oil,direct
+WHITESP,White spirit & industrial spirit (SBP),O4691,White spirit and special boiling point industrial spirits,direct
+LUBRIC,Lubricants,O4692,Lubricants,direct
+BITUMEN,Bitumen,O4695,Bitumen,direct
+PETCOKE,Petroleum coke,O4694,Petroleum coke,direct
+PARWAX,Paraffin waxes,O4693,Paraffin waxes,direct
+ONONSPEC,Other oil products,O4699,Other oil products,direct
+NATGAS,Natural gas,G3000,Natural gas,direct
+HYDRO,Hydro,RA100,Hydro,direct
+TIDE,"Tide, wave and ocean",RA500,"Tide, wave, ocean",direct
+WIND,Wind,RA300,Wind,direct
+SOLARPV,Solar photovoltaics,RA420,Solar photovoltaic,direct
+SOLARTH,Solar thermal,RA410,Solar thermal,direct
+GEOTHERM,Geothermal,RA200,Geothermal,direct
+PRIMSBIO,Primary solid biofuels,R5110-5150_W6000RI,Primary solid biofuels,direct
+CHARCOAL,Charcoal,R5160,Charcoal,direct
+BIOGASES,Biogases,R5300,Biogases,direct
+MUNWASTER,Municipal waste (renewable),W6210,Renewable municipal waste,direct
+BIOGASOL,Biogasoline,R5210P,Pure biogasoline,empty
+BIOGASOL,Biogasoline,R5210B,Blended biogasoline,direct
+BIOJETKERO,Bio jet kerosene,R5220P,Pure biodiesels,empty
+BIOJETKERO,Bio jet kerosene,R5220B,Blended biodiesels,direct
+BIODIESEL,Biodiesels,R5230P,Pure bio jet kerosene,empty
+BIODIESEL,Biodiesels,R5230B,Blended bio jet kerosene,direct
+OBIOLIQ,Other liquid biofuels,R5290,Other liquid biofuels,direct
+,,RA600,Ambient heat (heat pumps),empty
+INDWASTE,Industrial waste,W6100,Industrial waste (non-renewable),direct
+MUNWASTEN,Municipal waste (non-renewable),W6220,Non-renewable municipal waste,direct
+NUCLEAR,Nuclear,N900H,Nuclear heat,direct
+HEAT,Heat,H8000,Heat,direct
+ELECTR,Electricity,E7000,Electricity,direct
+OTHER,Other sources,,,ignore
+BROWN,,,,ignore
+HARDCOAL,,,,ignore
+MANGAS,,,,ignore
+HEATNS,,,,ignore
+MRENEW,,,,ignore
+RENEWNS,,,,ignore
+CRNGFEED,,,,ignore

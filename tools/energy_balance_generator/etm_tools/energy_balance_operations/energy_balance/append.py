@@ -36,7 +36,8 @@ class Append():
             total (True|False):                If set to True, calculates the Total column
         '''
         if flow in self.eb.index:
-            # TODO: add a warning here?
+            print(f'\033[93mSkipping as "{flow}" is in ' +
+                f'"{self.eb.index}"\033[0m')
             return
 
         self.add_empty_row(flow)

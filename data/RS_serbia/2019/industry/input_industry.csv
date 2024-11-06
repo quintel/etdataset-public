@@ -1,0 +1,6 @@
+﻿Key,Value,Unit,Source
+industry_chemicals_fertilizers_steam_methane_reformer_hydrogen,0,TJ,See etdataset-public/source_analyses/RS_serbia/2019/industry/input_industry_chemical_fertilizers.xlsx
+demand_ict_electricity_energetic,2574,TJ,See etdataset-public/source_analyses/RS_serbia/2019/industry/input_industry_ict.xlsx
+industry_aluminium_production,1.3,Mton,See etdataset-public/source_analyses/RS_serbia/2019/industry/input_industry_metal_aluminium.xlsx
+industry_steel_production,1.929,Mton,See etdataset-public/source_analyses/RS_serbia/2019/industry/input_industry_metal_steel.xlsx
+share_steel_blast_furnace_bof,89.7,%,See etdataset-public/source_analyses/RS_serbia/2019/industry/input_industry_metal_steel.xlsx

@@ -28,5 +28,8 @@ if __name__ == '__main__':
 
     for country in countries:
         print(f'Starting country {country}')
-        analyse_country(country, year=year)
+        if country not in EU27_COUNTRIES_AND_TOTAL:
+            analyse_country(country, year=year, mark='world')
+        else:
+            analyse_country(country, year=year)
         print(f'{country} done!')

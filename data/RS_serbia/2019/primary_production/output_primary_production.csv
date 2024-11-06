@@ -1,0 +1,14 @@
+key,value,comment
+energy_production_dry_biomass_max_demand,13889.61,Assumed EU27 dataset value scaled with population
+energy_production_oily_biomass_max_demand,36212.73,Assumed EU27 dataset value scaled with population
+energy_production_wet_biomass_max_demand,49929.71,Assumed EU27 dataset value scaled with population
+energy_greengas_gasification_dry_biomass_energy_greengas_production_child_share,0,Assumed EU27 dataset value
+energy_greengas_gasification_wet_biomass_energy_greengas_production_child_share,0,Assumed EU27 dataset value
+energy_greengas_upgrade_biogas_energy_greengas_production_child_share,1,Assumed EU27 dataset value
+energy_regasification_lng_energy_national_gas_network_natural_gas_demand,0,Assumed EU27 dataset value scaled with population
+aquathermal_potential_for_drink_water,0,Assumed EU27 dataset value scaled with population
+aquathermal_potential_for_surface_water,0,Assumed EU27 dataset value scaled with population
+aquathermal_potential_for_waste_water,0,Assumed EU27 dataset value scaled with population
+energy_heat_import_ht_steam_hot_water_demand,0,Assumed EU27 dataset value scaled with population
+energy_heat_import_lt_steam_hot_water_demand,0,Assumed EU27 dataset value scaled with population
+energy_heat_import_mt_steam_hot_water_demand,0,Assumed EU27 dataset value scaled with population

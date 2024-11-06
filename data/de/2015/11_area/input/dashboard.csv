@@ -213,8 +213,8 @@ number_of_cars,45071000,EUROSTAT (see source_analyses/EU/2013/8_transport)
 number_of_busses,78345,Eurostat (see source_analyses/dk/2015/11_area/11_area_number_of_busses)
 number_of_trucks,524974,Eurostat (see source_analyses/dk/2015/11_area/11_area_number_of_trucks_vans)
 number_of_vans,2275762,Eurostat (see source_analyses/dk/2015/11_area/11_area_number_of_trucks_vans)
-electric_vehicle_profile_1_share,1,Assumed that at present all EV charge according to the Movares Overal laden profile
-electric_vehicle_profile_2_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
-electric_vehicle_profile_3_share,0,
-electric_vehicle_profile_4_share,0,
-electric_vehicle_profile_5_share,0,Assumed that at present all EV charge according to the Movares Overal laden profile
+electric_vehicle_profile_1_share,0.56,profile distribution from Elaad (2023); https://refman.energytransitionmodel.com/publications/2200
+electric_vehicle_profile_2_share,0.08,profile distribution from Elaad (2023); https://refman.energytransitionmodel.com/publications/2201
+electric_vehicle_profile_3_share,0.24,profile distribution from Elaad (2023); https://refman.energytransitionmodel.com/publications/2202
+electric_vehicle_profile_4_share,0.12,profile distribution from Elaad (2023); https://refman.energytransitionmodel.com/publications/2203
+electric_vehicle_profile_5_share,0,Costum profile

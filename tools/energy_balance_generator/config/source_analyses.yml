@@ -24,22 +24,28 @@
 
 fertilizer_demand:
   - arg_name: hydrogen_non_energetic_demand
-    file: source_analyses_input/input_industry_chemical_fertilizers
+    file: industry/input_industry
     file_type: extended
     field: industry_chemicals_fertilizers_steam_methane_reformer_hydrogen
 
 non_ferrous_metals_demand:
   - arg_name: total_aluminium_production
-    file: source_analyses_input/input_industry_metal_aluminium
+    file: industry/input_industry
     file_type: extended
     field: industry_aluminium_production
 
 steel_demand:
   - arg_name: total_steel_production
-    file: source_analyses_input/input_industry_metal_steel
+    file: industry/input_industry
     file_type: extended
     field: industry_steel_production
   - arg_name: percentage_of_BF
-    file: source_analyses_input/input_industry_metal_steel
+    file: industry/input_industry
     file_type: extended
     field: share_steel_blast_furnace_bof
+
+ict_demand:
+  - arg_name: ict_electricity_demand
+    file: industry/input_industry
+    file_type: extended
+    field: demand_ict_electricity_energetic

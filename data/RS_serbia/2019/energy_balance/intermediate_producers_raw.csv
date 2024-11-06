@@ -1,0 +1,13 @@
+Group,Total,Coal,Coal gas,Oil,Bio oil,Lignite,Diesel,Gas power fuelmix,Network gas,Waste mix,Wood pellets,Torrefied Wood pellets,Hydro,Wind,Solar thermal,Solar photovoltaic,Geothermal,Nuclear,Electricity,Heat
+Gross electricity production,135360.09,48.636,272.635,79.157,0,92050.787,0.104,0,2851.179,20.585,41.018,0,34045.83,3233.563,0,48.766,0,0,0,0
+Gross electricity production - producer combined heat and power,19382.879,48.636,272.635,79.157,0,16069.565,0.104,0,2851.177,20.585,41.018,0,0,0,0,0,0,0,0,0
+Gross electricity production - producer electricity only,115977.211,0,0,0,0,75981.222,0,0,0,0,0,0,34045.83,3233.563,0,48.766,0,0,0,0
+Gross heat production,33020.75,543.119,2508.891,3220.567,0,5153.27,618.52,0,20679.401,0,296.982,0,0,0,0,0,0,0,0,0
+Gross heat production - producer combined heat and power,10778.782,423.967,2508.891,1149.999,0,2521.064,1.951,0,4023.928,0,148.982,0,0,0,0,0,0,0,0,0
+Gross heat production - producer heat only,22241.968,119.152,0,2070.568,0,2632.206,616.569,0,16655.473,0,148,0,0,0,0,0,0,0,0,0
+Transformation input - electricity and heat generation - producer combined heat and power - energy use,63969.243,604.495,4637.394,1317.983,0,47185.834,2.351,0,9975.6,24.39,221.197,0,0,0,0,0,0,0,0,0
+Transformation input - electricity and heat generation - producer electricity only - energy use,255953.066,0,0,0,0,218624.907,0,0,0,0,0,0,34045.83,3233.563,0,48.766,0,0,0,0
+Transformation input - electricity and heat generation - producer heat only - energy use,24139.825,159.371,0,2503.894,0,2248.977,1073.227,0,17970.098,0,184.258,0,0,0,0,0,0,0,0,0
+Transformation output - electricity and heat generation - producer combined heat and power,30161.661,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19382.879,10778.782
+Transformation output - electricity and heat generation - producer electricity only,113309.381,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,113309.381,0
+Transformation output - electricity and heat generation - producer heat only,22241.968,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22241.968

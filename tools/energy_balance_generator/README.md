@@ -1,107 +1,128 @@
-# Energy balance conversion
-Converts an energy balance according to some steps and input files.
+# Energy Balance Conversion Tool
 
-### Setup
-You can easily setup with pipenv.
-```
-pipenv install
+This tool processes and converts energy balances from Eurostat or CSV files according to specific steps and input files. It also allows exporting the results to `ETLocal` or generating source analyses.
+
+## Setup
+
+To get started, you'll need to install the necessary dependencies using `pipenv`.
+
+### Installation:
+
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Ensure you have Python 3.x and Pipenv installed. Then, run the following command to install dependencies:
+
+   ```bash
+   pipenv install
+   ```
+
+## Running the Tool
+
+The tool processes energy balances for a given year and a list of countries. Available operations include conversions, exporting to `ETLocal`, and generating source analyses.
+
+### Conversion of Energy Balances
+
+The tool automatically fetches data from Eurostat via the API or reads pre-existing CSV files. It applies conversions to the energy balance data based on the specified country and year.
+
+#### Usage:
+
+```bash
+pipenv run conversions <YEAR> <COUNTRIES> [retrieve-only]
 ```
 
-### Running the tool
+- `<YEAR>`: The year of the energy balance you want to process.
+- `<COUNTRIES>`: A list of country codes, separated by commas (without spaces). You can also use `EU27_COUNTRIES_AND_TOTAL` to process all EU27 countries at once.
+- `[retrieve-only]`: (Optional) If provided, the script retrieves the raw CSV from the API and saves it without further processing.
 
-And then you can run the conversions with
+#### Examples:
+
+To run conversions for France in 2019:
+```bash
+pipenv run conversions 2019 FR
 ```
-pipenv run conversions <YEAR> <COUNTRIES>
+This will check if raw Eurostat data exists, and use it if it does. If the data is not found, it will draw data from Eurostat and process it straight away.
+
+To retrieve and save the raw CSV from Eurostat without processing:
+```bash
+pipenv run conversions 2019 FR retrieve-only
 ```
 
-Or you can generate some source analyses with
-```
-pipenv run source_analyses <YEAR> <COUNTRIES>
+### Importing World Balances
+
+The tool fetches data from a specified input folder, and processes it similar to the Eurostat data,
+but for a 'world' balance. The output should be in the same format as the output of the conversions.
+
+#### Usage:
+
+```bash
+pipenv run import_world <COUNTRY> <YEAR> [input_folder] [output_folder]
+pipenv run import_world --list-countries [input_folder]
 ```
 
-For COUNTRIES you can use the special keyword `EU28` to run the tool for all European countries at once. Or you can run a single country, or a list of countries (separated by commas, without spaces between them, eg `AT,BE,DE`).
+#### Examples:
 
-To export the energy balances to ETLocal please use
+To import the world balance for Switzerland in 2019 (note Switzerland is spelt as 'SWITLAND' - many countries have this quirk):
+```bash
+pipenv run import_world SWITLAND 2019 "/Users/User/Desktop/Secure Location" ../../data/CH_switzerland/2019/energy_balance
 ```
+
+To retrieve a list of all the country names in the txt files (to account for strange spellings):
+```bash
+pipenv run import_world --list-countries ./data/input
+```
+
+### Exporting Energy Balances to ETLocal
+
+After processing the energy balances, you can export them to `ETLocal` using the following command:
+
+```bash
 pipenv run export <YEAR> <COUNTRIES>
 ```
 
-Here the special keyword `ALL` can be used to export all energy balances.
+- `<YEAR>`: The year of the energy balance to export.
+- `<COUNTRIES>`: Specify the country code(s), or use `ALL` to export all available energy balances.
 
-# Conversions
+#### Example:
 
-## Inputs and parameters
-
-The tool will automatically download a clean Eurostat balance from the official
-Eurostat API to start the conversion with. If you don't want this, you can also supply
-your own energy balance (in Eurostat flat format).
-
-The code-keys for the flows and products from the Eurostat EB will be translated and
-ordered based on the translations given in the `config/eurostat_translations.yml` file.
-
-**NOTE:** Add some more info about what input files are needed per country
-- powerplant files
-- demand files
-- ???
-
-## Types of conversions
-
-In `energy_balance_operations/converters` you can find all the different converters,
-and you may add more converters there. These converters have one main method called
-`conversion` that takes arguments that are needed for the type of conversion.
-
-You can call these converters from the main script.
-
-### Industry chemical converter
-This converter uses final demands of different carriers in the fertilizer sector to
-split the original Eurostat chemical sector up into the ETM sectors _chemical fertilizers_
-and _chemical other_.
-
-In psuedocode:
-```
-fertilizer_demand_of_carrier_group is given by INPUT
-
-for each carrier_group
-  chemical_demand_carrier_group = sum(chemical_demand_carrier for carrier in carrier_group)
-  share = fertilizer_demand_of_carrier_group / chemical_demand_carrier_group
-  set fertilizer sector demand of each carrier to chemical_demand_carrier * share
+To export energy balances for France in 2019:
+```bash
+pipenv run export 2019 FR
 ```
 
-### Industry ICT converter
+To export all energy balances for 2019:
+```bash
+pipenv run export 2019 ALL
+```
 
-Story about converter
+### Generating Source Analyses
 
-Pseudocode of converter
+You can generate source analyses for energy balances using the following command:
 
-### Industry metal converter
+```bash
+pipenv run source_analyses <YEAR> <COUNTRIES>
+```
 
-Story about converter
+- `<YEAR>`: The year for which to generate source analyses.
+- `<COUNTRIES>`: Specify the country code(s), or use `EU27_COUNTRIES_AND_TOTAL` for all EU27 countries.
 
-Pseudocode of converter
+#### Example:
 
-### Powerplants converter
+To generate source analyses for France in 2019:
+```bash
+pipenv run source_analyses 2019 FR
+```
 
-Story about converter
+### Working with Scripts
 
-Pseudocode of converter
+You can modify or extend the tool's functionality by editing the scripts or adding new converters under the `etm_tools` directory.
 
-# Source analyses
+- **Converters**: Located under `etm_tools.energy_balance_operations.converters`, these define how energy balances are processed.
+- **Source Analyses**: Scripts for generating source analyses are located under `etm_tools.source_analysis`.
 
-## Inputs and parameters
+### Structure of the Tool
 
-Something about that.
-
-## Types of analyses
-
-### Industry chemical analyses
-Generates three files: for gas, oil_products and fuels.
-
-# Developing and using the tool
-
-## Structure of the tool
-
-You can add scripts that use the tools in the scripts folder.
-
-Or you can continue building the tools that are in the etm_tools folder.
-
-__under construction__
+- **Conversions**: The tool processes energy balances from either Eurostat or CSV files and applies a series of transformations (e.g., industry chemical, ICT, metal, power plants).
+- **Export**: The export script moves processed energy balances into a dataset folder for `ETLocal`.
+- **Source Analyses**: Generates additional files for source analyses using pre-defined methodologies.
+- **Import World**: Grabs data from a local .txt file in a secure location and applies a series of transformations
+  (e.g., industry chemical, ICT, metal, power plants) to generate enriched energy balances for world format data.

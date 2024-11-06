@@ -28,3 +28,7 @@ class EnergyBalance(Append, Load, Lookup, ShiftAndSwap, Totals, Validations):
 
     def transform_to_absolute(self):
         self.eb = self.eb.abs()
+
+    def has_values(self, flow):
+        '''Check if the given flow has values in the energy balance'''
+        return self.has_flow(flow) and self.eb.loc[flow].sum() > 0

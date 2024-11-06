@@ -1,0 +1,159 @@
+world_code,world_label,europe_code,europe_label,mapping
+INDPROD,Production,PPRD,Primary production,direct
+,,RCV_RCY,Recovered and recycled products,empty
+IMPORTS,Imports,IMP,Imports,direct
+EXPORTS,Exports,EXP,Exports,direct
+STOCKCHA,Stock changes,STK_CHG,Change in stock,direct
+,,GAE,Gross available energy,empty
+MARBUNK,International marine bunkers,INTMARB,International maritime bunkers,direct
+,,GIC,Gross inland consumption,empty
+AVBUNK,International aviation bunkers,INTAVI,International aviation,direct
+TES,Total energy supply,NRGSUP,Total energy supply,direct
+TRANSFER,Transfers,,,ignore
+,,GIC2020-2030,Gross inland consumption (Europe 2020-2030),empty
+,,PEC2020-2030,Primary energy consumption (Europe 2020-2030),empty
+,,FEC2020-2030,Final energy consumption (Europe 2020-2030),empty
+TOTTRANF,Transformation processes,TI_E,Transformation input - energy use,nettify
+,,TI_EHG_E,Transformation input - electricity and heat generation - energy use,empty
+MAINELEC,Main activity producer electricity plants,TI_EHG_MAPE_E,Transformation input - electricity and heat generation - main activity producer electricity only - energy use,nettify
+MAINCHP,Main activity producer CHP plants,TI_EHG_MAPCHP_E,Transformation input - electricity and heat generation - main activity producer combined heat and power - energy use,nettify
+MAINHEAT,Main activity producer heat plants,TI_EHG_MAPH_E,Transformation input - electricity and heat generation - main activity producer heat only - energy use,nettify
+AUTOELEC,Autoproducer electricity plants,TI_EHG_APE_E,Transformation input - electricity and heat generation - autoproducer electricity only - energy use,nettify
+AUTOCHP,Autoproducer CHP plants,TI_EHG_APCHP_E,Transformation input - electricity and heat generation - autoproducer combined heat and power - energy use,nettify
+AUTOHEAT,Autoproducer heat plants,TI_EHG_APH_E,Transformation input - electricity and heat generation - autoproducer heat only - energy use,nettify
+THEAT,Heat pumps,TI_EHG_EDHP,Transformation input - electricity and heat generation - electrically driven heat pumps,nettify
+TBOILER,Electric boilers,TI_EHG_EB,Transformation input - electricity and heat generation - electric boilers,nettify
+,,TI_EHG_EPS,Transformation input - electricity and heat generation - electricity for pumped storage,ignore
+TELE,Chemical heat for electricity production,TI_EHG_DHEP,Transformation input - electricity and heat generation - derived heat for electricity production,nettify
+TCOKEOVS,Coke ovens,TI_CO_E,Transformation input - coke ovens - energy use,nettify
+TBLASTFUR,Blast furnaces,TI_BF_E,Transformation input - blast furnaces - energy use,nettify
+TGASWKS,Gas works,TI_GW_E,Transformation input - gas works - energy use,nettify
+,,TI_RPI_E,Transformation input - refineries and petrochemical industry - energy use,empty
+TREFINER,Oil refineries,TI_RPI_RI_E,Transformation input - refineries and petrochemical industry - refinery intake - energy use,nettify
+TPETCHEM,Petrochemical plants,,,ignore
+,,TI_RPI_BPI_E,Transformation input - refineries and petrochemical industry - backflows from petrochemical industry - energy use,empty
+,,TI_RPI_PT_E,Transformation input - refineries and petrochemical industry - products transferred - energy use,empty
+,,TI_RPI_IT_E,Transformation input - refineries and petrochemical industry - interproduct transfers - energy use,empty
+,,TI_RPI_DU_E,Transformation input - refineries and petrochemical industry - direct use - energy use,empty
+,,TI_RPI_PII_E,Transformation input - refineries and petrochemical industry - petrochemical industry intake - energy use,empty
+TPATFUEL,Patent fuel plants,TI_PF_E,Transformation input - patent fuel plants - energy use,nettify
+TBKB,BKB/peat briquette plants,TI_BKBPB_E,Transformation input - brown coal briquettes and peat briquettes plants - energy use,nettify
+TCOALLIQ,Coal liquefaction plants,TI_CL_E,Transformation input - coal liquefaction plants - energy use,nettify
+TBLENDGAS,For blended natural gas,TI_BNG_E,Transformation input - for blended natural gas - energy use,nettify
+,,TI_LBB_E,Transformation input - liquid biofuels blended - energy use,empty
+TCHARCOAL,Charcoal production plants,TI_CPP_E,Transformation input - charcoal production plants - energy use,nettify
+TGTL,Gas-to-liquids (GTL) plants,TI_GTL_E,Transformation input - gas-to-liquids plants - energy use,nettify
+TNONSPEC,Non-specified (transformation),TI_NSP_E,Transformation input - not elsewhere specified - energy use,nettify
+TOTTRANF,Transformation processes,TO,Transformation output,nettify
+,,TO_EHG,Transformation output - electricity and heat generation,empty
+MAINELEC,Main activity producer electricity plants,TO_EHG_MAPE,Transformation output - electricity and heat generation - main activity producer electricity only,nettify
+MAINCHP,Main activity producer CHP plants,TO_EHG_MAPCHP,Transformation output - electricity and heat generation - main activity producer combined heat and power,nettify
+MAINHEAT,Main activity producer heat plants,TO_EHG_MAPH,Transformation output - electricity and heat generation - main activity producer heat only,nettify
+AUTOELEC,Autoproducer electricity plants,TO_EHG_APE,Transformation output - electricity and heat generation - autoproducer electricity only,nettify
+AUTOCHP,Autoproducer CHP plants,TO_EHG_APCHP,Transformation output - electricity and heat generation - autoproducer combined heat and power,nettify
+AUTOHEAT,Autoproducer heat plants,TO_EHG_APH,Transformation output - electricity and heat generation - autoproducer heat only,nettify
+THEAT,Heat pumps,TO_EHG_EDHP,Transformation output - electricity and heat generation - electrically driven heat pumps,nettify
+TBOILER,Electric boilers,TO_EHG_EB,Transformation output - electricity and heat generation - electric boilers,nettify
+,,TO_EHG_PH,Transformation output - electricity and heat generation - pumped hydro,empty
+,,TO_EHG_OTH,Transformation output - electricity and heat generation - other sources,empty
+TCOKEOVS,Coke ovens,TO_CO,Transformation output - coke ovens,nettify
+TBLASTFUR,Blast furnaces,TO_BF,Transformation output - blast furnaces,nettify
+TGASWKS,Gas works,TO_GW,Transformation output - gas works,nettify
+,,TO_RPI,Transformation output - refineries and petrochemical industry,empty
+TREFINER,Oil refineries,TO_RPI_RO,Transformation output - refineries and petrochemical industry - refinery output,nettify
+TPETCHEM,Petrochemical plants,,,ignore
+,,TO_RPI_BKFLOW,Transformation output - refineries and petrochemical industry - backflows,empty
+,,TO_RPI_PT,Transformation output - refineries and petrochemical industry - products transferred,empty
+,,TO_RPI_IT,Transformation output - refineries and petrochemical industry - interproduct transfers,empty
+,,TO_RPI_PPR,Transformation output - refineries and petrochemical industry - primary product receipts,empty
+,,TO_RPI_PIR,Transformation output - refineries and petrochemical industry - petrochemical industry returns,empty
+TPATFUEL,Patent fuel plants,TO_PF,Transformation output - patent fuel plants,nettify
+TBKB,BKB/peat briquette plants,TO_BKBPB,Transformation output - brown coal briquettes and peat briquettes plants,nettify
+TCOALLIQ,Coal liquefaction plants,TO_CL,Transformation output - coal liquefaction plants,nettify
+TBLENDGAS,For blended natural gas,TO_BNG,Transformation output - blended in natural gas,nettify
+,,TO_LBB,Transformation output - liquid biofuels blended,empty
+TCHARCOAL,Charcoal production plants,TO_CPP,Transformation output - charcoal production plants,nettify
+TGTL,Gas-to-liquids (GTL) plants,TO_GTL,Transformation output - gas-to-liquids plants,nettify
+TNONSPEC,Non-specified (transformation),TO_NSP,Transformation output - not elsewhere specified,nettify
+TOTENGY,Energy industry own use,NRG_E,Energy sector - energy use,direct
+EPOWERPLT,"Own use in electricity,CHP and heat plants",NRG_EHG_E,Energy sector - electricity and heat generation - energy use,direct
+EPUMPST,Pumped storage plant,,,ignore
+EMINES,Coal mines,NRG_CM_E,Energy sector - coal mines - energy use,direct
+EOILGASEX,Oil and gas extraction,NRG_OIL_NG_E,Energy sector - oil and natural gas extraction plants - energy use,direct
+EPATFUEL,Patent fuel plants,NRG_PF_E,Energy sector - patent fuel plants - energy use,direct
+ECOKEOVS,Coke ovens,NRG_CO_E,Energy sector - coke ovens - energy use,direct
+EBKB,BKB/peat briquette plants,NRG_BKBPB_E,Energy sector - brown coal briquettes and peat briquettes plants - energy use,direct
+EGASWKS,Gas works,NRG_GW_E,Energy sector - gas works - energy use,direct
+EBLASTFUR,Blast furnaces,NRG_BF_E,Energy sector - blast furnaces - energy use,direct
+EREFINER,Oil refineries,NRG_PR_E,Energy sector - petroleum refineries (oil refineries) - energy use,direct
+ENUC,Nuclear industry,NRG_NI_E,Energy sector - nuclear industry - energy use,direct
+ECOALLIQ,Coal liquefaction plants,NRG_CL_E,Energy sector - coal liquefaction plants - energy use,direct
+ELNG,Liquefaction (LNG)/regasification plants,NRG_LNG_E,Energy sector - liquefaction and regasification plants (LNG) - energy use,direct
+EBIOGAS,Gasification plants for biogases,NRG_BIOG_E,Energy sector - gasification plants for biogas - energy use,direct
+EGTL,Gas-to-liquids (GTL) plants,NRG_GTL_E,Energy sector - gas-to-liquids plants - energy use,direct
+ECHARCOAL,Charcoal production plants,NRG_CPP_E,Energy sector - charcoal production plants - energy use,direct
+ENONSPEC,Non-specified (energy),NRG_NSP_E,Energy sector - not elsewhere specified - energy use,direct
+DISTLOSS,Losses,DL,Distribution losses,direct
+TFC,Total final consumption,AFC,Available for final consumption,direct
+NONENUSE,Non-energy use,FC_NE,Final consumption - non-energy use,direct
+NEINTREN,Non-energy use industry/transformation/energy,TI_NRG_FC_IND_NE,"Transformation input, energy sector and final consumption in industry sector - non-energy use",direct
+,,TI_NE,Transformation input - non-energy use,empty
+,,NRG_NE,Energy sector - non-energy use,empty
+NEIND,Non-energy use in industry,FC_IND_NE,Final consumption - industry sector - non-energy use,direct
+NETRANS,Non-energy use in transport,FC_TRA_NE,Final consumption - transport sector - non-energy use,direct
+NEOTHER,Non-energy use in other,FC_OTH_NE,Final consumption - other sectors - non-energy use,direct
+,,FC_E,Final consumption - energy use,empty
+TOTIND,Industry,FC_IND_E,Final consumption - industry sector - energy use,direct
+IRONSTL,Iron and steel,FC_IND_IS_E,Final consumption - industry sector - iron and steel - energy use,direct
+CHEMICAL,Chemical and petrochemical,FC_IND_CPC_E,Final consumption - industry sector - chemical and petrochemical - energy use,direct
+NONFERR,Non-ferrous metals,FC_IND_NFM_E,Final consumption - industry sector - non-ferrous metals - energy use,direct
+NONMET,Non-metallic metals,FC_IND_NMM_E,Final consumption - industry sector - non-metallic minerals - energy use,direct
+TRANSEQ,Transport equipment,FC_IND_TE_E,Final consumption - industry sector - transport equipment - energy use,direct
+MACHINE,Machinery,FC_IND_MAC_E,Final consumption - industry sector - machinery - energy use,direct
+MINING,Mining and quarrying,FC_IND_MQ_E,Final consumption - industry sector - mining and quarrying - energy use,direct
+FOODPRO,Food and tobacco,FC_IND_FBT_E,"Final consumption - industry sector - food, beverages and tobacco - energy use",direct
+PAPERPRO,"Paper, pulp and print",FC_IND_PPP_E,"Final consumption - industry sector - paper, pulp and printing - energy use",direct
+WOODPRO,Wood and wood products,FC_IND_WP_E,Final consumption - industry sector - wood and wood products - energy use,direct
+CONSTRUC,Construction,FC_IND_CON_E,Final consumption - industry sector - construction - energy use,direct
+TEXTILES,Textile and leather,FC_IND_TL_E,Final consumption - industry sector - textile and leather - energy use,direct
+INONSPEC,Industry not elsewhere specified,FC_IND_NSP_E,Final consumption - industry sector - not elsewhere specified - energy use,direct
+TOTTRANS,Transport,FC_TRA_E,Final consumption - transport sector - energy use,direct
+RAIL,Rail,FC_TRA_RAIL_E,Final consumption - transport sector - rail - energy use,direct
+ROAD,Road,FC_TRA_ROAD_E,Final consumption - transport sector - road - energy use,direct
+DOMESAIR,Domestic aviation,FC_TRA_DAVI_E,Final consumption - transport sector - domestic aviation - energy use,direct
+DOMESNAV,Domestic navigation,FC_TRA_DNAVI_E,Final consumption - transport sector - domestic navigation - energy use,direct
+PIPELINE,Pipeline transport,FC_TRA_PIPE_E,Final consumption - transport sector - pipeline transport - energy use,direct
+TRNONSPE,Transport not elsewhere specified,FC_TRA_NSP_E,Final consumption - transport sector - not elsewhere specified - energy use,direct
+,,FC_OTH_E,Final consumption - other sectors - energy use,empty
+COMMPUB,Commercial and public services,FC_OTH_CP_E,Final consumption - other sectors - commercial and public services - energy use,direct
+RESIDENT,Residential,FC_OTH_HH_E,Final consumption - other sectors - households - energy use,direct
+AGRICULT,Agriculture/forestry,FC_OTH_AF_E,Final consumption - other sectors - agriculture and forestry - energy use,direct
+FISHING,Fishing,FC_OTH_FISH_E,Final consumption - other sectors - fishing - energy use,direct
+ONONSPEC,Final consumption not elsewhere specified,FC_OTH_NSP_E,Final consumption - other sectors - not elsewhere specified - energy use,direct
+STATDIFF,Statistical differences,STATDIFF,Statistical differences,direct
+ELOUTPUT,Electricity output (GWh),GEP,Gross electricity production,convert
+ELMAINC,Electricity output (GWh) - main activity CHP plants,GEP_MAPE,Gross electricity production - main activity producer electricity only,convert
+ELMAINE,Electricity output (GWh) - main activity electricity plants,GEP_MAPCHP,Gross electricity production - main activity producer combined heat and power,convert
+ELAUTOE,Electricity output (GWh) - autoproducer electricity plants,GEP_APE,Gross electricity production - autoproducer electricity only,convert
+ELAUTOC,Electricity output (GWh) - autoproducer CHP plants,GEP_APCHP,Gross electricity production - autoproducer combined heat and power,convert
+HEATOUT,Heat output,GHP,Gross heat production,direct
+HEMAINC,Heat output-main activity producer CHP plants,GHP_MAPCHP,Gross heat production - main activity producer combined heat and power,direct
+HEMAINH,Heat output-main activity producer heat plants,GHP_MAPH,Gross heat production - main activity producer heat only,direct
+HEAUTOC,Heat output-autoproducer CHP plants,GHP_APCHP,Gross heat production - autoproducer combined heat and power,direct
+HEAUTOH,Heat output-autoproducer heat plants,GHP_APH,Gross heat production - autoproducer heat only,direct
+NECHEM,Non-energy use chemical/petrochemical,FC_IND_CPC_NE,Final consumption - industry sector - chemical and petrochemical - non-energy use,add
+NECONSTRUC,Non-energy use in construction,,,ignore
+NEFOODPRO,Non-energy use in food/beverages/tobacco,,,ignore
+NEINONSPEC,Non-energy use in non-specified industry,,,ignore
+NEIRONSTL,Non-energy use in iron and steel,,,ignore
+NEMACHINE,Non-energy use in machinery,,,ignore
+NEMINING,Non-energy use in mining and quarrying,,,ignore
+NENONFERR,Non-energy use in non-ferous metals,,,ignore
+NENONMET,Non-energy use in non-metallic minerals,,,ignore
+NEPAPERPRO,Non-energy use in paper/pulp and printing,,,ignore
+NETEXTILES,Non-energy use in textiles and leather,,,ignore
+NETRANSEQ,Non-energy use in transport equipment,,,ignore
+NEWOODPRO,Non-energy use in wood and wood products,,,ignore
+WORLDAV,,,,ignore
+WORLDMAR,,,,ignore
+MANUFACT,,,,ignore

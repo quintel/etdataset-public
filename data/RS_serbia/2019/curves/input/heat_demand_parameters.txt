@@ -1,0 +1,24 @@
+# Overview of heat demand paramaters used to generate heat demand profiles
+
+# R-values used for nl2019 [m^2 K / W]
+    R_VALUES = {
+        "terraced_houses": {"low": 0.72608224, "medium": 0.95303516, "high": 2.20833951},
+        "semi_detached_houses": {"low": 0.92629934, "medium": 1.20779267, "high": 2.90413756},
+        "apartments": {"low": 0.96937942, "medium": 1.39716924, "high": 2.95000949},
+        "detached_houses": {"low": 1.02227109, "medium": 1.2962618, "high": 3.10765405}
+    }
+
+    SURFACE_AREA = {
+        "terraced_houses": 183,
+        "semi_detached_houses": 279,
+        "apartments": 187,
+        "detached_houses": 405
+    }
+
+    # Fitting number used for nl2019
+    BEHAVIOUR_FITTING_RESULTS = {
+        "terraced_houses": {'low': 0.44224575, 'medium': 2.61042431, 'high': 0.59483274},
+        "semi_detached_houses":  {'low': 1.57962902, 'medium': 4.43499574, 'high': 0.45485638},
+        "apartments": {'low': -0.11691841, 'medium': 0.80467653, 'high': 2.78210071},
+        "detached_houses": {'low': 3.34031291, 'medium': 7.76537119, 'high': 2.74614981}
+    }

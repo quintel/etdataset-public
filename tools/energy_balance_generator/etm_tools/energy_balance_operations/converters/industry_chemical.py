@@ -43,9 +43,10 @@ class IndustryChemicalConverter(Converter):
         demand_fertilizers_network_gas_non_energetic,
         demand_fertilizers_crude_oil_non_energetic,
         # shares_chemical_wood_pellets_non_energetic,
-        shares_chemical_network_gas_non_energetic,
-        shares_chemical_crude_oil_non_energetic,
-        shares_chemical_coal_non_energetic):
+        shares_chemical_network_gas_non_energetic=None,
+        shares_chemical_crude_oil_non_energetic=None,
+        shares_chemical_coal_non_energetic=None
+        ):
         '''
         Splits chemical and petrochemical industry into 'other' and 'fertilizers', based
         on the total demand of fertilizers
@@ -77,8 +78,9 @@ class IndustryChemicalConverter(Converter):
         # NON ENERGETIC --------------------------------------------------------
 
         # First create a chemical industry subgroup of the final non energy use
-        self.create_chemical_and_petroleum_non_energy_row(shares_chemical_network_gas_non_energetic,
-            shares_chemical_crude_oil_non_energetic, shares_chemical_coal_non_energetic)
+        if not self.energy_balance.has_values(self.CHEM_AND_PETROCHEM_NE):
+            self.create_chemical_and_petroleum_non_energy_row(shares_chemical_network_gas_non_energetic,
+                shares_chemical_crude_oil_non_energetic, shares_chemical_coal_non_energetic)
 
         # Second subtract chemical industry non-energetic from industry non-energetic to obtain other industry non-energetic
 
@@ -125,10 +127,11 @@ class IndustryChemicalConverter(Converter):
     def create_chemical_and_petroleum_non_energy_row(self,
         shares_chemical_network_gas_non_energetic, shares_chemical_crude_oil_non_energetic,
         shares_chemical_coal_non_energetic):
-        '''Based on the shares per product, creates a new row for non-energy use chem and petrol'''
+        '''Based on the shares per product, creates or skips creating a row for non-energy use chem and petrol'''
+
         merged_product_shares = (shares_chemical_network_gas_non_energetic |
-                                 shares_chemical_crude_oil_non_energetic |
-                                 shares_chemical_coal_non_energetic)
+                                shares_chemical_crude_oil_non_energetic |
+                                shares_chemical_coal_non_energetic)
 
         self.energy_balance.add_row_with_energy(
             self.CHEM_AND_PETROCHEM_NE,

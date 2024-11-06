@@ -1,0 +1,13 @@
+Group,Total,Coal,Coal gas,Oil,Bio oil,Lignite,Diesel,Gas power fuelmix,Network gas,Waste mix,Wood pellets,Torrefied Wood pellets,Hydro,Wind,Solar thermal,Solar photovoltaic,Geothermal,Nuclear,Electricity,Heat
+Gross electricity production,485663.814,160.628,426.312,1167.149,0.623,0.0,61.312,0,7455.053,1482.995,86.407,0.0,451041.592,19888.229,0.0,46.231,0.0,0.0,0.0,0.0
+Gross electricity production - producer combined heat and power,10297.705999999998,160.628,0.0,1167.1490000000001,0.623,0.0,4.741,0,7402.248,1482.995,79.322,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Gross electricity production - producer electricity only,475366.10699999996,0.0,426.312,0.0,0.0,0.0,56.57,0,52.805,0.0,7.085,0.0,451041.592,19888.229,0.0,46.231,0.0,0.0,0.0,0.0
+Gross heat production,27586.147,270.2,18.054,495.938,234.431,0.0,142.613,0,650.636,10882.226,5724.049,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2324.0,0.0
+Gross heat production - producer combined heat and power,8025.868,270.2,0.0,10.708,8.376,0.0,18.669,0,0.0,6627.707,1022.208,0.0,0.0,0.0,0.0,0.0,0.0,0.0,45.0,0.0
+Gross heat production - producer heat only,19560.279000000002,0.0,18.054,485.23,226.055,0.0,123.944,0,650.636,4254.519,4701.841,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2279.0,0.0
+Transformation input - electricity and heat generation - producer combined heat and power - energy use,28096.828999999998,852.695,0.0,3626.235,8.843,0.0,30.213,0,12589.008,9158.348,1831.486,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Transformation input - electricity and heat generation - producer electricity only - energy use,474881.92699999997,0.0,1251.132,0.0,0.0,0.0,141.411,0,134.316,0.0,15.616,0.0,451041.592,19888.229,0.0,46.231,0.0,0.0,0.0,2363.4
+Transformation input - electricity and heat generation - producer heat only - energy use,19091.178,0.0,18.054,524.664,241.277,0.0,148.824,0,694.952,5120.724,7196.499,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3581.0
+Transformation output - electricity and heat generation - producer combined heat and power,18255.574,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,10297.705999999998,7957.868
+Transformation output - electricity and heat generation - producer electricity only,471518.82300000003,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,471518.82300000003,0.0
+Transformation output - electricity and heat generation - producer heat only,10460.279,0.0,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,10460.279

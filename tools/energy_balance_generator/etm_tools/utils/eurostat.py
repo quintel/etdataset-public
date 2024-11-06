@@ -1,11 +1,14 @@
 import requests
 import io
-
-from etm_tools.energy_balance_operations.input_files import EBConfig
+import pandas as pd
 
 BASE_URL = 'https://ec.europa.eu/eurostat/api/dissemination/sdmx/2.1/data/'
 
 class EurostatAPI():
+    # We have some codes in the config that can't be passed to the API - If the API gives an error like:
+    # "The following values for dimension are not allowed: NRG_BAL=FC_IND_CPC_NE, SIEC=E8000, SIEC=O4200",
+    # add the relevant codes to the array below for exclusion.
+    EXCLUDED_CODES = ['FC_IND_CPC_NE']
 
     def __init__(self):
         pass
@@ -19,21 +22,21 @@ class EurostatAPI():
             country_codes (str|list[str]): The country codes you want to download the EB for
             csv_type (str):                The type of download requested from Eurostat, can be
                                            any of 'energy_balance', 'fossil_fuels', 'oil_products'
-                                           or 'network_gas'
+                                           or 'gas'
             year (int):                    The year for which to download the CSV
 
         Returns:
             StringIO object containing the requested csv download from Eurostat
         '''
+        from etm_tools.energy_balance_operations.input_files import EBConfig
         eb_setting = EBConfig.load(eb_type=csv_type)
 
         return self._handle_response(self._request(
-            eb_setting.eurostat_code(),
+            eb_setting.europe_code(),
             self._create_options(eb_setting, csv_type),
             country_codes,
             {'startPeriod': year, 'endPeriod': year}
         ))
-
 
     def _request(self, key, options, country_codes, params):
         country_codes = EurostatAPI.join(country_codes)
@@ -46,19 +49,18 @@ class EurostatAPI():
         if response.ok:
             return io.StringIO(response.content.decode("utf-8"))
 
-        # TODO: this can be nicer
         raise SystemExit(f'Could not connect to Eurostat ({response.content})')
 
 
     def _create_options(self, eb_setting, csv_type):
         '''Returns the options string'''
-        flows = EurostatAPI.join(eb_setting.all_codes("flows"))
-        products = EurostatAPI.join(eb_setting.all_codes("products"))
+        flows = EurostatAPI.join(EurostatAPI.exclude_invalid_codes(list(eb_setting.all_codes("flows"))))
+        products = EurostatAPI.join(EurostatAPI.exclude_invalid_codes(list(eb_setting.all_codes("products"))))
 
         if csv_type == 'chps':
-            return '.'.join([eb_setting.unit(), flows,
-                EurostatAPI.join(eb_setting.all("plants")), products,
-                EurostatAPI.join(eb_setting.all("efficiencies"))])
+            plants = EurostatAPI.join(list(eb_setting.all("plants")))
+            efficiencies = EurostatAPI.join(list(eb_setting.all("efficiencies")))
+            return '.'.join([eb_setting.unit(), flows, plants, products, efficiencies])
 
         return '.'.join([flows, products, eb_setting.unit()])
 
@@ -69,3 +71,10 @@ class EurostatAPI():
             codes = '+'.join(codes)
 
         return codes
+
+    @staticmethod
+    def exclude_invalid_codes(codes):
+        """
+        Filters out any codes present in the EXCLUDED_CODES list.
+        """
+        return [str(code).strip() for code in codes if isinstance(code, str) and str(code).strip() not in EurostatAPI.EXCLUDED_CODES]

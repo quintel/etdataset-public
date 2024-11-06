@@ -1,0 +1,5 @@
+﻿key,value,comment
+input_share_mixer_gas_fuel_bio_oil,0,Assumption
+input_share_mixer_gas_fuel_oil,0,Assumption
+input_share_mixer_gas_fuel_network_gas,1,Assumption
+energy_extraction_uranium_oxide_demand,0,No data available in the energy balance; set to 0

@@ -1,0 +1,5 @@
+key,value,comment
+input_percentage_of_central_ht_steam_hot_water_agriculture_final_demand_steam_hot_water,1,All heat to HT
+input_percentage_of_central_mt_steam_hot_water_agriculture_final_demand_steam_hot_water,0,All heat to HT
+input_percentage_of_local_steam_hot_water_agriculture_final_demand_steam_hot_water,0,All heat to HT
+agriculture_final_demand_hydrogen_demand,0,Assumption no hydrogen

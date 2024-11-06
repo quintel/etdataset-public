@@ -21,7 +21,7 @@ class NonFerrousMetalsDemandAnalyser(Analyser):
     }
 
 
-    def generate_analysis(self, total_aluminium_production):
+    def generate_analysis(self, total_aluminium_production, output_folder=None):
         '''
         Calculate final aluminum demand for electricity and network gas by using the total aluminum
         production, specifications of nl2019 industry_aluminium_electrolysis_current_electricity
@@ -30,7 +30,7 @@ class NonFerrousMetalsDemandAnalyser(Analyser):
         data = {
             'aluminium production': total_aluminium_production,
             'demand_aluminium_electricity_energetic': (
-                total_aluminium_production / self.OUTPUT['not_defined'] * 
+                total_aluminium_production / self.OUTPUT['not_defined'] *
                 self.INPUT['electricity'] * 1000   # Convert to TJ
             ),
             'demand_aluminium_network_gas_energetic': (
@@ -39,4 +39,4 @@ class NonFerrousMetalsDemandAnalyser(Analyser):
             )
         }
 
-        self.write_to_analysis(data, 'non_ferrous_metal_demands')
+        self.write_to_analysis(data, 'non_ferrous_metal_demands_analysis')

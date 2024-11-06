@@ -4,7 +4,7 @@
 
 energy_balance:
   unit: TJ
-  eurostat_code: NRG_BAL_C
+  europe_code: NRG_BAL_C
   products:
     - Total
     #C0000X0350-0370
@@ -219,9 +219,9 @@ energy_balance:
     - Gross heat production - autoproducer heat only
 
 # For the Oil and petroleum products EB download
-crude_oil:
+oil:
   unit: THS_T
-  eurostat_code: NRG_CB_OIL
+  europe_code: NRG_CB_OIL
   flows:
     - Final consumption - industry sector - chemical and petrochemical - non-energy use
     - Final consumption - non-energy use
@@ -253,7 +253,7 @@ crude_oil:
 
 coal:
   unit: THS_T
-  eurostat_code: NRG_CB_SFF
+  europe_code: NRG_CB_SFF
   flows:
     - Final consumption - industry sector - chemical and petrochemical - non-energy use
     - Final consumption - non-energy use
@@ -273,9 +273,9 @@ coal:
     #P1200
     - Oil shale and oil sands
 
-network_gas:
+gas:
   unit: TJ_GCV
-  eurostat_code: NRG_CB_GAS
+  europe_code: NRG_CB_GAS
   flows:
     - Final consumption - industry sector - chemical and petrochemical - non-energy use
     - Final consumption - non-energy use
@@ -290,7 +290,7 @@ network_gas:
 # Let's see what to do with this cutie
 chps:
   unit: MW
-  eurostat_code: NRG_CHP_CPFE
+  europe_code: NRG_CHP_CPFE
   flows:
     - Maximum gross electricity capacity
     - Maximum gross electricity capacity in CHP mode

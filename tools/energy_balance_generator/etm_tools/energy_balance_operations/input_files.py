@@ -85,10 +85,11 @@ class EBConfig():
 
     def _translate_products(self):
         if self.eb_type == 'world':
-            return product_translations.translate_to('world_code')
+            return product_translations.translate_to('world_label')
 
-        return product_translations.translate_to(
-            'eurostat_code', filters=self.all('products'))
+        # Filter out missing europe_labels
+        valid_labels = [label for label in self.all('europe_label') if pd.notna(label)]
+        return product_translations.translate_to('europe_code', filters=valid_labels)
 
     def flow_translation(self) -> dict:
         '''Translate from codes to human readable names. Returns a dict'''
@@ -99,9 +100,11 @@ class EBConfig():
 
     def _translate_flows(self):
         if self.eb_type == 'world':
-            return flow_translations.translate_to('world_code')
+            return flow_translations.translate_to('world_label')
 
-        return flow_translations.translate_to('eurostat_code', filters=self.all('flows'))
+        # Filter out missing europe_labels
+        valid_labels = [label for label in self.all('europe_label') if pd.notna(label)]
+        return flow_translations.translate_to('europe_code', filters=valid_labels)
 
     def all(self, field='products'):
         '''
@@ -124,8 +127,8 @@ class EBConfig():
     def unit(self):
         return self._lookup('unit')
 
-    def eurostat_code(self):
-        return self._lookup('eurostat_code')
+    def europe_code(self):
+        return self._lookup('europe_code')
 
     def unique_extra_attributes(self):
         for field in self._lookup('extra_attributes'):

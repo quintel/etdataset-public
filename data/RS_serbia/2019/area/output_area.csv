@@ -1,0 +1,82 @@
+key,value,comment
+geo_id,RS,
+analysis_year,2019,Base year
+country,eu,
+data_source,entso,
+name,Serbia,
+co2_emission_1990,61.529,Derived from the UNFCCC data on country emissions (IPCC common reporting format); author: UNFCC; year: 1990; for specifics see etdataset-public/source_analyses/RS_serbia/2019/area/Emissions.xlsx
+co2_emission_1990_aviation_bunkers,0.45861,Derived from the UNFCCC data on country emissions (IPCC common reporting format); author: UNFCC; year: 1990; for specifics see etdataset-public/source_analyses/RS_serbia/2019/area/Emissions.xlsx
+co2_emission_1990_marine_bunkers,0,Derived from the UNFCCC data on country emissions (IPCC common reporting format); author: UNFCC; year: 1990; for specifics see etdataset-public/source_analyses/RS_serbia/2019/area/Emissions.xlsx
+annual_infrastructure_cost_gas,579965517.2,Assumed values of NL dataset scaled with population
+heat_length_of_connection_pipelines_in_meter_per_residence_fifth_bracket,8.9,Assumed values of NL dataset
+heat_length_of_connection_pipelines_in_meter_per_residence_first_bracket,1.7,Assumed values of NL dataset
+heat_length_of_connection_pipelines_in_meter_per_residence_fourth_bracket,6.3,Assumed values of NL dataset
+heat_length_of_connection_pipelines_in_meter_per_residence_second_bracket,3.5,Assumed values of NL dataset
+heat_length_of_connection_pipelines_in_meter_per_residence_third_bracket,5,Assumed values of NL dataset
+heat_length_of_distribution_pipelines_in_meter_per_residence_object_fifth_bracket,10,Assumed values of NL dataset
+heat_length_of_distribution_pipelines_in_meter_per_residence_object_first_bracket,3.2,Assumed values of NL dataset
+heat_length_of_distribution_pipelines_in_meter_per_residence_object_fourth_bracket,7,Assumed values of NL dataset
+heat_length_of_distribution_pipelines_in_meter_per_residence_object_second_bracket,4.6,Assumed values of NL dataset
+heat_length_of_distribution_pipelines_in_meter_per_residence_object_third_bracket,5.8,Assumed values of NL dataset
+hv_net_capacity_per_step,20,Assumed values of NL dataset
+hv_net_costs_per_capacity_step,7280000,Assumed values of NL dataset
+interconnector_capacity,4750,"No sufficient EU data found, the interconnection costs are therefore calculated using the average interconnection costs from the NL dataset derived from the NvdT study (2017) by CE Delft and multiplied with the interconnection capcity derived from the TYNDP 2025 Scenario's by entso-e and entso-g; year: 2019; author: Quintel"
+lv_mv_trafo_capacity_per_step,0.2,Assumed values of NL dataset
+lv_mv_trafo_costs_per_capacity_step,40000,Assumed values of NL dataset
+lv_mv_trafo_spare_capacity,0.25,Assumed values of NL dataset
+lv_mv_trafo_total_costs_present,119363974.7,Assumed values of NL dataset scaled with population
+lv_net_capacity_per_step,0.2,Assumed values of NL dataset
+lv_net_costs_per_capacity_step,183200,Assumed values of NL dataset
+lv_net_spare_capacity,0.25,Assumed values of NL dataset
+lv_net_total_costs_present,335056771,Assumed values of NL dataset corrected for population
+mv_hv_trafo_capacity_per_step,2,Assumed values of NL dataset
+mv_hv_trafo_costs_per_capacity_step,40000,Assumed values of NL dataset
+mv_hv_trafo_spare_capacity,0.25,Assumed values of NL dataset
+mv_hv_trafo_total_costs_present,100517031.3,Assumed values of NL dataset scaled with population
+mv_net_capacity_per_step,2,Assumed values of NL dataset
+mv_net_costs_per_capacity_step,1380000,Assumed values of NL dataset
+mv_net_spare_capacity,0.25,Assumed values of NL dataset
+hv_net_spare_capacity,0.25,Assumed values of NL dataset
+hv_net_total_costs_present,119363974.7,Assumed values of NL dataset corrected for population
+interconnection_net_costs_present,113309902.5,"Assumed values of NL dataset, corrected for interconnector capacity"
+mv_net_total_costs_present,287939412.6,Assumed values of NL dataset corrected for population
+offshore_net_costs_present,0,No offshore grid
+areable_land,18457,Assumed values of NL dataset
+total_land_area,33671,Assumed values of NL dataset
+coast_line,0,No coastline
+offshore_suitable_for_wind,0,No coastline
+file_carriers_coal_co2_conversion_per_mj,0.1028,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_crude_oil_co2_conversion_per_mj,0.085,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_diesel_co2_conversion_per_mj,0.085,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_gasoline_co2_conversion_per_mj,0.0872,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_heavy_fuel_oil_co2_conversion_per_mj,0.0774,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_imported_ammonia_co2_conversion_per_mj,0.0968,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_imported_electricity_co2_conversion_per_mj,0,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_imported_heat_co2_conversion_per_mj,0,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_imported_hydrogen_co2_conversion_per_mj,0.078,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_kerosene_co2_conversion_per_mj,0.0715,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_lignite_co2_conversion_per_mj,0.1042,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_lng_co2_conversion_per_mj,0.0781,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_lpg_co2_conversion_per_mj,0.0667,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_natural_gas_co2_conversion_per_mj,0.0667,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_non_biogenic_waste_co2_conversion_per_mj,0.0819,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+file_carriers_propane_co2_conversion_per_mj,0.0645,Based on EU data abstracted from the report 'Covenant of Mayors for Climate and Energy: - Default emission actors for local - emission in entories'; year: 2017; author: RC
+energetic_emissions_other_ghg_households,0.3,"Air emissions account, Serbian Environmental Protection Agency, assumed 2021 data:  https://publikacije.stat.gov.rs/G2024/HtmlE/G20241257.html"
+energetic_emissions_other_ghg_buildings,0.0228,"Air emissions account, Serbian Environmental Protection Agency, assumed 2021 data:  https://publikacije.stat.gov.rs/G2024/HtmlE/G20241257.html"
+energetic_emissions_other_ghg_industry,0.1496,"Air emissions account, Serbian Environmental Protection Agency, assumed 2021 data:  https://publikacije.stat.gov.rs/G2024/HtmlE/G20241257.html"
+energetic_emissions_other_ghg_energy,0.4292,"Air emissions account, Serbian Environmental Protection Agency, assumed 2021 data:  https://publikacije.stat.gov.rs/G2024/HtmlE/G20241257.html"
+energetic_emissions_other_ghg_transport,0.234,"Air emissions account, Serbian Environmental Protection Agency, assumed 2021 data:  https://publikacije.stat.gov.rs/G2024/HtmlE/G20241257.html"
+energetic_emissions_other_ghg_agriculture,0.0973,"Air emissions account, Serbian Environmental Protection Agency, assumed 2021 data:  https://publikacije.stat.gov.rs/G2024/HtmlE/G20241257.html"
+non_energetic_emissions_co2_chemical_industry,0,No data available
+non_energetic_emissions_co2_waste_management,0,No data available
+non_energetic_emissions_co2_other_industry,0,No data available
+non_energetic_emissions_co2_agriculture_manure,0,No data available
+non_energetic_emissions_co2_agriculture_soil_cultivation,0,No data available
+indirect_emissions_co2,0,No data available
+non_energetic_emissions_other_ghg_chemical_industry,0,No data available
+non_energetic_emissions_other_ghg_waste_management,0,No data available
+non_energetic_emissions_other_ghg_other_industry,0,No data available
+non_energetic_emissions_other_ghg_agriculture_manure,0,No data available
+non_energetic_emissions_other_ghg_agriculture_soil_cultivation,0,No data available
+non_energetic_emissions_other_ghg_agriculture_fermentation,0,No data available
+non_energetic_emissions_other_ghg_agriculture_other,0,No data available

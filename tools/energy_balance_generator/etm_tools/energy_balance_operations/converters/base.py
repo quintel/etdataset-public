@@ -23,4 +23,3 @@ class Converter:
 
 class InvalidConverterException(BaseException):
     pass
-

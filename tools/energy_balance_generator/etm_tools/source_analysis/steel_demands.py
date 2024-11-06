@@ -36,13 +36,13 @@ class SteelDemandAnalyser(Analyser):
     }
 
 
-    def generate_analysis(self, total_steel_production, percentage_of_BF):
+    def generate_analysis(self, total_steel_production, percentage_of_BF, output_folder=None):
         '''
         Calculate share of final demand metal steel that goes to EAF and to BF for coal,
         electricity and network gas based on MIDDEN typical production values
         '''
 
-        share_of_BF = percentage_of_BF / 100 
+        share_of_BF = percentage_of_BF / 100
 
         if total_steel_production == 0:
             BF_electricity_share_in_final_electricity_demand_steel = 1
@@ -101,4 +101,4 @@ class SteelDemandAnalyser(Analyser):
             'industry_final_demand_for_metal_steel_wood_pellets_industry_steel_blastfurnace_bof_parent_share': BF_wood_pellets_share_in_final_wood_pellets_demand_steel
         }
 
-        self.write_to_analysis(data, 'steel_demands')
+        self.write_to_analysis(data, 'steel_demands_analysis')

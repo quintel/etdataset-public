@@ -29,7 +29,7 @@ class FertilizerDemandAnalyser(Analyser):
     OUTPUT_OF_HYDROGEN = 69.0998E09
 
 
-    def generate_analysis(self, hydrogen_non_energetic_demand):
+    def generate_analysis(self, hydrogen_non_energetic_demand, output_folder=None):
         '''
         Generates an input file for fertilizer demand.
 
@@ -58,4 +58,4 @@ class FertilizerDemandAnalyser(Analyser):
             'demand_fertilizers_crude_oil_non_energetic': 0.0,
         }
 
-        self.write_to_analysis(data, 'fertilizer_demand')
+        self.write_to_analysis(data, 'fertilizer_demand_analysis')

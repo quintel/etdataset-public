@@ -1,0 +1,65 @@
+key,value,comment
+bunkers_total_useful_demand_planes_demand,,
+input_transport_plane_bio_ethanol_demand,,
+input_transport_plane_electricity_demand,,
+input_transport_plane_gasoline_demand,,
+transport_final_demand_kerosene_demand,,
+input_transport_rail_biodiesel_demand,,
+input_transport_rail_diesel_demand,,
+input_transport_rail_electricity_demand,,
+transport_final_demand_coal_demand,,
+transport_final_demand_for_rail_electricity_transport_freight_train_using_electricity_parent_share,0.1966,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_rail_electricity_transport_passenger_train_using_electricity_parent_share,0.6913,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_rail_electricity_transport_tram_using_electricity_parent_share,0.1121,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_rail_mixer_diesel_transport_freight_train_using_diesel_mix_parent_share,0.24301,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_rail_mixer_diesel_transport_passenger_train_using_diesel_mix_parent_share,0.75699,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+input_transport_road_bio_ethanol_demand,,
+input_transport_road_biodiesel_demand,,
+input_transport_road_car_hydrogen_share,0.66392,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+input_transport_road_diesel_demand,,
+input_transport_road_electricity_demand,,
+input_transport_road_gasoline_demand,,
+input_transport_road_human_powered_bicycle_demand,0, Based on EU data  corrected for population
+number_of_busses,10441,"Eurostat table Motor coaches, buses and trolley buses, by type of vehicle https://doi.org/10.2908/ROAD_EQS_BUSVEH; see etdataset-public/source_analyses/RS_serbia/2019/transport/Eurostat number of buses.xlsx."
+number_of_cars,4276700.39,Based on EU data  corrected for population
+number_of_trucks,74577.4076,"Derived from number of trucks in EU27 dataset, scaled with number of inhabitants from Eurostat"
+number_of_vans,144358,"Number of vans 2022 value taken (VG_LE3PH, goods road motor vehicles <= 3.5 tonnes) from Eurostat https://doi.org/10.2908/TRAN_R_VEHST"
+transport_final_demand_for_road_bio_lng_demand,0,All gas assumed to be CNG
+transport_final_demand_for_road_compressed_network_gas_demand,,
+transport_final_demand_for_road_electricity_transport_bicycle_using_electricity_parent_share,0,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_electricity_transport_bus_using_electricity_parent_share,0.17542,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_electricity_transport_car_using_electricity_parent_share,0.63817,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_electricity_transport_motorcycle_using_electricity_parent_share,0.09699,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_electricity_transport_truck_using_electricity_parent_share,1.00E-05,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_electricity_transport_van_using_electricity_parent_share,0.08941,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_hydrogen_transport_bus_using_hydrogen_parent_share,0,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_hydrogen_transport_truck_using_hydrogen_parent_share,0.08265,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_hydrogen_transport_van_using_hydrogen_parent_share,0.25343,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_lng_demand,0,All gas assumed to be CNG
+transport_final_demand_for_road_lpg_transport_car_using_lpg_parent_share,0.95753,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_lpg_transport_van_using_lpg_parent_share,0.04247,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_hydrogen_demand,0,All gas assumed to be CNG
+transport_final_demand_lpg_demand,,
+transport_road_mixer_compressed_network_gas_transport_bus_using_compressed_natural_gas_parent_share,0.43511,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_compressed_network_gas_transport_car_using_compressed_natural_gas_parent_share,0.49017,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_compressed_network_gas_transport_truck_using_compressed_natural_gas_parent_share,0.00316,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_compressed_network_gas_transport_van_using_compressed_natural_gas_parent_share,0.07156,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_diesel_transport_bus_using_diesel_mix_parent_share,0.04104,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_diesel_transport_car_using_diesel_mix_parent_share,0.63592,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_diesel_transport_truck_using_diesel_mix_parent_share,0.22889,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_diesel_transport_van_using_diesel_mix_parent_share,0.09415,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_gasoline_transport_bus_using_gasoline_mix_parent_share,0.00018,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_gasoline_transport_car_using_gasoline_mix_parent_share,0.9284,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_gasoline_transport_motorcycle_using_gasoline_mix_parent_share,0.04982,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_gasoline_transport_truck_using_gasoline_mix_parent_share,3.00E-05,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_gasoline_transport_van_using_gasoline_mix_parent_share,0.02157,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_lng_transport_bus_using_lng_mix_parent_share,0,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_lng_transport_truck_using_lng_mix_parent_share,1,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+bunkers_total_useful_demand_ships_demand,,
+input_transport_ship_bio_ethanol_demand,,
+input_transport_ship_biodiesel_demand,,
+input_transport_ship_diesel_demand,,
+input_transport_ship_electricity_demand,,
+transport_final_demand_for_shipping_bio_lng_demand,,
+transport_final_demand_for_shipping_lng_demand,,
+transport_final_demand_heavy_fuel_oil_demand,,

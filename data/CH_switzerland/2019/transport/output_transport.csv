@@ -1,0 +1,65 @@
+key,value,comment
+bunkers_total_useful_demand_planes_demand,,
+input_transport_plane_bio_ethanol_demand,,
+input_transport_plane_electricity_demand,,
+input_transport_plane_gasoline_demand,,
+transport_final_demand_kerosene_demand,,
+input_transport_rail_biodiesel_demand,,
+input_transport_rail_diesel_demand,,
+input_transport_rail_electricity_demand,,
+transport_final_demand_coal_demand,,
+transport_final_demand_for_rail_electricity_transport_freight_train_using_electricity_parent_share,0.1966,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_rail_electricity_transport_passenger_train_using_electricity_parent_share,0.6913,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_rail_electricity_transport_tram_using_electricity_parent_share,0.1121,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_rail_mixer_diesel_transport_freight_train_using_diesel_mix_parent_share,0.24301,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_rail_mixer_diesel_transport_passenger_train_using_diesel_mix_parent_share,0.75699,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+input_transport_road_bio_ethanol_demand,,
+input_transport_road_biodiesel_demand,,
+input_transport_road_car_hydrogen_share,0.66392,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+input_transport_road_diesel_demand,,
+input_transport_road_electricity_demand,,
+input_transport_road_gasoline_demand,,
+input_transport_road_human_powered_bicycle_demand,0,Based on EU data corrected for population
+number_of_busses,13817,"Eurostat table Motor coaches, buses and trolley buses, by type of vehicle https://doi.org/10.2908/ROAD_EQS_BUSVEH; see etdataset-public/source_analyses/CH_switzerland/2019/transport/Eurostat number of buses.xlsx."
+number_of_cars,4692741,"Source : Eurostat data, https://doi.org/10.2908/ROAD_EQS_CARAGE"
+number_of_trucks,42142,"Source : Eurostat data"
+number_of_vans,386668,"Source : Eurostat data, https://doi.org/10.2908/ROAD_EQS_CARAGE"
+transport_final_demand_for_road_bio_lng_demand,0,All gas assumed to be CNG
+transport_final_demand_for_road_compressed_network_gas_demand,,
+transport_final_demand_for_road_electricity_transport_bicycle_using_electricity_parent_share,0,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_final_demand_for_road_electricity_transport_bus_using_electricity_parent_share,0.8,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_final_demand_for_road_electricity_transport_car_using_electricity_parent_share,0.2,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_final_demand_for_road_electricity_transport_motorcycle_using_electricity_parent_share,0,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_final_demand_for_road_electricity_transport_truck_using_electricity_parent_share,0,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_final_demand_for_road_electricity_transport_van_using_electricity_parent_share,0,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_final_demand_for_road_hydrogen_transport_bus_using_hydrogen_parent_share,0,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_hydrogen_transport_truck_using_hydrogen_parent_share,0.08265,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_hydrogen_transport_van_using_hydrogen_parent_share,0.25343,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_lng_demand,0,All gas assumed to be CNG
+transport_final_demand_for_road_lpg_transport_car_using_lpg_parent_share,0.95753,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_for_road_lpg_transport_van_using_lpg_parent_share,0.04247,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_final_demand_hydrogen_demand,0,All gas assumed to be CNG
+transport_final_demand_lpg_demand,,
+transport_road_mixer_compressed_network_gas_transport_bus_using_compressed_natural_gas_parent_share,0.25,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_road_mixer_compressed_network_gas_transport_car_using_compressed_natural_gas_parent_share,0.5,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_road_mixer_compressed_network_gas_transport_truck_using_compressed_natural_gas_parent_share,0.125,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_road_mixer_compressed_network_gas_transport_van_using_compressed_natural_gas_parent_share,0.125,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_road_mixer_diesel_transport_bus_using_diesel_mix_parent_share,0.04959,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_road_mixer_diesel_transport_car_using_diesel_mix_parent_share,0.62443,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_road_mixer_diesel_transport_truck_using_diesel_mix_parent_share,0.21579,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_road_mixer_diesel_transport_van_using_diesel_mix_parent_share,0.11019,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_road_mixer_gasoline_transport_bus_using_gasoline_mix_parent_share,0,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_road_mixer_gasoline_transport_car_using_gasoline_mix_parent_share,0.95602,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_road_mixer_gasoline_transport_motorcycle_using_gasoline_mix_parent_share,0.02827,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_road_mixer_gasoline_transport_truck_using_gasoline_mix_parent_share,0.00E+00,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_road_mixer_gasoline_transport_van_using_gasoline_mix_parent_share,0.02157,"Data from Bundesamt fur Energie (BFE) publications from 2017: https://pubdb.bfe.admin.ch/de/suche?keywords=387, Tabelle 36-39"
+transport_road_mixer_lng_transport_bus_using_lng_mix_parent_share,0,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+transport_road_mixer_lng_transport_truck_using_lng_mix_parent_share,1,Derived from EU dataset from annual POTEnCIA report on country energy consumption (2019) https://jeodpp.jrc.ec.europa.eu/ftp/jrc-opendata/POTEnCIA/Central_2018/
+bunkers_total_useful_demand_ships_demand,,
+input_transport_ship_bio_ethanol_demand,,
+input_transport_ship_biodiesel_demand,,
+input_transport_ship_diesel_demand,,
+input_transport_ship_electricity_demand,,
+transport_final_demand_for_shipping_bio_lng_demand,,
+transport_final_demand_for_shipping_lng_demand,,
+transport_final_demand_heavy_fuel_oil_demand,,
