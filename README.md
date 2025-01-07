@@ -25,7 +25,7 @@ Each country shown in the [Energy Transition Model (ETM)](http://www.et-model.co
 One of the key ingredients in the creation of a dataset is the energy balance. We currently use the open source energy balances of Eurostat, but some of the older datasets use proprietary energy balances of IEA. Therefore, we created two versions of the ETDataset repository:
 
 1. [**ETDataset**](https://github.com/quintel/etdataset) is a **private** repository that is used by Quintel to generate the Input Data for all countries shown in the ETM. This repository is private, because it not only contains the Eurostat energy balances, but also the proprietary IEA energy balances. Non-Quintel employees can only get access after signing an NDA.
-2. [**ETdataset-public**](https://github.com/quintel/etdataset-public) is a **public** copy of the [ETDataset](https://github.com/quintel/etdataset) repository that does not include the proprietary energy balances. The repository also contains the entire dataset (including a fictional energy balance) for the country *example* that can be used to review the dataset generation process.
+2. [**ETdataset-public**](https://github.com/quintel/etdataset-public) is a **public** copy of the [ETDataset](https://github.com/quintel/etdataset) repository that does not include the proprietary energy balances.
 
 More information on the generation of Input Data for a country and a more in-depth explanation of the relation between ETDataset and ETDataset-public can be found [here](/documentation/generate_output_files.md). If you want to make changes to the model or if you would like to add a new country, have a look at [this page](/documentation/generate_output_files.md). Contact [Quintel](http://quintel.com/contact) if you desire more information.
 
