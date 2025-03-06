@@ -65,7 +65,7 @@ solar_pv_profile_2_share,0,
 aquathermal_potential_for_surface_water,0,
 aquathermal_potential_for_waste_water,0,
 aquathermal_potential_for_drink_water,0,
-hydrogen_electrolysis_solar_pv_capacity_ratio,0.427,Different per country: calculated in modeling_experiments/electrolysers
+hydrogen_electrolysis_solar_pv_capacity_ratio,0.426770076,Different per country: calculated in modeling_experiments/electrolysers
 present_number_of_buildings_present,392358,20130827_services_source_analysis_NL 2011.xlsx and http://refman.et-model.com/publications/1821
 present_number_of_residences_present,7587964,Imported from 6_residences analysis
 present_number_of_apartments_before_1945,516342,Imported from 6_residences analysis
