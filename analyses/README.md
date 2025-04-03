@@ -33,7 +33,7 @@ Currently, the Research Analyses flow consist of twelve consecutive analyes. The
 
 ### 1. CHP analysis
 
-The CHP analysis is the fist step in the Input Data generation process. The goal of the CHP analysis is to determine the input and output of the various sector-specific CHPs in the ETM. However, this cannot be obtained directly from the energy balance, because:
+The CHP analysis is the first step in the Input Data generation process. The goal of the CHP analysis is to determine the input and output of the various sector-specific CHPs in the ETM. However, this cannot be obtained directly from the energy balance, because:
 
 1. Not all fuel input and heat output of CHPs are reported by the IEA. The unsold heat production (heat that is used by the owner of CHP) is not reported; the fuel required to produce that heat is reported as final consumption.
 2. The fuel input for CHPs is not specified for the different sectors.
@@ -64,7 +64,7 @@ Largest part of the analyses are used to provide Input Data for a specified econ
 
 ### 4a. Metal industry analysis
 
-In the Metal industry analysis, the energy consumption of the steel producting, aluminium producing and other metals producing technologies are calculated based on the physical production of steel and aluminium, the shares of technologies and the metal industry-specific data on the energy balance. The energy consumption of the Metal industry is also exported to the Industry analysis. Please refer to the [Metal industry analysis](4a_metal_industry_analysis.xlsx) for more documentation.
+In the Metal industry analysis, the energy consumption of the steel producing, aluminium producing and other metals producing technologies are calculated based on the physical production of steel and aluminium, the shares of technologies and the metal industry-specific data on the energy balance. The energy consumption of the Metal industry is also exported to the Industry analysis. Please refer to the [Metal industry analysis](4a_metal_industry_analysis.xlsx) for more documentation.
 
 
 ### 4b. Chemical industry analysis
@@ -94,7 +94,7 @@ The transport sector is divided into domestic aviation, road, rail, etc. on the 
 
 ### 9. Agriculture analysis
 
-The Agriculture analysis fullfills similar purpose as the analyses described above.Please refer to the [Agriculture analysis](9_agriculture_analysis.xlsx) for more documentation.
+The Agriculture analysis fulfills similar purpose as the analyses described above. Please refer to the [Agriculture analysis](9_agriculture_analysis.xlsx) for more documentation.
 
 
 ### 10. Other analysis
