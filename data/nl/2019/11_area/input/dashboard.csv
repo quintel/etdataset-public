@@ -213,8 +213,8 @@ number_of_cars,8531000,CBS;https://www.cbs.nl/nl-nl/visualisaties/verkeer-en-ver
 number_of_busses,9700,CBS; 'bus'; https://opendata.cbs.nl/statline/#/CBS/nl/dataset/82472NED/table?ts=1672738295121
 number_of_trucks,69205,CBS; 'Vrachtauto (excl. trekker voor oplegger); A-U Alle Economische activiteiten; https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83528NED/table?ts=1672738432552
 number_of_vans,914800,CBS; 'bestelauto'; https://opendata.cbs.nl/statline/#/CBS/nl/dataset/82472NED/table?ts=1672738295121
-electric_vehicle_profile_1_share,0.56,Profile distribution from Elaad (2023); https://refman.energytransitionmodel.com/publications/2200
-electric_vehicle_profile_2_share,0.08,Profile distribution from Elaad (2023); https://refman.energytransitionmodel.com/publications/2201
-electric_vehicle_profile_3_share,0.24,Profile distribution from Elaad (2023); https://refman.energytransitionmodel.com/publications/2202
+electric_vehicle_profile_1_share,0.24,Profile distribution from Elaad (2023); https://refman.energytransitionmodel.com/publications/2200
+electric_vehicle_profile_2_share,0.56,Profile distribution from Elaad (2023); https://refman.energytransitionmodel.com/publications/2201
+electric_vehicle_profile_3_share,0.08,Profile distribution from Elaad (2023); https://refman.energytransitionmodel.com/publications/2202
 electric_vehicle_profile_4_share,0.12,Profile distribution from Elaad (2023); https://refman.energytransitionmodel.com/publications/2203
 electric_vehicle_profile_5_share,0,Custom profile; default 0.0
