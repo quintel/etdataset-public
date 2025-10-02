@@ -1,0 +1,12 @@
+,Onderwerp,Eenheid,Bron,Voetnoot,Beschrijving,Gegevenstype,Laatste database wijziging,ivar,ivar_unit
+inwoners,Aantal inwoners,aantal,CBS - Kerncijfers Wijken en buurten,,,Numeriek,6-8-2025 08:21:16,nl_inwoners,aantal
+woningen,Aantal woningen per 1 januari,aantal,CBS - Kerncijfers Wijken en buurten,,,Numeriek,18-7-2025 10:36:01,nl_woningen,aantal
+elektra_totaal_combi,"Totaal bekend elektriciteitsverbruik, incl. zonnestroom 'achter de meter'",TJ,Berekening (sub)totalen energieverbruik,,,Numeriek,27-8-2025 05:46:20,nl_elektra_totaal_combi_tj,TJ
+ovinfiets,Gereisde kilometers fiets,miljard km,"Kennisinstituut voor Mobiliteitsbeleid - Kerncijfers mobiliteit 2024, p. 14. Link: https://www.kimnet.nl/site/binaries/site-content/collections/documents/2024/11/18/kerncijfers-mobiliteit-2024/KiM+Kerncijfers_Mobiliteit_2024_DTdef.pdf",,,Numeriek,10-3-2020 13:55:34,nl_fiets_mlrd_km,miljard km
+warm_totaal_combi,Totaal bekend warmteverbruik (aardgas en (hern.) warmte),TJ,Berekening o.b.v. gegevens meerdere bronnen,,,Numeriek,27-8-2025 05:46:20,nl_warm_totaal_combi_tj,TJ
+warmwontjcor,Verbruik stadswarmte woningen (temperatuurgecorrigeerd),TJ,Duurzaamheidsrapportage warmtenetten RVO en historische bijschatting,,,Numeriek,27-8-2025 05:32:42,nl_warm_woningen_tj_temp_corrected,TJ
+hern_warm_tot,Totaal bekende hernieuwbare warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27-8-2025 05:47:26,nl_hern_warm_tot_tj,TJ
+warwarmte,"Doorgeleverde warmte afvalverbranding (AVI, fossiele en biogene oorsprong)",TJ,"Werkgroep Afvalregistratie, onderdeel afvalverbranding en CBS",,,Numeriek,20-8-2025 12:05:57,nl_doorg_warmte_avi_combi_tj,TJ
+avi_thtjbrut,Afvalverbrandingsinstallatie hernieuwbare warmte,TJ,"Werkgroep Afvalregistratie, onderdeel afvalverbranding en CBS",,,Numeriek,20-8-2025 13:28:05,nl_doorg_hern_warmte_tj,TJ
+nl_gas_totaal,Gasverbruik totaal,TJ,Bewerking Quintel,,Totale warmte - hernieuwbare warmte,,,nl_gas_totaal,TJ
+nl_biogene_fractie_afval,Biogene fractie in afvalverbranding,factor,Bewerking Quintel,,Hernieuwbare warmte / doorgeleverde warmte afvalverbranding,,,nl_biogene_fractie_afval,factor

@@ -1,0 +1,8 @@
+steel_combined_cycle_coal_gas_tj:
+  expression: multiply
+  components:
+    - variable: steel_co2_scaled
+    - variable: mq_steel_combined_cycle_coal_gas_tj
+
+input_energy_power_combined_cycle_coal_gas_coal_gas_input_demand:
+  variable: steel_combined_cycle_coal_gas_tj

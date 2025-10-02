@@ -1,0 +1,94 @@
+graph TD
+      %% Input Data Sources
+      A1[LoadDataManager<br/>ETLocal Template] --> B[Combined Input
+  Data<br/>Klimaatmonitor + ETM queries<br/>+ Miscellaneous data]
+      A2[Electric Cars
+  CSV<br/>shares_cars_road_transport_<br/>gasoline_electricity.csv] -->
+  B
+      A3[YAML Config Files<br/>Calculation Dependencies] --> C[YAML
+  Calculator<br/>Formula Processing]
+
+      %% Main Processing Sections
+      B --> D{Energy Demand Categories}
+
+      %% Gas Demand Branch
+      D --> E1[Gas Demand Processing]
+      C --> E1
+      E1 --> F1[Calculate:<br/>bd_public_gas_tj
+  +<br/>bd_commercial_gas_tj]
+      F1 --> G1[buildings_final_demand_<br/>network_gas_demand]
+
+      %% Electricity Demand Branch
+      D --> E2[Electricity Demand Processing<br/>Complex Multi-step
+  Calculation]
+      C --> E2
+      E2 --> F2[Total Building Electricity<br/>- Rail Transport<br/>-
+  Road Transport<br/>+ Behind-meter Solar PV]
+      F2 --> G2[input_buildings_<br/>electricity_demand]
+
+      %% Biomass Demand Branch
+      D --> E3[Biomass Demand Processing]
+      C --> E3
+      E3 --> F3[Calculate:<br/>buildings_individual_<br/>biomass_demand]
+      F3 --> G3[buildings_final_demand_<br/>wood_pellets_demand]
+
+      %% Steam Hot Water Branch
+      D --> E4[Steam Hot Water Processing]
+      C --> E4
+      E4 --> F4[Calculate:<br/>biogas_heat + district_heating
+  +<br/>geothermal_storage]
+      F4 -->
+  G4[input_buildings_final_demand_<br/>steam_hot_water_demand]
+
+      %% Zero Values Branch
+      D --> E5[Zero Demand Categories]
+      E5 --> F5[Set to Zero:<br/>Coal, Oil, Solar thermal]
+      F5 -->
+  G5[buildings_final_demand_coal_demand<br/>input_buildings_final_demand
+  _crude_oil_demand<br/>buildings_final_demand_solar_thermal_demand]
+
+      %% Production Section
+      B --> H1[Solar PV Production]
+      C --> H1
+      H1 --> I1[Calculate:<br/>commercial_solar_roof_kw
+  ×<br/>full_load_hours × conversion]
+      I1 --> J1[input_buildings_<br/>solar_pv_demand]
+
+      %% Building Stock Section
+      B --> H2[Roof Surface Processing<br/>BAG Building Data]
+      C --> H2
+      H2 --> I2[Sum Available Roof Area<br/>Multiple Building Functions]
+      I2 --> J2[buildings_roof_surface_<br/>available_for_pv]
+
+      %% Template Filling & Validation
+      G1 --> K[Template Filling Process<br/>9 ETLocal Keys]
+      G2 --> K
+      G3 --> K
+      G4 --> K
+      G5 --> K
+      J1 --> K
+      J2 --> K
+
+      A1 --> K
+
+      K --> L[Data Validation<br/>& Quality Checks]
+      L --> M[Generate Commit Messages<br/>& Documentation]
+      M --> N[Create Dependency Diagrams<br/>Visual Documentation]
+
+      N --> O[Export Final
+  CSV<br/>etlocal_template_buildings_filled.csv<br/>342+ municipalities]
+
+      %% Styling
+      classDef inputFile fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+      classDef process fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+      classDef output fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
+      classDef intermediate fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+      classDef validation fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+      classDef etlocalKey fill:#f1f8e9,stroke:#689f38,stroke-width:2px
+
+      class A1,A2,A3 inputFile
+      class B,C,D,E1,E2,E3,E4,E5,H1,H2,F1,F2,F3,F4,F5,I1,I2,K process
+      class G1,G2,G3,G4,G5,J1,J2 etlocalKey
+      class L,M validation
+      class N intermediate
+      class O output

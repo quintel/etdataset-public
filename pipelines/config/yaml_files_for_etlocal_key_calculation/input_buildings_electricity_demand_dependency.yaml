@@ -1,0 +1,87 @@
+bd_electricity_tj_corrected:
+  expression: sum
+  components:
+    -
+      expression: minus
+      components:
+        -
+          expression: minus
+          components:
+            - variable: bd_elec_services_ex_ict_sum_of_sbis_tj
+            - variable: tp_rail_electricity_tj
+        - variable: tp_road_electricity_charged_services
+    - variable: solar_pv_own_use_buildings_tj
+
+bd_elec_services_ex_ict_sum_of_sbis_tj:
+  expression: sum
+  components:
+    - variable: bd_electricity_sbi_g_tj
+    - variable: bd_electricity_sbi_h_tj
+    - variable: bd_electricity_sbi_i_tj
+    - variable: bd_electricity_sbi_k_tj
+    - variable: bd_electricity_sbi_l_tj
+    - variable: bd_electricity_sbi_m_tj
+    - variable: bd_electricity_sbi_n_tj
+    - variable: bd_electricity_sbi_o_tj
+    - variable: bd_electricity_sbi_p_tj
+    - variable: bd_electricity_sbi_q_tj
+    - variable: bd_electricity_sbi_r_tj
+    - variable: bd_electricity_sbi_s_tj
+    - variable: bd_electricity_sbi_u_tj
+
+tp_rail_electricity_tj:
+  expression: multiply
+  components:
+    - variable: train_share_in_nl
+    - variable: dq_transport_final_demand_for_rail_electricity
+
+tp_road_electricity_charged_services:
+  expression: minus
+  components:
+    - variable: tp_road_electricity_tj
+    - variable: tp_road_electricity_charged_at_home_tj
+
+tp_road_electricity_tj:
+  expression: multiply
+  components:
+    - variable: final_demand_road_gasoline_tj_share_NL
+    - variable: total_road_electricity_demand_nl_tj
+
+total_road_electricity_demand_nl_tj:
+  variable: dq_transport_final_demand_for_road_electricity
+
+tp_road_electricity_charged_at_home_tj:
+  variable: electric_e_bike_tj
+
+electric_e_bike_tj:
+  expression: multiply
+  components:
+    - variable: inhabitants_scaled
+    - variable: dq_transport_bicycle_using_electricity
+
+inhabitants_scaled:
+  expression: divide
+  components:
+    - variable: no_inhabitants
+    - variable: nl_inwoners
+
+solar_pv_own_use_buildings_tj:
+  expression: minus
+  components:
+    - variable: solar_pv_own_use_total_tj
+    - variable: solar_pv_own_use_households_tj
+
+solar_pv_own_use_households_tj:
+  expression: multiply
+  components:
+    - variable: solar_pv_own_use_total_tj
+    - variable: solar_pv_households_share
+
+solar_pv_households_share:
+  expression: divide
+  components:
+    - variable: hh_solar_kw
+    - variable: total_solar_kw
+
+input_buildings_electricity_demand:
+  variable: bd_electricity_tj_corrected

@@ -1,0 +1,8 @@
+steel_wood_pellets_tj:
+  expression: multiply
+  components:
+    - variable: steel_co2_scaled
+    - variable: mq_steel_wood_pellets_tj
+
+input_industry_metal_steel_wood_pellets_demand:
+  variable: steel_wood_pellets_tj

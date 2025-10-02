@@ -1,0 +1,17 @@
+[packages]
+requests = "*"
+numpy = "*"
+xlwings = "*"
+pyyaml = "*"
+openpyxl = "*"
+pint = "*"
+ipython = "*"
+jupyter = "*"
+graphviz = "*"
+pandas = "*"
+tqdm = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.13"

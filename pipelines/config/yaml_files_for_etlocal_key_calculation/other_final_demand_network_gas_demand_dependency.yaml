@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+other_final_demand_network_gas_demand:
+  variable: zero

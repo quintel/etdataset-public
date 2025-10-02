@@ -1,0 +1,54 @@
+﻿Road vehicle,Variable,Value,Unit,Info
+Car (FEV),electric_car_fev_annual_kms,15000,km/y,
+Car (FEV),electric_car_fev_annual_kwh,3000,kWh/y,(20 kwh per 100 km)
+Car (FEV),electric_car_fev_annual_tj,0.0108,TJ/y,
+Car (PHEV),electric_car_phev_relative_annual_electric_kms,0.3,factor,
+Car (PHEV),electric_car_phev_annual_tj,0.00324,TJ/y,
+Bus,electric_bus_annual_kms,60000,km/y,http://statline.cbs.nl/Statweb/publication/?DM=SLNL&PA=80589NED
+Bus,electric_bus_annual_kwh,120000,kWh/y,(2 kwh per km)
+Bus,electric_bus_annual_tj,0.432,TJ/y,
+Truck,electric_truck_annual_kms,50000,km/y,Gemiddelde van vrachtwagen: http://statline.cbs.nl/StatWeb/publication/?DM=SLNL&PA=80379NED
+Truck,electric_truck_annual_kwh,50000,kWh/y,"(1 kwh per km, average of trucks and vans)"
+Truck,electric_truck_annual_tj,0.18,TJ/y,
+Vans,electric_van_annual_kms,17776,km/y,Gemiddeld aantal km van bestelauto's (https://www.cbs.nl/nl-nl/cijfers/detail/80353ned)
+Vans,electric_van_annual_kwh,17776,kWh/y,"(1 kwh per km, average of trucks and vans)"
+Vans,electric_van_annual_tj,0.064,TJ/y,
+Scooter/motorcycle,electric_motorcycle_scooter_annual_kwh,400,kWh/y,Source: https://www.greenem.nl/verbruikskosten-van-apparaten-en-elektronica/#1440424378838-e516b242-e362
+Scooter/motorcycle,electric_motorcycle_scooter_annual_tj,0.00144,TJ/y,
+E-bike,electric_bike_passenger_kms_per_mj,28.57142857,pkm/MJ,Source: ETM
+E-bike,electric_bike_mj_per_passenger_km,0.035,MJ/pkm,
+E-bike,electric_bike_tj_per_passenger_km,0.000000035,TJ/pkm,
+E-bike,electric_bike_share_in_total_bike_kms,0.16,factor,https://fietsberaad.nl/Kennisbank/Elektrische-fiets-goed-voor-2-procent-van-alle-rit
+E-bike,normal_bike_share_in_total_bike_kms,0.84,factor,
+Road CNG,mj_per_kg_cng,37.96856106,MJ/kg,
+Road CNG,km_per_kg_cng,21,km/kg,Source: https://www.cartrade.com/blog/2009/auto-guides/petrol-diesel-cng-or-lpg-we-help-you-choose-2.html
+Road CNG,mj_per_km_cng,1.808026717,MJ/km,
+Road CNG,cng_car_annual_kms,15000,km/y,
+Road CNG,cng_car_annual_tj,0.027120401,TJ/y,
+Road CNG,cng_bus_annual_kms,60000,km/y,
+Road CNG,cng_bus_km_per_kg,2.63,km/kg,Source: https://www.quora.com/What-is-the-average-of-DTC-buses-both-CNG-and-those-which-run-on-diesel-in-New-Delhi
+Road CNG,cng_bus_annual_kg,22813.68821,km/y,
+Road CNG,cng_bus_annual_tj,0.866202914,TJ/y,
+Road CNG,cng_truck_annual_kms,50000,km/y,
+Road CNG,cng_truck_km_per_kg,2.63,km/kg,Set equal to busses as no data is available
+Road CNG,cng_truck_annual_kg,19011.40684,kg/y,
+Road CNG,cng_truck_annual_tj,0.721835762,TJ/y,
+Road CNG,cng_van_annual_kms,17776,km/y,
+Road CNG,cng_van_km_per_kg,10.5,km/y,"No data available, estimated to be twice less efficient than cars"
+Road CNG,cng_van_annual_kg,1692.990802,km/kg,
+Road CNG,cng_van_annual_tj,0.064280425,TJ/y,
+Road H2,h2_car_km_per_kg,92,km/kg,Source: https://www.standard.co.uk/lifestyle/motors/how-much-does-a-hydrogen-car-cost-to-run-a3595841.html
+Road H2,h2_car_annual_km,15000,km/y,
+Road H2,h2_car_annual_kg,163.0434783,kg/y,
+Road H2,mj_per_kg_h2,120,MJ/kg,
+Road H2,h2_car_annual_tj,0.019565217,TJ/y,
+Road H2,h2_bus_km_per_kg,10,km/kg,Source: https://www.ovmagazine.nl/2017/07/syntus-gaat-vier-waterstofbussen-leasen-1251/
+Road H2,h2_bus_annual_km,60000,km/y,
+Road H2,h2_bus_annual_kg,6000,kg/y,
+Road H2,h2_bus_annual_tj,0.72,TJ/y,
+Road H2,h2_truck_km_per_kg,10,km/kg,Set equal to busses as no data is available
+Road H2,h2_truck_annual_kg,5000,kg/y,
+Road H2,h2_truck_annual_tj,0.6,TJ/y,
+Road H2,h2_van_km_per_kg,46,km/kg,"No data available, estimated to be twice less efficient than cars"
+Road H2,h2_van_annual_kg,386.4435527,kg/y,
+Road H2,h2_van_annual_tj,0.05,TJ/y,

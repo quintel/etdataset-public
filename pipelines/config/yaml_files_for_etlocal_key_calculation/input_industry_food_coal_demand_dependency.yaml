@@ -1,0 +1,8 @@
+food_coal_tj:
+  expression: multiply
+  components:
+    - variable: food_co2_scaled
+    - variable: mq_food_coal_tj
+
+input_industry_food_coal_demand:
+  variable: food_coal_tj

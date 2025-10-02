@@ -1,0 +1,8 @@
+tp_rail_electricity_tj:
+  expression: multiply
+  components:
+    - variable: train_share_in_nl
+    - variable: dq_transport_final_demand_for_rail_electricity
+
+input_transport_rail_electricity_demand:
+  variable: tp_rail_electricity_tj

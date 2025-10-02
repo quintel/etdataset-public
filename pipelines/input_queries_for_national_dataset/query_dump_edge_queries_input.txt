@@ -1,0 +1,4 @@
+[rail_electricity_freight_train_electricity, V(EDGE(transport_final_demand_for_rail_electricity, transport_freight_train_using_electricity), parent_share),
+ rail_electricity_passenger_train_electricity, V(EDGE(transport_final_demand_for_rail_electricity, transport_passenger_train_using_electricity), parent_share),
+ rail_electricity_tram_electricity, V(EDGE(transport_final_demand_for_rail_electricity, transport_tram_using_electricity), parent_share)
+ ]

@@ -1,0 +1,144 @@
+km-variable,internal variable (ivar),ivar unit,km-variable unit,Onderwerp
+inwoners,no_inhabitants,#,aantal,Aantal inwoners
+woningen,no_residences,#,aantal,Aantal woningen per 1 januari
+pautos,no_cars,#,,
+energie_totaal_combi,total_energy_tj,TJ,TJ,"Totaal bekend energieverbruik (aardgas, elektriciteit, stadswarmte, verkeer/vervoer, overige warmte)"
+verk_totaal,tp_total_energy_tj,TJ,TJ,"Totaal bekend energieverbruik Verkeer en vervoer (incl. auto(snel)wegen, excl. elektr. verkeer)"
+elektra_totaal_combi,total_electricity_tj,TJ,TJ,"Totaal bekend elektriciteitsverbruik, incl. zonnestroom 'achter de meter'"
+warm_totaal_combi,total_gas_heat_tj_temp_corrected,TJ,TJ,Totaal bekend warmteverbruik (aardgas en (hern.) warmte)
+zonpvachtermeter_kwh,solar_pv_own_use_total_tj,TJ,GWh,Zonnestroom: verbruik achter de meter (schatting)
+hern_warm_tot,total_renewable_heat_tj,TJ,TJ,Totaal bekende hernieuwbare warmte
+gas_woningen_tj,hh_gas_tj_temp_corrected,TJ,TJ,Totaal aardgasverbruik woningen (temperatuurgecorrigeerd)
+warmwontjcor,hh_heat_tj_temp_corrected,TJ,TJ,Verbruik stadswarmte woningen (temperatuurgecorrigeerd)
+kwbelektotaal,hh_electricity_tj,TJ,GWh,Elektriciteitsverbruik woningen
+kwbgastotaal,hh_gas_tj,TJ,miljoen m3,Aardgasverbruik woningen
+warmwontier2,hh_heat_tj,TJ,GJ,Verbruik stadswarmte woningen
+houtskool,hh_biomass_cooking_tj,TJ,TJ,Houtskool hern. warmte
+houtwontj,hh_biomass_heat_tj,TJ,TJ,Houtkachels woningen hern. warmte
+gascomdv,bd_commercial_gas_tj,TJ,m3,Aardgasverbruik Commerciële Dienstverlening
+gaspubldv,bd_public_gas_tj,TJ,m3,Aardgasverbruik Publieke Dienstverlening
+elcomdv,bd_commercial_electricity_tj,TJ,kWh,Elektriciteitsverbruik Commerciële Dienstverlening
+elpubldv,bd_public_electricity_tj,TJ,kWh,Elektriciteitsverbruik Publieke Dienstverlening
+vbrzg_g1,bd_gas_sbi_g_tj,TJ,m3,Aardgasverbruik Handel (SBI G)
+vbrzg_h,bd_gas_sbi_h_tj,TJ,m3,Aardgasverbruik Vervoer en Opslag (SBI H)
+vbrzg_i,bd_gas_sbi_i_tj,TJ,m3,Aardgasverbruik Horeca (SBI I)
+vbrzg_j,bd_gas_sbi_j_tj,TJ,m3,Aardgasverbruik Informatie en communicatie (SBI J)
+vbrzg_k,bd_gas_sbi_k_tj,TJ,m3,Aardgasverbruik Financiële dienstverlening (SBI K)
+vbrzg_l,bd_gas_sbi_l_tj,TJ,m3,Aardgasverbruik Verhuur en handel van onroerend goed (SBI L)
+vbrzg_m,bd_gas_sbi_m_tj,TJ,m3,Aardgasverbruik Specialistische zakelijke diensten (SBI M)
+vbrzg_n,bd_gas_sbi_n_tj,TJ,m3,Aardgasverbruik Verhuur en overige zakelijke diensten (SBI N)
+vbrzg_o,bd_gas_sbi_o_tj,TJ,m3,Aardgasverbruik Openbaar bestuur en overheidsdiensten (SBI O)
+vbrzg_p,bd_gas_sbi_p_tj,TJ,m3,Aardgasverbruik Onderwijs (SBI P)
+vbrzg_q,bd_gas_sbi_q_tj,TJ,m3,Aardgasverbruik Gezondheids- en welzijnszorg (SBI Q)
+vbrzg_r1,bd_gas_sbi_r_tj,TJ,m3,"Aardgasverbruik Cultuur, sport en recreatie (SBI R)"
+vbrzg_s,bd_gas_sbi_s_tj,TJ,m3,Aardgasverbruik Overige dienstverlening (SBI S)
+vbrzg_u,bd_gas_sbi_u_tj,TJ,m3,Aardgasverbruik Extraterritoriale organisaties (SBI U)
+vbrze_g1,bd_electricity_sbi_g_tj,TJ,kWh,Elektriciteitsverbruik Handel (SBI G)
+vbrze_h,bd_electricity_sbi_h_tj,TJ,kWh,Elektriciteitsverbruik Vervoer en Opslag incl. railverkeer (SBI H)
+vbrze_i,bd_electricity_sbi_i_tj,TJ,kWh,Elektriciteitsverbruik Horeca (SBI I)
+vbrze_j,bd_electricity_sbi_j_tj,TJ,kWh,Elektriciteitsverbruik Informatie en communicatie (SBI J)
+vbrze_k,bd_electricity_sbi_k_tj,TJ,kWh,Elektriciteitsverbruik Financiële dienstverlening (SBI K)
+vbrze_l,bd_electricity_sbi_l_tj,TJ,kWh,Elektriciteitsverbruik Verhuur en handel van onroerend goed (SBI L)
+vbrze_m,bd_electricity_sbi_m_tj,TJ,kWh,Elektriciteitsverbruik Specialistische zakelijke diensten (SBI M)
+vbrze_n,bd_electricity_sbi_n_tj,TJ,kWh,Elektriciteitsverbruik Verhuur en overige zakelijke diensten (SBI N)
+vbrze_o,bd_electricity_sbi_o_tj,TJ,kWh,Elektriciteitsverbruik Openbaar bestuur en overheidsdiensten (SBI O)
+vbrze_p,bd_electricity_sbi_p_tj,TJ,kWh,Elektriciteitsverbruik Onderwijs (SBI P)
+vbrze_q,bd_electricity_sbi_q_tj,TJ,kWh,Elektriciteitsverbruik Gezondheids- en welzijnszorg (SBI Q)
+vbrze_r1,bd_electricity_sbi_r_tj,TJ,kWh,"Elektriciteitsverbruik Cultuur, sport en recreatie (SBI R)"
+vbrze_s,bd_electricity_sbi_s_tj,TJ,kWh,Elektriciteitsverbruik Overige dienstverlening (SBI S)
+vbrze_u,bd_electricity_sbi_u_tj,TJ,kWh,Elektriciteitsverbruik Extraterritoriale organisaties (SBI U)
+energie_wegverk_tot,tp_road_total_tj,TJ,TJ,"Energieverbruik wegverkeer totaal (diesel, benzine, LPG en aardgas)"
+energie_mobwerk,tp_mobile_machines_inc_biofuels_tj,TJ,TJ,"Energieverbruik mobiele werktuigen (diesel, benzine en LPG)"
+bio_verkeertj,tp_road_bio_fuels_ex_mm_tj,TJ,TJ,Vloeibare biobrandstoffenverbruik wegverkeer
+bio_mobwerk_tj,tp_mobile_machines_bio_fuels_tj,TJ,TJ,Vloeibare biobrandstoffenverbruik mobiele werktuigen
+energie_rail,tp_rail_diesel_tj,TJ,TJ,Energieverbruik railverkeer (alleen diesel)
+energie_binnenvaart,tp_inland_ship_diesel_tj,TJ,TJ,Energieverbruik binnen- en recreatievaart (diesel en benzine)
+energie_zeevaart,tp_sea_ship_diesel_tj,TJ,TJ,Energieverbruik visserij (diesel en stookolie)
+wbelek,no_electric_busses,#,aantal,"Elektrische bussen, geregistreerd bij eigenaar"
+bedrautoelek,no_electric_vans,#,aantal,"Elektrische bedrijfsauto's, geregistreerd bij eigenaar"
+wpelek,no_electric_cars_fev,#,aantal,"Elektrische personenauto's (BEV), geregistreerd bij eigenaar"
+rangeextend,no_electric_cars_phev,#,,
+wmfelek,no_electric_scooters,#,aantal,"Elektrische motorfietsen, geregistreerd bij eigenaar"
+wbfelek,no_electric_motorcycles,#,aantal,"Elektrische brommers, geregistreerd bij eigenaar"
+bedrgas,no_cng_trucks,#,aantal,"Bedrijfsauto's op aardgas (CNG), geregistreerd bij eigenaar"
+wbgas,no_cng_busses,#,aantal,"Bussen op aardgas (CNG), geregistreerd bij eigenaar"
+wpgas,no_cng_cars,#,aantal,"Personenauto's op aardgas (CNG), geregistreerd bij eigenaar"
+bus_h2,no_h2_busses,#,,
+p_auto_h2,no_h2_cars,#,,
+b_auto_h2,no_h2_vans,#,,
+wbz_h2,no_h2_trucks,#,,
+co2enmobwerk,tp_mobile_machines_co2,tonne,ton,CO₂-uitstoot Mobiele werktuigen
+co2_bk_ab_diesel,tp_bus_diesel_co2_built_env,tonne,,
+co2_bk_ba_gasoline,tp_van_gasoline_co2_built_env,tonne,,
+co2_bk_ba_lpg,tp_van_lpg_co2_built_env,tonne,,
+co2_bk_ba_diesel,tp_van_diesel_co2_built_env,tonne,,
+co2_bk_pa_gasoline,tp_car_gasoline_co2_built_env,tonne,,
+co2_bk_pa_diesel,tp_car_diesel_co2_built_env,tonne,,
+co2_bk_pa_lpg,tp_car_lpg_co2_built_env,tonne,,
+co2bktw,tp_motorcycle_co2_built_env,tonne,ton,CO₂-uitstoot Uitlaatgassen tweewielers en brommobielen bebouwde kom
+co2bkzbv,tp_truck_co2_built_env,tonne,ton,CO₂-uitstoot Uitlaatgassen/koelaggregaten vrachtauto's bebouwde kom
+co2_bk_ab_cng,tp_bus_gas_co2_built_env,tonne,,
+co2_bw_ab_diesel,tp_bus_diesel_co2_road,tonne,,
+co2_bw_ba_gasoline,tp_van_gasoline_co2_road,tonne,,
+co2_bw_ba_diesel,tp_van_diesel_co2_road,tonne,,
+co2_bw_ba_lpg,tp_van_lpg_co2_road,tonne,,
+co2_bw_pa_gasoline,tp_car_gasoline_co2_road,tonne,,
+co2_bw_pa_diesel,tp_car_diesel_co2_road,tonne,,
+co2_bw_pa_lpg,tp_car_lpg_co2_road,tonne,,
+co2bwtw,tp_motorcycle_co2_road,tonne,ton,CO₂-uitstoot Uitlaatgassen tweewielers en brommobielen buitenwegen
+co2bwzbv,tp_truck_co2_road,tonne,ton,CO₂-uitstoot Uitlaatgassen/koelaggregaten vrachtauto's buitenwegen
+co2_bw_ab_cng,tp_bus_gas_co2_road,tonne,,
+co2_sw_ab_diesel,tp_bus_diesel_co2_motorway,tonne,,
+co2_sw_ba_diesel,tp_van_diesel_co2_motorway,tonne,,
+co2_sw_ba_gasoline,tp_van_gasoline_co2_motorway,tonne,,
+co2_sw_ba_lpg,tp_van_lpg_co2_motorway,tonne,,
+co2_sw_pa_gasoline,tp_car_gasoline_co2_motorway,tonne,,
+co2_sw_pa_diesel,tp_car_diesel_co2_motorway,tonne,,
+co2_sw_pa_lpg,tp_car_lpg_co2_motorway,tonne,,
+co2swtw,tp_motorcycle_co2_motorway,tonne,ton,CO₂-uitstoot Uitlaatgassen tweewielers auto(snel)wegen
+co2swzbv,tp_truck_co2_motorway,tonne,ton,CO₂-uitstoot Uitlaatgassen/koelaggregaten vrachtauto's auto(snel)wegen
+co2_sw_ab_cng,tp_bus_gas_co2_motorway,tonne,,
+vbrze_a,agri_electricity_tj,TJ,kWh,"Elektriciteit geleverd aan Landbouw, bosbouw en visserij (SBI A)"
+vbrzg_a,agri_gas_tj,TJ,m3,"Aardgas geleverd aan Landbouw, bosbouw en visserij (SBI A)"
+vbrzg_b,ind_gas_sbi_b_tj,TJ,m3,Aardgasverbruik Delfstoffenwinning (SBI B)
+vbrzg_ctot,ind_gas_sbi_c_tj,TJ,m3,Aardgas geleverd aan Industrie (SBI C)
+vbrzg_afval,ind_gas_sbi_e_tj,TJ,m3,Aardgasverbruik Waterbedrijven en afvalbeheer (SBI E)
+vbrzg_f,ind_gas_sbi_f_tj,TJ,m3,Aardgasverbruik Bouwnijverheid (SBI F)
+vbrze_b,ind_electricity_sbi_b_tj,TJ,kWh,Elektriciteitsverbruik Delfstoffenwinning (SBI B)
+vbrze_ctot,ind_electricity_sbi_c_tj,TJ,kWh,Elektriciteit geleverd aan Industrie (SBI C)
+vbrze_d,ind_electricity_sbi_d_tj,TJ,kWh,Elektriciteitsverbruik Energievoorziening (SBI D)
+vbrze_afval,ind_electricity_sbi_e_tj,TJ,kWh,Elektriciteitsverbruik Waterbedrijven en afvalbeheer (SBI E)
+vbrze_f,ind_electricity_sbi_f_tj,TJ,kWh,Elektriciteitsverbruik Bouwnijverheid (SBI F)
+pv_vermogen,total_solar_kw,kW,kW,Vermogen geregistreerde zonnepanelen totaal
+zon_vermogen_won,hh_solar_kw,kW,kW,Vermogen geregistreerde zonnepanelen woningen
+zon_vermogen_bdr,commercial_solar_roof_and_farms_kw,kW,kW,Vermogen geregistreerde zonnepanelen niet-woningen
+zonvld,energy_solar_farms_kw,kW,MW,Vermogen zonnepanelen in veld- of wateropstelling (SDE-regeling)
+biogas_warm,biogas_heat_tj,TJ,TJ,Biogas bekende hernieuwbare warmte
+biogas_el,biogas_electricity_tj,TJ,TJ,Biogas bekende hernieuwbare elektriciteit
+ovbio_thtj,biomass_firms_heat_tj,TJ,TJ,Biomassaketels bedrijven hern. warmte
+ovbio_th_wkk_tj,biomass_firms_chp_heat_tj,TJ,TJ,Biomassaverbranding met decentrale elektriciteitsopwekking hern. warmte
+geothermtj,geothermal_heat_tj,TJ,TJ,Aardwarmte (diepe bodemenergie)
+ovbio_eltjbrut,biomass_firms_chp_electricity_tj,TJ,TJ,Biomassaverbranding met decentrale elektriciteitsopwekking hern. elektriciteit
+watertjbrutnorm,hydro_electricity_tj,TJ,TJ,Waterkracht hern. elektriciteit genormaliseerd
+windtjbrutnorm,wind_electricity_tj,TJ,TJ,Wind op land hern. elektriciteit genormaliseerd
+avi_eltjbrut,waste_renewable_electricity_tj,TJ,TJ,Afvalverbrandingsinstallatie hernieuwbare elektriciteit
+avi_thtjbrut,waste_renewable_heat_tj,TJ,TJ,Afvalverbrandingsinstallatie hernieuwbare warmte
+efac_benz_g_mj,gasoline_tonne_co2_per_tj,tonne/TJ,ton/TJ,Emissiefactor benzine
+efac_diesel_g_mj,diesel_tonne_co2_per_tj,tonne/TJ,ton/TJ,Emissiefactor diesel
+efac_lpg_g_mj,lpg_tonne_co2_per_tj,tonne/TJ,tonne/TJ,Emission factor LPG
+efacgas,gas_tonne_co2_per_tj,tonne/TJ (natural gas),ton/m3,Emissiefactor aardgas (ton/m3)
+vbrzg_tot_tj,gas_buildings_industry_agriculture_tj,TJ,TJ,Totaal aardgasverbruik bedrijven en instellingen excl. gasverbruik Energievoorziening (SBI D)
+vbrze_tot_tj,electricity_buildings_industry_agriculture_tj,TJ,TJ,"Totaal elektriciteitsverbruik bedrijven en instellingen, geleverd via openbaar net"
+zonpvtj,solar_pv_total_production_tj,TJ,TJ,Zonnestroom
+warelektr,waste_total_produced_electricity_tj,TJ,GWh,"Opgewekte elektriciteit afvalverbranding (AVI, fossiele en biogene oorsprong, GWh)"
+hern_warm_tot_ex_groengas,total_renewable_heat_tj_ex_greengas,TJ,TJ,Totaal bekende hernieuwbare warmte exclusief aan net geleverd groen gas
+windmw,energy_wind_kw,kW,MW,Wind op land fysiek opgesteld vermogen
+efacel,electricity_tonne_co2_per_tj,tonne/TJ (electricity),ton/kWh,Emissiefactor elektriciteit (ton/kWh)
+warwarmte,waste_heat_used_in_area_tj,TJ,TJ,"Doorgeleverde warmte afvalverbranding (AVI, fossiele en biogene oorsprong)"
+ondieptj,bd_thermal_storage_tj,TJ,TJ,Ondiepe bodemenergie hern. energie (WKO/WP)
+co2_bk_pa_cng,tp_car_gas_co2_built_env,tonne,,
+co2_bk_ba_cng,tp_van_gas_co2_built_env,tonne,,
+co2_bw_pa_cng,tp_car_gas_co2_road,tonne,,
+co2_bw_ba_cng,tp_van_gas_co2_road,tonne,,
+co2_sw_pa_cng,tp_car_gas_co2_motorway,tonne,,
+co2_sw_ba_cng,tp_van_gas_co2_motorway,tonne,,

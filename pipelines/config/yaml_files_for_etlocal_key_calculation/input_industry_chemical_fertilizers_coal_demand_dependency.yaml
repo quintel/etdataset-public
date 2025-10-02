@@ -1,0 +1,8 @@
+fertilizers_coal_tj:
+  expression: multiply
+  components:
+    - variable: fertilizers_co2_scaled
+    - variable: mq_fertilizers_coal_tj
+
+input_industry_chemical_fertilizers_coal_demand:
+  variable: fertilizers_coal_tj

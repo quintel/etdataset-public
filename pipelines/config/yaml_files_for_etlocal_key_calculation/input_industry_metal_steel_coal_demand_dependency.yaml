@@ -1,0 +1,8 @@
+steel_coal_tj:
+  expression: multiply
+  components:
+    - variable: steel_co2_scaled
+    - variable: mq_steel_coal_tj
+
+input_industry_metal_steel_coal_demand:
+  variable: steel_coal_tj

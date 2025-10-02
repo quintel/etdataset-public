@@ -1,0 +1,71 @@
+# Transport Data Flow Diagram
+# Copy the code below to https://mermaid.live/ to visualize
+
+print("🔗 Go to: https://mermaid.live/")
+print("📋 Copy the Mermaid code below and paste it there:\n")
+print("="*60)
+
+# Read and display the mermaid file content
+try:
+    with open('Transport Data Flow Updated.mmd', 'r', encoding='utf-8') as f:
+        mermaid_content = f.read()
+    print(mermaid_content)
+except FileNotFoundError:
+    print("⚠️  File 'Transport Data Flow Updated.mmd' not found.")
+    print("Here's the embedded diagram code:")
+    print("""
+graph TD
+    A[Klimaatmonitor Transport Data 2023] --> B{Input Variables}
+    A1[CBS Personenauto's Actief 2023] --> F1[CBS Vehicle Registration Data]
+    A2[CBS Bedrijfsvoertuigen 2023] --> F1
+    
+    B --> C[Energy Consumption by Road Type<br/>Built-up/Rural/Highway]
+    B --> D[CO2 Emissions by Vehicle×Road<br/>9 combinations PA/BA/AB × BK/BW/SW]
+    B --> E[Emission Factors<br/>Gasoline, Diesel, LPG, CNG from RIVM]
+    
+    F1 --> FM[FUEL MIX CALCULATION<br/>Calculate fuel percentages from CBS vehicle registration excluding electric vehicles]
+    FM --> F2[Fuel Mix by Vehicle Type<br/>Fossil fuel shares for PA, BA, AB vehicle categories]
+    
+    D --> S1[STEP 1: CO2 Aggregation<br/>Sum CO2 emissions across all vehicle types for each road type]
+    S1 --> G[Total CO2 by Road Type<br/>Built-up, Rural, Highway aggregated totals]
+    
+    D --> S2[STEP 2: CO2 Share Calculation<br/>Calculate vehicle type percentage within each road type using safe division]
+    G --> S2
+    S2 --> I[Vehicle Share per Road Type<br/>NaN for municipalities without specific road types]
+    
+    C --> S3[STEP 3: Energy Distribution<br/>Distribute total energy consumption using CO2 emission shares as allocation weights]
+    I --> S3
+    S3 --> K[Energy by Vehicle×Road<br/>9 energy flows across vehicle and road combinations]
+    
+    K --> S4[STEP 4: Fuel Type Breakdown<br/>Split vehicle energy into specific fuels using CBS-derived fuel mix ratios]
+    F2 --> S4
+    S4 --> N[Energy by Fuel Type<br/>26 energy flows covering all vehicle, road, fuel combinations]
+    
+    N --> S5[STEP 5: CO2 Emission Calculation<br/>Convert fuel-specific energy to CO2 emissions using RIVM emission factors]
+    E --> S5
+    S5 --> P[CO2 Emissions by Fuel<br/>26 CO2 columns added to final dataset]
+    
+    P --> Q[Final Transformed Dataset<br/>Original data enhanced with fuel-specific CO2 emissions]
+    
+    IMP1[Key Improvements:<br/>• CBS-based fuel mix vs fixed percentages<br/>• Electric vehicle exclusion prevents energy loss<br/>• RIVM emission factors for all fuel types<br/>• Safe division handles municipalities without highways]
+    
+    classDef inputBox fill:#e1f5fe,stroke:#01579b,stroke-width:2px
+    classDef stepBox fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
+    classDef outputBox fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
+    classDef fuelBox fill:#fff3e0,stroke:#e65100,stroke-width:2px
+    classDef improvementBox fill:#ffebee,stroke:#c62828,stroke-width:2px
+    
+    class A,A1,A2,B,C,D,E inputBox
+    class FM,S1,S2,S3,S4,S5 stepBox
+    class G,I,K,N,P,Q outputBox
+    class F1,F2 fuelBox
+    class IMP1 improvementBox
+""")
+
+print("="*60)
+print("\n📝 Instructions:")
+print("1. Select and copy all the diagram code above")
+print("2. Go to https://mermaid.live/")
+print("3. Paste the code in the left panel")
+print("4. The diagram will render automatically in the right panel")
+print("5. You can export as PNG/SVG from the mermaid.live interface")

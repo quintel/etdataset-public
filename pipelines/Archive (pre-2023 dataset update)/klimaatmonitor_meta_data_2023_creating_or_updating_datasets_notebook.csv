@@ -1,0 +1,9 @@
+Code,Onderwerp,Eenheid,Bron,Voetnoot,Beschrijving,Gegevenstype,Laatste database wijziging
+inwoners,Aantal inwoners,aantal,CBS - Kerncijfers Wijken en buurten,,,Numeriek,6-6-2025 08:16:58
+woningen,Aantal woningen per 1 januari,aantal,CBS - Kerncijfers Wijken en buurten,,,Numeriek,27-3-2025 09:31:04
+kern231a_elk_tot,Totaal elektriciteitsverbruik woningen incl. zonnestroom achter de meter,TJ,CBS - Statistiek energieverbruik woningen,(Quintel) Renamed to 'el_woningen_tj_incl_zonachtermeter' to match the existing script for dataset updates.,,Numeriek,16-7-2025 14:19:45
+gaswoningen,Totaal aardgasverbruik woningen,miljoen m3,Berekening  totaalverbruik woningen o.b.v. gemiddeld verbruik en aantal woningen,,,Numeriek,27-3-2025 10:04:20
+warmwontier2,Verbruik stadswarmte woningen,GJ,Duurzaamheidsrapportage warmtenetten RVO en historische bijschatting,,,Numeriek,16-7-2025 14:17:00
+houtskool,Houtskool hern. warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,6-6-2025 08:15:11
+houtwontj,Houtkachels woningen hern. warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,12-6-2025 13:19:27
+zonpvtj_won,Zonnestroom opgewekt door zonnepanelen op woningen,TJ,CBS - Statistiek zonnestroom en schatting RVO,,,Numeriek,16-7-2025 14:19:45

@@ -1,0 +1,25 @@
+buildings_individual_biomass_demand:
+  expression: min
+  components:
+    - variable: diff_heat_production_heat_demand
+    - variable: biomass_firms_heat_tj
+
+diff_heat_production_heat_demand:
+  expression: max
+  components:
+    -
+      expression: minus
+      components:
+        - variable: renewable_heat_supplying_district_heat
+        - variable: hh_heat_tj_temp_corrected
+    - variable: 0
+
+renewable_heat_supplying_district_heat:
+  expression: sum
+  components:
+    - variable: waste_heat_used_in_area_tj
+    - variable: biomass_firms_heat_tj
+    - variable: biomass_firms_chp_heat_tj
+
+buildings_final_demand_wood_pellets_demand:
+  variable: buildings_individual_biomass_demand

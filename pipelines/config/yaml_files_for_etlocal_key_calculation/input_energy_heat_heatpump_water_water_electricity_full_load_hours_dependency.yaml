@@ -1,0 +1,2 @@
+input_energy_heat_heatpump_water_water_electricity_full_load_hours:
+  variable: mq_input_energy_heat_heatpump_water_water_electricity_full_load_hours

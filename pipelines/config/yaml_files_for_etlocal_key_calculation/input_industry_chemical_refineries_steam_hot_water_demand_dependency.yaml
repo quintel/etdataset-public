@@ -1,0 +1,8 @@
+refineries_steam_hot_water_tj:
+  expression: multiply
+  components:
+    - variable: refineries_co2_scaled
+    - variable: mq_refineries_steam_hot_water_tj
+
+input_industry_chemical_refineries_steam_hot_water_demand:
+  variable: refineries_steam_hot_water_tj

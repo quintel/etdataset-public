@@ -1,0 +1,33 @@
+tp_road_total_gasoline_tj:
+  expression: minus
+  components:
+    - variable: tp_road_total_gasoline_mix_tj
+    - variable: tp_road_total_bio_ethanol_tj
+
+tp_road_total_gasoline_mix_tj:
+  expression: divide
+  components:
+    - variable: tp_road_total_gasoline_mix_co2
+    - variable: gasoline_tonne_co2_per_tj
+
+tp_road_total_gasoline_mix_co2:
+  expression: sum
+  components:
+    - variable: tp_car_gasoline_co2_motorway
+    - variable: tp_car_gasoline_co2_road
+    - variable: tp_car_gasoline_co2_built_env
+    - variable: tp_motorcycle_co2_motorway
+    - variable: tp_motorcycle_co2_road
+    - variable: tp_motorcycle_co2_built_env
+    - variable: tp_van_gasoline_co2_motorway
+    - variable: tp_van_gasoline_co2_road
+    - variable: tp_van_gasoline_co2_built_env
+
+tp_road_total_bio_ethanol_tj:
+  expression: multiply
+  components:
+    - variable: tp_road_bio_fuels_ex_mm_tj
+    - variable: share_bio_ethanol_in_bio_fuels
+
+input_transport_road_gasoline_demand:
+  variable: tp_road_total_gasoline_tj

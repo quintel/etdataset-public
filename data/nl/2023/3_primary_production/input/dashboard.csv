@@ -1,0 +1,14 @@
+Key,Value,Source
+country,nl,
+base_year,2023,
+demand_wet_biomass,16143,Determined using CBS; Nationale balans vaste biomassa; see /source_analyses/nl/2023/3_primary_production/3_primary_production_source_analysis_2023.xlsx
+demand_dry_biomass,48926,Determined using CBS; Nationale balans vaste biomassa; see /source_analyses/nl/2023/3_primary_production/3_primary_production_source_analysis_2023.xlsx
+demand_oily_biomass,10500,Assumed to be equal to nl2019 due to lack of data; see /source_analyses/nl/2023/3_primary_production/3_primary_production_source_analysis_2023.xlsx
+max_biogenic_waste,21381.66,TNO - onderzoek biomassa in opdracht van Quintel (https://docs.energytransitionmodel.com/main/biomass)
+max_non_biogenic_waste,31571.8984819975,Estimated using Eurostat; Municipal waste by waste management operations; see /source_analyses/nl/2023/3_primary_production/3_primary_production_source_analysis_2023.xlsx
+max_wet_biomass,109873,TNO - onderzoek biomassa in opdracht van Quintel (https://docs.energytransitionmodel.com/main/biomass)
+max_dry_biomass,62160.23,TNO - onderzoek biomassa in opdracht van Quintel (https://docs.energytransitionmodel.com/main/biomass)
+max_oily_biomass,10500,TNO - onderzoek biomassa in opdracht van Quintel (https://docs.energytransitionmodel.com/main/biomass)
+regasified_lng,342150,Adjusted to match share from CBS; Aardgasbalans aanbod en verbruik;see /source_analyses/nl/2023/3_primary_production/3_primary_production_source_analysis_2023.xlsx
+share_wet_biomass_gasification,0,Assumption; all green gas production from biogas fermentation as conventional technology; see /source_analyses/nl/2023/3_primary_production/3_primary_production_source_analysis_2023.xlsx
+share_dry_biomass_gasification,0,Assumption; all green gas production from biogas fermentation as conventional technology; see /source_analyses/nl/2023/3_primary_production/3_primary_production_source_analysis_2023.xlsx

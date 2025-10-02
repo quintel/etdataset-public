@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+input_energy_heat_burner_mt_crude_oil_production:
+  variable: zero

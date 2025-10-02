@@ -1,0 +1,8 @@
+steel_production_mton:
+  expression: multiply
+  components:
+    - variable: steel_co2_scaled
+    - variable: mq_steel_production_mton
+
+input_industry_metal_steel_production:
+  variable: steel_production_mton

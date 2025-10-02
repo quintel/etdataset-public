@@ -1,0 +1,2 @@
+energy_chp_coal_gas_full_load_hours:
+  variable: mq_energy_chp_coal_gas_full_load_hours

@@ -1,0 +1,8 @@
+paper_gas_tj:
+  expression: multiply
+  components:
+    - variable: paper_co2_scaled
+    - variable: mq_paper_network_gas_tj
+
+input_industry_paper_network_gas_demand:
+  variable: paper_gas_tj

@@ -1,0 +1,14 @@
+solar_pv_solar_farms_tj:
+  expression: multiply
+  components:
+    - variable: solar_pv_solar_farms_kwh
+    - variable: 3.6e-06
+
+solar_pv_solar_farms_kwh:
+  expression: multiply
+  components:
+    - variable: energy_solar_farms_kw
+    - variable: mq_input_solar_panels_roofs_and_parks_full_load_hours
+
+input_energy_power_solar_pv_solar_radiation_production:
+  variable: solar_pv_solar_farms_tj

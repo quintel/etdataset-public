@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+input_energy_heat_heatpump_water_water_mt_electricity_production:
+  variable: zero

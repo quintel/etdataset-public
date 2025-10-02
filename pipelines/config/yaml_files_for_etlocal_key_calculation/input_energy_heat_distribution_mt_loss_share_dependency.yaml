@@ -1,0 +1,2 @@
+input_energy_heat_distribution_mt_loss_share:
+  variable: mq_input_energy_heat_distribution_mt_loss_share

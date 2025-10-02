@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+input_energy_chp_local_ht_wood_pellets_production:
+  variable: zero

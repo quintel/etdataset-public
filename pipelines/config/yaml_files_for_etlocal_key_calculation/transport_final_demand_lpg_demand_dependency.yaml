@@ -1,0 +1,18 @@
+tp_road_total_lpg_tj:
+  expression: divide
+  components:
+    - variable: tp_road_total_lpg_co2
+    - variable: lpg_tonne_co2_per_tj
+
+tp_road_total_lpg_co2:
+  expression: sum
+  components:
+    - variable: tp_van_lpg_co2_built_env
+    - variable: tp_car_lpg_co2_built_env
+    - variable: tp_van_lpg_co2_road
+    - variable: tp_car_lpg_co2_road
+    - variable: tp_van_lpg_co2_motorway
+    - variable: tp_car_lpg_co2_motorway
+
+transport_final_demand_lpg_demand:
+  variable: tp_road_total_lpg_tj

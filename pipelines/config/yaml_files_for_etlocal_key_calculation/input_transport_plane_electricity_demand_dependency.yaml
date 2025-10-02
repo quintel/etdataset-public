@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+input_transport_plane_electricity_demand:
+  variable: zero

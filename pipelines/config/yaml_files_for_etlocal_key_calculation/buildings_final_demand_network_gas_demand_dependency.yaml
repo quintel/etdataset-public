@@ -1,0 +1,8 @@
+bd_gas_services_tj:
+  expression: sum
+  components:
+    - variable: bd_public_gas_tj
+    - variable: bd_commercial_gas_tj
+
+buildings_final_demand_network_gas_demand:
+  variable: bd_gas_services_tj

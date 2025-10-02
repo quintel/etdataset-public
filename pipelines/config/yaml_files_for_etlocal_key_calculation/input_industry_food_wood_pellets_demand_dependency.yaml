@@ -1,0 +1,8 @@
+food_wood_pellets_tj:
+  expression: multiply
+  components:
+    - variable: food_co2_scaled
+    - variable: mq_food_wood_pellets_tj
+
+input_industry_food_wood_pellets_demand:
+  variable: food_wood_pellets_tj

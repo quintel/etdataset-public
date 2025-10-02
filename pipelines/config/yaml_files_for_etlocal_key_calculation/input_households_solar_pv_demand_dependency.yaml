@@ -1,0 +1,14 @@
+solar_pv_households_tj:
+  expression: multiply
+  components:
+    - variable: solar_pv_households_kwh
+    - variable: 3.6e-06
+
+solar_pv_households_kwh:
+  expression: multiply
+  components:
+    - variable: hh_solar_kw
+    - variable: mq_input_solar_panels_roofs_and_parks_full_load_hours
+
+input_households_solar_pv_demand:
+  variable: solar_pv_households_tj

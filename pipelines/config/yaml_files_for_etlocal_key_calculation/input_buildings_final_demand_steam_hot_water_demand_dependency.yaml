@@ -1,0 +1,72 @@
+buildings_collective_heat_demand:
+  expression: sum
+  components:
+    - variable: bd_biogas_heat_tj
+    - variable: remaining_heat_demand
+    - variable: bd_thermal_storage_tj
+
+bd_biogas_heat_tj:
+  expression: minus
+  components:
+    - variable: biogas_heat_tj
+    - variable: agri_biogas_heat_tj
+
+agri_biogas_heat_tj:
+  expression: multiply
+  components:
+    - variable: agri_gas_share
+    - variable: biogas_heat_tj
+
+agri_gas_share:
+  expression: divide
+  components:
+    - variable: agri_gas_tj
+    - variable: totaal_gas_agri_buildings_tj
+
+totaal_gas_agri_buildings_tj:
+  expression: sum
+  components:
+    - variable: agri_gas_tj
+    - variable: bd_gas_services_tj
+
+bd_gas_services_tj:
+  expression: sum
+  components:
+    - variable: bd_public_gas_tj
+    - variable: bd_commercial_gas_tj
+
+remaining_heat_demand:
+  expression: max
+  components:
+    -
+      expression: minus
+      components:
+        - variable: diff_heat_production_heat_demand
+        - variable: buildings_individual_biomass_demand
+    - variable: 0
+
+diff_heat_production_heat_demand:
+  expression: max
+  components:
+    -
+      expression: minus
+      components:
+        - variable: renewable_heat_supplying_district_heat
+        - variable: hh_heat_tj_temp_corrected
+    - variable: 0
+
+renewable_heat_supplying_district_heat:
+  expression: sum
+  components:
+    - variable: waste_heat_used_in_area_tj
+    - variable: biomass_firms_heat_tj
+    - variable: biomass_firms_chp_heat_tj
+
+buildings_individual_biomass_demand:
+  expression: min
+  components:
+    - variable: diff_heat_production_heat_demand
+    - variable: biomass_firms_heat_tj
+
+input_buildings_final_demand_steam_hot_water_demand:
+  variable: buildings_collective_heat_demand

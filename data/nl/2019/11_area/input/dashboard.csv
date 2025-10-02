@@ -134,6 +134,7 @@ typical_useful_demand_for_space_heating_terraced_houses_2005_present,116.2858,Se
 typical_useful_demand_for_space_heating_terraced_houses_future,55,Dutch building regulation "Eis grondgebonden woningen <= 55" in https://www.nieman.nl/specialismen/energie-en-duurzaamheid/beng-eis-vanaf-01-01-2021/
 typical_useful_demand_for_space_heating_buildings_present,243.571,See source_analyses/nl/2019/11_area/11_area_insulation_typical_pv_and_heat.xlsx
 typical_useful_demand_for_space_heating_buildings_future,190,Dutch building regulation "Eis onderwijs <= 190" in https://www.nieman.nl/specialismen/energie-en-duurzaamheid/beng-eis-vanaf-01-01-2021/
+area_per_building_residence_equivalent,293.627703981492,Actual area per building; see /source_analyses/nl/2019/11_area/11_area_insulation_typical_pv_and_heat.xlsx
 residences_roof_surface_available_for_pv,220,Based on 'gebalanceerde ontwikkeling' TKI Urban energy ( 2020) Ruimtelijk potentieel van zonnestroom in Nederland.pdf
 buildings_roof_surface_available_for_pv,245,Based on 'gebalanceerde ontwikkeling' TKI Urban energy ( 2020) Ruimtelijk potentieel van zonnestroom in Nederland.pdf
 co2_emission_1990,158.7190073,1990 CO2 Emissions (energy related) according to IPCC version21. CRF avaiable on EEA download site. Summarized in: etdataset/source_analyses/eu/2015/11_area/201807_EEA_all_countries GHG emissions IPCC format 1990 UNFCCC_v21.xlsx

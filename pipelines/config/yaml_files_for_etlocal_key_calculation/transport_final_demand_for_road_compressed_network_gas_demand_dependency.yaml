@@ -1,0 +1,21 @@
+tp_road_total_natural_gas_tj:
+  expression: divide
+  components:
+    - variable: tp_road_total_natural_gas_co2
+    - variable: gas_tonne_co2_per_tj
+
+tp_road_total_natural_gas_co2:
+  expression: sum
+  components:
+    - variable: tp_bus_gas_co2_motorway
+    - variable: tp_bus_gas_co2_road
+    - variable: tp_bus_gas_co2_built_env
+    - variable: tp_car_gas_co2_built_env
+    - variable: tp_van_gas_co2_built_env
+    - variable: tp_car_gas_co2_road
+    - variable: tp_van_gas_co2_road
+    - variable: tp_car_gas_co2_motorway
+    - variable: tp_van_gas_co2_motorway
+
+transport_final_demand_for_road_compressed_network_gas_demand:
+  variable: tp_road_total_natural_gas_tj

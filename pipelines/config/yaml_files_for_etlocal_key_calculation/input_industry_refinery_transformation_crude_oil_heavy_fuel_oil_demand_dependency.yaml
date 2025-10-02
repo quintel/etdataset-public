@@ -1,0 +1,8 @@
+refinery_transformation_heavy_fuel_oil_tj:
+  expression: multiply
+  components:
+    - variable: refineries_co2_scaled
+    - variable: mq_refinery_transformation_heavy_fuel_oil_tj
+
+input_industry_refinery_transformation_crude_oil_heavy_fuel_oil_demand:
+  variable: refinery_transformation_heavy_fuel_oil_tj

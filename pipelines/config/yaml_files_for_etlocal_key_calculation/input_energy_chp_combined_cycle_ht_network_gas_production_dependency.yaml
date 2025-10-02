@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+input_energy_chp_combined_cycle_ht_network_gas_production:
+  variable: zero

@@ -1,0 +1,8 @@
+steel_electricity_tj:
+  expression: multiply
+  components:
+    - variable: steel_co2_scaled
+    - variable: mq_steel_electricity_tj
+
+input_industry_metal_steel_electricity_demand:
+  variable: steel_electricity_tj

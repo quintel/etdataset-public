@@ -1,0 +1,14 @@
+bike_kms_human_powered:
+  expression: multiply
+  components:
+    - variable: inhabitants_scaled
+    - variable: nl_fiets_mlrd_km
+
+inhabitants_scaled:
+  expression: divide
+  components:
+    - variable: no_inhabitants
+    - variable: nl_inwoners
+
+input_transport_road_human_powered_bicycle_demand:
+  variable: bike_kms_human_powered

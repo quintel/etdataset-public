@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+energy_heat_import_mt_steam_hot_water_demand:
+  variable: zero

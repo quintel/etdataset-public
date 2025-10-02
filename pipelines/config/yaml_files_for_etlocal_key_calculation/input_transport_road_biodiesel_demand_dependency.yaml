@@ -1,0 +1,20 @@
+tp_road_total_biodiesel_tj:
+  expression: sum
+  components:
+    - variable: tp_road_biodiesel_tj
+    - variable: tp_mobile_machines_bio_fuels_tj
+
+tp_road_biodiesel_tj:
+  expression: minus
+  components:
+    - variable: tp_road_bio_fuels_ex_mm_tj
+    - variable: tp_road_total_bio_ethanol_tj
+
+tp_road_total_bio_ethanol_tj:
+  expression: multiply
+  components:
+    - variable: tp_road_bio_fuels_ex_mm_tj
+    - variable: share_bio_ethanol_in_bio_fuels
+
+input_transport_road_biodiesel_demand:
+  variable: tp_road_total_biodiesel_tj

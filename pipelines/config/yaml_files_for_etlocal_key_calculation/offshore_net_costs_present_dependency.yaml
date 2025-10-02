@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+offshore_net_costs_present:
+  variable: zero

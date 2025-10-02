@@ -1,0 +1,8 @@
+steel_crude_oil_tj:
+  expression: multiply
+  components:
+    - variable: steel_co2_scaled
+    - variable: mq_steel_crude_oil_tj
+
+input_industry_metal_steel_crude_oil_demand:
+  variable: steel_crude_oil_tj

@@ -1,0 +1,8 @@
+refineries_crude_oil_tj:
+  expression: multiply
+  components:
+    - variable: refineries_co2_scaled
+    - variable: mq_refineries_crude_oil_tj
+
+input_industry_chemical_refineries_crude_oil_demand:
+  variable: refineries_crude_oil_tj

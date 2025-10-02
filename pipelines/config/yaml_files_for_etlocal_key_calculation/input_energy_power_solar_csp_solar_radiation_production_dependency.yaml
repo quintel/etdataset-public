@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+input_energy_power_solar_csp_solar_radiation_production:
+  variable: zero

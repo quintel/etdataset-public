@@ -1,0 +1,8 @@
+fertilizers_electricity_tj:
+  expression: multiply
+  components:
+    - variable: fertilizers_co2_scaled
+    - variable: dq_industry_final_demand_for_chemical_fertilizers_electricity
+
+input_industry_chemical_fertilizers_electricity_demand:
+  variable: fertilizers_electricity_tj

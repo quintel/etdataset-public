@@ -83,6 +83,7 @@ hp_eff_oil_industry,0.966,Tweaked for better results on 'Results by Fuel'
 pp_share_coal_heater,0,No shift required
 pp_share_oil_heater,0,No shift required
 pp_share_gas_chp_cc,0,Shifted all to industry
+pp_share_gas_chp_engine,0.98903,Reallocation of engine CHP is introduced for nl2023; no shift is introduced for nl2019; so the results from production table step 1 are reproduced.
 pp_share_gas_heater,0,Shifted all to industry.
 pp_demand_hydrogen_smr,0,no hydrogen production
 pp_demand_hydrogen_smr_ccs,0,no hydrogen production

@@ -1,0 +1,2 @@
+mv_hv_trafo_spare_capacity:
+  variable: mq_mv_hv_trafo_spare_capacity

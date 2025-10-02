@@ -1,0 +1,14 @@
+lv_mv_trafo_total_costs_present_distributed:
+  expression: multiply
+  components:
+    - variable: total_electricity_scaled
+    - variable: mq_lv_mv_trafo_total_costs_present
+
+total_electricity_scaled:
+  expression: divide
+  components:
+    - variable: total_electricity_tj
+    - variable: nl_elektra_totaal_combi_tj
+
+lv_mv_trafo_total_costs_present:
+  variable: lv_mv_trafo_total_costs_present_distributed

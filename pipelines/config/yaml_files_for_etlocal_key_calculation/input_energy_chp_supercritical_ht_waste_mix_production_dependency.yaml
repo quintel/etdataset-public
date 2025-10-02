@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+input_energy_chp_supercritical_ht_waste_mix_production:
+  variable: zero

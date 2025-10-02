@@ -1,0 +1,8 @@
+paper_electricity_tj:
+  expression: multiply
+  components:
+    - variable: paper_co2_scaled
+    - variable: mq_paper_electricity_tj
+
+input_industry_paper_electricity_demand:
+  variable: paper_electricity_tj

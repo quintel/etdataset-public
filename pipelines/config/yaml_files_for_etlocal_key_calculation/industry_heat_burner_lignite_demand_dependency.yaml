@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+industry_heat_burner_lignite_demand:
+  variable: zero

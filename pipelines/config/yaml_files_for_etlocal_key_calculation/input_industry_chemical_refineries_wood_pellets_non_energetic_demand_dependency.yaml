@@ -1,0 +1,8 @@
+refineries_wood_pellets_non_energetic_tj:
+  expression: multiply
+  components:
+    - variable: refineries_co2_scaled
+    - variable: mq_refineries_wood_pellets_non_energetic_tj
+
+input_industry_chemical_refineries_wood_pellets_non_energetic_demand:
+  variable: refineries_wood_pellets_non_energetic_tj

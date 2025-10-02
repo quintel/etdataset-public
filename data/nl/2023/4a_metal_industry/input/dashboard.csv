@@ -1,0 +1,17 @@
+Key,Value,Source
+country,nl,
+base_year,2023,
+metal_steel_production,4.7,World Steel Association; see source_analyses/nl/2023/4a_metal_industry/4a_metal_industry_source_analysis_2023.xlsx
+metal_steel_share_blast_furnace_bof,1,World Steel Association; see source_analyses/nl/2023/4a_metal_industry/4a_metal_industry_source_analysis_2023.xlsx
+metal_steel_share_cyclone_furnace_eaf,0,Quintel assumption
+metal_steel_share_scrap_hbi_eaf,0,World Steel Association; see source_analyses/nl/2023/4a_metal_industry/4a_metal_industry_source_analysis_2023.xlsx
+metal_steel_share_dri_network_gas_eaf,0,Quintel assumption
+metal_steel_share_dri_hydrogen_eaf,0,Quintel assumption
+metal_steel_scrap_hbi_eaf_share_coal,0,World Steel Association; see source_analyses/nl/2023/4a_metal_industry/4a_metal_industry_source_analysis_2023.xlsx
+metal_steel_scrap_hbi_eaf_share_electricity,0,World Steel Association; see source_analyses/nl/2023/4a_metal_industry/4a_metal_industry_source_analysis_2023.xlsx
+metal_steel_scrap_hbi_eaf_share_network_gas,0,World Steel Association; see source_analyses/nl/2023/4a_metal_industry/4a_metal_industry_source_analysis_2023.xlsx
+metal_aluminium_production,0.113,USGS reports no aluminium production but Eurostat reports final consupmtion. Values set to match final consumption reported by Eurostat as best as possible; see source_analyses/nl/2023/4a_metal_industry/4a_metal_industry_source_analysis_2023.xlsx
+metal_aluminium_share_electrolysis_current,0,USGS reports no aluminium production but Eurostat reports final consupmtion. Values set to match final consumption reported by Eurostat as best as possible; see source_analyses/nl/2023/4a_metal_industry/4a_metal_industry_source_analysis_2023.xlsx
+metal_aluminium_share_electrolysis_bat,0,USGS reports no aluminium production but Eurostat reports final consupmtion. Values set to match final consumption reported by Eurostat as best as possible; see source_analyses/nl/2023/4a_metal_industry/4a_metal_industry_source_analysis_2023.xlsx
+metal_aluminium_share_melting_oven,1,USGS reports no aluminium production but Eurostat reports final consupmtion. Values set to match final consumption reported by Eurostat as best as possible; see source_analyses/nl/2023/4a_metal_industry/4a_metal_industry_source_analysis_2023.xlsx
+metal_aluminium_share_carbothermal_reduction,0,USGS reports no aluminium production but Eurostat reports final consupmtion. Values set to match final consumption reported by Eurostat as best as possible; see source_analyses/nl/2023/4a_metal_industry/4a_metal_industry_source_analysis_2023.xlsx

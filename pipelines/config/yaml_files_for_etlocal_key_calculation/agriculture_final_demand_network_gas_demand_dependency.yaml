@@ -1,0 +1,8 @@
+agri_gas_fd_tj:
+  expression: multiply
+  components:
+    - variable: agriculture_gas_final_demand_relative
+    - variable: agri_gas_tj
+
+agriculture_final_demand_network_gas_demand:
+  variable: agri_gas_fd_tj

@@ -1,0 +1,52 @@
+tp_road_total_diesel_tj:
+  expression: minus
+  components:
+    -
+      expression: sum
+      components:
+        - variable: tp_road_total_diesel_mix_tj
+        - variable: tp_road_mm_fossil_tj
+    - variable: tp_road_biodiesel_tj
+
+tp_road_total_diesel_mix_tj:
+  expression: divide
+  components:
+    - variable: tp_road_total_diesel_mix_co2
+    - variable: diesel_tonne_co2_per_tj
+
+tp_road_total_diesel_mix_co2:
+  expression: sum
+  components:
+    - variable: tp_car_diesel_co2_built_env
+    - variable: tp_car_diesel_co2_road
+    - variable: tp_car_diesel_co2_motorway
+    - variable: tp_van_diesel_co2_built_env
+    - variable: tp_truck_co2_built_env
+    - variable: tp_van_diesel_co2_road
+    - variable: tp_truck_co2_road
+    - variable: tp_van_diesel_co2_motorway
+    - variable: tp_truck_co2_motorway
+    - variable: tp_bus_diesel_co2_built_env
+    - variable: tp_bus_diesel_co2_road
+    - variable: tp_bus_diesel_co2_motorway
+
+tp_road_mm_fossil_tj:
+  expression: minus
+  components:
+    - variable: tp_mobile_machines_inc_biofuels_tj
+    - variable: tp_mobile_machines_bio_fuels_tj
+
+tp_road_biodiesel_tj:
+  expression: minus
+  components:
+    - variable: tp_road_bio_fuels_ex_mm_tj
+    - variable: tp_road_total_bio_ethanol_tj
+
+tp_road_total_bio_ethanol_tj:
+  expression: multiply
+  components:
+    - variable: tp_road_bio_fuels_ex_mm_tj
+    - variable: share_bio_ethanol_in_bio_fuels
+
+input_transport_road_diesel_demand:
+  variable: tp_road_total_diesel_tj

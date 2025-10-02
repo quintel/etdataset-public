@@ -1,0 +1,8 @@
+fertilizers_crude_oil_tj:
+  expression: multiply
+  components:
+    - variable: fertilizers_co2_scaled
+    - variable: mq_fertilizers_crude_oil_tj
+
+input_industry_chemical_fertilizers_crude_oil_demand:
+  variable: fertilizers_crude_oil_tj

@@ -1,0 +1,8 @@
+food_crude_oil_tj:
+  expression: multiply
+  components:
+    - variable: food_co2_scaled
+    - variable: mq_food_crude_oil_tj
+
+input_industry_food_crude_oil_demand:
+  variable: food_crude_oil_tj

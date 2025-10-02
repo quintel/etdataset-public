@@ -1,0 +1,2 @@
+residences_roof_surface_available_for_pv:
+  variable: households_roof_pv_potential

@@ -1,0 +1,8 @@
+aluminium_electricity_tj:
+  expression: multiply
+  components:
+    - variable: aluminium_co2_scaled
+    - variable: mq_aluminium_electricity_tj
+
+input_industry_metal_aluminium_electricity_demand:
+  variable: aluminium_electricity_tj

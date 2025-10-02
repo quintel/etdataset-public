@@ -1,0 +1,2 @@
+input_energy_heat_burner_ht_waste_mix_production:
+  variable: waste_heat_used_in_area_tj

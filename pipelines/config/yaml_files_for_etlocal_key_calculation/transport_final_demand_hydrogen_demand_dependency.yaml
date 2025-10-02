@@ -1,0 +1,34 @@
+tp_road_h2_tj:
+  expression: sum
+  components:
+    - variable: tp_road_h2_car_tj
+    - variable: tp_road_h2_bus_tj
+    - variable: tp_road_h2_truck_tj
+    - variable: tp_road_h2_van_tj
+
+tp_road_h2_car_tj:
+  expression: multiply
+  components:
+    - variable: no_h2_cars
+    - variable: tres_h2_car_annual_tj
+
+tp_road_h2_bus_tj:
+  expression: multiply
+  components:
+    - variable: no_h2_busses
+    - variable: tres_h2_bus_annual_tj
+
+tp_road_h2_truck_tj:
+  expression: multiply
+  components:
+    - variable: no_h2_trucks
+    - variable: tres_h2_truck_annual_tj
+
+tp_road_h2_van_tj:
+  expression: multiply
+  components:
+    - variable: no_h2_vans
+    - variable: tres_h2_van_annual_tj
+
+transport_final_demand_hydrogen_demand:
+  variable: tp_road_h2_tj

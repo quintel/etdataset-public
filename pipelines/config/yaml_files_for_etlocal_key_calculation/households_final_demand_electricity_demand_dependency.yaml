@@ -1,0 +1,39 @@
+hh_elec_tj_inc_own_use_solar_minus_home_charging:
+  expression: sum
+  components:
+    -
+      expression: minus
+      components:
+        - variable: hh_electricity_tj
+        - variable: tp_road_electricity_charged_at_home_tj
+    - variable: solar_pv_own_use_households_tj
+
+tp_road_electricity_charged_at_home_tj:
+  variable: electric_e_bike_tj
+
+electric_e_bike_tj:
+  expression: multiply
+  components:
+    - variable: inhabitants_scaled
+    - variable: dq_transport_bicycle_using_electricity
+
+inhabitants_scaled:
+  expression: divide
+  components:
+    - variable: no_inhabitants
+    - variable: nl_inwoners
+
+solar_pv_own_use_households_tj:
+  expression: multiply
+  components:
+    - variable: solar_pv_own_use_total_tj
+    - variable: solar_pv_households_share
+
+solar_pv_households_share:
+  expression: divide
+  components:
+    - variable: hh_solar_kw
+    - variable: total_solar_kw
+
+households_final_demand_electricity_demand:
+  variable: hh_elec_tj_inc_own_use_solar_minus_home_charging

@@ -1,0 +1,20 @@
+agri_electricity_demand_tj:
+  expression: sum
+  components:
+    - variable: agri_electricity_tj
+    - variable: agri_gas_chp_elec_tj
+
+agri_gas_chp_elec_tj:
+  expression: multiply
+  components:
+    - variable: agri_gas_chp_tj
+    - variable: mq_network_gas_chp_e_efficiency
+
+agri_gas_chp_tj:
+  expression: multiply
+  components:
+    - variable: agriculture_gas_chp_relative
+    - variable: agri_gas_tj
+
+agriculture_final_demand_electricity_demand:
+  variable: agri_electricity_demand_tj

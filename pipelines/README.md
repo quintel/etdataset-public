@@ -1,254 +1,240 @@
-# Data pipelines
+# ETLocal Municipal Dataset Pipeline
 
-The dataset generation for Dutch municipalities has partly been automated using Python-based Jupyter Notebooks. So far, two pipelines has been setup:
+## 📋 Table of Contents
+- [Overview](#overview)
+- [Architecture](#architecture)
+- [Quick Start](#quick-start)
+- [Prerequisites](#prerequisites)
+- [Execution Flow](#execution-flow)
+- [Directory Structure](#directory-structure)
+- [Data Sources](#data-sources)
+- [Validation & Quality Checks](#validation--quality-checks)
+- [Troubleshooting](#troubleshooting)
+- [Future Improvements](#future-improvements)
+- [Support](#support)
 
-* Creating and/or updating datasets
-* Built environment stock Dutch municipalities
+## Overview
 
-These two are described in more detail below.
+This pipeline updates municipal datasets for ETLocal, the dataset manager of the ETM. Currently, it is only possible to update _all_ municipal datasets at once (no single-municipality option).
 
-Note that the raw input data can be found in the [Quintel dropbox](https://www.dropbox.com/scl/fo/bq1jbkw0peq85gpzzri93/h?rlkey=skm3g8alwbqc3dvdusa5cx7vi&dl=0). Make sure to copy this data to the pipelines/data/raw directory.
+**Purpose**: Enable periodic updates of municipal datasets and allow retrieval of all data processing steps to trace back where data came from.
 
-## Creating and/or updating datasets
+**Output**: 
+- `data.csv`: Numerical data for all ETLocal keys for all Dutch municipalities
+- `commits.yaml`: Documentation outlining how each datapoint was calculated and which source data was used
 
+**Target Users**: Internal team members who need to understand the origin of municipal data, execute dataset updates, or improve the pipeline.
 
-The [ETM Dataset Manager](https://data.energytransitionmodel.com) includes most of the ETM datasets, including the ones for Dutch municipalities. The base year of these datasets differs. Some are 2016-based, others are 2019-based. This depends on the dataset's base year that is offered in the ETM itself.
+## Architecture
 
-A while ago the municipal datasets for 2019 have been created using an Excel workflow. This Excel analysis can be found in the Quintel dropbox. In addition to this Excel workflow a pipeline in Jupyter Notebook (Python-based) was setup.
+![Pipeline Flow Diagram](config/mermaid_flow_diagrams/overall_data_flow_diagram.png)
 
-Let's take the municipality of Veenendaal as an example. Say that we would like to update the dataset to the 2019 data. In order to do that we both need the results of the Excel workflow as well as the ones from the Jupyter Notebook pipeline. The municipal dataset update consists of three migration steps in ETLocal. 
+The pipeline follows a sequential processing model:
+1. **Extract & Preprocess**: Creates ETLocal template, cleans all source data and prefills the template with data from the national dataset
+2. **Sector Processing**: 9 parallel notebooks process sector-specific data
+3. **Post-processing**: Combines all sector outputs into a data.csv and commits.yaml file for ETLocal data migration
 
-Below these steps are described in more detail:
+## Quick Start
 
-#### Excel  workflow (migration steps 1 and 2)
+1. **Install dependencies**:
+  Run `pipenv shell` in the `pipelines` folder in your terminal. It activates the python version required for this pipeline including all relevant libraries.
+  If you get a message saying `module XXX not available`, run `pipenv install` to locally install all missing library. You should only have to do this once.
 
-* Follow the steps as described in this [guide](https://www.dropbox.com/scl/fi/7tg3r3om7xvkwkqdmyyuo/update_municipality_to_2019.docx?rlkey=kt2w0dbl4mw2wnhi7bmv2zpdy&dl=0).
+2. **Setup data access**:
+   You'll need access to the Dropbox folder: `756 Gemeentelijke datasets 2023/Grote databestanden` for some large data files. These cannot be stored on github because of their size.
+   
+   If you need to import data for a specific notebook, the notebook tells you 
 
-* The results from the Excel workflow are stored in the [`modeling_experiments`](https://github.com/quintel/modeling_experiments/tree/master/etlocal/2019_update) Github repository. Make sure that the results align with the latest modelling of the ETM. For example, if dataset attributes have been removed during a modelling project, make sure to remove these from the data.
+3. **Execute pipeline**:
+   ```
+   # Step 1: Run the Extract and preprocess Notebook (if applicable)
+   Only take this step if you want to include new data from any of the sources (e.g. Klimaatmonitor, Emissieregistratie, CBS, miscellaneous analysis, ...).
+   Open the notebook and 'Run all cells' / run relevant sections. This results in an updated version of csv files in the `/data/intermediate` folder.
+   
+   # Step 2: Run sector notebooks (can run in parallel)
+   Open the notebook and press 'Run all cells' to update all data.
+   
+   # Step 3: Generate final output
+   Open the notebook `Post processing` and run all cells.
+   ```
 
-* Run the [`generate_migration`](https://github.com/quintel/modeling_experiments/blob/master/etlocal/2019_update/generate_migration.py) script in your terminal, e.g.: 
+4. **Validate output**:
+   - Check `data/reporting/data.csv` for empty cells (meaning e.g. new ETLocal keys that have not yet been included in the pipeline)
+   - Verify `data/reporting/commits.yaml` for any missing or nonsensical commit messages
+
+## Prerequisites
+
+**System Requirements and data access**:
+The pipeline should work with any Quintel system setup. Make sure you have access to the folder `756 Gemeentelijke datasets 2023/Grote databestanden` to retrieve any data files that are too large for Github.
+
+**Estimated Runtime**: Running all notebooks should take you ~30 mins or so. Reserve about 4 hours if you include the data migrations on ETLocal and ETSource and subsequent PRs.
+
+## Execution Order
+
+### 1. Required First Step
+- `Extract and preprocess source data.ipynb`
+  - Processes all raw data sources
+  - Creates an ETLocal template that each of the sector notebooks fill
+  - Creates intermediate data for sector notebooks
+  - Creates an ETLocal template filled with data taken from the national nl2023 dataset
+  - **Run this notebook first if any of the source data is updated**
+
+**Note**: the output file `data/intermediate/km_meta_data_converted.csv` contains a match between the internal variable name and the Klimaatmonitor variable name.
+
+### 2. Sector Processing (Independent)
+These can run in any order after step 1:
+- `Agriculture - municipal dataset update.ipynb`
+- `Area - municipal dataset update.ipynb` 
+- `Buildings - municipal dataset update.ipynb`
+- `Energy Production - municipal dataset update.ipynb`
+- `Households - municipal dataset update.ipynb`
+- `Industry - municipal dataset update.ipynb`
+- `Non Energetic Emissions - municipal dataset update.ipynb`
+- `Other Energy Demand - municipal dataset update.ipynb`
+- `Transport - municipal dataset update.ipynb`
+
+**NOTE**: the only interdependency here is that the Buildings notebook depends on the Transport notebook. The Transport notebook calculates a distribution key for electric vehicle demand that the Buildings notebook requires.
+
+### 3. Special Processing
+- `Built Environment Stock Dutch Municipalities.ipynb`
+  - Uses separate data (not processed in step 1)
+    - PBL Referentieverbruiken municipal datasets, retrieved from the Excel files on the [VIVET webpage](https://dataportaal.pbl.nl/VIVET/Referentieverbruik_warmte/Gemeentebestanden_XLS)
+  - Creates the csv file `pbl_referentieverbruiken_all_data_from_vivet.csv`, which it then subsequently processes
+  - Also applies the municipal mergers between 2019-2023 to the PBL Referentieverbruiken municipal csv files
+  - **Output**: `data/processed/etlocal_template_built_environment_stock_filled.csv`, to be used in the `Post processing` notebook.
+  Can run independently of other notebooks
+
+#### 4. Final Processing
+- `Post Processing.ipynb`
+  - Combines all sector outputs from `data/processed/`
+  - Generates final `data.csv` and `commits.yaml`
+
+### Incremental Updates
+**Sector Update**: If you modify one sector notebook:
+1. Run the updated sector notebook
+2. Run post processing notebook (will include all existing + updated sector data)
+
+**Preprocessing Update**: If source data changes:
+1. Re-run extract & preprocess
+2. Re-run affected sector notebooks (in case of Klimaatmonitor or nl2023 updates: probably best to rerun all notebooks)
+3. Run post processing
+
+## Directory Structure
 
 ```
-python3 etlocal/2019_update/generate_migration.py veenendaal_2019_update GM0345
+├── README.md
+├── Pipfile                          # Python dependencies
+├── Extract_and_Preprocess_Source_Data.ipynb
+├── [Sector] - municipal dataset update*.ipynb            # Sector processing notebooks
+├── Post_Processing.ipynb
+├── Built Environment stock Dutch municipalities.ipynb
+│
+├── config/                         # Configuration & calculation rules
+│   ├── etlocal_interface_elements/ # ETLocal template base
+│   ├── etlocal_calculation_rules.xlsx # Key calculation definitions
+│   ├── yaml_files/                # ETLocal key calculation rules
+│   └── mermaid_flow_diagrams/     # Visual pipeline documentation
+│
+├── source/                        # Reusable scripts and functions
+│   ├── load_data_manager.py      # Central data loading utility
+│   ├── excel_to_yaml.py          # Convert calculation rules
+│   └── yaml_to_diagram.py        # Generate visual documentation
+│
+└── data/
+    ├── raw/                      # Source datasets
+    ├── intermediate/             # Preprocessed data for sectors
+    ├── processed/                # Filled ETLocal templates per sector
+    ├── post_processed/           # Combined intermediate results
+    ├── reporting/                # Final outputs (data.csv, commits.yaml)
+    ├── pre_processing/           # Non-energetic emissions preprocessing
+    │   └── non_energetic_emissions.ipynb
+    └── specific_2023_dataset_update/ # 2023-specific auxiliary files
 ```
 
-* Make sure that the data aligns with the latest ETM modelling updates. If dataset attributes (interface elements) have been renamed or removed from ETLocal, make sure to rename or remove the corresponding keys in the input data for the script as well.
-
-* < **to do Charlotte** | please elaborate on this if needed >
-
-* If the script has successfully run, two migrations have been created in the ETLocal repository.
-
-#### Jupyter Notebook workflow (migration step 3)
-
-* Check out the "[getting started](https://github.com/quintel/etdataset/wiki/Creating-and-or-updating-municipal-datasets)" Github wiki for how to install the necessary libraries.
-
-* For now, no raw input data is necessary to run the notebook. Hence, you can leave the data/raw directory empty.
-
-* The config data does need to be checked. Make sure to update both the `config/data.csv` with the relevant list of municipalities as well as the `config/etlocal_interface_elements.csv` in order to match the latest ETM dataset structure. If new dataset attributes (interface elements) have been added to ETLocal, make sure to update this in the config file. Same goes for the update and removal of ETLocal dataset attributes.
-
-* Then, you're ready to run the Notebook!
-  * In the Scope section the list of municipalities from `config/data.csv` is collected. Here, you can also specify the parent dataset and the dataset year.
-  * Then setup some files and data such as the parent data and the (empty) etlocal template.
-  * Next, you can run the notebook cells for the different sectors (general, households, services, agriculture, transport, industry and energy production). Some parts of the notebook are still work in progress and therefore empty.
-  * When the data is ready (i.e., the etlocal template has been filled with all the relevant data), it can be transformed to the required files for a dataset migration in the Migration section of the notebook.
-
-Note that most of the steps are documented in more detail in the notebook itself.
-
-
-## Built environment stock Dutch municipalities
-
-For the improved modelling of heat (live in March 2024) new housing stock data was required for Dutch municipalities. A new pipeline in Jupyter Notebook ("Pipeline housing stock Dutch municipalities") was created to process this data for the datasets.
-
-The pipeline distinguishes the data processes for households and buildings (or services) because both are based on different data sources. Despite the processes for households and buildings are based on different sources, they do undergo the same steps:
-
-* **Extract**: collecting the data from the data sources 
-* **Transform**: preprocessing, cleaning, enriching and aggregating the data
-* **Load**: exporting the data to csv files that can be used to create or update datasets in the ETM Dataset Manager (ETLocal)
-
-Below both processes for households and buildings are described in more detail.
-
-### Households
-
-The ETM municipal datasets require the following information per combination of housing type and construction period:
-
-* Number of residences
-* Typical useful demand in kWh/m2
-* Share of total useful heat demand
-
-The data above is derived from the **[EP-online](https://www.ep-online.nl/PublicData)** and **[PBL referentieverbruik warmte](https://dataportaal.pbl.nl/VIVET/Referentieverbruik_warmte/)** data sources. Both provide data on residential level.
-
-#### Extract
-
-In this step the raw data is collected for each of the data sources:
-
-* **PBL referentieverbruik warmte** provides data about useful demand for space heating, property, energy labels, surface, construction year and housing type for all residences.
-
-* **EP-online** provides data about energy labels and energy prestation indicators for all registered residences. This dataset therefore doesn't cover all residences.
-
-#### Transform
-
-In this step the raw data is transformed to the desired format with the following sub steps:
-
-1. cleaning and preprocessing 
-2. combining the different data sources
-2. enriching the data with ETM classifications
-3. aggregating the data to municipal level
-4. deriving the required ETM dataset attributes
-5. aggregating the data to national level
-
-
-##### 1. Cleaning and preprocessing
-
-First, the raw data is filtered for the relevant columns that should be kept. The other columns are not relevant and can be dropped.
-
-From the **EP-online** data we use:
-
-* `Pand_gebouwklasse` (used to filter for households)
-* `Pand_warmtebehoefte` (represents the typical heat demand in kWh/m2)
-* `Pand_energieklasse` (used to derive the typical heat demand from)
-* `Pand_bagverblijfsobjectid` (used to merge this data with other data)
-
-From the **PBL referentieverbruik warmte** data we use:
-
-* `Woningkenmerken/eigendom` (used for information about property)
-* `Woningkenmerken/oppervlakte` (used for calculations concerning the typical heat demand and the share of useful space heating demand)
-* `Woningkenmerken/schillabel` (used to derive the typical heat demand from)
-* `Woningkenmerken/bouwjaar` (used to classify the residences to a construction period)
-* `Woningkenmerken/woningtype` (used to classify the residences to a housing type)
-* `Functionele vraag/ruimteverwarming` (used to determine the shares of total useful heat demand)
-
-Also, since the base year is 2019, the data is filtered for housings that were built in 2019 or before (either by dropping houses without a BAG VBO (verblijfsobject) ID or dropping houses that were built after 2019). 
-
-Further, during the analysis a strange outlier with an insanely high heat demand was identified. This outlier is dropped as well.
-
-Lastly, the formatting of the BAG VBO IDs was matched between the two data sources (in order to be able to match the two in the next sub step).
-
-##### 2. Combining the EP-online and PBL data
-
-Based on the BAG VBO ID the two datasets are merged into one. Note that the EP-online data didn't cover all residences. Hence, in the merged dataset part of the residences doesn't have data for the EP-online columns/attributes.
-
-In this step the data is also corrected for relevant municipal reorganizations. For instance, Appingedam, Delfzijl and Loppersum have been merged into Eemsdelta. Therefore we replace the municipal codes of the first three by the municipal code of Eemsdelta in the data.
-
-##### 3. Enriching the data with ETM classifications
-
-To match the ETM dataset structure the residences are classified to the different housing types (apartments, terraced houses, semi-detached houses and detached houses) and construction periods (<1945, 1945-1964, 1965-1984, 1985-2004, >2005). Note that corner houses are classified to semi-detached houses. 
-
-Also, if no typical heat demand in kWh/m2 (EP-online's `Pand_warmtebehoefte`) is available, the energy label is used to estimate the typical heat demand for a residence. We use the following mapping:
-
-* Label A (and higher): 118 kWh/m2
-* Label B: 175 kWh/m2
-* Label C: 220 kWh/m2
-* Label D: 270 kWh/m2
-* Label E: 313 kWh/m2
-* Label F: 358 kWh/m2
-* Label G: 403 kWh/m2
-
-< **to do Charlotte**: describe source or methodology behind mapping >
-
-##### 4. Aggregating the data to municipal level
-
-For each municipality we then group the data into the combinations of housing types and construction periods as specified by the ETM. If relevant, the data can also be grouped by owner ('koop' / 'particuliere huur' / 'sociale huur'). 
-
-##### 5. Deriving the required ETM dataset attributes
-
-Now we can derive the required ETM dataset attributes:
-
-* Number of residences
-* Typical useful demand in kWh/m2
-* Share of total useful heat demand
-
-The **number of residences** can be derived by applying a count on the data which is grouped by combination of housing types and construction periods.
-
-The **typical useful demand** can either be derived from EP-online's `Pand_warmtebehoefte` or the mapping based on energy labels.
-
-The **share of total useful heat demand** is calculated based on PBL's `Functionele vraag/ruimteverwarming` data. 
-
-##### 6. Aggregating the data to national level
-
-For the national dataset of the Netherlands, the same sub steps (1 through 5) should be taken. As opposed to the steps for municipalities, the data can now be grouped on national instead of municipal level.
-
-#### Load
-
-After completing the transformation steps, the data is ready to be exported to csv files.
-
-### Buildings
-
-The ETM municipal datasets require the following information for buildings:
-
-* Number of buildings
-* Typical useful demand in kWh/m2
-
-The data above is derived from the **[Verrijkte BAG utiliteitsbouw](https://energy.nl/publications/verrijkte-bag-energetische-vraagstukken/)** by TNO. This data source provides data about a.o. energy labels, energy use and surface on a building level.
-
-#### Extract
-
-In this step the raw data is collected and stored in a dataframe.
-
-#### Transform
-
-In this step the raw data is transformed to the desired format with the following sub steps:
-
-1. cleaning and preprocessing 
-2. enriching the data with ETM classifications
-3. aggregating the data to municipal level
-4. deriving the required ETM dataset attributes
-5. aggregating the data to national level
-
-
-##### 1. Cleaning and preprocessing
-
-First, the raw data is filtered for the relevant columns that should be kept. The other columns are not relevant and can be dropped.
-
-From the **verrijkte BAG utiliteitsbouw** data we use:
-
-* `pand_label_keus` (used to derive the typical heat demand from)
-* `bouwjaar` (used to filter for buildings built in 2019 or before)
-* `vbo_opp_m2` (used to calculate the useful heat demand)
-* `gemeentenaam` (used to group the data by municipality)
-* `gemeente_id` (used to group the data by municipality ID)
-* `vboid`
-
-Also, since the base year is 2019, the data is filtered for buildings that were built in 2019 or before.
-
-Further, buildings with use functions "woon" and "industrie" are dropped since these do not classify as buildings according to the ETM definitions.
-                                                
-##### 3. Enriching the data with ETM classifications
-
-For buildings there is no direct typical heat demand in kWh/m2 available. Hence, the energy label (`pand_label_keus`) is used to estimate the typical heat demand for a building. We use the same  mapping as we use for households:
-
-* Label A (and higher): 118 kWh/m2
-* Label B: 175 kWh/m2
-* Label C: 220 kWh/m2
-* Label D: 270 kWh/m2
-* Label E: 313 kWh/m2
-* Label F: 358 kWh/m2
-* Label G: 403 kWh/m2
-
-Also, we use the typical heat demand estimations to calculate the useful heat demand per building (by multiplying it with the building's surface).
-
-##### 4. Aggregating the data to municipal level
-
-We then group the data by municipality. 
-
-##### 5. Deriving the required ETM dataset attributes
-
-Now we can derive the required ETM dataset attributes:
-
-* Number of buildings
-* Typical useful demand in kWh/m2
-
-The **number of buildings** can be derived by applying a count on the data.
-
-The **typical useful demand** can be calculated by dividing the total useful heat demand by the total surface per municipality. 
-
-##### 6. Aggregating the data to national level
-
-For the national dataset of the Netherlands, the data can now be grouped on national instead of municipal level.
-
-#### Load
-
-After completing the transformation steps, the data is ready to be exported to csv files.
-
-### Setup dataset migrations
-
-When the housing stock data is ready for households and buildings, it can be transformed to the required files for a dataset migration.
+## Data Sources
+
+### Primary Sources
+- **Klimaatmonitor (KM)**: 2019-2023 municipal energy data
+- **CBS**: Municipal lists, vehicle data
+- **Transport Research**: outdated, no longer used in the 2023 dataset update. It contains bottom-up figures on energy consumption of e.g. vans and cars to calculate the road electricity demand and corresponding tech split, for example. Can also be accessed via `Quintel/Projects/Other - active/ETLocal/Datasets/2019_update/202110_D_ETLocal_default_datasets_2019_step1.xlsx`
+- **Emissieregistratie**: Greenhouse gas emissions on municipal level
+- **ETM Queries**: National model outputs
+- **ETLocal Interface**: ETLocal keys, to be used to generate the empty ETLocal template.
+
+### External Dependencies
+- **PBL Referentieverbruiken** (Dropbox): Municipal csv files for the 2023 PBL Referentieverbruiken study. **Note**: this data is expected to be updated in September 2025. 
+- **EP-online Dataset** (Dropbox): 2023 energy performance data, `v20231201_v2_csv.csv`. No longer used in the 2023 update; see `pipelines/Archive (pre-2023 dataset update)/Built environment stock Dutch municipalities - pre-2023 dataset update version.ipynb` to see how it was previously used.
+- **TNO Verrijkte BAG** (Dropbox): Energy demand info on non-residential buildings. **Note**: there is a new version of this dataset available on [Energy.nl](https://energy.nl/publications/verrijkte-bag-2-0/), which we haven't used yet.
+
+### Update Frequency
+- **Klimaatmonitor**: Continuously updated, stable ~1.5-2 years after data year. However, sometimes data is updated in retrospect, which makes it difficult to retrieve mismatches between the ETM and Klimaatmonitor.
+- **Other sources**: Varies by provider
+
+## Validation & Quality Checks
+
+### Built-in Validation
+- **Data lineage**: The YAML files (`config/yaml_files_for_etlocal_key_calculation`) and corresponding flow diagram visualization in the sector notebooks show how the internal variables are converted into the ETLocal key. To match the internal variable name with the original source data on e.g. Klimaatmonitor, please consult the `data/intermediate/km_meta_data_converted.csv` and `data/intermediate/km_national_meta_data_converted.csv` files.
+- **Filling with older data or zeroes**: The `Extract and preprocess source data/Klimaatmonitor (municiple data)/Extract/Energy data` section uses the `src/helper.fill_missing_KM_data` method to prefill the KM data with data from earlier years or with zeroes in case of missing values.
+- **Completeness checks**: Automated validation of required fields. Upon calculating an ETLocal key a dataframe is printed that shows which data point is missing in case the calculation can't be completed.
+- **Historical comparison**: The `src/helper.validate_template_data` method contains a comparison of the ETLocal key with the 2019 data
+
+### Manual Validation Steps
+1. **Visual inspection**: 
+   - Check `data/reporting/data.csv` for empty cells (meaning e.g. new ETLocal keys that have not yet been included in the pipeline)
+   - Verify `data/reporting/commits.yaml` for any missing or nonsensical commit messages
+
+2. **ETLocal integration**:
+   - Create dataset migration in ETLocal
+   - Export to ITSource (final validation occurs here)
+   - Failed migration indicates data issues
+
+### Known Limitations
+- Pipeline processes all Dutch municipalities (no single-municipality option)
+- Historical validation currently uses 2019 baseline (needs updating for future datasets)
+
+## Troubleshooting
+
+### Common Issues
+
+**Memory Overload**:
+- IDE might slow down because of large datasets in cache and inefficient pandas syntax
+- Applies in particular to Built Environment Stock, Extract & Preprocess, or Industry notebooks
+- Solution: restart kernel or drop large datasets from memory
+
+**Missing Dropbox Data**:
+- Error: FileNotFoundError for large datasets
+- Solution: check that the required data files are present in their respective folders. Check the syntax to check which folders these are.
+
+**Incomplete Output**:
+- Symptom: Empty cells in data.csv or missing commits in commits.yaml
+- Cause: ETLocal key is included in the template but not in one of the sector notebooks. Or a sector notebook might contain an error so that the ETLocal key isn't calculated.
+- Solution: Check individual notebook execution logs
+
+## Future Improvements
+
+**Planned Enhancements**:
+- **Modular execution**: Hash-based change detection to run only updated components using e.g. SnakeMake.
+- **Single-municipality processing**: Enable targeted municipality updates
+- **Tailored municipal updates**: develop a structure to fit in tailored updates for specific municipalities based on specifically supplied data sources
+- **Automated validation**: Replace manual validation with automated tests
+- **Dynamic baseline**: Update validation baseline from 2019 to previous dataset
+- **Source data lookup**: Enable a lookup for e.g. a Klimaatmonitor variable name to see in which ETLocal keys it is used. The yaml files contain this information but currently only show the opposite: which internal variables are used for a single ETLocal key.
+
+**Technical Debt**:
+- Apply uniform sector notebook format across all sector notebooks. Notably the Transport notebook still uses a manual compilation of the source data that should be replaced with the approach of e.g. the Households notebook
+- Clean up the non-energetic emissions notebooks. It is confusing that there are two notebooks for this: one in `data/pre_processing` that manipulates the Emissieregistratie data, and the `Non energetic emissions` notebook that ultimately fills the ETLocal template
+
+A more extensive description of debts and potential improvements can be found in `Debts and potential improvements municipal datasets.xlsx`.
+
+## Support
+
+**For pipeline issues or improvements**:
+- Koen van Bemmelen
+- Kas Kranenburg
+- Charlotte von Meijenfeldt
+- Claudia Valkenier
+
+**Documentation**:
+- Pipeline flow diagrams: `config/mermaid_flow_diagrams/`
+- Calculation rules: `config/etlocal_calculation_rules.xlsx`
+- ETLocal key definitions: `config/yaml_files/`

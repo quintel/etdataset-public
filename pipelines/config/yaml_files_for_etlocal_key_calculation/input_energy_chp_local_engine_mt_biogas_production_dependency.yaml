@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+input_energy_chp_local_engine_mt_biogas_production:
+  variable: zero

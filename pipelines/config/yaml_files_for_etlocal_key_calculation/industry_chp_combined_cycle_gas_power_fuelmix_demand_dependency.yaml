@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+industry_chp_combined_cycle_gas_power_fuelmix_demand:
+  variable: zero

@@ -1,0 +1,5 @@
+wind_inland_tj:
+  variable: wind_electricity_tj
+
+input_energy_power_wind_turbine_inland_production:
+  variable: wind_inland_tj

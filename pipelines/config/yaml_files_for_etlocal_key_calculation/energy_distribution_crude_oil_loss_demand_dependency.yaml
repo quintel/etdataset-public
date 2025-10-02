@@ -1,0 +1,8 @@
+distribution_crude_oil_loss:
+  expression: multiply
+  components:
+    - variable: refineries_co2_scaled
+    - variable: mq_distribution_crude_oil_loss
+
+energy_distribution_crude_oil_loss_demand:
+  variable: distribution_crude_oil_loss

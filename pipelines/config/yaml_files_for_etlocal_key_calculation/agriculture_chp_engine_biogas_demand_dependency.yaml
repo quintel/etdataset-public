@@ -1,0 +1,32 @@
+agri_biogas_chp_input_tj:
+  expression: divide
+  components:
+    - variable: agri_biogas_heat_tj
+    - variable: mq_agriculture_chp_engine_biogas_heat_efficiency
+
+agri_biogas_heat_tj:
+  expression: multiply
+  components:
+    - variable: agri_gas_share
+    - variable: biogas_heat_tj
+
+agri_gas_share:
+  expression: divide
+  components:
+    - variable: agri_gas_tj
+    - variable: totaal_gas_agri_buildings_tj
+
+totaal_gas_agri_buildings_tj:
+  expression: sum
+  components:
+    - variable: agri_gas_tj
+    - variable: bd_gas_services_tj
+
+bd_gas_services_tj:
+  expression: sum
+  components:
+    - variable: bd_public_gas_tj
+    - variable: bd_commercial_gas_tj
+
+agriculture_chp_engine_biogas_demand:
+  variable: agri_biogas_chp_input_tj

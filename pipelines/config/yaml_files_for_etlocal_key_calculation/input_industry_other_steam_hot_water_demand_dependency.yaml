@@ -1,0 +1,8 @@
+industry_other_steam_hot_water_tj:
+  expression: multiply
+  components:
+    - variable: industry_other_co2_scaled
+    - variable: mq_industry_other_steam_hot_water_tj
+
+input_industry_other_steam_hot_water_demand:
+  variable: industry_other_steam_hot_water_tj

@@ -1,0 +1,11 @@
+tp_road_electricity_tj:
+  expression: multiply
+  components:
+    - variable: final_demand_road_gasoline_tj_share_NL
+    - variable: total_road_electricity_demand_nl_tj
+
+total_road_electricity_demand_nl_tj:
+  variable: dq_transport_final_demand_for_road_electricity
+
+input_transport_road_electricity_demand:
+  variable: tp_road_electricity_tj

@@ -1,0 +1,8 @@
+[
+  :rail_electricity_freight_train_electricity,
+  0.10175933908292702,
+  :rail_electricity_passenger_train_electricity,
+  0.8204525192376858,
+  :rail_electricity_tram_electricity,
+  0.0777881416793871,
+]

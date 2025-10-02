@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+input_energy_power_combined_cycle_coal_production:
+  variable: zero

@@ -1,0 +1,358 @@
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor': '#ffffff', 'primaryTextColor': '#000000', 'primaryBorderColor': '#000000', 'lineColor': '#000000', 'secondaryColor': '#f8f8f8', 'tertiaryColor': '#ffffff', 'background': '#ffffff', 'mainBkg': '#ffffff', 'secondBkg': '#f8f8f8', 'tertiaryBkg': '#ffffff'}}}%%
+
+%% Generate this mermaid chart using terminal code: mmdc -i <input_file_name.mmd> -o <output_file_name.png> -s 2
+%% Requires npm install -g @mermaid-js/mermaid-cli
+
+flowchart TD
+    %% LEGEND
+    subgraph Legend["🔍 LEGEND"]
+        direction TB
+        LegendInput("Input Files")
+        LegendIntermediate("Intermediate Files")
+        LegendProcessed(("Processed Files"))
+        LegendReporting(("Reporting Files"))
+        LegendProcessing[Processing Notebooks]
+        LegendDecision{Helper Functies}
+        
+        %% Legenda tekst
+        LegendInput --- LegendText1["Raw source data & input files"]
+        LegendIntermediate --- LegendText2["Intermediate files after preprocessing"]
+        LegendProcessed --- LegendText3["Filled templates per sector"]
+        LegendReporting --- LegendText4["Final outputs for data migration"]
+        LegendProcessing --- LegendText5["Jupyter notebooks & transformations"]
+        LegendDecision --- LegendText6["Helper functions"]
+    end
+
+    %% Input bestanden (Ovalen)
+    KM2019("KM Dataset 2019")
+    KM2020("KM Dataset 2020")
+    KM2021("KM Dataset 2021")
+    KM2022("KM Dataset 2022")
+    KM2023("KM Dataset 2023")
+    KMTransport("KM Transport Data")
+    KMNational("KM Nationale Data")
+    CBSGemeentes("CBS Gemeentelijst 2023")
+    CBSPassagier("CBS Passagierauto Data")
+    CBSBestel("CBS Bestelauto Data")
+    ETLocal("ETLocal Interface Elements")
+    TransportResearch("Transport Research Brondata")
+    EmissieReg("Emissieregistratie broeikasgassen_doelgroep_subdoelgroep2023")
+    ETMEdge("ETM Edge Query Dump")
+    ETMDemand("ETM Demand Query Dump")
+    ETMMisc("ETM Misc Query Dump")
+    MiscData("Miscellaneous Data CSV")
+    
+    %% Additional input bestanden
+    PBLReference("PBL Gemeentebestanden Referentieverbruiken 2020 (Dropbox)")
+    EPOnline("EP-online Dataset 2023 (Dropbox)")
+    BAGVerrijkt("Verrijkte BAG 1.0 2022 (Dropbox)")
+    ExcelBroeikas2023("pre_processing/broeikasgassen_2023_Emissieregistratie.xlsx")
+    RawInput2019("pre_processing/output_2019.csv")
+    AllGHGMapping("pre_processing/all_ghg_mapping.csv")
+
+    %% Helper functions
+    %% PivotMergeProcessed[Pivot and Merge Processed]
+    %% GenerateCommits[Generate Commits.yaml]
+
+    %% step_C Excel file
+    subgraph ExcelStepC["Miscellaneous data analysis (Excel)"]
+        ExcelBuildings["1.Buildings total"]
+        ExcelLandUse["2.Land use"]
+        ExcelTramMetro["3.Has tram/metro"]
+        ExcelNumberOfTransport["4.Number of transport"]
+        ExcelTrainShareNL["5.Train share NL"]
+        ExcelRoofSurface["6.Roof surface"]
+        ExcelBiomass["7.Biomass"]
+        ExcelStepCFile["step_C.xlsx"]
+    end
+
+    %% etlocal_calculation_rules
+    subgraph ETLocalCalculationRules["ETLocal Calculation Rules Excel"]
+        CalculationRules["Rules to convert Klimaatmonitor and internal variables to ETLocal variables"]
+        MarkupRules["Markup rules to label variables by source in dependency graphs"]
+    end
+
+    %% Creating or Updating Datasets Notebook
+    subgraph CreatingDatasetsNotebook["Creating or Updating Datasets Notebook"]
+        CombinePBL[Combine PBL municipal files]
+        ProcessMunicipalChanges[Process municipal changes 2019-2023]
+    end
+
+    %% Built Environment Stock Notebook
+    subgraph BuiltEnvironmentNotebook["Built Environment Stock Dutch Municipalities Notebook"]
+        ProcessHousingBuildingStock[Housing & Building stock]
+        ProcessUsefulDemandShares[Useful demand shares]
+        ProcessInsulationLevels["Typical useful demand (insulation levels)"]
+    end
+
+    %% Non Energetic Emissions Processing Notebook
+    subgraph NonEnergeticProcessNotebook["pre_processing/non_energetic_emissions"]
+        ProcessNonEnergeticEmissions[Non Energetic emissions]
+        CompareWith2019[Compare emissions with 2019 output from Excel B]
+    end
+
+    %% Extract & Pre-Process Notebook
+    subgraph ExtractNotebook["Extract & Preprocess Source Data Notebook"]
+        ProcessKM["Process KM Data (including backfilling using 2019-2022)"]
+        ProcessCBS[Process CBS Data]
+        ProcessETLocal[Process ETLocal Data]
+        ProcessTransport[Process Transport Data]
+        ProcessEmissie[Process Emissieregistratie]
+        ProcessETM[Process ETM Queries]
+        ProcessMisc[Process Misc Data]
+    end
+
+    %% Intermediate outputs (Ovalen)
+    KMConverted("KM Source Data Converted")
+    KMMetadata("KM Metadata Converted")
+    ETLocalEmpty("ETLocal Template Empty 2025")
+    KMNationalConverted("KM National Source Data Converted")
+    KMNationalMetadata("KM National Metadata Converted")
+    TransportCleaned("Transport Research Cleaned")
+    ERFinalDemand("ER Final Demand Data Combined")
+    ETMCombined("ETM Query Combined")
+    MiscAnalysis("Miscellaneous Data Analysis")
+    PBLAllData("PBL All Data 2023.csv (Dropbox)")
+    NonEnergeticOutput("pre_processing/non_energetic_emissions_output.csv")
+    NonEnergeticCommitMessages("pre_processing/commit_messages_non_energetic_emissions.csv")
+    YamlFilesforETLocalKeyCalculation("YAML files for ETLocal key calculation")
+
+    %% Final output Preprocessing notebook
+    TemplateFilledNational(("Template filled with national values"))
+
+    subgraph TransportNotebook["Transport Sector Notebook"]
+        ProcessEnergyCarrierDemands[Energy Carrier Demands]
+        ProcessVehicleAreaAttributes[Number of Vehicles Area Attributes]
+    end
+
+    %% Helper functions
+    LoadDataManager{LoadDataManager}
+    ExceltoYAML{Excel to YAML}
+    YAMLtoDiagram{YAML to Diagram}
+
+    %% Sector Notebooks
+    subgraph HouseholdsNotebook["Households Sector Notebook"]
+        ProcessHouseholdsEnergyDemand[Households Energy demand]
+        ProcessHouseholdsEnergyProduction[Households Energy production]
+        ProcessHousingStock[Households inhabitants & PV roof surface area]
+    end
+
+    subgraph BuildingsNotebook["Buildings Sector Notebook"]
+        ProcessBuildingsEnergyDemand[Buildings Energy demand]
+        ProcessBuildingsEnergyProduction[Buildings Energy production]
+        ProcessBuildingStock[Buildings PV roof surface area]
+    end
+
+    subgraph AreaNotebook["Area Sector Notebook"]
+        ProcessInfrastructure[Infrastructure costs & interconnector capacity]
+        ProcessGeography[Land area]
+    end
+
+    subgraph EnergyProductionNotebook["Energy Production Sector Notebook"]
+        ProcessProductionPlants[Production plants]
+        ProcessLossDemands[Loss demands]
+        ProcessBiomassPotentials[Biomass Potentials]
+    end
+
+    subgraph OtherEnergyDemandNotebook["Other Energy Demand Sector Notebook"]
+        ProcessOtherEnergyDemand[Other Energy Demand]
+    end
+
+    subgraph AgricultureNotebook["Agriculture Sector Notebook"]
+        ProcessAgricultureEnergyDemand[Energy Demand]
+        ProcessAgricultureCHPDemand[CHP Demand]
+    end
+
+    subgraph IndustryNotebook["Industry Sector Notebook"]
+        ProcessAluminum[Aluminum]
+        ProcessChemical[Chemical]
+        ProcessFertilizers[Fertilizers]
+        ProcessFood[Food]
+        ProcessMetal[Metal]
+        ProcessOtherIndustry[Other Industry]
+        ProcessPaper[Paper]
+        ProcessRefineries[Refineries]
+        ProcessSteel[Steel]
+        ProcessHeatCHP[Heat & CHP]
+        ProcessNonEnergeticCrude[Non-Energetic Crude Oil Mix]
+    end
+
+    subgraph NonEnergeticEmissionsNotebook["Non Energetic Emissions Notebook"]
+        ProcessNonEnergeticEmissionsDef[Combine non energetic emissions]
+        Process1990Emissions[1990 emissions]
+    end
+
+    %% Sector outputs (Ovalen)
+    HouseholdsTemplate(("ETLocal template households filled"))
+    BuildingsTemplate(("ETLocal template buildings filled"))
+    AreaTemplate(("ETLocal template area filled"))
+    EnergyProductionTemplate(("ETLocal template energy production filled"))
+    OtherEnergyDemandTemplate(("ETLocal template other energy demand filled"))
+    AgricultureTemplate(("ETLocal template agriculture filled"))
+    IndustryTemplate(("ETLocal template industry filled"))
+    TransportTemplate(("ETLocal template transport filled"))
+    NonEnergeticEmissionsTemplate(("ETLocal template non-energetic emissions filled"))
+    BuiltEnvironmentTemplate(("ETLocal template built environment stock filled"))
+
+    %% Post Processing Notebook
+    subgraph PostProcessingNotebook["Post Processing Notebook"]
+        CombineTemplates[Combine all filled templates]
+        GenerateReports[Generate reporting files]
+    end
+
+    %% Final reporting outputs
+    DataCSV(("data.csv"))
+    CommitsYAML(("commits.yaml"))
+
+    %% Flows from calculation rule data
+    ETLocalCalculationRules --> ExceltoYAML
+
+    %% Flows from ExceltoYAML
+    ExceltoYAML --> YamlFilesforETLocalKeyCalculation
+
+    %% Flows to YAMLtoDiagram
+    YamlFilesforETLocalKeyCalculation --> YAMLtoDiagram
+
+    %% Flow from Miscellaneous data analysis (Excel)
+    ExcelStepC --> MiscData
+
+    %% Flows to other processing notebooks
+    PBLReference --> CreatingDatasetsNotebook
+    ExcelBroeikas2023 --> NonEnergeticProcessNotebook
+    RawInput2019 --> NonEnergeticProcessNotebook
+    RawInput2019 --> NonEnergeticProcessNotebook
+    AllGHGMapping --> NonEnergeticProcessNotebook
+
+    %% Flows from other processing notebooks
+    CreatingDatasetsNotebook --> PBLAllData
+    NonEnergeticProcessNotebook --> NonEnergeticOutput
+    NonEnergeticProcessNotebook --> NonEnergeticCommitMessages
+
+    %% Flows to Non Energetic Emissions Notebook
+    ETLocalEmpty --> NonEnergeticEmissionsNotebook
+    NonEnergeticOutput --> NonEnergeticEmissionsNotebook
+    NonEnergeticCommitMessages --> NonEnergeticEmissionsNotebook
+
+    %% Flows to Built Environment Stock Notebook
+    PBLAllData --> BuiltEnvironmentNotebook
+    EPOnline --> BuiltEnvironmentNotebook
+    BAGVerrijkt --> BuiltEnvironmentNotebook
+
+    %% Flows naar Extract Notebook
+    KM2019 --> ExtractNotebook
+    KM2020 --> ExtractNotebook
+    KM2021 --> ExtractNotebook
+    KM2022 --> ExtractNotebook
+    KM2023 --> ExtractNotebook
+    KMTransport --> ExtractNotebook
+    KMNational --> ExtractNotebook
+    CBSGemeentes --> ExtractNotebook
+    CBSPassagier --> ExtractNotebook
+    CBSBestel --> ExtractNotebook
+    ETLocal --> ExtractNotebook
+    TransportResearch --> ExtractNotebook
+    EmissieReg --> ExtractNotebook
+    ETMEdge --> ExtractNotebook
+    ETMDemand --> ExtractNotebook
+    ETMMisc --> ExtractNotebook
+    MiscData --> ExtractNotebook
+
+    %% Flows van Extract Notebook naar intermediate outputs
+    ExtractNotebook --> ETLocalEmpty
+    ExtractNotebook --> KMConverted
+    ExtractNotebook --> KMMetadata
+    ExtractNotebook --> KMNationalConverted
+    ExtractNotebook --> KMNationalMetadata
+    ExtractNotebook --> TransportCleaned
+    ExtractNotebook --> ETMCombined
+    ExtractNotebook --> MiscAnalysis
+    ExtractNotebook --> ERFinalDemand
+    ExtractNotebook --> TemplateFilledNational
+    
+    %% Flows to LoadDataManager
+    ETLocalEmpty --> LoadDataManager
+    KMConverted --> LoadDataManager
+    KMMetadata --> LoadDataManager
+    KMNationalConverted --> LoadDataManager
+    KMNationalMetadata --> LoadDataManager
+    TransportCleaned --> LoadDataManager
+    MiscAnalysis --> LoadDataManager
+    ETMCombined --> LoadDataManager
+
+    %% Flows van LoadDataManager naar sector notebooks
+    LoadDataManager --> HouseholdsNotebook
+    LoadDataManager --> BuildingsNotebook
+    LoadDataManager --> AreaNotebook
+    LoadDataManager --> EnergyProductionNotebook
+    LoadDataManager --> OtherEnergyDemandNotebook
+    LoadDataManager --> AgricultureNotebook
+    LoadDataManager --> IndustryNotebook
+
+    %% Additional flows to Industry Notebook
+    ERFinalDemand --> IndustryNotebook
+
+    %% Direct flows to Transport Notebook (bypass LoadDataManager)
+    %% ETLocalEmpty --> TransportNotebook
+    %% KMConverted --> TransportNotebook
+    %% KMMetadata --> TransportNotebook
+    %% KMNationalConverted --> TransportNotebook
+    %% KMNationalMetadata --> TransportNotebook
+    %% TransportCleaned --> TransportNotebook
+    %% MiscAnalysis --> TransportNotebook
+    %% ETMCombined --> TransportNotebook
+
+    %% Flows from notebooks to sector outputs
+    HouseholdsNotebook --> HouseholdsTemplate
+    BuildingsNotebook --> BuildingsTemplate
+    AreaNotebook --> AreaTemplate
+    EnergyProductionNotebook --> EnergyProductionTemplate
+    OtherEnergyDemandNotebook --> OtherEnergyDemandTemplate
+    AgricultureNotebook --> AgricultureTemplate
+    IndustryNotebook --> IndustryTemplate
+    TransportNotebook --> TransportTemplate
+    NonEnergeticEmissionsNotebook --> NonEnergeticEmissionsTemplate
+    BuiltEnvironmentNotebook --> BuiltEnvironmentTemplate
+
+    %% Flows from sector outputs to Post Processing Notebook
+    HouseholdsTemplate --> PostProcessingNotebook
+    BuildingsTemplate --> PostProcessingNotebook
+    AreaTemplate --> PostProcessingNotebook
+    EnergyProductionTemplate --> PostProcessingNotebook
+    OtherEnergyDemandTemplate --> PostProcessingNotebook
+    AgricultureTemplate --> PostProcessingNotebook
+    IndustryTemplate --> PostProcessingNotebook
+    TransportTemplate --> PostProcessingNotebook
+    NonEnergeticEmissionsTemplate --> PostProcessingNotebook
+    BuiltEnvironmentTemplate --> PostProcessingNotebook
+    TemplateFilledNational --> PostProcessingNotebook
+
+
+    %% %% Helper functions to Post Processing Notebook
+    %% PivotMergeProcessed --> CombineTemplates
+    %% GenerateCommits --> GenerateReports
+
+    %% Internal flows within Post Processing Notebook
+    CombineTemplates --> GenerateReports
+
+    %% Flows from Post Processing Notebook to final outputs
+    PostProcessingNotebook --> DataCSV
+    PostProcessingNotebook --> CommitsYAML
+
+    %% Styling
+    classDef inputFile fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    classDef processing fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef intermediate fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef processed fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
+    classDef decision fill:#fff9c4,stroke:#f57f17,stroke-width:3px
+    classDef reporting fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    classDef legendText fill:#f9f9f9,stroke:#666,stroke-width:1px
+    classDef excelFile fill:#808080,stroke:#404040,stroke-width:2px,stroke-dasharray: 5 5
+
+    class KM2019,KM2020,KM2021,KM2022,KM2023,KMTransport,KMNational,CBSGemeentes,CBSPassagier,CBSBestel,ETLocal,TransportResearch,EmissieReg,ETMEdge,ETMDemand,ETMMisc,MiscData,PBLReference,EPOnline,BAGVerrijkt,ExcelBroeikas2023,RawInput2019,ETLocalMP2025,LegendInput,AllGHGMapping inputFile
+    class ExtractNotebook,HouseholdsNotebook,BuildingsNotebook,AreaNotebook,EnergyProductionNotebook,OtherEnergyDemandNotebook,AgricultureNotebook,IndustryNotebook,TransportNotebook,NonEnergeticEmissionsNotebook,CreatingDatasetsNotebook,BuiltEnvironmentNotebook,NonEnergeticProcessNotebook,PostProcessingNotebook,PivotMergeProcessed,GenerateCommits,LegendProcessing processing
+    class HouseholdsTemplate,BuildingsTemplate,AreaTemplate,EnergyProductionTemplate,OtherEnergyDemandTemplate,AgricultureTemplate,IndustryTemplate,TransportTemplate,NonEnergeticEmissionsTemplate,TemplateFilledNational,BuiltEnvironmentTemplate,LegendProcessed processed
+    class KMConverted,KMMetadata,ETLocalEmpty,KMNationalConverted,KMNationalMetadata,TransportCleaned,ERFinalDemand,ETMCombined,MiscAnalysis,PBLAllData,NonEnergeticOutput,LegendIntermediate,NonEnergeticCommitMessages,YamlFilesforETLocalKeyCalculation intermediate
+    class LoadDataManager,LegendDecision,ExceltoYAML,YAMLtoDiagram decision
+    class DataCSV,CommitsYAML,LegendReporting reporting
+    class LegendText1,LegendText2,LegendText3,LegendText4,LegendText5,LegendText6 legendText
+    class ExcelStepC,ETLocalCalculationRules excelFile

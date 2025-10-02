@@ -1,0 +1,2 @@
+input_energy_power_supercritical_waste_mix_production:
+  variable: waste_total_produced_electricity_tj

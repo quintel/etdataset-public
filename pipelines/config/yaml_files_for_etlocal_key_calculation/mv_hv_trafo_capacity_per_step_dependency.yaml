@@ -1,0 +1,2 @@
+mv_hv_trafo_capacity_per_step:
+  variable: mq_mv_hv_trafo_capacity_per_step

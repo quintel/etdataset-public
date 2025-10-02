@@ -1,0 +1,8 @@
+paper_coal_tj:
+  expression: multiply
+  components:
+    - variable: paper_co2_scaled
+    - variable: mq_paper_coal_tj
+
+input_industry_paper_coal_demand:
+  variable: paper_coal_tj

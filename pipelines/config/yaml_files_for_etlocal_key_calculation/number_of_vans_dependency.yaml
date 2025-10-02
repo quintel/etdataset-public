@@ -1,0 +1,2 @@
+number_of_vans:
+  variable: number_of_vans_data

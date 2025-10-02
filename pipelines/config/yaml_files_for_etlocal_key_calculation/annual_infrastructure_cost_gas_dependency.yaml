@@ -1,0 +1,69 @@
+annual_infrastructure_cost_gas_distributed:
+  expression: multiply
+  components:
+    - variable: total_gas_scaled
+    - variable: mq_annual_infrastructure_cost_gas
+
+total_gas_scaled:
+  expression: divide
+  components:
+    - variable: total_gas_tj
+    - variable: nl_gas_totaal
+
+total_gas_tj:
+  expression: max
+  components:
+    -
+      expression: minus
+      components:
+        -
+          expression: minus
+          components:
+            - variable: total_gas_heat_tj_temp_corrected
+            - variable: renewable_heat_not_supplying_district_heat
+        - variable: max_of_hh_heat_tj_temp_corrected_or_renewable_heat_supplying_district_heat
+    - variable: 0
+
+renewable_heat_not_supplying_district_heat:
+  expression: minus
+  components:
+    -
+      expression: sum
+      components:
+        -
+          expression: sum
+          components:
+            -
+              expression: sum
+              components:
+                -
+                  expression: sum
+                  components:
+                    - variable: geothermal_heat_tj
+                    - variable: hh_biomass_cooking_tj
+                - variable: hh_biomass_heat_tj
+            - variable: bd_thermal_storage_tj
+        - variable: biogas_heat_tj
+    - variable: biogas_supplied_network_tj
+
+biogas_supplied_network_tj:
+  expression: minus
+  components:
+    - variable: total_renewable_heat_tj
+    - variable: total_renewable_heat_tj_ex_greengas
+
+max_of_hh_heat_tj_temp_corrected_or_renewable_heat_supplying_district_heat:
+  expression: max
+  components:
+    - variable: hh_heat_tj_temp_corrected
+    - variable: renewable_heat_supplying_district_heat
+
+renewable_heat_supplying_district_heat:
+  expression: sum
+  components:
+    - variable: waste_heat_used_in_area_tj
+    - variable: biomass_firms_heat_tj
+    - variable: biomass_firms_chp_heat_tj
+
+annual_infrastructure_cost_gas:
+  variable: annual_infrastructure_cost_gas_distributed

@@ -1,0 +1,8 @@
+steel_gas_total:
+  expression: multiply
+  components:
+    - variable: steel_co2_scaled
+    - variable: mq_steel_gas_tj
+
+input_industry_metal_steel_network_gas_demand:
+  variable: steel_gas_total

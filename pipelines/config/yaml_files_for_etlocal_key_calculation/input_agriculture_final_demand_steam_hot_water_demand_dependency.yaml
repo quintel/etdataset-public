@@ -1,0 +1,45 @@
+agri_heat_demand_tj:
+  expression: sum
+  components:
+    - variable: agri_gas_chp_heat_tj
+    - variable: geothermal_heat_tj
+    - variable: agri_biogas_heat_tj
+
+agri_gas_chp_heat_tj:
+  expression: multiply
+  components:
+    - variable: agri_gas_chp_tj
+    - variable: mq_network_gas_chp_heat_efficiency
+
+agri_gas_chp_tj:
+  expression: multiply
+  components:
+    - variable: agriculture_gas_chp_relative
+    - variable: agri_gas_tj
+
+agri_biogas_heat_tj:
+  expression: multiply
+  components:
+    - variable: agri_gas_share
+    - variable: biogas_heat_tj
+
+agri_gas_share:
+  expression: divide
+  components:
+    - variable: agri_gas_tj
+    - variable: totaal_gas_agri_buildings_tj
+
+totaal_gas_agri_buildings_tj:
+  expression: sum
+  components:
+    - variable: agri_gas_tj
+    - variable: bd_gas_services_tj
+
+bd_gas_services_tj:
+  expression: sum
+  components:
+    - variable: bd_public_gas_tj
+    - variable: bd_commercial_gas_tj
+
+input_agriculture_final_demand_steam_hot_water_demand:
+  variable: agri_heat_demand_tj

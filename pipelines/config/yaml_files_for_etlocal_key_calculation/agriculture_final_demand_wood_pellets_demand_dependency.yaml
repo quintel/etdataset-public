@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+agriculture_final_demand_wood_pellets_demand:
+  variable: zero

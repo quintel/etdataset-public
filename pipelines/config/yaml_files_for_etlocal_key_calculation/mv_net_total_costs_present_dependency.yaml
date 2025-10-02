@@ -1,0 +1,14 @@
+mv_net_total_costs_present_distributed:
+  expression: multiply
+  components:
+    - variable: total_electricity_scaled
+    - variable: mq_mv_net_total_costs_present
+
+total_electricity_scaled:
+  expression: divide
+  components:
+    - variable: total_electricity_tj
+    - variable: nl_elektra_totaal_combi_tj
+
+mv_net_total_costs_present:
+  variable: mv_net_total_costs_present_distributed

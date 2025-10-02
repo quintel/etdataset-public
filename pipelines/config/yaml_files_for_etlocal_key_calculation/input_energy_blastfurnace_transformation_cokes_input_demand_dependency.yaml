@@ -1,0 +1,8 @@
+steel_blastfurnace_cokes_tj:
+  expression: multiply
+  components:
+    - variable: steel_co2_scaled
+    - variable: mq_steel_blastfurnace_cokes_tj
+
+input_energy_blastfurnace_transformation_cokes_input_demand:
+  variable: steel_blastfurnace_cokes_tj

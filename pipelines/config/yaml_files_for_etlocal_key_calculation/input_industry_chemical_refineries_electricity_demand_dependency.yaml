@@ -1,0 +1,8 @@
+refineries_electricity_tj:
+  expression: multiply
+  components:
+    - variable: refineries_co2_scaled
+    - variable: dq_industry_final_demand_for_chemical_refineries_electricity
+
+input_industry_chemical_refineries_electricity_demand:
+  variable: refineries_electricity_tj

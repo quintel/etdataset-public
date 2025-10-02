@@ -1,0 +1,8 @@
+electricity_grid_losses:
+  expression: multiply
+  components:
+    - variable: total_electricity_tj
+    - variable: mq_grid_losses_share
+
+energy_power_hv_network_loss_demand:
+  variable: electricity_grid_losses

@@ -1,0 +1,8 @@
+chemical_other_network_gas_non_energetic_tj:
+  expression: multiply
+  components:
+    - variable: chemical_other_co2_scaled
+    - variable: mq_chemical_other_network_gas_non_energetic_tj
+
+input_industry_chemical_other_network_gas_non_energetic_demand:
+  variable: chemical_other_network_gas_non_energetic_tj

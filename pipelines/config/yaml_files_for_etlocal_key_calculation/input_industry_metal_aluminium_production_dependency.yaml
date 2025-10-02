@@ -1,0 +1,8 @@
+aluminium_production_mton:
+  expression: multiply
+  components:
+    - variable: aluminium_co2_scaled
+    - variable: mq_aluminum_production_mton
+
+input_industry_metal_aluminium_production:
+  variable: aluminium_production_mton

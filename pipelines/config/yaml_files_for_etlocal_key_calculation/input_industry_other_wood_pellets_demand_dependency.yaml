@@ -1,0 +1,8 @@
+industry_other_wood_pellets_tj:
+  expression: multiply
+  components:
+    - variable: industry_other_co2_scaled
+    - variable: mq_industry_other_wood_pellets_tj
+
+input_industry_other_wood_pellets_demand:
+  variable: industry_other_wood_pellets_tj

@@ -1,0 +1,2 @@
+mv_net_spare_capacity:
+  variable: mq_mv_net_spare_capacity

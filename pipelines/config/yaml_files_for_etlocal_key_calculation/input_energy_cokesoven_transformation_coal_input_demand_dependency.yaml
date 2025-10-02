@@ -1,0 +1,8 @@
+steel_cokesoven_coal_tj:
+  expression: multiply
+  components:
+    - variable: steel_co2_scaled
+    - variable: mq_steel_cokesoven_coal_tj
+
+input_energy_cokesoven_transformation_coal_input_demand:
+  variable: steel_cokesoven_coal_tj

@@ -1,0 +1,8 @@
+hh_biomass_total_tj:
+  expression: sum
+  components:
+    - variable: hh_biomass_heat_tj
+    - variable: hh_biomass_cooking_tj
+
+households_final_demand_wood_pellets_demand:
+  variable: hh_biomass_total_tj

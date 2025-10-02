@@ -1,0 +1,2 @@
+hv_net_spare_capacity:
+  variable: mq_hv_net_spare_capacity

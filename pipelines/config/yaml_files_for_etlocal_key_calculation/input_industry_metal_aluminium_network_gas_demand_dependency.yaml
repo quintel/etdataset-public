@@ -1,0 +1,8 @@
+aluminium_gas_tj:
+  expression: multiply
+  components:
+    - variable: aluminium_co2_scaled
+    - variable: mq_aluminium_network_gas_tj
+
+input_industry_metal_aluminium_network_gas_demand:
+  variable: aluminium_gas_tj

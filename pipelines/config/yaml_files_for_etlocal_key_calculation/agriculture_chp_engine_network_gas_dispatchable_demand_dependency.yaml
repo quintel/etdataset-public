@@ -1,0 +1,8 @@
+agri_gas_chp_tj:
+  expression: multiply
+  components:
+    - variable: agriculture_gas_chp_relative
+    - variable: agri_gas_tj
+
+agriculture_chp_engine_network_gas_dispatchable_demand:
+  variable: agri_gas_chp_tj

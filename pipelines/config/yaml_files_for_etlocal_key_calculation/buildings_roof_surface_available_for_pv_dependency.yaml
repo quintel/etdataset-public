@@ -1,0 +1,2 @@
+buildings_roof_surface_available_for_pv:
+  variable: buildings_roof_pv_potential

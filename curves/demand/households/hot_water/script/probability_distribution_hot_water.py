@@ -47,8 +47,8 @@ else:
 output_file_path = "../data/" + country +"/" + year + "/output/"
 
 # Input for start day first of January: Monday = 1, Tuesday = 2, etc
-years = ["2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"]
-start_days_years = [6, 7, 2, 3, 4, 5, 7, 1]
+years = ["2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019","2020", "2021", "2022", "2023"]
+start_days_years = [6, 7, 2, 3, 4, 5, 7, 1, 2, 3, 5, 6, 7]
 first_of_jan = years.index(year)
 
 # Global variables
@@ -94,8 +94,8 @@ prob_week_C = np.zeros(7)
 
 # Determine sequence of days in the year from 1st of January
 for i in range(0,7):
-    prob_week_ABD[i] = prob_week_ABD_jordan[(first_of_jan -1 + i)]
-    prob_week_C[i] = prob_week_C_jordan[(first_of_jan - 1 + i)]
+    prob_week_ABD[i] = prob_week_ABD_jordan[(first_of_jan - 1 + i) % 14]
+    prob_week_C[i] = prob_week_C_jordan[(first_of_jan - 1 + i) % 14]
 
 # Each type of event follows its own probablity function during the week. I have
 # recreated the probability functions shown in Figure 1.6 of Jordan (2001) below.

@@ -1,0 +1,8 @@
+food_steam_hot_water_tj:
+  expression: multiply
+  components:
+    - variable: food_co2_scaled
+    - variable: mq_food_steam_hot_water_tj
+
+input_industry_food_steam_hot_water_demand:
+  variable: food_steam_hot_water_tj

@@ -1,0 +1,8 @@
+steel_steam_hot_water_tj:
+  expression: multiply
+  components:
+    - variable: steel_co2_scaled
+    - variable: mq_steel_steam_hot_water_tj
+
+input_industry_metal_steel_steam_hot_water_demand:
+  variable: steel_steam_hot_water_tj

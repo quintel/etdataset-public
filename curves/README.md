@@ -1,17 +1,15 @@
 # Curves - ETDataset
 
-This folder contains all sources, data processing files and final files for demand and supply curves used in the ETM.
-
-Our [documentation](https://docs.energytransitionmodel.com/main/curves/) contains an overview of all used curves and the processing method.
+This folder contains all sources, data processing files and final files for demand and supply curves used in the ETM. Curves are also known as 'profiles'. See the [documentation](https://docs.energytransitionmodel.com/main/profiles/) for more information.
 
 ## Discussion
 Feedback on the curves we use is very welcome!
 If you have a comment or a better source please let us know, you can:
 
-* Open an issue in [ETSource](https://github.com/quintel/etsource/issues/new) and assign a team memeber of Quintel, e.g.:
-	* DorinevanderVlies
-	* redekok
- 	* mabijkerk
+* Open an issue in [ETSource](https://github.com/quintel/etsource/issues/new) and assign a team member of Quintel, e.g.:
+  * mabijkerk
+  * kaskranenburgQ
+  * kndehaan
 * E-mail us: [info@quintel.com](info@quintel.com)
 
 ## Structure of ETDataset - curves

@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+energy_distribution_network_gas_loss_demand:
+  variable: zero

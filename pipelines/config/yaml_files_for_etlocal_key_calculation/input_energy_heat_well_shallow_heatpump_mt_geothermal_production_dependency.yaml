@@ -1,0 +1,5 @@
+zero:
+  variable: 0
+
+input_energy_heat_well_shallow_heatpump_mt_geothermal_production:
+  variable: zero

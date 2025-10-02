@@ -1,0 +1,8 @@
+transport_ship_diesel_tj:
+  expression: sum
+  components:
+    - variable: tp_inland_ship_diesel_tj
+    - variable: tp_sea_ship_diesel_tj
+
+input_transport_ship_diesel_demand:
+  variable: transport_ship_diesel_tj
