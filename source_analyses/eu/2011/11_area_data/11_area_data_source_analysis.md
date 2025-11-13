@@ -26,7 +26,6 @@ These settings determine which modules are turned on/off in ETM.
 - has_merit_order: TRUE
 - has_metal: TRUE, the EU model has an industry sub sector 'metal'.
 - has_mountains: TRUE, allows for hyrdo mountain power plants
-- has_old_technologies: TRUE, allows for 2nd generation nuclear power plants
 - has_other: TRUE, the EU has other sector.
 - has_solar_csp: TRUE, allows for concentrated solar power.
 - has_import_export: TRUE, the EU model displays the import/export module.
