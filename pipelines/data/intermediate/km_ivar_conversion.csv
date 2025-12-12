@@ -111,7 +111,7 @@ vbrze_afval,ind_electricity_sbi_e_tj,TJ,kWh,Elektriciteitsverbruik Waterbedrijve
 vbrze_f,ind_electricity_sbi_f_tj,TJ,kWh,Elektriciteitsverbruik Bouwnijverheid (SBI F)
 pv_vermogen,total_solar_kw,kW,kW,Vermogen geregistreerde zonnepanelen totaal
 zon_vermogen_won,hh_solar_kw,kW,kW,Vermogen geregistreerde zonnepanelen woningen
-zon_vermogen_bdr,commercial_solar_roof_and_farms_kw,kW,kW,Vermogen geregistreerde zonnepanelen niet-woningen
+zon_vermogen_bdr,commercial_solar_roof_kw,kW,kW,Vermogen geregistreerde zonnepanelen niet-woningen
 zonvld,energy_solar_farms_kw,kW,MW,Vermogen zonnepanelen in veld- of wateropstelling (SDE-regeling)
 biogas_warm,biogas_heat_tj,TJ,TJ,Biogas bekende hernieuwbare warmte
 biogas_el,biogas_electricity_tj,TJ,TJ,Biogas bekende hernieuwbare elektriciteit

@@ -26,7 +26,6 @@ has_other_emissions_section,true,
 areable_land,1077303,World Factbook (area * areable land %) (https://www.cia.gov/library/publications/the-world-factbook/geos/ee.html)
 coast_line,65992.9,World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/ee.html)
 offshore_ccs_potential_mt_per_year,3350,See etdataset/source_analyses/eu/2015/11_area/11_ccs_offshore_storage_potential_per_year.xls
-flh_solar_pv_solar_radiation_max,1044.08877688,See Quintel analysis (https://github.com/quintel/modeling_experiments/blob/master/flh_profiles/interpolate_solar_profiles.py)
 total_land_area,4347637,Wikipedia (assumption: 3% of area is water): https://nl.wikipedia.org/wiki/Europese_Unie
 number_of_inhabitants,500700753,Eurostat 2011; Population on 1 January (demo_gind) database
 offshore_suitable_for_wind,1594263,Based on Ecofys analysis
@@ -49,8 +48,6 @@ non_energetic_emissions_other_ghg_agriculture_manure,64.19958868,EEA (see etdata
 non_energetic_emissions_other_ghg_agriculture_soil_cultivation,160.35577919,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
 non_energetic_emissions_other_ghg_agriculture_other,2.13449459,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
 non_energetic_emissions_other_ghg_waste_management,159.35839633,EEA (see etdataset/source_analyses/general/11_area/greenhouse_gas_emissions.xlsx for background and source data)
-solar_pv_profile_1_share,1,
-solar_pv_profile_2_share,0,
 aquathermal_potential_for_surface_water,0,
 aquathermal_potential_for_waste_water,0,
 aquathermal_potential_for_drink_water,0,

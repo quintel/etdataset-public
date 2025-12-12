@@ -8,7 +8,7 @@ solar_pv_buildings_kwh:
   expression: multiply
   components:
     - variable: commercial_solar_roof_kw
-    - variable: mq_input_solar_panels_roofs_and_parks_full_load_hours
+    - variable: mq_input_solar_pv_on_land_full_load_hours
 
 input_buildings_solar_pv_demand:
   variable: solar_pv_buildings_tj

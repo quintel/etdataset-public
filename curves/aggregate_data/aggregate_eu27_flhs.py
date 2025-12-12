@@ -20,7 +20,7 @@ KEYS = [
     'solar_pv',
     'solar_thermal',
     'wind_coastal_baseline',
-    'wind_onshore_baseline',
+    'wind_inland_baseline',
     'wind_offshore_baseline'
     ]
 YEAR = 2019
@@ -39,7 +39,7 @@ def aggregate_flhs(country,key):
 
     name = country['name']
     code = country['code']
-    
+
     if key == 'solar_pv':
         total_yearly_production, flh = etlocal.get_solar_pv(code, get_flh=True)
     if key == 'solar_thermal':
@@ -51,7 +51,7 @@ def aggregate_flhs(country,key):
          # Instead, it is simply set to 1.0 for each country here
         total_yearly_production, flh = etlocal.get_wind_coastal(code, get_flh=True)
         total_yearly_production = 1.0
-    elif key == 'wind_onshore_baseline':
+    elif key == 'wind_inland_baseline':
         total_yearly_production, flh = etlocal.get_wind_onshore(code, get_flh=True)
     elif key == 'wind_offshore_baseline':
         total_yearly_production, flh = etlocal.get_wind_offshore(code, get_flh=True)

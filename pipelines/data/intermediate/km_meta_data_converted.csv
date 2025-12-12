@@ -1,122 +1,122 @@
 Code,Onderwerp,Eenheid,Bron,Voetnoot,Beschrijving,Gegevenstype,Laatste database wijziging,ivar,ivar_unit,conversion_factor
-inwoners,Aantal inwoners,aantal,CBS - Kerncijfers Wijken en buurten,,,Numeriek,06/08/2025 08:21,no_inhabitants,#,
-woningen,Aantal woningen per 1 januari,aantal,CBS - Kerncijfers Wijken en buurten,,,Numeriek,18/07/2025 10:36,no_residences,#,
-energie_totaal_combi,"Totaal bekend energieverbruik (aardgas, elektriciteit, stadswarmte, verkeer/vervoer, overige warmte)",TJ,Berekening (sub)totalen energieverbruik,,,Numeriek,27/08/2025 05:46,total_energy_tj,TJ,
-verk_totaal,"Totaal bekend energieverbruik Verkeer en vervoer (incl. auto(snel)wegen, excl. elektr. verkeer)",TJ,Berekening energieverbruik brandstof,,,Numeriek,18/08/2025 10:53,tp_total_energy_tj,TJ,
-elektra_totaal_combi,"Totaal bekend elektriciteitsverbruik, incl. zonnestroom 'achter de meter'",TJ,Berekening (sub)totalen energieverbruik,,,Numeriek,27/08/2025 05:46,total_electricity_tj,TJ,
-warm_totaal_combi,Totaal bekend warmteverbruik (aardgas en (hern.) warmte),TJ,Berekening o.b.v. gegevens meerdere bronnen,,,Numeriek,27/08/2025 05:46,total_gas_heat_tj_temp_corrected,TJ,
-zonpvachtermeter_kwh,Zonnestroom: verbruik achter de meter (schatting),GWh,Schatting zonnestroom achter de meter,,,Numeriek,27/08/2025 05:36,solar_pv_own_use_total_tj,TJ,3.6
-hern_warm_tot,Totaal bekende hernieuwbare warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27/08/2025 05:47,total_renewable_heat_tj,TJ,
-gas_woningen_tj,Totaal aardgasverbruik woningen (temperatuurgecorrigeerd),TJ,Berekening  totaalverbruik woningen o.b.v. gemiddeld verbruik en aantal woningen,,,Numeriek,18/07/2025 10:36,hh_gas_tj_temp_corrected,TJ,
-warmwontjcor,Verbruik stadswarmte woningen (temperatuurgecorrigeerd),TJ,Duurzaamheidsrapportage warmtenetten RVO en historische bijschatting,,,Numeriek,27/08/2025 05:32,hh_heat_tj_temp_corrected,TJ,
-kwbelektotaal,Elektriciteitsverbruik woningen,GWh,Berekening  totaalverbruik woningen o.b.v. gemiddeld verbruik en aantal woningen,,,Numeriek,18/07/2025 10:36,hh_electricity_tj,TJ,3.6
-kwbgastotaal,Aardgasverbruik woningen,miljoen m3,Berekening  totaalverbruik woningen o.b.v. gemiddeld verbruik en aantal woningen,,,Numeriek,18/07/2025 10:36,hh_gas_tj,TJ,31.65
-warmwontier2,Verbruik stadswarmte woningen,GJ,Duurzaamheidsrapportage warmtenetten RVO en historische bijschatting,,,Numeriek,27/08/2025 05:32,hh_heat_tj,TJ,0.001
-houtskool,Houtskool hern. warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,18/07/2025 08:15,hh_biomass_cooking_tj,TJ,
-houtwontj,Houtkachels woningen hern. warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,18/07/2025 08:15,hh_biomass_heat_tj,TJ,
-gascomdv,Aardgasverbruik Commerciële Dienstverlening,m3,Optelling en bijschatting door RVO o.b.v. CBS-gegevens,,,Numeriek,27/08/2025 05:41,bd_commercial_gas_tj,TJ,3.17E-05
-gaspubldv,Aardgasverbruik Publieke Dienstverlening,m3,Optelling en bijschatting door RVO o.b.v. CBS-gegevens,,,Numeriek,27/08/2025 05:42,bd_public_gas_tj,TJ,3.17E-05
-elcomdv,Elektriciteitsverbruik Commerciële Dienstverlening,kWh,Optelling en bijschatting door RVO o.b.v. CBS-gegevens,,,Numeriek,27/08/2025 05:41,bd_commercial_electricity_tj,TJ,3.60E-06
-elpubldv,Elektriciteitsverbruik Publieke Dienstverlening,kWh,Optelling en bijschatting door RVO o.b.v. CBS-gegevens,,,Numeriek,27/08/2025 05:41,bd_public_electricity_tj,TJ,3.60E-06
-vbrzg_g1,Aardgasverbruik Handel (SBI G),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_g_tj,TJ,3.17E-05
-vbrzg_h,Aardgasverbruik Vervoer en Opslag (SBI H),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_h_tj,TJ,3.17E-05
-vbrzg_i,Aardgasverbruik Horeca (SBI I),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_i_tj,TJ,3.17E-05
-vbrzg_j,Aardgasverbruik Informatie en communicatie (SBI J),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_j_tj,TJ,3.17E-05
-vbrzg_k,Aardgasverbruik Financiële dienstverlening (SBI K),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_k_tj,TJ,3.17E-05
-vbrzg_l,Aardgasverbruik Verhuur en handel van onroerend goed (SBI L),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_l_tj,TJ,3.17E-05
-vbrzg_m,Aardgasverbruik Specialistische zakelijke diensten (SBI M),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_m_tj,TJ,3.17E-05
-vbrzg_n,Aardgasverbruik Verhuur en overige zakelijke diensten (SBI N),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_n_tj,TJ,3.17E-05
-vbrzg_o,Aardgasverbruik Openbaar bestuur en overheidsdiensten (SBI O),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_o_tj,TJ,3.17E-05
-vbrzg_p,Aardgasverbruik Onderwijs (SBI P),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_p_tj,TJ,3.17E-05
-vbrzg_q,Aardgasverbruik Gezondheids- en welzijnszorg (SBI Q),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_q_tj,TJ,3.17E-05
-vbrzg_r1,"Aardgasverbruik Cultuur, sport en recreatie (SBI R)",m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_r_tj,TJ,3.17E-05
-vbrzg_s,Aardgasverbruik Overige dienstverlening (SBI S),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_s_tj,TJ,3.17E-05
-vbrzg_u,Aardgasverbruik Extraterritoriale organisaties (SBI U),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_gas_sbi_u_tj,TJ,3.17E-05
-vbrze_g1,Elektriciteitsverbruik Handel (SBI G),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_g_tj,TJ,3.60E-06
-vbrze_h,Elektriciteitsverbruik Vervoer en Opslag incl. railverkeer (SBI H),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_h_tj,TJ,3.60E-06
-vbrze_i,Elektriciteitsverbruik Horeca (SBI I),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_i_tj,TJ,3.60E-06
-vbrze_j,Elektriciteitsverbruik Informatie en communicatie (SBI J),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_j_tj,TJ,3.60E-06
-vbrze_k,Elektriciteitsverbruik Financiële dienstverlening (SBI K),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_k_tj,TJ,3.60E-06
-vbrze_l,Elektriciteitsverbruik Verhuur en handel van onroerend goed (SBI L),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_l_tj,TJ,3.60E-06
-vbrze_m,Elektriciteitsverbruik Specialistische zakelijke diensten (SBI M),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_m_tj,TJ,3.60E-06
-vbrze_n,Elektriciteitsverbruik Verhuur en overige zakelijke diensten (SBI N),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_n_tj,TJ,3.60E-06
-vbrze_o,Elektriciteitsverbruik Openbaar bestuur en overheidsdiensten (SBI O),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_o_tj,TJ,3.60E-06
-vbrze_p,Elektriciteitsverbruik Onderwijs (SBI P),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_p_tj,TJ,3.60E-06
-vbrze_q,Elektriciteitsverbruik Gezondheids- en welzijnszorg (SBI Q),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_q_tj,TJ,3.60E-06
-vbrze_r1,"Elektriciteitsverbruik Cultuur, sport en recreatie (SBI R)",kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_r_tj,TJ,3.60E-06
-vbrze_s,Elektriciteitsverbruik Overige dienstverlening (SBI S),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_s_tj,TJ,3.60E-06
-vbrze_u,Elektriciteitsverbruik Extraterritoriale organisaties (SBI U),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,bd_electricity_sbi_u_tj,TJ,3.60E-06
-energie_wegverk_tot,"Energieverbruik wegverkeer totaal (diesel, benzine, LPG en aardgas)",TJ,Berekening energieverbruik brandstof,,,Numeriek,25/07/2025 08:16,tp_road_total_tj,TJ,
-energie_mobwerk,"Energieverbruik mobiele werktuigen (diesel, benzine en LPG)",TJ,Berekening energieverbruik brandstof,,,Numeriek,07/02/2025 23:58,tp_mobile_machines_inc_biofuels_tj,TJ,
-bio_verkeertj,Vloeibare biobrandstoffenverbruik wegverkeer,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,13/06/2025 13:14,tp_road_bio_fuels_ex_mm_tj,TJ,
-bio_mobwerk_tj,Vloeibare biobrandstoffenverbruik mobiele werktuigen,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,13/06/2025 13:14,tp_mobile_machines_bio_fuels_tj,TJ,
-energie_rail,Energieverbruik railverkeer (alleen diesel),TJ,Berekening energieverbruik brandstof,,,Numeriek,25/07/2025 08:16,tp_rail_diesel_tj,TJ,
-energie_binnenvaart,Energieverbruik binnen- en recreatievaart (diesel en benzine),TJ,Berekening energieverbruik brandstof,,,Numeriek,07/02/2025 23:58,tp_inland_ship_diesel_tj,TJ,
-energie_zeevaart,Energieverbruik visserij (diesel en stookolie),TJ,Berekening energieverbruik brandstof,,,Numeriek,25/07/2025 08:16,tp_sea_ship_diesel_tj,TJ,
-wbelek,"Elektrische bussen, geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31/07/2025 11:34,no_electric_busses,#,
-bedrautoelek,"Elektrische bedrijfsauto's, geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31/07/2025 11:34,no_electric_vans,#,
-wpelek,"Elektrische personenauto's (BEV), geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31/07/2025 11:34,no_electric_cars_fev,#,
-wmfelek,"Elektrische motorfietsen, geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31/07/2025 11:34,no_electric_scooters,#,
-wbfelek,"Elektrische brommers, geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31/07/2025 11:34,no_electric_motorcycles,#,
-bedrgas,"Bedrijfsauto's op aardgas (CNG), geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31/07/2025 11:34,no_cng_trucks,#,
-wbgas,"Bussen op aardgas (CNG), geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31/07/2025 11:34,no_cng_busses,#,
-wpgas,"Personenauto's op aardgas (CNG), geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31/07/2025 11:34,no_cng_cars,#,
-co2enmobwerk,CO₂-uitstoot Mobiele werktuigen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18/08/2025 11:34,tp_mobile_machines_co2,tonne,
-co2bktw,CO₂-uitstoot Uitlaatgassen tweewielers en brommobielen bebouwde kom,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,07/02/2025 19:13,tp_motorcycle_co2_built_env,tonne,
-co2bkzbv,CO₂-uitstoot Uitlaatgassen/koelaggregaten vrachtauto's bebouwde kom,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18/08/2025 10:53,tp_truck_co2_built_env,tonne,
-co2bwtw,CO₂-uitstoot Uitlaatgassen tweewielers en brommobielen buitenwegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,07/02/2025 19:13,tp_motorcycle_co2_road,tonne,
-co2bwzbv,CO₂-uitstoot Uitlaatgassen/koelaggregaten vrachtauto's buitenwegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18/08/2025 10:53,tp_truck_co2_road,tonne,
-co2swtw,CO₂-uitstoot Uitlaatgassen tweewielers auto(snel)wegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18/08/2025 10:53,tp_motorcycle_co2_motorway,tonne,
-co2swzbv,CO₂-uitstoot Uitlaatgassen/koelaggregaten vrachtauto's auto(snel)wegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18/08/2025 10:53,tp_truck_co2_motorway,tonne,
-vbrze_a,"Elektriciteit geleverd aan Landbouw, bosbouw en visserij (SBI A)",kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,agri_electricity_tj,TJ,3.60E-06
-vbrzg_a,"Aardgas geleverd aan Landbouw, bosbouw en visserij (SBI A)",m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,agri_gas_tj,TJ,3.17E-05
-vbrzg_b,Aardgasverbruik Delfstoffenwinning (SBI B),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,ind_gas_sbi_b_tj,TJ,3.17E-05
-vbrzg_ctot,Aardgas geleverd aan Industrie (SBI C),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,ind_gas_sbi_c_tj,TJ,3.17E-05
-vbrzg_afval,Aardgasverbruik Waterbedrijven en afvalbeheer (SBI E),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,ind_gas_sbi_e_tj,TJ,3.17E-05
-vbrzg_f,Aardgasverbruik Bouwnijverheid (SBI F),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,ind_gas_sbi_f_tj,TJ,3.17E-05
-vbrze_b,Elektriciteitsverbruik Delfstoffenwinning (SBI B),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,ind_electricity_sbi_b_tj,TJ,3.60E-06
-vbrze_ctot,Elektriciteit geleverd aan Industrie (SBI C),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,ind_electricity_sbi_c_tj,TJ,3.60E-06
-vbrze_d,Elektriciteitsverbruik Energievoorziening (SBI D),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,ind_electricity_sbi_d_tj,TJ,3.60E-06
-vbrze_afval,Elektriciteitsverbruik Waterbedrijven en afvalbeheer (SBI E),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,ind_electricity_sbi_e_tj,TJ,3.60E-06
-vbrze_f,Elektriciteitsverbruik Bouwnijverheid (SBI F),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12/03/2025 09:34,ind_electricity_sbi_f_tj,TJ,3.60E-06
-pv_vermogen,Vermogen geregistreerde zonnepanelen totaal,kW,CBS - Statistiek zonnepanelen,,,Numeriek,16/07/2025 15:21,total_solar_kw,kW,
-zon_vermogen_won,Vermogen geregistreerde zonnepanelen woningen,kW,CBS - Statistiek zonnepanelen,,,Numeriek,16/07/2025 15:21,hh_solar_kw,kW,
-zon_vermogen_bdr,Vermogen geregistreerde zonnepanelen niet-woningen,kW,CBS - Statistiek zonnepanelen,,,Numeriek,16/07/2025 15:21,commercial_solar_roof_kw,kW,
-zonvld,Vermogen zonnepanelen in veld- of wateropstelling (SDE-regeling),MW,RVO - SDE++-regeling,,,Numeriek,21/08/2025 11:04,energy_solar_farms_kw,kW,1000
-biogas_warm,Biogas bekende hernieuwbare warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,20/08/2025 12:38,biogas_heat_tj,TJ,
-biogas_el,Biogas bekende hernieuwbare elektriciteit,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,20/08/2025 12:38,biogas_electricity_tj,TJ,
-ovbio_thtj,Biomassaketels bedrijven hern. warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27/08/2025 05:47,biomass_firms_heat_tj,TJ,
-ovbio_th_wkk_tj,Biomassaverbranding met decentrale elektriciteitsopwekking hern. warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27/08/2025 05:35,biomass_firms_chp_heat_tj,TJ,
-geothermtj,Aardwarmte (diepe bodemenergie),TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27/08/2025 05:47,geothermal_heat_tj,TJ,
-ovbio_eltjbrut,Biomassaverbranding met decentrale elektriciteitsopwekking hern. elektriciteit,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27/08/2025 05:35,biomass_firms_chp_electricity_tj,TJ,
-watertjbrutnorm,Waterkracht hern. elektriciteit genormaliseerd,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,18/07/2025 08:15,hydro_electricity_tj,TJ,
-windtjbrutnorm,Wind op land hern. elektriciteit genormaliseerd,TJ,Verdeling provinciaal en regionaal totaal windenergie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27/08/2025 05:47,wind_electricity_tj,TJ,
-avi_eltjbrut,Afvalverbrandingsinstallatie hernieuwbare elektriciteit,TJ,"Werkgroep Afvalregistratie, onderdeel afvalverbranding en CBS",,,Numeriek,20/08/2025 13:28,waste_renewable_electricity_tj,TJ,
-avi_thtjbrut,Afvalverbrandingsinstallatie hernieuwbare warmte,TJ,"Werkgroep Afvalregistratie, onderdeel afvalverbranding en CBS",,,Numeriek,20/08/2025 13:28,waste_renewable_heat_tj,TJ,
-efacgas,Emissiefactor aardgas (ton/m3),ton/m3,RVO - Berekening van de standaard CO₂-emissiefactor aardgas,,,Gemiddelde,02/07/2024 14:50,gas_tonne_co2_per_tj,tonne/TJ (natural gas),31595.57662
-vbrzg_tot_tj,Totaal aardgasverbruik bedrijven en instellingen excl. gasverbruik Energievoorziening (SBI D),TJ,Omrekening energiedragers naar TeraJoules (TJ),,,Numeriek,27/08/2025 15:33,gas_buildings_industry_agriculture_tj,TJ,
-vbrze_tot_tj,"Totaal elektriciteitsverbruik bedrijven en instellingen, geleverd via openbaar net",TJ,Omrekening energiedragers naar TeraJoules (TJ),,,Numeriek,27/08/2025 05:34,electricity_buildings_industry_agriculture_tj,TJ,
-zonpvtj,Zonnestroom,TJ,CBS - Statistiek zonnestroom en schatting RVO,,,Numeriek,13/08/2025 10:39,solar_pv_total_production_tj,TJ,
-warelektr,"Opgewekte elektriciteit afvalverbranding (AVI, fossiele en biogene oorsprong, GWh)",GWh,"Werkgroep Afvalregistratie, onderdeel afvalverbranding en CBS",,,Numeriek,20/08/2025 12:05,waste_total_produced_electricity_tj,TJ,3.6
-hern_warm_tot_ex_groengas,Totaal bekende hernieuwbare warmte exclusief aan net geleverd groen gas,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27/08/2025 05:47,total_renewable_heat_tj_ex_greengas,TJ,
-windmw,Wind op land fysiek opgesteld vermogen,MW,Windstats,,,Numeriek,06/05/2025 10:31,energy_wind_kw,kW,1000
-efacel,Emissiefactor elektriciteit (ton/kWh),ton/kWh,CBS - Jaarlijkse publicatie CO₂-emissiefactor elektriciteitsproductie,,,Gemiddelde,23/07/2025 13:46,electricity_tonne_co2_per_tj,tonne/TJ (electricity),277777.7778
-warwarmte,"Doorgeleverde warmte afvalverbranding (AVI, fossiele en biogene oorsprong)",TJ,"Werkgroep Afvalregistratie, onderdeel afvalverbranding en CBS",,,Numeriek,20/08/2025 12:05,waste_heat_used_in_area_tj,TJ,
-ondieptj,Ondiepe bodemenergie hern. energie (WKO/WP),TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27/08/2025 05:36,bd_thermal_storage_tj,TJ,
-energie_bebouwde_kom,"Energieverbruik wegverkeer bebouwde kom (diesel, benzine, LPG en aardgas, 0-60 km/h)",TJ,Berekening energieverbruik brandstof,,,Numeriek,18/08/2025 10:53,,,
-energie_buitenweg,"Energieverbruik wegverkeer buitenwegen  (diesel, benzine, LPG en aardgas, 60-100 km/h)",TJ,Berekening energieverbruik brandstof,,,Numeriek,18/08/2025 10:53,,,
-energie_snelweg,"Energieverbruik wegverkeer auto(snel)wegen (diesel, benzine, LPG en aardgas,100-130 km/h)",TJ,Berekening energieverbruik brandstof,,,Numeriek,18/08/2025 10:53,,,
-co2_bk_pa,CO₂-uitstoot Uitlaatgassen personenauto bebouwde kom,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18/08/2025 10:53,,,
-co2_bk_ba,CO₂-uitstoot Uitlaatgassen bestelauto bebouwde kom,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18/08/2025 10:53,,,
-co2_bk_ab,CO₂-uitstoot Uitlaatgassen autobus bebouwde kom,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,07/02/2025 19:13,,,
-co2_bw_pa,CO₂-uitstoot Uitlaatgassen personenauto buitenwegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18/08/2025 10:53,,,
-co2_bw_ba,CO₂-uitstoot Uitlaatgassen bestelauto buitenwegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18/08/2025 10:53,,,
-co2_bw_ab,CO₂-uitstoot Uitlaatgassen autobus buitenwegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,07/02/2025 19:13,,,
-co2_sw_pa,CO₂-uitstoot Uitlaatgassen personenauto auto(snel)wegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18/08/2025 10:53,,,
-co2_sw_ba,CO₂-uitstoot Uitlaatgassen bestelauto auto(snel)wegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18/08/2025 10:53,,,
-co2_sw_ab,CO₂-uitstoot Uitlaatgassen autobus auto(snel)wegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,07/02/2025 19:13,,,
-efac_benz_g_mj,Emissiefactor benzine,ton/TJ,Overwritten manually by Quintel with RIVM data,,"RIVM - Methodology report Transport ER 1990-2023, table 2.7",Gemiddelde,08/02/2025 00:02,gasoline_tonne_co2_per_tj,tonne/TJ,
-efac_diesel_g_mj,Emissiefactor diesel,ton/TJ,Overwritten manually by Quintel with RIVM data,,"RIVM - Methodology report Transport ER 1990-2023, table 2.7",Gemiddelde,08/02/2025 00:02,diesel_tonne_co2_per_tj,tonne/TJ,
+inwoners,Aantal inwoners,aantal,CBS - Kerncijfers Wijken en buurten,,,Numeriek,6-8-2025 08:21:16,no_inhabitants,#,
+woningen,Aantal woningen per 1 januari,aantal,CBS - Kerncijfers Wijken en buurten,,,Numeriek,18-7-2025 10:36:01,no_residences,#,
+energie_totaal_combi,"Totaal bekend energieverbruik (aardgas, elektriciteit, stadswarmte, verkeer/vervoer, overige warmte)",TJ,Berekening (sub)totalen energieverbruik,,,Numeriek,27-8-2025 05:46:19,total_energy_tj,TJ,
+verk_totaal,"Totaal bekend energieverbruik Verkeer en vervoer (incl. auto(snel)wegen, excl. elektr. verkeer)",TJ,Berekening energieverbruik brandstof,,,Numeriek,18-8-2025 10:53:36,tp_total_energy_tj,TJ,
+elektra_totaal_combi,"Totaal bekend elektriciteitsverbruik, incl. zonnestroom 'achter de meter'",TJ,Berekening (sub)totalen energieverbruik,,,Numeriek,27-8-2025 05:46:20,total_electricity_tj,TJ,
+warm_totaal_combi,Totaal bekend warmteverbruik (aardgas en (hern.) warmte),TJ,Berekening o.b.v. gegevens meerdere bronnen,,,Numeriek,27-8-2025 05:46:20,total_gas_heat_tj_temp_corrected,TJ,
+zonpvachtermeter_kwh,Zonnestroom: verbruik achter de meter (schatting),GWh,Schatting zonnestroom achter de meter,,,Numeriek,27-8-2025 05:36:53,solar_pv_own_use_total_tj,TJ,3.6
+hern_warm_tot,Totaal bekende hernieuwbare warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27-8-2025 05:47:26,total_renewable_heat_tj,TJ,
+gas_woningen_tj,Totaal aardgasverbruik woningen (temperatuurgecorrigeerd),TJ,Berekening  totaalverbruik woningen o.b.v. gemiddeld verbruik en aantal woningen,,,Numeriek,18-7-2025 10:36:01,hh_gas_tj_temp_corrected,TJ,
+warmwontjcor,Verbruik stadswarmte woningen (temperatuurgecorrigeerd),TJ,Duurzaamheidsrapportage warmtenetten RVO en historische bijschatting,,,Numeriek,27-8-2025 05:32:42,hh_heat_tj_temp_corrected,TJ,
+kwbelektotaal,Elektriciteitsverbruik woningen,GWh,Berekening  totaalverbruik woningen o.b.v. gemiddeld verbruik en aantal woningen,,,Numeriek,18-7-2025 10:36:01,hh_electricity_tj,TJ,3.6
+kwbgastotaal,Aardgasverbruik woningen,miljoen m3,Berekening  totaalverbruik woningen o.b.v. gemiddeld verbruik en aantal woningen,,,Numeriek,18-7-2025 10:36:01,hh_gas_tj,TJ,31.65
+warmwontier2,Verbruik stadswarmte woningen,GJ,Duurzaamheidsrapportage warmtenetten RVO en historische bijschatting,,,Numeriek,27-8-2025 05:32:42,hh_heat_tj,TJ,0.001
+houtskool,Houtskool hern. warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,18-7-2025 08:15:09,hh_biomass_cooking_tj,TJ,
+houtwontj,Houtkachels woningen hern. warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,18-7-2025 08:15:09,hh_biomass_heat_tj,TJ,
+gascomdv,Aardgasverbruik Commerciële Dienstverlening,m3,Optelling en bijschatting door RVO o.b.v. CBS-gegevens,,,Numeriek,27-8-2025 05:41:53,bd_commercial_gas_tj,TJ,3.165e-05
+gaspubldv,Aardgasverbruik Publieke Dienstverlening,m3,Optelling en bijschatting door RVO o.b.v. CBS-gegevens,,,Numeriek,27-8-2025 05:42:00,bd_public_gas_tj,TJ,3.165e-05
+elcomdv,Elektriciteitsverbruik Commerciële Dienstverlening,kWh,Optelling en bijschatting door RVO o.b.v. CBS-gegevens,,,Numeriek,27-8-2025 05:41:43,bd_commercial_electricity_tj,TJ,3.6e-06
+elpubldv,Elektriciteitsverbruik Publieke Dienstverlening,kWh,Optelling en bijschatting door RVO o.b.v. CBS-gegevens,,,Numeriek,27-8-2025 05:41:59,bd_public_electricity_tj,TJ,3.6e-06
+vbrzg_g1,Aardgasverbruik Handel (SBI G),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_gas_sbi_g_tj,TJ,3.165e-05
+vbrzg_h,Aardgasverbruik Vervoer en Opslag (SBI H),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_gas_sbi_h_tj,TJ,3.165e-05
+vbrzg_i,Aardgasverbruik Horeca (SBI I),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_gas_sbi_i_tj,TJ,3.165e-05
+vbrzg_j,Aardgasverbruik Informatie en communicatie (SBI J),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_gas_sbi_j_tj,TJ,3.165e-05
+vbrzg_k,Aardgasverbruik Financiële dienstverlening (SBI K),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_gas_sbi_k_tj,TJ,3.165e-05
+vbrzg_l,Aardgasverbruik Verhuur en handel van onroerend goed (SBI L),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_gas_sbi_l_tj,TJ,3.165e-05
+vbrzg_m,Aardgasverbruik Specialistische zakelijke diensten (SBI M),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:24,bd_gas_sbi_m_tj,TJ,3.165e-05
+vbrzg_n,Aardgasverbruik Verhuur en overige zakelijke diensten (SBI N),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:24,bd_gas_sbi_n_tj,TJ,3.165e-05
+vbrzg_o,Aardgasverbruik Openbaar bestuur en overheidsdiensten (SBI O),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:24,bd_gas_sbi_o_tj,TJ,3.165e-05
+vbrzg_p,Aardgasverbruik Onderwijs (SBI P),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:24,bd_gas_sbi_p_tj,TJ,3.165e-05
+vbrzg_q,Aardgasverbruik Gezondheids- en welzijnszorg (SBI Q),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:24,bd_gas_sbi_q_tj,TJ,3.165e-05
+vbrzg_r1,"Aardgasverbruik Cultuur, sport en recreatie (SBI R)",m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:24,bd_gas_sbi_r_tj,TJ,3.165e-05
+vbrzg_s,Aardgasverbruik Overige dienstverlening (SBI S),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:24,bd_gas_sbi_s_tj,TJ,3.165e-05
+vbrzg_u,Aardgasverbruik Extraterritoriale organisaties (SBI U),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:24,bd_gas_sbi_u_tj,TJ,3.165e-05
+vbrze_g1,Elektriciteitsverbruik Handel (SBI G),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_g_tj,TJ,3.6e-06
+vbrze_h,Elektriciteitsverbruik Vervoer en Opslag incl. railverkeer (SBI H),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_h_tj,TJ,3.6e-06
+vbrze_i,Elektriciteitsverbruik Horeca (SBI I),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_i_tj,TJ,3.6e-06
+vbrze_j,Elektriciteitsverbruik Informatie en communicatie (SBI J),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_j_tj,TJ,3.6e-06
+vbrze_k,Elektriciteitsverbruik Financiële dienstverlening (SBI K),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_k_tj,TJ,3.6e-06
+vbrze_l,Elektriciteitsverbruik Verhuur en handel van onroerend goed (SBI L),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_l_tj,TJ,3.6e-06
+vbrze_m,Elektriciteitsverbruik Specialistische zakelijke diensten (SBI M),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_m_tj,TJ,3.6e-06
+vbrze_n,Elektriciteitsverbruik Verhuur en overige zakelijke diensten (SBI N),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_n_tj,TJ,3.6e-06
+vbrze_o,Elektriciteitsverbruik Openbaar bestuur en overheidsdiensten (SBI O),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_o_tj,TJ,3.6e-06
+vbrze_p,Elektriciteitsverbruik Onderwijs (SBI P),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_p_tj,TJ,3.6e-06
+vbrze_q,Elektriciteitsverbruik Gezondheids- en welzijnszorg (SBI Q),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_q_tj,TJ,3.6e-06
+vbrze_r1,"Elektriciteitsverbruik Cultuur, sport en recreatie (SBI R)",kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_r_tj,TJ,3.6e-06
+vbrze_s,Elektriciteitsverbruik Overige dienstverlening (SBI S),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_s_tj,TJ,3.6e-06
+vbrze_u,Elektriciteitsverbruik Extraterritoriale organisaties (SBI U),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,bd_electricity_sbi_u_tj,TJ,3.6e-06
+energie_wegverk_tot,"Energieverbruik wegverkeer totaal (diesel, benzine, LPG en aardgas)",TJ,Berekening energieverbruik brandstof,,,Numeriek,25-7-2025 08:16:34,tp_road_total_tj,TJ,
+energie_mobwerk,"Energieverbruik mobiele werktuigen (diesel, benzine en LPG)",TJ,Berekening energieverbruik brandstof,,,Numeriek,7-2-2025 23:58:18,tp_mobile_machines_inc_biofuels_tj,TJ,
+bio_verkeertj,Vloeibare biobrandstoffenverbruik wegverkeer,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,13-6-2025 13:14:29,tp_road_bio_fuels_ex_mm_tj,TJ,
+bio_mobwerk_tj,Vloeibare biobrandstoffenverbruik mobiele werktuigen,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,13-6-2025 13:14:33,tp_mobile_machines_bio_fuels_tj,TJ,
+energie_rail,Energieverbruik railverkeer (alleen diesel),TJ,Berekening energieverbruik brandstof,,,Numeriek,25-7-2025 08:16:34,tp_rail_diesel_tj,TJ,
+energie_binnenvaart,Energieverbruik binnen- en recreatievaart (diesel en benzine),TJ,Berekening energieverbruik brandstof,,,Numeriek,7-2-2025 23:58:18,tp_inland_ship_diesel_tj,TJ,
+energie_zeevaart,Energieverbruik visserij (diesel en stookolie),TJ,Berekening energieverbruik brandstof,,,Numeriek,25-7-2025 08:16:34,tp_sea_ship_diesel_tj,TJ,
+wbelek,"Elektrische bussen, geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31-7-2025 11:34:53,no_electric_busses,#,
+bedrautoelek,"Elektrische bedrijfsauto's, geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31-7-2025 11:34:54,no_electric_vans,#,
+wpelek,"Elektrische personenauto's (BEV), geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31-7-2025 11:34:53,no_electric_cars_fev,#,
+wmfelek,"Elektrische motorfietsen, geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31-7-2025 11:34:55,no_electric_scooters,#,
+wbfelek,"Elektrische brommers, geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31-7-2025 11:34:55,no_electric_motorcycles,#,
+bedrgas,"Bedrijfsauto's op aardgas (CNG), geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31-7-2025 11:34:54,no_cng_trucks,#,
+wbgas,"Bussen op aardgas (CNG), geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31-7-2025 11:34:54,no_cng_busses,#,
+wpgas,"Personenauto's op aardgas (CNG), geregistreerd bij eigenaar",aantal,RVO - Monitoring elektrisch vervoer o.b.v. gegevens RDW,,,Numeriek,31-7-2025 11:34:53,no_cng_cars,#,
+co2enmobwerk,CO₂-uitstoot Mobiele werktuigen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18-8-2025 11:34:28,tp_mobile_machines_co2,tonne,
+co2bktw,CO₂-uitstoot Uitlaatgassen tweewielers en brommobielen bebouwde kom,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,7-2-2025 19:13:08,tp_motorcycle_co2_built_env,tonne,
+co2bkzbv,CO₂-uitstoot Uitlaatgassen/koelaggregaten vrachtauto's bebouwde kom,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18-8-2025 10:53:35,tp_truck_co2_built_env,tonne,
+co2bwtw,CO₂-uitstoot Uitlaatgassen tweewielers en brommobielen buitenwegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,7-2-2025 19:13:08,tp_motorcycle_co2_road,tonne,
+co2bwzbv,CO₂-uitstoot Uitlaatgassen/koelaggregaten vrachtauto's buitenwegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18-8-2025 10:53:35,tp_truck_co2_road,tonne,
+co2swtw,CO₂-uitstoot Uitlaatgassen tweewielers auto(snel)wegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18-8-2025 10:53:36,tp_motorcycle_co2_motorway,tonne,
+co2swzbv,CO₂-uitstoot Uitlaatgassen/koelaggregaten vrachtauto's auto(snel)wegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18-8-2025 10:53:35,tp_truck_co2_motorway,tonne,
+vbrze_a,"Elektriciteit geleverd aan Landbouw, bosbouw en visserij (SBI A)",kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,agri_electricity_tj,TJ,3.6e-06
+vbrzg_a,"Aardgas geleverd aan Landbouw, bosbouw en visserij (SBI A)",m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,agri_gas_tj,TJ,3.165e-05
+vbrzg_b,Aardgasverbruik Delfstoffenwinning (SBI B),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,ind_gas_sbi_b_tj,TJ,3.165e-05
+vbrzg_ctot,Aardgas geleverd aan Industrie (SBI C),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,ind_gas_sbi_c_tj,TJ,3.165e-05
+vbrzg_afval,Aardgasverbruik Waterbedrijven en afvalbeheer (SBI E),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,ind_gas_sbi_e_tj,TJ,3.165e-05
+vbrzg_f,Aardgasverbruik Bouwnijverheid (SBI F),m3,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,ind_gas_sbi_f_tj,TJ,3.165e-05
+vbrze_b,Elektriciteitsverbruik Delfstoffenwinning (SBI B),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,ind_electricity_sbi_b_tj,TJ,3.6e-06
+vbrze_ctot,Elektriciteit geleverd aan Industrie (SBI C),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,ind_electricity_sbi_c_tj,TJ,3.6e-06
+vbrze_d,Elektriciteitsverbruik Energievoorziening (SBI D),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,ind_electricity_sbi_d_tj,TJ,3.6e-06
+vbrze_afval,Elektriciteitsverbruik Waterbedrijven en afvalbeheer (SBI E),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,ind_electricity_sbi_e_tj,TJ,3.6e-06
+vbrze_f,Elektriciteitsverbruik Bouwnijverheid (SBI F),kWh,CBS - Statistiek energieverbruik bedrijven en instellingen,,,Numeriek,12-3-2025 09:34:23,ind_electricity_sbi_f_tj,TJ,3.6e-06
+pv_vermogen,Vermogen geregistreerde zonnepanelen totaal,kW,CBS - Statistiek zonnepanelen,,,Numeriek,16-7-2025 15:21:23,total_solar_kw,kW,
+zon_vermogen_won,Vermogen geregistreerde zonnepanelen woningen,kW,CBS - Statistiek zonnepanelen,,,Numeriek,16-7-2025 15:21:37,hh_solar_kw,kW,
+zon_vermogen_bdr,Vermogen geregistreerde zonnepanelen niet-woningen,kW,CBS - Statistiek zonnepanelen,,,Numeriek,16-7-2025 15:21:49,commercial_solar_roof_kw,kW,
+zonvld,Vermogen zonnepanelen in veld- of wateropstelling (SDE-regeling),MW,RVO - SDE++-regeling,,,Numeriek,21-8-2025 11:04:32,energy_solar_farms_kw,kW,1000.0
+biogas_warm,Biogas bekende hernieuwbare warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,20-8-2025 12:38:26,biogas_heat_tj,TJ,
+biogas_el,Biogas bekende hernieuwbare elektriciteit,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,20-8-2025 12:38:26,biogas_electricity_tj,TJ,
+ovbio_thtj,Biomassaketels bedrijven hern. warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27-8-2025 05:47:26,biomass_firms_heat_tj,TJ,
+ovbio_th_wkk_tj,Biomassaverbranding met decentrale elektriciteitsopwekking hern. warmte,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27-8-2025 05:35:47,biomass_firms_chp_heat_tj,TJ,
+geothermtj,Aardwarmte (diepe bodemenergie),TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27-8-2025 05:47:26,geothermal_heat_tj,TJ,
+ovbio_eltjbrut,Biomassaverbranding met decentrale elektriciteitsopwekking hern. elektriciteit,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27-8-2025 05:35:47,biomass_firms_chp_electricity_tj,TJ,
+watertjbrutnorm,Waterkracht hern. elektriciteit genormaliseerd,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,18-7-2025 08:15:09,hydro_electricity_tj,TJ,
+windtjbrutnorm,Wind op land hern. elektriciteit genormaliseerd,TJ,Verdeling provinciaal en regionaal totaal windenergie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27-8-2025 05:47:26,wind_electricity_tj,TJ,
+avi_eltjbrut,Afvalverbrandingsinstallatie hernieuwbare elektriciteit,TJ,"Werkgroep Afvalregistratie, onderdeel afvalverbranding en CBS",,,Numeriek,20-8-2025 13:28:20,waste_renewable_electricity_tj,TJ,
+avi_thtjbrut,Afvalverbrandingsinstallatie hernieuwbare warmte,TJ,"Werkgroep Afvalregistratie, onderdeel afvalverbranding en CBS",,,Numeriek,20-8-2025 13:28:05,waste_renewable_heat_tj,TJ,
+efacgas,Emissiefactor aardgas (ton/m3),ton/m3,RVO - Berekening van de standaard CO₂-emissiefactor aardgas,,,Gemiddelde,2-7-2024 14:50:56,gas_tonne_co2_per_tj,tonne/TJ (natural gas),31595.576619273306
+vbrzg_tot_tj,Totaal aardgasverbruik bedrijven en instellingen excl. gasverbruik Energievoorziening (SBI D),TJ,Omrekening energiedragers naar TeraJoules (TJ),,,Numeriek,27-8-2025 15:33:50,gas_buildings_industry_agriculture_tj,TJ,
+vbrze_tot_tj,"Totaal elektriciteitsverbruik bedrijven en instellingen, geleverd via openbaar net",TJ,Omrekening energiedragers naar TeraJoules (TJ),,,Numeriek,27-8-2025 05:34:19,electricity_buildings_industry_agriculture_tj,TJ,
+zonpvtj,Zonnestroom,TJ,CBS - Statistiek zonnestroom en schatting RVO,,,Numeriek,13-8-2025 10:39:23,solar_pv_total_production_tj,TJ,
+warelektr,"Opgewekte elektriciteit afvalverbranding (AVI, fossiele en biogene oorsprong, GWh)",GWh,"Werkgroep Afvalregistratie, onderdeel afvalverbranding en CBS",,,Numeriek,20-8-2025 12:05:57,waste_total_produced_electricity_tj,TJ,3.6
+hern_warm_tot_ex_groengas,Totaal bekende hernieuwbare warmte exclusief aan net geleverd groen gas,TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27-8-2025 05:47:26,total_renewable_heat_tj_ex_greengas,TJ,
+windmw,Wind op land fysiek opgesteld vermogen,MW,Windstats,,,Numeriek,6-5-2025 10:31:31,energy_wind_kw,kW,1000.0
+efacel,Emissiefactor elektriciteit (ton/kWh),ton/kWh,CBS - Jaarlijkse publicatie CO₂-emissiefactor elektriciteitsproductie,,,Gemiddelde,23-7-2025 13:46:52,electricity_tonne_co2_per_tj,tonne/TJ (electricity),277777.77777777775
+warwarmte,"Doorgeleverde warmte afvalverbranding (AVI, fossiele en biogene oorsprong)",TJ,"Werkgroep Afvalregistratie, onderdeel afvalverbranding en CBS",,,Numeriek,20-8-2025 12:05:57,waste_heat_used_in_area_tj,TJ,
+ondieptj,Ondiepe bodemenergie hern. energie (WKO/WP),TJ,Verdeling regionale gegevens hernieuwbare energie o.b.v. verdeelsleutel per gemeente,,,Numeriek,27-8-2025 05:36:53,bd_thermal_storage_tj,TJ,
+energie_bebouwde_kom,"Energieverbruik wegverkeer bebouwde kom (diesel, benzine, LPG en aardgas, 0-60 km/h)",TJ,Berekening energieverbruik brandstof,,,Numeriek,18-8-2025 10:53:36,,,
+energie_buitenweg,"Energieverbruik wegverkeer buitenwegen  (diesel, benzine, LPG en aardgas, 60-100 km/h)",TJ,Berekening energieverbruik brandstof,,,Numeriek,18-8-2025 10:53:36,,,
+energie_snelweg,"Energieverbruik wegverkeer auto(snel)wegen (diesel, benzine, LPG en aardgas,100-130 km/h)",TJ,Berekening energieverbruik brandstof,,,Numeriek,18-8-2025 10:53:36,,,
+co2_bk_pa,CO₂-uitstoot Uitlaatgassen personenauto bebouwde kom,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18-8-2025 10:53:35,,,
+co2_bk_ba,CO₂-uitstoot Uitlaatgassen bestelauto bebouwde kom,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18-8-2025 10:53:35,,,
+co2_bk_ab,CO₂-uitstoot Uitlaatgassen autobus bebouwde kom,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,7-2-2025 19:13:07,,,
+co2_bw_pa,CO₂-uitstoot Uitlaatgassen personenauto buitenwegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18-8-2025 10:53:35,,,
+co2_bw_ba,CO₂-uitstoot Uitlaatgassen bestelauto buitenwegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18-8-2025 10:53:35,,,
+co2_bw_ab,CO₂-uitstoot Uitlaatgassen autobus buitenwegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,7-2-2025 19:13:07,,,
+co2_sw_pa,CO₂-uitstoot Uitlaatgassen personenauto auto(snel)wegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18-8-2025 10:53:35,,,
+co2_sw_ba,CO₂-uitstoot Uitlaatgassen bestelauto auto(snel)wegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,18-8-2025 10:53:35,,,
+co2_sw_ab,CO₂-uitstoot Uitlaatgassen autobus auto(snel)wegen,ton,Emissieregistratie - CO₂-uitstoot verkeer en vervoer,,,Numeriek,7-2-2025 19:13:08,,,
+efac_benz_g_mj,Emissiefactor benzine,ton/TJ,Overwritten manually by Quintel with RIVM data,,"RIVM - Methodology report Transport ER 1990-2023, table 2.7",Gemiddelde,8-2-2025 00:02:13,gasoline_tonne_co2_per_tj,tonne/TJ,
+efac_diesel_g_mj,Emissiefactor diesel,ton/TJ,Overwritten manually by Quintel with RIVM data,,"RIVM - Methodology report Transport ER 1990-2023, table 2.7",Gemiddelde,8-2-2025 00:02:13,diesel_tonne_co2_per_tj,tonne/TJ,
 efac_lpg_g_mj,Emission factor LPG,tonne/TJ,Overwritten manually by Quintel with RIVM data,,"RIVM - Methodology report Transport ER 1990-2023, table 2.2",,,lpg_tonne_co2_per_tj,tonne/TJ,
 efac_cng_g_mj,Emission factor CNG,tonne/TJ,Overwritten manually by Quintel with RIVM data,,"RIVM - Methodology report Transport ER 1990-2023, table 2.7",,,,,
 pautos,N/A in KM data,N/A in KM data,N/A in KM data,N/A in KM data,N/A in KM data,N/A in KM data,N/A in KM data,no_cars,#,

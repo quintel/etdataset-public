@@ -26,7 +26,6 @@ has_other_emissions_section,true,
 areable_land,18457,Bevolking; kerncijfers (CBS; https://opendata.cbs.nl/statline/#/CBS/nl/dataset/70072ned/table?dl=52965
 coast_line,451,The World Factbook (https://www.cia.gov/library/publications/the-world-factbook/geos/nl.html)
 offshore_ccs_potential_mt_per_year,65,See etdataset/source_analyses/nl/2019/11_area/11_area_source_analysis_2019.xlsx
-flh_solar_pv_solar_radiation_max,1361.35634547,
 total_land_area,33671,Bevolking; kerncijfers (CBS; https://opendata.cbs.nl/statline/#/CBS/nl/dataset/70072ned/table?dl=52965
 number_of_inhabitants,17282163,Bevolking; kerncijfers (CBS; https://opendata.cbs.nl/statline/#/CBS/nl/dataset/70072ned/table?dl=52965
 offshore_suitable_for_wind,30060,Gebaseerd op 180 GW (technische potentie); zie https://www.rijksoverheid.nl/documenten/kamerstukken/2020/09/01/rapport-noordzee-energie-outlook
@@ -49,8 +48,6 @@ non_energetic_emissions_other_ghg_agriculture_manure,4.61403612,EEA 2019 (Due to
 non_energetic_emissions_other_ghg_agriculture_soil_cultivation,4.82072514,EEA 2019 (Due to the large file size see Projects/Active/503 Non-energetic CO2/Uitstoot per land/Other_emissions_data.xlsx)
 non_energetic_emissions_other_ghg_agriculture_other,0,EEA 2019 (Due to the large file size see Projects/Active/503 Non-energetic CO2/Uitstoot per land/Other_emissions_data.xlsx)
 non_energetic_emissions_other_ghg_waste_management,2.88588392,EEA 2019 (Due to the large file size see Projects/Active/503 Non-energetic CO2/Uitstoot per land/Other_emissions_data.xlsx)
-solar_pv_profile_1_share,1,
-solar_pv_profile_2_share,0,
 aquathermal_potential_for_surface_water,151.5,Totale potentie; CE Delft; https://ce.nl/wp-content/uploads/2021/03/CE_Delft_5S74_Nationaal_potentieel_van_aquathermie_Def.pdf
 aquathermal_potential_for_waste_water,69.9,Technische potentie; CE Delft; https://ce.nl/wp-content/uploads/2021/03/CE_Delft_5S74_Nationaal_potentieel_van_aquathermie_Def.pdf
 aquathermal_potential_for_drink_water,5,Technische potentie; CE Delft; https://ce.nl/wp-content/uploads/2021/03/CE_Delft_5S74_Nationaal_potentieel_van_aquathermie_Def.pdf

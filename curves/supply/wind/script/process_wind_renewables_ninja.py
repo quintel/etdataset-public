@@ -44,8 +44,8 @@ def main(args):
         wind_curve = validate(wind_curves)
         export_path = DATA_FOLDER / country / year / 'output'
         export_path.mkdir(parents=True, exist_ok=True)
-        
-        # Not all countries have an onshore and an offshore curve. 
+
+        # Not all countries have an onshore and an offshore curve.
         # If a country only has a national curve that curve is used for onshore, offshore and coastal.
         if 'offshore' in wind_curves:
             print('Offshore exists, so different curves for onshore and offshore')
@@ -55,17 +55,17 @@ def main(args):
             wind_curves_onshore = normalize(wind_curves['onshore'])
             wind_curves_offshore = normalize(wind_curves['offshore'])
 
-            wind_curves_onshore.to_csv(export_path/ 'wind_onshore_baseline.csv', index=None, header=False)
+            wind_curves_onshore.to_csv(export_path/ 'wind_inland_baseline.csv', index=None, header=False)
             wind_curves_offshore.to_csv(export_path/ 'wind_offshore_baseline.csv', index=None, header=False)
             wind_curves_offshore.to_csv(export_path/ 'wind_coastal_baseline.csv', index=None, header=False)
             print('\033[92m   Curve wind onshore, coastal and offshore were exported using onshore and offshore curves\033[0m')
         else:
-            print('No offshore curve so national curve is used for onshore and offshore')    
+            print('No offshore curve so national curve is used for onshore and offshore')
             print(f"-- Full load hours onshore/offshore/coastal: {wind_curves['national'].sum()}")
 
             wind_curves_national = normalize(wind_curves['national'])
 
-            wind_curves_national.to_csv(export_path/ 'wind_onshore_baseline.csv', index=None, header=False)
+            wind_curves_national.to_csv(export_path/ 'wind_inland_baseline.csv', index=None, header=False)
             wind_curves_national.to_csv(export_path/ 'wind_offshore_baseline.csv', index=None, header=False)
             wind_curves_national.to_csv(export_path/ 'wind_coastal_baseline.csv', index=None, header=False)
             print('\033[92m   Curve wind onshore, coastal and offshore were exported using curve "national" \033[0m')
