@@ -94,8 +94,8 @@ pp_flh_hydrogen_biomass_gasification,7884,
 pp_flh_hydrogen_biomass_gasification_ccs,7884,
 pp_demand_hydrogen_offshore_wind,0,no hydrogen production
 pp_demand_hydrogen_offshore_wind_p2g,0,no hydrogen production
-pp_flh_hydrogen_offshore_wind,4000,Quintel assumption
-pp_flh_hydrogen_offshore_wind_p2g,4000,Quintel assumption
+pp_flh_hydrogen_offshore_wind,3500,set to flhs of regular offshore wind
+pp_flh_hydrogen_offshore_wind_p2g,3500,set to flhs of regular offshore wind
 pp_demand_hydrogen_solar_pv,0,no hydrogen production
 pp_demand_hydrogen_solar_pv_p2g,0,no hydrogen production
 pp_flh_hydrogen_solar_pv,867,same as central solar

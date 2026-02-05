@@ -19,7 +19,6 @@ These settings determine which modules are turned on/off in ETM.
 - has_coastline: TRUE
 - has_cold_network: FALSE
 - has_electricity_storage: FALSE, the storage module is only applicable to the NL model.
-- has_employment: FALSE, employment figures have not been researched for EU.
 - has_fce: FALSE, the Fuel Chain Emissions module is only applicable to NL.
 - has_industry	: TRUE
 - has_lignite: TRUE, the EU model has lignite power plants.
@@ -69,11 +68,6 @@ See Excel file: "201312_EU27 GHG emissions IPCC format 1990 & 2011.xlsx""
 - co2_price: set to NL value
 
 Research data for the EU suggest that total emissions should be 3.55 GT whereas the ETM calculates 3.38 GT. The shortfall in the calculation appears to be a combination of quite a few factors, such as all the assumtpions made in filling in the research analyses, but also the assumed emission factors for fuels, which are more or less global variables in the ETM, but apparently can vary per country (according to national statistics agencies).
-
-
-### Employment
-
-This module is currently turned off for the EU. Numbers would have to be researched.
 
 
 ### Networks

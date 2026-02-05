@@ -59,7 +59,7 @@ pp_eff_coal_cc,0.453,See node source analysis of energy_power_combined_cycle_coa
 pp_eff_coal_cc_ccs,0.373,See node source analysis of energy_power_combined_cycle_ccs_coal
 pp_eff_lignite_us,0.4,See node source analysis of energy_power_ultra_supercritical_lignite
 pp_eff_lignite_us_ccs,0.305,See node source analysis of energy_power_ultra_supercritical_oxyfuel_ccs_lignite
-pp_eff_gas_turbine,0.34,See node source analysis of energy_power_turbine_network_gas 
+pp_eff_gas_turbine,0.34,See node source analysis of energy_power_turbine_network_gas
 pp_eff_gas_cc,0.6,See node source analysis of energy_power_combined_cycle_network_gas
 pp_eff_gas_cc_ccs,0.49,See node source analysis of energy_power_combined_cycle_ccs_network_gas
 pp_eff_gas_engine,0.48,See node source analysis of energy_power_engine_network_gas
@@ -94,8 +94,8 @@ pp_flh_hydrogen_biomass_gasification,7884,
 pp_flh_hydrogen_biomass_gasification_ccs,7884,
 pp_demand_hydrogen_offshore_wind,0,no hydrogen electricity production
 pp_demand_hydrogen_offshore_wind_p2g,0,no hydrogen electricity production
-pp_flh_hydrogen_offshore_wind,4000,Quintel assumption
-pp_flh_hydrogen_offshore_wind_p2g,4000,Quintel assumption
+pp_flh_hydrogen_offshore_wind,3000,set to flhs of regular offshore wind
+pp_flh_hydrogen_offshore_wind_p2g,3000,set to flhs of regular offshore wind
 pp_demand_hydrogen_solar_pv,0,no hydrogen production
 pp_demand_hydrogen_solar_pv_p2g,0,no hydrogen production
 pp_flh_hydrogen_solar_pv,1001,same as central solar

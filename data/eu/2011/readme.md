@@ -1,1 +1,97 @@
-# "Start here" readme for EU27 2011---This directory contains all uniform Input Data (see [nomenclature](../../../documentation/nomenclature.md) for an explanation of terms) that is needed to construct our EU 2011 dataset (in the 'output' folders within each analysis folder).Furthermore, all 'input' folders contain a CSV files that store 'dashboard inputs'. These inputs are read into the respective analysis and shape the energy flow of the 'EU 2011' dataset.Note that this directory only contains **Input Data**, but it does not provide documentation or sources for the EU 2011 dataset.If you want to know what the EU Input Data is based on (references, justifications), please go to the EU [source_analyses](../../../source_analyses/eu) folder.## Source analysis content treeAll source analyses mirror the research analyses. In other words: For every research analysis folder on the ETDataset repository, you will find a corresponding Source analysis folder for the specific country and year that justifies the inputs for that particular analysis.### 0. Preparation of IEA dataIEA data table are prepared for the research analysis dataflow. A shift of solar PV generation is undertaken (from main activity sector to residences and services).### 1. CHP analysisThe CHP analysis corrects the IEA energy balance in certain ways: the IEA and ETM have a different understanding of sold/unsold heat in the context of CHPs. The IEA energy balance is manipulated to make it fit to the ETM definitions. Furthermore, the CHP analysis generates the fuel inputs and heat & electricity outputs of all the ETM's CHP converters.To fully characterise CHPs, the analysis also allows the user to adapt full load hours of CHPs (and thereby influence the installed capacities).### 2. PP_HP: Power and Heat plant analysisThe power and heat plant analysis assigns energy flows to certain types of power plants. The energy balance reveals how much electricity is produced per carrier, but electricity is produced by a mix of different plants types (e.g. gas turbines, gas combined cycle and conventional gas plants).Similarly to the CHP analysis, the PP_HP analysis also assigns FLH to power plants, which will determine the installed capacity per plant. Full load hours and installed capacities are very relevant in the ETM, for example in the calculation of the 'loss of load' or 'plant profitability'.This analysis also derives how much electricity is delivered by solar PV in the residential and services sector (based on the solar PV shift carried out in '0. preparation of IEA data'.### 3. Primary production analysisThe annual production or extraction of certain carriers is defined. The researcher has to define time curves that reveal how much coal, gas, oil etc. will be produced until 2050. Based on these numbers, the ETM will calculate howmuch of a carrier can be exported or might need to be imported in the future.The analysis sets certain maximum production limits for carriers like wood or waste.The analysis also derives how much biogas is produced in the presence and how much of that biogas is upgraded to green gas (which is blended in with the network gas).### 4a. Metal industry analysisThe metal sector is a sub sector of the industry sector. This analysis determines how much of the 'energy in industry' is consumed in the metal sector. Steel and aluminium production are taken into account.### 4b. Chemical industry analysisThe chemical sector is a sub sector of the industry sector. This analysis determines how much of the 'energy in industry' is consumed in the chemical industry. This analysis does not require any user input.### 5. IndustryThe industry analysis imports  from the metal sector (CSV file in the metal/output folder). This analysis does not require any user input.### 6. ResidencesThe IEA energy balance reveals how much energy is consumed in residences (households). The residence analysis generates a breakdown over technologies (how much is used in space heating, hot water, cooling etc. ). Furthermore, it refines these breakdowns into technology splits (how is space heating accomplished? gas boiler, electric heating etc. )Be aware that this analysis often asks for 'percentages of useful demand'. This can often be understood as a market share. As a researcher, you might often find that this research data is difficult to obtain.### 7. ServicesSimilarly to the residence analysis, the services analysis provides a breakdown of energy per application and space heating. Be aware that the dashboard works a bit different here than in the residence analysis. Since certain IEA energy flows can be assigned to a single technology in this sector, some energy flows are derived automatically and cannot be influenced by your input (e.g. the final demand for geothermal space heating).### 8. TransportThe energy balance is quite explicit about the energy use in transport (trucks, cars, trains etc. ). Nonetheless, certain carriers have to be assigned to certain technologies.### 9. AgricultureThis analysis requires only one user input. It is used to assign the final demand for electricity in agriculture to heating and other uses.### 10. OtherThis is the last analysis that deals with the energy flows reported by the energy balance. It collects all energy flows that the previous analyses have not yet dealt with. The other sector is a remainder category that ensure that the ETM does not overlook any energy flows.### 12. Area dataApart from defining energy flows, the ETM also needs to know several figures that are not of an energetic nature. For example, the ETM needs to know the population and size of a country.Area data is stored in a file called nl.ad or de.ad (country.ad). A research analysis that creates this file automatically after prompting user input is not yet available.## ShortcomingsThere are a number of shortcoming in the EU dataset:1. preparation of IEA data / solar PV shift: It is not properly researched how much solar PV is in stalled in the sectors residences and services and in main activity.* CHP analysis: FLH are not properly researched.* PP_HP analysis: FLH are often derived to make installed capacity fit. It is not validated if these FLH are reflecting reality.* The total installed capacity that results from the CHP and PP_HP analyses: Only two reports were found that report installed capacities. Depending on the country, this research data is often out-dated or missing. Installed capacities are based on data from 2009 or before.* primary production: the production profiles are extrapolated from the historic development of the last 10 years. Is there a better forecasting method? Also, the other dashboard inputs (actual and maximum production of certain carriers) needs to be researched and updated.* metal analysis: The amount of aluminium production is too low at the moment. Also, the share of recycled aluminium should be researched.* residence analysis: Many of the technology splits are based on matching the IEA energy balance. There is no independent source analysis. The share of old/new houses and the level of insulation (eu.ad) needs to be researched.* services analysis: The application and technology splits are based on matching the IEA energy balance. There is no independent source analysis.* transport: The split of diesel demand for trucks and cars needs to be researched.* not all IEA carriers are accounted for, see agriculture and other analysis.* merit order: There are only a couple of profiles defined for the EU. Many profiles are taken directly from the Dutch database.* area data: there is no proper source analysis for the area data (eu.ad).* the following modules are disabled, because of a lack of research data * employment module * network calculations* CO2 emissions: The total CO2 emissions (and the reduction in comparison to 1990) are derived by the ETM. Does our calculated CO2 emission match reality?
+# "Start here" readme for EU27 2011
+---
+
+This directory contains all uniform Input Data (see [nomenclature](../../../documentation/nomenclature.md) for an explanation of terms) that is needed to construct our EU 2011 dataset (in the 'output' folders within each analysis folder).
+Furthermore, all 'input' folders contain a CSV files that store 'dashboard inputs'. These inputs are read into the respective analysis and shape the energy flow of the 'EU 2011' dataset.
+
+Note that this directory only contains **Input Data**, but it does not provide documentation or sources for the EU 2011 dataset.
+If you want to know what the EU Input Data is based on (references, justifications), please go to the EU [source_analyses](../../../source_analyses/eu) folder.
+
+
+## Source analysis content tree
+
+All source analyses mirror the research analyses. In other words: For every research analysis folder on the ETDataset repository, you will find a corresponding Source analysis folder for the specific country and year that justifies the inputs for that particular analysis.
+
+### 0. Preparation of IEA data
+
+IEA data table are prepared for the research analysis dataflow. A shift of solar PV generation is undertaken (from main activity sector to residences and services).
+
+### 1. CHP analysis
+
+The CHP analysis corrects the IEA energy balance in certain ways: the IEA and ETM have a different understanding of sold/unsold heat in the context of CHPs. The IEA energy balance is manipulated to make it fit to the ETM definitions. Furthermore, the CHP analysis generates the fuel inputs and heat & electricity outputs of all the ETM's CHP converters.
+To fully characterise CHPs, the analysis also allows the user to adapt full load hours of CHPs (and thereby influence the installed capacities).
+
+### 2. PP_HP: Power and Heat plant analysis
+
+The power and heat plant analysis assigns energy flows to certain types of power plants. The energy balance reveals how much electricity is produced per carrier, but electricity is produced by a mix of different plants types (e.g. gas turbines, gas combined cycle and conventional gas plants).
+Similarly to the CHP analysis, the PP_HP analysis also assigns FLH to power plants, which will determine the installed capacity per plant. Full load hours and installed capacities are very relevant in the ETM, for example in the calculation of the 'loss of load' or 'plant profitability'.
+
+This analysis also derives how much electricity is delivered by solar PV in the residential and services sector (based on the solar PV shift carried out in '0. preparation of IEA data'.
+### 3. Primary production analysis
+
+The annual production or extraction of certain carriers is defined. The researcher has to define time curves that reveal how much coal, gas, oil etc. will be produced until 2050. Based on these numbers, the ETM will calculate how
+much of a carrier can be exported or might need to be imported in the future.
+
+The analysis sets certain maximum production limits for carriers like wood or waste.
+
+The analysis also derives how much biogas is produced in the presence and how much of that biogas is upgraded to green gas (which is blended in with the network gas).
+
+### 4a. Metal industry analysis
+
+The metal sector is a sub sector of the industry sector. This analysis determines how much of the 'energy in industry' is consumed in the metal sector. Steel and aluminium production are taken into account.
+
+### 4b. Chemical industry analysis
+The chemical sector is a sub sector of the industry sector. This analysis determines how much of the 'energy in industry' is consumed in the chemical industry. This analysis does not require any user input.
+
+### 5. Industry
+
+The industry analysis imports  from the metal sector (CSV file in the metal/output folder). This analysis does not require any user input.
+
+### 6. Residences
+
+The IEA energy balance reveals how much energy is consumed in residences (households). The residence analysis generates a breakdown over technologies (how much is used in space heating, hot water, cooling etc. ). Furthermore, it refines these breakdowns into technology splits (how is space heating accomplished? gas boiler, electric heating etc. )
+Be aware that this analysis often asks for 'percentages of useful demand'. This can often be understood as a market share. As a researcher, you might often find that this research data is difficult to obtain.
+
+### 7. Services
+
+Similarly to the residence analysis, the services analysis provides a breakdown of energy per application and space heating. Be aware that the dashboard works a bit different here than in the residence analysis. Since certain IEA energy flows can be assigned to a single technology in this sector, some energy flows are derived automatically and cannot be influenced by your input (e.g. the final demand for geothermal space heating).
+
+### 8. Transport
+
+The energy balance is quite explicit about the energy use in transport (trucks, cars, trains etc. ). Nonetheless, certain carriers have to be assigned to certain technologies.
+
+### 9. Agriculture
+
+This analysis requires only one user input. It is used to assign the final demand for electricity in agriculture to heating and other uses.
+
+### 10. Other
+
+This is the last analysis that deals with the energy flows reported by the energy balance. It collects all energy flows that the previous analyses have not yet dealt with. The other sector is a remainder category that ensure that the ETM does not overlook any energy flows.
+
+### 12. Area data
+
+Apart from defining energy flows, the ETM also needs to know several figures that are not of an energetic nature. For example, the ETM needs to know the population and size of a country.
+Area data is stored in a file called nl.ad or de.ad (country.ad). A research analysis that creates this file automatically after prompting user input is not yet available.
+
+## Shortcomings
+
+There are a number of shortcoming in the EU dataset:
+
+1. preparation of IEA data / solar PV shift: It is not properly researched how much solar PV is in stalled in the sectors residences and services and in main activity.
+* CHP analysis: FLH are not properly researched.
+* PP_HP analysis: FLH are often derived to make installed capacity fit. It is not validated if these FLH are reflecting reality.
+* The total installed capacity that results from the CHP and PP_HP analyses: Only two reports were found that report installed capacities. Depending on the country, this research data is often out-dated or missing. Installed capacities are based on data from 2009 or before.
+* primary production: the production profiles are extrapolated from the historic development of the last 10 years. Is there a better forecasting method? Also, the other dashboard inputs (actual and maximum production of certain carriers) needs to be researched and updated.
+* metal analysis: The amount of aluminium production is too low at the moment. Also, the share of recycled aluminium should be researched.
+* residence analysis: Many of the technology splits are based on matching the IEA energy balance. There is no independent source analysis. The share of old/new houses and the level of insulation (eu.ad) needs to be researched.
+* services analysis: The application and technology splits are based on matching the IEA energy balance. There is no independent source analysis.
+* transport: The split of diesel demand for trucks and cars needs to be researched.
+* not all IEA carriers are accounted for, see agriculture and other analysis.
+* merit order: There are only a couple of profiles defined for the EU. Many profiles are taken directly from the Dutch database.
+* area data: there is no proper source analysis for the area data (eu.ad).
+* the following modules are disabled, because of a lack of research data
+ * network calculations
+* CO2 emissions: The total CO2 emissions (and the reduction in comparison to 1990) are derived by the ETM. Does our calculated CO2 emission match reality?
+
+
+

@@ -109,7 +109,7 @@ The Other analysis covers the energy consumption that is not included in the ana
 The Area analysis is used to collect a range of country specific parameters that are required to make the ETM work. These parameters include:
 
 - Which modules and features need to be enabled in the ETM.
-- Country specific figures, e.g. for the area of the areable land, the lenght of the coast line and the number of inhabitants; furthermore, amongst others, parameters need to be defined with respect to buildings, CO<sub>2</sub> emissions and employment.
+- Country specific figures, e.g. for the area of the areable land, the lenght of the coast line and the number of inhabitants; furthermore, amongst others, parameters need to be defined with respect to buildings and CO<sub>2</sub> emissions.
 
 Please refer to the [Area analysis](11_area_analysis.xlsx) for more documentation.
 
