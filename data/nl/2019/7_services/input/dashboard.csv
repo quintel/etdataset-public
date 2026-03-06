@@ -22,5 +22,3 @@ buildings_lighting_efficient_fluorescent_electricity,0.0151836734693877,Rough gu
 buildings_lighting_led_electricity,0.0845714285714286,Rough guess; no good data; see 2020052021_rough_led_lighting_estimation
 services_biomass_used_in space_heating,1,
 services_biomass_used_in appliances,0,
-services_savings_lighting_motion_detection,0.039,
-services_savings_lighting_daylight_control,0.053,
