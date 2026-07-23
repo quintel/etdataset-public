@@ -1,0 +1,38 @@
+dataset,name,analysis_year,unfccc_code
+AT_austria,Austria,2019,AUT
+BE_belgium,Belgium,2019,BEL
+BG_bulgaria,Bulgaria,2019,BGR
+CH_switzerland,Switzerland,2019,CHE
+CY_cyprus,Cyprus,2019,CYP
+CZ_czechia,Czechia,2019,CZE
+DE_germany,Germany,2019,DEU
+DK_denmark,Denmark,2019,DNK
+EE_estonia,Estonia,2019,EST
+EL_greece,Greece,2019,GRC
+ES_spain,Spain,2019,ESP
+EU27_european_union_27_countries,European Union 27 Countries,2019,EUA
+FI_finland,Finland,2019,FIN
+FR_france,France,2019,FRA
+GB_great_britain,Great Britain,2019,
+HR_croatia,Croatia,2019,HRV
+HU_hungary,Hungary,2019,HUN
+IE_ireland,Ireland,2019,IRL
+IT_italy,Italy,2019,ITA
+LT_lithuania,Lithuania,2019,LTU
+LU_luxembourg,Luxembourg,2019,LUX
+LV_latvia,Latvia,2019,LVA
+MT_malta,Malta,2019,MLT
+NO_norway,Norway,2019,NOR
+PL_poland,Poland,2019,POL
+PT_portugal,Portugal,2019,PRT
+RO_romania,Romania,2019,ROU
+RS_serbia,Serbia,2019,
+SE_sweden,Sweden,2019,SWE
+SG_singapore,Singapore,2019,
+SI_slovenia,Slovenia,2019,SVN
+SK_slovakia,Slovakia,2019,SVK
+UKNI01_northern_ireland,Northern Ireland,2018,
+UK_united_kingdom,United Kingdom,2019,GBR
+nl,Netherlands,2015,NLD
+nl2019,Netherlands,2019,NLD
+nl2023,Netherlands,2023,

@@ -1,0 +1,345 @@
+crt_code,crt_category,co2,other_ghg,total_ghg,unit
+,Annual Change in Total Long-term C Storage,0.0,0.0,0.0,kton CO2-eq
+,Annual Change in Total Long-term C Storage in HWP Waste,0.0,0.0,0.0,kton CO2-eq
+,HWP in SWDS,0.0,0.0,0.0,kton CO2-eq
+,Long-term Storage of C in Waste Disposal Sites,0.0,0.0,0.0,kton CO2-eq
+,Multilateral Operations,0.0,0.0,0.0,kton CO2-eq
+,Total Amount Captured for Storage,0.0,0.0,0.0,kton CO2-eq
+,Total Amount of CO₂ Injected at Storage Sites,0.0,0.0,0.0,kton CO2-eq
+,Total Amount of Exports for Storage,0.0,0.0,0.0,kton CO2-eq
+,Total Amount of Imports for Storage,0.0,0.0,0.0,kton CO2-eq
+,Total GHG emissions with LULUCF including indirect CO₂,0.0,0.0,0.0,kton CO2-eq
+,Total GHG emissions without LULUCF including indirect CO₂,0.0,0.0,0.0,kton CO2-eq
+,"Total Leakage from Transport, Injection and Storage",0.0,0.0,0.0,kton CO2-eq
+,Waste Incineration with Energy Recovery included as Biomass,0.0,0.0,0.0,kton CO2-eq
+,Waste Incineration with Energy Recovery included as Fossil Fuels,5957.008498370408,237.67079415308308,6194.679292523491,kton CO2-eq
+,Total GHG emissions with LULUCF,361714.4349767572,93348.58320987708,455063.0181866343,kton CO2-eq
+,Total GHG emissions without LULUCF,366942.1153523531,86291.53091545095,453233.646267804,kton CO2-eq
+1,Energy,343406.46181272925,9273.896590066724,352680.358402796,kton CO2-eq
+1.A.1,Energy Industries,86446.96075571397,1076.1484173623612,87523.10917307633,kton CO2-eq
+1.A.1.a,Public Electricity and Heat Production,59149.244573907534,673.7348739073786,59822.97944781491,kton CO2-eq
+1.A.1.a.i,Electricity Generation,59149.244573907534,673.0787522544124,59822.323326161946,kton CO2-eq
+1.A.1.a.iii,Heat Plants,0.0,0.6561216529686,0.6561216529686,kton CO2-eq
+1.A.1.b,Petroleum Refining,12628.270575470004,19.208087078066455,12647.47866254807,kton CO2-eq
+1.A.1.c,Manufacture of Solid Fuels and Other Energy Industries,14669.445606336438,383.20545637691976,15052.651062713358,kton CO2-eq
+1.A.1.c.i,Manufacture of Solid Fuels,775.823115777174,0.38214348804001474,776.2052592652141,kton CO2-eq
+1.A.1.c.ii,Oil and Gas Extraction,12587.32055268591,381.57092662515424,12968.891479311063,kton CO2-eq
+1.A.1.c.iii,Other Energy Industries,1306.301937873354,1.25238626372402,1307.554324137078,kton CO2-eq
+1.A.2,Manufacturing Industries and Construction,42027.41553413392,329.80747596330184,42357.22301009722,kton CO2-eq
+1.A.2.a,Iron and Steel,1071.3954188916678,1.7133613740068085,1073.1087802656746,kton CO2-eq
+1.A.2.b,Non-Ferrous Metals,699.1911592314663,1.2112075754344005,700.4023668069007,kton CO2-eq
+1.A.2.c,Chemicals,5355.079520078094,8.585253494699828,5363.664773572794,kton CO2-eq
+1.A.2.d,"Pulp, Paper and Print",1411.946181037833,28.29526538216237,1440.2414464199953,kton CO2-eq
+1.A.2.e,"Food Processing, Beverages and Tobacco",4141.923193249272,10.523266824653547,4152.446460073926,kton CO2-eq
+1.A.2.f,Non-metallic Minerals,2573.384400673649,59.649392235710366,2633.0337929093594,kton CO2-eq
+1.A.2.g,Other,26774.49566097194,219.82972907663498,26994.325390048576,kton CO2-eq
+1.A.2.g.vii,Off-road Vehicles and Other Machinery,5413.949475325589,62.80967007008985,5476.759145395679,kton CO2-eq
+1.A.2.g.viii,Other,21360.54618564635,157.0200590065433,21517.566244652895,kton CO2-eq
+1.A.3,Transport,120750.87501428394,1147.8694653560233,121898.74447963996,kton CO2-eq
+1.A.3.a,Domestic Aviation,1722.0616255457153,15.999987240878454,1738.0616127865937,kton CO2-eq
+1.A.3.b,Road Transportation,111004.10744050247,1045.9455519451876,112050.05299244766,kton CO2-eq
+1.A.3.b.i,Cars,68931.15586763353,513.0942331294209,69444.25010076295,kton CO2-eq
+1.A.3.b.ii,Light Duty Trucks,17658.143764784236,141.44277680876257,17799.586541593,kton CO2-eq
+1.A.3.b.iii,Heavy Duty Trucks and Buses,23486.7484125589,379.82043156703367,23866.568844125934,kton CO2-eq
+1.A.3.b.iv,Motorcycles,521.4896336307713,11.068574604925857,532.5582082356972,kton CO2-eq
+1.A.3.b.v,Other,406.56976189502075,0.5195358350667902,407.08929773008754,kton CO2-eq
+1.A.3.c,Railways,1844.6708890322197,5.660451308679967,1850.3313403408997,kton CO2-eq
+1.A.3.d,Domestic Navigation,5560.826227499312,73.11829774051967,5633.944525239832,kton CO2-eq
+1.A.3.e,Other Transportation,619.208831704238,7.145177120729386,626.3540088249674,kton CO2-eq
+1.A.3.e.i,Pipeline Transport,0.0,0.0,0.0,kton CO2-eq
+1.A.3.e.ii,Other,619.208831704238,7.145177120729386,626.3540088249674,kton CO2-eq
+1.A.4,Other Sectors,88265.12584558982,848.9421024267504,89114.06794801657,kton CO2-eq
+1.A.4.a,Commercial/Institutional,19467.344103091706,59.193692715001816,19526.537795806707,kton CO2-eq
+1.A.4.a.i,Stationary Combustion,19279.82206729928,59.159549729352875,19338.981617028632,kton CO2-eq
+1.A.4.a.ii,Off-road Vehicles and Other Machinery,187.52203579242834,0.034142985643569546,187.5561787780719,kton CO2-eq
+1.A.4.b,Residential,63571.0657612256,701.8276643872596,64272.89342561286,kton CO2-eq
+1.A.4.b.i,Stationary Combustion,63192.812021693164,699.1306623488053,63891.94268404197,kton CO2-eq
+1.A.4.b.ii,Off-road Vehicles and Other Machinery,378.2537395324458,2.697002038449284,380.9507415708951,kton CO2-eq
+1.A.4.b.iii,Other,0.0,0.0,0.0,kton CO2-eq
+1.A.4.c,Agriculture/Forestry/Fishing,5226.715981272513,87.92074532449169,5314.636726597005,kton CO2-eq
+1.A.4.c.i,Stationary,239.46156143003,29.02099382943615,268.48255525946615,kton CO2-eq
+1.A.4.c.ii,Off-road Vehicles and Other Machinery,4224.6622344566,49.419078940752115,4274.0813133973525,kton CO2-eq
+1.A.4.c.iii,Fishing,762.5921853858828,9.480672554303283,772.072857940186,kton CO2-eq
+1.A.5,Other (Not specified elsewhere),1632.6801718150687,16.56667715136564,1649.2468489664343,kton CO2-eq
+1.A.5.a,Stationary,0.0,0.0,0.0,kton CO2-eq
+1.A.5.b,Mobile,1632.6801718150687,16.566677151365866,1649.2468489664345,kton CO2-eq
+1.AA,Fuel Combustion - Sectoral approach,339123.05732153676,3419.3341382597573,342542.3914597965,kton CO2-eq
+1.AB,Fuel Combustion - Reference Approach,338050.27984242694,0.0,338050.27984242694,kton CO2-eq
+1.AD,"Feedstocks, Reductants and Other Non-energy Use of Fuels",10379.102675881466,0.0,10379.102675881466,kton CO2-eq
+1.B,Fugitive Emissions from Fuels,4283.404491192525,5854.562451806929,10137.966942999454,kton CO2-eq
+1.B.1,Solid Fuels,163.11390127287888,547.6633176727446,710.7772189456234,kton CO2-eq
+1.B.1.a,Coal Mining and Handling,0.0,540.0348832794879,540.0348832794879,kton CO2-eq
+1.B.1.a.i,Underground Mines,0.0,510.39689395448795,510.39689395448795,kton CO2-eq
+1.B.1.a.ii,Surface Mines,0.0,29.637989325,29.637989325,kton CO2-eq
+1.B.1.b,Solid Fuel Transformation,163.11390127287888,7.628434393256725,170.7423356661356,kton CO2-eq
+1.B.1.c,Other,0.0,0.0,0.0,kton CO2-eq
+1.B.2,Oil and Natural Gas and Other Emissions from Energy Production,4120.290589919646,5306.899134134185,9427.189724053831,kton CO2-eq
+1.B.2.a,Oil,81.5059489359527,141.47208980961545,222.97803874556814,kton CO2-eq
+1.B.2.a.i,Exploration,58.2867600000001,13.204132654000006,71.4908926540001,kton CO2-eq
+1.B.2.a.ii,Production,23.21845699767795,73.50217536298084,96.72063236065878,kton CO2-eq
+1.B.2.a.iii,Transport,0.00073193827465,53.87944945082672,53.88018138910137,kton CO2-eq
+1.B.2.a.iv,Refining / Storage,0.0,0.16492018180792,0.16492018180792,kton CO2-eq
+1.B.2.a.v,Distribution of Oil Products,0.0,0.0,0.0,kton CO2-eq
+1.B.2.a.vi,Other,0.0,0.72141216,0.72141216,kton CO2-eq
+1.B.2.b,Natural Gas,415.1022577335463,4006.3608689312296,4421.463126664776,kton CO2-eq
+1.B.2.b.i,Exploration,28.97487,13.735960000000002,42.71083,kton CO2-eq
+1.B.2.b.ii,Production,0.61389,69.61512599999999,70.22901599999999,kton CO2-eq
+1.B.2.b.iii,Processing,379.60639521141377,54.946663019843015,434.5530582312568,kton CO2-eq
+1.B.2.b.iv,Transmission and Storage,0.27194741353195,178.07541969975657,178.34736711328853,kton CO2-eq
+1.B.2.b.v,Distribution,5.6351551086006,3689.9877002116295,3695.62285532023,kton CO2-eq
+1.B.2.b.vi,Other,0.0,0.0,0.0,kton CO2-eq
+1.B.2.c,Venting and Flaring,3600.0303077784483,1158.7963082988144,4758.826616077263,kton CO2-eq
+1.B.2.c.i,Venting,6.13873599999988,685.6686282665273,691.8073642665272,kton CO2-eq
+1.B.2.c.ii,Flaring,3593.8915717784485,473.1276800322862,4067.0192518107347,kton CO2-eq
+1.B.2.d,Other,23.65207547169812,0.2698670945265995,23.92194256622472,kton CO2-eq
+1.C,CO₂ Transport and Storage,0.0,0.0,0.0,kton CO2-eq
+1.C.1,Transport of CO₂,0.0,0.0,0.0,kton CO2-eq
+1.C.1.a,Pipelines,0.0,0.0,0.0,kton CO2-eq
+1.C.1.b,Ships,0.0,0.0,0.0,kton CO2-eq
+1.C.1.c,Other,0.0,0.0,0.0,kton CO2-eq
+1.C.2,Injection and Storage,0.0,0.0,0.0,kton CO2-eq
+1.C.2.a,Injection,0.0,0.0,0.0,kton CO2-eq
+1.C.2.b,Storage,0.0,0.0,0.0,kton CO2-eq
+1.C.3,Other,0.0,0.0,0.0,kton CO2-eq
+1.D.1,International Bunkers,46162.14013218081,432.8394087501365,46594.979540930944,kton CO2-eq
+1.D.1.a,International Aviation,36414.10099330176,309.61775813339045,36723.71875143515,kton CO2-eq
+1.D.1.b,International Navigation,9748.03913887905,123.22165061673695,9871.260789495787,kton CO2-eq
+2,Industrial Processes and Product Use,21788.280982000786,13924.739732678954,35713.02071467974,kton CO2-eq
+2.A,Mineral Industry,6329.854369980611,0.0,6329.854369980611,kton CO2-eq
+2.A.1,Cement Production,4448.49860314433,0.0,4448.49860314433,kton CO2-eq
+2.A.2,Lime Production,1053.42537587944,0.0,1053.42537587944,kton CO2-eq
+2.A.3,Glass production,369.4726909150046,-5.684341886080802e-14,369.47269091500453,kton CO2-eq
+2.A.4,Other Process Uses of Carbonates,458.45770004183663,0.0,458.45770004183663,kton CO2-eq
+2.A.4.a,Ceramics,371.197891955263,5.684341886080802e-14,371.19789195526306,kton CO2-eq
+2.A.4.b,Other Uses of Soda Ash,34.82724528301887,0.0,34.82724528301887,kton CO2-eq
+2.A.4.c,Non-metallurgical Magnesium Production,0.0,0.0,0.0,kton CO2-eq
+2.A.4.d,Other,52.43256280355477,0.0,52.43256280355477,kton CO2-eq
+2.B,Chemical Industry,4378.767721457266,231.10163127929354,4609.869352736559,kton CO2-eq
+2.B.1,Ammonia Production,1548.404189200001,0.5492188921805337,1548.9534080921815,kton CO2-eq
+2.B.10,Other,0.0,66.90863534886218,66.90863534886218,kton CO2-eq
+2.B.2,Nitric Acid Production,0.0,33.9465,33.9465,kton CO2-eq
+2.B.3,Adipic Acid Production,0.0,0.0,0.0,kton CO2-eq
+2.B.4,"Caprolactam, Glyoxal and Glyoxylic Acid Production",0.0,0.0,0.0,kton CO2-eq
+2.B.4.a,Caprolactam,0.0,0.0,0.0,kton CO2-eq
+2.B.4.b,Glyoxal,0.0,0.0,0.0,kton CO2-eq
+2.B.4.c,Glyoxylic Acid,0.0,0.0,0.0,kton CO2-eq
+2.B.5,Carbide Production,0.0,0.0,0.0,kton CO2-eq
+2.B.5.a,Silicon Carbide,0.0,0.0,0.0,kton CO2-eq
+2.B.5.b,Calcium Carbide,0.0,0.0,0.0,kton CO2-eq
+2.B.6,Titanium Dioxide Production,152.383959757265,0.0,152.383959757265,kton CO2-eq
+2.B.7,Soda Ash Production,145.21753118,0.0,145.21753118,kton CO2-eq
+2.B.8,Petrochemical and Carbon Black Production,2532.76204132,10.622439708331513,2543.3844810283317,kton CO2-eq
+2.B.8.a,Methanol,0.0,0.0,0.0,kton CO2-eq
+2.B.8.b,Ethylene,0.0,9.2022,9.2022,kton CO2-eq
+2.B.8.c,Ethylene Dichloride and Vinyl Chloride Monomer,5.65,0.0,5.65,kton CO2-eq
+2.B.8.d,Ethylene Oxide,0.0,0.0,0.0,kton CO2-eq
+2.B.8.e,Acrylonitrile,0.0,0.14,0.14,kton CO2-eq
+2.B.8.f,Carbon Black,0.0,0.0,0.0,kton CO2-eq
+2.B.8.g,Other,2527.11204132,1.2802397083314645,2528.3922810283316,kton CO2-eq
+2.B.8.g.ii,Other,2527.11204132,1.2802397083314645,2528.3922810283316,kton CO2-eq
+2.B.9,Fluorochemical Production,0.0,119.07483732991963,119.07483732991963,kton CO2-eq
+2.B.9.a,By-Product Emissions,0.0,0.0,0.0,kton CO2-eq
+2.B.9.a.i,Production of HCFC-22,0.0,0.0,0.0,kton CO2-eq
+2.B.9.b,Fugitive Emissions,0.0,119.07483732991963,119.07483732991963,kton CO2-eq
+2.B.9.b.iii,Other,0.0,119.07483732991963,119.07483732991963,kton CO2-eq
+2.C,Metal Industry,10607.167470239687,105.74359679737245,10712.91106703706,kton CO2-eq
+2.C.1,Iron and Steel Production,10546.507310679686,12.3923341020909,10558.899644781777,kton CO2-eq
+2.C.1.a,Steel,111.18317993267756,0.44766400000000317,111.63084393267756,kton CO2-eq
+2.C.1.b,Pig Iron,9117.414793586679,1.104855863688499,9118.519649450367,kton CO2-eq
+2.C.1.c,Direct Reduced Iron,0.0,0.0,0.0,kton CO2-eq
+2.C.1.d,Sinter,1317.909337160331,10.839814238400095,1328.749151398731,kton CO2-eq
+2.C.1.e,Pellet,0.0,0.0,0.0,kton CO2-eq
+2.C.1.f,Other,0.0,0.0,0.0,kton CO2-eq
+2.C.2,Ferroalloys Production,0.0,0.0,0.0,kton CO2-eq
+2.C.3,Aluminium Production,60.66015956,5.617676663576958,66.27783622357695,kton CO2-eq
+2.C.3.a,CO₂ Emissions,60.66015956,0.0,60.66015956,kton CO2-eq
+2.C.3.b,By-Product Emissions,0.0,5.61767666357696,5.61767666357696,kton CO2-eq
+2.C.4,Magnesium Production,0.0,81.309035,81.309035,kton CO2-eq
+2.C.5,Lead Production,0.0,0.0,0.0,kton CO2-eq
+2.C.6,Zinc Production,0.0,0.0,0.0,kton CO2-eq
+2.C.7,Other,0.0,6.42455103170585,6.42455103170585,kton CO2-eq
+2.D,Non-energy Products from Fuels and Solvent Use,472.49142032322237,0.0,472.49142032322237,kton CO2-eq
+2.D.1,Lubricant Use,384.23227729952873,0.0,384.23227729952873,kton CO2-eq
+2.D.2,Paraffin Wax Use,27.79868900970879,0.0,27.79868900970879,kton CO2-eq
+2.D.3,Other,60.46045401398484,0.0,60.46045401398484,kton CO2-eq
+2.D.3.a,Solvent Use,0.0,0.0,0.0,kton CO2-eq
+2.D.3.d,Other,60.46045401398484,0.0,60.46045401398484,kton CO2-eq
+2.E,Electronics Industry,0.0,21.99658606304897,21.99658606304897,kton CO2-eq
+2.E.1,Integrated Circuit or Semiconductor,0.0,21.99658606304897,21.99658606304897,kton CO2-eq
+2.E.2,TFT Flat Panel Display,0.0,0.0,0.0,kton CO2-eq
+2.E.3,Photovoltaics,0.0,0.0,0.0,kton CO2-eq
+2.E.4,Heat Transfer Fluid,0.0,0.0,0.0,kton CO2-eq
+2.E.5,Other,0.0,0.0,0.0,kton CO2-eq
+2.F,Product Uses as Substitutes for ODS,0.0,12309.275406549888,12309.275406549888,kton CO2-eq
+2.F.1,Refrigeration and Air-conditioning,0.0,10169.25434047531,10169.25434047531,kton CO2-eq
+2.F.1.a,Commercial Refrigeration,0.0,3166.247344335545,3166.247344335545,kton CO2-eq
+2.F.1.b,Domestic Refrigeration,0.0,136.40404302797467,136.40404302797467,kton CO2-eq
+2.F.1.c,Industrial Refrigeration,0.0,1288.70259475,1288.70259475,kton CO2-eq
+2.F.1.d,Transport Refrigeration,0.0,682.133834981963,682.133834981963,kton CO2-eq
+2.F.1.e,Mobile Air-conditioning,0.0,2104.071111319392,2104.071111319392,kton CO2-eq
+2.F.1.f,Stationary Air-conditioning,0.0,2791.6954120604346,2791.6954120604346,kton CO2-eq
+2.F.2,Foam Blowing Agents,0.0,417.35635218713264,417.35635218713264,kton CO2-eq
+2.F.2.a,Closed Cells,0.0,417.35635218713264,417.35635218713264,kton CO2-eq
+2.F.2.b,Open Cells,0.0,0.0,0.0,kton CO2-eq
+2.F.3,Fire Protection,0.0,330.11529920204026,330.11529920204026,kton CO2-eq
+2.F.4,Aerosols,0.0,1339.4726464880698,1339.4726464880698,kton CO2-eq
+2.F.4.a,Metered Dose Inhalers,0.0,932.4269660872487,932.4269660872487,kton CO2-eq
+2.F.4.b,Other,0.0,407.045680400821,407.045680400821,kton CO2-eq
+2.F.5,Solvents,0.0,16.45589497923319,16.45589497923319,kton CO2-eq
+2.F.6,Other Applications,0.0,36.62087321810246,36.62087321810246,kton CO2-eq
+2.F.6.b,Contained,0.0,36.62087321810246,36.62087321810246,kton CO2-eq
+2.G,Other Product Manufacture and Use,0.0,1250.6375907686781,1250.6375907686781,kton CO2-eq
+2.G.1,Electrical Equipment,0.0,345.651301,345.651301,kton CO2-eq
+2.G.2,SF₆ and PFCs from Other Product Use,0.0,141.57659772279573,141.57659772279573,kton CO2-eq
+2.G.2.a,Military Applications,0.0,29.9625,29.9625,kton CO2-eq
+2.G.2.b,Accelerators,0.0,5.57226642,5.57226642,kton CO2-eq
+2.G.2.e,Other,0.0,106.04183130279571,106.04183130279571,kton CO2-eq
+2.G.3,N₂O from Product Uses,0.0,587.556222045896,587.556222045896,kton CO2-eq
+2.G.3.a,Medical Applications,0.0,542.3308693575312,542.3308693575312,kton CO2-eq
+2.G.3.b,Other,0.0,45.2253526883647,45.2253526883647,kton CO2-eq
+2.G.3.b.i,Propellant for Pressure and Aerosol Products,0.0,41.5226033020819,41.5226033020819,kton CO2-eq
+2.G.3.b.ii,Other,0.0,3.7027493862828,3.7027493862828,kton CO2-eq
+2.G.4,Other,0.0,175.85347000000002,175.85347000000002,kton CO2-eq
+2.H,Other,0.0,5.98492122074056,5.98492122074056,kton CO2-eq
+2.H.1,Pulp and Paper,0.0,0.0,0.0,kton CO2-eq
+2.H.2,Food and Beverages Industry,0.0,0.0,0.0,kton CO2-eq
+2.H.3,Other,0.0,5.98492122074056,5.98492122074056,kton CO2-eq
+3,Agriculture,1444.8920360909,42402.70797875902,43847.60001484992,kton CO2-eq
+3.A,Enteric Fermentation,0.0,23785.01832940478,23785.01832940478,kton CO2-eq
+3.B,Manure Management,0.0,6793.217378113046,6793.217378113046,kton CO2-eq
+3.C,Rice Cultivation,0.0,0.0,0.0,kton CO2-eq
+3.C.1,Irrigated,0.0,0.0,0.0,kton CO2-eq
+3.C.1.a,Continuously Flooded,0.0,0.0,0.0,kton CO2-eq
+3.C.1.b,Intermittently Flooded,0.0,0.0,0.0,kton CO2-eq
+3.C.1.b.i,Single Aeration,0.0,0.0,0.0,kton CO2-eq
+3.C.1.b.ii,Multiple Aeration,0.0,0.0,0.0,kton CO2-eq
+3.C.2,Rainfed,0.0,0.0,0.0,kton CO2-eq
+3.C.2.a,Flood Prone,0.0,0.0,0.0,kton CO2-eq
+3.C.2.b,Drought Prone,0.0,0.0,0.0,kton CO2-eq
+3.C.3,Deep Water,0.0,0.0,0.0,kton CO2-eq
+3.C.3.a,Water Depth 50-100 cm,0.0,0.0,0.0,kton CO2-eq
+3.C.3.b,Water Depth > 100 cm,0.0,0.0,0.0,kton CO2-eq
+3.C.4,Other,0.0,0.0,0.0,kton CO2-eq
+3.D,Agricultural Soils,0.0,11492.630544574236,11492.630544574236,kton CO2-eq
+3.D.1,Direct N₂O Emissions From Managed Soils,0.0,9199.630001374167,9199.630001374167,kton CO2-eq
+3.D.1.a,Inorganic N Fertilizers,0.0,3119.9569398127405,3119.9569398127405,kton CO2-eq
+3.D.1.b,Organic N Fertilizers,0.0,1564.8759777860892,1564.8759777860892,kton CO2-eq
+3.D.1.b.i,Animal Manure Applied to Soils,0.0,1046.6903349207666,1046.6903349207666,kton CO2-eq
+3.D.1.b.ii,Sewage Sludge Applied to Soils,0.0,239.68671398676963,239.68671398676963,kton CO2-eq
+3.D.1.b.iii,Other Organic Fertilizers Applied to Soils,0.0,278.4989288785529,278.4989288785529,kton CO2-eq
+3.D.1.c,Urine and Dung Deposited by Grazing Animals,0.0,641.4024725546416,641.4024725546416,kton CO2-eq
+3.D.1.d,Crop Residues,0.0,1689.2012184934395,1689.2012184934395,kton CO2-eq
+3.D.1.e,Mineralization/Immobilization Associated with Loss/Gain of Soil Organic Matter,0.0,345.94160895480843,345.94160895480843,kton CO2-eq
+3.D.1.f,Cultivation of Organic Soils,0.0,1838.2517837724472,1838.2517837724472,kton CO2-eq
+3.D.1.g,Other,0.0,0.0,0.0,kton CO2-eq
+3.D.2,Indirect N₂O Emissions From Managed Soils,0.0,2293.0005432000703,2293.0005432000703,kton CO2-eq
+3.D.2.a,Atmospheric Deposition,0.0,733.1288467396862,733.1288467396862,kton CO2-eq
+3.D.2.b,Nitrogen Leaching and Run-off,0.0,1559.8716964603836,1559.8716964603836,kton CO2-eq
+3.E,Prescribed Burning of Savannas,0.0,0.0,0.0,kton CO2-eq
+3.E.1,Forest Land,0.0,0.0,0.0,kton CO2-eq
+3.E.2,Grassland,0.0,0.0,0.0,kton CO2-eq
+3.F,Field Burning of Agricultural Residues,0.0,0.0,0.0,kton CO2-eq
+3.F.1,Cereals,0.0,0.0,0.0,kton CO2-eq
+3.F.1.a,Wheat,0.0,0.0,0.0,kton CO2-eq
+3.F.1.b,Barley,0.0,0.0,0.0,kton CO2-eq
+3.F.1.c,Maize,0.0,0.0,0.0,kton CO2-eq
+3.F.1.d,Other,0.0,0.0,0.0,kton CO2-eq
+3.F.2,Pulses,0.0,0.0,0.0,kton CO2-eq
+3.F.3,Tubers and Roots,0.0,0.0,0.0,kton CO2-eq
+3.F.4,Sugar Cane,0.0,0.0,0.0,kton CO2-eq
+3.F.5,Other,0.0,0.0,0.0,kton CO2-eq
+3.G,Liming,1112.7318813930306,0.0,1112.7318813930306,kton CO2-eq
+3.G.1,Limestone CaCO₃,944.9093470286916,0.0,944.9093470286916,kton CO2-eq
+3.G.2,Dolomite CaMg(CO₃)₂,167.822534364339,0.0,167.822534364339,kton CO2-eq
+3.H,Urea Application,329.07120580444234,0.0,329.07120580444234,kton CO2-eq
+3.I,Other Carbon-containing Fertilizers,0.0,0.0,0.0,kton CO2-eq
+3.J,Other,3.08894889342704,331.8417266669626,334.9306755603896,kton CO2-eq
+4,"Land Use, Land-Use Change and Forestry",-5227.680375595922,7057.05229442616,1829.3719188302384,kton CO2-eq
+4.A,Forest Land,-18176.358903886026,538.1997241355748,-17638.15917975045,kton CO2-eq
+4.A.1,Forest Land Remaining Forest Land,-18056.426992264314,52.35199191110587,-18004.07500035321,kton CO2-eq
+4.A.2,Land Converted to Forest Land,-119.93191162171252,65.4057069342309,-54.52620468748161,kton CO2-eq
+4.A.2.a,Cropland Converted to Forest Land,-19.01308919879217,7.783158553404849,-11.22993064538732,kton CO2-eq
+4.A.2.b,Grassland Converted to Forest Land,-96.25858066697995,54.806538537313486,-41.45204212966647,kton CO2-eq
+4.A.2.c,Wetlands Converted to Forest Land,0.0,0.0,0.0,kton CO2-eq
+4.A.2.d,Settlements Converted to Forest Land,-4.6602417559404,2.2678397669741504,-2.39240198896625,kton CO2-eq
+4.A.2.e,Other Land Converted to Forest Land,0.0,0.0,0.0,kton CO2-eq
+4.B,Cropland,12666.282030888928,671.4197154126414,13337.701746301569,kton CO2-eq
+4.B.1,Cropland Remaining Cropland,8369.428975627361,0.06891779999932623,8369.49789342736,kton CO2-eq
+4.B.2,Land Converted to Cropland,4296.8530552615675,352.52861773485165,4649.381672996419,kton CO2-eq
+4.B.2.a,Forest Land Converted to Cropland,0.84419543844335,0.03996848473019998,0.88416392317355,kton CO2-eq
+4.B.2.b,Grassland Converted to Cropland,4371.878942077699,352.48864925012094,4724.36759132782,kton CO2-eq
+4.B.2.c,Wetlands Converted to Cropland,0.0,0.0,0.0,kton CO2-eq
+4.B.2.d,Settlements Converted to Cropland,-75.87008225457453,0.0,-75.87008225457453,kton CO2-eq
+4.B.2.e,Other Land Converted to Cropland,0.0,0.0,0.0,kton CO2-eq
+4.C,Grassland,-2716.959988773792,2878.895052405109,161.935063631317,kton CO2-eq
+4.C.1,Grassland Remaining Grassland,460.464320599878,32.87216460708737,493.3364852069654,kton CO2-eq
+4.C.2,Land Converted to Grassland,-3177.42430937367,28.9132388178964,-3148.5110705557736,kton CO2-eq
+4.C.2.a,Forest Land Converted to Grassland,482.2617634532746,10.566720253652761,492.8284837069274,kton CO2-eq
+4.C.2.b,Cropland Converted to Grassland,-3418.9277643564997,0.0,-3418.9277643564997,kton CO2-eq
+4.C.2.c,Wetlands Converted to Grassland,0.0,0.0,0.0,kton CO2-eq
+4.C.2.d,Settlements Converted to Grassland,-384.3278228211968,0.0,-384.3278228211968,kton CO2-eq
+4.C.2.e,Other Land Converted to Grassland,0.0,0.0,0.0,kton CO2-eq
+4.D,Wetlands,1303.1046937134872,2430.5900265930604,3733.6947203065474,kton CO2-eq
+4.D.1,Wetlands Remaining Wetlands,350.70693442993274,0.0,350.70693442993274,kton CO2-eq
+4.D.1.a,Peat Extraction Remaining Peat Extraction,2168.917468460317,4.547473508864641e-13,2168.9174684603177,kton CO2-eq
+4.D.1.b,Flooded Land Remaining Flooded Land,0.0,0.0,0.0,kton CO2-eq
+4.D.1.c,Other Wetlands Remaining Other Wetlands,-1818.2105340303845,-2.2737367544323206e-13,-1818.2105340303847,kton CO2-eq
+4.D.2,Land Converted to Wetlands,952.3977592835544,42.96021373617464,995.357973019729,kton CO2-eq
+4.E,Settlements,3888.406577337951,269.1973176717124,4157.603895009664,kton CO2-eq
+4.E.1,Settlements Remaining Settlements,1697.4702570316244,123.30929018303573,1820.7795472146602,kton CO2-eq
+4.E.2,Land Converted to Settlements,2011.4133579992385,122.94707532644725,2134.360433325686,kton CO2-eq
+4.E.2.a,Forest Land Converted to Settlements,752.5030241490077,30.637964372715714,783.1409885217234,kton CO2-eq
+4.E.2.b,Cropland Converted to Settlements,227.0145809020093,15.251204857341975,242.26578575935127,kton CO2-eq
+4.E.2.c,Grassland Converted to Settlements,1027.7733365707147,77.05790544203819,1104.831242012753,kton CO2-eq
+4.E.2.d,Wetlands Converted to Settlements,4.12241637750683,6.543512505174931e-07,4.12241703185808,kton CO2-eq
+4.E.2.e,Other Land Converted to Settlements,0.0,0.0,0.0,kton CO2-eq
+4.F,Other Land,0.0,0.0,0.0,kton CO2-eq
+4.F.2,Land Converted to Other Land,0.0,0.0,0.0,kton CO2-eq
+4.F.2.a,Forest Land Converted to Other Land,0.0,0.0,0.0,kton CO2-eq
+4.F.2.b,Cropland Converted to Other Land,0.0,0.0,0.0,kton CO2-eq
+4.F.2.c,Grassland Converted  to Other Land,0.0,0.0,0.0,kton CO2-eq
+4.F.2.d,Wetlands Converted to Other Land,0.0,0.0,0.0,kton CO2-eq
+4.F.2.e,Settlements Converted to Other Land,0.0,0.0,0.0,kton CO2-eq
+4.G,Harvested Wood Products,-2192.1547848764703,0.0,-2192.1547848764703,kton CO2-eq
+4.G.1,Solid Wood,-2179.179480911381,4.547473508864641e-13,-2179.1794809113803,kton CO2-eq
+4.G.1.a,Sawnwood,-1133.8209200851504,0.0,-1133.8209200851504,kton CO2-eq
+4.G.1.b,Wood Panels,-1045.3585608262301,0.0,-1045.3585608262301,kton CO2-eq
+4.G.2,Paper and Paperboard,-12.97530396508973,0.0,-12.97530396508973,kton CO2-eq
+4.G.3,Other,0.0,0.0,0.0,kton CO2-eq
+4.H,Other,0.0,115.72522971878195,115.72522971878195,kton CO2-eq
+5,Waste,302.48052153215804,20690.186613946207,20992.667135478365,kton CO2-eq
+5.A,Solid Waste Disposal,0.0,15841.56525862704,15841.56525862704,kton CO2-eq
+5.A.1,Managed Waste Disposal Sites,0.0,15841.56525862704,15841.56525862704,kton CO2-eq
+5.A.1.a,Anaerobic,0.0,15841.56525862704,15841.56525862704,kton CO2-eq
+5.A.1.b,Semi-aerobic,0.0,0.0,0.0,kton CO2-eq
+5.A.2,Unmanaged Waste Disposal Sites,0.0,0.0,0.0,kton CO2-eq
+5.A.3,Uncategorized Waste Disposal Sites,0.0,0.0,0.0,kton CO2-eq
+5.B,Biological Treatment of Solid Waste,0.0,1934.7462708108715,1934.7462708108715,kton CO2-eq
+5.B.1,Composting,0.0,1748.9692229467805,1748.9692229467805,kton CO2-eq
+5.B.1.a,Municipal Solid Waste,0.0,1748.9692229467805,1748.9692229467805,kton CO2-eq
+5.B.1.b,Other,0.0,0.0,0.0,kton CO2-eq
+5.B.2,Anaerobic Digestion at Biogas Facilities,0.0,185.77704786409103,185.77704786409103,kton CO2-eq
+5.B.2.a,Municipal Solid Waste,0.0,185.77704786409103,185.77704786409103,kton CO2-eq
+5.B.2.b,Other,0.0,0.0,0.0,kton CO2-eq
+5.C,Incineration and Open Burning of Waste,302.48052153215804,99.85940603791323,402.33992757007127,kton CO2-eq
+5.C.1,Waste Incineration,232.50917537826953,29.318535549675374,261.8277109279449,kton CO2-eq
+5.C.1.a,Biogenic,0.0,24.00840912,24.00840912,kton CO2-eq
+5.C.1.a.i,Municipal Solid Waste,0.0,0.0,0.0,kton CO2-eq
+5.C.1.a.ii,Other,0.0,24.00840912,24.00840912,kton CO2-eq
+5.C.1.b,Non-biogenic,232.50917537826953,5.3101264296753925,237.81930180794492,kton CO2-eq
+5.C.1.b.i,Municipal Solid Waste,0.0,0.0,0.0,kton CO2-eq
+5.C.1.b.ii,Other,232.50917537826953,5.3101264296753925,237.81930180794492,kton CO2-eq
+5.C.2,Open Burning of Waste,69.9713461538885,70.54087048823777,140.51221664212628,kton CO2-eq
+5.C.2.a,Biogenic,388.733248554768,0.0,388.733248554768,kton CO2-eq
+5.C.2.a.i,Municipal Solid Waste,0.0,0.0,0.0,kton CO2-eq
+5.C.2.a.ii,Other,388.733248554768,0.0,388.733248554768,kton CO2-eq
+5.C.2.b,Non-biogenic,69.9713461538885,70.54087048823777,140.51221664212628,kton CO2-eq
+5.C.2.b.i,Municipal Solid Waste,0.0,0.0,0.0,kton CO2-eq
+5.C.2.b.ii,Other,69.9713461538885,70.54087048823777,140.51221664212628,kton CO2-eq
+5.D,Wastewater Treatment and Discharge,0.0,2814.0156784703818,2814.0156784703818,kton CO2-eq
+5.D.1,Domestic Wastewater,0.0,1560.779103108634,1560.779103108634,kton CO2-eq
+5.D.2,Industrial Wastewater,0.0,1253.2365753617478,1253.2365753617478,kton CO2-eq
+5.D.3,Other,0.0,0.0,0.0,kton CO2-eq
+5.E,Other,0.0,0.0,0.0,kton CO2-eq
+6,Other,0.0,0.0,0.0,kton CO2-eq
+ind_CO2,Indirect CO2,0.0,0.0,0.0,kton CO2-eq

@@ -1,0 +1,31 @@
+etm_sector,etm_subsector,use,include_co2,include_other_ghg
+Agriculture,Non-specified,energetic,FALSE,TRUE
+Agriculture,Non-specified,non_energetic,TRUE,TRUE
+Buildings,Non-specified,energetic,FALSE,TRUE
+Energy,CCUS,non_energetic,TRUE,FALSE
+Energy,Electricity and heat production,energetic,FALSE,TRUE
+Energy,Fuels production,energetic,FALSE,TRUE
+Energy,Fugitive emissions,non_energetic,TRUE,TRUE
+Energy,Hydrogen production,non_energetic,FALSE,TRUE
+Energy,Methanol production,non_energetic,FALSE,TRUE
+Households,Non-specified,energetic,FALSE,TRUE
+Industry,Aluminium,non_energetic,TRUE,TRUE
+Industry,Chemicals,non_energetic,TRUE,TRUE
+Industry,Fertilizers,non_energetic,FALSE,TRUE
+Industry,Food,non_energetic,TRUE,TRUE
+Industry,Non-specified,energetic,FALSE,TRUE
+Industry,Other,non_energetic,TRUE,TRUE
+Industry,Other metals,non_energetic,TRUE,TRUE
+Industry,Paper,non_energetic,TRUE,TRUE
+Industry,Refineries,energetic,FALSE,TRUE
+Industry,Refineries,non_energetic,FALSE,TRUE
+Industry,Steel,non_energetic,TRUE,TRUE
+Bunkers,International aviation,energetic,FALSE,TRUE
+Bunkers,International navigation,energetic,FALSE,TRUE
+LULUCF,Emissions,non_energetic,TRUE,TRUE
+LULUCF,Removals,non_energetic,TRUE,FALSE
+Transport,Non-specified,energetic,FALSE,TRUE
+Other,Indirect emissions,non_energetic,TRUE,FALSE
+Other,Non-specified,energetic,FALSE,TRUE
+Other,Other transportation,energetic,FALSE,TRUE
+Waste,Non-specified,non_energetic,TRUE,TRUE
