@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weather-years"
+version = "1.0.0"
+description = "Generates ETM hourly heat-demand profiles from a year of weather data"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.21", "pandas>=1.3"]
+
+[project.scripts]
+weather-years = "weather_years.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["weather_years*"]
+
+[tool.setuptools.package-data]
+weather_years = ["data/*.csv"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
