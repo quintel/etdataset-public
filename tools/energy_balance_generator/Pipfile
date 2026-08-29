@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-numpy = "==1.21.4"
+numpy = "==1.22.0"
 pandas = "==1.3.4"
 openpyxl = "*"
 requests = "*"
